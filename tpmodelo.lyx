@@ -1,0 +1,1007 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass lyx
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-chap
+multicol
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Cover
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Entornos de Programación
+\end_layout
+
+\begin_layout Author
+Damián Ariel, Andrea Carolina
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Date
+6 de enero de 2023.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Historia
+\end_layout
+
+\begin_layout Section
+Origenes de la computadora
+\end_layout
+
+\begin_layout Standard
+Blaise Pascal había desarrollado en 
+\emph on
+1642
+\emph default
+ una de las primeras calculadoras mecánicas de la historia, conocida como
+ la 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+name "pascalina"
+target "https://www.youtube.com/watch?v=3h71HAJWnVU"
+literal "false"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Esta máquina, capaz de realizar operaciones aritméticas básicas mediante
+ el uso de engranajes y ruedas dentadas, fue un importante avance en el
+ campo de la mecánica y la automatización, y sentó las bases para el desarrollo
+ de las máquinas calculadoras modernas.
+ La Pascalina fue utilizada por matemáticos y científicos de la época, y
+ su diseño influyó en el desarrollo de posteriores calculadoras mecánicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pascalina.png
+	lyxscale 17
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Pascalina
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "máquina analítica"
+target "https://www.youtube.com/watch?v=BlbQsKpq3Ak"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ fue un proyecto desarrollado por Charles Babbage en 
+\emph on
+1837
+\emph default
+, considerado como el primer prototipo de una computadora moderna.
+ Babbage, matemático, filósofo e inventor inglés, diseñó una máquina capaz
+ de realizar cálculos automáticamente mediante el uso de engranajes y ruedas
+ dentadas, similar a la Pascalina de Blaise Pascal pero con un alcance mucho
+ mayor.
+ La máquina analítica tenía la capacidad de almacenar programas y realizar
+ operaciones matemáticas complejas, y se considera el primer ejemplo de
+ un sistema de procesamiento de datos automático.
+ Aunque Babbage nunca logró construir la máquina completa debido a problemas
+ financieros y técnicos, su proyecto sentó las bases para el desarrollo
+ de las computadoras modernas y tuvo un gran impacto en el campo de la informáti
+ca y la automatización.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diferencial.jpg
+	lyxscale 15
+	scale 6
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Máquina diferencial
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El 
+\begin_inset CommandInset href
+LatexCommand href
+name "teletipo"
+target "https://www.youtube.com/watch?v=2XLZ4Z8LpEE"
+literal "false"
+
+\end_inset
+
+ fue una invención que permitió la transmisión automática de texto a través
+ de una red telegráfica.
+ Fue inventado a finales del sigo XIX, y su desarrollo permitió una comunicación
+ más rápida y eficiente que el telégrafo de Morse.
+ El teletipo utilizaba un sistema de impresión automática para recibir y
+ transmitir texto, lo que permitió una comunicación más precisa y legible.
+ Las terminales de teletipo (TTY) también se utilizaron como terminales
+ de computadoras en las primeras décadas de la historia de las computadoras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename teletipo.png
+	lyxscale 20
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Teletipo Siemens t37h
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Avances de la guerra
+\end_layout
+
+\begin_layout Standard
+El comienzo de la Segunda Guerra Mundial en 
+\emph on
+1939
+\emph default
+ motivó un gran avance en la computación debido a la necesidad de procesar
+ grandes cantidades de datos y realizar cálculos complejos para apoyar los
+ esfuerzos de la guerra.
+\end_layout
+
+\begin_layout Standard
+El ordenador 
+\begin_inset CommandInset href
+LatexCommand href
+name "Z3"
+target "https://www.youtube.com/watch?v=aUXnhVrT4CI"
+literal "false"
+
+\end_inset
+
+ es una máquina de computación construida en 
+\emph on
+1941
+\emph default
+ por Konrad Zuse, un ingeniero y matemático alemán.
+ Era una máquina electromecánica basada en relés, que utilizaba un sistema
+ binario para representar los datos y los cálculos.
+ El Z3 contaba con una memoria programable, lo que permitía al usuario programar
+ la máquina para llevar a cabo diferentes tareas.
+ Fue destruido en 1943 durante un bombardeo en Berlín.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename z3.png
+	lyxscale 15
+	scale 26
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Réplica del Zuse Z3 exhibida en Múnich
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "Harvard Mark I"
+target "https://www.youtube.com/watch?v=bN7AdQmd8So"
+literal "false"
+
+\end_inset
+
+ es una computadora electromecánica construida en 
+\emph on
+1944
+\emph default
+ por IBM y patrocinada por el gobierno de los Estados Unidos.
+ Fue diseñada por el matemático Howard Aiken y se encuentra en el Museo
+ de la historia de la computación en la Universidad de Harvard.
+ La Harvard Mark I fue una máquina de gran tamaño, medía 8 metros de largo,
+ 2 metros de alto y 2 metros de ancho, y utilizaba relés electromecánicos
+ para llevar a cabo cálculos.
+ La máquina era capaz de realizar aritmética básica y funcionaba con un
+ sistema de tarjetas perforadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename mark1.png
+	lyxscale 35
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Harvard Mark I
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "ENIAC"
+target "https://www.youtube.com/watch?v=32o4qcYbWMA"
+literal "false"
+
+\end_inset
+
+ (Electronic Numerical Integrator And Computer) fue una computadora electrónica
+ programable construida por el gobierno de los Estados Unidos en 
+\emph on
+1946
+\emph default
+.
+ Era una máquina enorme, medía 30 metros de largo, 2 metros de alto y 3
+ metros de ancho, y pesaba 27 toneladas.
+ Utilizaba tecnología de válvulas electrónicas y era capaz de realizar cálculos
+ numéricos complejos a alta velocidad.
+ Fue utilizada para calcular los resultados de las explosiones nucleares
+ y para resolver problemas científicos y técnicos en la industria.
+ Fue inicialmente diseñada para calcular tablas de tiro de artillería destinadas
+ al Laboratorio de Investigación Balística del Ejército de los Estados Unidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename eniac.png
+	lyxscale 25
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Electronic Numerical Integrator And Computer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La informática moderna
+\end_layout
+
+\begin_layout Standard
+En la década de 1950, las computadoras eran enormes máquinas electromecánicas
+ y electrónicas que ocupaban grandes espacios y requerían un equipo especializad
+o para operarlas.
+ Algunas de las computadoras más famosas de esa época incluyen el UNIVAC
+ I y el IBM 701.
+ Estas máquinas eran principalmente utilizadas para tareas de cálculo y
+ procesamiento de datos, como la contabilidad y la investigación científica,
+ y eran utilizadas principalmente por grandes empresas, organizaciones gubername
+ntales y universidades.
+ A pesar de su tamaño y complejidad, estas computadoras marcaron el comienzo
+ de la era informática moderna y sentaron las bases para el desarrollo de
+ las computadoras personales y de escritorio de las décadas siguientes.
+\end_layout
+
+\begin_layout Standard
+FORTRAN (Formula Translation) es uno de los primeros lenguajes de programación
+ de computadora.
+ Fue desarrollado en 
+\emph on
+1957
+\emph default
+ por un equipo de ingenieros de IBM liderado por John Backus.
+ El objetivo de FORTRAN era proporcionar un lenguaje de programación que
+ permitiese a los científicos y matemáticos escribir programas de manera
+ eficiente y fácilmente para ser utilizado en las computadoras de ese entonces.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDP-1"
+target "https://www.youtube.com/watch?v=1EWQYAfuMYw"
+literal "false"
+
+\end_inset
+
+ (Programmed Data Processor-1) es un ordenador construido por la compañía
+ Digital Equipment Corporation (DEC) en 
+\emph on
+1959
+\emph default
+.
+ Fue el primer ordenador de la serie PDP y uno de los primeros ordenadores
+ de tipo minicomputadora.
+ El PDP-1 fue un ordenador de tiempo compartido, lo que significa que varios
+ usuarios podían acceder al sistema al mismo tiempo y compartir los recursos
+ del ordenador.
+ Esto fue un gran avance en comparación con los ordenadores anteriores,
+ que solían ser utilizados por un solo usuario a la vez.
+ El PDP-1 tenía una capacidad de memoria de 4K de 18 bits y una velocidad
+ de reloj de 1 MHz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pdp1.jpg
+	lyxscale 15
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Programmed Data Processor-1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+BASIC (Beginners All-Purpose Symbolic Instruction Code) es un lenguaje de
+ programación creado en el verano de 
+\emph on
+1964
+\emph default
+, con el objetivo de desarrollar un lenguaje de programación fácil de aprender
+ y usar para estudiantes no especialistas y principiantes en la programación.
+ El lenguaje se basó en el lenguaje Fortran, pero con un enfoque en la simplicid
+ad y la facilidad de uso.
+\end_layout
+
+\begin_layout Standard
+El sistema 
+\begin_inset CommandInset href
+LatexCommand href
+name "NLS"
+target "https://www.youtube.com/watch?v=JQ8ZiT1sn88"
+literal "false"
+
+\end_inset
+
+ (oN-Line System) fue un sistema de información desarrollado por Douglas
+ Engelbart y su equipo en 
+\emph on
+1968
+\emph default
+.
+ Fue una de las primeras demostraciones de una interfaz gráfica de usuario
+ (GUI), con un puntero del ratón sistema de hipertexto y ventanas.
+ También introdujo varias características que se consideran fundamentales
+ en la computación moderna, como el procesamiento de textos, el correo electróni
+co, la videoconferencia y la colaboración en tiempo real.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename nls.png
+	lyxscale 40
+	scale 36
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+NLS (oN-Line System)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+MULTICS (Multiplexed Information and Computing Service) fue un sistema operativo
+ desarrollado en 
+\emph on
+1969
+\emph default
+ por un equipo liderado por el MIT y Bell Labs.
+ El objetivo de MULTICS era crear un sistema operativo de tiempo compartido
+ que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer
+ servicios avanzados, como el procesamiento de archivos, el manejo de bases
+ de datos y el procesamiento de informes.
+ A pesar de sus avances, MULTICS tuvo problemas financieros y técnicos que
+ retrasaron su desarrollo y limitaron su adopción.
+ Aun así, muchas de las características y conceptos de MULTICS se convirtieron
+ en estándar en la industria de los sistemas operativos modernos, como el
+ manejo de permisos, el sistema de archivos y la seguridad.
+\end_layout
+
+\begin_layout Standard
+Tras haber participado en el desarrollo de MULTICS, Ken Thompson y Dennis
+ Ritchie iniciaron en 
+\emph on
+1970
+\emph default
+ la creación de un nuevo sistema operativo para la computadora DEC PDP-7.
+ El proyecto fue bautizado originalmente como UNICS e inicialmente no tuvo
+ apoyo económico por parte de los laboratorios Bell.
+ Al año siguiente, Dennis Ritchie desarrolla el lenguaje de programación
+ C, un sistema diseñado para ser eficiente en términos de tiempo de ejecución
+ y uso de recursos, y fácil de portar a diferentes plataformas de hardware.
+\end_layout
+
+\begin_layout Standard
+Los sistemas operativos existentes hasta el momento eran propietarios y
+ solo funcionaban en una plataforma específica, es por esto que en 
+\emph on
+1972
+\emph default
+, Ken Thompson y Dennis Ritchie decidieron reescribir el código de UNICS
+ pero esta vez en lenguaje C, dando así origen a UNIX.
+ Este cambio significaba que UNIX podría ser fácilmente modificado para
+ funcionar en otras computadoras (de esta manera, se volvía portable) y
+ así otras variaciones podían ser desarrolladas por otros programadores.
+ Ahora, el código era más conciso y compacto, lo que se tradujo en un aumento
+ en la velocidad de desarrollo de UNIX.
+\end_layout
+
+\begin_layout Standard
+En 
+\emph on
+1973
+\emph default
+ en el Xerox PARC (Palo Alto Research Center), se desarrolló el 
+\begin_inset CommandInset href
+LatexCommand href
+name "Xerox Alto"
+target "https://www.youtube.com/watch?v=9H79_kKzmFs"
+literal "false"
+
+\end_inset
+
+: un ordenador de tipo personal, con una interfaz gráfica de usuario, soporte
+ para ventanas y un mouse.
+ Además, Alto también tenía un sistema de gestión de archivos, un procesador
+ de texto, una herramienta de dibujo y soporte para redes de computadoras.
+ Aunque el Xerox Alto nunca fue comercializado, muchas de sus características
+ y conceptos se convirtieron en estándar en la industria de los ordenadores
+ personales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename alto.png
+	lyxscale 10
+	scale 9
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Xerox Alto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Primeras computadoras personales
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "Altair 8800"
+target "https://www.youtube.com/watch?v=qv5b1Xowxdk"
+literal "false"
+
+\end_inset
+
+ fue una de las primeras computadoras personales en ser comercializadas,
+ lanzada en 
+\emph on
+1974
+\emph default
+.
+ Fue un gran éxito de ventas y sentó las bases para el desarrollo de las
+ computadoras personales que conocemos hoy en día.
+ La Altair 8800 se vendía en kit y los usuarios debían armarla ellos mismos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename altair8800.png
+	lyxscale 20
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Altair 8800
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En los primeros años del sistema Unix los Laboratorios Bell autorizaron
+ a laas universidades, a utilizar el código fuente y adaptarlo a sus necesidades.
+ A partir de dicha iniciativa, en 
+\emph on
+1977
+\emph default
+ nace en la universidad de Berkley el sistema operativo BSD (Berkeley Software
+ Distribution).
+ Sus principales contribuciones fueron la implementación de mejoras significativ
+as en el sistema de archivos y en la red.
+\end_layout
+
+\begin_layout Standard
+La IBM PC fue una de las computadoras más importantes en la historia de
+ la informática, ya que sentó las bases para el estándar de computadora
+ personal que se utiliza en la actualidad.
+ Fue introducida por IBM en 
+\emph on
+1981
+\emph default
+ y se convirtió rápidamente en el estándar de la industria para las computadoras
+ personales.
+ Una de las características más importantes de la IBM PC fue su arquitectura
+ abierta.
+ A diferencia de otras computadoras personales de la época, la IBM PC tenía
+ un diseño abierto que permitía a los usuarios y terceros desarrollar sus
+ propios productos y programas para ella.
+ Esto ayudó a impulsar un gran ecosistema de desarrolladores y fabricantes
+ de periféricos que crearon una gran variedad de software y hardware para
+ la computadora.
+\end_layout
+
+\begin_layout Standard
+System V es una versión del sistema operativo UNIX desarrollado por Bell
+ Labs en 
+\emph on
+1983
+\emph default
+.
+ Fue una de las primeras versiones de UNIX en ser comercializada y distribuida
+ ampliamente, y tuvo un gran impacto en el desarrollo de los sistemas operativos
+ tipo UNIX.
+ Aunque UNIX se convirtió en un estándar en la industria de la computación,
+ no se consideraba 
+\begin_inset Quotes fld
+\end_inset
+
+libre
+\begin_inset Quotes frd
+\end_inset
+
+ debido a las restricciones en su uso y distribución impuestas por AT&T.
+\end_layout
+
+\begin_layout Standard
+Ese mismo año fue fundado el movimiento GNU por Richard Stallman, un programador
+ y defensor de la libertad de software.
+ El objetivo principal del movimiento GNU es desarrollar un sistema operativo
+ completo y gratuito basado en el estándar UNIX, de manera que cualquier
+ persona pueda usar, estudiar, compartir y modificar el software sin restriccion
+es.
+\end_layout
+
+\begin_layout Standard
+X Windows es un sistema de ventanas para sistemas tipo UNIX.
+ Fue desarrollado en el Massachusetts Institute of Technology (MIT) en 
+\emph on
+1984
+\emph default
+.
+ El objetivo principal de X Windows era proporcionar un sistema de ventanas
+ que pudiera ser utilizado en una variedad de sistemas, permitiendo una
+ interfaz gráfica de usuario (GUI).
+\end_layout
+
+\begin_layout Standard
+Minix fue un sistema operativo educativo desarrollado en el año 
+\emph on
+1987
+\emph default
+ por Andrew S.
+ Tanenbaum, para enseñar principios de diseño y funcionamiento de sistemas
+ operativos a estudiantes universitarios.
+ Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
+ Minix tenía un diseño similar al de UNIX, pero con un conjunto reducido
+ de herramientas y utilidades.
+\end_layout
+
+\begin_layout Standard
+Mientras estudiaba informática en la Universidad de Helsinki en 
+\emph on
+1991
+\emph default
+, Linus Torvalds desarrolla un núcleo de sistema operativo como proyecto
+ personal, basandose en el diseño de Minix.
+ Hasta el momento el proyecto GNU había desarrollado una amplia gama de
+ software, incluyendo un compilador, un intérprete de línea de comandos
+ y diversas herramientas de programación.
+ Sin embargo, faltaba un kernel, que es la parte del sistema operativo que
+ administra los recursos del sistema, como la memoria y los procesos.
+\end_layout
+
+\begin_layout Standard
+En resumen, Linux surgió como un proyecto personal de Linus Torvalds, pero
+ con el tiempo se convirtió en una parte fundamental del proyecto GNU y
+ en uno de los sistemas operativos de código abierto más utilizados y respetados
+ de la industria tecnológica.
+\end_layout
+
+\begin_layout Chapter
+Arquitectura de la computadora
+\end_layout
+
+\begin_layout Section
+Gabinete
+\end_layout
+
+\begin_layout Section
+Placa madre
+\end_layout
+
+\begin_layout Section
+Fuente de alimentación
+\end_layout
+
+\begin_layout Section
+Microprocesador
+\end_layout
+
+\begin_layout Section
+Memoria RAM
+\end_layout
+
+\begin_layout Section
+Memoria secundaria
+\end_layout
+
+\begin_layout Section
+Placa de video
+\end_layout
+
+\end_body
+\end_document
