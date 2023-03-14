@@ -1,0 +1,5 @@
+.left { float: left; }
+.right { float: right; }
+.bottom { clear: both; font-size: 0.5em !important; text-align: justify; }
+.slides { width: 1024px !important; }
+td { font-size: 0.5em !important; }
