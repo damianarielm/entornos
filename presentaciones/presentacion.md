@@ -14,7 +14,7 @@ la Tecnicatura Universitaria en Inteligencia Artificial.
 Está planificada para una duracion aproximada de 25 clases. Para la comisión 2
 los horarios son:
 
-* Martes de 17:45 a 20:45hs (Laboratorio del segundo piso).
+* Martes de 17:45 a 20:45hs (Aula 24 o Laboratorio del segundo piso).
 
 * Miercoles de 20 a 22hs (https://meet.google.com/jgw-ooyr-yya).
 
@@ -34,7 +34,7 @@ Los docentes a cargo de la comisión 2 son:
 
 . . .
 
-* Andrea Carolina Leon Cavallo (aleoncavallor@gmail.com).
+* Andrea Carolina Leon Cavallo (aleoncavallo@gmail.com).
 
 ## Objetivos
 
