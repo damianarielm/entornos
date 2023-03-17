@@ -100,7 +100,7 @@ Entornos de Programación
 \end_layout
 
 \begin_layout Author
-Damián Ariel, Andrea Carolina
+Tecnicatura Universitaria en Inteligencia Artificial
 \begin_inset VSpace vfill*
 \end_inset
 
@@ -112,7 +112,7 @@ Damián Ariel, Andrea Carolina
 \end_layout
 
 \begin_layout Date
-14 de marzo de 2023.
+17 de marzo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -130,6 +130,10 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\end_layout
+
+\begin_layout Part
+Fundamentos
 \end_layout
 
 \begin_layout Chapter
@@ -185,7 +189,7 @@ status open
 \begin_inset Graphics
 	filename pascalina.png
 	lyxscale 17
-	scale 15
+	scale 20
 
 \end_inset
 
@@ -255,7 +259,7 @@ status open
 \begin_inset Graphics
 	filename diferencial.jpg
 	lyxscale 15
-	scale 6
+	scale 9
 
 \end_inset
 
@@ -296,8 +300,20 @@ literal "false"
  más rápida y eficiente que el telégrafo de Morse.
  El teletipo utilizaba un sistema de impresión automática para recibir y
  transmitir texto, lo que permitió una comunicación más precisa y legible.
- Las terminales de teletipo (TTY) también se utilizaron como terminales
- de computadoras en las primeras décadas de la historia de las computadoras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las terminales de teletipo (TTY) también se utilizaron como terminales de
+ computadoras en las primeras décadas de la historia de las computadoras.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -309,7 +325,7 @@ status open
 \begin_inset Graphics
 	filename teletipo.png
 	lyxscale 20
-	scale 13
+	scale 12
 
 \end_inset
 
@@ -379,7 +395,7 @@ status open
 \begin_inset Graphics
 	filename z3.png
 	lyxscale 15
-	scale 26
+	scale 17
 
 \end_inset
 
@@ -399,13 +415,6 @@ Réplica del Zuse Z3 exhibida en Múnich
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -493,6 +502,24 @@ literal "false"
  y para resolver problemas científicos y técnicos en la industria.
  Fue inicialmente diseñada para calcular tablas de tiro de artillería destinadas
  al Laboratorio de Investigación Balística del Ejército de los Estados Unidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque la tecnología de válvulas era superior a la de relés, no fue hasta
+ la invención del transistor en 
+\emph on
+1947
+\emph default
+ que las computadoras ganaron su verdadero poder de computo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -596,7 +623,7 @@ status open
 \begin_inset Graphics
 	filename pdp1.jpg
 	lyxscale 15
-	scale 16
+	scale 23
 
 \end_inset
 
@@ -665,7 +692,7 @@ status open
 \begin_inset Graphics
 	filename nls.png
 	lyxscale 40
-	scale 36
+	scale 52
 
 \end_inset
 
@@ -731,13 +758,16 @@ Los sistemas operativos existentes hasta el momento eran propietarios y
 , Ken Thompson y Dennis Ritchie decidieron reescribir el código de UNICS
  pero esta vez en lenguaje C, dando así origen a UNIX.
  Este cambio significaba que UNIX podría ser fácilmente modificado para
- funcionar en otras computadoras (de esta manera, se volvía portable) y
- así otras variaciones podían ser desarrolladas por otros programadores.
+ funcionar en otras computadoras y así otras variaciones podían ser desarrollada
+s por otros programadores.
  Ahora, el código era más conciso y compacto, lo que se tradujo en un aumento
  en la velocidad de desarrollo de UNIX.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
 En 
 \emph on
 1973
@@ -758,9 +788,6 @@ literal "false"
  Aunque el Xerox Alto nunca fue comercializado, muchas de sus características
  y conceptos se convirtieron en estándar en la industria de los ordenadores
  personales.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -769,7 +796,7 @@ status open
 \begin_inset Graphics
 	filename alto.png
 	lyxscale 10
-	scale 9
+	scale 16
 
 \end_inset
 
@@ -789,13 +816,6 @@ Xerox Alto
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -836,7 +856,7 @@ status open
 \begin_inset Graphics
 	filename altair8800.png
 	lyxscale 20
-	scale 16
+	scale 20
 
 \end_inset
 
@@ -895,6 +915,40 @@ La IBM PC fue una de las computadoras más importantes en la historia de
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pc.jpg
+	lyxscale 20
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+IBM PC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 System V es una versión del sistema operativo UNIX desarrollado por Bell
  Labs en 
 \emph on
@@ -948,6 +1002,10 @@ Minix fue un sistema operativo educativo desarrollado en el año
  Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
  Minix tenía un diseño similar al de UNIX, pero con un conjunto reducido
  de herramientas y utilidades.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1256,6 +1314,23 @@ volátil
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque el microprocesador también tiene una memoria volátil llamada 
+\emph on
+registros
+\emph default
+, estos son mucho mas caros y en consecuencia pequeños.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -1332,7 +1407,7 @@ status open
 \begin_inset Graphics
 	filename disk.jpg
 	lyxscale 20
-	scale 15
+	scale 10
 	BoundingBox 0bp 100bp 1500bp 1400bp
 	clip
 
@@ -1360,6 +1435,9 @@ Disco rígido Seagate Barracuda 1TB
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
 Una SSD (Solid State Drive) es un dispositivo de almacenamiento de datos
  que utiliza memoria flash para almacenar permanentemente archivos y programas
  en la computadora.
@@ -1387,7 +1465,7 @@ status open
 \begin_inset Graphics
 	filename ssd.jpg
 	lyxscale 20
-	scale 13
+	scale 10
 
 \end_inset
 
@@ -1468,6 +1546,732 @@ Tarjeta Gráfica NVIDIA RTX 2080 Ti
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+Sistemas Operativos
+\end_layout
+
+\begin_layout Section
+Proceso de arranque
+\end_layout
+
+\begin_layout Standard
+Durante el arranque de una PC, ocurren varias cosas importantes que permiten
+ que el sistema operativo se inicie correctamente y la computadora esté
+ lista para su uso.
+ Al presionarse el botón de arranque se activa la fuente de alimentación
+ de la computadora, la suministra la energía necesaria para que la placa
+ madre comience a funcionar.
+\end_layout
+
+\begin_layout Standard
+A partir de aquí, comienza un proceso que consiste en varias etapas:
+\end_layout
+
+\begin_layout Description
+POST
+\begin_inset space ~
+\end_inset
+
+(Power
+\begin_inset space ~
+\end_inset
+
+On
+\begin_inset space ~
+\end_inset
+
+Self
+\begin_inset space ~
+\end_inset
+
+Test) La placa madre realiza un autodiagnóstico para verificar que todos
+ los componentes de hardware de la computadora estén funcionando correctamente.
+ Si detecta algún problema, emitirá un mensaje de error y detendrá el proceso
+ de arranque.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename post.jpg
+	lyxscale 20
+	scale 12
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Etapa de Autodiagnóstico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Boot
+\begin_inset space ~
+\end_inset
+
+Loader A continuación la placa madre debe cargar un programa llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+cargador de arranque
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ El cargador de arranque es un programa cuyo objetivo principal es cargar
+ el núcleo del sistema operativo.
+ El cargador de arranque mas utilizado en linux es 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+GRUB
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+; y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+bootmgr
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el proporcionado por los sistemas modernos de Windows.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename grub.png
+	lyxscale 40
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+GRUB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bootmgr.png
+	lyxscale 50
+	scale 58
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faWindows 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+bootmgr
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Núcleo A continuación, el núcleo del sistema operativo toma el control de
+ la computadora.
+ Durante sus tareas iniciales se encargará de identificar el hardware disponible
+, cargar los controladores necesarios y montar el sistema de archivos del
+ sistema.
+ Finalmente dará comienzo al primer programa de usuario, a partir del cual
+ se ejecutaran todos los demás programas.
+\end_layout
+
+\begin_layout Description
+Init En los sistemas Linux, el programa inicial del sistema operativo se
+ llama 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+init
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Init se encargará de cargar los scripts de arranque del sistema, así como
+ también ejecutar los servicios esenciales para el funcionamiento del mismo,
+ y proveer al usuario de un entorno gráfico o de linea de comandos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+A las interfaces de usuario gráficas las llamamos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+GUI
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ por sus siglas en inglés 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Graphical User Interface
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+; en cambio a las interfaces de texto las llamamos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+CLI
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ por las siglas 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Command Line Interface
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Descripción
+\end_layout
+
+\begin_layout Standard
+Un sistema operativo es un conjunto de programas y herramientas que controlan
+ y coordinan las actividades de una computadora o dispositivo electrónico,
+ y permiten a los usuarios interactuar con el hardware y el software de
+ manera sencilla y eficiente.
+ Está compuesto por un núcleo (o 
+\emph on
+kernel
+\emph default
+) que tiene control completo sobre el hardware en el que corre, y una serie
+ de programas utilitarios que se comunican con el.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename kernel.png
+	lyxscale 30
+	scale 14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Comunicación entre aplicaciones, núcleo y hardware
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las funciones principales de un sistema operativo incluyen:
+\end_layout
+
+\begin_layout Itemize
+Gestionar el hardware: El sistema operativo es responsable de gestionar
+ el hardware de la computadora, como el procesador, la memoria, el disco
+ duro, la tarjeta gráfica, entre otros.
+ Controla cómo se utilizan estos recursos y asigna la cantidad adecuada
+ de memoria y procesador a cada aplicación.
+\end_layout
+
+\begin_layout Itemize
+Proporcionar una interfaz de usuario: El sistema operativo proporciona una
+ interfaz de usuario que permite a los usuarios interactuar con el ordenador
+ y ejecutar aplicaciones y programas.
+\end_layout
+
+\begin_layout Itemize
+Gestionar los archivos y directorios: El sistema operativo se encarga de
+ gestionar los archivos y directorios del ordenador, lo que permite a los
+ usuarios crear, modificar, copiar y eliminar archivos y carpetas.
+\end_layout
+
+\begin_layout Standard
+Entre las principales características de un sistema operativo se encuentran:
+\end_layout
+
+\begin_layout Itemize
+Multitarea: Un sistema operativo permite que varias aplicaciones se ejecuten
+ al mismo tiempo y asigna los recursos necesarios para que funcionen correctamen
+te.
+\end_layout
+
+\begin_layout Itemize
+Multiusuario: Un sistema operativo puede ser utilizado por varios usuarios
+ al mismo tiempo y garantiza que cada usuario tenga sus propios archivos
+ y configuraciones.
+\end_layout
+
+\begin_layout Itemize
+Portabilidad: Los sistemas operativos pueden ser instalados en diferentes
+ tipos de hardware, lo que los hace altamente portables.
+\end_layout
+
+\begin_layout Section
+Núcleo
+\end_layout
+
+\begin_layout Standard
+El 
+\emph on
+kernel
+\emph default
+ (o núcleo) de un sistema operativo es la parte central y más fundamental
+ del mismo.
+ Es responsable de controlar el acceso a los recursos del hardware, gestionar
+ los procesos, la memoria y la entrada/salida, y proporcionar una interfaz
+ para que las aplicaciones interactúen con el hardware del sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+uname -r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[Environment]::OSVersion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El núcleo se ejecuta en modo privilegiado, lo que significa que tiene acceso
+ directo al hardware y puede ejecutar instrucciones que otros programas
+ no pueden.
+\end_layout
+
+\begin_layout Standard
+Para casi cualquier tarea las aplicaciones de usuario necesitan pedirle
+ permiso al kernel, a través de una instrucción denominada 
+\begin_inset Quotes fld
+\end_inset
+
+l
+\emph on
+lamada a sistema
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Cuando se produce una llamada a sistema el CPU deja de ejecutar el programa,
+ y comienza a ejecutar la funcionalidad del núcleo requerida, luego de la
+ cual se continua con la ejecución del programa.
+\end_layout
+
+\begin_layout Section
+Terminal
+\end_layout
+
+\begin_layout Subsection
+Terminal
+\end_layout
+
+\begin_layout Subsection
+Consola
+\end_layout
+
+\begin_layout Subsection
+Consola
+\begin_inset space ~
+\end_inset
+
+virtual
+\end_layout
+
+\begin_layout Subsection
+Emulador
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+terminal
+\end_layout
+
+\begin_layout Subsection
+Interprete
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+linea
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+comandos
+\end_layout
+
+\begin_layout Section
+Distribuciones
+\end_layout
+
+\begin_layout Standard
+Las distribuciones de Linux son sistemas operativos basados en el kernel
+ de Linux, que están compuestos por una combinación de software libre y
+ de código abierto, como aplicaciones, controladores, herramientas de gestión
+ de paquetes, etc.
+\end_layout
+
+\begin_layout Standard
+Existen muchas distribuciones de Linux diferentes, como Debian, Ubuntu,
+ Fedora, CentOS, Arch Linux, entre otras.
+ Cada distribución tiene sus propias características, objetivos y filosofía,
+ y están diseñadas para satisfacer las necesidades de diferentes usuarios
+ y aplicaciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename lubuntu.jpg
+	lyxscale 30
+	scale 21
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Lubuntu 22.04
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename xubuntu.png
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Xubuntu 22.10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las distribuciones de Linux existen porque el software de código abierto
+ permite a los usuarios y desarrolladores acceder, modificar y distribuir
+ el código fuente del software.
+ Esto ha permitido que muchas personas y comunidades puedan desarrollar
+ y distribuir sus propias versiones personalizadas de Linux.
+ Además, al ser un sistema operativo altamente personalizable y adaptable,
+ cada distribución puede estar diseñada para satisfacer las necesidades
+ específicas de diferentes usuarios, como por ejemplo para usuarios de servidore
+s, programadores, usuarios de escritorio, entre otros.
+\end_layout
+
+\begin_layout Section
+Proceso de apagado
+\end_layout
+
+\begin_layout Subsection
+Apagado
+\end_layout
+
+\begin_layout Subsection
+Reinicio
+\end_layout
+
+\begin_layout Subsection
+Suspencion
+\end_layout
+
+\begin_layout Subsection
+Hibernacion
+\end_layout
+
+\begin_layout Chapter
+Conceptos de programación
+\end_layout
+
+\begin_layout Chapter
+Sistema de archivos
+\end_layout
+
+\begin_layout Part
+Manejo de terminal
+\end_layout
+
+\begin_layout Section
+Comandos básicos
+\end_layout
+
+\begin_layout Section
+Shell scripting
+\end_layout
+
+\begin_layout Part
+Conceptos adicionales
+\end_layout
+
+\begin_layout Section
+Contenedores
+\end_layout
+
+\begin_layout Section
+Control de versiones
 \end_layout
 
 \end_body

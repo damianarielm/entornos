@@ -24,6 +24,7 @@ PageStyle fancy
 AddToPreamble
     \usepackage[sc]{mathpazo}        % Main font: Palatino with small caps
     \usepackage[dvipsnames]{xcolor}  % Colors
+    \usepackage{fontawesome}         % Icons
 
     % Colored boxes
     \usepackage[skins]{tcolorbox}
@@ -436,17 +437,37 @@ InsetLayout Flex:Observacion
       LatexName     tcolorbox
       BgColor       Lime
       Decoration    Classic
-      LatexParam    "[title=Observacion, colback=YellowGreen, colbacktitle=Green, drop shadow, enhanced, after skip=20pt]"
+      LatexParam    "[title=\faExclamation \; Observacion, colback=YellowGreen, colbacktitle=Green, drop shadow, enhanced, after skip=20pt]"
 End
 
-InsetLayout Flex:Notacion
+InsetLayout Flex:Bash
       LyxType       Custom
-      LabelString   "Notacion"
+      LabelString   "Bash"
+      LatexType     Environment
+      LatexName     tcolorbox
+      BgColor       DarkGray
+      Decoration    Classic
+      LatexParam    "[title=\faLinux \; Bash, colback=Black, colbacktitle=Black, coltitle=Green, coltext=Green, drop shadow, enhanced]"
+End
+
+InsetLayout Flex:PowerShell
+      LyxType       Custom
+      LabelString   "PowerShell"
+      LatexType     Environment
+      LatexName     tcolorbox
+      BgColor       Cyan
+      Decoration    Classic
+      LatexParam    "[title=\faWindows \; PowerShell, colback=Blue, colbacktitle=Blue, coltext=White, drop shadow, enhanced]"
+End
+
+InsetLayout Flex:Codigo
+      LyxType       Custom
+      LabelString   "Código"
       LatexType     Environment
       LatexName     tcolorbox
       BgColor       Orange
       Decoration    Classic
-      LatexParam    "[title=Notacion, colbacktitle=Dandelion, colback=Goldenrod, drop shadow, enhanced, coltitle=Black]"
+      LatexParam    "[title=\faCode \; Código, colbacktitle=Dandelion, colback=Goldenrod, drop shadow, oversize, width=1.05\textwidth, left=2em, enhanced, coltitle=Black]"
 End
 
 InsetLayout Flex:Figura
