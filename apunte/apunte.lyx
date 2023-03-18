@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-17 de marzo de 2023.
+19 de marzo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -145,29 +145,50 @@ Orígenes de la computadora
 \end_layout
 
 \begin_layout Standard
-Blaise Pascal había desarrollado en 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pascal.jpg
+	display false
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Blaise_Pascal"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1642
+Blaise Pascal
 \emph default
- una de las primeras calculadoras mecánicas de la historia, conocida como
- la 
+ había desarrollado en 1642 una de las primeras calculadoras mecánicas de
+ la historia, conocida como la 
 \begin_inset Quotes fld
 \end_inset
 
 
-\emph on
-
 \begin_inset CommandInset href
 LatexCommand href
-name "pascalina"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=3h71HAJWnVU"
-literal "false"
+literal "true"
 
 \end_inset
 
-
-\emph default
-
+ Pascalina
 \begin_inset Quotes frd
 \end_inset
 
@@ -222,21 +243,44 @@ La
 
 \begin_inset CommandInset href
 LatexCommand href
-name "máquina analítica"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=BlbQsKpq3Ak"
-literal "false"
+literal "true"
 
 \end_inset
 
-
+ máquina analítica
 \begin_inset Quotes frd
 \end_inset
 
- fue un proyecto desarrollado por Charles Babbage en 
-\emph on
-1837
-\emph default
-, considerado como el primer prototipo de una computadora moderna.
+ fue un proyecto desarrollado por 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename babbage.jpg
+	display false
+	scale 14
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Charles_Babbage"
+literal "true"
+
+\end_inset
+
+ Charles Babbage en 1837, considerado como el primer prototipo de una computador
+a moderna.
  Babbage, matemático, filósofo e inventor inglés, diseñó una máquina capaz
  de realizar cálculos automáticamente mediante el uso de engranajes y ruedas
  dentadas, similar a la Pascalina de Blaise Pascal pero con un alcance mucho
@@ -288,16 +332,25 @@ Máquina diferencial
 El 
 \begin_inset CommandInset href
 LatexCommand href
-name "teletipo"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=2XLZ4Z8LpEE"
-literal "false"
+literal "true"
 
 \end_inset
 
- fue una invención que permitió la transmisión automática de texto a través
- de una red telegráfica.
+ teletipo fue una invención que permitió la transmisión automática de texto
+ a través de una red telegráfica.
  Fue inventado a finales del sigo XIX, y su desarrollo permitió una comunicación
- más rápida y eficiente que el telégrafo de Morse.
+ más rápida y eficiente que el telégrafo de 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Samuel_Morse"
+literal "true"
+
+\end_inset
+
+ Samuel Morse.
  El teletipo utilizaba un sistema de impresión automática para recibir y
  transmitir texto, lo que permitió una comunicación más precisa y legible.
 \end_layout
@@ -355,30 +408,52 @@ Avances de la guerra
 \end_layout
 
 \begin_layout Standard
-El comienzo de la Segunda Guerra Mundial en 
-\emph on
-1939
-\emph default
- motivó un gran avance en la computación debido a la necesidad de procesar
- grandes cantidades de datos y realizar cálculos complejos para apoyar los
- esfuerzos de la guerra.
+El comienzo de la Segunda Guerra Mundial en 1939 motivó un gran avance en
+ la computación debido a la necesidad de procesar grandes cantidades de
+ datos y realizar cálculos complejos para apoyar los esfuerzos de la guerra.
 \end_layout
 
 \begin_layout Standard
 El ordenador 
 \begin_inset CommandInset href
 LatexCommand href
-name "Z3"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=aUXnhVrT4CI"
-literal "false"
+literal "true"
 
 \end_inset
 
- es una máquina de computación construida en 
+ Z3
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename zuse.jpg
+	display false
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+es una máquina de computación construida en 1941 por 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Konrad_Zuse"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1941
+Konrad Zuse
 \emph default
- por Konrad Zuse, un ingeniero y matemático alemán.
+, un ingeniero y matemático alemán.
  Era una máquina electromecánica basada en relés, que utilizaba un sistema
  binario para representar los datos y los cálculos.
  El Z3 contaba con una memoria programable, lo que permitía al usuario programar
@@ -424,19 +499,46 @@ Réplica del Zuse Z3 exhibida en Múnich
 La 
 \begin_inset CommandInset href
 LatexCommand href
-name "Harvard Mark I"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=bN7AdQmd8So"
-literal "false"
+literal "true"
 
 \end_inset
 
- es una computadora electromecánica construida en 
+ Harvard Mark I
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename aiken.jpg
+	display false
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ es una computadora electromecánica construida en 1944 por IBM y patrocinada
+ por el gobierno de los Estados Unidos.
+ Fue diseñada por el matemático 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Howard_Aiken"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1944
+Howard Aiken
 \emph default
- por IBM y patrocinada por el gobierno de los Estados Unidos.
- Fue diseñada por el matemático Howard Aiken y se encuentra en el Museo
- de la historia de la computación en la Universidad de Harvard.
+ y se encuentra en el Museo de la historia de la computación en la Universidad
+ de Harvard.
  La Harvard Mark I fue una máquina de gran tamaño, medía 8 metros de largo,
  2 metros de alto y 2 metros de ancho, y utilizaba relés electromecánicos
  para llevar a cabo cálculos.
@@ -482,18 +584,15 @@ Harvard Mark I
 La 
 \begin_inset CommandInset href
 LatexCommand href
-name "ENIAC"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=32o4qcYbWMA"
-literal "false"
+literal "true"
 
 \end_inset
 
- (Electronic Numerical Integrator And Computer) fue una computadora electrónica
- programable construida por el gobierno de los Estados Unidos en 
-\emph on
-1946
-\emph default
-.
+ ENIAC (Electronic Numerical Integrator And Computer) fue una computadora
+ electrónica programable construida por el gobierno de los Estados Unidos
+ en 1946.
  Era una máquina enorme, medía 30 metros de largo, 2 metros de alto y 3
  metros de ancho, y pesaba 27 toneladas.
  Utilizaba tecnología de válvulas electrónicas y era capaz de realizar cálculos
@@ -510,11 +609,8 @@ status open
 
 \begin_layout Plain Layout
 Aunque la tecnología de válvulas era superior a la de relés, no fue hasta
- la invención del transistor en 
-\emph on
-1947
-\emph default
- que las computadoras ganaron su verdadero poder de computo.
+ la invención del transistor en 1947 que las computadoras ganaron su verdadero
+ poder de computo.
 \end_layout
 
 \end_inset
@@ -564,8 +660,6 @@ La informática moderna
 En la década de 1950, las computadoras eran enormes máquinas electromecánicas
  y electrónicas que ocupaban grandes espacios y requerían un equipo especializad
 o para operarlas.
- Algunas de las computadoras más famosas de esa época incluyen el UNIVAC
- I y el IBM 701.
  Estas máquinas eran principalmente utilizadas para tareas de cálculo y
  procesamiento de datos, como la contabilidad y la investigación científica,
  y eran utilizadas principalmente por grandes empresas, organizaciones gubername
@@ -576,13 +670,40 @@ ntales y universidades.
 \end_layout
 
 \begin_layout Standard
-FORTRAN (Formula Translation) es uno de los primeros lenguajes de programación
+FORTRAN
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename backus.jpg
+	display false
+	scale 18
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (Formula Translation) es uno de los primeros lenguajes de programación
  de computadora.
- Fue desarrollado en 
+ Fue desarrollado en 1957 por un equipo de ingenieros de IBM liderado por
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/John_Backus"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1957
+John Backus
 \emph default
- por un equipo de ingenieros de IBM liderado por John Backus.
+.
  El objetivo de FORTRAN era proporcionar un lenguaje de programación que
  permitiese a los científicos y matemáticos escribir programas de manera
  eficiente y fácilmente para ser utilizado en las computadoras de ese entonces.
@@ -591,27 +712,21 @@ FORTRAN (Formula Translation) es uno de los primeros lenguajes de programación
 \begin_layout Standard
 \begin_inset CommandInset href
 LatexCommand href
-name "PDP-1"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=1EWQYAfuMYw"
-literal "false"
+literal "true"
 
 \end_inset
 
- (Programmed Data Processor-1) es un ordenador construido por la compañía
- Digital Equipment Corporation (DEC) en 
-\emph on
-1959
-\emph default
-.
- Fue el primer ordenador de la serie PDP y uno de los primeros ordenadores
- de tipo minicomputadora.
+ PDP-1 (Programmed Data Processor-1) es un ordenador construido por la compañía
+ Digital Equipment Corporation (DEC) en 1959.
+ Fue el primer ordenador de la serie PDP y uno de los primeros de tipo minicompu
+tadora.
  El PDP-1 fue un ordenador de tiempo compartido, lo que significa que varios
  usuarios podían acceder al sistema al mismo tiempo y compartir los recursos
  del ordenador.
  Esto fue un gran avance en comparación con los ordenadores anteriores,
  que solían ser utilizados por un solo usuario a la vez.
- El PDP-1 tenía una capacidad de memoria de 4K de 18 bits y una velocidad
- de reloj de 1 MHz.
 \end_layout
 
 \begin_layout Standard
@@ -650,13 +765,10 @@ Programmed Data Processor-1
 
 \begin_layout Standard
 BASIC (Beginners All-Purpose Symbolic Instruction Code) es un lenguaje de
- programación creado en el verano de 
-\emph on
-1964
-\emph default
-, con el objetivo de desarrollar un lenguaje de programación fácil de aprender
- y usar para estudiantes no especialistas y principiantes en la programación.
- El lenguaje se basó en el lenguaje Fortran, pero con un enfoque en la simplicid
+ programación creado en el verano de 1964, con el objetivo de desarrollar
+ un lenguaje de programación fácil de aprender y usar para estudiantes no
+ especialistas y principiantes en la programación.
+ El lenguaje se basó en el lenguaje FORTRAN, pero con un enfoque en la simplicid
 ad y la facilidad de uso.
 \end_layout
 
@@ -664,18 +776,43 @@ ad y la facilidad de uso.
 El sistema 
 \begin_inset CommandInset href
 LatexCommand href
-name "NLS"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=JQ8ZiT1sn88"
-literal "false"
+literal "true"
 
 \end_inset
 
- (oN-Line System) fue un sistema de información desarrollado por Douglas
- Engelbart y su equipo en 
+ NLS
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename engelbart.jpg
+	display false
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (oN-Line System) fue un sistema de información desarrollado por 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Douglas_Engelbart"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1968
+Douglas Engelbart
 \emph default
-.
+ y su equipo en 1968.
  Fue una de las primeras demostraciones de una interfaz gráfica de usuario
  (GUI), con un puntero del ratón sistema de hipertexto y ventanas.
  También introdujo varias características que se consideran fundamentales
@@ -719,11 +856,7 @@ NLS (oN-Line System)
 
 \begin_layout Standard
 MULTICS (Multiplexed Information and Computing Service) fue un sistema operativo
- desarrollado en 
-\emph on
-1969
-\emph default
- por un equipo liderado por el MIT y Bell Labs.
+ desarrollado en 1969 por un equipo liderado por el MIT y Bell Labs.
  El objetivo de MULTICS era crear un sistema operativo de tiempo compartido
  que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer
  servicios avanzados, como el procesamiento de archivos, el manejo de bases
@@ -736,12 +869,50 @@ MULTICS (Multiplexed Information and Computing Service) fue un sistema operativo
 \end_layout
 
 \begin_layout Standard
-Tras haber participado en el desarrollo de MULTICS, Ken Thompson y Dennis
- Ritchie iniciaron en 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename thompsonritchie.jpg
+	display false
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Tras haber participado en el desarrollo de MULTICS, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Ken_Thompson"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1970
+Ken Thompson
 \emph default
- la creación de un nuevo sistema operativo para la computadora DEC PDP-7.
+ y 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Dennis_Ritchie"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Dennis Ritchie
+\emph default
+ iniciaron en 1970 la creación de un nuevo sistema operativo para la computadora
+ DEC PDP-7.
  El proyecto fue bautizado originalmente como UNICS e inicialmente no tuvo
  apoyo económico por parte de los laboratorios Bell.
  Al año siguiente, Dennis Ritchie desarrolla el lenguaje de programación
@@ -751,11 +922,8 @@ Tras haber participado en el desarrollo de MULTICS, Ken Thompson y Dennis
 
 \begin_layout Standard
 Los sistemas operativos existentes hasta el momento eran propietarios y
- solo funcionaban en una plataforma específica, es por esto que en 
-\emph on
-1972
-\emph default
-, Ken Thompson y Dennis Ritchie decidieron reescribir el código de UNICS
+ solo funcionaban en una plataforma específica, es por esto que en 1972,
+ Ken Thompson y Dennis Ritchie decidieron reescribir el código de UNICS
  pero esta vez en lenguaje C, dando así origen a UNIX.
  Este cambio significaba que UNIX podría ser fácilmente modificado para
  funcionar en otras computadoras y así otras variaciones podían ser desarrollada
@@ -768,21 +936,17 @@ s por otros programadores.
 \begin_inset Newpage pagebreak
 \end_inset
 
-En 
-\emph on
-1973
-\emph default
- en el Xerox PARC (Palo Alto Research Center), se desarrolló el 
+En 1973 en el Xerox PARC (Palo Alto Research Center), se desarrolló el 
 \begin_inset CommandInset href
 LatexCommand href
-name "Xerox Alto"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=9H79_kKzmFs"
-literal "false"
+literal "true"
 
 \end_inset
 
-: un ordenador de tipo personal, con una interfaz gráfica de usuario, soporte
- para ventanas y un mouse.
+ Xerox Alto: un ordenador de tipo personal, con una interfaz gráfica de
+ usuario, soporte para ventanas y un mouse.
  Además, Alto también tenía un sistema de gestión de archivos, un procesador
  de texto, una herramienta de dibujo y soporte para redes de computadoras.
  Aunque el Xerox Alto nunca fue comercializado, muchas de sus características
@@ -796,7 +960,7 @@ status open
 \begin_inset Graphics
 	filename alto.png
 	lyxscale 10
-	scale 16
+	scale 19
 
 \end_inset
 
@@ -829,18 +993,14 @@ Primeras computadoras personales
 La 
 \begin_inset CommandInset href
 LatexCommand href
-name "Altair 8800"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=qv5b1Xowxdk"
-literal "false"
+literal "true"
 
 \end_inset
 
- fue una de las primeras computadoras personales en ser comercializadas,
- lanzada en 
-\emph on
-1974
-\emph default
-.
+ Altair 8800 fue una de las primeras computadoras personales en ser comercializa
+das, lanzada en 1974.
  Fue un gran éxito de ventas y sentó las bases para el desarrollo de las
  computadoras personales que conocemos hoy en día.
  La Altair 8800 se vendía en kit y los usuarios debían armarla ellos mismos.
@@ -884,12 +1044,8 @@ Altair 8800
 \begin_layout Standard
 En los primeros años del sistema Unix los Laboratorios Bell autorizaron
  a laas universidades, a utilizar el código fuente y adaptarlo a sus necesidades.
- A partir de dicha iniciativa, en 
-\emph on
-1977
-\emph default
- nace en la universidad de Berkley el sistema operativo BSD (Berkeley Software
- Distribution).
+ A partir de dicha iniciativa, en 1977 nace en la universidad de Berkley
+ el sistema operativo BSD (Berkeley Software Distribution).
  Sus principales contribuciones fueron la implementación de mejoras significativ
 as en el sistema de archivos y en la red.
 \end_layout
@@ -898,12 +1054,8 @@ as en el sistema de archivos y en la red.
 La IBM PC fue una de las computadoras más importantes en la historia de
  la informática, ya que sentó las bases para el estándar de computadora
  personal que se utiliza en la actualidad.
- Fue introducida por IBM en 
-\emph on
-1981
-\emph default
- y se convirtió rápidamente en el estándar de la industria para las computadoras
- personales.
+ Fue introducida por IBM en 1981 y se convirtió rápidamente en el estándar
+ de la industria para las computadoras personales.
  Una de las características más importantes de la IBM PC fue su arquitectura
  abierta.
  A diferencia de otras computadoras personales de la época, la IBM PC tenía
@@ -950,11 +1102,7 @@ IBM PC
 
 \begin_layout Standard
 System V es una versión del sistema operativo UNIX desarrollado por Bell
- Labs en 
-\emph on
-1983
-\emph default
-.
+ Labs en 1983.
  Fue una de las primeras versiones de UNIX en ser comercializada y distribuida
  ampliamente, y tuvo un gran impacto en el desarrollo de los sistemas operativos
  tipo UNIX.
@@ -971,8 +1119,36 @@ libre
 \end_layout
 
 \begin_layout Standard
-Ese mismo año fue fundado el movimiento GNU por Richard Stallman, un programador
- y defensor de la libertad de software.
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename stallman.jpg
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Ese mismo año fue fundado el movimiento GNU por 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Richard_Stallman"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Richard Stallman
+\emph default
+, un programador y defensor de la libertad de software.
  El objetivo principal del movimiento GNU es desarrollar un sistema operativo
  completo y gratuito basado en el estándar UNIX, de manera que cualquier
  persona pueda usar, estudiar, compartir y modificar el software sin restriccion
@@ -980,41 +1156,116 @@ es.
 \end_layout
 
 \begin_layout Standard
-X Windows es un sistema de ventanas para sistemas tipo UNIX.
- Fue desarrollado en el Massachusetts Institute of Technology (MIT) en 
-\emph on
-1984
-\emph default
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El movimiento de software privativo había sido fundado con anterioridad
+ en 1976 por Bill Gates a través de la denominada 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Carta_abierta_a_los_aficionados"
+literal "true"
+
+\end_inset
+
+ carta abierta a los aficionados
+\begin_inset Quotes frd
+\end_inset
+
 .
- El objetivo principal de X Windows era proporcionar un sistema de ventanas
- que pudiera ser utilizado en una variedad de sistemas, permitiendo una
- interfaz gráfica de usuario (GUI).
 \end_layout
 
-\begin_layout Standard
-Minix fue un sistema operativo educativo desarrollado en el año 
-\emph on
-1987
-\emph default
- por Andrew S.
- Tanenbaum, para enseñar principios de diseño y funcionamiento de sistemas
- operativos a estudiantes universitarios.
- Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
- Minix tenía un diseño similar al de UNIX, pero con un conjunto reducido
- de herramientas y utilidades.
-\begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Mientras estudiaba informática en la Universidad de Helsinki en 
+X Windows es un sistema de ventanas para sistemas tipo UNIX.
+ Fue desarrollado en el Massachusetts Institute of Technology (MIT) en 1984.
+ El objetivo principal de X Windows era proporcionar un sistema de ventanas
+ que pudiera ser utilizado en una variedad de sistemas, permitiendo una
+ interfaz gráfica de usuario (GUI).
+\end_layout
+
+\begin_layout Standard
+Minix
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename tanenbaum.jpg
+	display false
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ fue un sistema operativo educativo desarrollado en el año 1987 por 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Andrew_S._Tanenbaum"
+literal "true"
+
+\end_inset
+
+ 
 \emph on
-1991
+Andrew S.
+ Tanenbaum
 \emph default
-, Linus Torvalds desarrolla un núcleo de sistema operativo como proyecto
- personal, basandose en el diseño de Minix.
+, para enseñar principios de diseño y funcionamiento de sistemas operativos
+ a estudiantes universitarios.
+ Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
+ Minix tenía un diseño similar al de UNIX, pero con un conjunto reducido
+ de herramientas y utilidades.
+\end_layout
+
+\begin_layout Standard
+Mientras
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename linus.jpg
+	display false
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ estudiaba informática en la Universidad de Helsinki en 1991, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Linus_Torvalds"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Linus Torvalds
+\emph default
+ desarrolla un núcleo de sistema operativo como proyecto personal, basándose
+ en el diseño de Minix.
  Hasta el momento el proyecto GNU había desarrollado una amplia gama de
  software, incluyendo un compilador, un intérprete de línea de comandos
  y diversas herramientas de programación.
@@ -1374,14 +1625,14 @@ Memoria secundaria
 Un 
 \begin_inset CommandInset href
 LatexCommand href
-name "disco duro"
+name "\\faYoutubePlay"
 target "https://www.youtube.com/watch?v=3owqvmMf6No"
-literal "false"
+literal "true"
 
 \end_inset
 
- es un dispositivo de almacenamiento de datos magnético que se utiliza en
- las computadoras para almacenar permanentemente archivos y programas.
+ disco duro es un dispositivo de almacenamiento de datos magnético que se
+ utiliza en las computadoras para almacenar permanentemente archivos y programas.
  A diferencia de la memoria RAM, que es una memoria volátil y pierde todos
  los datos almacenados en ella cuando la computadora se apaga, el disco
  duro mantiene los datos almacenados incluso después del apagado de la computado
@@ -1504,14 +1755,22 @@ Una placa de video, también conocida como tarjeta gráfica, es un componente
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
 Además de su uso en gráficos, en el campo de la inteligencia artificial
- son comúnmente utilizadas para entrenar y ejecutar redes neuronales profundas,
- que son un tipo de algoritmo de aprendizaje automático.
+ son comúnmente utilizadas para entrenar y ejecutar redes neuronales profundas.
  Esto se debe a que las placas de video tienen una arquitectura altamente
  paralela que les permite procesar grandes cantidades de datos de manera
  eficiente.
  Como resultado, las placas de video son ideales para el procesamiento masivo
  de datos que se requiere en la inteligencia artificial.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1560,13 +1819,13 @@ Proceso de arranque
 Durante el arranque de una PC, ocurren varias cosas importantes que permiten
  que el sistema operativo se inicie correctamente y la computadora esté
  lista para su uso.
- Al presionarse el botón de arranque se activa la fuente de alimentación
- de la computadora, la suministra la energía necesaria para que la placa
- madre comience a funcionar.
 \end_layout
 
 \begin_layout Standard
-A partir de aquí, comienza un proceso que consiste en varias etapas:
+Al presionarse el botón de arranque se activa la fuente de alimentación
+ de la computadora, la cual suministra la energía necesaria para que la
+ placa madre comience a funcionar.
+ A partir de aquí, comienza un proceso que consiste en varias etapas:
 \end_layout
 
 \begin_layout Description
@@ -1592,7 +1851,6 @@ Test) La placa madre realiza un autodiagnóstico para verificar que todos
  de arranque.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -1602,7 +1860,7 @@ status open
 \begin_inset Graphics
 	filename post.jpg
 	lyxscale 20
-	scale 12
+	scale 11
 
 \end_inset
 
@@ -1627,7 +1885,6 @@ Etapa de Autodiagnóstico
 
 \end_layout
 
-\end_deeper
 \begin_layout Description
 Boot
 \begin_inset space ~
@@ -1654,6 +1911,21 @@ cargador de arranque
 
 
 \emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\backslash
+;
+\end_layout
+
+\end_inset
+
 GRUB
 \emph default
 
@@ -1666,6 +1938,21 @@ GRUB
 
 
 \emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faWindows 
+\backslash
+;
+\end_layout
+
+\end_inset
+
 bootmgr
 \emph default
 
@@ -1675,7 +1962,6 @@ bootmgr
  es el proporcionado por los sistemas modernos de Windows.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -1776,7 +2062,6 @@ bootmgr
 
 \end_layout
 
-\end_deeper
 \begin_layout Description
 Núcleo A continuación, el núcleo del sistema operativo toma el control de
  la computadora.
@@ -1805,67 +2090,6 @@ init
  Init se encargará de cargar los scripts de arranque del sistema, así como
  también ejecutar los servicios esenciales para el funcionamiento del mismo,
  y proveer al usuario de un entorno gráfico o de linea de comandos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-A las interfaces de usuario gráficas las llamamos 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-GUI
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
- por sus siglas en inglés 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-Graphical User Interface
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
-; en cambio a las interfaces de texto las llamamos 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-CLI
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
- por las siglas 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-Command Line Interface
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1988,16 +2212,16 @@ kernel
 \end_layout
 
 \begin_layout Standard
+Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex Bash
 status open
 
 \begin_layout Plain Layout
-Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash"
+lstparams "language=bash,style={github-dark}"
 inline false
 status open
 
@@ -2021,12 +2245,8 @@ uname -r
 status open
 
 \begin_layout Plain Layout
-Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash"
+lstparams "language=bash,style={solarized-dark}"
 inline false
 status open
 
@@ -2057,9 +2277,18 @@ Para casi cualquier tarea las aplicaciones de usuario necesitan pedirle
 \begin_inset Quotes fld
 \end_inset
 
-l
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Llamada_al_sistema"
+literal "true"
+
+\end_inset
+
+
 \emph on
-lamada a sistema
+ llamada a sistema
 \emph default
 
 \begin_inset Quotes frd
@@ -2075,23 +2304,111 @@ lamada a sistema
 Terminal
 \end_layout
 
-\begin_layout Subsection
-Terminal
+\begin_layout Standard
+A menudo se utilizan términos como 
+\begin_inset Quotes fld
+\end_inset
+
+terminal
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+consola virtual
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+emulador de terminal
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+intérprete de línea de comandos
+\begin_inset Quotes frd
+\end_inset
+
+ de forma indistinta, lo que puede llevar a cierta confusión.
+ A continuación, se explican las diferencias entre estos términos:
 \end_layout
 
-\begin_layout Subsection
-Consola
+\begin_layout Description
+Terminal Se refiere a el o los dispositivos físicos que se utilizan para
+ interactuar con un ordenador mediante la entrada y salida de texto.
+ En la actualidad está compuesta principalmente por el teclado y el monitor.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Description
 Consola
 \begin_inset space ~
 \end_inset
 
-virtual
+virtual Es una aplicación implementada dentro del núcleo que provee acceso
+ al sistema simulando una terminal de teletipo.
+ En los sistemas tipo Unix se puede acceder a ellas presionando Ctrl + Alt
+ + F1, Ctrl + Alt + F2, etc.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename vconsole.png
+	lyxscale 50
+	scale 62
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Consola virtual en Ubuntu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
 Emulador
 \begin_inset space ~
 \end_inset
@@ -2100,11 +2417,272 @@ de
 \begin_inset space ~
 \end_inset
 
-terminal
+terminal Es un programa de usuario que permite interactuar con un sistema
+ operativo a través de una ventana en un entorno gráfico.
+ Los emuladores de terminal son comúnmente utilizados para acceder a sistemas
+ remotos o para ejecutar aplicaciones de línea de comandos en sistemas operativo
+s.
 \end_layout
 
-\begin_layout Subsection
-Interprete
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename qterminal.png
+	lyxscale 50
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Qterminal en Lubuntu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+Para saber que emulador de terminal se está utilizando se puede escribir
+ el comando:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo $TERM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Shell Tambiém llamado 
+\begin_inset Quotes fld
+\end_inset
+
+interprete de linea de comandos
+\begin_inset Quotes frd
+\end_inset
+
+, es un programa que permite a un usuario interactuar con el sistema operativo
+ mediante la ejecución de comandos a través de una interfaz de línea de
+ comandos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+Para saber que interprete de linea de comandos se está utilizando se puede
+ escribir el comando:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo $SHELL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Interfaz gráfica
+\end_layout
+
+\begin_layout Standard
+Una interfaz gráfica de usuario es una forma de interactuar con un programa
+ o sistema operativo mediante el uso de elementos gráficos, como ventanas,
+ iconos, botones y menús, en lugar de usar comandos de texto en una línea
+ de comandos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+A las interfaces de usuario gráficas las llamamos 
+\begin_inset Quotes fld
+\end_inset
+
+GUI
+\begin_inset Quotes frd
+\end_inset
+
+ por sus siglas en inglés 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Graphical User Interface
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+; en cambio a las interfaces de texto las llamamos 
+\begin_inset Quotes fld
+\end_inset
+
+CLI
+\begin_inset Quotes frd
+\end_inset
+
+ por las siglas 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Command Line Interface
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El entorno de escritorio, el sistema de ventanas, el servidor de pantalla
+ y el gestor de ventanas son componentes importantes de un sistema operativo
+ gráfico que trabajan juntos para proporcionar una interfaz de usuario intuitiva
+ y fácil de usar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gui.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Capas de una GUI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuación, se describen las funciones de cada uno de ellos:
+\end_layout
+
+\begin_layout Description
+Entorno
 \begin_inset space ~
 \end_inset
 
@@ -2112,7 +2690,66 @@ de
 \begin_inset space ~
 \end_inset
 
-linea
+escritorio Es un conjunto de aplicaciones, herramientas y utilidades que
+ proporcionan una interfaz de usuario gráfica para un sistema operativo.
+ El entorno de escritorio incluye menús, barras de herramientas, iconos,
+ fondos de pantalla, gestores de archivos y otras herramientas que hacen
+ que el uso del sistema operativo sea más fácil e intuitivo para el usuario.
+ Algunos ejemplos de entornos de escritorio son GNOME, KDE, XFCE y LXDE.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ubuntu.png
+	lyxscale 50
+	scale 21
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Unity en Ubuntu 22.10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Sistema
 \begin_inset space ~
 \end_inset
 
@@ -2120,7 +2757,106 @@ de
 \begin_inset space ~
 \end_inset
 
-comandos
+ventanas Es un sistema que permite la creación y manipulación de ventanas
+ de aplicaciones en la pantalla.
+ El sistema de ventanas se encarga de administrar la posición, tamaño, aparienci
+a y eventos de las ventanas en la pantalla.
+ También se encarga de la gestión de los recursos gráficos, como el uso
+ de la memoria, la gestión de la entrada y salida de datos, y el manejo
+ de la interacción entre aplicaciones.
+ Algunos ejemplos de sistemas de ventanas son X11 y Wayland.
+\end_layout
+
+\begin_layout Description
+Servidor
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+pantalla Es un programa que se ejecuta en el sistema operativo y se encarga
+ de controlar la pantalla, el teclado y el ratón del sistema.
+ El servidor de pantalla recibe la entrada de teclado y ratón y la envía
+ a las aplicaciones en ejecución en el sistema.
+ También se encarga de mostrar la salida gráfica de las aplicaciones en
+ la pantalla.
+ El servidor de pantalla más utilizado en Linux es Xorg.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Gestor
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+ventanas Es un programa que se ejecuta en el entorno de escritorio y que
+ se encarga de administrar la apariencia y el comportamiento de las ventanas
+ de las aplicaciones.
+ El gestor de ventanas proporciona una variedad de características, como
+ la decoración de ventanas, la administración de escritorios virtuales,
+ la configuración de atajos de teclado, y la gestión de la colocación de
+ ventanas en la pantalla.
+ Algunos ejemplos de gestores de ventanas son Metacity, KWin, Compiz, Openbox
+ y i3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename i3.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Gestor de ventanas i3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2143,74 +2879,6 @@ Existen muchas distribuciones de Linux diferentes, como Debian, Ubuntu,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename lubuntu.jpg
-	lyxscale 30
-	scale 21
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Lubuntu 22.04
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename xubuntu.png
-	lyxscale 30
-	scale 15
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Xubuntu 22.10
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Las distribuciones de Linux existen porque el software de código abierto
  permite a los usuarios y desarrolladores acceder, modificar y distribuir
  el código fuente del software.
@@ -2222,26 +2890,345 @@ Las distribuciones de Linux existen porque el software de código abierto
 s, programadores, usuarios de escritorio, entre otros.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename distributions.png
+	lyxscale 30
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Linea de tiempo de distribuciones de Linux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Proceso de apagado
 \end_layout
 
-\begin_layout Subsection
-Apagado
+\begin_layout Standard
+Antes de finalizar la ejecución del sistema operativo, se inicia un proceso
+ que cierra todos los programas y servicios que se están ejecutando en la
+ computadora.
+ Luego, se guardan todos los datos pendientes y se asegura que todos los
+ dispositivos de almacenamiento, como los discos duros o las unidades flash
+ USB, estén en un estado seguro antes de apagar la alimentación.
+ Finalmente, se envía una señal al hardware para que se apague por completo
+ y se desconecte la alimentación en caso de ser necesario.
+ 
 \end_layout
 
-\begin_layout Subsection
-Reinicio
+\begin_layout Standard
+Hay varias opciones disponibles para 
+\begin_inset Quotes fld
+\end_inset
+
+apagar
+\begin_inset Quotes frd
+\end_inset
+
+ una computadora, cada una con diferentes efectos.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Suspencion
+\begin_layout Description
+Apagado Cuando se selecciona la opción de 
+\begin_inset Quotes fld
+\end_inset
+
+apagar
+\begin_inset Quotes frd
+\end_inset
+
+, la computadora cierra todos los programas y procesos en ejecución y se
+ apaga completamente.
+ La próxima vez que se encienda la computadora, se iniciará el proceso de
+ arranque completo.
 \end_layout
 
-\begin_layout Subsection
-Hibernacion
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+shutdown
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+shutdown /s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Reinicio Al seleccionar la opción 
+\begin_inset Quotes fld
+\end_inset
+
+reiniciar
+\begin_inset Quotes frd
+\end_inset
+
+, la computadora cierra todos los programas y procesos en ejecución, se
+ apaga brevemente y luego se reinicia automáticamente.
+ Esta opción es útil para solucionar problemas de hardware o software y
+ para actualizar el sistema operativo.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+reboot
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+shutdown /r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Hibernación La opción de 
+\begin_inset Quotes fld
+\end_inset
+
+hibernar
+\begin_inset Quotes frd
+\end_inset
+
+ guarda todos los datos y configuraciones del sistema en el disco duro y
+ luego apaga la computadora.
+ Cuando se vuelve a encender la computadora, el sistema restaura automáticamente
+ los datos y la configuración de la sesión anterior.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+systemctl hibernate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+shutdown /h
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Suspensión La opción 
+\begin_inset Quotes fld
+\end_inset
+
+suspender
+\begin_inset Quotes frd
+\end_inset
+
+ pone la computadora en un estado de bajo consumo de energía, dejando alimentada
+ solamente la memoria RAM.
+ De esta manera los programas y procesos en ejecución se conservan y la
+ computadora puede volver a su estado anterior cuando se reanude la actividad.
+ Esta opción es útil para ahorrar energía y reanudar rápidamente el trabajo
+ en curso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+systemctl suspend
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si se llega a producir un corte en el suministro eléctrico, el estado de
+ la computadora se pierde pues la RAM será incapaz de retener su información.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Chapter
 Conceptos de programación
 \end_layout

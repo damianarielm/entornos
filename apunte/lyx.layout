@@ -432,12 +432,12 @@ End
 
 InsetLayout Flex:Observacion
       LyxType       Custom
-      LabelString   "Observacion"
+      LabelString   "Observación"
       LatexType     Environment
       LatexName     tcolorbox
       BgColor       Lime
       Decoration    Classic
-      LatexParam    "[title=\faExclamation \; Observacion, colback=YellowGreen, colbacktitle=Green, drop shadow, enhanced, after skip=20pt]"
+      LatexParam    "[title=\faExclamation \; Observación, colback=YellowGreen, colbacktitle=Green, drop shadow, enhanced, after skip=20pt]"
 End
 
 InsetLayout Flex:Bash
