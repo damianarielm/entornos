@@ -36,6 +36,10 @@ Los docentes a cargo de la comisión 2 son:
 
 * Andrea Carolina Leon Cavallo (aleoncavallo@gmail.com).
 
+. . .
+
+* Nahuel Roldan.
+
 ## Objetivos
 
 Los objetivos principales de la materia son:
