@@ -14,7 +14,7 @@ la Tecnicatura Universitaria en Inteligencia Artificial.
 Está planificada para una duracion aproximada de 25 clases. Para la comisión 2
 los horarios son:
 
-* Martes de 17:45 a 20:45hs (Aula 24 o Laboratorio del segundo piso).
+* Martes de 17:55 a 20:55hs (Aula 24 o Laboratorio del segundo piso).
 
 * Miercoles de 20 a 22hs (https://meet.google.com/jgw-ooyr-yya).
 
@@ -87,11 +87,11 @@ Para aprobar la materia el alumno deberá:
 
 . . .
 
-* Aprobar un primer parcial teórico.
+* Aprobar un primer parcial teórico (18/4).
 
 . . .
 
-* Aprobar un segundo parcial teórico/práctico.
+* Aprobar un segundo parcial teórico/práctico (6/6).
 
 . . .
 
@@ -100,7 +100,7 @@ Para aprobar la materia el alumno deberá:
 . . .
 
 En caso de no aprobar alguno de los parciales, el alumno cuenta con una
-instancia adicional de recuperación.
+instancia adicional de recuperación (13/6).
 
 ## Plan de dictado
 

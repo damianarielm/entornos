@@ -465,9 +465,9 @@ InsetLayout Flex:Codigo
       LabelString   "Código"
       LatexType     Environment
       LatexName     tcolorbox
-      BgColor       Orange
+      BgColor       White
       Decoration    Classic
-      LatexParam    "[title=\faCode \; Código, colbacktitle=Dandelion, colback=Goldenrod, drop shadow, oversize, width=1.05\textwidth, left=2em, enhanced, coltitle=Black]"
+      LatexParam    "[title=\faCode \; Código, colback=White, colbacktitle=White, coltitle=Black, drop shadow, enhanced]"
 End
 
 InsetLayout Flex:Figura
