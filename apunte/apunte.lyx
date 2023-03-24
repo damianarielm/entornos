@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-22 de marzo de 2023.
+24 de marzo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -279,8 +279,11 @@ literal "true"
 
 \end_inset
 
- Charles Babbage en 1837, considerado como el primer prototipo de una computador
-a moderna.
+ 
+\emph on
+Charles Babbage
+\emph default
+ en 1837, considerado como el primer prototipo de una computadora moderna.
  Babbage, matemático, filósofo e inventor inglés, diseñó una máquina capaz
  de realizar cálculos automáticamente mediante el uso de engranajes y ruedas
  dentadas, similar a la Pascalina de Blaise Pascal pero con un alcance mucho
@@ -350,7 +353,11 @@ literal "true"
 
 \end_inset
 
- Samuel Morse.
+ 
+\emph on
+Samuel Morse
+\emph default
+.
  El teletipo utilizaba un sistema de impresión automática para recibir y
  transmitir texto, lo que permitió una comunicación más precisa y legible.
 \end_layout
@@ -1043,7 +1050,7 @@ Altair 8800
 
 \begin_layout Standard
 En los primeros años del sistema Unix los Laboratorios Bell autorizaron
- a laas universidades, a utilizar el código fuente y adaptarlo a sus necesidades.
+ a las universidades, a utilizar el código fuente y adaptarlo a sus necesidades.
  A partir de dicha iniciativa, en 1977 nace en la universidad de Berkley
  el sistema operativo BSD (Berkeley Software Distribution).
  Sus principales contribuciones fueron la implementación de mejoras significativ
@@ -2092,6 +2099,41 @@ init
  y proveer al usuario de un entorno gráfico o de linea de comandos.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En la actualidad se desarrolló 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Systemd"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+systemd
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para reemplazar el sistema de inicio (init) heredado de los sistemas operativos
+ estilo UNIX System V y Berkeley Software Distribution (BSD).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Descripción
 \end_layout
@@ -2118,7 +2160,7 @@ status open
 \begin_inset Graphics
 	filename kernel.png
 	lyxscale 30
-	scale 14
+	scale 15
 
 \end_inset
 
@@ -2138,13 +2180,6 @@ Comunicación entre aplicaciones, núcleo y hardware
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -2695,7 +2730,43 @@ escritorio Es un conjunto de aplicaciones, herramientas y utilidades que
  El entorno de escritorio incluye menús, barras de herramientas, iconos,
  fondos de pantalla, gestores de archivos y otras herramientas que hacen
  que el uso del sistema operativo sea más fácil e intuitivo para el usuario.
- Algunos ejemplos de entornos de escritorio son GNOME, KDE, XFCE y LXDE.
+ Algunos ejemplos de entornos de escritorio son 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.gnome.org/"
+literal "true"
+
+\end_inset
+
+ GNOME, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://kde.org/es/"
+literal "true"
+
+\end_inset
+
+ KDE, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.xfce.org/"
+literal "true"
+
+\end_inset
+
+ XFCE y 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "http://www.lxde.org/"
+literal "true"
+
+\end_inset
+
+ LXDE.
 \end_layout
 
 \begin_layout Standard
@@ -2764,7 +2835,16 @@ a y eventos de las ventanas en la pantalla.
  También se encarga de la gestión de los recursos gráficos, como el uso
  de la memoria, la gestión de la entrada y salida de datos, y el manejo
  de la interacción entre aplicaciones.
- Algunos ejemplos de sistemas de ventanas son X11 y Wayland.
+ Algunos ejemplos de sistemas de ventanas son X11 y 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://wayland.freedesktop.org/"
+literal "true"
+
+\end_inset
+
+ Wayland.
 \end_layout
 
 \begin_layout Description
@@ -2782,7 +2862,16 @@ pantalla Es un programa que se ejecuta en el sistema operativo y se encarga
  a las aplicaciones en ejecución en el sistema.
  También se encarga de mostrar la salida gráfica de las aplicaciones en
  la pantalla.
- El servidor de pantalla más utilizado en Linux es Xorg.
+ El servidor de pantalla más utilizado en Linux es 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.x.org/wiki/"
+literal "true"
+
+\end_inset
+
+ Xorg.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -2805,8 +2894,34 @@ ventanas Es un programa que se ejecuta en el entorno de escritorio y que
  la decoración de ventanas, la administración de escritorios virtuales,
  la configuración de atajos de teclado, y la gestión de la colocación de
  ventanas en la pantalla.
- Algunos ejemplos de gestores de ventanas son Metacity, KWin, Compiz, Openbox
- y i3.
+ Algunos ejemplos de gestores de ventanas son 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "http://www.compiz.org/"
+literal "true"
+
+\end_inset
+
+ Compiz, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "http://openbox.org/wiki/Main_Page"
+literal "true"
+
+\end_inset
+
+ Openbox y 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://i3wm.org/"
+literal "true"
+
+\end_inset
+
+ i3.
 \end_layout
 
 \begin_layout Standard
@@ -2871,11 +2986,61 @@ Las distribuciones de Linux son sistemas operativos basados en el kernel
 \end_layout
 
 \begin_layout Standard
-Existen muchas distribuciones de Linux diferentes, como Debian, Ubuntu,
- Fedora, CentOS, Arch Linux, entre otras.
+Existen muchas distribuciones de Linux diferentes, como 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.debian.org/index.es.html"
+literal "true"
+
+\end_inset
+
+ Debian, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://ubuntu.com/"
+literal "true"
+
+\end_inset
+
+ Ubuntu, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.redhat.com/es"
+literal "true"
+
+\end_inset
+
+ Red Hat, 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://archlinux.org/"
+literal "true"
+
+\end_inset
+
+ Arch Linux, entre otras.
  Cada distribución tiene sus propias características, objetivos y filosofía,
  y están diseñadas para satisfacer las necesidades de diferentes usuarios
  y aplicaciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El concepto de distribución de Linux se hereda de los sistemas operativos
+ estilo UNIX donde las universidades comenzaron a desarrollar sus propias
+ versiones, como System V y BSD.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2964,10 +3129,6 @@ apagar
 \end_inset
 
  una computadora, cada una con diferentes efectos.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -3523,38 +3684,18 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=S,fontsize={\footnotesize}"
+lstparams "language=S,fontsize={\normalsize}"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-  401000:    48 6f                # H o
+  401000:    48 6f 6c 6c          # H o l a
 \end_layout
 
 \begin_layout Plain Layout
 
-  401002:    6c                   # l
-\end_layout
-
-\begin_layout Plain Layout
-
-  401003:    61                   # a
-\end_layout
-
-\begin_layout Plain Layout
-
-  401004:    20 6d 75             #   m u
-\end_layout
-
-\begin_layout Plain Layout
-
-  401007:    6e                   # n
-\end_layout
-
-\begin_layout Plain Layout
-
-  401008:    64 6f                # d o
+  401004:    20 6d 75 6e 64 6f    #   m u n d o
 \end_layout
 
 \begin_layout Plain Layout
@@ -3619,14 +3760,23 @@ Compiladores e interpretes
 \end_layout
 
 \begin_layout Standard
-Un intérprete y un compilador son dos tipos de programas que se utilizan
- para convertir el código fuente escrito por un programador en instrucciones
+Un 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faYoutubePlay"
+target "https://youtu.be/fQpmyan9dOs?t=180"
+literal "true"
+
+\end_inset
+
+ intérprete y un compilador son dos tipos de programas que se utilizan para
+ convertir el código fuente escrito por un programador en instrucciones
  ejecutables por una computadora.
 \end_layout
 
-\begin_layout Standard
-Un intérprete es un programa que lee el código fuente de un programa y lo
- traduce en instrucciones ejecutables en tiempo real.
+\begin_layout Description
+Interprete Un intérprete es un programa que lee el código fuente de un programa
+ y lo traduce en instrucciones ejecutables en tiempo real.
  El intérprete lee una línea de código fuente, la traduce a lenguaje de
  máquina y la ejecuta antes de pasar a la siguiente línea.
  Debido a que el intérprete realiza la traducción y la ejecución de cada
@@ -3635,9 +3785,9 @@ Un intérprete es un programa que lee el código fuente de un programa y lo
  ejecutar el código directamente sin necesidad de compilarlo previamente.
 \end_layout
 
-\begin_layout Standard
-Un compilador, por otro lado, es un programa que traduce todo el código
- fuente a lenguaje de máquina en un solo paso antes de su ejecución.
+\begin_layout Description
+Compilador Un compilador, por otro lado, es un programa que traduce todo
+ el código fuente a lenguaje de máquina en un solo paso antes de su ejecución.
  El compilador lee todo el código fuente del programa y lo traduce en un
  archivo ejecutable que puede ser utilizado por la computadora sin necesidad
  de leer el código fuente original nuevamente.
@@ -3651,6 +3801,164 @@ Un compilador, por otro lado, es un programa que traduce todo el código
 Otros conceptos
 \end_layout
 
+\begin_layout Description
+Código
+\begin_inset space ~
+\end_inset
+
+fuente El código fuente de un programa es el conjunto de instrucciones o
+ comandos escritos por un programador en un lenguaje de programación determinado
+; es el 
+\begin_inset Quotes fld
+\end_inset
+
+texto
+\begin_inset Quotes frd
+\end_inset
+
+ legible por humanos que se escribe en un archivo de código fuente y que
+ debe ser traducido o compilado en lenguaje de máquina para que la computadora
+ pueda entenderlo y ejecutar el programa.
+\end_layout
+
+\begin_layout Description
+Código
+\begin_inset space ~
+\end_inset
+
+abierto 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename opensource.png
+	display false
+	scale 3.5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+El término 
+\begin_inset Quotes fld
+\end_inset
+
+código abierto
+\begin_inset Quotes frd
+\end_inset
+
+ se refiere a un tipo de software en el cual el código fuente está disponible
+ públicamente y puede ser modificado por cualquier persona.
+ En el modelo de código abierto, los desarrolladores de software pueden
+ trabajar juntos para mejorar y expandir el software existente.
+\end_layout
+
+\begin_layout Description
+Software
+\begin_inset space ~
+\end_inset
+
+libre 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fsf.png
+	display false
+	scale 5.5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+El software libre es aquel que se distribuye con una licencia que permite
+ a los usuarios tener acceso al código fuente del programa y redistribuir
+ versiones modificadas del software libre sin tener que pagar regalías o
+ cargos adicionales.
+ En general, el software libre se distribuye con una licencia establece
+ los términos y condiciones bajo los cuales se puede usar, modificar y distribui
+r el software.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El software libre suele estar disponible gratuitamente, sin embargo no es
+ obligatorio que sea así, por lo tanto no hay que asociar software «libre»
+ a «gratuito» ya que, conservando su carácter de libre, puede ser distribuido
+ comercialmente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas
+ y características que se combinan en una única aplicación para hacer más
+ fácil y eficiente el proceso de desarrollo de software.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Típicamente incluye un editor de código que proporciona herramientas de
+ resaltado de sintaxis y autocompletado, lo que facilita la escritura de
+ código.
+ Además, un IDE suele incluir un depurador que ayuda a identificar y corregir
+ errores en el código.
+ También puede tener herramientas de compilación y construcción, que permiten
+ compilar y empaquetar el código en un archivo ejecutable o en otro formato
+ adecuado para su distribución.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename visualstudio.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Visual Studio Code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Sistema de archivos
 \end_layout
@@ -3659,11 +3967,11 @@ Sistema de archivos
 Manejo de terminal
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Comandos básicos
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Shell scripting
 \end_layout
 
@@ -3671,11 +3979,11 @@ Shell scripting
 Conceptos adicionales
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Contenedores
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Control de versiones
 \end_layout
 
