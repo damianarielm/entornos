@@ -16,7 +16,7 @@ los horarios son:
 
 * Martes de 17:55 a 20:55hs (Aula 24 o Laboratorio del segundo piso).
 
-* Miercoles de 20 a 22hs (https://meet.google.com/jgw-ooyr-yya).
+* Miercoles de 19:05 a 21:05hs (https://meet.google.com/jgw-ooyr-yya).
 
 . . .
 
