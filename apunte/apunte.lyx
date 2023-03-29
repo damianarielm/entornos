@@ -1285,6 +1285,16 @@ En resumen, Linux surgió como un proyecto personal de Linus Torvalds, pero
  con el tiempo se convirtió en una parte fundamental del proyecto GNU y
  en uno de los sistemas operativos de código abierto más utilizados y respetados
  de la industria tecnológica.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar material hasta llegar al presente.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -1654,6 +1664,16 @@ Una de las principales diferencias entre el disco duro y la memoria RAM
  En comparación, los discos duros son mucho más lentos en términos de velocidad
  de acceso, ya que el brazo de lectura/escritura necesita moverse físicamente
  para acceder a los datos en los platos.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás sea una buena idea presentar la jerarquía de la memoria aquí.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2149,6 +2169,18 @@ kernel
 \emph default
 ) que tiene control completo sobre el hardware en el que corre, y una serie
  de programas utilitarios que se comunican con el.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás convenga poner la descripción antes.
+ También estaría bueno hacer mas hincapié en la abstracción del hardware.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2540,7 +2572,7 @@ echo $TERM
 \end_layout
 
 \begin_layout Description
-Shell Tambiém llamado 
+Shell También llamado 
 \begin_inset Quotes fld
 \end_inset
 
@@ -2551,6 +2583,17 @@ interprete de linea de comandos
 , es un programa que permite a un usuario interactuar con el sistema operativo
  mediante la ejecución de comandos a través de una interfaz de línea de
  comandos.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que mencionar cual se va a usar en la materia.
+ Se podría agregar captura de otros interpretes de linea de comandos.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3278,6 +3321,17 @@ hibernar
  luego apaga la computadora.
  Cuando se vuelve a encender la computadora, el sistema restaura automáticamente
  los datos y la configuración de la sesión anterior.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría mencionar que este proceso ocurre dentro de un archivo o una partición.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3961,6 +4015,18 @@ Visual Studio Code
 
 \begin_layout Chapter
 Sistema de archivos
+\end_layout
+
+\begin_layout Section
+Medios de almacenamiento y jerarquía
+\end_layout
+
+\begin_layout Section
+Funciones del sistema de archivos
+\end_layout
+
+\begin_layout Section
+Estructura de directorios
 \end_layout
 
 \begin_layout Part
