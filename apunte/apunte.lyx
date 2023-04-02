@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-24 de marzo de 2023.
+4 de abril de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -138,6 +138,20 @@ Fundamentos
 
 \begin_layout Chapter
 Historia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría hacer mas hincapié en los dispositivos de almacenamiento y en
+ las formas de operar las computadoras.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3882,7 +3896,7 @@ Código
 
 abierto 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3918,7 +3932,7 @@ Software
 
 libre 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3940,6 +3954,16 @@ El software libre es aquel que se distribuye con una licencia que permite
  En general, el software libre se distribuye con una licencia establece
  los términos y condiciones bajo los cuales se puede usar, modificar y distribui
 r el software.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría agregar algún enlace que explique las licencias.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -4017,16 +4041,1465 @@ Visual Studio Code
 Sistema de archivos
 \end_layout
 
-\begin_layout Section
-Medios de almacenamiento y jerarquía
+\begin_layout Standard
+Aunque la 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Memoria_principal"
+literal "true"
+
+\end_inset
+
+ memoria principal
+\begin_inset Quotes frd
+\end_inset
+
+ es esencial para el funcionamiento de una computadora, esta es de acceso
+ volátil, lo que significa que se borra cuando se apaga la computadora.
+ Por lo tanto, la memoria RAM solo <puede almacenar temporalmente los programas
+ y datos que están en uso en ese momento.
+\end_layout
+
+\begin_layout Standard
+En este capítulo explicaremos como funcionan las llamadas 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Memoria_secundaria"
+literal "true"
+
+\end_inset
+
+ memorias secundarias
+\begin_inset Quotes frd
+\end_inset
+
+ de la computadora, como el disco rígido o una unidad de estado solido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename jerarquia.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_memoria"
+literal "true"
+
+\end_inset
+
+ Jerarquía de la memoria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás valga la pena mover el gráfico a la sección de arquitectura.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Funciones del sistema de archivos
+Acceso aleatorio y secuencial
+\end_layout
+
+\begin_layout Standard
+Un dispositivo de acceso aleatorio, como una unidad de estado sólido o USB,
+ permite el acceso directo a cualquier ubicación en el medio de almacenamiento.
+ Esto significa que se puede acceder a cualquier archivo o dato almacenado
+ en el dispositivo sin tener que pasar por los datos que están almacenados
+ 
+\begin_inset Quotes fld
+\end_inset
+
+antes
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+después
+\begin_inset Quotes frd
+\end_inset
+
+ en el dispositivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Puesto que los dispositivos de acceso aleatorio son muy rápidos, son ideales
+ para almacenar programas y mejorar el rendimiento general de la computadora.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otro lado, un dispositivo de acceso secuencial, como un disco rígido
+ o DVD, requiere que los datos se lean en secuencia, desde el principio
+ del medio de almacenamiento hasta el final.
+ Esto significa que para acceder a un archivo o dato específico, el dispositivo
+ debe leer los datos almacenados antes de llegar al archivo o dato deseado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="65text%">
+<column alignment="center" valignment="middle" width="25text%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename chr.png
+	lyxscale 35
+	scale 26
+	BoundingBox 150bp 50bp 900bp 1000bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Description
+A Pista
+\end_layout
+
+\begin_layout Description
+B Sector geométrico
+\end_layout
+
+\begin_layout Description
+C Sector de pista
+\end_layout
+
+\begin_layout Description
+D Grupo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Estructura de un disco
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las arquitecturas de computadora modernas suelen utilizar además de una
+ memoria de acceso directo, otra de acceso secuencial.
+ Esto es puesto que pese a son mas lentas, son mas baratas y de mayor capacidad,
+ lo que los hace ideales como medios de respaldo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Particiones
+\end_layout
+
+\begin_layout Standard
+Una partición es una sección lógica de un disco duro u otro dispositivo
+ de almacenamiento que se trata como si fuera un disco separado.
+ Una partición se crea mediante la división del espacio de almacenamiento
+ disponible en el dispositivo en secciones separadas.
+ Cada partición tiene su propio sistema de archivos y puede contener archivos
+ y datos independientes de las demás particiones.
+\end_layout
+
+\begin_layout Standard
+Las particiones se utilizan para varios fines, como separar el sistema operativo
+ y los archivos del usuario, o para crear diferentes áreas de almacenamiento
+ para diferentes propósitos, como la música, los documentos y las imágenes.
+ También se pueden utilizar para instalar varios sistemas operativos en
+ una sola unidad de disco duro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename particiones.png
+	lyxscale 40
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Particionado de un dispositivo de almacenamiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para observar los discos y particiones de un sistema podemos usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+lsblk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Get-Partition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Descripción
+\end_layout
+
+\begin_layout Standard
+Un sistema de archivos es una estructura lógica y organizada de datos que
+ se utiliza para almacenar y recuperar información en un medio de almacenamiento.
+ Sin un sistema de archivos, los datos colocados en un medio de almacenamiento
+ serían un gran cuerpo de datos sin manera de saber dónde termina un dato
+ y comienza el siguiente.
+\end_layout
+
+\begin_layout Standard
+Sus principales funciones son:
+\end_layout
+
+\begin_layout Description
+Gestión
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+espacio El sistema de archivos se encarga de gestionar la manera en que
+ los archivos son almacenados en un dispositivo de almacenamiento de datos.
+ Esto incluye entre otras cosas, la asignación de espacio en disco para
+ cada archivo, la administración del espacio libre y la organización de
+ los datos de manera eficiente.
+\end_layout
+
+\begin_layout Description
+Organización El sistema de archivos organiza los archivos en una jerarquía
+ de directorios y subdirectorios, lo que facilita su búsqueda y recuperación.
+\end_layout
+
+\begin_layout Description
+Permisos El sistema de archivos puede incluir medidas de seguridad para
+ proteger los datos almacenados en el medio de almacenamiento, como permisos
+ de acceso, y encriptación de datos.
+\end_layout
+
+\begin_layout Description
+Metadatos Un sistema de archivos almacena una variedad de metadatos que
+ proporcionan información sobre los archivos y directorios que se almacenan
+ en el dispositivo de almacenamiento.
+ Algunos de los metadatos más comunes que se almacenan en un sistema de
+ archivos son el nombre del archivo, su tamaño, fecha de creación y modificación
+, etc.
+\end_layout
+
+\begin_layout Description
+Integridad Un sistema de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Journaling"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+journaling
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (o diario) es una técnica utilizada para proteger la integridad de los
+ datos.
+ Este sistema funciona registrando todos los cambios que se realizan en
+ el sistema de archivos en un registro o diario antes de que los cambios
+ sean efectuados en el sistema de archivos.
+ En caso de un fallo del sistema o un corte de energía, el sistema de journaling
+ puede utilizar la información en el registro para volver al estado anterior
+ del sistema de archivos, evitando así la pérdida de datos o la corrupción
+ del sistema de archivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En los sistemas Linux, el sistema de archivos mas utilizados es 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Ext4"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+ext4
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+, mientras que en los sistemas Windows se utiliza 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/NTFS"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+NTFS
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Estructura de directorios
+\end_layout
+
+\begin_layout Standard
+Los sistemas operativos utilizan archivos y directorios para organizar y
+ almacenar información en un dispositivo de almacenamiento.
+ Los archivos contienen los datos que los usuarios crean y manipulan, mientras
+ que los directorios proporcionan una forma de organizar y acceder a los
+ archivos de manera lógica y fácil de entender.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los términos carpeta y directorio tienen el mismo significado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La jerarquía de directorios en un sistema de archivos se llama árbol de
+ directorios.
+ El nivel superior del árbol de directorios se llama directorio raíz, que
+ contiene todos los demás directorios y archivos en el sistema de archivos.
+ A medida que se desciende por el árbol de directorios, los nombres de los
+ directorios y los archivos se combinan para formar rutas de acceso a los
+ archivos y directorios individuales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En los sistemas Linux existe un solo directorio raíz llamado 
+\begin_inset Quotes fld
+\end_inset
+
+/
+\begin_inset Quotes frd
+\end_inset
+
+, en donde luego se 
+\begin_inset Quotes fld
+\end_inset
+
+montan
+\begin_inset Quotes frd
+\end_inset
+
+ el resto de los dispositivos.
+ En los sistemas Windows cada partición tiene su propio directorio raíz
+ llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\backslash
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para navegar a través de los directorios del sistema en un entorno gráfico,
+ utilizamos un programa denominado 
+\begin_inset Quotes fld
+\end_inset
+
+administrador de archivos
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En dicho programa podemos recorrer la estructura del sistema de archivos
+ mediante una serie de clicks de mouse en iconos, botones y menúes.
+\end_layout
+
+\begin_layout Standard
+En esta sección aprenderemos a llevar a cabo esas mismas acciones, pero
+ desde una ventana de terminal.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pcmanfm.png
+	lyxscale 40
+	scale 34
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+PCManFM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename explorador.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faWindows 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Explorador de archivos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la barra de dirección del administrador de archivos, podemos observar
+ en que posición de la estructura de directorios nos encontramos en este
+ momento.
+ Esa misma información podemos obtenerla en una terminal con el siguiente
+ comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ recibe su nombre de las siglas en ingles 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Print Working Directory
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (mostrar directorio de trabajo).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El administrador de archivos nos muestra también en su ventana el contenido
+ del directorio de trabajo actual.
+ Para lograr lo mismo desde la consola escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para cambiar la carpeta en la que estamos desde el entorno gráfico simplemente
+ hacemos doble click en la carpeta que pretendemos.
+ Para cambiar de carpeta desde una terminal disponemos del siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el entorno gráfico para acceder al directorio padre del directorio actual
+ hacemos click en la flecha hacia arriba.
+ El comando para lograr lo mismo es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd ..
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd ..
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si queremos observar el árbol de directorios desde la posición actual, podemos
+ escribir lo siguiente en la consola:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tree
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tree
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existen dos tipos de rutas que se utilizan para referirse a la ubicación
+ de un archivo o directorio en un sistema de archivos: rutas absolutas y
+ rutas relativas.
+\end_layout
+
+\begin_layout Description
+Ruta
+\begin_inset space ~
+\end_inset
+
+absoluta Una ruta absoluta es una ruta que especifica la ubicación completa
+ de un archivo o directorio, desde el directorio raíz hasta el archivo o
+ directorio en cuestión.
+ En otras palabras, una ruta absoluta es la ruta completa que describe la
+ ubicación exacta de un archivo o directorio, independientemente de la ubicación
+ del usuario o del directorio de trabajo actual.
+ 
+\end_layout
+
+\begin_layout Description
+Ruta
+\begin_inset space ~
+\end_inset
+
+relativa Una ruta relativa es una ruta que describe la ubicación de un archivo
+ o directorio en relación con el directorio de trabajo actual.
+ En otras palabras, una ruta relativa es una ruta que se especifica desde
+ el directorio actual hasta el archivo o directorio en cuestión.
+\end_layout
+
+\begin_layout Section
+El sistema de archivos de Linux
+\end_layout
+
+\begin_layout Standard
+Linux puede instalarse en una variedad de esquemas de particionado, pero
+ uno de los más comunes es el esquema de particionado convencional, que
+ utiliza tres particiones para el sistema:
+\end_layout
+
+\begin_layout Itemize
+Una partición en donde se instala el gestor de arranque y el núcleo del
+ sistema operativo.
+\end_layout
+
+\begin_layout Itemize
+Una partición destinada a almacenar los programas de usuario y documentos.
+\end_layout
+
+\begin_layout Itemize
+Una partición de intercambio, reservada para ser utilizada cuando la memoria
+ RAM se agota.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gparted.png
+	lyxscale 30
+	scale 23
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+GParted
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En Linux, los discos duros y particiones se nombran usando un esquema de
+ nomenclatura estandarizado.
+ Cada dispositivo se identifica por un nombre que se genera automáticamente
+ y que puede estar compuesto de diferentes elementos.
+\end_layout
+
+\begin_layout Standard
+El nombre asignado a un dispositivo de almacenamiento consta de tres partes:
+\end_layout
+
+\begin_layout Itemize
+La letra identificadora del tipo de dispositivo.
+ En general, los discos rígidos, unidades de estado sólido y dispositiva
+ USB empiezan con la letra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+s
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Una letra secuencial que identifica el dispositivo en relación con otros
+ dispositivos del mismo tipo.
+ El primer dispositivo se denominará 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+sda
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+, el segundo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+sdb
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y así sucesivamente.
+\end_layout
+
+\begin_layout Itemize
+Un número adicional que indica la partición específica del dispositivo.
+ La primera partición en el primer dispositivo será 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+sda1
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+, la segunda será 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+sda2
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+, y así sucesivamente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es muy importante notar que la denominación 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sda
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ hace referencia a todo el dispositivo, mientras que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sda1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ solo hace referencia a la primer partición del primer dispositivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La jerarquía de archivos en el sistema de archivos se organiza en un árbol
+ con una estructura específica.
+ El objetivo de una estructura estandarizada es que los desarrolladores
+ de software y los administradores de sistemas puedan predecir con precisión
+ dónde se encuentran los archivos importantes del sistema y cómo acceder
+ a ellos.
+\end_layout
+
+\begin_layout Standard
+A continuación, se presentan algunos de los directorios más importantes
+ de la jerarquía de archivos:
+\end_layout
+
+\begin_layout Description
+/ Es la raíz del sistema de archivos.
+ Cualquier otro directorio debe encontrarse dentro de el, independientemente
+ de en cual dispositivo se encuentre.
+\end_layout
+
+\begin_layout Description
+/bin Este directorio contiene los archivos binarios esenciales del sistema,
+ como comandos básicos de GNU/Linux.
+\end_layout
+
+\begin_layout Description
+/boot Contiene los archivos necesarios para el proceso de arranque del sistema,
+ como el gestor de arranque o el núcleo.
+\end_layout
+
+\begin_layout Description
+/dev En Linux, los dispositivos del hardware se representan como archivos
+ especiales.
+ En esta carpeta se encuentran esos archivos.
+\end_layout
+
+\begin_layout Description
+/etc Este directorio contiene los archivos de configuración del sistema
+ y de las aplicaciones instaladas en el mismo.
+\end_layout
+
+\begin_layout Description
+/home Este directorio se utiliza para almacenar los directorios personales
+ de los usuarios.
+\end_layout
+
+\begin_layout Description
+/lib Contiene las bibliotecas compartidas necesarias para el funcionamiento
+ del sistema.
+\end_layout
+
+\begin_layout Description
+/mnt Este directorio se utiliza para montar sistemas de archivos externos,
+ como unidades flash USB, discos duros externos, etc.
+ En algunas distribuciones esto también se hace en el directorio 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/media
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+/proc El directorio 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/proc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un directorio virtual que contiene información sobre el sistema y los
+ procesos en ejecución.
+ Es generado en tiempo real por el kernel del sistema operativo.
+\end_layout
+
+\begin_layout Description
+/root Este directorio es el directorio personal del usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+root
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ El usuario 
+\emph on
+root
+\emph default
+ es el único que tiene acceso completo al sistema.
+\end_layout
+
+\begin_layout Description
+/sbin Contiene los archivos binarios esenciales del sistema, utilizados
+ principalmente para la administración del sistema.
+\end_layout
+
+\begin_layout Description
+/tmp Este directorio se utiliza para almacenar archivos temporales creados
+ por el sistema y los usuarios.
+\end_layout
+
+\begin_layout Description
+/usr Contiene la mayoría de las utilidades y aplicaciones multiusuario,
+ es decir, accesibles para todos los usuarios.
+ En otras palabras, contiene los archivos compartidos, pero que no obstante
+ son de sólo lectura.
+\end_layout
+
+\begin_layout Description
+/var Este directorio contiene archivos que cambian frecuentemente durante
+ la operación del sistema, como archivos de registro y archivos de bases
+ de datos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fhs.png
+	lyxscale 25
+	scale 11
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Jerarquía de directorios estándar en Linux.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Carpetas especiales
+\end_layout
+
+\begin_layout Subsection
+Montaje
+\end_layout
+
+\begin_layout Subsection
+Enlaces
+\end_layout
+
+\begin_layout Subsection
+Permisos
 \end_layout
 
 \begin_layout Part
@@ -4046,6 +5519,18 @@ Conceptos adicionales
 \end_layout
 
 \begin_layout Chapter
+Contenedores
+\end_layout
+
+\begin_layout Section
+Emulación
+\end_layout
+
+\begin_layout Section
+Virtualización
+\end_layout
+
+\begin_layout Section
 Contenedores
 \end_layout
 
