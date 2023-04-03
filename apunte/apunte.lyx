@@ -5110,10 +5110,18 @@ relativa Una ruta relativa es una ruta que describe la ubicación de un archivo
 El sistema de archivos de Linux
 \end_layout
 
+\begin_layout Subsection
+Esquema de particionado
+\end_layout
+
 \begin_layout Standard
 Linux puede instalarse en una variedad de esquemas de particionado, pero
  uno de los más comunes es el esquema de particionado convencional, que
  utiliza tres particiones para el sistema:
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -5180,6 +5188,10 @@ GParted
 
 \end_layout
 
+\begin_layout Subsection
+Nomenclatura de dispositivos
+\end_layout
+
 \begin_layout Standard
 En Linux, los discos duros y particiones se nombran usando un esquema de
  nomenclatura estandarizado.
@@ -5189,6 +5201,10 @@ En Linux, los discos duros y particiones se nombran usando un esquema de
 
 \begin_layout Standard
 El nombre asignado a un dispositivo de almacenamiento consta de tres partes:
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -5303,6 +5319,10 @@ sda1
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Jerarquía de archivos
 \end_layout
 
 \begin_layout Standard
@@ -5490,16 +5510,534 @@ Jerarquía de directorios estándar en Linux.
 Carpetas especiales
 \end_layout
 
+\begin_layout Standard
+Existen tres carpetas especiales en los sistemas Linux:
+\end_layout
+
+\begin_layout Itemize
+El punto (
+\family typewriter
+.
+\family default
+) es una carpeta especial que representa el directorio actual en el que
+ se encuentra el usuario.
+ Por ejemplo, si el usuario se encuentra en el directorio 
+\family typewriter
+/home/user
+\family default
+, entonces el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls .
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ mostrará el contenido del directorio actual, es decir, 
+\family typewriter
+/home/user
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Los dos puntos (
+\family typewriter
+..
+\family default
+) representan el directorio padre del directorio actual.
+ Por ejemplo, si el usuario se encuentra en el directorio 
+\family typewriter
+/home/user
+\family default
+, el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls ..
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ mostrará el contenido del directorio padre, es decir, 
+\family typewriter
+/home
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+El símbolo de tilde (
+\family typewriter
+~
+\family default
+) representa el directorio principal del usuario.
+ Por ejemplo, si el usuario es 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+user
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, entonces el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd ~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ lo llevará al directorio 
+\family typewriter
+/home/user
+\family default
+.
+\end_layout
+
 \begin_layout Subsection
 Montaje
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Montar
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ significa hacer que un sistema de archivos esté disponible en un punto
+ de montaje especificado en el sistema de archivos raíz.
+ En otras palabras, montar un sistema de archivos implica hacer que el sistema
+ operativo sea consciente de la existencia de un sistema de archivos y asignarlo
+ a un directorio específico en la jerarquía de archivos del sistema.
+ Cuando se monta un sistema de archivos, el sistema operativo lo asigna
+ a un punto de montaje específico en la jerarquía de archivos.
+ El punto de montaje es un directorio en el sistema de archivos raíz, que
+ se utiliza para acceder al contenido del sistema de archivos que se va
+ a montar.
+ Una vez montado, el contenido del sistema de archivos se vuelve accesible
+ en el punto de montaje especificado.
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para montar un sistema de archivos en Linux.
+ El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ requiere varios parámetros, incluyendo la ubicación del dispositivo de
+ almacenamiento y el punto de montaje.
+ Por ejemplo, para montar un dispositivo de almacenamiento USB en el punto
+ de montaje 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/mnt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, el siguiente comando puede ser utilizado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo mount /dev/sdb1 /mnt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El uso del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en el principio del comando indica que se necesita permisos de administrador
+ para montar el dispositivo de almacenamiento.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para desmontar un sistema de archivos, se utiliza el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+umount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+umount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para desmontar un sistema de archivos que se encuentra actualmente
+ en uso y liberar el punto de montaje.
+ Por ejemplo, para desmontar el dispositivo de almacenamiento USB montado
+ anteriormente podemos usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo umount /mnt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Enlaces
 \end_layout
 
-\begin_layout Subsection
-Permisos
+\begin_layout Standard
+En Linux, existen dos tipos de enlaces para archivos: enlaces suaves (también
+ conocidos como enlaces simbólicos o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+soft links
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+) y enlaces duros (también conocidos como enlaces físicos o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+hard links
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Un enlace suave es un archivo especial que apunta a otro archivo en el sistema
+ de archivos.
+ El enlace suave no contiene los datos del archivo al que apunta, sino simplemen
+te la ruta del archivo.
+ Si se elimina el archivo original, el enlace suave se vuelve inútil.
+ Los enlaces suaves se utilizan comúnmente para hacer referencia a archivos
+ en diferentes ubicaciones y para crear accesos directos en el sistema de
+ archivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los enlaces suaves de Linux son equivalentes a los 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+accesos directos
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en los sistemas Windows.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para crear un enlace suave en Linux, se utiliza el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ln
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ln
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ crea un enlace entre dos archivos y la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ indica que se creará un enlace suave.
+ Por ejemplo, para crear un enlace suave llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+enlace
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que apunte al archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, se puede usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ln -s archivo enlace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un enlace duro es una entrada de directorio adicional que apunta al mismo
+ archivo en el sistema de archivos.
+ A diferencia de los enlaces suaves, los enlaces duros no son archivos independi
+entes y no pueden apuntar a archivos en diferentes sistemas de archivos
+ o particiones.
+ Si se elimina el archivo original, el enlace duro sigue siendo válido y
+ no se elimina hasta que todos los enlaces se eliminan.
+\end_layout
+
+\begin_layout Standard
+Para crear un enlace duro en Linux, se utiliza el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ln
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ sin la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Por ejemplo, para crear un enlace duro llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+enlace
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que apunte al archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, se puede usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ln archivo enlace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part
