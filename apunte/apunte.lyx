@@ -132,6 +132,34 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Introduccion
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Una computadora es para mí la herramienta más sorprendente que hayamos ideado.
+ Es el equivalente a una bicicleta para nuestras mentes
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+Steve Jobs
+\end_layout
+
 \begin_layout Part
 Fundamentos
 \end_layout
@@ -1526,6 +1554,16 @@ Algunos procesadores modernos tienen gráficos integrados en su diseño.
  Estos gráficos integrados se denominan iGPU (unidad de procesamiento de
  gráficos integrados) y están diseñados para proporcionar capacidades gráficas
  básicas para aplicaciones informáticas y de juegos de baja exigencia.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría hablar también de los registros.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2276,6 +2314,20 @@ Portabilidad: Los sistemas operativos pueden ser instalados en diferentes
  tipos de hardware, lo que los hace altamente portables.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría hacer referencia a que anteriormente no eran multi.
+ También se podría agregar multisesión.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Núcleo
 \end_layout
@@ -2437,6 +2489,18 @@ virtual Es una aplicación implementada dentro del núcleo que provee acceso
  al sistema simulando una terminal de teletipo.
  En los sistemas tipo Unix se puede acceder a ellas presionando Ctrl + Alt
  + F1, Ctrl + Alt + F2, etc.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que explicar porque sigue existiendo y conviviendo con un emulador
+ de terminal.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2650,6 +2714,16 @@ Una interfaz gráfica de usuario es una forma de interactuar con un programa
  iconos, botones y menús, en lugar de usar comandos de texto en una línea
  de comandos.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que explicar que en Linux la GUI es un programa de usuario opcional.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3840,6 +3914,17 @@ literal "true"
  intérprete y un compilador son dos tipos de programas que se utilizan para
  convertir el código fuente escrito por un programador en instrucciones
  ejecutables por una computadora.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que agregar un gráfico mostrando el tiempo de ejecución de cada uno.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -3949,11 +4034,10 @@ status collapsed
 
 El software libre es aquel que se distribuye con una licencia que permite
  a los usuarios tener acceso al código fuente del programa y redistribuir
- versiones modificadas del software libre sin tener que pagar regalías o
- cargos adicionales.
- En general, el software libre se distribuye con una licencia establece
- los términos y condiciones bajo los cuales se puede usar, modificar y distribui
-r el software.
+ versiones modificadas del mismo sin tener que pagar regalías o cargos adicional
+es.
+ En general, dicha licencia establece los términos y condiciones bajo los
+ cuales se puede usar, modificar y distribuir el software.
 \begin_inset Note Note
 status open
 
@@ -4330,6 +4414,20 @@ Las particiones se utilizan para varios fines, como separar el sistema operativo
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que comentar que las particiones DEBEN tener un sistema de archivos
+ para poder ser utilizadas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -4567,6 +4665,17 @@ Los sistemas operativos utilizan archivos y directorios para organizar y
  Los archivos contienen los datos que los usuarios crean y manipulan, mientras
  que los directorios proporcionan una forma de organizar y acceder a los
  archivos de manera lógica y fácil de entender.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que aclarar que los directorios son un tipo especial de archivo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5106,6 +5215,19 @@ relativa Una ruta relativa es una ruta que describe la ubicación de un archivo
  el directorio actual hasta el archivo o directorio en cuestión.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás haya que agregar ejemplos de ambas rutas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 El sistema de archivos de Linux
 \end_layout
@@ -5208,15 +5330,15 @@ El nombre asignado a un dispositivo de almacenamiento consta de tres partes:
 \end_layout
 
 \begin_layout Itemize
-La letra identificadora del tipo de dispositivo.
- En general, los discos rígidos, unidades de estado sólido y dispositiva
- USB empiezan con la letra 
+Una sigla identificadora del tipo de dispositivo.
+ En general, los discos rígidos, unidades de estado sólido y dispositivos
+ USB empiezan con las letras 
 \begin_inset Quotes fld
 \end_inset
 
 
 \emph on
-s
+sd
 \emph default
 
 \begin_inset Quotes frd
@@ -5641,6 +5763,72 @@ Montar
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+\end_layout
+
+\begin_layout Plain Layout
+
+sda      8:0    0    10G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda1   8:1    0   100M  0 part /boot
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda2   8:2    0   9,9G  0 part /
+\end_layout
+
+\begin_layout Plain Layout
+
+sdb      8:16   0   7,5G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb1   8:17   0   7,4G  0 part /mnt
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb4   8:20   0   2,4G  0 part
+\end_layout
+
+\begin_layout Plain Layout
+
+sr0     11:0    1 810,3M  0 rom
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 El comando 
 \begin_inset Quotes fld
 \end_inset
@@ -6038,6 +6226,30 @@ ln archivo enlace
 \end_inset
 
 
+\end_layout
+
+\begin_layout Introduccion
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Pensar no garantiza que no cometeremos errores.
+ Pero no pensar garantiza que lo haremos
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Leslie Lamport
 \end_layout
 
 \begin_layout Part
