@@ -6260,8 +6260,368 @@ Manejo de terminal
 Comandos básicos
 \end_layout
 
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Itemize
+clear
+\end_layout
+
+\begin_layout Itemize
+echo
+\end_layout
+
+\begin_layout Itemize
+man
+\end_layout
+
+\begin_layout Section
+Sistema de archivos
+\end_layout
+
+\begin_layout Itemize
+cd
+\end_layout
+
+\begin_layout Itemize
+cp
+\end_layout
+
+\begin_layout Itemize
+df
+\end_layout
+
+\begin_layout Itemize
+du
+\end_layout
+
+\begin_layout Itemize
+ln
+\end_layout
+
+\begin_layout Itemize
+ls
+\end_layout
+
+\begin_layout Itemize
+find
+\end_layout
+
+\begin_layout Itemize
+mkdir
+\end_layout
+
+\begin_layout Itemize
+mount
+\end_layout
+
+\begin_layout Itemize
+mv
+\end_layout
+
+\begin_layout Itemize
+pwd
+\end_layout
+
+\begin_layout Itemize
+rm
+\end_layout
+
+\begin_layout Itemize
+rmdir
+\end_layout
+
+\begin_layout Itemize
+rsync
+\end_layout
+
+\begin_layout Itemize
+tar
+\end_layout
+
+\begin_layout Itemize
+touch
+\end_layout
+
+\begin_layout Itemize
+tree
+\end_layout
+
+\begin_layout Itemize
+umount
+\end_layout
+
+\begin_layout Section
+Secuenciación, redirección y tuberías
+\end_layout
+
+\begin_layout Itemize
+less
+\end_layout
+
+\begin_layout Section
+Contenido
+\end_layout
+
+\begin_layout Itemize
+cat
+\end_layout
+
+\begin_layout Itemize
+cut
+\end_layout
+
+\begin_layout Itemize
+comm
+\end_layout
+
+\begin_layout Itemize
+diff
+\end_layout
+
+\begin_layout Itemize
+file
+\end_layout
+
+\begin_layout Itemize
+grep
+\end_layout
+
+\begin_layout Itemize
+head
+\end_layout
+
+\begin_layout Itemize
+nano
+\end_layout
+
+\begin_layout Itemize
+pr
+\end_layout
+
+\begin_layout Itemize
+sed
+\end_layout
+
+\begin_layout Itemize
+sort
+\end_layout
+
+\begin_layout Itemize
+tail
+\end_layout
+
+\begin_layout Itemize
+tr
+\end_layout
+
+\begin_layout Itemize
+uniq
+\end_layout
+
+\begin_layout Itemize
+wc
+\end_layout
+
+\begin_layout Section
+Usuarios y grupos
+\end_layout
+
+\begin_layout Itemize
+chmod
+\end_layout
+
+\begin_layout Itemize
+chown
+\end_layout
+
+\begin_layout Itemize
+id
+\end_layout
+
+\begin_layout Itemize
+passwd
+\end_layout
+
+\begin_layout Itemize
+su
+\end_layout
+
+\begin_layout Itemize
+sudo
+\end_layout
+
+\begin_layout Itemize
+useradd
+\end_layout
+
+\begin_layout Itemize
+userdel
+\end_layout
+
+\begin_layout Itemize
+w
+\end_layout
+
+\begin_layout Itemize
+who
+\end_layout
+
+\begin_layout Itemize
+whoami
+\end_layout
+
+\begin_layout Section
+Procesos y tareas
+\end_layout
+
+\begin_layout Itemize
+bg
+\end_layout
+
+\begin_layout Itemize
+fg
+\end_layout
+
+\begin_layout Itemize
+jobs
+\end_layout
+
+\begin_layout Itemize
+kill
+\end_layout
+
+\begin_layout Itemize
+ps
+\end_layout
+
+\begin_layout Section
+Gestión
+\end_layout
+
+\begin_layout Itemize
+apt
+\end_layout
+
+\begin_layout Itemize
+free
+\end_layout
+
+\begin_layout Itemize
+loadkeys
+\end_layout
+
+\begin_layout Itemize
+lsof
+\end_layout
+
+\begin_layout Itemize
+reboot
+\end_layout
+
+\begin_layout Itemize
+setxkbmap
+\end_layout
+
+\begin_layout Itemize
+startx
+\end_layout
+
+\begin_layout Itemize
+top
+\end_layout
+
+\begin_layout Itemize
+uname
+\end_layout
+
+\begin_layout Itemize
+uptime
+\end_layout
+
+\begin_layout Itemize
+which
+\end_layout
+
+\begin_layout Section
+Internet
+\end_layout
+
+\begin_layout Itemize
+curl
+\end_layout
+
+\begin_layout Itemize
+ping
+\end_layout
+
+\begin_layout Itemize
+scp
+\end_layout
+
+\begin_layout Itemize
+ssh
+\end_layout
+
+\begin_layout Itemize
+wget
+\end_layout
+
+\begin_layout Section
+Otros comandos
+\end_layout
+
+\begin_layout Itemize
+alias
+\end_layout
+
+\begin_layout Itemize
+bc
+\end_layout
+
+\begin_layout Itemize
+cal
+\end_layout
+
+\begin_layout Itemize
+date
+\end_layout
+
+\begin_layout Itemize
+dd
+\end_layout
+
+\begin_layout Itemize
+history
+\end_layout
+
+\begin_layout Itemize
+sha256sum
+\end_layout
+
+\begin_layout Itemize
+tldr
+\end_layout
+
 \begin_layout Chapter
 Shell scripting
+\end_layout
+
+\begin_layout Itemize
+exit
+\end_layout
+
+\begin_layout Itemize
+export
+\end_layout
+
+\begin_layout Itemize
+seq
+\end_layout
+
+\begin_layout Itemize
+test
 \end_layout
 
 \begin_layout Part
