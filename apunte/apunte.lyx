@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-5 de abril de 2023.
+20 de abril de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -3629,8 +3629,17 @@ En esta materia aprenderemos el lenguaje de programación de
 \end_inset
 
 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Bash"
+literal "true"
+
+\end_inset
+
+
 \family typewriter
-bash
+ bash
 \family default
 
 \begin_inset Quotes frd
@@ -3642,8 +3651,17 @@ bash
 \end_inset
 
 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Python"
+literal "true"
+
+\end_inset
+
+
 \family typewriter
-python
+ python
 \family default
 
 \begin_inset Quotes frd
@@ -5232,6 +5250,19 @@ Quizás haya que agregar ejemplos de ambas rutas.
 El sistema de archivos de Linux
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hay que aclarar que Linux distingue entre mayúsculas y minúsculas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Esquema de particionado
 \end_layout
@@ -6253,7 +6284,7 @@ Leslie Lamport
 \end_layout
 
 \begin_layout Part
-Manejo de terminal
+Manejo de bash
 \end_layout
 
 \begin_layout Chapter
@@ -6264,16 +6295,813 @@ Comandos básicos
 Introducción
 \end_layout
 
+\begin_layout Standard
+Bash es un interprete de linea de comandos y un lenguaje de programación
+ de scripting utilizado principalmente en sistemas operativos tipo Unix.
+ Es el intérprete de comandos por defecto en la mayoría de las distribuciones
+ de Linux.
+\end_layout
+
+\begin_layout Standard
+Permite a los usuarios interactuar con el sistema operativo mediante la
+ entrada de comandos en un emulador de terminal.
+ Con Bash, los usuarios pueden ejecutar programas, gestionar archivos y
+ directorios, automatizar tareas y realizar una amplia variedad de operaciones
+ de administración del sistema.
+\end_layout
+
+\begin_layout Standard
+Además, también es un lenguaje de scripting que permite a los usuarios escribir
+ programas para automatizar tareas repetitivas o complejas.
+ Estos scripts pueden incluir una serie de comandos de Bash y se pueden
+ ejecutar en una terminal o programarse para que se ejecuten automáticamente
+ en momentos específicos.
+\end_layout
+
+\begin_layout Paragraph
+Sintaxis
+\end_layout
+
+\begin_layout Standard
+La sintaxis
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Es importante seguir la sintaxis correcta de un comando, ya que de lo contrario,
+ el comando puede no funcionar como se espera o puede producir errores.
+\end_layout
+
+\end_inset
+
+ de un comando es la estructura y el formato que se deben seguir para escribir
+ y ejecutar correctamente un comando en un sistema operativo.
+ La sintaxis incluye el nombre del comando, las opciones y los argumentos
+ necesarios, así como la forma en que deben escribirse y ordenarse.
+\end_layout
+
+\begin_layout Standard
+Cada comando tiene su propia sintaxis única, pero en general, la mayoría
+ sigue una estructura básica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+comando [opciones] [argumentos]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
+El comando es el nombre del programa o acción que se desea ejecutar.
+\end_layout
+
+\begin_layout Itemize
+Las opciones son indicadores adicionales que se agregan al comando para
+ modificar su comportamiento.
+ Las opciones generalmente se escriben después del comando y comienzan con
+ un guion (
+\family typewriter
+-
+\family default
+) o dos guiones (
+\family typewriter
+--
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+Los argumentos son valores adicionales que se pasan al comando para que
+ actúe sobre ellos.
+ Los argumentos generalmente se escriben después de las opciones y pueden
+ ser nombres de archivo, rutas de directorio, nombres de usuario, números,
+ etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En la sintaxis de un comando, los corchetes se utilizan para indicar que
+ un elemento es opcional.
+ Esto significa que puede omitirse o incluirse según sea necesario.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Historial
+\end_layout
+
+\begin_layout Standard
+Cada vez que se escribe y ejecuta un comando en Bash, se agrega al historial
+ de comandos.
+ Esto permite acceder a los comandos previamente ejecutados para volver
+ a ejecutarlos o modificarlos en lugar de volver a escribirlos desde cero.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si se presiona la flecha hacia arriba se mostrará el comando anterior en
+ el historial y si se sigue presionando la flecha hacia arriba, se mostrarán
+ comandos anteriores en el historial en orden cronológico inverso.
+\end_layout
+
+\begin_layout Itemize
+Si se presiona la flecha hacia abajo, se mostrará el comando siguiente en
+ el historial.
+ Si se sigue presionando la flecha hacia abajo, se mostrarán comandos posteriore
+s en el historial en orden cronológico.
+\end_layout
+
+\begin_layout Itemize
+Ctrl+r: Abre una búsqueda reversa en el historial de comandos.
+ Al escribir una palabra clave o frase, se mostrarán los comandos anteriores
+ que coinciden con la búsqueda.
+\end_layout
+
+\begin_layout Paragraph
+Autocompletado
+\end_layout
+
+\begin_layout Standard
+Cuando se escribe un comando o una ruta en el terminal y se presiona la
+ tecla Tab, Bash intenta completar automáticamente el comando o la ruta.
+ Si hay una sola opción disponible, Bash la completará automáticamente.
+ Si hay varias opciones disponibles, Bash mostrará una lista de opciones
+ que coinciden con lo que se ha escrito hasta el momento.
+ Si se sigue presionando la tecla Tab, Bash continuará mostrando opciones
+ adicionales.
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+man
+\end_layout
+
+\begin_layout Standard
+El comando 
+\family typewriter
+man
+\family default
+ (abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+manual
+\begin_inset Quotes frd
+\end_inset
+
+) es una herramienta de línea de comandos que proporciona información detallada
+ sobre otros comandos, funciones y bibliotecas.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+man [opciones] comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las opciones más comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+-f
+\begin_inset Quotes frd
+\end_inset
+
+ para buscar descripciones cortas de comandos relacionados con una palabra
+ clave.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+-k
+\begin_inset Quotes frd
+\end_inset
+
+ para buscar páginas del manual que contienen una palabra clave específica.
+\end_layout
+
+\begin_layout Standard
+Para navegar dentro del programa 
+\family typewriter
+man
+\family default
+, se pueden usar varias teclas moverse por la página, buscar texto y salir
+ del programa:
+\end_layout
+
+\begin_layout Itemize
+Las teclas de flecha arriba y abajo: se pueden utilizar para desplazarse
+ hacia arriba y hacia abajo por la página del manual.
+\end_layout
+
+\begin_layout Itemize
+La tecla 
+\begin_inset Quotes fld
+\end_inset
+
+/
+\begin_inset Quotes frd
+\end_inset
+
+ seguida de un texto de búsqueda: se puede utilizar para buscar una palabra
+ o frase en la página del manual actual.
+\end_layout
+
+\begin_layout Itemize
+La tecla 
+\begin_inset Quotes fld
+\end_inset
+
+q
+\begin_inset Quotes frd
+\end_inset
+
+: se puede utilizar para salir del programa 
+\family typewriter
+man
+\family default
+ y volver al terminal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las páginas del manual también pueden consultarse en internet: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://man.cx/"
+literal "true"
+
+\end_inset
+
+ Linux Manpages Online
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para poder observar la documentación del comando 
+\family typewriter
+man
+\family default
+ podemos usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+man man
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 clear
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+El comando 
+\family typewriter
+clear
+\family default
+ es un comando que se utiliza para limpiar la pantalla del terminal, eliminando
+ todos los comandos y resultados previos que se hayan mostrado.
+ Al ejecutar este comando, la pantalla del terminal se restablecerá, dejando
+ la línea de comando en la parte superior de la pantalla.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\family typewriter
+clear
+\family default
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+clear [opciones]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+-x
+\begin_inset Quotes frd
+\end_inset
+
+ para evitar que se borre el historial desplazamiento del emulador de terminal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El atajo de teclado Ctrl+l es equivalente al comando 
+\family typewriter
+clear
+\family default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para borrar el contenido de la pantalla se utiliza el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+clear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+clear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 echo
 \end_layout
 
+\begin_layout Standard
+El comando 
+\family typewriter
+echo
+\family default
+ es un comando de la línea de comandos que se utiliza para imprimir texto
+ en la pantalla del terminal.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\family typewriter
+echo
+\family default
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo [opciones] texto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El comando 
+\family typewriter
+echo
+\family default
+ también admite varias opciones y parámetros adicionales, que permiten ajustar
+ el formato de la salida y realizar otras tareas:
+\end_layout
+
 \begin_layout Itemize
-man
+\begin_inset Quotes fld
+\end_inset
+
+-n
+\begin_inset Quotes frd
+\end_inset
+
+: evita que el comando agregue un carácter de nueva línea al final de la
+ salida.
+ En otras palabras, la siguiente línea del terminal comenzará en la misma
+ línea en la que termina la salida del comando 
+\family typewriter
+echo
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+-e
+\begin_inset Quotes frd
+\end_inset
+
+: activa el soporte de secuencias de escape en la salida.
+ Por ejemplo, se pueden utilizar secuencias de escape para agregar saltos
+ de linea al texto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La utilidad del comando 
+\family typewriter
+echo
+\family default
+ resultara mas evidente una vez que se estudien las redirecciones y los
+ scripts.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para escribir dos palabras separadas por una linea se escribe el siguiente
+ comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo -e 
+\begin_inset Quotes fld
+\end_inset
+
+Hola
+\backslash
+nmundo!
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo Hola mundo!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+history
+\end_layout
+
+\begin_layout Standard
+El comando 
+\family typewriter
+history
+\family default
+ muestra una lista de los comandos que se han ejecutado anteriormente.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+history
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+history [-c]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+-c
+\begin_inset Quotes frd
+\end_inset
+
+ para borrar el historial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\family typewriter
+history
+\family default
+ no es un programa de usuario, sino una funcionalidad que provee Bash.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ver los últimos comandos ingresados se usa el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+history
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+history
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -6325,6 +7153,10 @@ pwd
 \end_layout
 
 \begin_layout Itemize
+readlink
+\end_layout
+
+\begin_layout Itemize
 rm
 \end_layout
 
@@ -6358,6 +7190,10 @@ Secuenciación, redirección y tuberías
 
 \begin_layout Itemize
 less
+\end_layout
+
+\begin_layout Standard
+>, <, >>, 2>, &>, |, &&, ||, ;, &
 \end_layout
 
 \begin_layout Section
@@ -6429,6 +7265,10 @@ Usuarios y grupos
 \end_layout
 
 \begin_layout Itemize
+chgrp
+\end_layout
+
+\begin_layout Itemize
 chmod
 \end_layout
 
@@ -6494,6 +7334,10 @@ kill
 
 \begin_layout Itemize
 ps
+\end_layout
+
+\begin_layout Standard
+ctrlc ctrlz
 \end_layout
 
 \begin_layout Section
@@ -6593,15 +7437,15 @@ dd
 \end_layout
 
 \begin_layout Itemize
-history
-\end_layout
-
-\begin_layout Itemize
 sha256sum
 \end_layout
 
 \begin_layout Itemize
 tldr
+\end_layout
+
+\begin_layout Itemize
+watch
 \end_layout
 
 \begin_layout Chapter
