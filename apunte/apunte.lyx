@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-20 de abril de 2023.
+24 de abril de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -1984,7 +1984,7 @@ cargador de arranque
 .
  El cargador de arranque es un programa cuyo objetivo principal es cargar
  el núcleo del sistema operativo.
- El cargador de arranque mas utilizado en linux es 
+ El cargador de arranque mas utilizado en Linux es 
 \begin_inset Quotes fld
 \end_inset
 
@@ -2487,8 +2487,37 @@ Consola
 
 virtual Es una aplicación implementada dentro del núcleo que provee acceso
  al sistema simulando una terminal de teletipo.
- En los sistemas tipo Unix se puede acceder a ellas presionando Ctrl + Alt
- + F1, Ctrl + Alt + F2, etc.
+ En los sistemas tipo Unix se puede acceder a ellas presionando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Ctrl+Alt+F1, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Ctrl+Alt+F2, etc.
  
 \begin_inset Note Note
 status open
@@ -5794,57 +5823,435 @@ Montar
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-inline false
+\begin_inset Flex Salida
 status open
 
 \begin_layout Plain Layout
 
-NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-\end_layout
-
-\begin_layout Plain Layout
-
-sda      8:0    0    10G  0 disk
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sda1   8:1    0   100M  0 part /boot
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sda2   8:2    0   9,9G  0 part /
-\end_layout
-
-\begin_layout Plain Layout
-
-sdb      8:16   0   7,5G  0 disk
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sdb1   8:17   0   7,4G  0 part /mnt
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sdb4   8:20   0   2,4G  0 part
-\end_layout
-
-\begin_layout Plain Layout
-
-sr0     11:0    1 810,3M  0 rom
-\end_layout
-
+\family typewriter
+NAME
+\begin_inset space ~
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+MAJ:MIN RM
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+SIZE
+\begin_inset space ~
+\end_inset
+
+RO TYPE MOUNTPOINTS
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sda
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8:0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+10G
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├─sda1
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8:1
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+100M
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 part /boot
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+└─sda2
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8:2
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+9,9G
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 part /
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sdb
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8:16
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+7,5G
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├─sdb1
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8:17
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+7,4G
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 part /mnt
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+└─sdb4
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8:20
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+2,4G
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 part
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sr0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+11:0
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1
+\begin_inset space ~
+\end_inset
+
+810,3M
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 rom
 \end_layout
 
 \end_inset
@@ -6397,6 +6804,22 @@ Los argumentos son valores adicionales que se pasan al comando para que
  etc.
 \end_layout
 
+\begin_layout Itemize
+La mayoría de los comandos admiten la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+–-help
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para consultar su ayuda.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -6421,24 +6844,64 @@ Cada vez que se escribe y ejecuta un comando en Bash, se agrega al historial
  de comandos.
  Esto permite acceder a los comandos previamente ejecutados para volver
  a ejecutarlos o modificarlos en lugar de volver a escribirlos desde cero.
- 
+ Para poder acceder fácilmente al historial, se pueden presionar las siguientes
+ teclas:
 \end_layout
 
 \begin_layout Itemize
-Si se presiona la flecha hacia arriba se mostrará el comando anterior en
- el historial y si se sigue presionando la flecha hacia arriba, se mostrarán
- comandos anteriores en el historial en orden cronológico inverso.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Flecha hacia arriba: Muestra el comando anterior en el historial.
+ Si se sigue presionando, se mostrarán comandos anteriores en el historial
+ en orden cronológico inverso.
 \end_layout
 
 \begin_layout Itemize
-Si se presiona la flecha hacia abajo, se mostrará el comando siguiente en
- el historial.
- Si se sigue presionando la flecha hacia abajo, se mostrarán comandos posteriore
-s en el historial en orden cronológico.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Flecha hacia abajo: Análogo pero en orden cronológico.
 \end_layout
 
 \begin_layout Itemize
-Ctrl+r: Abre una búsqueda reversa en el historial de comandos.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+R: Abre una búsqueda reversa en el historial de comandos.
  Al escribir una palabra clave o frase, se mostrarán los comandos anteriores
  que coinciden con la búsqueda.
 \end_layout
@@ -6449,12 +6912,41 @@ Autocompletado
 
 \begin_layout Standard
 Cuando se escribe un comando o una ruta en el terminal y se presiona la
- tecla Tab, Bash intenta completar automáticamente el comando o la ruta.
+ tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Tab, Bash intenta completar automáticamente el comando o la ruta.
  Si hay una sola opción disponible, Bash la completará automáticamente.
  Si hay varias opciones disponibles, Bash mostrará una lista de opciones
  que coinciden con lo que se ha escrito hasta el momento.
- Si se sigue presionando la tecla Tab, Bash continuará mostrando opciones
- adicionales.
+ Si se sigue presionando la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Tab, Bash continuará mostrando opciones adicionales.
 \end_layout
 
 \begin_layout Subsection
@@ -6479,6 +6971,10 @@ manual
 
 ) es una herramienta de línea de comandos que proporciona información detallada
  sobre otros comandos, funciones y bibliotecas.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6530,7 +7026,11 @@ Las opciones más comunes incluyen:
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 -f
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6542,7 +7042,11 @@ Las opciones más comunes incluyen:
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 -k
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6559,8 +7063,38 @@ man
 \end_layout
 
 \begin_layout Itemize
-Las teclas de flecha arriba y abajo: se pueden utilizar para desplazarse
- hacia arriba y hacia abajo por la página del manual.
+Las teclas de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+flecha arriba y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+abajo: se pueden utilizar para desplazarse hacia arriba y hacia abajo por
+ la página del manual.
 \end_layout
 
 \begin_layout Itemize
@@ -6568,7 +7102,26 @@ La tecla
 \begin_inset Quotes fld
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\family typewriter
 /
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6581,7 +7134,26 @@ La tecla
 \begin_inset Quotes fld
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\family typewriter
 q
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6655,6 +7227,182 @@ man man
 
 \end_layout
 
+\begin_layout Example
+Podemos consultar cuales comandos sirven para 
+\begin_inset Quotes fld
+\end_inset
+
+listar directorios
+\begin_inset Quotes frd
+\end_inset
+
+ con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+man -k 
+\begin_inset Quotes fld
+\end_inset
+
+list directory
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+dir (1)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+- list directory contents
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ls (1)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+- list directory contents
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ls (1p)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+- list directory contents
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+vdir (1) - list directory contents
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+La descripción corta del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+clear
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ la podemos observar con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+man -f clear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+clear (1)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+- clear the terminal screen
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+clear (3x) - clear all or part of a curses window
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -6693,7 +7441,7 @@ status open
 
 \begin_layout Plain Layout
 
-clear [opciones]
+clear [-x]
 \end_layout
 
 \end_inset
@@ -6707,15 +7455,20 @@ clear [opciones]
 \end_layout
 
 \begin_layout Standard
-Puede agregarse la opción 
+La opción 
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 -x
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
- para evitar que se borre el historial desplazamiento del emulador de terminal.
+ puede agregarse para evitar que se borre el historial desplazamiento del
+ emulador de terminal.
 \end_layout
 
 \begin_layout Standard
@@ -6723,13 +7476,35 @@ Puede agregarse la opción
 status open
 
 \begin_layout Plain Layout
-El atajo de teclado Ctrl+l es equivalente al comando 
+El atajo de teclado 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+L es equivalente al comando 
 \family typewriter
 clear
 \family default
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -6797,6 +7572,19 @@ echo
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás se pueda mover este comando a la parte de redirección.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 El comando 
 \family typewriter
 echo
@@ -6851,7 +7639,11 @@ echo
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 -n
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6869,7 +7661,11 @@ echo
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 -e
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -7019,7 +7815,11 @@ Puede agregarse la opción
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 -c
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -7073,6 +7873,33 @@ history
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+1 cd ~
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2 ls
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3 history
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex PowerShell
 status open
 
@@ -7097,379 +7924,1923 @@ history
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
 \end_inset
 
 
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar el propósito y funcionamiento de los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+date
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cal
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Pruebe cada uno de ellos.
 \end_layout
 
 \begin_layout Section
 Sistema de archivos
 \end_layout
 
-\begin_layout Itemize
-cd
-\end_layout
+\begin_layout Subsection
 
-\begin_layout Itemize
-cp
-\end_layout
-
-\begin_layout Itemize
-df
-\end_layout
-
-\begin_layout Itemize
-du
-\end_layout
-
-\begin_layout Itemize
-ln
-\end_layout
-
-\begin_layout Itemize
-ls
-\end_layout
-
-\begin_layout Itemize
-find
-\end_layout
-
-\begin_layout Itemize
-mkdir
-\end_layout
-
-\begin_layout Itemize
-mount
-\end_layout
-
-\begin_layout Itemize
-mv
-\end_layout
-
-\begin_layout Itemize
+\family typewriter
+\emph off
 pwd
 \end_layout
 
-\begin_layout Itemize
-readlink
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra la ruta completa del directorio de trabajo actual en el sistema
+ de archivos.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pwd [-P]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-P
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para mostrar el directorio sin enlaces simbólicos.
+\end_layout
+
+\begin_layout Example
+Para mostrar la ruta del directorio de trabajo actual usamos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+/home/entorno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+cd
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para cambiar el directorio de trabajo actual en el sistema de
+ archivos.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd [ruta]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-rm
+Si no se especifica una ruta, el comando es equivalente a 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd ~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
+Si se utiliza el argumento 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ vuelve al directorio de trabajo anterior.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+A diferencia de los programas anteriores, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un comando interno del shell.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ir al directorio que contiene la carpeta personal del usuario actual
+ usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd ~/..
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd ~/..
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+ls
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para listar los archivos y directorios en el directorio de trabajo
+ actual o en una ubicación específica del sistema de archivos.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es simplemente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls [ruta]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si se omite la ruta, se asume que se desea listar los archivos y directorios
+ en el directorio de trabajo actual.
+ Además, se pueden utilizar opciones para personalizar la salida del comando
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Algunas opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra la lista en formato largo, que incluye información detallada sobre
+ cada archivo o directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-h
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra el tamaño de los archivos en formato legible por humanos, como
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+KB
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+MB
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra todos los archivos y directorios, incluyendo los que comienzan
+ con un punto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En el sistema de archivos de Linux, los archivos que comienzan con un punto
+ se consideran archivos ocultos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para mostrar el contenido del directorio actual usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+dsh dsh.c entornos final hola.c hola.py hola.s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si además queremos ver información adicional, agregamos la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls -l
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rwxr-xr-x 1 damian wheel 15832 abr 12 19:33 dsh
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 damian wheel
+\begin_inset space ~
+\end_inset
+
+ 1130 abr 12 19:32 dsh.c
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+drwxr-xr-x 6 damian wheel 
+\begin_inset space ~
+\end_inset
+
+4096 abr 17 13:54 entornos
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+drwxr-xr-x 4 damian wheel 
+\begin_inset space ~
+\end_inset
+
+4096 abr 19 01:03 final
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 damian wheel 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+60 mar 20 15:05 hola.c
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 damian wheel 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+35 mar 28 19:06 hola.py
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 damian wheel 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+462 mar 28 19:40 hola.s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para mostrar el contenido del directorio raiz podemos usar el siguiente
+ comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+bin boot dev etc home lib lib64 lost+found mnt opt proc root run sbin srv
+ sys tmp usr var
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+mkdir
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 rmdir
 \end_layout
 
-\begin_layout Itemize
-rsync
-\end_layout
+\begin_layout Subsection
 
-\begin_layout Itemize
-tar
-\end_layout
-
-\begin_layout Itemize
+\family typewriter
+\emph off
 touch
 \end_layout
 
-\begin_layout Itemize
-tree
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+rm
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+cp
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+mv
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+df
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+du
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+ln
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+readlink
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+mount
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 umount
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+find
+\end_layout
+
+\begin_layout Subsection
+Comodines
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Investigue con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, que otras opciones tiene el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Pruebe algunas de ellas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averigurar sobre el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tree
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Logre la siguiente salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tree
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── argentina
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── francia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── semi1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│   ├── argentina
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│   ├── croacia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│   ├── cuartos1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│   │   ├── argentina
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│   │   └── holanda
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│   └── cuartos2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+├── brasil
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+│
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+└── croacia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+└── semi2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+├── cuartos3
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+│   ├── francia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+│   └── inglaterra
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+├── cuartos4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+│   ├── marruecos
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+│   └── portugal
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+├── francia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+└── marruecos
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+7 directories, 14 files
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Secuenciación, redirección y tuberías
 \end_layout
 
+\begin_layout Subsection
+Secuenciación
+\end_layout
+
 \begin_layout Itemize
+;
+\end_layout
+
+\begin_layout Itemize
+&&
+\end_layout
+
+\begin_layout Itemize
+||
+\end_layout
+
+\begin_layout Subsection
+Redirección
+\end_layout
+
+\begin_layout Itemize
+>
+\end_layout
+
+\begin_layout Itemize
+<
+\end_layout
+
+\begin_layout Itemize
+>>
+\end_layout
+
+\begin_layout Itemize
+2>
+\end_layout
+
+\begin_layout Itemize
+&>
+\end_layout
+
+\begin_layout Itemize
+Archivos especiales.
+\end_layout
+
+\begin_layout Subsection
+Tuberías
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 less
 \end_layout
 
-\begin_layout Standard
->, <, >>, 2>, &>, |, &&, ||, ;, &
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Section
 Contenido
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 cat
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 cut
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 comm
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 diff
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 file
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 grep
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 head
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 nano
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 pr
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 sed
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 sort
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 tail
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 tr
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 uniq
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 wc
+\end_layout
+
+\begin_layout Subsection
+Expresiones regulares
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Section
 Usuarios y grupos
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 chgrp
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 chmod
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 chown
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 id
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 passwd
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 su
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 sudo
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 useradd
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 userdel
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 w
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 who
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 whoami
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Section
 Procesos y tareas
 \end_layout
 
-\begin_layout Itemize
-bg
-\end_layout
+\begin_layout Subsection
 
-\begin_layout Itemize
-fg
-\end_layout
-
-\begin_layout Itemize
-jobs
-\end_layout
-
-\begin_layout Itemize
-kill
-\end_layout
-
-\begin_layout Itemize
+\family typewriter
+\emph off
 ps
 \end_layout
 
-\begin_layout Standard
-ctrlc ctrlz
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+jobs
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+bg
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+fg
+\end_layout
+
+\begin_layout Subsection
+Señales
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+kill
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Section
 Gestión
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 apt
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+chsh
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 free
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 loadkeys
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 lsof
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 reboot
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 setxkbmap
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 startx
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 top
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 uname
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 uptime
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 which
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Section
 Internet
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 curl
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 ping
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 scp
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 ssh
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 wget
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Section
 Otros comandos
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 alias
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 bc
 \end_layout
 
-\begin_layout Itemize
-cal
-\end_layout
+\begin_layout Subsection
 
-\begin_layout Itemize
-date
-\end_layout
-
-\begin_layout Itemize
+\family typewriter
+\emph off
 dd
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+rsync
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 sha256sum
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+tar
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 tldr
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 watch
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Chapter
 Shell scripting
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Section
+Comandos
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
 exit
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
 export
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
 seq
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
+
+\family typewriter
+source
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
 test
+\end_layout
+
+\begin_layout Section
+Control de flujo
+\end_layout
+
+\begin_layout Subsection
+if
+\end_layout
+
+\begin_layout Subsection
+for
+\end_layout
+
+\begin_layout Subsection
+while
+\end_layout
+
+\begin_layout Subsection
+case
+\end_layout
+
+\begin_layout Subsection
+until
+\end_layout
+
+\begin_layout Subsection
+select
+\end_layout
+
+\begin_layout Subsection
+Funciones
 \end_layout
 
 \begin_layout Part
 Conceptos adicionales
+\end_layout
+
+\begin_layout Chapter
+Control de versiones
 \end_layout
 
 \begin_layout Chapter
@@ -7486,10 +9857,6 @@ Virtualización
 
 \begin_layout Section
 Contenedores
-\end_layout
-
-\begin_layout Chapter
-Control de versiones
 \end_layout
 
 \end_body
