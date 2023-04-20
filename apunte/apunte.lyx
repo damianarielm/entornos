@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-24 de abril de 2023.
+25 de abril de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -6961,7 +6961,23 @@ El comando
 \family typewriter
 man
 \family default
- (abreviatura de 
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -6969,7 +6985,12 @@ manual
 \begin_inset Quotes frd
 \end_inset
 
-) es una herramienta de línea de comandos que proporciona información detallada
+.
+\end_layout
+
+\end_inset
+
+ es una herramienta de línea de comandos que proporciona información detallada
  sobre otros comandos, funciones y bibliotecas.
 \begin_inset Newpage pagebreak
 \end_inset
@@ -7993,6 +8014,47 @@ pwd
 \begin_inset Quotes frd
 \end_inset
 
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Print Working Directory
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (
+\begin_inset Quotes fld
+\end_inset
+
+mostrar directorio de trabajo
+\begin_inset Quotes frd
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
  muestra la ruta completa del directorio de trabajo actual en el sistema
  de archivos.
  La sintaxis básica del comando 
@@ -8138,6 +8200,35 @@ cd
 \family default
 
 \begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las iniciales de 
+\begin_inset Quotes fld
+\end_inset
+
+cambiar directorio
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \end_inset
 
  se utiliza para cambiar el directorio de trabajo actual en el sistema de
@@ -8324,6 +8415,35 @@ ls
 \family default
 
 \begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+listar
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \end_inset
 
  se utiliza para listar los archivos y directorios en el directorio de trabajo
@@ -8757,11 +8877,525 @@ ls /
 mkdir
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mkdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mkdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ significa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+make directory
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (o 
+\begin_inset Quotes fld
+\end_inset
+
+crear directorio
+\begin_inset Quotes frd
+\end_inset
+
+ en español).
+\end_layout
+
+\end_inset
+
+ se utiliza para crear nuevos directorios en el sistema de archivos.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mkdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir [opciones] directorio...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Quotes fld
+\end_inset
+
+opciones
+\begin_inset Quotes frd
+\end_inset
+
+ son las opciones que se pueden utilizar para personalizar la creación del
+ directorio y 
+\begin_inset Quotes fld
+\end_inset
+
+directorio
+\begin_inset Quotes frd
+\end_inset
+
+ es el nombre del directorio que se desea crear.
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-p
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: crea todos los directorios en la ruta especificada, incluso si no existen.
+ Si ya existe un directorio con el mismo nombre que uno de los directorios
+ de la ruta, se ignora sin dar errores.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-v
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra los detalles de la creación del directorio en la salida estándar
+ de la terminal.
+\end_layout
+
+\begin_layout Example
+Para crear un directorio llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+carpeta
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para crear un directorio llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+carpeta1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y otro llamdo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+carpeta2
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos usar este comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta1 carpeta2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para crear un directorio llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+carpeta1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con una carpeta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+carpeta2
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ adentro, usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir -p carpeta1/carpeta2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta1/carpeta2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 rmdir
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+remover directorio
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ es utilizado para eliminar directorios 
+\emph on
+vacíos
+\emph default
+ en el sistema de archivos.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rmdir [opciones] directorio...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones comunes del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-p
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: dada una ruta, elimina un directorio y sus predecesores.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-v
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra los detalles de la eliminación del directorio en la salida estándar
+ de la terminal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante tener en cuenta que solo se pueden eliminar directorios vacíos
+ con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -8771,11 +9405,457 @@ rmdir
 touch
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+touch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para crear archivos vacíos o actualizar la fecha y hora de acceso
+ o modificación de un archivo.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+touch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch [opciones] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones comunes del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+touch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: actualiza sólo la fecha y hora de acceso del archivo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-m
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: actualiza sólo la fecha y hora de modificación del archivo.
+\end_layout
+
+\begin_layout Standard
+Si se utiliza el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+touch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para crear un archivo que no existe, se crea un archivo vacío con el nombre
+ especificado.
+ Si en cambio se utiliza con un archivo existente, se actualiza la fecha
+ y hora de acceso y/o modificación del archivo sin cambiar su contenido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+touch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es útil en situaciones en las que se necesita establecer manualmente la
+ fecha y hora de acceso o modificación de un archivo, o para crear rápidamente
+ un archivo vacío sin tener que abrir un editor de texto y guardar un archivo
+ vacío.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 rm
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+remover
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ es utilizado para eliminar archivos y directorios en el sistema de archivos.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm [opciones] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones comunes del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: se utiliza para eliminar directorios y su contenido de forma recursiva.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: se utiliza para forzar la eliminación de un archivo si este está protegido
+ contra escritura.
+ Además no da error si los archivos no existen.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-
+\family default
+i
+\begin_inset Quotes frd
+\end_inset
+
+: pide una confirmación antes de borrar cada archivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si se utiliza el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para eliminar un archivo, el archivo se eliminará de forma permanente del
+ sistema de archivos; no se mueve a una papelera de reciclaje.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para borrar tres archivos pidiendo confirmación podemos usar el siguiente
+ comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm -i archivo1 archivo2 archivo3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+rm: ¿borrar el fichero regular vacío 'archivo1'? (s/n) s
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+rm: ¿borrar el fichero regular vacío 'archivo2'? (s/n) s
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+rm: ¿borrar el fichero regular vacío 'archivo3'? (s/n) s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para borrar un directorio no vacío junto con todo su contenido usamos el
+ siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm -r directorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm -r directorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -8785,6 +9865,346 @@ rm
 cp
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+copiar
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ que se utiliza para copiar uno o más archivos o directorios de una ubicación
+ a otra en el sistema de archivos.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp [opciones] origen destino
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante tener en cuenta que si se copia un archivo a un directorio
+ que ya contiene un archivo con el mismo nombre, el archivo existente se
+ sobrescribirá automáticamente sin pedir confirmación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones comunes del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: indica que se deben copiar los directorios y su contenido de forma recursiva.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-v
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra los detalles de la copia en la salida estándar de la terminal.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-i
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: pide confirmación antes de sobrescribir archivos existentes.
+\end_layout
+
+\begin_layout Example
+Para copiar un archivo a otro directorio usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp archivo directorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp archivo directorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para crear una copia de un archivo en el directorio actual podemos usar
+ el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp archivo copia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp archivo copia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para copiar un directorio y su contenido a otro directorio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp -r directorio1 directorio2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cp -r directorio1 directorio2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -8792,11 +10212,845 @@ cp
 mv
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mv
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mv
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+mover
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ se utiliza para mover o renombrar archivos o directorios.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mv [opciones] origen destino
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mv
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ también ofrece algunas opciones útiles, entre las que se incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-i
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Solicita confirmación antes de sobrescribir archivos existentes.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Sobrescribe archivos existentes sin preguntar.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-v
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra información detallada sobre lo que se está haciendo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si 
+\family typewriter
+origen
+\family default
+ y 
+\family typewriter
+destino
+\family default
+ se encuentran dentro de la misma ruta, entonces el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mv
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ cambia el nombre del archivo o directorio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 df
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+df
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+df
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de "
+\emph on
+Disk Free
+\emph default
+" (disco libre en inglés)
+\end_layout
+
+\end_inset
+
+ y su función es mostrar información sobre el espacio libre y utilizado
+ en sistemas de archivos montados.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+df [opciones] [ruta]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El comando df también ofrece algunas opciones útiles, entre las que se incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-h
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra los tamaños de bloque en un formato legible por humanos (por ejemplo,
+ en 
+\emph on
+kilobytes
+\emph default
+, 
+\emph on
+megabytes
+\emph default
+, 
+\emph on
+gigabytes
+\emph default
+, etc.).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-T
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra el tipo de sistema de archivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Por defecto, si se ejecuta sin opciones, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+df
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra información sobre todos los sistemas de archivos montados en el
+ sistema, incluyendo el espacio total, el espacio utilizado, el espacio
+ libre y el porcentaje de uso.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ver el tipo de sistema de archivos y espacio libre en forma legible,
+ usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+df -Th
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+S.ficheros Tipo 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Tamaño Usados Disp Uso% Montado en
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+dev
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+devtmpfs 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+971M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 971M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0% /dev
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+run
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+tmpfs 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+979M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+644K 978M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1% /run
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/dev/sda2
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ext4 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+9,7G 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+7,1G 2,1G 
+\begin_inset space ~
+\end_inset
+
+78% /
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+tmpfs
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+tmpfs 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+979M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 979M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0% /dev/shm
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+tmpfs
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+tmpfs 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+979M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+72M 907M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+8% /tmp
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/dev/sda1
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+vfat 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+100M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+97M 2,9M 
+\begin_inset space ~
+\end_inset
+
+98% /boot
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+tmpfs
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+tmpfs 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+196M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+16K 196M 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1% /run/user/1000
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -8811,13 +11065,6 @@ du
 \family typewriter
 \emph off
 ln
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-readlink
 \end_layout
 
 \begin_layout Subsection
@@ -8886,6 +11133,193 @@ ls
 \end_layout
 
 \begin_layout Exercise
+Averigüe para que sirve el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+stat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree un directorio vacío con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mkdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y luego bórrelo con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rmdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba la siguiente secuencia de comandos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta
+\end_layout
+
+\begin_layout Plain Layout
+
+touch carpera/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+rmdir carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explique por que se produce el error.
+ Proponga una forma de solucionarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta1/carpeta2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explique por que se produce el error.
+ Proponga una forma de solucionarlo.
+\end_layout
+
+\begin_layout Exercise
+Considere la siguiente salida en pantalla del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+rm: ¿borrar el fichero regular vacío 'archivo' protegido contra escritura?
+ (s/n) s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cuál fue el comando completo? ¿Cómo podría haberse omitido la comprobación
+ de eliminación?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -8926,6 +11360,7 @@ tree
 :
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Salida
 status open
@@ -9245,6 +11680,124 @@ status open
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree una copia idéntica a la estructura anterior en otro directorio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Elimine ambas estructuras de directorios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Investigue con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, las opciones 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-b
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-u
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Pruebe ambas opciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para aprender sobre el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+readlink
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
