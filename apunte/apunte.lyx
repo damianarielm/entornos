@@ -13337,6 +13337,47 @@ Averigüe cuales son los programas de usuario instalados en su computadora,
  que solo tienen dos letras en su nombre.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Logre la siguiente salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+1-10-2023 1-11-2024 1-12-2023 1-2-2024 1-4-2023 1-5-2024 1-7-2023 1-8-2024
+ 1-10-2024 1-1-2023 1-12-2024 1-3-2023 1-4-2024 1-6-2023 1-7-2024 1-9-2023
+ 1-11-2023 1-1-2024 1-2-2023 1-3-2024 1-5-2023 1-6-2024 1-8-2023 1-9-2024
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Secuenciación, redirección y tuberías
 \end_layout
@@ -13345,16 +13386,186 @@ Secuenciación, redirección y tuberías
 Secuenciación
 \end_layout
 
+\begin_layout Standard
+La secuenciación de comandos en Bash se utiliza para ejecutar varios comandos
+ de forma consecutiva en una sola línea.
+ Se pueden utilizar diferentes operadores de secuenciación para controlar
+ cómo se ejecutan los comandos en función de sus resultados.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los operadores de secuenciación, son otras de las cuestiones de las cuales
+ se encarga el shell.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 ;
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Se utiliza para ejecutar varios comandos en secuencia, independientemente
+ del resultado de cada uno de ellos.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 &&
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Se utiliza para ejecutar el siguiente comando solo si el comando anterior
+ tuvo éxito.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 ||
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Se utiliza para ejecutar el siguiente comando solo si el comando anterior
+ falló.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para crear dos archivos y verificar que se hayan creado, podemos usar el
+ siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo1 archivo2; ls archivo1 archivo2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Podemos intentar borrar un directorio y mostrar un mensaje en caso de éxito
+ con el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rmdir directorio && echo 
+\begin_inset Quotes fld
+\end_inset
+
+El directorio se ha borrado.
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Análogamente, podemos mostrar el mensaje si el directorio no se creo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rmdir directorio || echo 
+\begin_inset Quotes fld
+\end_inset
+
+El directorio no se ha borrado.
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -13382,9 +13593,41 @@ Redirección
 \end_layout
 
 \begin_layout Itemize
-Archivos especiales.
+Archivos especiales:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+/dev/null
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+/dev/tty
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+/dev/pts/
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+/dev/zero
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+/dev/random
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Tuberías
 \end_layout
