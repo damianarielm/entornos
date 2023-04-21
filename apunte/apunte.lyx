@@ -12225,20 +12225,309 @@ find -type f -empty -exec touch {}
 Comodines
 \end_layout
 
+\begin_layout Standard
+Los comodines, también conocidos como wildcards en inglés, son caracteres
+ especiales que se utilizan para representar patrones de búsqueda en nombres
+ de archivos y directorios.
+\end_layout
+
+\begin_layout Standard
+Los comodines pueden ser muy útiles para simplificar tareas que involucran
+ la manipulación de muchos archivos y directorios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La expansión de comodines, es otra de las tareas que llevan a cabo los interpret
+es de línea de comandos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 *
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Representa cualquier cadena de caracteres, incluyendo una cadena vacía.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 ?
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Representa cualquier carácter individual.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 []
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Representa un conjunto de caracteres posibles.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 {}
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Representa un producto cartesiano de caracteres.
+\end_layout
+
+\begin_layout Example
+Para borrar todos los archivos que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se puede usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm *.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm *.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para mostrar todos los programas de usuario que tienen 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+64
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en su nombre usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls /bin/*64*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para mostrar las segundas particiones de todas las unidades de almacenamiento
+ podemos usar:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls /dev/sd?2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ver cuando ocupan los archivos que comienzan con dos letras y terminan
+ con un número usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+du [a-z][a-z][0-9]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para borrar todos los archivos de una sola letra, que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.jpg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.gif
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm [a-z].{gif,jpg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -13034,6 +13323,18 @@ find
 
  para crear una copia de todos los directorios vacíos del directorio de
  trabajo actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigüe cuales son los programas de usuario instalados en su computadora,
+ que solo tienen dos letras en su nombre.
 \end_layout
 
 \begin_layout Section
