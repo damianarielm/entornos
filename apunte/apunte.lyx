@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-25 de abril de 2023.
+26 de abril de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -6835,6 +6835,19 @@ En la sintaxis de un comando, los corchetes se utilizan para indicar que
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre copiar y pegar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Historial
 \end_layout
@@ -8679,6 +8692,19 @@ Si además queremos ver información adicional, agregamos la opción
 :
 \end_layout
 
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Explicar la salida de la opción -l.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -10418,8 +10444,8 @@ Disk Free
 
 \end_inset
 
- y su función es mostrar información sobre el espacio libre y utilizado
- en sistemas de archivos montados.
+ sirve para mostrar información sobre el espacio libre y utilizado en sistemas
+ de archivos montados.
  Su sintaxis básica es la siguiente:
 \end_layout
 
@@ -10449,7 +10475,19 @@ df [opciones] [ruta]
 \end_layout
 
 \begin_layout Standard
-El comando df también ofrece algunas opciones útiles, entre las que se incluyen:
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+df
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ también ofrece algunas opciones útiles, entre las que se incluyen:
 \end_layout
 
 \begin_layout Itemize
@@ -11060,11 +11098,367 @@ tmpfs
 du
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+du
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+du
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Disk Usage
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (uso de disco en inglés)
+\end_layout
+
+\end_inset
+
+ sirve para mostrar información sobre el espacio utilizado por directorios.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+du [opciones] [ruta]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones útiles son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-h
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra los tamaños de archivo en un formato legible por humanos.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra sólo el tamaño total de la ruta especificada, sin detalles de
+ tamaño por directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra información de tamaño también para los archivos, no sólo para
+ los directorios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Por defecto, si se ejecuta sin opciones, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+du
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra la cantidad de espacio utilizado por cada directorio en la ruta
+ actual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para mostrar el uso del directorio actual usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+du
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+./semi1/cuartos1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+./semi1/cuartos2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+12
+\begin_inset space ~
+\end_inset
+
+./semi1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+./semi2/cuartos4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+./semi2/cuartos3
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+12
+\begin_inset space ~
+\end_inset
+
+./semi2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+28
+\begin_inset space ~
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 ln
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ln
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza en sistemas Linux para crear enlaces simbólicos o enlaces duros
+ a archivos y directorios.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ln [-s] [ærchivo original] [nombre del enlace]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Por defecto 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ln
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ crea enlaces duros, a no ser que se utilice la opcion 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -11074,11 +11468,353 @@ ln
 mount
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza en sistemas operativos tipo Linux para montar sistemas de archivos
+ en un directorio del sistema de archivos.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mount [-r] dispositivo directorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Por defecto 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ monta los sistemas de archivos en modo de lectura y escritura, a no ser
+ que se use la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (sólo lectura).
+\end_layout
+
+\begin_layout Plain Layout
+También es importante destacar que para montar un sistema de archivos, normalmen
+te se necesitan privilegios de superusuario, por lo que se debe utilizar
+ el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para ejecutar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si se desea montar la partición 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/dev/sda1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en el directorio 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/mnt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, se puede utilizar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo mount /dev/sda1 /mnt 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez que se ha montado la partición, cualquier archivo que se encuentre
+ en la partición estará disponible en el directorio 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/mnt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 umount
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+umount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para desmontar un sistema de archivos previamente montado en
+ un directorio.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+umount [opciones] directorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones útiles son las que siguen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Forzar el desmontaje, aunque la partición esté siendo utilizada por otros
+ procesos.
+ El sistema puede quedar inconsistente.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Desmonta la partición permitiendo que los procesos que utilizan la partición
+ terminen antes de desmontarla.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante destacar que para desmontar un sistema de archivos, normalmente
+ se necesitan privilegios de superusuario, por lo que se debe utilizar el
+ comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para ejecutar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+umount
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si se desea desmontar la partición que previamente se montó en el directorio
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/mnt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, se puede utilizar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo umount /mnt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -11088,8 +11824,421 @@ umount
 find
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta muy útil para buscar archivos y directorios en el sistema
+ de archivos.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+find [ruta inicial] [expresiones de busqueda]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las expresiones de búsqueda mas importantes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-type
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Especifica el tipo de archivo que se está buscando.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-name
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Especifica el nombre del archivo que se está buscando.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-empty
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Busca archivos vacíos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si no se especifica una ruta de inicio, se buscará a partir del directorio
+ de trabajo actual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es posible ejecutar un comando para cada uno de los archivos o directorios
+ encontrados.
+ Para esto debemos agregar al final:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+find [ruta] [expresiones de busqueda] -exec comando {} 
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+{}
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se reemplazará por los nombres de los archivos o directorios encontrados.
+\end_layout
+
+\begin_layout Example
+Para buscar en el directorio de trabajo actual todos los 
+\emph on
+directorios
+\emph default
+ que existan se usa el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+find -type d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/cuartos1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/cuartos2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/cuartos4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/cuartos3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para buscar en el directorio de trabajo actual todos los 
+\emph on
+archivos
+\emph default
+ que existan se usa el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+find -type f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+./francia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/croacia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/cuartos1/holanda
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/cuartos1/argentina
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/argentina
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/cuartos2/croacia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi1/cuartos2/brasil
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./argentina
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/cuartos4/marruecos
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/cuartos4/portugal
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/marruecos
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/francia
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/cuartos3/inglaterra
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+./semi2/cuartos3/francia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para actualizar la fecha de modificación y accesos de todos los archivos
+ vacíos puede usarse el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+find -type f -empty -exec touch {} 
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Comodines
+\end_layout
+
+\begin_layout Itemize
+*
+\end_layout
+
+\begin_layout Itemize
+?
+\end_layout
+
+\begin_layout Itemize
+[]
+\end_layout
+
+\begin_layout Itemize
+{}
 \end_layout
 
 \begin_layout Subsection
@@ -11211,7 +12360,7 @@ mkdir carpeta
 
 \begin_layout Plain Layout
 
-touch carpera/archivo
+touch carpeta/archivo
 \end_layout
 
 \begin_layout Plain Layout
@@ -11798,6 +12947,93 @@ readlink
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Inserte un 
+\emph on
+pendrive
+\emph default
+ en la computadora y utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lsblk
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para ver el nombre del dispositivo.
+ Intente montarlo y desmontarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y averigüe como buscar con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, los archivos modificados durante la última semana.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para crear una copia de todos los directorios vacíos del directorio de
+ trabajo actual.
 \end_layout
 
 \begin_layout Section
