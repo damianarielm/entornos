@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-26 de abril de 2023.
+2 de mayo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -6841,6 +6841,17 @@ status open
 
 \begin_layout Plain Layout
 Agregar información sobre copiar y pegar.
+ También explicar el uso de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\backslash
+
+\begin_inset Quotes frd
+\end_inset
+
+ para comandos largos.
 \end_layout
 
 \end_inset
@@ -6917,6 +6928,19 @@ faKeyboardO
 Ctrl+R: Abre una búsqueda reversa en el historial de comandos.
  Al escribir una palabra clave o frase, se mostrarán los comandos anteriores
  que coinciden con la búsqueda.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre !! y !n.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -7089,9 +7113,17 @@ Las opciones más comunes incluyen:
 
 \begin_layout Standard
 Para navegar dentro del programa 
+\begin_inset Quotes fld
+\end_inset
+
+
 \family typewriter
 man
 \family default
+
+\begin_inset Quotes frd
+\end_inset
+
 , se pueden usar varias teclas moverse por la página, buscar texto y salir
  del programa:
 \end_layout
@@ -8355,6 +8387,35 @@ cd
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás se puede enseñar a usar 
+\begin_inset Quotes fld
+\end_inset
+
+pushd
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+popd
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para ir al directorio que contiene la carpeta personal del usuario actual
  usamos el siguiente comando:
@@ -8697,7 +8758,15 @@ Si además queremos ver información adicional, agregamos la opción
 status open
 
 \begin_layout Plain Layout
-Explicar la salida de la opción -l.
+Explicar la salida de la opción 
+\begin_inset Quotes fld
+\end_inset
+
+-l
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -8826,7 +8895,7 @@ drwxr-xr-x 4 damian wheel
 \end_layout
 
 \begin_layout Example
-Para mostrar el contenido del directorio raiz podemos usar el siguiente
+Para mostrar el contenido del directorio raíz podemos usar el siguiente
  comando:
 \end_layout
 
@@ -11250,6 +11319,13 @@ du
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para mostrar el uso del directorio actual usamos el siguiente comando:
 \end_layout
@@ -11411,7 +11487,7 @@ status open
 
 \begin_layout Plain Layout
 
-ln [-s] [ærchivo original] [nombre del enlace]
+ln [-s] [archivo original] [nombre del enlace]
 \end_layout
 
 \end_inset
@@ -11770,6 +11846,13 @@ umount
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -12594,6 +12677,88 @@ stat
 \end_layout
 
 \begin_layout Exercise
+Considere la siguiente salida en pantalla del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls -log
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+total 4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+drwxr-xr-x 2 4096 may 1 23:46 archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 may 1 23:46 carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Por que da error el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd carpeta
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Cree un directorio vacío con 
 \begin_inset Quotes fld
 \end_inset
@@ -12677,6 +12842,45 @@ Explique por que se produce el error.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Exercise
+Escriba la siguiente secuencia de comandos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch carpeta
+\end_layout
+
+\begin_layout Plain Layout
+
+rmdir carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explique por que se produce el error.
+ Proponga una forma de solucionarlo.
 \end_layout
 
 \begin_layout Exercise
@@ -12836,231 +13040,13 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-│   ├── croacia
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-│   ├── cuartos1
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-│   │   ├── argentina
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-│   │   └── holanda
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-│   └── cuartos2
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-│
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-├── brasil
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-│
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-└── croacia
+│   └── croacia
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 └── semi2
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-├── cuartos3
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-│   ├── francia
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-│   └── inglaterra
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-├── cuartos4
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-│   ├── marruecos
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-│   └── portugal
 \end_layout
 
 \begin_layout Plain Layout
@@ -13103,16 +13089,12 @@ status open
 \end_inset
 
 └── marruecos
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-7 directories, 14 files
+3 directories, 6 files
 \end_layout
 
 \end_inset
@@ -13378,6 +13360,1371 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba la siguiente secuencia de comandos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta
+\end_layout
+
+\begin_layout Plain Layout
+
+touch carpeta/archivo1 carpeta/.archivo2
+\end_layout
+
+\begin_layout Plain Layout
+
+rm -rf carpeta/*
+\end_layout
+
+\begin_layout Plain Layout
+
+rmdir carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explique por que se produce el error.
+ Proponga una forma de solucionarlo.
+\end_layout
+
+\begin_layout Section
+Contenido
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+nano
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nano
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un editor de texto de la línea de comandos que se utiliza para crear
+ y modificar archivos en sistemas Linux.
+ Su sintaxis es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+nano [archivo]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no se especifica un archivo, se comenzará un documento nuevo.
+ Una vez que se encuentra en el editor, se puede usar el teclado para escribir
+ o editar el archivo de texto.
+\end_layout
+
+\begin_layout Standard
+Para utilizar el programa se pueden usar varias combinaciones de teclas
+ que se señalan en la parte inferior de la pantalla.
+ Algunas de ellas son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + O: Para guardar los cambios en un archivo, se utiliza la combinación
+ de teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + O, que guarda el archivo en su ubicación actual.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Shift + flechas: Se puede seleccionar texto manteniendo presionada la tecla
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Shift y presionando las flechas del teclado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + K: Para cortar un texto seleccionado, se utiliza la combinación de
+ teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + K.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + U: Para pegar un texto seleccionado, se utiliza la combinación de
+ teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + U.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Alt + U: Para deshacer la última acción, usamos la combinación de teclas
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Alt + U.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + X: Para salir del editor, se utiliza la combinación de teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl + X, lo que devuelve al usuario a la línea de comandos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Al igual que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y al contrario que la mayoría de los comandos que veremos, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nano
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un programa interactivo.
+ Esto quiere decir que despues de ingresar el comando, se ingresa a un programa
+ que espera mas entrada desde el teclado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+cat
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+cat
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+con
+\emph on
+cat
+\emph default
+enar
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ es una herramienta que se utiliza para concatenar y mostrar el contenido
+ de uno o más archivos de texto.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat [-n] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para mostrar el directorio sin enlaces simbólicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para conocer información sobre el CPU podemos observar el contenido del
+ archivo especial 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/proc/cpuinfo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat /proc/cpuinfo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para ver información sobre la memoria podemos observar el contenido del
+ archivo especial 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/proc/meminfo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat /proc/meminfo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para mostrar información sobre la línea de comando del kernel utilizada
+ para iniciar el sistema operativo y a continuación la versión del mismo,
+ podemos usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat /proc/cmdline /proc/version
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+less
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+less
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+El nombre del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+less
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ deriba de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+more
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que fue el programa que se utilizaba anteriormente para este propósito
+\end_layout
+
+\end_inset
+
+ es una utilidad en línea de comandos que se utiliza para ver el contenido
+ de un archivo de texto de manera paginada.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+less archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez que se ejecuta el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+less
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, se abrirá una vista de página en la terminal que muestra el contenido
+ del archivo.
+ El programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+less
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se puede manejar igual que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+less
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es otro de los programas interactivos que veremos, junto con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nano
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para ver un registro de los últimos sucesos del sistema podemos paginar
+ el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/var/log/syslog
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+less /var/log/syslog
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+head
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+head
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para mostrar las primeras líneas de un archivo de texto.
+ La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+head [-n X] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n X
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para mostrar las primeras 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+X
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ lineas del archivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Por defecto, 
+\begin_inset Quotes fld
+\end_inset
+
+head
+\begin_inset Quotes frd
+\end_inset
+
+ muestra las primeras 10 líneas de un archivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para ver las primeras cuatro lineas del archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/etc/fstab
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+head -n 4 /etc/fstab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+# Static information about the filesystems.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+# See fstab(5) for details.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+# <file system>
+\begin_inset space ~
+\end_inset
+
+<dir>
+\begin_inset space ~
+\end_inset
+
+<type>
+\begin_inset space ~
+\end_inset
+
+<options>
+\begin_inset space ~
+\end_inset
+
+<dump>
+\begin_inset space ~
+\end_inset
+
+<pass>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+tail
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tail
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para mostrar las primeras líneas de un archivo de texto.
+ La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tail [opciones] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n X
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra las últimas 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+X
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ líneas del archivo en lugar de las 10 últimas.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: sigue en tiempo real los cambios que se realizan en el archivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ puede ser especialmente útil para monitorear en tiempo real la actividad
+ en un archivo que está siendo constantemente actualizado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Para monitorear los últimos sucesos del sistema podemos observar las últimas
+ lineas del archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/var/log/syslog
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tail -f /var/log/syslog
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+sort
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sort
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta que se utiliza para ordenar líneas de texto de un archivo
+ de entrada.
+ La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sort [opciones] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: ordena las líneas en orden numérico en lugar de orden alfabético.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: ordena las líneas en orden reverso (descendente).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-m
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: fusiona archivos previamente ordenados.
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+uniq
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+strings
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+tr
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+wc
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+file
+\end_layout
+
+\begin_layout Subsection
+Expresiones regulares
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+grep
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar el propósito y funcionamiento de los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+comm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+diff
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Pruebe cada uno de ellos.
+\end_layout
+
 \begin_layout Section
 Secuenciación, redirección y tuberías
 \end_layout
@@ -13572,192 +14919,807 @@ El directorio no se ha borrado.
 Redirección
 \end_layout
 
+\begin_layout Standard
+Las redirecciones en Bash son una forma de cambiar la entrada y/o salida
+ de un comando a diferentes archivos o dispositivos.
+\end_layout
+
+\begin_layout Standard
+Hay varios tipos de redirecciones en Bash:
+\end_layout
+
 \begin_layout Itemize
+Redirección de salida estándar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 >
-\end_layout
+\family default
 
-\begin_layout Itemize
-<
-\end_layout
+\begin_inset Quotes frd
+\end_inset
 
-\begin_layout Itemize
->>
-\end_layout
-
-\begin_layout Itemize
-2>
-\end_layout
-
-\begin_layout Itemize
-&>
-\end_layout
-
-\begin_layout Itemize
-Archivos especiales:
+: esta redirección cambia la salida en pantalla del comando a un archivo.
+ La sintaxis básica de la redirección de salida estandar es:
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
 
-\family typewriter
-/dev/null
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+comando > archivo
 \end_layout
 
-\begin_layout Itemize
+\end_inset
 
-\family typewriter
-/dev/tty
+
 \end_layout
 
-\begin_layout Itemize
+\end_inset
 
-\family typewriter
-/dev/pts/
+
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
 
-\family typewriter
-/dev/zero
+\begin_layout Plain Layout
+La redirección de salida estandar substituye por completo el contenido de
+ un archivo.
 \end_layout
 
-\begin_layout Itemize
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si queremos que la salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-/dev/random
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se guarde en el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lista.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, podemos usar la redirección de salida de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls > lista.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls > lista.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Anexación de salida estándar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+>>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: La redirección 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+>>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en Bash se utiliza para redirigir la salida estándar de un comando a un
+ archivo y agregarla al final del archivo en lugar de reemplazar su contenido,
+ como hace la redirección "
+\family typewriter
+>
+\family default
+".
+ La sintaxis básica de la anexación de salida estándar es:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+comando >> archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si queremos crear un archivo con los textos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Hola mundo!
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Chau mundo!
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en dos lineas, podes usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 
+\begin_inset Quotes fld
+\end_inset
+
+Hola mundo!
+\begin_inset Quotes frd
+\end_inset
+
+ > saludo
+\end_layout
+
+\begin_layout Plain Layout
+
+echo 
+\begin_inset Quotes fld
+\end_inset
+
+Chau mundo!
+\begin_inset Quotes frd
+\end_inset
+
+ >> saludo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 
+\begin_inset Quotes fld
+\end_inset
+
+Hola mundo!
+\begin_inset Quotes frd
+\end_inset
+
+ > saludo
+\end_layout
+
+\begin_layout Plain Layout
+
+echo 
+\begin_inset Quotes fld
+\end_inset
+
+Chau mundo!
+\begin_inset Quotes frd
+\end_inset
+
+ >> saludo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Redirección de salida de error 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+2>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Esta redirección cambia la salida de error de un comando a un archivo.
+ La sintaxis básica de la redirección de salida estandar es:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+comando 2> archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La salida de error en sistemas Linux es una salida de información que se
+ genera cuando un comando o programa encuentra un error durante su ejecución.
+ Esta salida suele estar separada de la salida estándar; aunque se suele
+ mostrar en la misma pantalla.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para escribir los mensajes de error de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mkdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en un archivo usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir .
+ 2> error
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir .
+ 2> error
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Redirección de salidas 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+&>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: La redirección 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+&>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en Bash es una forma de redireccionar tanto la salida estándar como la
+ salida de error estándar de un comando a un archivo o dispositivo.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+comando &> archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para redirigir ambas salidas del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mkdir
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en un archivo usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir -v carpeta carpeta &> salidas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+En Linux y sistemas similares, la carpeta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/dev
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ contiene algunos archivos especiales que son útiles a la hora de combinarlos
+ con redirecciones.
+ Algunos de ellos son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+/
+\family typewriter
+dev/null
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: un archivo que no almacena ningún dato, sino que simplemente los descarta.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/dev/tty*
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: son archivos que representan a las consolas virtuales.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/dev/pts/*
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: son archivos que representan a los emuladores de terminales.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/dev/zero
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: un archivo infinito que contiene datos cero (0).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/dev/random
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: un archivo que genera datos aleatorios.
+\end_layout
+
 \begin_layout Subsection
 Tuberías
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+En Bash, una tubería (también conocida como 
+\begin_inset Quotes fld
+\end_inset
 
-\family typewriter
-\emph off
-less
+
+\emph on
+pipe
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en inglés) permite conectar la 
+\emph on
+salida
+\emph default
+ de un comando con la 
+\emph on
+entrada
+\emph default
+ de otro, lo que permite crear una cadena de procesos que trabajan juntos
+ para realizar una tarea más compleja.
+ La sintaxis de una tubería es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+comando | comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Ejercicios
 \end_layout
 
-\begin_layout Section
-Contenido
-\end_layout
+\begin_layout Exercise
+Utilice 
+\begin_inset Quotes fld
+\end_inset
 
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-cat
-\end_layout
-
-\begin_layout Subsection
 
 \family typewriter
-\emph off
-cut
-\end_layout
+man
+\family default
 
-\begin_layout Subsection
+\begin_inset Quotes frd
+\end_inset
 
-\family typewriter
-\emph off
-comm
-\end_layout
+ para averiguar sobre los comandos 
+\begin_inset Quotes fld
+\end_inset
 
-\begin_layout Subsection
 
 \family typewriter
-\emph off
-diff
-\end_layout
+true
+\family default
 
-\begin_layout Subsection
+\begin_inset Quotes frd
+\end_inset
 
-\family typewriter
-\emph off
-file
-\end_layout
+ y 
+\begin_inset Quotes fld
+\end_inset
 
-\begin_layout Subsection
 
 \family typewriter
-\emph off
-grep
+false
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Utilice secuenciación para mostrar un mensaje en pantalla luego de la ejecución
+ de cada uno de ellos.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Busque en Internet o consulte a alguna IA sobre la redirección de entrada
+ 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-head
+<
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cómo puede utilizarse la redirección de salida estándar para crear archivos
+ vacíos, sin usar 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-nano
-\end_layout
+touch
+\family default
 
-\begin_layout Subsection
+\begin_inset Quotes frd
+\end_inset
 
-\family typewriter
-\emph off
-pr
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-sed
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-sort
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-tail
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-tr
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-uniq
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-wc
-\end_layout
-
-\begin_layout Subsection
-Expresiones regulares
-\end_layout
-
-\begin_layout Subsection
-Ejercicios
+?
 \end_layout
 
 \begin_layout Section
@@ -14116,6 +16078,12 @@ exit
 
 \family typewriter
 export
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+read
 \end_layout
 
 \begin_layout Subsection
