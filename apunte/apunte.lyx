@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-2 de mayo de 2023.
+3 de mayo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -13417,7 +13417,7 @@ Explique por que se produce el error.
 \end_layout
 
 \begin_layout Section
-Contenido
+Contenido y filtros
 \end_layout
 
 \begin_layout Subsection
@@ -13827,7 +13827,7 @@ Puede agregarse la opción
 \begin_inset Quotes frd
 \end_inset
 
- para mostrar el directorio sin enlaces simbólicos.
+ para enumerar las líneas emitidas.
 \end_layout
 
 \begin_layout Standard
@@ -14392,7 +14392,7 @@ tail
 \begin_inset Quotes frd
 \end_inset
 
- se utiliza para mostrar las primeras líneas de un archivo de texto.
+ se utiliza para mostrar las últimas líneas de un archivo de texto.
  La sintaxis básica del comando es:
 \end_layout
 
@@ -15628,6 +15628,19 @@ comando | comando
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar ejemplos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
 \end_layout
@@ -15730,6 +15743,1214 @@ Usuarios y grupos
 
 \family typewriter
 \emph off
+whoami
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+whoami
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+whoami
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ significa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Who Am I
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (quién soy yo).
+\end_layout
+
+\end_inset
+
+ muestra el nombre de usuario de la cuenta actualmente activa en la sesión
+ de terminal.
+ Es útil cuando se necesita saber el nombre de usuario para realizar una
+ acción o para verificar que la cuenta activa es la deseada.
+\end_layout
+
+\begin_layout Example
+Para saber cuál es el usuario activo, simplemente escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+whoami
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+alumno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+whoami
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+id
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+id
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ obtiene información sobre la identidad de un usuario, como su nombre de
+ usuario, identificador de usuario (
+\emph on
+UID
+\emph default
+), identificador de grupo (
+\emph on
+GID
+\emph default
+) y los grupos a los que pertenece.
+ La básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+id [usuario]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no se especifica el usuario, se considera el usuario que lo ejecuta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Dicha información se obtiene del archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/etc/passwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para conocer información del usuario 
+\emph on
+root
+\emph default
+ usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+id root
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+uid=0(root) gid=0(root) grupos=0(root)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+who
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+who
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra información acerca de los usuarios que están actualmente conectados
+ al sistema.
+ Esta información incluye el nombre de usuario, la consola virtual en la
+ que están conectados, la fecha y hora en que iniciaron sesión y la dirección
+ IP de la máquina desde la que se conectaron.
+\end_layout
+
+\begin_layout Example
+Para saber cuáles usuarios están conectados podemos escribir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+who
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+damian tty1 2023-05-01 04:21
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+root
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+tty2 2023-05-03 06:01 (190.2.103.252)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+su
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+su
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+su
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un acrónimo de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+substituir usuario
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ es utilizado para cambiar de usuario en una sesión de terminal.
+ La básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+su [USUARIO]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no se especifica un 
+\emph on
+USUARIO
+\emph default
+, se cambia al usuario 
+\emph on
+root
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Al ingresar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+su
+\begin_inset Quotes frd
+\end_inset
+
+, el sistema solicitará la contraseña 
+\emph on
+del usuario al que se quiere cambiar
+\emph default
+.
+ Si la contraseña es correcta se iniciará una shell para el usuario indicado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para empezar a utilizar la terminal como el usuario root escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+su
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+sudo
+\end_layout
+
+\begin_layout Standard
+Con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, un usuario común puede obtener temporariamente los permisos de un usuario
+ con otors privilegios, como el superusuario (
+\emph on
+root
+\emph default
+), para realizar tareas que requieren permisos especiales.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo [-u USUARIO] comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no se especifica un 
+\emph on
+USUARIO
+\emph default
+, se obtienen los privilegios del usuario 
+\emph on
+root
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Al ingresar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, el sistema solicitará la contraseña 
+\emph on
+del usuario que ejecuta el comando
+\emph default
+.
+ Si la contraseña es correcta y el usuario tiene permisos para usar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, el comando especificado se ejecutará con los permisos correspondientes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ver el archivo de usuarios de Linux podemos usar el siguiente comando:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo head -n 5 cat /etc/passwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+root:x:0:0::/root:/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+bin:x:1:1::/:/usr/bin/nologin
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+daemon:x:2:2::/:/usr/bin/nologin
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Para usar la consola como superusuario, pero sin saber la contraseña de
+ 
+\emph on
+root
+\emph default
+ podemos usar:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo su
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+passwd
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+passwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es utilizado para cambiar la contraseña de un usuario.
+ La básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+passwd [opciones] [usuario]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si se ejecuta sin argumentos, se cambiará la contraseña del usuario actual.
+ El comando pedirá al usuario que introduzca la contraseña 
+\emph on
+actual
+\emph default
+ y, a continuación, que introduzca la nueva contraseña dos veces para confirmarl
+a.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las contraseñas de los usuarios en Linux están cifradas y almacenadas en
+ un archivo protegido llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/etc/shadow
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Bloquea la cuenta del usuario.
+ Esto significa que el usuario no podrá iniciar sesión hasta que la cuenta
+ sea desbloqueada.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-u
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Desbloquea una cuenta que ha sido bloqueada.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Elimina la contraseña del usuario.
+ Esto permite que el usuario inicie sesión sin una contraseña.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-e
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Hace que la contraseña del usuario expire.
+ Esto significa que el usuario deberá cambiar su contraseña la próxima vez
+ que inicie sesión.
+\end_layout
+
+\begin_layout Subsection
+Permisos en Linux
+\end_layout
+
+\begin_layout Standard
+Los permisos Linux son utilizados para proteger los archivos y directorios
+ del sistema de accesos no autorizado.
+ Cada archivo y directorio es propiedad de un usuario y un grupo; y el propietar
+io del archivo o directorio puede especificar quién tiene acceso a ellos
+ y en qué nivel.
+\end_layout
+
+\begin_layout Standard
+Existen tres tipos de permisos: de usuario (
+\emph on
+u
+\emph default
+), de grupo (
+\emph on
+g
+\emph default
+) y otros (
+\emph on
+o
+\emph default
+), y cada uno de ellos puede tener tres permisos posibles: lectura (
+\emph on
+r
+\emph default
+), escritura (
+\emph on
+w
+\emph default
+) y ejecución (
+\emph on
+x
+\emph default
+).
+\end_layout
+
+\begin_layout Itemize
+El permiso de lectura (
+\emph on
+r
+\emph default
+) permite al usuario ver el contenido de un archivo o listar los archivos
+ de un directorio.
+\end_layout
+
+\begin_layout Itemize
+El permiso de escritura (
+\emph on
+w
+\emph default
+) permite al usuario modificar el contenido de un archivo o crear, eliminar
+ y renombrar archivos dentro de un directorio.
+\end_layout
+
+\begin_layout Itemize
+El permiso de ejecución (
+\emph on
+x
+\emph default
+) permite al usuario ejecutar un archivo o entrar en un directorio.
+\end_layout
+
+\begin_layout Example
+Observemos la salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls -l ~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rwxr-xr-x 1 alumno wheel 15832 abr 12 19:33 dsh*
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 alumno wheel
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1130 abr 12 19:32 dsh.c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Podemos observar que el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+dsh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ tiene los permisos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rwxr-xr-x
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Los primeros tres permisos se corresponden con los permisos de usuario
+ (
+\emph on
+u
+\emph default
+), los siguientes con los permisos del grupo (
+\emph on
+g
+\emph default
+) y los últimos son los permisos de los otros (
+\emph on
+o
+\emph default
+) usuarios.
+ En definitiva el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+alumno
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ tiene todos los permisos, pero los del grupo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+wheel
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y demás usuarios no tienen permiso de escritura.
+\end_layout
+
+\begin_layout Itemize
+Para el caso del archivo 
+\begin_inset Quotes fld
+\end_inset
+
+dsh.c
+\begin_inset Quotes frd
+\end_inset
+
+, la única diferencia es que nadie puede ejecutarlo.
+\end_layout
+
+\end_deeper
+\begin_layout Example
+En ocasiones estos permisos se representan mediante un número de 3 dígitos
+ en base 8, donde cada dígito representa los permisos para un grupo diferente
+ de usuarios: el propietario del archivo, el grupo al que pertenece el archivo
+ y otros usuarios.
+ Cada dígito es una suma de valores numéricos que representan los permisos
+ para leer, escribir y ejecutar.
+\end_layout
+
+\begin_layout Example
+Los valores numéricos correspondientes a cada permiso son:
+\end_layout
+
+\begin_layout Itemize
+4 para el permiso de lectura (
+\emph on
+r
+\emph default
+).
+\end_layout
+
+\begin_layout Itemize
+2 para el permiso de escritura (
+\emph on
+w
+\emph default
+).
+\end_layout
+
+\begin_layout Itemize
+1 para el permiso de ejecución (
+\emph on
+x
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, la suma de los valores numéricos para los distintos permisos
+ es:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $0$
+\end_inset
+
+: sin permisos (
+\family typewriter
+---
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1$
+\end_inset
+
+: permiso de ejecución (
+\family typewriter
+--x
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $2$
+\end_inset
+
+: permiso de escritura (
+\family typewriter
+-w-
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1+2=3$
+\end_inset
+
+: permiso de escritura y ejecución (
+\family typewriter
+-wx
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $4$
+\end_inset
+
+: permiso de lectura (
+\family typewriter
+r--
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1+4=5$
+\end_inset
+
+: permiso de lectura y ejecución (
+\family typewriter
+r-x
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $2+4=6$
+\end_inset
+
+: permiso de lectura y escritura (
+\family typewriter
+rw-
+\family default
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1+2+4=7$
+\end_inset
+
+: permiso de lectura, escritura y ejecución (
+\family typewriter
+rwx
+\family default
+).
+\end_layout
+
+\begin_layout Example
+Si vemos que un archivo tiene permisos 644, esto significa que el propietario
+ del archivo tiene permisos de lectura y escritura (6), mientras que el
+ grupo y otros usuarios solo tienen permiso de lectura (4).
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 chgrp
 \end_layout
 
@@ -15751,34 +16972,6 @@ chown
 
 \family typewriter
 \emph off
-id
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-passwd
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-su
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-sudo
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 useradd
 \end_layout
 
@@ -15787,27 +16980,6 @@ useradd
 \family typewriter
 \emph off
 userdel
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-w
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-who
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-whoami
 \end_layout
 
 \begin_layout Subsection
