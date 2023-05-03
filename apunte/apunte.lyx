@@ -16362,7 +16362,7 @@ sudo
 \end_layout
 
 \begin_layout Example
-Para ver el archivo de usuarios de Linux podemos usar el siguiente comando:
+Para ver el archivo de contraseñas de Linux podemos usar el siguiente comando:
 \end_layout
 
 \begin_deeper
@@ -16378,7 +16378,7 @@ status open
 
 \begin_layout Plain Layout
 
-sudo head -n 5 cat /etc/passwd
+sudo head -n 5 /etc/shadow
 \end_layout
 
 \end_inset
@@ -16803,7 +16803,11 @@ Para el caso del archivo
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 dsh.c
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -16825,7 +16829,10 @@ Los valores numéricos correspondientes a cada permiso son:
 \end_layout
 
 \begin_layout Itemize
-4 para el permiso de lectura (
+\begin_inset Formula $4$
+\end_inset
+
+ para el permiso de lectura (
 \emph on
 r
 \emph default
@@ -16833,7 +16840,10 @@ r
 \end_layout
 
 \begin_layout Itemize
-2 para el permiso de escritura (
+\begin_inset Formula $2$
+\end_inset
+
+ para el permiso de escritura (
 \emph on
 w
 \emph default
@@ -16841,7 +16851,10 @@ w
 \end_layout
 
 \begin_layout Itemize
-1 para el permiso de ejecución (
+\begin_inset Formula $1$
+\end_inset
+
+ para el permiso de ejecución (
 \emph on
 x
 \emph default
@@ -16942,23 +16955,21 @@ rwx
 \end_layout
 
 \begin_layout Example
-Si vemos que un archivo tiene permisos 644, esto significa que el propietario
- del archivo tiene permisos de lectura y escritura (6), mientras que el
- grupo y otros usuarios solo tienen permiso de lectura (4).
-\end_layout
+Si vemos que un archivo tiene permisos 
+\begin_inset Formula $644$
+\end_inset
 
-\begin_layout Subsection
+, esto significa que el propietario del archivo tiene permisos de lectura
+ y escritura (
+\begin_inset Formula $6$
+\end_inset
 
-\family typewriter
-\emph off
-chgrp
-\end_layout
+), mientras que el grupo y otros usuarios solo tienen permiso de lectura
+ (
+\begin_inset Formula $4$
+\end_inset
 
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-chmod
+).
 \end_layout
 
 \begin_layout Subsection
@@ -16968,6 +16979,601 @@ chmod
 chown
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+chown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+chown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Change Owner
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (cambiar dueño).
+\end_layout
+
+\end_inset
+
+ se utiliza para cambiar el propietario y/o grupo de un archivo o directorio.
+ La sintaxis general del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chown [-R] usuario[:grupo] archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-R
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para operar recursivamente sobre los directorios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante tener en cuenta que generalmente solo el usuario 
+\emph on
+root
+\emph default
+ puede cambiar la propiedad de un archivo o directorio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+El usuario 
+\emph on
+root
+\emph default
+ puede apropiarse de un 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chown root archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+chmod
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+chmod
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+chmod
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ significa 
+\begin_inset Quotes fld
+\end_inset
+
+cambiar modo
+\begin_inset Quotes frd
+\end_inset
+
+ (del inglés: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Change Mode
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ se utiliza para cambiar los permisos de acceso a archivos y directorios.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+chmod
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod [-R] modo archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-R
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para operar recursivamente sobre los directorios.
+\end_layout
+
+\begin_layout Standard
+El modo puede especificarse en forma numérica o usando caracteres especiales.
+ La sintaxis básica del modo simbólico es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[ugoa][+-=][rwx]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+u
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: representa al usuario propietario del archivo/directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+g
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: representa al grupo al que pertenece el archivo/directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+o
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: representa a otros usuarios que no son el propietario ni pertenecen al
+ grupo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: representa a todos los usuarios.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
++
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: agrega los permisos especificados al archivo/directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: elimina los permisos especificados del archivo/directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+=
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: establece los permisos especificados y elimina cualquier otro permiso
+ que no sea el especificado.
+\end_layout
+
+\begin_layout Example
+Para agregar permiso de 
+\emph on
+lectura
+\emph default
+ al usuario propietario de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod u+r archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para eliminar permiso de 
+\emph on
+escritura
+\emph default
+ al grupo al que pertenece 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod g-w archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para establecer permiso de 
+\emph on
+ejecución
+\emph default
+ a otros usuarios que no son propietarios de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ ni pertenecen al grupo, podemos usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod o=x archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para darles todos los permisos a todos los usuarios sobre 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos escribir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod =777 archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -16975,11 +17581,248 @@ chown
 useradd
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+useradd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es utilizado para crear una nueva cuenta de usuario en el sistema.
+ A continuación se explican en detalle los aspectos más importantes del
+ comando.
+\end_layout
+
+\begin_layout Standard
+Sintaxis básica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+useradd [opciones] usuario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-m
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Crea automáticamente el directorio personal del usuario en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/home/usuario
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-g GRUPO
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Setea el 
+\emph on
+GRUPO
+\emph default
+ al que pertenece el usuario.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante destacar que para crear una cuenta de usuario con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+useradd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, es necesario tener privilegios de superusuario en el sistema.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 userdel
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+userdel
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para eliminar una cuenta de usuario existente.
+ La sintaxis básica del comando "userdel" es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+userdel [opciones] usuario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: esta opción se utiliza para eliminar la cuenta de usuario y sus archivos
+ personales.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: esta opción se utiliza para forzar la eliminación de la cuenta de usuario,
+ incluso si está actualmente en uso o si tiene procesos en ejecución.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Al igual que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+useradd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, para usar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+userdel
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es necesario tener privilegios de superusuario en el sistema.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
