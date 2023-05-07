@@ -16745,7 +16745,11 @@ cat
 \end_layout
 
 \begin_layout Exercise
-En una consola virtual, utilice 
+En una 
+\emph on
+consola virtual
+\emph default
+, utilice 
 \begin_inset Quotes fld
 \end_inset
 
@@ -16924,6 +16928,13 @@ file
 \end_inset
 
  para averiguar que tipo de archivo es.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -18352,6 +18363,30 @@ Escriba una secuencia de tuberías para averiguar cuantos emuladores de terminal
 \begin_layout Exercise
 Escriba una secuencia de tuberías para mostrar los tamaños de los archivos
  del directorio actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para averiguar cuantas veces se ejecutó
+ el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
