@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-3 de mayo de 2023.
+9 de mayo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -6725,6 +6725,19 @@ Además, también es un lenguaje de scripting que permite a los usuarios escribi
  en momentos específicos.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre el prompts.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Sintaxis
 \end_layout
@@ -12310,8 +12323,11 @@ Comodines
 
 \begin_layout Standard
 Los comodines, también conocidos como wildcards en inglés, son caracteres
- especiales que se utilizan para representar patrones de búsqueda en nombres
- de archivos y directorios.
+ especiales que se utilizan para representar patrones de búsqueda en 
+\emph on
+nombres de archivos y directorios
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -12345,7 +12361,7 @@ es de línea de comandos.
 \begin_inset Quotes frd
 \end_inset
 
-: Representa cualquier cadena de caracteres, incluyendo una cadena vacía.
+: Representa cualquier cadena de caracteres, incluyendo una vacía.
 \end_layout
 
 \begin_layout Itemize
@@ -12391,6 +12407,7 @@ es de línea de comandos.
 \end_inset
 
 : Representa un producto cartesiano de caracteres.
+ No se tienen en cuenta los archivos de la carpeta actual.
 \end_layout
 
 \begin_layout Example
@@ -13327,37 +13344,7 @@ Averigüe cuales son los programas de usuario instalados en su computadora,
 \end_layout
 
 \begin_layout Exercise
-Logre la siguiente salida del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ls
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size small
-1-10-2023 1-11-2024 1-12-2023 1-2-2024 1-4-2023 1-5-2024 1-7-2023 1-8-2024
- 1-10-2024 1-1-2023 1-12-2024 1-3-2023 1-4-2024 1-6-2023 1-7-2024 1-9-2023
- 1-11-2023 1-1-2024 1-2-2023 1-3-2024 1-5-2023 1-6-2024 1-8-2023 1-9-2024
-\end_layout
-
-\end_inset
-
-
+Cree un archivo con el nombre de cada fecha del año.
 \end_layout
 
 \begin_layout Standard
@@ -13414,6 +13401,10 @@ rmdir carpeta
 \begin_layout Standard
 Explique por que se produce el error.
  Proponga una forma de solucionarlo.
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
 \end_layout
 
 \begin_layout Section
@@ -13496,7 +13487,7 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + O: Para guardar los cambios en un archivo, se utiliza la combinación
+Ctrl+O: Para guardar los cambios en un archivo, se utiliza la combinación
  de teclas 
 \begin_inset ERT
 status open
@@ -13530,7 +13521,7 @@ faKeyboardO
 
 \end_inset
 
-Shift + flechas: Se puede seleccionar texto manteniendo presionada la tecla
+Shift+flechas: Se puede seleccionar texto manteniendo presionada la tecla
  
 \begin_inset ERT
 status open
@@ -13564,7 +13555,7 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + K: Para cortar un texto seleccionado, se utiliza la combinación de
+Ctrl+K: Para cortar un texto seleccionado, se utiliza la combinación de
  teclas 
 \begin_inset ERT
 status open
@@ -13580,7 +13571,7 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + K.
+Ctrl+K.
 \end_layout
 
 \begin_layout Itemize
@@ -13598,41 +13589,7 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + U: Para pegar un texto seleccionado, se utiliza la combinación de
- teclas 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faKeyboardO
-\backslash
-;
-\end_layout
-
-\end_inset
-
-Ctrl + U.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faKeyboardO
-\backslash
-;
-\end_layout
-
-\end_inset
-
-Alt + U: Para deshacer la última acción, usamos la combinación de teclas
+Ctrl+U: Para pegar un texto seleccionado, se utiliza la combinación de teclas
  
 \begin_inset ERT
 status open
@@ -13648,7 +13605,7 @@ faKeyboardO
 
 \end_inset
 
-Alt + U.
+Ctrl+U.
 \end_layout
 
 \begin_layout Itemize
@@ -13666,7 +13623,7 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + X: Para salir del editor, se utiliza la combinación de teclas 
+Alt+U: Para deshacer la última acción, usamos la combinación de teclas 
 \begin_inset ERT
 status open
 
@@ -13681,7 +13638,40 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + X, lo que devuelve al usuario a la línea de comandos.
+Alt+U.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+X: Para salir del editor, se utiliza la combinación de teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+X, lo que devuelve al usuario a la línea de comandos.
 \end_layout
 
 \begin_layout Standard
@@ -13830,14 +13820,7 @@ Puede agregarse la opción
  para enumerar las líneas emitidas.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
+\begin_layout Example
 Para conocer información sobre el CPU podemos observar el contenido del
  archivo especial 
 \begin_inset Quotes fld
@@ -13879,7 +13862,7 @@ cat /proc/cpuinfo
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Example
 Para ver información sobre la memoria podemos observar el contenido del
  archivo especial 
 \begin_inset Quotes fld
@@ -13921,7 +13904,7 @@ cat /proc/meminfo
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Example
 Para mostrar información sobre la línea de comando del kernel utilizada
  para iniciar el sistema operativo y a continuación la versión del mismo,
  podemos usar el siguiente comando:
@@ -14126,14 +14109,7 @@ nano
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
+\begin_layout Example
 Para ver un registro de los últimos sucesos del sistema podemos paginar
  el archivo 
 \begin_inset Quotes fld
@@ -14273,7 +14249,7 @@ head
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Example
 Para ver las primeras cuatro lineas del archivo 
 \begin_inset Quotes fld
 \end_inset
@@ -14360,13 +14336,6 @@ status open
 <pass>
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -14493,7 +14462,7 @@ La opción
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Example
 Para monitorear los últimos sucesos del sistema podemos observar las últimas
  lineas del archivo 
 \begin_inset Quotes fld
@@ -14634,11 +14603,257 @@ Algunas opciones comunes incluyen:
 : fusiona archivos previamente ordenados.
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+-R
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+: en vez de ordenar, mezcla el contenido.
+\end_layout
+
+\begin_layout Example
+Para ordenar alfabéticamente los shells del sistema podemos usar el comando
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sort
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ sobre el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/etc/shells
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sort /etc/shells
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+# /etc/shells: valid login shells
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/bin/dash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/bin/rbash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/bin/sh
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/bin/dash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/bin/rbash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/bin/sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 uniq
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+uniq
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta que se utiliza para encontrar y eliminar líneas duplicadas
+ 
+\emph on
+consecutivas
+\emph default
+ en un archivo de entrada.
+ La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+uniq [opciones] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: para contar el número de ocurrencias de cada línea en el archivo de entrada.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: para mostrar sólo las líneas duplicadas.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-u
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: para mostrar sólo las líneas únicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Puesto que el comando solo funciona con lineas duplicadas consecutivas,
+ es probable que primero se deba ordenar el archivo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -14648,11 +14863,148 @@ uniq
 strings
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-tr
+strings
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta que se utiliza para imprimir las cadenas de texto legibles
+ que se encuentran en los archivos binarios.
+ Esto es útil para buscar información dentro de archivos binarios que no
+ son legibles para un usuario común.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+strings [-n MINIMO] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+- n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para especificar el 
+\emph on
+MÍNIMO
+\emph default
+ de caracteres buscado.
+\end_layout
+
+\begin_layout Example
+Para buscar las cadenas de 70 caracteres o mas dentro del archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/bin/echo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+strings -n 70 /bin/echo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+-E disable interpretation of backslash escapes (default)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+NOTE: your shell may have its own version of %s, which usually supersedes
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+the version described here.
+ Please refer to your shell's documentation
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -14662,6 +15014,162 @@ tr
 wc
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de "
+\emph on
+Word Count
+\emph default
+" (contar palabras).
+\end_layout
+
+\end_inset
+
+ se utiliza para contar el número de líneas, palabras y bytes en un archivo
+ de texto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wc [opciones] archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuación, se describen las opciones más comunes:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: cuenta el número de líneas en el archivo especificado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-w
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: cuenta el número de palabras en el archivo especificado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: cuenta el número de bytes en el archivo especificado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-m
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: cuenta el número de caracteres en el archivo especificado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si no se especifican opciones, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ cuenta lineas, palabras y caracteres.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -14669,8 +15177,1082 @@ wc
 file
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+file
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es útil para identificar el formato de un archivo cuando la extensión del
+ archivo no es suficiente para determinar su tipo.
+ La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+file archivo...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos averiguar que formato tiene una imagen con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+file imagen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+imagen: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300,
+ segment length 16, progressive, precision 8, 739x688, components 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+cut
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cut
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta de procesamiento de texto que se utiliza para cortar
+ secciones de líneas de texto.
+ Permite seleccionar una o varias columnas de texto de un archivo de entrada
+ separado por delimitadores como espacios, tabulaciones o comas.
+ 
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cut opciones archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes son las siguientes:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c CANTIDAD
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Corta una 
+\emph on
+CANTIDAD
+\emph default
+ de caracteres.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d DELIMITADOR
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Especifica el 
+\emph on
+DELIMITADOR
+\emph default
+ de columna utilizado en el archivo de entrada.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f CAMPOS
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Selecciona 
+\emph on
+CAMPOS
+\emph default
+ específicos separados por el delimitador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos consultar cuales son los shells usados por los usuarios del sistema
+ con el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cut -d : -f 7 /etc/passwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Expresiones regulares
+\end_layout
+
+\begin_layout Standard
+Las expresiones regulares son un conjunto de caracteres especiales que se
+ utilizan para definir 
+\emph on
+lenguajes
+\emph default
+.
+ Un 
+\emph on
+lenguaje
+\emph default
+ es simplemente un conjunto de palabras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás valga la pena comentar el modulo exrex de python.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los conceptos básicos de las expresiones regulares son:
+\end_layout
+
+\begin_layout Description
+Caracteres
+\begin_inset space ~
+\end_inset
+
+literales Los caracteres literales son aquellos que se escriben directamente
+ en la expresión regular.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+La expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'h'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ define el lenguaje 
+\begin_inset Formula $\left\{ h\right\} $
+\end_inset
+
+, cuya única palabra es la letra 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+El lenguaje con la palabra vacía (
+\begin_inset Formula $\left\{ ''\right\} $
+\end_inset
+
+) se define mediante la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+''
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Concatenación La concatenación de lenguajes permite definir un lenguaje
+ nuevo, a partir de otros dos.
+ Las palabras del nuevo lenguaje se construyen teniendo como prefijos a
+ las palabras del primero y como sufijos a las palabras del segundo.
+ La concatenación de lenguajes no utiliza ningún carácter especial, simplemente
+ se escribe un lenguaje a continuación de otro.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+El lenguaje definido por la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'si'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la concatenación del lenguaje definido por las expresiones 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'s'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'i'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+; formando el conjunto 
+\begin_inset Formula $\left\{ si\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Union La unión de lenguajes permite definir un lenguaje con palabras de
+ otros dos.
+ La denotamos con el carácter 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+|
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+El lenguaje definido por la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'a|b|c'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el lenguaje 
+\begin_inset Formula $\left\{ a,b,c\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Paréntesis Es posible agrupar expresiones regulares mediante la utilización
+ de paréntesis.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+La expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'(a|b|c)(1|2|3)'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la concatenación de los lenguajes definidos por 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'a|b|c'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'1|2|3'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+; en definitiva es el lenguaje 
+\begin_inset Formula $\left\{ a1,a2,a3,b1,b2,b3,c1,c2,c3\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Repeticiones Es posible concatenar un lenguaje consigo mismo, para dar lugar
+ a nuevos lenguajes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+?
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ permite concatenar un lenguaje a lo sumo una sola vez.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+El lenguaje definido por la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'a(1)?z'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el lenguaje 
+\begin_inset Formula $\left\{ az,a1z\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+El operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+{n,m}
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ permite concatenar un lenguaje entre 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+ veces.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Puede definirse el lenguaje 
+\begin_inset Formula $\left\{ aaa,aaaa,aaaaa\right\} $
+\end_inset
+
+ con la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'a{3,5}'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Puede omitirse el limite inferior para repetir hasta 
+\begin_inset Formula $m$
+\end_inset
+
+ veces, o el limite superior para repetirse a partir de 
+\begin_inset Formula $n$
+\end_inset
+
+ veces.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+El operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
++
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ permite concatenar un lenguaje entre una e infinitas veces.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+El lenguaje definido por la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'x+'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el lenguaje 
+\begin_inset Formula $\left\{ x,xx,xxx,xxxx,\ldots\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+El operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+*
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ permite concatenar un lenguaje entre cero e infinitas veces.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+El lenguaje definido por la expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+'x*'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el lenguaje 
+\begin_inset Formula $\left\{ '',x,xx,xxx,xxxx,\ldots\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+Anclas Las anclas son caracteres especiales que indican el inicio o el final
+ de una cadena.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El ancla 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+^
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para indicar el inicio de una cadena.
+\end_layout
+
+\begin_layout Itemize
+El ancla 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ indica el final de una cadena.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La utilidad de las anclas quedará en evidencia cuando las utilicemos para
+ buscar contenido dentro de archivos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ademas, contamos con algunos lenguajes ya definidos, como por ejemplo:
+\end_layout
+
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[:digit:]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter numérico.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+La expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[::digit::]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ define el lenguaje 
+\begin_inset Formula $\left\{ 0,1,2,3,4,5,6,7,8,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[:alpha:]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter alfabético.
+\end_layout
+
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[:alnum:]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter alfanumérico.
+\end_layout
+
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[:lower:]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter en minúscula.
+\end_layout
+
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[:upper:]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter en minúscula.
+\end_layout
+
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[:space:]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter en blanco.
+\end_layout
+
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[d-r]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter entre la letra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y la 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+La expresión regular 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[a-c]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ define el lenguaje 
+\begin_inset Formula $\left\{ a,b,c\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+La clase 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ representa cualquier carácter.
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+tr
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tr
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tr
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\begin_inset Quotes fld
+\end_inset
+
+traducir
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ es una herramienta modificar caracteres en una cadena de texto.
+ El comando toma la entrada estándar y la traduce o modifica de acuerdo
+ con los parámetros especificados enviando el resultado se envía a la salida
+ estándar.
+\end_layout
+
+\begin_layout Standard
+Se puede utilizar para realizar diversas operaciones de manipulación de
+ texto, como eliminar o reemplazar caracteres, cambiar mayúsculas y minúsculas,
+ y eliminar espacios en blanco.
+ También pueden usarse clases de caracteres.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tr [opciones] CADENA1 [CADENA2]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones mas comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: sirve para eliminar los caracteres especificados en el conjunto de caracteres
+ a traducir.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: sustituye secuencias de caracteres repetidos, por uno solo de ellos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La utilidad de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tr
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ resultara mas evidente cuando se estudien las redirecciones.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -14680,8 +16262,780 @@ Expresiones regulares
 grep
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+grep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+grep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las iniciales de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Global Regular Expresion Print
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ se utiliza para buscar patrones de texto en el contenido de archivos.
+ La sintaxis básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+grep [opciones] patron archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-i
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: busca el patrón de forma insensible a mayúsculas y minúsculas.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-v
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra las líneas que no contienen el patrón.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra el número de líneas que contienen el patrón.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra el número de línea de cada línea que contiene el patrón.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: busca recursivamente en todos los archivos dentro de un directorio y sus
+ subdirectorios.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-E
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: habilita el uso de expresiones regulares extendidas.
+ Las expresiones regulares extendidas permites caracteres especiales como
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+?
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
++
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+{}
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+|
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+()
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-o
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: muestra sólo la parte de la línea que coincide con el patrón de búsqueda.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Por defecto, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+grep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra toda la línea que contiene la coincidencia.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Para buscar la linea donde se encuentra definido el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+root
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+grep root /etc/passwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+root:x:0:0::/root:/bin/bash
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para buscar cuantas veces aparece la palabra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+GNU
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en la documentación de Bash usamos el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+grep -c GNU /usr/share/doc/bash/*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/bash.html:9
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/bashref.html:49
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/CHANGES:18
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/COMPAT:0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/FAQ:10
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/INTRO:1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/NEWS:10
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/POSIX:0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/RBASH:0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/share/doc/bash/README:2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nano
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para crear un archivo de texto.
+ Luego visualice dicho contenido en el emulador de terminal con el comando
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+En una consola virtual, utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para ver el contenido de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/usr/share/doc/bash/README
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Tome nota de las dificultades que se presentan al ver el archivo y proponga
+ una forma de solucionarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar como mostrar con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+head
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ todas las lineas de un archivo, salvo las últimas 3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree un archivo vacío y, en un emulador de terminal, utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tail
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para monitorear su contenido.
+ Modifique el contenido del archivo en otra aplicación y observe como esos
+ cambios se reflejan en el emulador de terminal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Descargue la siguiente 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Fitz_Roy_1.jpg/800px-Fitz_Roy_1.jpg"
+literal "true"
+
+\end_inset
+
+ fotografía y utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+strings
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar con que cámara se tomo dicha imagen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree un archivo de python con el siguiente código:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hola mundo!
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+file
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar que tipo de archivo es.
+\end_layout
+
+\begin_layout Exercise
+Agregue la siguiente linea al comienzo del archivo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/python
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vuelva a averiguar el tipo del archivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree un archivo con el siguiente contenido:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Año,Marca,Modelo,Descripción,Precio
+\end_layout
+
+\begin_layout Plain Layout
+
+1997,Ford,E350,"ac, ABS, moon",3000.00
+\end_layout
+
+\begin_layout Plain Layout
+
+1999,Chevy,Venture,Extended Edition,4900.00
+\end_layout
+
+\begin_layout Plain Layout
+
+1999,Chevyr,Venture,"Extended Edition, Very Large",5000.00
+\end_layout
+
+\begin_layout Plain Layout
+
+1996,Jeep,Grand Cherokee,"MUST SELL! air, moon roof",4799.00
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cut
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para obtener todas las marcas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -14723,6 +17077,154 @@ diff
 
 .
  Pruebe cada uno de ellos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba expresiones regulares que definan los siguientes lenguajes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ xx,yx\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Palabras con una cantidad par de letras 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Palabras con una cantidad impar de letras 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Palabras formadas solamente por letras 
+\begin_inset Formula $x$
+\end_inset
+
+, o solamente por letras 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Palabras que comienzan por letras 
+\begin_inset Formula $x$
+\end_inset
+
+ y siguen por letras 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Palabras donde cada letra 
+\begin_inset Formula $y$
+\end_inset
+
+ se encuentra entre un par de letras 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Palabras que terminen en 
+\begin_inset Formula $.jpg$
+\end_inset
+
+ o 
+\begin_inset Formula $.jpeg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para consultar que hacen las opciones 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-A
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-B
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+grep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -14801,13 +17303,6 @@ Los operadores de secuenciación, son otras de las cuestiones de las cuales
 
 : Se utiliza para ejecutar el siguiente comando solo si el comando anterior
  falló.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -14980,13 +17475,6 @@ La redirección de salida estandar substituye por completo el contenido de
  un archivo.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -15555,7 +18043,11 @@ dev/null
 \begin_inset Quotes frd
 \end_inset
 
-: un archivo infinito que contiene datos cero (0).
+: un archivo infinito que contiene datos cero (
+\begin_inset Formula $0$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -15695,6 +18187,30 @@ false
 \end_layout
 
 \begin_layout Exercise
+Piense que ocurre tras ejecutar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+echo 2 * 3 > 10
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Verifíquelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Busque en Internet o consulte a alguna IA sobre la redirección de entrada
  
 \begin_inset Quotes fld
@@ -15709,6 +18225,32 @@ Busque en Internet o consulte a alguna IA sobre la redirección de entrada
 \end_inset
 
 .
+ Explique que hace el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat < archivo1 > archivo2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -15733,6 +18275,83 @@ touch
 \end_inset
 
 ?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cuanto ocupa un archivo con todas las 
+\begin_inset Quotes fld
+\end_inset
+
+contraseñas
+\begin_inset Quotes frd
+\end_inset
+
+ posibles de cuatro letras formadas por caracteres alfabéticos en minúscula?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree un archivo con una lista de todos los archivos del sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para observar la tercer linea de un archivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para averiguar cual es el archivo con
+ mayor cantidad de lineas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para averiguar cuantos emuladores de terminal
+ hay abiertos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para mostrar los tamaños de los archivos
+ del directorio actual.
 \end_layout
 
 \begin_layout Section
@@ -15898,7 +18517,7 @@ UID
 GID
 \emph default
 ) y los grupos a los que pertenece.
- La básica del comando es la siguiente:
+ La sintaxis básica del comando es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -16262,7 +18881,7 @@ sudo
 \end_inset
 
 , un usuario común puede obtener temporariamente los permisos de un usuario
- con otors privilegios, como el superusuario (
+ con otros privilegios, como el superusuario (
 \emph on
 root
 \emph default
@@ -16825,6 +19444,13 @@ En ocasiones estos permisos se representan mediante un número de 3 dígitos
 \end_layout
 
 \begin_layout Example
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
 Los valores numéricos correspondientes a cada permiso son:
 \end_layout
 
@@ -17087,6 +19713,13 @@ root
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 El usuario 
 \emph on
@@ -17281,13 +19914,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Donde:
 \end_layout
 
@@ -17396,6 +20022,13 @@ a
 
 : establece los permisos especificados y elimina cualquier otro permiso
  que no sea el especificado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -17629,6 +20262,13 @@ useradd [opciones] usuario
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Algunas de las opciones más comunes son:
 \end_layout
 
@@ -17818,6 +20458,19 @@ userdel
 \end_inset
 
  es necesario tener privilegios de superusuario en el sistema.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar usrmod
 \end_layout
 
 \end_inset
@@ -18061,6 +20714,13 @@ tar
 
 \family typewriter
 \emph off
+time
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 tldr
 \end_layout
 
@@ -18110,6 +20770,12 @@ seq
 \begin_layout Subsection
 
 \family typewriter
+shift
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
 source
 \end_layout
 
@@ -18119,12 +20785,18 @@ source
 test
 \end_layout
 
+\begin_layout Subsection
+
+\family typewriter
+trap
+\end_layout
+
 \begin_layout Section
 Control de flujo
 \end_layout
 
 \begin_layout Subsection
-if
+if / else
 \end_layout
 
 \begin_layout Subsection
@@ -18132,15 +20804,11 @@ for
 \end_layout
 
 \begin_layout Subsection
-while
+while / until
 \end_layout
 
 \begin_layout Subsection
 case
-\end_layout
-
-\begin_layout Subsection
-until
 \end_layout
 
 \begin_layout Subsection
