@@ -3809,7 +3809,7 @@ _start:
 
 \begin_layout Plain Layout
 
-    mov $1, %rdi       # El descriptor 1 es la salida estandar
+    mov $1, %rdi       # El descriptor 1 es la salida estándar
 \end_layout
 
 \begin_layout Plain Layout
@@ -6756,7 +6756,8 @@ Es importante seguir la sintaxis correcta de un comando, ya que de lo contrario,
 
  de un comando es la estructura y el formato que se deben seguir para escribir
  y ejecutar correctamente un comando en un sistema operativo.
- La sintaxis incluye el nombre del comando, las opciones y los argumentos
+ La sintaxis incluye el nombre del comando, las 
+ es y los argumentos
  necesarios, así como la forma en que deben escribirse y ordenarse.
 \end_layout
 
@@ -11530,7 +11531,7 @@ ln
 \begin_inset Quotes frd
 \end_inset
 
- crea enlaces duros, a no ser que se utilice la opcion 
+ crea enlaces duros, a no ser que se utilice la opción 
 \begin_inset Quotes fld
 \end_inset
 
@@ -12753,7 +12754,7 @@ drwxr-xr-x 2 4096 may 1 23:46 archivo
 \end_layout
 
 \begin_layout Exercise
-¿Por que da error el comando 
+¿Por qué da error el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -12850,7 +12851,7 @@ rmdir carpeta
 \end_layout
 
 \begin_layout Standard
-Explique por que se produce el error.
+Explique por qué se produce el error.
  Proponga una forma de solucionarlo.
 \end_layout
 
@@ -12896,7 +12897,7 @@ rmdir carpeta
 \end_layout
 
 \begin_layout Standard
-Explique por que se produce el error.
+Explique por qué se produce el error.
  Proponga una forma de solucionarlo.
 \end_layout
 
@@ -12930,7 +12931,7 @@ mkdir carpeta1/carpeta2
 \end_layout
 
 \begin_layout Standard
-Explique por que se produce el error.
+Explique por qué se produce el error.
  Proponga una forma de solucionarlo.
 \end_layout
 
@@ -12991,7 +12992,7 @@ man
 \begin_inset Quotes frd
 \end_inset
 
- para averigurar sobre el comando 
+ para averiguar sobre el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -13399,7 +13400,7 @@ rmdir carpeta
 \end_layout
 
 \begin_layout Standard
-Explique por que se produce el error.
+Explique por qué se produce el error.
  Proponga una forma de solucionarlo.
 \end_layout
 
@@ -13704,7 +13705,7 @@ nano
 \end_inset
 
  es un programa interactivo.
- Esto quiere decir que despues de ingresar el comando, se ingresa a un programa
+ Esto quiere decir que después de ingresar el comando, se ingresa a un programa
  que espera mas entrada desde el teclado.
 \end_layout
 
@@ -13972,7 +13973,7 @@ less
 \begin_inset Quotes frd
 \end_inset
 
- deriba de 
+ deriva de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -17437,7 +17438,7 @@ Redirección de salida estándar
 \end_inset
 
 : esta redirección cambia la salida en pantalla del comando a un archivo.
- La sintaxis básica de la redirección de salida estandar es:
+ La sintaxis básica de la redirección de salida estándar es:
 \end_layout
 
 \begin_deeper
@@ -17471,7 +17472,7 @@ comando > archivo
 status open
 
 \begin_layout Plain Layout
-La redirección de salida estandar substituye por completo el contenido de
+La redirección de salida estándar substituye por completo el contenido de
  un archivo.
 \end_layout
 
@@ -17755,7 +17756,7 @@ Redirección de salida de error
 \end_inset
 
 : Esta redirección cambia la salida de error de un comando a un archivo.
- La sintaxis básica de la redirección de salida estandar es:
+ La sintaxis básica de la redirección de salida estándar es:
 \end_layout
 
 \begin_deeper
