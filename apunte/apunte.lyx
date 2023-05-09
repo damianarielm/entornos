@@ -6756,8 +6756,7 @@ Es importante seguir la sintaxis correcta de un comando, ya que de lo contrario,
 
  de un comando es la estructura y el formato que se deben seguir para escribir
  y ejecutar correctamente un comando en un sistema operativo.
- La sintaxis incluye el nombre del comando, las 
- es y los argumentos
+ La sintaxis incluye el nombre del comando, las opciones y los argumentos
  necesarios, así como la forma en que deben escribirse y ordenarse.
 \end_layout
 
