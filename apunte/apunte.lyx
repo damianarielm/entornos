@@ -5503,6 +5503,19 @@ sda1
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar ejemplo de como interpretar la salida de lsblk.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Jerarquía de archivos
 \end_layout
@@ -6694,6 +6707,19 @@ Leslie Lamport
 Manejo de bash
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar mas comparaciones con Windows.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Comandos básicos
 \end_layout
@@ -6730,7 +6756,7 @@ Además, también es un lenguaje de scripting que permite a los usuarios escribi
 status open
 
 \begin_layout Plain Layout
-Agregar información sobre el prompts.
+Agregar información sobre prompts.
 \end_layout
 
 \end_inset
@@ -6949,6 +6975,7 @@ status open
 
 \begin_layout Plain Layout
 Agregar información sobre !! y !n.
+ Quizas esta información corresponda a la sección de historial.
 \end_layout
 
 \end_inset
@@ -8422,6 +8449,7 @@ popd
 \end_inset
 
 .
+ También se podría mencionar que ~ es expandida por el shell.
 \end_layout
 
 \end_inset
@@ -12630,6 +12658,36 @@ rm [a-z].{gif,jpg}
 
 \end_layout
 
+\begin_layout Example
+Para crear un archivo vacío por cada casilla de un tablero de ajedrez podemos
+ escribir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch {a..h}{1..8}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
 \end_layout
@@ -12766,6 +12824,72 @@ cd carpeta
 \end_inset
 
 ?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Considere la siguiente salida en pantalla del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls -Fa
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+./ ../ .../ ..../ ...../ ......
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cuántas carpetas hay en el directorio de trabajo actual?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Normalmente el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ da error.
+ ¿En cuál caso esto no es así?
 \end_layout
 
 \begin_layout Standard
@@ -13708,6 +13832,13 @@ nano
  que espera mas entrada desde el teclado.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -14883,13 +15014,6 @@ strings
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica es la siguiente:
 \end_layout
 
@@ -15293,6 +15417,13 @@ cut
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -15380,13 +15511,6 @@ DELIMITADOR
 CAMPOS
 \emph default
  específicos separados por el delimitador.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -15851,6 +15975,13 @@ El lenguaje definido por la expresión regular
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Anclas Las anclas son caracteres especiales que indican el inicio o el final
  de una cadena.
@@ -16164,6 +16295,13 @@ Se puede utilizar para realizar diversas operaciones de manipulación de
  texto, como eliminar o reemplazar caracteres, cambiar mayúsculas y minúsculas,
  y eliminar espacios en blanco.
  También pueden usarse clases de caracteres.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -16744,6 +16882,13 @@ cat
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 En una 
 \emph on
@@ -16767,7 +16912,7 @@ cat
 
 
 \family typewriter
-/usr/share/doc/bash/README
+/usr/share/doc/git/copyright
 \family default
 
 \begin_inset Quotes frd
@@ -16850,7 +16995,7 @@ Descargue la siguiente
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faLink"
-target "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Fitz_Roy_1.jpg/800px-Fitz_Roy_1.jpg"
+target "https://upload.wikimedia.org/wikipedia/commons/5/53/Fitz_Roy_1.jpg"
 literal "true"
 
 \end_inset
@@ -16868,6 +17013,19 @@ strings
 \end_inset
 
  para averiguar con que cámara se tomo dicha imagen.
+ Verifique dicha información con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+file
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -16928,13 +17086,6 @@ file
 \end_inset
 
  para averiguar que tipo de archivo es.
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Exercise
@@ -17097,6 +17248,13 @@ diff
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Escriba expresiones regulares que definan los siguientes lenguajes:
 \end_layout
@@ -17231,13 +17389,6 @@ grep
 .
 \end_layout
 
-\begin_layout Exercise
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Secuenciación, redirección y tuberías
 \end_layout
@@ -17314,6 +17465,13 @@ Los operadores de secuenciación, son otras de las cuestiones de las cuales
 
 : Se utiliza para ejecutar el siguiente comando solo si el comando anterior
  falló.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -17491,6 +17649,14 @@ La redirección de salida estándar substituye por completo el contenido de
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Si queremos que la salida del comando 
 \begin_inset Quotes fld
@@ -17519,6 +17685,7 @@ lista.txt
 , podemos usar la redirección de salida de la siguiente manera:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -17980,7 +18147,7 @@ mkdir -v carpeta carpeta &> salidas
 
 \end_deeper
 \begin_layout Standard
-En Linux y sistemas similares, la carpeta 
+Además, en Linux y sistemas similares, la carpeta 
 \begin_inset Quotes fld
 \end_inset
 
@@ -18381,6 +18548,41 @@ Escriba una secuencia de tuberías para averiguar cuantas veces se ejecutó
 
 \family typewriter
 cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para averiguar cuantos archivos en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/usr/share/doc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ contienen la palabra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+GNU
 \family default
 
 \begin_inset Quotes frd
@@ -20550,6 +20752,13 @@ fg
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+nice
+\end_layout
+
+\begin_layout Subsection
 Señales
 \end_layout
 
@@ -20572,6 +20781,7 @@ Gestión
 
 \family typewriter
 \emph off
+\strikeout on
 apt
 \end_layout
 
@@ -20579,6 +20789,7 @@ apt
 
 \family typewriter
 \emph off
+\strikeout on
 chsh
 \end_layout
 
@@ -20586,6 +20797,7 @@ chsh
 
 \family typewriter
 \emph off
+\strikeout on
 free
 \end_layout
 
@@ -20593,6 +20805,7 @@ free
 
 \family typewriter
 \emph off
+\strikeout on
 loadkeys
 \end_layout
 
@@ -20600,6 +20813,7 @@ loadkeys
 
 \family typewriter
 \emph off
+\strikeout on
 lsof
 \end_layout
 
@@ -20607,6 +20821,7 @@ lsof
 
 \family typewriter
 \emph off
+\strikeout on
 reboot
 \end_layout
 
@@ -20614,6 +20829,7 @@ reboot
 
 \family typewriter
 \emph off
+\strikeout on
 setxkbmap
 \end_layout
 
@@ -20621,6 +20837,7 @@ setxkbmap
 
 \family typewriter
 \emph off
+\strikeout on
 startx
 \end_layout
 
@@ -20628,6 +20845,7 @@ startx
 
 \family typewriter
 \emph off
+\strikeout on
 top
 \end_layout
 
@@ -20635,6 +20853,7 @@ top
 
 \family typewriter
 \emph off
+\strikeout on
 uname
 \end_layout
 
@@ -20642,6 +20861,7 @@ uname
 
 \family typewriter
 \emph off
+\strikeout on
 uptime
 \end_layout
 
@@ -20664,6 +20884,7 @@ Internet
 
 \family typewriter
 \emph off
+\strikeout on
 curl
 \end_layout
 
@@ -20678,6 +20899,7 @@ ping
 
 \family typewriter
 \emph off
+\strikeout on
 scp
 \end_layout
 
@@ -20685,6 +20907,7 @@ scp
 
 \family typewriter
 \emph off
+\strikeout on
 ssh
 \end_layout
 
@@ -20692,6 +20915,7 @@ ssh
 
 \family typewriter
 \emph off
+\strikeout on
 wget
 \end_layout
 
@@ -20721,6 +20945,7 @@ bc
 
 \family typewriter
 \emph off
+\strikeout on
 dd
 \end_layout
 
@@ -20742,6 +20967,7 @@ sha256sum
 
 \family typewriter
 \emph off
+\strikeout on
 tar
 \end_layout
 
@@ -20756,6 +20982,7 @@ time
 
 \family typewriter
 \emph off
+\strikeout on
 tldr
 \end_layout
 
