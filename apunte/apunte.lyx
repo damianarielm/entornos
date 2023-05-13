@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-9 de mayo de 2023.
+15 de mayo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -18811,6 +18811,13 @@ Dicha información se obtiene del archivo
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para conocer información del usuario 
 \emph on
@@ -20601,7 +20608,19 @@ userdel
 \end_inset
 
  se utiliza para eliminar una cuenta de usuario existente.
- La sintaxis básica del comando "userdel" es la siguiente:
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+userdel
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -20702,12 +20721,313 @@ userdel
 
 \end_layout
 
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+usermod
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+usermod
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para realizar cambios en la información de un usuario existente
+ en el sistema.
+ Puede utilizarse para modificar el nombre de usuario, el directorio de
+ inicio, el grupo principal, los grupos secundarios, la información del
+ usuario, entre otros aspectos relacionados con la configuración del usuario.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+usermod
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
 status open
 
 \begin_layout Plain Layout
-Agregar usrmod
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+usermod [opciones] usuario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l NOMBRE
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite cambiar el 
+\emph on
+NOMBRE
+\emph default
+ de usuario.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d DIRECTORIO
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite cambiar el 
+\emph on
+DIRECTORIO
+\emph default
+ de personal del usuario.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La ruta al 
+\emph on
+DIRECTORIO
+\emph default
+ debe ser una ruta absoluta.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-m
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Mueve el contenido del directorio personal a una nueva ubicación.
+ Sólo válida si se usa con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-g GRUPO
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite cambiar el 
+\emph on
+GRUPO
+\emph default
+ principal del usuario.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-G GRUPOS
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite 
+\emph on
+establecer
+\emph default
+ los 
+\emph on
+GRUPOS
+\emph default
+ a los que pertenece el usuario.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a GRUPO
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite 
+\emph on
+añadir
+\emph default
+ un 
+\emph on
+GRUPO
+\emph default
+ secundario al usuario.
+ Sólo válida si se usa con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-G
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s SHELL
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite cambiar el 
+\emph on
+SHELL
+\emph default
+ del usuario.
+\end_layout
+
+\begin_layout Example
+Para agregar al usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nuevo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ al grupo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+usermod -a -G sudo nuevo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -20717,6 +21037,145 @@ Agregar usrmod
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Cree el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+visiante
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ mediante el comanto 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+useradd visitante
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Intente identificarse como dicho usuario en una consola virtual.
+ Explique por que no es posible, y solucione el problema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+El SHELL por defecto de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+visitante
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es sh.
+ Modifique el usuario para que utilice por defecto bash.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para determinar en que lugares del sistema
+ de archivo, el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+visitante
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ puede escribir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree y establezca un directorio personal para el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+visitante
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Asegúrese de que el usuario tenga los permisos correspondientes para poder
+ trabajar en su carpeta personal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una expresión regular que defina el lenguaje de los permisos en
+ Linux, tal como pueden observarse en la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -20783,14 +21242,6 @@ Gestión
 \emph off
 \strikeout on
 apt
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-chsh
 \end_layout
 
 \begin_layout Subsection
@@ -20915,7 +21366,6 @@ ssh
 
 \family typewriter
 \emph off
-\strikeout on
 wget
 \end_layout
 
