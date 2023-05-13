@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-15 de mayo de 2023.
+16 de mayo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -21182,6 +21182,137 @@ ls
 Procesos y tareas
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás haya que mover esta información a la parte de SO.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Procesos
+\end_layout
+
+\begin_layout Standard
+Un proceso es una instancia de un programa en ejecución.
+ Durante su ciclo de vida, atraviesa diferentes etapas las cuales incluyen:
+\end_layout
+
+\begin_layout Description
+Creación En esta etapa, el sistema operativo crea un nuevo proceso cuando
+ se inicia un programa o se solicita mediante una llamada al sistema.
+ Durante la creación, se asignan recursos como espacio de memoria, identificador
+es de proceso y otros atributos necesarios para la ejecución.
+\end_layout
+
+\begin_layout Description
+Listo Después de ser creado, el proceso pasa al estado de 
+\begin_inset Quotes fld
+\end_inset
+
+listo
+\begin_inset Quotes frd
+\end_inset
+
+ y está a la espera de ser seleccionado por el planificador del sistema
+ operativo para su ejecución.
+ En este estado, el proceso está cargado en la memoria y listo para ejecutarse,
+ pero aún no se le ha asignado tiempo de CPU.
+\end_layout
+
+\begin_layout Description
+Ejecución Cuando un proceso es seleccionado por el planificador del sistema,
+ se mueve al estado de 
+\begin_inset Quotes fld
+\end_inset
+
+ejecución
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En esta etapa, el procesador ejecuta las instrucciones del programa y realiza
+ las tareas definidas por el proceso.
+ El proceso continúa en este estado hasta que se hasta que se bloquea esperando
+ alguna operación de entrada/salida.
+\end_layout
+
+\begin_layout Description
+Bloqueado Un proceso puede entrar en el estado 
+\begin_inset Quotes fld
+\end_inset
+
+bloqueado
+\begin_inset Quotes frd
+\end_inset
+
+ si necesita esperar por alguna operación de entrada/salida, como leer datos
+ de un archivo o esperar una respuesta de red.
+ Cuando esto ocurre, el proceso se suspende temporalmente y se libera el
+ uso del procesador.
+\end_layout
+
+\begin_layout Description
+Finalización Cuando un proceso ha terminado de ejecutar todas sus instrucciones
+ o ha sido terminado de manera forzada por el sistema operativo, entra en
+ el estado de 
+\begin_inset Quotes fld
+\end_inset
+
+finalización
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En esta etapa, se liberan los recursos asignados al proceso y se realiza
+ la limpieza necesaria.
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que el sistema operativo puede realizar transiciones entre
+ los diferentes estados del proceso según las decisiones del planificador
+ y los eventos que ocurren durante la ejecución.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename etapas.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Etapas de un proceso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -21189,25 +21320,266 @@ Procesos y tareas
 ps
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-jobs
+ps
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ps
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Process Status
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (estado del proceso).
 \end_layout
 
-\begin_layout Subsection
+\end_inset
 
-\family typewriter
-\emph off
-bg
+ se utiliza para obtener información sobre los procesos en ejecución en
+ el sistema.
+ Proporciona una visión general de los procesos activos, sus identificadores,
+ uso de recursos y otra información relevante.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-fg
+ps
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ps [opciones]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-e
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra todos los procesos, incluyendo los de otros usuarios.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-u USUARIO
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra todos los procesos del 
+\emph on
+USUARIO
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+–forest
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra los procesos dibujados en un árbol.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si se utiliza sin opciones, el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ps
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra los procesos asociados a la terminal actual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ver los procesos corriendo en la terminal actual escribimos el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ps
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+PID TTY
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+TIME CMD
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+18614 pts/0 00:00:00 bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+19454 pts/0 00:00:00 ps
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -21217,8 +21589,242 @@ fg
 nice
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nice
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ permite establecer la prioridad del programa en relación con otros procesos
+ en el sistema, lo que puede afectar la asignación de tiempo de CPU y los
+ recursos disponibles.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nice
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+nice [opciones] comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes del comando incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n NIVEL
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Establece el 
+\emph on
+NIVEL
+\emph default
+ de prioridad del proceso, donde un número más bajo representa una mayor
+ prioridad.
+ El rango de valores generalmente va de -20 a 19.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-p PID
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Cambia la prioridad de un proceso existente identificado por su 
+\emph on
+PID
+\emph default
+.
+\end_layout
+
 \begin_layout Subsection
 Señales
+\end_layout
+
+\begin_layout Standard
+Las señales son mecanismos utilizados para comunicar eventos o solicitudes
+ a los procesos en un sistema.
+ Las señales permiten que los procesos interactúen entre sí, notifiquen
+ eventos importantes y realicen acciones específicas en respuesta a eventos
+ del sistema.
+\end_layout
+
+\begin_layout Standard
+Las señales son enviadas por el kernel del sistema operativo o por otros
+ procesos y se utilizan para notificar eventos como:
+\end_layout
+
+\begin_layout Itemize
+Interrupciones de hardware: Por ejemplo, una señal puede generarse cuando
+ se recibe un evento de entrada/salida, como la llegada de datos a través
+ de internet.
+\end_layout
+
+\begin_layout Itemize
+Eventos generados por el sistema operativo: El kernel puede enviar señales
+ a los procesos para notificar eventos como cambios de estado, finalización
+ de procesos hijos, violaciones de acceso a memoria, etc.
+\end_layout
+
+\begin_layout Itemize
+Solicitudes del usuario: Un proceso puede enviar una señal a otro proceso
+ para solicitar una acción específica, como detener o finalizar su ejecución.
+\end_layout
+
+\begin_layout Standard
+Cada señal tiene un número asociado y un nombre simbólico que se utiliza
+ para identificarla.
+ Algunas señales comunes incluyen:
+\end_layout
+
+\begin_layout Description
+SIGINT
+\begin_inset space ~
+\end_inset
+
+(2): Generalmente se utiliza para solicitar la interrupción de un programa
+ en ejecución.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Esta señal puede enviarse mediante la combinación de teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+C.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+SIGKILL
+\begin_inset space ~
+\end_inset
+
+(9): Enviada para forzar la terminación inmediata de un proceso sin posibilidad
+ de capturarla.
+\end_layout
+
+\begin_layout Description
+SIGTSTP
+\begin_inset space ~
+\end_inset
+
+(20): Enviada para detener la ejecución de un proceso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Esta señal puede enviarse mediante la combinación de teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+Z.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+SIGCONT
+\begin_inset space ~
+\end_inset
+
+(18): Enviada para reanudar la ejecución de un proceso detenido.
 \end_layout
 
 \begin_layout Subsection
@@ -21228,8 +21834,632 @@ Señales
 kill
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+kill
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para enviar señales a procesos específicos, lo que permite interactu
+ar con ellos y controlar su comportamiento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque el nombre 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+kill
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ sugiere que su función principal es terminar procesos, en realidad puede
+ enviar una variedad de señales a los procesos, incluyendo señales para
+ finalizar, detener, reanudar, informar o manejar de manera personalizada.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+kill
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+kill -s SEÑAL PID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tareas
+\end_layout
+
+\begin_layout Standard
+Una tarea se refiere a la ejecución de un programa o comando en segundo
+ plano o en primer plano dentro de una sesión de shell.
+ Las tareas permiten ejecutar múltiples comandos simultáneamente y gestionar
+ su ejecución.
+\end_layout
+
+\begin_layout Standard
+En Bash, existen dos tipos de tareas:
+\end_layout
+
+\begin_layout Itemize
+Tareas en primer plano: Una tarea en primer plano es aquella cuya ejecución
+ bloquea la terminal hasta que se complete.
+ Cuando ejecutas un comando sin colocar el carácter 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+&
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ al final, se ejecuta en primer plano.
+ Mientras la tarea esté en ejecución, el control de la terminal se mantiene
+ en esa tarea y no se puede ejecutar ningún otro comando hasta que la tarea
+ actual finalice o se suspenda.
+\end_layout
+
+\begin_layout Itemize
+Tareas en segundo plano: Una tarea en segundo plano es aquella cuya ejecución
+ no bloquea la terminal, lo que significa que puedes seguir interactuando
+ con la terminal y ejecutar otros comandos mientras la tarea se ejecuta
+ en segundo plano.
+ Para ejecutar un comando en segundo plano, se agrega el carácter 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+&
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ al final del comando.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las tareas, son otro de los trabajos que lleva a cabo el interprete de linea
+ de comandos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para ejecutar un navegador desde la terminal, pero sin bloquearla, usamos
+ el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+firefox &
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+jobs
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+jobs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para mostrar las tareas en ejecución en el shell actual.
+ Los trabajos son procesos que se ejecutan en segundo plano (
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+background
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+) o en primer plano (
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+foreground
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+) dentro de una sesión de shell.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando es simplemente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+jobs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+bg
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\emph on
+background
+\emph default
+.
+\end_layout
+
+\end_inset
+
+ se utiliza para poner una tarea en ejecución en segundo plano.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+bg JID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\emph on
+JID
+\emph default
+ es el identificador de tarea.
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+fg
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviación de 
+\emph on
+foreground
+\emph default
+.
+\end_layout
+
+\end_inset
+
+ se utiliza para poner una tarea en ejecución en primer plano.
+ Es análogo a 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+disown
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+disown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para eliminar la asociación de una tarea con la sesión de shell
+ actual, lo que permite que el trabajo continúe ejecutándose incluso después
+ de que la sesión de shell se haya cerrado.
+\end_layout
+
+\begin_layout Standard
+Cuando ejecutas un comando en segundo plano utilizando el símbolo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+&
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ al final del comando, el trabajo se asocia con la sesión de shell actual.
+ Esto significa que si cierras la sesión de shell, los trabajos en segundo
+ plano también se terminarán.
+ Sin embargo, si deseas que un trabajo continúe su ejecución incluso después
+ de cerrar la sesión de shell, puedes utilizar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+disown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+disown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+disown JID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\emph on
+JID
+\emph default
+ es el identificador de tarea.
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para conocer sobre el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sleep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, luego ejecute 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sleep 1d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Utilice otro emulador de terminal y averigüe el PID del comando anterior.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Envíe la señal SIGTSTP al proceso identificado en el ejercicio previo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Verifique el estado del proceso con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+jobs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Encuentre una forma de reanudar el proceso en segundo plano y vuelva a
+ verificar el estado del proceso.
+ Finalmente interrumpa el proceso y verifique por última vez.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Ejecute un navegador desde el shell.
+ Observe que al cerrar el emulador de terminal, también se cierra el navegador.
+ Encuentre una forma de solucionar dicho problema.
 \end_layout
 
 \begin_layout Section
