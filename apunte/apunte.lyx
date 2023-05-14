@@ -23886,6 +23886,548 @@ tail -f
 Shell scripting
 \end_layout
 
+\begin_layout Standard
+Un script de Bash es un archivo de texto que contiene una serie de comandos
+ de Bash.
+ Dichos scripts se utilizan para automatizar tareas, realizar secuencias
+ de comandos más complejas y ejecutar múltiples comandos de forma secuencial.
+ Los scripts de Bash se escriben en un editor de texto y se guardan con
+ una extensión 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.sh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Para ejecutar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+programa.sh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, basta como pasárselo como argumento al interprete de bash, o si tiene
+ permiso de ejecución podemos simplemente escribir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+./programa.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Variables
+\end_layout
+
+\begin_layout Standard
+En Bash, las variables son símbolos que se utilizan para almacenar valores,
+ como texto o números, que pueden ser referenciados y manipulados en los
+ comandos y scripts.
+ Las variables en Bash son flexibles y pueden cambiar su valor durante la
+ ejecución del programa.
+\end_layout
+
+\begin_layout Subsection
+Variables locales
+\end_layout
+
+\begin_layout Standard
+Las variables locales son variables definidas por el usuario y tienen un
+ alcance local dentro de un script o función de Bash.
+ Estas variables solo son accesibles desde el contexto en el que se definen.
+ Para crear una variable local, se utiliza la sintaxis:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NOMBRE=VALOR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estas variables pueden ser referencias anteponiendo el símbolo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ antes de su nombre.
+\end_layout
+
+\begin_layout Example
+Para setear una variable y observar su contenido, podemos escribir:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NOMBRE=Damian
+\end_layout
+
+\begin_layout Plain Layout
+
+echo Hola $NOMBRE.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola Damian.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Variables de entorno
+\end_layout
+
+\begin_layout Standard
+Las variables de entorno son variables especiales que están disponibles
+ para todos los procesos y comandos ejecutados en ese entorno.
+ Proporcionan información como la configuración del sistema, las preferencias
+ del usuario, las rutas de búsqueda de ejecutables y otras configuraciones
+ importantes.
+\end_layout
+
+\begin_layout Standard
+Algunas variables de entorno comunes en Bash incluyen:
+\end_layout
+
+\begin_layout Description
+HOME Contiene la ruta al directorio de inicio del usuario actual.
+\end_layout
+
+\begin_layout Description
+PATH Especifica las rutas de búsqueda de comandos ejecutables.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Cuando se ingresa un comando en la línea de comandos, Bash busca en los
+ directorios listados en esta variable para encontrar el comando correspondiente.
+ Es por esta razón que podemos ejecutar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ sin tener que escribir 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/usr/bin/ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+USER Almacena el nombre del usuario actualmente conectado.
+\end_layout
+
+\begin_layout Description
+SHELL Contiene la ruta al intérprete de comandos actualmente utilizado.
+\end_layout
+
+\begin_layout Description
+PWD Almacena la ruta completa del directorio de trabajo actual.
+\end_layout
+
+\begin_layout Description
+TERM Especifica el tipo de terminal utilizado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos cambiar la ruta de trabajo actual al directorio raíz seteando la
+ variable 
+\family typewriter
+PWD
+\family default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PWD=/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Variables especiales
+\end_layout
+
+\begin_layout Standard
+Existen varias variables especiales predefinidas que contienen información
+ específica sobre el entorno y la ejecución del shell.
+ Estas variables especiales son automáticamente actualizadas por el propio
+ interprete de linea de comandos y proporcionan datos útiles para la manipulació
+n de comandos y scripts.
+ A continuación, se explican algunas de las variables especiales más comunes
+ en Bash:
+\end_layout
+
+\begin_layout Description
+$0 Contiene el nombre del script actual o el nombre del comando que se está
+ ejecutando.
+\end_layout
+
+\begin_layout Description
+$1,
+\begin_inset space ~
+\end_inset
+
+$2,
+\begin_inset space ~
+\end_inset
+
+$3,
+\begin_inset space ~
+\end_inset
+
+...
+ Representan los argumentos pasados al script o comando.
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se refiere al primer argumento, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$2
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ al segundo, y así sucesivamente.
+ Estas variables se utilizan principalmente en scripts para acceder a los
+ argumentos proporcionados en la línea de comandos.
+\end_layout
+
+\begin_layout Description
+$@ Contiene todos los argumentos pasados al script o comando como una lista
+ separada por espacios.
+ Es útil para iterar sobre todos los argumentos en un bucle.
+\end_layout
+
+\begin_layout Description
+$# Indica el número de argumentos pasados al script o comando.
+\end_layout
+
+\begin_layout Description
+$? Almacena el código de salida del último comando ejecutado.
+ Un valor de 0 generalmente indica éxito, mientras que un valor distinto
+ de 0 indica un fallo o error.
+\end_layout
+
+\begin_layout Description
+$$ Contiene el PID (identificador de proceso) del shell actual.
+\end_layout
+
+\begin_layout Description
+$PPID Contiene el PID del proceso padre.
+\end_layout
+
+\begin_layout Description
+$! Almacena el PID del último proceso en segundo plano que se ejecutó.
+\end_layout
+
+\begin_layout Description
+$* Contiene todos los argumentos pasados al script o comando como una sola
+ cadena.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Imprima la variable que muestra el PID actual, y verifique que sea idéntico
+ al que reporta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ps
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que reciba como argumento el nombre de una persona,
+ y la salude cuando es ejecutado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que reciba dos argumentos y muestra su suma en la pantalla.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que cierre el emulador de terminal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que muestre el mensaje 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Borrando el sistema...
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y luego demore 10 segundos.
+ Modifique los permisos y la variable de entorno correspondiente para que
+ el programa se ejecute al escribir 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en la linea de comandos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que reciba como argumento un archivo y lo mueva a un
+ directorio llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+Papelera
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ dentro de la carpeta personal del usuario.
+ Si el directorio no existe, el programa debe crearlo y si el archivo no
+ existe, debe aparecer un mensaje de error.
+ Finalmente si todo salió bien, debe leerse un mensaje de confirmación.
+\end_layout
+
 \begin_layout Section
 Comandos
 \end_layout
@@ -23893,7 +24435,704 @@ Comandos
 \begin_layout Subsection
 
 \family typewriter
+test
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+test
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es utilizado para evaluar expresiones condicionales.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+test EXPRESION
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+test
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ devuelve un código de salida que indica si la expresión es verdadera o
+ falsa.
+ Un código de salida de 0 indica que la expresión es verdadera, mientras
+ que un código de salida diferente de 0 indica que la expresión es falsa.
+\end_layout
+
+\begin_layout Standard
+Las 
+\emph on
+EXPRESIONES
+\emph default
+ del comando test admiten varios operadores, entre los cuales se destacan:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+=
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para comprar cadenas de texto por igualdad.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-eq
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para comprar números por igualdad.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-e
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para determinar si un archivo existe.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-e
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para determinar si un archivo existe y es un directorio.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-gt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para determinar si un número es mayor que otro.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para escribir conjunciones de expresiones.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-o
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para escribir disyunciones de expresiones.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para determinar si la longitud de una cadena es distinta de cero.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-z
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para determinar si la longitud de una cadena es igual a cero.
+\end_layout
+
+\begin_layout Standard
+Las expresiones pueden negarse con el operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+!
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y agruparse mediante paréntesis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Además del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+test
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ hay otro comando que funciona prácticamente igual; este es el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Este comando recibe obligatoriamente como argumento final el carácter 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para comprobar si dos números son iguales escribirnos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+test 1 -eq 2 || echo Los numeros son diferentes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Los números son diferentes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para comprobar si dos cadenas son iguales escribirnos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[ 
+\begin_inset Quotes fld
+\end_inset
+
+hola
+\begin_inset Quotes frd
+\end_inset
+
+ = 
+\begin_inset Quotes fld
+\end_inset
+
+hola
+\begin_inset Quotes frd
+\end_inset
+
+ ] && echo Las cadenas son iguales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Las cadenas son iguales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
 exit
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+exit
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para finalizar la ejecución de un script o de la sesión actual
+ del shell.
+ Al llamar al comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+exit
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, se proporciona un código de salida opcional que indica el resultado o
+ estado de finalización del programa.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+exit [CODIGO]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si no se proporciona ningún código de salida, se utiliza el código de salida
+ del último comando ejecutado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+source
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+source
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para ejecutar comandos o scripts en el contexto actual del shell
+ en lugar de crear un nuevo proceso.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+source ARCHIVO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una de las aplicaciones comunes del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+source
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la carga de archivos de configuración o variables de entorno.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+source
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es otro de los comandos que no son archivos binarios, sino responsabilidad
+ del shell.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+read
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+read
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para leer la entrada del usuario desde la línea de comandos
+ y asignarla a una o mas variables.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+read [opciones] variable1 [variable2...]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes que se pueden utilizar son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-p
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: permite mostrar un mensaje o un prompt antes de leer la entrada del usuario.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-s
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: oculta la entrada del usuario, útil cuando se ingresan contraseñas u otra
+ información sensible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si se especifica una sola variable, se asigna el texto completo ingresado
+ a esa variable.
+ Si se especifican varias variables, se asignan los campos del texto ingresado
+ a cada variable en orden.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para leer dos datos por teclado y luego mostrarlos en la pantalla podemos
+ usar el siguiente comando:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+read -p 
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese su primer y segundo nombre: 
+\begin_inset Quotes fld
+\end_inset
+
+ primero segundo
+\end_layout
+
+\begin_layout Plain Layout
+
+echo Hola $primero $segundo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+
+\family typewriter
+seq
 \end_layout
 
 \begin_layout Subsection
@@ -23905,37 +25144,116 @@ export
 \begin_layout Subsection
 
 \family typewriter
-read
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-seq
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
 shift
 \end_layout
 
 \begin_layout Subsection
 
 \family typewriter
-source
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-test
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
 trap
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Escriba su propia versión de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+true
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+false
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba el programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+and
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que recibe dos comandos y ejecuta el segundo solo si el primero tuvo éxito.
+ Haga un comando análogo llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+or
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que se comporte igual que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sudo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, pero que además guarde las contraseñas ingresadas en un archivo.
 \end_layout
 
 \begin_layout Section
