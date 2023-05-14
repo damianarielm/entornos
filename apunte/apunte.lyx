@@ -22553,8 +22553,225 @@ uptime
 which
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+which
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para mostrar la ubicación de un ejecutable en el sistema de
+ archivos.
+ Proporciona la ruta absoluta del archivo ejecutable asociado con el nombre
+ de comando dado.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+which
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+which [-a] comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para listar todas las ubicaciones donde se encuentra el ejecutable en caso
+ de que haya múltiples versiones o rutas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para conocer la ruta del interprete de Python usamos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+which python
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+/usr/bin/python
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+which
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar la ubicación de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+jobs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+disown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+history
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Explique lo que sucede.
 \end_layout
 
 \begin_layout Section
@@ -22574,6 +22791,180 @@ curl
 \family typewriter
 \emph off
 ping
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ping
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para verificar la conectividad entre dos hosts a través de la
+ red.
+ Se utiliza comúnmente utilizada para diagnosticar problemas de red, verificar
+ la disponibilidad de un host y medir la latencia de la red.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ping
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ping DESTINO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\emph on
+DESTINO
+\emph default
+ puede ser una dirección IP o un nombre de host al cual deseas enviar los
+ paquetes de solicitud de eco.
+\end_layout
+
+\begin_layout Example
+Para comprobar la conectividad local usamos el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ping localhost
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+PING localhost(localhost (::1)) 56 data bytes
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+64 bytes from localhost (::1): icmp_seq=1 ttl=64 time=0.085 ms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para comprobar la conectividad externa podemos usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ping google.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+PING google.com (142.251.133.78) 56(84) bytes of data.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+64 bytes from eze10s03-in-f14.1e100.net (142.251.133.78): icmp_seq=1 ttl=114
+ time=21.1 ms
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -22599,7 +22990,82 @@ ssh
 wget
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+wget
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta de línea de comandos que se utiliza para descargar archivos
+ desde Internet.
+ Permite descargar archivos individuales, así como descargar recursivamente
+ directorios completos, manteniendo la estructura de directorios original.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+wget
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es simplemente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wget URL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+w3m
+\end_layout
+
+\begin_layout Subsection
+
+\emph off
+\strikeout on
 Ejercicios
 \end_layout
 
@@ -22614,11 +23080,372 @@ Otros comandos
 alias
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+alias
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para crear 
+\emph on
+alias
+\emph default
+, es decir, atajos o nombres alternativos para los comandos que utilizas
+ con frecuencia.
+ Un alias es una forma de asignar una cadena de texto a un comando o conjunto
+ de comandos, lo que te permite ejecutarlos rápidamente utilizando el alias
+ en lugar de tener que escribir el comando completo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los 
+\emph on
+alias
+\emph default
+ son otra de las competencias del interprete de linea de comandos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+alias
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+alias [nombre=
+\begin_inset Quotes frd
+\end_inset
+
+comando
+\begin_inset Quotes frd
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no se especifica un alias, el comando muestra los alias actualmente definidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los alias definidos con este comando, solo funcionan durante la sesión actual.
+ Para establecer alias que perduren durante las sesiones es necesario editar
+ el archivo de configuración 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+~/.bashrc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para conocer los alias actuales escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+alias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+alias grep='grep --color=auto'
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+alias ls='ls --color=auto'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para crear un alias que nos loguee como root podemos escribir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+alias ss=
+\begin_inset Quotes frd
+\end_inset
+
+sudo su
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+unalias
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+unalias
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para eliminar un alias previamente definido.
+ La sintaxis básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+unalias [-a] alias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para eliminar todos los alias definidos.
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 bc
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una calculadora de precisión arbitraria que se utiliza en la línea de
+ comandos en Linux/Unix.
+ Permite realizar cálculos matemáticos complejos, incluyendo operaciones
+ aritméticas básicas, funciones matemáticas avanzadas y lógica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un programa interactivo que lee expresiones desde la entrada estándar.
+ Sin embargo, también puede ser utilizado con tuberías.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos calcular una suma con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 3+4 | bc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -22633,6 +23460,7 @@ dd
 
 \family typewriter
 \emph off
+\strikeout on
 rsync
 \end_layout
 
@@ -22641,6 +23469,125 @@ rsync
 \family typewriter
 \emph off
 sha256sum
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sha256sum
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta que se utiliza para calcular el valor de hash SHA-256
+ de un archivo.
+ SHA-256 es un algoritmo de función hash criptográfica que produce una cadena
+ de 256 bits (32 bytes) conocida como el resumen o hash del archivo.
+ Este valor de hash es único para cada archivo y se utiliza ampliamente
+ para verificar la integridad de los datos y detectar cambios en los archivos.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sha256sum
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sha256sum archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para hacer una suma de verificación del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sha256sum /usr/bin/ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+7effe56efc49e3d252a84d8173712bad05beef4def460021a1c7865247125fee
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -22656,6 +23603,154 @@ tar
 \family typewriter
 \emph off
 time
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+time
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para medir el tiempo de ejecución de un comando o un conjunto
+ de comandos.
+ Proporciona información sobre el tiempo real transcurrido, el tiempo de
+ CPU utilizado y otros datos relacionados con el rendimiento.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+time
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+time comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la salida se muestran tres conjuntos de resultados:
+\end_layout
+
+\begin_layout Itemize
+Tiempo real (real): Es el tiempo total transcurrido desde el inicio hasta
+ la finalización del comando.
+ Incluye el tiempo de espera y otros factores externos.
+\end_layout
+
+\begin_layout Itemize
+Tiempo de CPU (user): Es la cantidad de tiempo de CPU utilizado únicamente
+ por el comando.
+ No incluye el tiempo de espera ni otros factores externos.
+\end_layout
+
+\begin_layout Itemize
+Tiempo del sistema (sys): Es la cantidad de tiempo de CPU utilizado por
+ el sistema operativo para ejecutar el comando.
+\end_layout
+
+\begin_layout Example
+Para comprobar cuanto tiempo se ejecutó un programa escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+time sleep 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+real 0m5,007s
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+user 0m0,000s
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sys 0m0,002s
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -22675,6 +23770,116 @@ watch
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Cree un archivo de python llamado 
+\begin_inset Quotes fld
+\end_inset
+
+sleep.py
+\begin_inset Quotes frd
+\end_inset
+
+ con el siguiente código:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for _ in range(9 ** 9):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pass
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ejecute el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+time python sleep.py
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y luego haga lo mismo con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+time sleep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con una duración idéntica a la del comando previo.
+ Explique la diferencia en la salida de ambas ejecuciones de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+time
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Ya sabemos que podemos monitorizar el contenido de un archivo con el comando
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+tail -f
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Proponga otra forma de lograrlo.
 \end_layout
 
 \begin_layout Chapter
