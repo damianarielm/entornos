@@ -14356,7 +14356,7 @@ X
 \begin_inset Quotes frd
 \end_inset
 
- lineas del archivo.
+ líneas del archivo.
 \end_layout
 
 \begin_layout Standard
@@ -14368,7 +14368,11 @@ Por defecto,
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 head
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -14381,7 +14385,7 @@ head
 \end_layout
 
 \begin_layout Example
-Para ver las primeras cuatro lineas del archivo 
+Para ver las primeras cuatro líneas del archivo 
 \begin_inset Quotes fld
 \end_inset
 
@@ -14595,7 +14599,7 @@ La opción
 
 \begin_layout Example
 Para monitorear los últimos sucesos del sistema podemos observar las últimas
- lineas del archivo 
+ líneas del archivo 
 \begin_inset Quotes fld
 \end_inset
 
@@ -16955,7 +16959,7 @@ head
 \begin_inset Quotes frd
 \end_inset
 
- todas las lineas de un archivo, salvo las últimas 3.
+ todas las líneas de un archivo, salvo las últimas 3.
 \end_layout
 
 \begin_layout Standard
@@ -17823,7 +17827,7 @@ Chau mundo!
 \begin_inset Quotes frd
 \end_inset
 
- en dos lineas, podes usar el siguiente comando:
+ en dos líneas, podes usar el siguiente comando:
 \end_layout
 
 \begin_layout Standard
@@ -18505,7 +18509,7 @@ Escriba una secuencia de tuberías para observar la tercer linea de un archivo.
 
 \begin_layout Exercise
 Escriba una secuencia de tuberías para averiguar cual es el archivo con
- mayor cantidad de lineas.
+ mayor cantidad de líneas.
 \end_layout
 
 \begin_layout Standard
@@ -19484,6 +19488,19 @@ Algunas de las opciones más comunes son:
 
 \begin_layout Subsection
 Permisos en Linux
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+En algún lugar hay que hablar del usuario root.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -22358,6 +22375,14 @@ JID
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+wait
+\end_layout
+
+\begin_layout Subsection
 Ejercicios
 \end_layout
 
@@ -22628,13 +22653,6 @@ Puede agregarse la opción
 
  para listar todas las ubicaciones donde se encuentra el ejecutable en caso
  de que haya múltiples versiones o rutas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -23768,6 +23786,164 @@ tldr
 watch
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+watch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para ejecutar repetidamente un comando o un conjunto de comandos
+ de forma periódica y mostrar la salida actualizada en la pantalla.
+ Es útil para monitorear en tiempo real los cambios en la salida de un comando
+ sin tener que ejecutarlo manualmente una y otra vez.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+watch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+watch [opciones] comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+watch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n SEGUNDOS
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Establece el intervalo de tiempo en 
+\emph on
+SEGUNDOS
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Resalta las diferencias entre las salidas sucesivas del comando.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-t
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: No muestra el encabezado con la hora actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+watch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ ejecutará el comando especificado cada 2 segundos de manera predeterminada,
+ si no se especifican opciones.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
 \end_layout
@@ -23777,7 +23953,11 @@ Cree un archivo de python llamado
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 sleep.py
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -23884,6 +24064,19 @@ tail -f
 
 \begin_layout Chapter
 Shell scripting
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Incluir información sobre comentarios y shebang.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -23999,7 +24192,25 @@ NOMBRE=VALOR
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La falta de espacios alrededor del operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+=
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es indispensable para el correcto funcionamiento.
+\end_layout
+
 \end_inset
 
 
@@ -24096,7 +24307,6 @@ HOME Contiene la ruta al directorio de inicio del usuario actual.
 PATH Especifica las rutas de búsqueda de comandos ejecutables.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -24136,7 +24346,6 @@ ls
 
 \end_layout
 
-\end_deeper
 \begin_layout Description
 USER Almacena el nombre del usuario actualmente conectado.
 \end_layout
@@ -24147,17 +24356,6 @@ SHELL Contiene la ruta al intérprete de comandos actualmente utilizado.
 
 \begin_layout Description
 PWD Almacena la ruta completa del directorio de trabajo actual.
-\end_layout
-
-\begin_layout Description
-TERM Especifica el tipo de terminal utilizado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -24288,13 +24486,6 @@ $! Almacena el PID del último proceso en segundo plano que se ejecutó.
 \begin_layout Description
 $* Contiene todos los argumentos pasados al script o comando como una sola
  cadena.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -24558,7 +24749,7 @@ EXPRESIONES
 
 
 \family typewriter
--e
+-d
 \family default
 
 \begin_inset Quotes frd
@@ -24580,6 +24771,21 @@ EXPRESIONES
 \end_inset
 
 : Para determinar si un número es mayor que otro.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-gt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para determinar si un número es menor que otro.
 \end_layout
 
 \begin_layout Itemize
@@ -25135,10 +25341,148 @@ echo Hola $primero $segundo.
 seq
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-export
+seq
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en Bash se utiliza para generar secuencias de números.
+ Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+seq [s] INICIO FIN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\emph on
+INICIO
+\emph default
+ es el número de inicio de la secuencia y 
+\emph on
+FIN
+\emph default
+ es el número final de la secuencia.
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+seq
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ generará una secuencia de números desde el valor de inicio hasta el valor
+ final, incrementando de uno en uno de manera predeterminada.
+ Los números generados se imprimirán en la salida estándar.
+\end_layout
+
+\begin_layout Standard
+Puede agregarse la opción «
+\family typewriter
+-s
+\family default
+» para especificar el separador entre los números generados.
+\end_layout
+
+\begin_layout Example
+Para generar la secuencia 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+2, 3, 4, 5
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ escribimos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+seq -s 
+\begin_inset Quotes fld
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
+ 2 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+2 3 4 5
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -25147,10 +25491,261 @@ export
 shift
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+shift
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para desplazar los argumentos de línea de comandos hacia la
+ izquierda.
+ La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+shift
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+shift [n]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un número opcional que indica cuántas posiciones se deben desplazar
+ los argumentos.
+ Si no se especifica, el valor predeterminado es 1.
+\end_layout
+
+\begin_layout Standard
+Cuando se ejecuta el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+shift
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, los argumentos de línea de comandos se desplazan hacia la izquierda.
+ Esto significa que el valor del argumento en la posición 2 se mueve a la
+ posición 1, el valor en la posición 3 se mueve a la posición 2, y así sucesivam
+ente.
+ El argumento en la posición 1 se descarta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es especialmente útil cuando se trabaja con scripts que toman un número
+ variable de argumentos y se necesita procesarlos de manera iterativa.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+export
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+export
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para exportar variables.
+ Estas variables estarán disponibles para todos los procesos secundarios
+ creados a partir del proceso actual, lo que significa que se pueden acceder
+ a ellas desde otros scripts, comandos y programas que se ejecutan en el
+ mismo entorno.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+export
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+export VARIABLE[=valor]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante tener en cuenta que las variables de entorno exportadas son
+ heredadas por los procesos secundarios, pero no son visibles en el proceso
+ padre o en otros procesos superiores.
+ Además, cuando se cierra una sesión de Bash, las variables de entorno exportada
+s se eliminan automáticamente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 trap
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+trap
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para establecer la acción que se debe tomar cuando se recibe
+ una señal específica durante la ejecución de un script o programa.
+ Permite manejar y responder a las señales del sistema, como interrupciones
+ de teclado, cierre de sesión, errores, entre otras.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+trap
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+trap ACCION SEÑAL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -25254,6 +25849,10 @@ sudo
 \end_inset
 
 , pero que además guarde las contraseñas ingresadas en un archivo.
+\end_layout
+
+\begin_layout Section
+Encomillados
 \end_layout
 
 \begin_layout Section
