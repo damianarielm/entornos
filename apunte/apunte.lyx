@@ -23083,8 +23083,13 @@ w3m
 \begin_layout Subsection
 
 \emph off
-\strikeout on
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que reciba una URL y genere un archivo con todas las
+ palabras que se encuentran en dicha página.
+ Asegúrese de que se guardan solo palabras formadas por caracteres alfabéticos.
 \end_layout
 
 \begin_layout Section
@@ -23264,6 +23269,13 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -25899,10 +25911,6 @@ simples
 : Preservan el texto literal, lo que significa que todo el contenido entre
  las comillas simples se trata como texto sin expandir variables ni caracteres
  especiales.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -26124,10 +26132,6 @@ mkdir `date +%B`
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -26166,6 +26170,10 @@ $((EXPRESION))
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -27009,7 +27017,11 @@ Podemos utilizar la estructura de control de flujo
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 case
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -27285,6 +27297,94 @@ Hola, Damian.
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que renombre todos los archivos y carpetas a minúsculas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un script que recibe una cantidad variable de archivos y elimine
+ las lineas vacías de ellos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que reciba una cantidad variable de archivos y para
+ cada uno de ellos cree otro archivo con nombre idéntico pero finalizado
+ en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.sum
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que tenga solamente la correspondiente suma de verificación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un script que recibe un archivo de texto y un diccionario y muestre
+ en pantalla las palabras del archivo que no están en el diccionario.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un programa que reciba un directorio y muestre en pantalla un mensaje
+ cuando se crea o borra un archivo adentro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigua cual es el propósito de la variable especial 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+IFS
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y utilícela para iterar sobre un archivo CSV.
 \end_layout
 
 \begin_layout Part
