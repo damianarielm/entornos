@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-16 de mayo de 2023.
+23 de mayo de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -25824,6 +25824,19 @@ or
 \end_layout
 
 \begin_layout Exercise
+Escriba un script que reciba como argumentos un archivo y una suma de verificaci
+ón, y muestre en la pantalla un mensaje indicando si dicho archivo tiene
+ esa suma de verificación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Escriba un programa llamado 
 \begin_inset Quotes fld
 \end_inset
@@ -25855,32 +25868,1423 @@ sudo
 Encomillados
 \end_layout
 
+\begin_layout Standard
+En Bash, existen varios tipos de encomillado que se utilizan para definir
+ cadenas de caracteres.
+ Cada tipo de encomillado tiene un propósito específico y afecta cómo se
+ interpreta y se expande el contenido de la cadena.
+\end_layout
+
+\begin_layout Description
+Comillas
+\begin_inset space ~
+\end_inset
+
+simples
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+''
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Preservan el texto literal, lo que significa que todo el contenido entre
+ las comillas simples se trata como texto sin expandir variables ni caracteres
+ especiales.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Si escribimos la variable especial 
+\family typewriter
+$USER
+\family default
+ entre comillas simples, el shell no expandirá su significado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 'Hola $USER'.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola $USER.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Comillas
+\begin_inset space ~
+\end_inset
+
+dobles
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+""
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permiten la expansión de variables y caracteres especiales dentro de la
+ cadena.
+ Las variables entre comillas dobles se expanden y su valor se incluye en
+ la cadena resultante.
+ También se pueden utilizar secuencias de escape para incluir caracteres
+ especiales.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+El comando anterior tiene un comportamiento diferente si usamos comillas
+ dobles en vez de simples:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 'Hola $USER'.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola alumno.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Comillas
+\begin_inset space ~
+\end_inset
+
+invertidas
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+``
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permiten la ejecución de comandos dentro de la cadena y capturan la salida
+ de esos comandos.
+ El comando dentro de las comillas invertidas se ejecuta y su salida estándar
+ se sustituye en la cadena resultante.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+También puede utilizarse la sintaxis 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$(comando)
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en reemplazo de las comillas invertidas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para crear una carpeta con el nombre del mes actual podemos aprovechar el
+ comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+date
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir `date +%B`
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Expresiones
+\begin_inset space ~
+\end_inset
+
+aritméticas
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$((EXPRESION))
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: En Bash, se puede evaluar expresiones aritméticas utilizando la expansión
+ de comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$((EXPRESION))
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Podemos usar las expresiones aritméticas de bash en vez de utilizar el comando
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo $((5+5))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Control de flujo
+\end_layout
+
+\begin_layout Standard
+Las estructuras de control de flujo tradicionales de los lenguajes de programaci
+ón, también las tenemos disponibles en el lenguaje de scripting de bash.
 \end_layout
 
 \begin_layout Subsection
 if / else
 \end_layout
 
+\begin_layout Standard
+El condicional 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+if
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para tomar decisiones basadas en el resultado de la ejecución
+ de un programa.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if comando; then
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Código a ejecutar si el codigo de salida del comando es 0.
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Código a ejecutar en caso contrario.
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando mas frecuente utilizado en un 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+if
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+test
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, o su versión abreviada 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos informar sobre el resultado de un comando de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if mkdir carpeta &> /dev/null; then
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo Se ha creado la carpeta.
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo Ocurrio un error al crear la carpeta.
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos validar la cantidad de argumentos con el siguiente script:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if [ $# -eq 0 ]; then
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo Cantidad de argumentos insuficiente.
+\end_layout
+
+\begin_layout Plain Layout
+
+  exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además de utilizar un comando como condición, también es posible utilizar
+ la sintaxis especial 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[[]]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Los corchetes dobles son una característica de bash que facilitan la escritura
+ de algunas expresiones.
+ Algunas características y usos importantes de los corchetes dobles son:
+\end_layout
+
+\begin_layout Itemize
+Comparaciones de cadenas y números de forma más legible: podemos utilizar
+ los operadores tradicionales de los lenguajes de programación (
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+==
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+!=
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+<
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+) para realizar comparaciones.
+\end_layout
+
+\begin_layout Itemize
+Operadores lógicos mas sencillos: De igual manera podemos usar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+&&
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+||
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+!
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ como conjunción, disyunción y negación.
+\end_layout
+
+\begin_layout Itemize
+Expresiones regulares: Los corchetes dobles también admiten la coincidencia
+ de patrones utilizando expresiones regulares utilizando el operador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+=~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Podemos validar que el primer argumento sea un número con el siguiente programa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if [[ $# == 0  || ! $1 =~ [[:digit:]]+ ]]; then
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo Error inesperado.
+\end_layout
+
+\begin_layout Plain Layout
+
+  exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 for
+\end_layout
+
+\begin_layout Standard
+El bucle 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+for
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para iterar sobre una lista de elementos y ejecutar un bloque
+ de código para cada elemento de la lista.
+ La sintaxis básica del bucle 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+for
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en bash es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for variable in lista; do
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Código a ejecutar para cada elemento
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+variable
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una variable que tomará el valor de cada elemento de la lista en cada
+ iteración del bucle y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lista
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una secuencia de elementos separados por espacios.
+\end_layout
+
+\begin_layout Example
+Para agregar texto al final de cada archivo que termine en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos usar el siguiente script:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for ARCHIVO in `ls *.txt`; do
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo FIN DE ARCHIVO >> $ARCHIVO
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 while / until
 \end_layout
 
+\begin_layout Standard
+El bucle 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+while
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para repetir un bloque de código mientras el código de salida
+ de un programa sea cero.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+while comando; do
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Código a ejecutar mientras el codigo
+\end_layout
+
+\begin_layout Plain Layout
+
+  # de salida del comando sea 0.
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En bash también existe la repetición 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+until
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que repite el código 
+\emph on
+hasta
+\emph default
+ que la salida del comando sea 0.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 case
 \end_layout
 
+\begin_layout Standard
+La estructura de control de flujo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+case
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para evaluar una variable o expresión y realizar diferentes
+ acciones según el valor coincida con uno de los patrones especificados.
+ Es similar a una serie de declaraciones 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+if else
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ anidadas, pero proporciona una forma más concisa de manejar múltiples opciones.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+case
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en Bash es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+case variable in
+\end_layout
+
+\begin_layout Plain Layout
+
+  patrón1)
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Código a ejecutar si la variable coincide con patrón1
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  patrón2)
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Código a ejecutar si la variable coincide con patrón2
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  patrón3)
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Código a ejecutar si la variable coincide con patrón3
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  *)
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Código a ejecutar si la variable no coincide con ninguno
+\end_layout
+
+\begin_layout Plain Layout
+
+    # de los patrones anteriores
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+esac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos utilizar la estructura de control de flujo 
+\begin_inset Quotes fld
+\end_inset
+
+case
+\begin_inset Quotes frd
+\end_inset
+
+ para crear un menú de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo "1 - Listar directorio actual."
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "2 - Listar directorio raiz."
+\end_layout
+
+\begin_layout Plain Layout
+
+read -p "Elija una opcion: " OPCION
+\end_layout
+
+\begin_layout Plain Layout
+
+case $OPCION in
+\end_layout
+
+\begin_layout Plain Layout
+
+  1)
+\end_layout
+
+\begin_layout Plain Layout
+
+    ls
+\end_layout
+
+\begin_layout Plain Layout
+
+  ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  2)
+\end_layout
+
+\begin_layout Plain Layout
+
+    ls /
+\end_layout
+
+\begin_layout Plain Layout
+
+  ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  *)
+\end_layout
+
+\begin_layout Plain Layout
+
+    echo Opcion incorrecta.
+\end_layout
+
+\begin_layout Plain Layout
+
+  ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+esac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
+
+\emph off
+\strikeout on
 select
 \end_layout
 
 \begin_layout Subsection
 Funciones
+\end_layout
+
+\begin_layout Standard
+Las funciones permiten agrupar un conjunto de comandos relacionados para
+ que puedan ser reutilizados y ejecutados en diferentes partes de un script.
+ Las funciones ayudan a modularizar el código y facilitan el mantenimiento
+ y la legibilidad del mismo.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica para definir una función es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+nombre_funcion() {
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Código de la función
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las funciones pueden aceptar argumentos, que son valores que se pasan a
+ la función cuando se llama.
+ Puedes acceder a estos argumentos dentro de la función utilizando las variables
+ especiales 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$2
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$3
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, etc.
+\end_layout
+
+\begin_layout Standard
+Para llamar a una función simplemente se escribe el nombre de la misma y
+ a continuación sus argumentos separados por un espacio.
+\end_layout
+
+\begin_layout Example
+El siguiente ejemplo ilustra el uso de funciones y argumentos en bash:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+saludar() {
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo "Hola, $1.
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+NOMBRE="Damian"
+\end_layout
+
+\begin_layout Plain Layout
+
+saludar $NOMBRE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola, Damian.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
 \end_layout
 
 \begin_layout Part
