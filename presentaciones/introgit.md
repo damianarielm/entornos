@@ -295,11 +295,153 @@ index 34cae35..baaa505 100644
 
 * `git rm` borra un archivo (y anota el cambio en la staging area). Es lo
 mismo que hacer `rm` y `git add`.
-`~/proyecto$ git rm script.sh`
 
+```bash!
+~/proyecto$ git rm script.sh
+rm 'script.sh'
+~/proyecto$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+deleted:
+script.sh
+$ git commit -m "Borrar main"
+[master f068e5f] Borrar main
+1 file changed, 1 deletions(-)
+delete mode 100644 main.c
+```
+
+
+
+## Config
+
+```bash
+$ git config --global user.name "Alan Turing"
+$ git config --global user.email "aturing@princeton.edu"
+```
+
+
+## Remotes
+
+Hasta ahora, nada requirió internet.
+
+## Remotes
+
+![](./introgit/gitlab1.png){width=90%}
+
+## Remotes
+
+![](./introgit/gitlab2.png){width=90%}
+
+## Remotes
+
+![](./introgit/gitlab3.png){width=90%}
+
+## Remotes
+
+![](./introgit/github1.png){width=90%}
+
+## Remotes
+
+![](./introgit/github2.png){width=60%}
+
+## Remotes
+
+![](./introgit/github3.png){width=60%}
+
+## Remotes
+
+![](./introgit/github4.png){width=90%}
+
+## Remotes
+
+
+```bash!
+git remote add origin https://github.com/aleoncavallo/git_intro.git
+```
+
+. . . 
+
+o desde gitlab
+
+```bash!
+git remote add origin git@gitlab.com:aleoncavallo/git_init.git
+```
+
+
+## Push/pull
+* Push: actualiza el repo remoto desde el local (sólo cambios commiteados)
+* Pull: actualiza el repo local desde el remote
+
+
+## 
+
+Lo más básico ya está
+ 
+
+## Revirtiendo cambios
+* `git checkout <file>`: revierte cambios locales.
+* `git reset`: vacía el staging area.
+* `git reset <commit>`: vuelve al commit, sin modificar archivos.
+* `git reset --hard \<commit>`: vuelve al commit, descartando todo.
+
+
+## Branches (Ramas)
+* Un branch es un nombre que “apunta” o “sigue” a un commit hash
+* `git branch caracteriasticaX`: crear y moverse a un branch
+* `git checkout <b>`: cambiar de branch
+* master suele ser la rama principal
+
+
+## Merge (Unir ramas)
+* Toma dos commits y une sus cambios en uno.
+
+. . .
+
+* En branch source `git merge <commit>`.
+
+. . .
+
+
+Pull tiene merge implícito, push sólo permite “fast-forwards”.
+
+. . .
+
+
+![](./introgit/mergeasd.png){width=60%}
+
+. . .
+
+
+## Merge (Unir ramas)
+
+* Posiblemente haya que corregir conflictos
+
+. . .
+
+
+* Interfaz gráfica: `gitg` (o `git log --graph`)
+
+## Rebase
+
+* Similar a un merge... pero “reescribe la historia”
+
+![](./introgit/merge3.png){width=60%}
+
+* Generalmente sólo se hace en ramas privadas
+
+## Clean
+
+Usar con mucho cuidado...
+
+* `git clean -dfx`: borra todo lo que no esté trackeado/staged
+* `git clean -x`: borra sólo archivos ignorados (suele ser seguro)
+* Flag -n: no hacer nada, imprimir lo que haría
 
 
 ## Fuentes y links recomendados
+
 * Sitio oficial de git: https://git-scm.com/
 
 * Guía de git:  https://rogerdudler.github.io/git-guide/
