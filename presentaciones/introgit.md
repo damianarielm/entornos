@@ -65,38 +65,38 @@
 
 . . .
 
-```bash!
+```bash
 ~$ mkdir proyecto/
 ```
 
 . . .
 
-```bash!
+```bash
 ~$ cd proyecto/
 ```
 
 . . .
 
-```bash!
+```bash
 ~/proyecto$ git init
 ```
 
 . . .
 
-```bash!
+```bash
 Inicializado repositorio Git vacío en /home/aleoncavallo/proyecto/.git/
 ```
 
 ## ¿Cómo arranca un repositorio?
 
 2. clonando:
-```bash!
+```bash
 $ git clone https://github.com/aleoncavallo/tutorial_bash
 ```
 
 . . .
 
-```bash!
+```bash
 Clonando en 'tutorial_bash'...
 remote: Enumerating objects: 186, done.
 remote: Counting objects: 100% (35/35), done.
@@ -109,13 +109,13 @@ Resolviendo deltas: 100% (64/64), listo.
 ## Mirando el estado
 
 
-```bash!
+```bash
 ~/tutorial_bash$ git status
 ```
 
 . . . 
 
-```bash!
+```bash
 En la rama master
 Tu rama está actualizada con 'origin/master'.
 
@@ -124,25 +124,25 @@ nada para hacer commit, el árbol de trabajo está limpio
 
 ## Mirando el estado
 
-```bash!
+```bash
 ~/proyecto$ touch otro.sh
 ```
 
 . . .
 
-```bash!
+```bash
 ~/proyecto$ echo 'echo hola mundo!' > script.sh
 ```
 
 . . . 
 
-```bash!
+```bash
 ~/proyecto$ git status
 ```
 
 . . .
 
-```bash!
+```bash
 En la rama master
 Tu rama está actualizada con 'origin/master'.
 
@@ -163,14 +163,14 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes
 
 ## Stagin area (escenario)
 
-```bash!
+```bash
 ~/proyecto$ git add script.sh
 ```
 
 . . . 
 
 
-```bash!
+```bash
 ~/proyecto$ git status
 ```
 
@@ -191,13 +191,13 @@ Archivos sin seguimiento:
 
 ## Commit
 
-```bash!
+```bash
 ~/proyecto$ git commit -m "Inicio proyecto"
 ```
 
 . . . 
 
-```bash!
+```bash
 [master (commit-raíz) 4ac0385] Inicio proyecto
  1 file changed, 1 insertion(+)
  create mode 100644 script.sh
@@ -205,13 +205,13 @@ Archivos sin seguimiento:
 
 . . . 
 
-```bash!
+```bash
 ~/proyecto$ git status
 ```
 
 . . . 
 
-```bash!
+```bash
 En la rama master
 Archivos sin seguimiento:
   (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
@@ -237,7 +237,7 @@ cada vez (ver Merkle trees)
 
 ## Log 
 
-```bash!
+```bash
 ~/proyecto$ git log -p
 commit 4ac03851baed8e79c19ba3c2e3707d0f8477abc8 (HEAD -> master)
 Author: Andrea Leon Cavallo <aleoncavallo@gmail.com>
@@ -256,11 +256,11 @@ index 0000000..34cae35
 
 ## Diff Unificado
 
-```bash!
+```bash
 ~/proyecto$ git show
 ```
 
-```bash!
+```bash
 commit 06031abc6fd5794e7b5e1bc6b941d0d3984408df (HEAD -> master)
 Author: Andrea Leon Cavallo <aleoncavallo@gmail.com>
 Date:   Tue May 30 17:26:00 2023 -0300
@@ -296,7 +296,7 @@ index 34cae35..baaa505 100644
 * `git rm` borra un archivo (y anota el cambio en la staging area). Es lo
 mismo que hacer `rm` y `git add`.
 
-```bash!
+```bash
 ~/proyecto$ git rm script.sh
 rm 'script.sh'
 ~/proyecto$ git status
@@ -357,7 +357,7 @@ Hasta ahora, nada requirió internet.
 ## Remotes
 
 
-```bash!
+```bash
 git remote add origin https://github.com/aleoncavallo/git_intro.git
 ```
 
@@ -365,7 +365,7 @@ git remote add origin https://github.com/aleoncavallo/git_intro.git
 
 o desde gitlab
 
-```bash!
+```bash
 git remote add origin git@gitlab.com:aleoncavallo/git_init.git
 ```
 
