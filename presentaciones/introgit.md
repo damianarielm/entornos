@@ -30,14 +30,14 @@
 
 . . .
 
-![git](./introgit/clase-git/defn.png){width=30%}
+![](./introgit/clase-git/defn.png){width=30%}
 
 
 
 ## Flexible, jerárquico, distribuido
 
 
-![Desarrollo Linux](./introgit/clase-git/flow.png){width=70%}
+![](./introgit/clase-git/flow.png){width=70%}
 
 
 
@@ -226,13 +226,14 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes
 
 * Snapshot completa del árbol (con optimizaciones de espacio)
 * Es un hash criptográfico de:
-* Todos los archivos
-* Mensaje de commit
-* Autor, fecha, etc
-* Commit padre
-* Criptográfico = no se puede invertir, ni encontrar colisiones (eficientemente)
-* Obviamente... con optimizaciones para no recomputar el hash desde cero
-cada vez (ver Merkle trees)
+  * Todos los archivos
+  * Mensaje de commit
+  * Autor, fecha, etc
+  * Commit padre
+
+Criptográfico = no se puede invertir, ni encontrar colisiones (eficientemente)
+
+Con optimizaciones para no recomputar el hash desde cero cada vez (ver Merkle trees)
 
 
 ## Log 
