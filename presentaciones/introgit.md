@@ -6,7 +6,7 @@
 
 . . . 
 
-* Sistema de control de versiones (SCM).
+* Sistema de control de versiones (SCM). https://git-scm.com/ 
 
 . . .
 
@@ -16,11 +16,13 @@
 
 				y permite ir hacia atrás si hace falta.
 
+## Nuestra motivación a esta altura
+
+vamos a tratar de evitar esto
+
+![](./introgit/folderhell.png){width=70%}
 
 ## Introducción a git
-
-
-. . .
 
 * Creado originalmente por Linus Torvalds en 2005...
 
@@ -58,38 +60,15 @@
 
 * Cada desarrollador tiene todo el código y toda la historia.  
 
+## Aprender entender y usar apropiadamente git 
+
+![](./introgit/xkcd.png){width=30%}
+
+
 
 ## ¿Cómo arranca un repositorio?
 
-1. inicializando:
-
-. . .
-
-```bash
-~$ mkdir proyecto/
-```
-
-. . .
-
-```bash
-~$ cd proyecto/
-```
-
-. . .
-
-```bash
-~/proyecto$ git init
-```
-
-. . .
-
-```bash
-Inicializado repositorio Git vacío en /home/aleoncavallo/proyecto/.git/
-```
-
-## ¿Cómo arranca un repositorio?
-
-2. clonando:
+1. clonando:
 ```bash
 $ git clone https://github.com/aleoncavallo/tutorial_bash
 ```
@@ -105,6 +84,30 @@ remote: Total 186 (delta 18), reused 10 (delta 4), pack-reused 151
 Recibiendo objetos: 100% (186/186), 821.02 KiB | 5.20 MiB/s, listo.
 Resolviendo deltas: 100% (64/64), listo.
 ```
+
+## ¿Cómo arranca un repositorio?
+
+2. inicializando:
+
+. . .
+
+```bash
+~/$ git init proyecto
+```
+
+. . .
+
+```bash
+Inicializado repositorio Git vacío en /home/aleoncavallo/proyecto/.git/
+```
+
+. . .
+
+```bash
+~$ cd proyecto/
+```
+
+
 
 ## Mirando el estado
 
@@ -155,7 +158,7 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes
   (usa "git add" para hacerles seguimiento)
 ```
 
-## Estados
+## Estados de un archivo
 
 
 ![](./introgit/estados.png){width=90%}
@@ -189,7 +192,14 @@ Archivos sin seguimiento:
 
 ```
 
-## Commit
+
+## Estados repositorio
+
+
+![](./introgit/estados del repositorio.png){width=80%}
+
+
+## Commit (compromiso)
 
 ```bash
 ~/proyecto$ git commit -m "Inicio proyecto"
@@ -222,24 +232,34 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes
 ```
 
 
-## ¿Qué es un commit?
+## Commit (compromiso)
 
-* Snapshot completa del árbol (con optimizaciones de espacio)
+* Es una fotografía de una situación de nuestro código/proyecto 
+Se puede pensar como la foto completa del árbol de los estados hasta el momento
+
+.  .  . 
+
 * Es un hash criptográfico de:
   * Todos los archivos
   * Mensaje de commit
   * Autor, fecha, etc
   * Commit padre
 
-Criptográfico = no se puede invertir, ni encontrar colisiones (eficientemente)
+.  .  . 
 
-Con optimizaciones para no recomputar el hash desde cero cada vez (ver Merkle trees)
+Hash criptográfico = es in identificador, se hace con una operación matemática que no se puede invertir, es muy dificil encontrar colisiones
+Lo calculan con optimizaciones para no computar el hash desde cero cada vez 
 
 
 ## Log 
 
 ```bash
 ~/proyecto$ git log -p
+```
+
+. . .
+
+```bash
 commit 4ac03851baed8e79c19ba3c2e3707d0f8477abc8 (HEAD -> master)
 Author: Andrea Leon Cavallo <aleoncavallo@gmail.com>
 Date:   Tue May 30 17:16:28 2023 -0300
@@ -266,7 +286,7 @@ commit 06031abc6fd5794e7b5e1bc6b941d0d3984408df (HEAD -> master)
 Author: Andrea Leon Cavallo <aleoncavallo@gmail.com>
 Date:   Tue May 30 17:26:00 2023 -0300
 
-    corregir énfasis en español
+    corregir enfasis en español
 
 diff --git a/script.sh b/script.sh
 index 34cae35..baaa505 100644
@@ -278,20 +298,6 @@ index 34cae35..baaa505 100644
 
 ```
 
-## Buenas prácticas
-
-* Commits lo más pequeños posibles (“atómicos”): permite revertir fácilmente
-* Mensajes descriptivos: “cambios” vs “Agrego tal funcionalidad”
-* Nunca romper el build: permite bisectar 
-
- . . .
-
-`git bisect` 
- Bisect es partir por la mitad y es justamente lo que va a hacer este comando,
- ir dividiendo toda la pila de commits en dos partes, 
- una parte de la pila contendrá el error y otra parte no.
-
-
 ## Borrar archivos
 
 * `git rm` borra un archivo (y anota el cambio en la staging area). Es lo
@@ -299,33 +305,91 @@ mismo que hacer `rm` y `git add`.
 
 ```bash
 ~/proyecto$ git rm script.sh
+```
+
+. . .
+
+```bash
 rm 'script.sh'
+```
+
+. . .
+
+```bash
 ~/proyecto$ git status
+```
+
+. . . 
+
+```bash
 On branch master
 Your branch is up to date with 'origin/master'.
 Changes to be committed:
 (use "git restore --staged <file>..." to unstage)
 deleted:
 script.sh
+```
+
+. . .
+
+```bash
 $ git commit -m "Borrar main"
+```
+
+. . .
+
+```bash
 [master f068e5f] Borrar main
 1 file changed, 1 deletions(-)
 delete mode 100644 main.c
 ```
 
 
+## Buenas prácticas
+
+* Commits lo más pequeños posibles (“atómicos”): permite revertir fácilmente
+
+. . .
+
+* Mensajes descriptivos: “cambios” vs “Agrego tal funcionalidad”
+
+
 
 ## Config
 
 ```bash
+### Establecer el nombre de usuario y email
 $ git config --global user.name "Alan Turing"
 $ git config --global user.email "aturing@princeton.edu"
 ```
+
+```bash
+### Guardar la clave y no la pregunte continuamente
+$ git config --global credential.helper store
+```
+
+. . .
+
+El --global es solo si lo estan usando en un equipo que no comparten con otros y que no usan para otro servidor de git. 
+
 
 
 ## Remotes
 
 Hasta ahora, nada requirió internet.
+
+. . .
+
+De ahí viene lo de distribuido, 
+todos los cambios que fuimos haciendo y registrando 
+los podemos hacer sin conexión a internet/red.
+
+## Remotes
+
+GitLab y GitHub, y Bitbucket son sitios que ofrecen la posibilidad de alojar en ellas nuestros proyectos.
+
+![](./introgit/popularidad.png){width=50%}
+
 
 ## Remotes
 
@@ -379,7 +443,7 @@ git remote add origin git@gitlab.com:aleoncavallo/git_init.git
 ## 
 
 Lo más básico ya está
- 
+
 
 ## Revirtiendo cambios
 * `git checkout <file>`: revierte cambios locales.
@@ -414,15 +478,9 @@ Pull tiene merge implícito, push sólo permite “fast-forwards”.
 
 . . .
 
-
-## Merge (Unir ramas)
-
-* Posiblemente haya que corregir conflictos
-
-. . .
+Posiblemente haya que corregir conflictos
 
 
-* Interfaz gráfica: `gitg` (o `git log --graph`)
 
 ## Rebase
 
@@ -431,6 +489,15 @@ Pull tiene merge implícito, push sólo permite “fast-forwards”.
 ![](./introgit/merge3.png){width=60%}
 
 * Generalmente sólo se hace en ramas privadas
+
+
+## Bisect
+
+`git bisect` 
+ Bisect es partir por la mitad y es justamente lo que va a hacer este comando,
+ ir dividiendo toda la pila de commits en dos partes, 
+ una parte de la pila contendrá el error y otra parte no.
+
 
 ## Clean
 
@@ -448,3 +515,6 @@ Usar con mucho cuidado...
 * Guía de git:  https://rogerdudler.github.io/git-guide/
 
 * Aprender a hacer reamas: https://learngitbranching.js.org/?locale=es_AR
+
+* Video Aprende GIT de HolaMudo https://www.youtube.com/watch?v=VdGzPZ31ts8
+
