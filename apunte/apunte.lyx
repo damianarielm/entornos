@@ -16142,7 +16142,7 @@ La clase
 \begin_inset Quotes frd
 \end_inset
 
- representa cualquier carácter en minúscula.
+ representa cualquier carácter en mayúscula.
 \end_layout
 
 \begin_layout Itemize
@@ -24791,7 +24791,7 @@ EXPRESIONES
 
 
 \family typewriter
--gt
+-lt
 \family default
 
 \begin_inset Quotes frd
@@ -26523,7 +26523,7 @@ Comparaciones de cadenas y números de forma más legible: podemos utilizar
 \begin_inset Quotes frd
 \end_inset
 
-) para realizar comparaciones.
+) para realizar comparaciones de cadenas.
 \end_layout
 
 \begin_layout Itemize
