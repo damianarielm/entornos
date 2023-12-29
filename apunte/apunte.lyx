@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-23 de mayo de 2023.
+29 de diciembre de 2023.
 \end_layout
 
 \begin_layout Standard
@@ -166,20 +166,6 @@ Fundamentos
 
 \begin_layout Chapter
 Historia
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se podría hacer mas hincapié en los dispositivos de almacenamiento y en
- las formas de operar las computadoras.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -239,8 +225,17 @@ literal "true"
  el uso de engranajes y ruedas dentadas, fue un importante avance en el
  campo de la mecánica y la automatización, y sentó las bases para el desarrollo
  de las máquinas calculadoras modernas.
- La Pascalina fue utilizada por matemáticos y científicos de la época, y
- su diseño influyó en el desarrollo de posteriores calculadoras mecánicas.
+ La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Pascalina"
+literal "true"
+
+\end_inset
+
+ Pascalina fue utilizada por matemáticos y científicos de la época, y su
+ diseño influyó en el desarrollo de posteriores calculadoras mecánicas.
 \end_layout
 
 \begin_layout Standard
@@ -589,10 +584,17 @@ Howard Aiken
  y se encuentra en el Museo de la historia de la computación en la Universidad
  de Harvard.
  La Harvard Mark I fue una máquina de gran tamaño, medía 8 metros de largo,
- 2 metros de alto y 2 metros de ancho, y utilizaba relés electromecánicos
- para llevar a cabo cálculos.
- La máquina era capaz de realizar aritmética básica y funcionaba con un
- sistema de tarjetas perforadas.
+ 2 metros de alto y 2 metros de ancho, y utilizaba 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Rel%C3%A9"
+literal "true"
+
+\end_inset
+
+ relés electromecánicos para llevar a cabo cálculos.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -630,6 +632,141 @@ Harvard Mark I
 \end_layout
 
 \begin_layout Standard
+Para programar la Mark I se utilizaban 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Tablero_de_conexiones"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+plugboards
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o paneles de conexiones.
+ Estos eran paneles con enchufes y cables que permitían a los operadores
+ configurar la función de la máquina de manera física, estableciendo conexiones
+ entre diferentes componentes.
+ Los operadores debían conectar cables en los enchufes correspondientes
+ para definir la ruta de los datos y las operaciones que la máquina debía
+ realizar.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plugboard.jpg
+	lyxscale 33
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Panel de conexiones de la IBM 402.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, para leer los datos de entrada se utilizaban 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faYoutubePlay"
+target "https://www.youtube.com/watch?v=YnnGbcM-H8c"
+literal "true"
+
+\end_inset
+
+ tarjetas perforadas.
+ Las 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Tarjeta_perforada"
+literal "true"
+
+\end_inset
+
+ tarjetas perforadas son medios de almacenamiento de datos utilizados históricam
+ente en la informática.
+ Estas tarjetas son cartulinas rectangulares que contienen información codificad
+a mediante perforaciones ubicadas en filas y columnas.
+ Cada columna en una tarjeta perforada representa un carácter o un campo
+ de datos, y los agujeros perforados indican valores específicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename punchcard.jpg
+	lyxscale 33
+	scale 14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Tarjeta perforada de 20 filas y 80 columnas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La 
 \begin_inset CommandInset href
 LatexCommand href
@@ -658,8 +795,16 @@ status open
 
 \begin_layout Plain Layout
 Aunque la tecnología de válvulas era superior a la de relés, no fue hasta
- la invención del transistor en 1947 que las computadoras ganaron su verdadero
- poder de computo.
+ la invención del 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Transistor"
+literal "true"
+
+\end_inset
+
+ transistor en 1947 que las computadoras ganaron su verdadero poder de computo.
 \end_layout
 
 \end_inset
@@ -719,7 +864,15 @@ ntales y universidades.
 \end_layout
 
 \begin_layout Standard
-FORTRAN
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://fortran-lang.org/"
+literal "true"
+
+\end_inset
+
+ FORTRAN
 \begin_inset Marginal
 status collapsed
 
@@ -787,7 +940,7 @@ status open
 \begin_inset Graphics
 	filename pdp1.jpg
 	lyxscale 15
-	scale 23
+	scale 20
 
 \end_inset
 
@@ -833,7 +986,7 @@ literal "true"
 
  NLS
 \begin_inset Marginal
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -848,7 +1001,7 @@ status collapsed
 
 \end_inset
 
- (oN-Line System) fue un sistema de información desarrollado por 
+ (oN-Line System) fue un sistema desarrollado en 1968 por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -861,7 +1014,7 @@ literal "true"
 \emph on
 Douglas Engelbart
 \emph default
- y su equipo en 1968.
+ y su equipo.
  Fue una de las primeras demostraciones de una interfaz gráfica de usuario
  (GUI), con un puntero del ratón sistema de hipertexto y ventanas.
  También introdujo varias características que se consideran fundamentales
@@ -904,8 +1057,17 @@ NLS (oN-Line System)
 \end_layout
 
 \begin_layout Standard
-MULTICS (Multiplexed Information and Computing Service) fue un sistema operativo
- desarrollado en 1969 por un equipo liderado por el MIT y Bell Labs.
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Multics"
+literal "true"
+
+\end_inset
+
+ MULTICS (Multiplexed Information and Computing Service) fue un sistema
+ operativo desarrollado en 1969 por un equipo liderado por el MIT y Bell
+ Labs.
  El objetivo de MULTICS era crear un sistema operativo de tiempo compartido
  que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer
  servicios avanzados, como el procesamiento de archivos, el manejo de bases
@@ -982,9 +1144,6 @@ s por otros programadores.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
 En 1973 en el Xerox PARC (Palo Alto Research Center), se desarrolló el 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1009,7 +1168,7 @@ status open
 \begin_inset Graphics
 	filename alto.png
 	lyxscale 10
-	scale 19
+	scale 14
 
 \end_inset
 
@@ -1150,7 +1309,15 @@ IBM PC
 \end_layout
 
 \begin_layout Standard
-System V es una versión del sistema operativo UNIX desarrollado por Bell
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/System_V"
+literal "true"
+
+\end_inset
+
+ System V es una versión del sistema operativo UNIX desarrollado por Bell
  Labs en 1983.
  Fue una de las primeras versiones de UNIX en ser comercializada y distribuida
  ampliamente, y tuvo un gran impacto en el desarrollo de los sistemas operativos
@@ -1184,7 +1351,16 @@ status collapsed
 
 \end_inset
 
-Ese mismo año fue fundado el movimiento GNU por 
+Ese mismo año fue fundado el movimiento 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.gnu.org/"
+literal "true"
+
+\end_inset
+
+ GNU por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -1236,7 +1412,15 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-X Windows es un sistema de ventanas para sistemas tipo UNIX.
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Sistema_de_ventanas_X"
+literal "true"
+
+\end_inset
+
+ X Windows es un sistema de ventanas para sistemas tipo UNIX.
  Fue desarrollado en el Massachusetts Institute of Technology (MIT) en 1984.
  El objetivo principal de X Windows era proporcionar un sistema de ventanas
  que pudiera ser utilizado en una variedad de sistemas, permitiendo una
@@ -1280,6 +1464,44 @@ Andrew S.
  Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
  Minix tenía un diseño similar al de UNIX, pero con un conjunto reducido
  de herramientas y utilidades.
+\end_layout
+
+\begin_layout Standard
+La década de 1990 marcó la comercialización de Internet
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename berners.jpg
+	display false
+	scale 9
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ y la expansión global.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Tim_Berners-Lee"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Tim Berners-Lee
+\emph default
+ propuso la World Wide Web en 1989, y la adopción de navegadores web facilitó
+ la navegación.
+ Se establecieron empresas de tecnología, y se desarrollaron servicios como
+ correo electrónico, motores de búsqueda y comercio en línea.
 \end_layout
 
 \begin_layout Standard
@@ -1327,16 +1549,210 @@ En resumen, Linux surgió como un proyecto personal de Linus Torvalds, pero
  con el tiempo se convirtió en una parte fundamental del proyecto GNU y
  en uno de los sistemas operativos de código abierto más utilizados y respetados
  de la industria tecnológica.
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.python.org/"
+literal "true"
+
+\end_inset
+
+ Python, creado por 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Guido_van_Rossum"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Guido van Rossum
+\emph default
+
+\begin_inset Marginal
 status open
 
 \begin_layout Plain Layout
-Agregar material hasta llegar al presente.
+\begin_inset Graphics
+	filename guido.jpg
+	display false
+	scale 1.5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, fue concebido como un lenguaje de programación de alto nivel con un enfoque
+ en la legibilidad del código y la facilidad de uso.
+ Fue lanzado en febrero de 1991 y a lo largo de los años, ha ganado popularidad
+ debido a su sintaxis clara y concisa, su versatilidad y su amplia gama
+ de aplicaciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faYoutubePlay"
+target "https://www.youtube.com/watch?v=Wu_gE8gQLIc"
+literal "true"
+
+\end_inset
+
+ Windows 95, desarrollado por Microsoft y lanzado en agosto de 1995, fue
+ un sistema operativo que marcó un hito significativo en la evolución de
+ los sistemas operativos de Microsoft.
+ Introdujo una interfaz gráfica de usuario más intuitiva, con elementos
+ icónicos como el botón 
+\begin_inset Quotes fld
+\end_inset
+
+Inicio
+\begin_inset Quotes frd
+\end_inset
+
+, la barra de tareas, tecnología Plug and Play e Internet Explorer como
+ navegador web.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename windows95.jpg
+	lyxscale 50
+	scale 27
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Windows 95
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.google.com/"
+literal "true"
+
+\end_inset
+
+ Google es un motor de búsqueda en línea desarrollado por la empresa Google.
+ Funciona como una herramienta que permite a los usuarios buscar información
+ en la vasta cantidad de contenido disponible en la web.
+ Los usuarios ingresan palabras clave relacionadas con sus consultas en
+ el cuadro de búsqueda, y Google devuelve una lista de resultados relevantes,
+ clasificados según su algoritmo de búsqueda.
+ Fue fundada en 1998 por Larry Page y Sergey Brin, estudiantes de posgrado
+ en la Universidad de Stanford.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://es.wikipedia.org/wiki/Wikipedia:Portada"
+literal "true"
+
+\end_inset
+
+ Wikipedia es una enciclopedia en línea gratuita y colaborativa que permite
+ a los usuarios crear, editar y actualizar contenido.
+ Fue lanzada en 2001 y se basa en el principio, que permite la edición colaborat
+iva de artículos por parte de usuarios de todo el mundo.
+ Los artículos cubren una amplia variedad de temas y están escritos en varios
+ idiomas.
+ Aunque la plataforma depende de la contribución voluntaria de sus usuarios,
+ ha llegado a ser conocida por su vasta cantidad de información y su acceso
+ abierto a la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.youtube.com/"
+literal "true"
+
+\end_inset
+
+ YouTube es una plataforma de compartición de videos en línea.
+ Fundada en 2005, permite a los usuarios cargar, ver y compartir videos.
+ Los contenidos abarcan una amplia variedad de temas, desde entretenimiento
+ y música hasta tutoriales, documentales y más.
+ Los usuarios pueden interactuar con los videos mediante comentarios, likes
+ y suscripciones a canales.
+ La plataforma se ha convertido en una fuente importante de contenido visual
+ en línea y ha dado lugar a la creación de comunidades de creadores de contenido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.android.com/"
+literal "true"
+
+\end_inset
+
+ Android es un sistema operativo móvil que fue inicialmente creado en 2003
+ y adquirido por Google en 2005.
+ Android se ha convertido en el sistema operativo dominante para dispositivos
+ móviles.
+ Además de los teléfonos inteligentes, Android se utiliza en tabletas, televisor
+es inteligentes, relojes inteligentes y otros dispositivos electrónicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://chat.openai.com/"
+literal "true"
+
+\end_inset
+
+ GPT-3, o Generative Pre-trained Transformer 3, es un modelo de lenguaje
+ desarrollado por OpenAI a mitad de 2020.
+ Es la tercera iteración de la serie GPT y representa uno de los modelos
+ de lenguaje más grandes y avanzados hasta la fecha.
+\end_layout
+
+\begin_layout Standard
+Lo distintivo de GPT-3 es su capacidad para generar texto coherente y contextuad
+o en respuesta a instrucciones dadas en lenguaje natural.
+ Con 175 mil millones de parámetros, GPT-3 es notable por su enorme escala,
+ lo que le permite abordar tareas diversas, como traducción de idiomas,
+ redacción de textos, resolución de problemas matemáticos y más, sin una
+ tarea específica de entrenamiento.
 \end_layout
 
 \begin_layout Chapter
@@ -27387,12 +27803,239 @@ IFS
  y utilícela para iterar sobre un archivo CSV.
 \end_layout
 
+\begin_layout Introduccion
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Me gusta ofender a las personas porque considero que una persona que se
+ ofende, merece ser ofendida
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Linus Torvalds
+\end_layout
+
 \begin_layout Part
 Conceptos adicionales
 \end_layout
 
 \begin_layout Chapter
 Control de versiones
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Subsection
+Descripción
+\end_layout
+
+\begin_layout Standard
+Un 
+\begin_inset Quotes fld
+\end_inset
+
+VCS
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+VCS
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Version Control System
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (sistema de control de versiones)
+\end_layout
+
+\end_inset
+
+ es una herramienta que te permite gestionar y controlar los cambios en
+ archivos y proyectos a lo largo del tiempo.
+ Su propósito principal es rastrear las modificaciones realizadas en los
+ archivos, permitiendo el seguimiento de quién hizo los cambios, que cambió,
+ cuándo se realizó y qué se modificó en cada versión.
+\end_layout
+
+\begin_layout Standard
+Es particularmente útil en proyectos de desarrollo de software, donde varias
+ personas pueden trabajar simultáneamente en los mismos archivos y es necesario
+ mantener un historial completo de cambios.
+\end_layout
+
+\begin_layout Standard
+Algunos de los más conocidos son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://git-scm.com/"
+literal "true"
+
+\end_inset
+
+ Git.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://subversion.apache.org/"
+literal "true"
+
+\end_inset
+
+ Subversion.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.mercurial-scm.org/"
+literal "true"
+
+\end_inset
+
+ Mercurial.
+\end_layout
+
+\begin_layout Subsection
+Configuración
+\end_layout
+
+\begin_layout Section
+Comandos
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+init
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+status
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+clone
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+add
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+remove
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+reset
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+commit
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+branch
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+checkout
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+merge
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+push
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+pull
+\end_layout
+
+\begin_layout Section
+Github
+\end_layout
+
+\begin_layout Subsection
+Fork
+\end_layout
+
+\begin_layout Subsection
+Pull request
 \end_layout
 
 \begin_layout Chapter
