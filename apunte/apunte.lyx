@@ -18757,6 +18757,14 @@ Agregar ejemplos.
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+tee
+\end_layout
+
+\begin_layout Subsection
 Ejercicios
 \end_layout
 
@@ -27959,8 +27967,192 @@ literal "true"
  Mercurial.
 \end_layout
 
+\begin_layout Standard
+Git tiene tres áreas de trabajo fundamentales, que representan diferentes
+ estados del sistema de control de versiones.
+ Estas son:
+\end_layout
+
+\begin_layout Itemize
+Directorio de trabajo: Es el directorio actual donde estás trabajando en
+ tus archivos.
+ Contiene la versión actual y modificada de tus archivos.
+ Los cambios realizados en el directorio de trabajo no se registran en Git
+ hasta que se añaden al área de preparación.
+\end_layout
+
+\begin_layout Itemize
+Área de preparación (Staging Area o Index): Es un área intermedia entre
+ el directorio de trabajo y el repositorio.
+ Se utiliza para recopilar y preparar los cambios que se incluirán en la
+ próxima confirmación.
+ Los archivos en el área de preparación están listos para ser confirmados,
+ pero aún no se han guardado en la base de datos del repositorio.
+\end_layout
+
+\begin_layout Itemize
+Repositorio: Es la base de datos donde Git almacena el historial completo
+ de cambios.
+ Contiene todos los commits realizados, cada uno con su conjunto de cambios
+ y referencias a commits anteriores.
+ Los cambios confirmados en el área de preparación se guardan permanentemente
+ en el repositorio mediante un commit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename git.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Áreas de trabajo de git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Configuración
+\end_layout
+
+\begin_layout Standard
+Git permite configurar opciones en tres niveles: local, global y del sistema.
+ Cada nivel tiene un alcance diferente:
+\end_layout
+
+\begin_layout Itemize
+Las configuraciones del sistema se aplican a todos los usuarios y repositorios
+ en la máquina.
+\end_layout
+
+\begin_layout Itemize
+Las configuraciones globales, se aplican a todos los repositorios para un
+ usuario específico en la máquina.
+\end_layout
+
+\begin_layout Itemize
+Las configuraciones locales, se aplican solo al repositorio actual.
+\end_layout
+
+\begin_layout Standard
+Después de instalar Git por primera vez deberíamos establecer nuestro nombre
+ de usuario y correo electrónico.
+ Para ello utilizamos el comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git config
+\end_layout
+
+\end_inset
+
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git config --global user.name 
+\begin_inset Quotes fld
+\end_inset
+
+Damian Ariel
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+git config --global user.email 
+\begin_inset Quotes fld
+\end_inset
+
+damarotte@gmail.com
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La opción 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+--global
+\end_layout
+
+\end_inset
+
+ indica que la configuración se aplicará a nivel global, afectando a todos
+ los repositorios para el usuario.
+ Si no se utiliza, la configuración se aplicará solo al repositorio actual.
+ También podría utilizarse la opción 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+--system
+\end_layout
+
+\end_inset
+
+ para aplicar las configuraciones a todo el sistema.
 \end_layout
 
 \begin_layout Section
@@ -28051,6 +28243,13 @@ push
 pull
 \end_layout
 
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+fetch
+\end_layout
+
 \begin_layout Section
 Github
 \end_layout
@@ -28068,6 +28267,10 @@ Contenedores
 \end_layout
 
 \begin_layout Section
+Simulación
+\end_layout
+
+\begin_layout Section
 Emulación
 \end_layout
 
@@ -28077,6 +28280,22 @@ Virtualización
 
 \begin_layout Section
 Contenedores
+\end_layout
+
+\begin_layout Chapter
+Otros conceptos
+\end_layout
+
+\begin_layout Section
+venv
+\end_layout
+
+\begin_layout Section
+chroot
+\end_layout
+
+\begin_layout Section
+Colab
 \end_layout
 
 \end_body
