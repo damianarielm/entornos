@@ -112,7 +112,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-29 de diciembre de 2023.
+18 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -28166,6 +28166,114 @@ Comandos
 init
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git init
+\end_layout
+
+\end_inset
+
+ se utiliza para inicializar un nuevo repositorio Git.
+ La sintaxis del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git init
+\end_layout
+
+\end_inset
+
+ es bastante simple:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git init [ruta]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Después de ejecutar 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git init
+\end_layout
+
+\end_inset
+
+, se creará un nuevo repositorio Git en el directorio especificado o en
+ el directorio actual, si no se proporciona una ruta.
+ El comando establecerá la estructura inicial del repositorio, creando la
+ carpeta oculta 
+\family typewriter
+.git
+\family default
+ que contiene la información necesaria para rastrear y gestionar los cambios
+ en los archivos del proyecto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git init
+\end_layout
+
+\end_inset
+
+ se utiliza generalmente una sola vez al inicio de un nuevo proyecto para
+ convertir un directorio ordinario en un repositorio Git.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -28173,11 +28281,859 @@ init
 status
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+ es utilizado para obtener información sobre el estado actual del repositorio
+ Git.
+ Proporciona detalles sobre los archivos en el directorio de trabajo en
+ comparación con el área de preparación y el último commit en el repositorio.
+ Aquí está la sintaxis básica del comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git status [-s]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La opción 
+\family typewriter
+-s
+\family default
+ se utiliza para obtener una salida simplificada y concisa, mostrando únicamente
+ información resumida sobre el estado de los archivos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Observemos el estado de un repositorio recién iniciado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git init && git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
 
 \family typewriter
-\emph off
-clone
+\size footnotesize
+Inicializado repositorio Git vacío en /home/entorno/repositorio/.git/ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+No hay commits todavía
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+no hay nada para confirmar (crea/copia archivos y usa "git add" para hacerles
+ seguimiento)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si agregamos un archivo al directorio de trabajo (pero no al área de preparación
+) observaríamos una salida como esta:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+No hay commits todavía
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Archivos sin seguimiento:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+archivo
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes
+ (usa "git add" para hacerles seguimiento)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si luego añadimos dicho archivo al area de preparación veremos la siguiente
+ salida:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git add archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+No hay commits todavía
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Cambios a ser confirmados:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git rm --cached <archivo>..." para sacar del área de stage)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+nuevos archivos: archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Veamos ahora la salida de 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+ si borramos el archivo del directorio de trabajo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+No hay commits todavía
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Cambios a ser confirmados:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git rm --cached <archivo>..." para sacar del área de stage)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+nuevos archivos: archivo
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Cambios no rastreados para el commit:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git restore <archivo>..." para descartar los cambios en el directorio
+ de trabajo)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+borrados: archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Vale la pena notar que si listamos los archivos del directorio actual, lo
+ veremos vacío.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Finalmente veamos que sucede si confirmamos los cambios del área de preparación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git commit -m 
+\begin_inset Quotes fld
+\end_inset
+
+Primer commit.
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+[master (commit-raíz) f6468d6] Primer commit.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+1 file changed, 0 insertions(+), 0 deletions(-)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+create mode 100644 archivo
+\family default
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Cambios no rastreados para el commit:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git restore <archivo>..." para descartar los cambios en el directorio
+ de trabajo)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+borrados: archivo
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si recuperamos el archivo borrado a partir de la versión confirmada en el
+ repositorio observaremos lo siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git restore archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+nada para hacer commit, el árbol de trabajo está limpio
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -28199,6 +29155,13 @@ remove
 \family typewriter
 \emph off
 reset
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+restore
 \end_layout
 
 \begin_layout Subsection
@@ -28229,6 +29192,17 @@ checkout
 merge
 \end_layout
 
+\begin_layout Section
+Github
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+clone
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -28248,10 +29222,6 @@ pull
 \family typewriter
 \emph off
 fetch
-\end_layout
-
-\begin_layout Section
-Github
 \end_layout
 
 \begin_layout Subsection
