@@ -46,8 +46,7 @@ AddToPreamble
 
     % Hyperlinks
     \usepackage{hyperref}
-    \hypersetup{colorlinks=true,breaklinks=true,linktocpage=true,
-                urlcolor=Maroon,linkcolor=RoyalBlue,citecolor=Maroon}
+    \hypersetup{hidelinks,colorlinks=false,breaklinks=true,linktocpage=true}
 
     % Capital letters
     \usepackage{lettrine}
@@ -77,7 +76,7 @@ AddToPreamble
     {\centering \LARGE} % format
     {\partname ~ \thepart} % label
     {1em} % sep
-    {\color{Maroon}\textsc} % before
+    {\color{Black}\textsc} % before
     [\bigskip \normalsize \color{Black} \begin{quote} \ctparttext@print \end{quote}] % after
     % Chapters
     \DeclareFixedFont{\chapterNumber}{U}{eur}{b}{n}{60} % Chapter number
@@ -119,7 +118,7 @@ AddToPreamble
     \usepackage[titles]{tocloft}
 
     % Part
-    \renewcommand{\cftpartfont}{\color{Maroon}\scshape}
+    \renewcommand{\cftpartfont}{\color{Black}\scshape}
     \renewcommand{\cftpartpagefont}{\normalfont}
     % Chapter
     \renewcommand{\cftchapfont}{\textsc}
@@ -172,7 +171,7 @@ End
 
 Style Title
     LatexType   Command
-    LeftDelim   "\begin{center}\color{Maroon}\LARGE{"
+    LeftDelim   "\begin{center}\color{Black}\LARGE{"
     LatexName   textsc
     RightDelim  "}\normalcolor\end{center}"
     InTitle     0

@@ -15,6 +15,7 @@ apunte.bw:
 bw.pdf: apunte.bw
 	lyx --export pdf2 apunte.bw
 	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+		-sProcessColorModel=DeviceGray -sColorConversionStrategy=Gray  \
        -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf apunte.pdf
 	mv output.pdf bw.pdf
 	rm -f apunte.bw
