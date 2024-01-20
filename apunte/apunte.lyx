@@ -28117,7 +28117,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Áreas de trabajo de git
+Áreas de trabajo de Git
 \end_layout
 
 \end_inset
@@ -28125,6 +28125,119 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En Git, un archivo puede encontrarse en uno de los cuatro estados principales,
+ que representan su posición en relación con el flujo de trabajo de Git.
+ Estos estados son:
+\end_layout
+
+\begin_layout Enumerate
+No rastreado
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+En la terminología en ingles, se llaman 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Untracked
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+: Un archivo no rastreado es aquel que Git no está siguiendo.
+ Puede ser un nuevo archivo que aún no ha sido añadido al repositorio o
+ un archivo que ha sido ignorado explícitamente.
+\end_layout
+
+\begin_layout Enumerate
+En el área de preparación
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+En la terminología en ingles, se llaman 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Staged
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+: Un archivo en el área de preparación está listo para ser incluido en la
+ próxima confirmación.
+\end_layout
+
+\begin_layout Enumerate
+Confirmado: Un archivo confirmado es aquel que ha sido guardado permanentemente
+ en el repositorio mediante un commit.
+ Está en el estado más estable y forma parte del historial del proyecto.
+\end_layout
+
+\begin_layout Enumerate
+Modificado: Un archivo modificado es un archivo que ha sido modificado en
+ tu directorio de trabajo pero no ha sido aún añadido al área de preparación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename tracked.png
+	scale 50
+	BoundingBox 100bp 0bp 700bp 453bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Estados de un archivo en Git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -28661,13 +28774,6 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes
  (usa "git add" para hacerles seguimiento)
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -29257,13 +29363,6 @@ En la rama master
 nada para hacer commit, el árbol de trabajo está limpio
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
