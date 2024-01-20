@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-20 de enero de 2024.
+21 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -28267,6 +28267,113 @@ Las configuraciones locales, se aplican solo al repositorio actual.
 \end_layout
 
 \begin_layout Standard
+La sintaxis básica del comando para configurar es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git config [--global | --system] configuracion valor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La opción 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+--global
+\end_layout
+
+\end_inset
+
+ indica que la configuración se aplicará a nivel global, afectando a todos
+ los repositorios para el usuario.
+ Si no se utiliza, la configuración se aplicará solo al repositorio actual.
+ También podría utilizarse la opción 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+--system
+\end_layout
+
+\end_inset
+
+ para aplicar las configuraciones a todo el sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aquí hay algunas opciones de configuración populares:
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+user.name
+\family default
+ Establece el nombre de usuario que se utilizará para las confirmaciones.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+user.email
+\family default
+ Establece la dirección de correo electrónico asociada a tu cuenta de Git.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+core.editor
+\family default
+ Define el editor de texto predeterminado para mensajes de confirmación
+ y otras operaciones que abren un editor.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+init.defaultbranch
+\family default
+ Configura el nombre de la rama predeterminada al inicializar un nuevo repositor
+io.
+\end_layout
+
+\begin_layout Standard
 Después de instalar Git por primera vez deberíamos establecer nuestro nombre
  de usuario y correo electrónico.
  Para ello utilizamos el comando 
@@ -28332,7 +28439,12 @@ damarotte@gmail.com
 \end_layout
 
 \begin_layout Standard
-La opción 
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si deseamos ver todas las configuraciones de Git podemos usar el comando
+ 
 \begin_inset listings
 lstparams "language=bash"
 inline true
@@ -28340,28 +28452,17 @@ status open
 
 \begin_layout Plain Layout
 
---global
+git config -l
 \end_layout
 
 \end_inset
 
- indica que la configuración se aplicará a nivel global, afectando a todos
- los repositorios para el usuario.
- Si no se utiliza, la configuración se aplicará solo al repositorio actual.
- También podría utilizarse la opción 
-\begin_inset listings
-lstparams "language=bash"
-inline true
-status open
-
-\begin_layout Plain Layout
-
---system
+.
 \end_layout
 
 \end_inset
 
- para aplicar las configuraciones a todo el sistema.
+
 \end_layout
 
 \begin_layout Standard
@@ -28558,13 +28659,6 @@ La opción
  se utiliza para obtener una salida simplificada y concisa, mostrando únicamente
  información resumida sobre el estado de los archivos.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -29310,6 +29404,13 @@ sin cambios agregados al commit (usa "git add" y/o "git commit -a")
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Si recuperamos el archivo borrado a partir de la versión confirmada en el
  repositorio observaremos lo siguiente:
@@ -29447,8 +29548,8 @@ git add
 status open
 
 \begin_layout Plain Layout
-Si se pretende eliminar un archivo en la próxima confirmación, se puede
- utilizar 
+Si se pretende eliminar un archivo del repositorio en la próxima confirmación,
+ se puede utilizar 
 \begin_inset listings
 lstparams "language=bash"
 inline true
