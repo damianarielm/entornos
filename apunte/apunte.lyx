@@ -29603,6 +29603,110 @@ git rm
 commit
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git commit
+\end_layout
+
+\end_inset
+
+ se utiliza en Git para confirmar los cambios realizados en el área de preparaci
+ón, creando un nuevo commit en el historial del repositorio.
+ La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git commit [-a] [-m mensaje]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La opción 
+\family typewriter
+-a
+\family default
+ del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git commit
+\end_layout
+
+\end_inset
+
+ permite hacer una confirmación agregando automáticamente al área de preparación
+ todos los archivos 
+\emph on
+con seguimiento
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Si no incluyes la opción 
+\family typewriter
+-m
+\family default
+, Git abrirá un editor de texto para que escribas un mensaje más largo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante proporcionar mensajes claros y concisos para que otros desarrollad
+ores (o tú mismo en el futuro) comprendan el propósito de la confirmación.
+\end_layout
+
+\begin_layout Plain Layout
+También deberías realizar confirmaciones frecuentes y atómicas para tener
+ un historial de cambios claro y manejable.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Después de realizar una confirmación, el área de preparación se limpia,
+ y los cambios confirmados se guardan de manera permanente en el historial
+ del repositorio.
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
