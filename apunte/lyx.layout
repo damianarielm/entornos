@@ -23,7 +23,9 @@ PageStyle fancy
 
 AddToPreamble
     \usepackage[sc]{mathpazo}        % Main font: Palatino with small caps
+    \PassOptionsToPackage{dvipsnames}{xcolor}
     \usepackage[dvipsnames]{xcolor}  % Colors
+    \colorlet{green}{Green}
     \usepackage{fontawesome}         % Icons
 
     % Colored boxes
@@ -477,7 +479,7 @@ InsetLayout Flex:Salida
       LatexName     tcolorbox
       BgColor       White
       Decoration    Classic
-      LatexParam    "[title=\faTelevision \; Salida en pantalla, colback=White, colbacktitle=White, coltitle=Black, drop shadow, enhanced]"
+          LatexParam    "[title=\faTelevision \; Salida en pantalla, colback=White, colbacktitle=White, coltitle=Black, drop shadow, enhanced]"
 End
 
 InsetLayout Flex:Figura

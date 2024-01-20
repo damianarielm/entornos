@@ -5,6 +5,7 @@
 \save_transient_properties true
 \origin unavailable
 \textclass lyx
+\options dvipsnames
 \use_default_options true
 \begin_modules
 theorems-ams
@@ -112,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-18 de enero de 2024.
+20 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -986,7 +987,7 @@ literal "true"
 
  NLS
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1469,7 +1470,7 @@ Andrew S.
 \begin_layout Standard
 La década de 1990 marcó la comercialización de Internet
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1575,7 +1576,7 @@ Guido van Rossum
 \emph default
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -15612,11 +15613,19 @@ wc
 \begin_inset Quotes frd
 \end_inset
 
- es una abreviatura de "
+ es una abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+
 \emph on
 Word Count
 \emph default
-" (contar palabras).
+
+\begin_inset Quotes frd
+\end_inset
+
+ (contar palabras).
 \end_layout
 
 \end_inset
@@ -27974,16 +27983,70 @@ Git tiene tres áreas de trabajo fundamentales, que representan diferentes
 \end_layout
 
 \begin_layout Itemize
-Directorio de trabajo: Es el directorio actual donde estás trabajando en
- tus archivos.
+Directorio de trabajo
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+En la terminología en ingles, es llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Working tree
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+: Es el directorio actual donde estás trabajando en tus archivos.
  Contiene la versión actual y modificada de tus archivos.
  Los cambios realizados en el directorio de trabajo no se registran en Git
  hasta que se añaden al área de preparación.
 \end_layout
 
 \begin_layout Itemize
-Área de preparación (Staging Area o Index): Es un área intermedia entre
- el directorio de trabajo y el repositorio.
+Área de preparación
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+En la terminología en ingles, es llamada 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Staging area
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Index
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+: Es un área intermedia entre el directorio de trabajo y el repositorio.
  Se utiliza para recopilar y preparar los cambios que se incluirán en la
  próxima confirmación.
  Los archivos en el área de preparación están listos para ser confirmados,
@@ -27991,12 +28054,45 @@ Directorio de trabajo: Es el directorio actual donde estás trabajando en
 \end_layout
 
 \begin_layout Itemize
-Repositorio: Es la base de datos donde Git almacena el historial completo
- de cambios.
- Contiene todos los commits realizados, cada uno con su conjunto de cambios
- y referencias a commits anteriores.
+Repositorio
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+En este libro utilizaremos la palabra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Confirmación
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para hacer referencia la palabra inglesa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+commit
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+: Es la base de datos donde Git almacena el historial completo de cambios.
+ Contiene todos los estados confirmados, cada uno con su conjunto de cambios
+ y referencias a confirmaciones anteriores.
  Los cambios confirmados en el área de preparación se guardan permanentemente
- en el repositorio mediante un commit.
+ en el repositorio.
 \end_layout
 
 \begin_layout Standard
@@ -28155,6 +28251,19 @@ status open
  para aplicar las configuraciones a todo el sistema.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre .gitignore
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Comandos
 \end_layout
@@ -28298,7 +28407,8 @@ git status
  es utilizado para obtener información sobre el estado actual del repositorio
  Git.
  Proporciona detalles sobre los archivos en el directorio de trabajo en
- comparación con el área de preparación y el último commit en el repositorio.
+ comparación con el área de preparación y la última confirmación en el repositor
+io.
  Aquí está la sintaxis básica del comando:
 \end_layout
 
@@ -28532,7 +28642,11 @@ Archivos sin seguimiento:
 \begin_inset space ~
 \end_inset
 
+
+\color red
 archivo
+\color inherit
+
 \begin_inset Newline newline
 \end_inset
 
@@ -28560,7 +28674,7 @@ no hay nada agregado al commit pero hay archivos sin seguimiento presentes
 \end_layout
 
 \begin_layout Example
-Si luego añadimos dicho archivo al area de preparación veremos la siguiente
+Si luego añadimos dicho archivo al área de preparación veremos la siguiente
  salida:
 \end_layout
 
@@ -28672,6 +28786,8 @@ Cambios a ser confirmados:
 \begin_inset space ~
 \end_inset
 
+
+\color green
 nuevos archivos: archivo
 \end_layout
 
@@ -28805,7 +28921,11 @@ Cambios a ser confirmados:
 \begin_inset space ~
 \end_inset
 
+
+\color green
 nuevos archivos: archivo
+\color inherit
+
 \begin_inset Newline newline
 \end_inset
 
@@ -28879,6 +28999,8 @@ Cambios no rastreados para el commit:
 \begin_inset space ~
 \end_inset
 
+
+\color red
 borrados: archivo
 \end_layout
 
@@ -29059,7 +29181,11 @@ Cambios no rastreados para el commit:
 \begin_inset space ~
 \end_inset
 
+
+\color red
 borrados: archivo
+\color inherit
+
 \begin_inset Newline newline
 \end_inset
 
@@ -29136,11 +29262,159 @@ nada para hacer commit, el árbol de trabajo está limpio
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 add
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git add
+\end_layout
+
+\end_inset
+
+ se utiliza para añadir 
+\emph on
+cambios
+\emph default
+ realizados en el directorio de trabajo al área de preparación.
+ Esto prepara los cambios seleccionados para ser incluidos en la próxima
+ confirmación.
+ Aquí está la sintaxis básica del comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git add archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando ejecutamos el comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git add
+\end_layout
+
+\end_inset
+
+ los archivos modificados son copiados desde el directorio de trabajo al
+ área de preparación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si se pretende eliminar un archivo en la próxima confirmación, se puede
+ utilizar 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+rm
+\end_layout
+
+\end_inset
+
+ seguido de 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git add
+\end_layout
+
+\end_inset
+
+, o lo que es equivalente: 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git rm
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+commit
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+log
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+diff
 \end_layout
 
 \begin_layout Subsection
@@ -29168,13 +29442,6 @@ restore
 
 \family typewriter
 \emph off
-commit
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 branch
 \end_layout
 
@@ -29182,6 +29449,14 @@ branch
 
 \family typewriter
 \emph off
+switch
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
 checkout
 \end_layout
 
@@ -29192,8 +29467,19 @@ checkout
 merge
 \end_layout
 
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+rebase
+\end_layout
+
 \begin_layout Section
 Github
+\end_layout
+
+\begin_layout Subsection
+Upstream
 \end_layout
 
 \begin_layout Subsection
