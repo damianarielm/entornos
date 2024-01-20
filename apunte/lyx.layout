@@ -26,6 +26,7 @@ AddToPreamble
     \PassOptionsToPackage{dvipsnames}{xcolor}
     \usepackage[dvipsnames]{xcolor}  % Colors
     \colorlet{green}{Green}
+    \colorlet{yellow}{Goldenrod}
     \usepackage{fontawesome}         % Icons
 
     % Colored boxes

@@ -29714,6 +29714,262 @@ Después de realizar una confirmación, el área de preparación se limpia,
 log
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
+\end_inset
+
+ se utiliza para visualizar el historial de confirmaciones de un repositorio.
+ Proporciona información detallada sobre las confirmaciones realizados,
+ como el autor, la fecha, el mensaje de la confirmación y el hash de la
+ misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git log [opciones]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las opciones mas importantes del comando son las siguientes:
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+-–oneline
+\family default
+ Muestra cada confirmación en una sola línea, resumido con el hash y el
+ mensaje del commit.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+-–graph 
+\family default
+Muestra una representación gráfica de las ramas y fusiones.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+–n 
+\family default
+Limita la salida a un número específico de confirmaciones.
+\end_layout
+
+\begin_layout Example
+Si observamos el registro de nuestro repositorio de prueba veremos lo siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit c78ce51fb5e7a5f57b6dca800ce6a5455f8b1aae (
+\color cyan
+HEAD
+\color inherit
+ -> 
+\color green
+
+\begin_inset space ~
+\end_inset
+
+master
+\color yellow
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Sat Jan 20 20:06:32 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Primer commit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la salida podemos observar una suma de verificación en color amarillo.
+ Este, será un identificador único que podemos utilizar para hacer referencia
+ a dicha confirmación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En la salida del comando también puede observarse que esta es la última
+ confirmación de la rama 
+\emph on
+master
+\emph default
+ (en verde) y que actualmente estamos trabajando en dicha rama (en celeste).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+También podemos ver la misma información en forma reducida:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git log --oneline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+c78ce51 (
+\color cyan
+HEAD
+\color inherit
+ -> 
+\color green
+
+\begin_inset space ~
+\end_inset
+
+master
+\color yellow
+) 
+\color inherit
+Primer commit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
