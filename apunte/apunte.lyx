@@ -30054,6 +30054,289 @@ También podemos comparar el contenido entre dos confirmaciones especificando
  sus respectivas sumas de verificación.
 \end_layout
 
+\begin_layout Example
+Observemos las diferencias entre el directorio de trabajo y el área de preparaci
+ón, luego de agregar contenido a un archivo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo contenido > archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git diff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+diff --git a/archivo b/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+index e69de29..764df4e 100644
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+--- a/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
++++ b/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color cyan
+@@ -0,0 +1 @@
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color green
++contenido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Agreguemos la nueva versión al área de preparación, y modifiquemos su contenido.
+ La salida ahora sera algo similar a esto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git add archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+echo mas contenido >> archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git diff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+diff --git a/archivo b/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+index 764df4e..8c064c0 100644
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+--- a/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
++++ b/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color cyan
+@@ -1 +1,2 @@
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+contenido
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color green
++mas contenido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si comparamos el área de preparación con la última confirmación veremos
+ algo como esto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git diff --staged
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+diff --git a/archivo b/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+index e69de29..764df4e 100644
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
+--- a/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\size footnotesize
++++ b/archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color cyan
+@@ -0,0 +1 @@
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color green
++contenido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
