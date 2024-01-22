@@ -30886,6 +30886,120 @@ Debemos notar que cuando creamos una nueva rama el puntero de referencia
 
 \end_layout
 
+\begin_layout Example
+Para ver las ramas locales usamos el comando sin opciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git branch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+* 
+\color green
+master
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Creamos una 
+\begin_inset Quotes fld
+\end_inset
+
+nueva
+\begin_inset Quotes frd
+\end_inset
+
+ rama:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git branch nueva
+\end_layout
+
+\begin_layout Plain Layout
+
+git branch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+* 
+\color green
+master
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+nueva
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
