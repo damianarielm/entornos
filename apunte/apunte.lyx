@@ -30446,11 +30446,90 @@ git restore
 
 \family typewriter
 \emph off
+\strikeout on
 reset
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+stash
 \end_layout
 
 \begin_layout Section
 Trabajando con ramas
+\end_layout
+
+\begin_layout Subsection
+Definición
+\end_layout
+
+\begin_layout Standard
+Una rama es una línea de desarrollo independiente que permite trabajar en
+ nuevas características, correcciones de errores o experimentos sin afectar
+ el estado principal del proyecto.
+ Cada rama en un repositorio Git representa una línea de tiempo separada
+ de confirmaciones que evoluciona de forma paralela a otras ramas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Internamente una rama es simplemente un nombre que le ponemos a una confirmación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Git posee un puntero de referencia especial llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+HEAD
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que representa la rama actual.
+ Puedes pensar en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+HEAD
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ como el 
+\begin_inset Quotes fld
+\end_inset
+
+punto de vista actual
+\begin_inset Quotes frd
+\end_inset
+
+ o el 
+\begin_inset Quotes fld
+\end_inset
+
+punto de referencia
+\begin_inset Quotes frd
+\end_inset
+
+ en el historial de tu proyecto.
 \end_layout
 
 \begin_layout Subsection
