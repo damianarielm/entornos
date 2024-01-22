@@ -29596,6 +29596,19 @@ git rm
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre .gitignore
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -30480,6 +30493,8 @@ status open
 
 \begin_layout Plain Layout
 Internamente una rama es simplemente un nombre que le ponemos a una confirmación.
+ Esta referencia se va actualizando con cada confirmación nueva que agregamos
+ a la rama activa.
 \end_layout
 
 \end_inset
@@ -30537,6 +30552,48 @@ punto de referencia
 \family typewriter
 \emph off
 branch
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git branch
+\end_layout
+
+\end_inset
+
+ se utiliza para realizar operaciones relacionadas con ramas en tu repositorio.
+ Puedes listar las ramas existentes y crear nuevas ramas.
+\end_layout
+
+\begin_layout Itemize
+Si se utiliza sin ninguna opción, se listaran todas las ramas locales.
+\end_layout
+
+\begin_layout Itemize
+También puede agregarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para ver las ramas remotas.
+\end_layout
+
+\begin_layout Itemize
+Para crear una rama, basta con pasarle como argumento su nombre.
 \end_layout
 
 \begin_layout Subsection
