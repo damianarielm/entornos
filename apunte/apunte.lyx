@@ -31066,6 +31066,363 @@ git checkout
 
 \end_layout
 
+\begin_layout Example
+Veamos que sucede si cambiamos a la nueva rama:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git switch nueva
+\end_layout
+
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+M archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Cambiado a rama 'nueva'
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit 980bc28d5e306ae1fad33b9731126b4964813fc4 (
+\series bold
+\color cyan
+HEAD
+\series default
+\color inherit
+ -> 
+\color green
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+nueva
+\series default
+\color inherit
+, 
+\series bold
+\color green
+master
+\series default
+\color yellow
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Mon Jan 22 18:37:09 2024 -0300
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Primer commit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si observamos con atención, comprenderemos que por el momento ambas ramas
+ son idénticas pero que la rama activa es la 
+\begin_inset Quotes fld
+\end_inset
+
+nueva
+\begin_inset Quotes frd
+\end_inset
+
+ rama.
+\end_layout
+
+\begin_layout Example
+Agreguemos ahora los cambios de nuestro archivo en una nueva confirmación
+ y observemos el estado del repositorio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git add archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+git commit -m 
+\begin_inset Quotes fld
+\end_inset
+
+Segundo commit.
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
+\begin_layout Plain Layout
+
+cat archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+[nueva 22df02d] Segundo commit.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+1 file changed, 1 insertion(+)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit 22df02db5a9558bd7748c5d403cdf0ac836d8897 (
+\color cyan
+HEAD
+\color inherit
+ -> 
+\begin_inset space ~
+\end_inset
+
+
+\color green
+nueva
+\color yellow
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Mon Jan 22 19:01:52 2024 -0300
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Segundo commit.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit 980bc28d5e306ae1fad33b9731126b4964813fc4 (
+\color green
+master
+\color yellow
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Mon Jan 22 18:37:09 2024 -0300
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Primer commit.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+contenido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si volvemos a la rama original con el comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git switch master
+\end_layout
+
+\end_inset
+
+ veremos que en esta rama, el archivo está vacío.
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
