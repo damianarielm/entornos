@@ -30884,6 +30884,9 @@ master
 
 \family typewriter
 \size footnotesize
+\begin_inset space ~
+\end_inset
+
 nueva
 \end_layout
 
@@ -31709,7 +31712,7 @@ nueva
 
 \family typewriter
 \size footnotesize
-Author: Damian Ariel Marotte <drd00m@msn.com>
+Author: Damian Ariel Marotte <damarotte@gmail.com>
 \end_layout
 
 \begin_layout Plain Layout
@@ -31761,7 +31764,7 @@ commit f4e744110d15d2879a7b7532fd806aa6038c9970
 
 \family typewriter
 \size footnotesize
-Author: Damian Ariel Marotte <drd00m@msn.com>
+Author: Damian Ariel Marotte <damarotte@gmail.com>
 \end_layout
 
 \begin_layout Plain Layout
@@ -31813,7 +31816,7 @@ commit 0287d2a84ab9a12e02a5ac052cc5b797525b2de3
 
 \family typewriter
 \size footnotesize
-Author: Damian Ariel Marotte <drd00m@msn.com>
+Author: Damian Ariel Marotte <damarotte@gmail.com>
 \end_layout
 
 \begin_layout Plain Layout
@@ -31955,8 +31958,214 @@ status open
 
 \begin_layout Plain Layout
 
-git remote add https://gitlab.com/damianarielm/remoto
+git remote add origin https://gitlab.com/damianarielm/entorno
 \end_layout
+
+\begin_layout Plain Layout
+
+git remote -v
+\end_layout
+
+\begin_layout Plain Layout
+
+git branch -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+origin https://gitlab.com/damianarielm/borrar (fetch)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+origin https://gitlab.com/damianarielm/borrar (push)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+* 
+\color green
+master
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+nueva
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por el momento, nuestra versión remota del repositorio permanece completamente
+ vacía.
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+push
+\end_layout
+
+\begin_layout Example
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git push -u origin master
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+advertencia: redirigiendo a https://gitlab.com/damianarielm/borrar.git/
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Enumerando objetos: 9, listo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Contando objetos: 100% (9/9), listo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Compresión delta usando hasta 2 hilos
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Comprimiendo objetos: 100% (3/3), listo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Escribiendo objetos: 100% (9/9), 668 bytes | 668.00 KiB/s, listo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Total 9 (delta 0), reusados 0 (delta 0), pack-reusados 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+To https://gitlab.com/damianarielm/borrar
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+* [new branch] master -> 
+\begin_inset space ~
+\end_inset
+
+master
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+rama 'master' configurada para rastrear 'origin/master'.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
 
 \begin_layout Plain Layout
 
@@ -31966,6 +32175,11 @@ git status
 \begin_layout Plain Layout
 
 git branch -a
+\end_layout
+
+\begin_layout Plain Layout
+
+git log
 \end_layout
 
 \end_inset
@@ -31993,6 +32207,13 @@ En la rama master
 
 \family typewriter
 \size footnotesize
+Tu rama está actualizada con 'origin/master'.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
 nada para hacer commit, el árbol de trabajo está limpio
 \begin_inset Newline newline
 \end_inset
@@ -32013,7 +32234,234 @@ master
 
 \family typewriter
 \size footnotesize
+\begin_inset space ~
+\end_inset
+
 nueva
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color red
+\begin_inset space ~
+\end_inset
+
+remotes/origin/master
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit bab8a343850d20cb4ca72c1264acab03935f9d96 (
+\color cyan
+HEAD
+\color inherit
+ -> 
+\begin_inset space ~
+\end_inset
+
+
+\color green
+master
+\color inherit
+, 
+\color red
+origin/master
+\color inherit
+,
+\color green
+ nueva
+\color inherit
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Tue Jan 23 06:57:16 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Tercer commit.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit f4e744110d15d2879a7b7532fd806aa6038c9970
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Tue Jan 23 06:48:31 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Segundo commit.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit 0287d2a84ab9a12e02a5ac052cc5b797525b2de3
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <damarotte@gmail.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Tue Jan 23 05:50:05 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Primer commit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+fetch
+\end_layout
+
+\begin_layout Example
+Creemos una última confirmación desde Gitlab y observemos el estado del
+ repositorio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -32022,23 +32470,215 @@ nueva
 \end_layout
 
 \begin_layout Standard
-Nada parece haber cambiado.
- Esto es puesto que todavía no hemos descargado la información del repositorio
- remoto.
-\end_layout
+\begin_inset Flex Salida
+status open
 
-\begin_layout Subsection
+\begin_layout Plain Layout
 
 \family typewriter
-\emph off
-clone
+\size footnotesize
+En la rama master
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Plain Layout
 
 \family typewriter
-\emph off
-push
+\size footnotesize
+Tu rama está actualizada con 'origin/master'.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+nada para hacer commit, el árbol de trabajo está limpio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Git nos indica que nuestra rama local está sincronizada con la última versión
+ conocida del repositorio remoto.
+ Para actualizar esta información debemos traer la nueva versión desde Gitlab:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git fetch
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Tu rama está detrás de 'origin/master' por 1 commit, y puede ser avanzada
+ rápido.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(usa "git pull" para actualizar tu rama local)
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+nada para hacer commit, el árbol de trabajo está limpio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora si podemos observar que nuestra rama local carece de la confirmación
+ que tiene nuestra rama remota.
+ Si lo deseamos, podemos integrar estos cambios mediante una fusión:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git merge origin/master
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Actualizando bab8a34..01090d3
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Fast-forward
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+archivo | 1 +
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+1 file changed, 1 insertion(+)
+\family default
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+En la rama master
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Tu rama está actualizada con 'origin/master'.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+nada para hacer commit, el árbol de trabajo está limpio
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -32052,7 +32692,7 @@ pull
 
 \family typewriter
 \emph off
-fetch
+clone
 \end_layout
 
 \begin_layout Subsection
