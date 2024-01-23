@@ -30710,6 +30710,35 @@ git branch
  Puedes listar las ramas existentes y crear nuevas ramas.
 \end_layout
 
+\begin_layout Standard
+Su sintaxis es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git branch [-a | nombre]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Si se utiliza sin ninguna opción, se listaran todas las ramas locales.
 \end_layout
@@ -31071,8 +31100,8 @@ nueva
 \end_layout
 
 \begin_layout Example
-Agreguemos ahora los cambios de nuestro archivo en una nueva confirmación
- y observemos el estado del repositorio:
+Confirmemos ahora los cambios que previamente preparamos y observemos el
+ estado del repositorio:
 \end_layout
 
 \begin_layout Standard
@@ -31084,11 +31113,6 @@ status open
 lstparams "language=bash,style={github-dark}"
 inline false
 status open
-
-\begin_layout Plain Layout
-
-git add archivo
-\end_layout
 
 \begin_layout Plain Layout
 
@@ -31264,16 +31288,43 @@ Primer commit.
 contenido
 \end_layout
 
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+mas contenido
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Si volvemos a la rama original con el comando 
+Nótese que el contenido del archivo difiere de la confirmación, pues en
+ el momento en el que se agrego al área de preparación no incluía 
+\begin_inset Quotes fld
+\end_inset
+
+mas contenido
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Observemos que sucede si volvemos a la rama original:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash"
-inline true
+lstparams "language=bash,style={github-dark}"
+inline false
 status open
 
 \begin_layout Plain Layout
@@ -31283,7 +31334,175 @@ git switch master
 
 \end_inset
 
- veremos que en esta rama, el archivo está vacío.
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+error: Los cambios locales de los siguientes archivos serán sobrescritos
+ por checkout:
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Por favor realiza un commit con los cambios o un stash antes de cambiar
+ de rama.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Abortando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Git sabe que nuestro archivo en el directorio de trabajo tiene información
+ que no está en la otra rama, y que el cambio de rama haría que esa información
+ se pierda.
+ Agreguemos esos cambios a una confirmación y volvamos a intentarlo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git commit -a -m 
+\begin_inset Quotes fld
+\end_inset
+
+Tercer commit.
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+git switch master
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+[nueva bab8a34] Tercer commit.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+1 file changed, 1 insertion(+)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Cambiado a rama 'master'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Vale la pena notar que si observamos el contenido de nuestro archivo, lo
+ veremos vacío y no con los cambios confirmados en la nueva rama.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -31307,8 +31526,41 @@ git merge
 
 \end_inset
 
- en Git se utiliza para combinar los cambios de una rama en la rama actual.
- Basta escribir 
+ en Git se utiliza para combinar los cambios de otra rama en la rama actual.
+ 
+\end_layout
+
+\begin_layout Standard
+Su sintaxis es simplemente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git merge rama
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando escribimos 
 \begin_inset listings
 lstparams "language=bash"
 inline true
@@ -31321,8 +31573,8 @@ git merge rama
 
 \end_inset
 
- para incorporar en la rama apuntada por el puntero de referencia las confirmaci
-ones de la rama indicada en el comando.
+ se incorporan en la rama actual, las confirmaciones de la rama indicada
+ en el comando.
 \end_layout
 
 \begin_layout Standard
@@ -31337,13 +31589,6 @@ En el proceso de fusión, Git intenta combinar automáticamente los cambios.
  los conflictos antes de completar la fusión.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -31382,11 +31627,6 @@ git merge nueva
 git log
 \end_layout
 
-\begin_layout Plain Layout
-
-cat archivo
-\end_layout
-
 \end_inset
 
 
@@ -31405,7 +31645,7 @@ status open
 
 \family typewriter
 \size footnotesize
-Actualizando 980bc28..22df02d
+Actualizando 0287d2a..bab8a34
 \end_layout
 
 \begin_layout Plain Layout
@@ -31419,14 +31659,22 @@ Fast-forward
 
 \family typewriter
 \size footnotesize
-archivo | 1 +
+\begin_inset space ~
+\end_inset
+
+archivo | 2 
+\color green
+++
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 \size footnotesize
-1 file changed, 1 insertion(+)
+\begin_inset space ~
+\end_inset
+
+1 file changed, 2 insertions(+)
 \begin_inset Newline newline
 \end_inset
 
@@ -31438,29 +31686,22 @@ archivo | 1 +
 \family typewriter
 \size footnotesize
 \color yellow
-commit 22df02db5a9558bd7748c5d403cdf0ac836d8897 (
-\series bold
+commit bab8a343850d20cb4ca72c1264acab03935f9d96 (
 \color cyan
 HEAD
-\series default
 \color inherit
  -> 
-\color green
-
 \begin_inset space ~
 \end_inset
 
 
-\series bold
-nueva
-\series default
-\color inherit
-, 
-\series bold
 \color green
 master
-\series default
-\color yellow
+\color inherit
+, 
+\color green
+nueva
+\color inherit
 )
 \end_layout
 
@@ -31468,14 +31709,70 @@ master
 
 \family typewriter
 \size footnotesize
-Author: Damian Ariel Marotte <damarotte@gmail.com>
+Author: Damian Ariel Marotte <drd00m@msn.com>
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 \size footnotesize
-Date: Mon Jan 22 19:01:52 2024 -0300
+Date: Tue Jan 23 06:57:16 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Tercer commit.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+\color yellow
+commit f4e744110d15d2879a7b7532fd806aa6038c9970
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Author: Damian Ariel Marotte <drd00m@msn.com>
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+Date: Tue Jan 23 06:48:31 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -31509,21 +31806,25 @@ Segundo commit.
 \family typewriter
 \size footnotesize
 \color yellow
-commit 980bc28d5e306ae1fad33b9731126b4964813fc4
+commit 0287d2a84ab9a12e02a5ac052cc5b797525b2de3
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 \size footnotesize
-Author: Damian Ariel Marotte <damarotte@gmail.com>
+Author: Damian Ariel Marotte <drd00m@msn.com>
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
 \size footnotesize
-Date: Mon Jan 22 18:37:09 2024 -0300
+Date: Tue Jan 23 05:50:05 2024 -0300
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -31546,22 +31847,17 @@ Date: Mon Jan 22 18:37:09 2024 -0300
 \end_inset
 
 Primer commit.
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size footnotesize
-contenido
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Fusión de tres vías
 \end_layout
 
 \begin_layout Subsection
