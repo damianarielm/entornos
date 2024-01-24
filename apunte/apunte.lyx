@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-24 de enero de 2024.
+26 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -31938,7 +31938,91 @@ git remote
 \end_layout
 
 \begin_layout Standard
-COMPLETAR.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aquí está la sintaxis general del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git remote
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git remote [-v | add nombre ruta | remove nombre]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+La opción 
+\family typewriter
+-v
+\family default
+ es comúnmente utilizada para obtener una vista detallada de los repositorios
+ remotos configurados.
+\end_layout
+
+\begin_layout Itemize
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git remote add
+\end_layout
+
+\end_inset
+
+ agrega un repositorio remoto, mientras que 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git remote remove
+\end_layout
+
+\end_inset
+
+ sirve para quitarlos.
 \end_layout
 
 \begin_layout Example
@@ -32039,11 +32123,105 @@ Por el momento, nuestra versión remota del repositorio permanece completamente
 push
 \end_layout
 
-\begin_layout Example
-\begin_inset space ~
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git push
+\end_layout
+
+\end_inset
+
+ se utiliza para enviar las confirmaciones locales de una rama a un repositorio
+ remoto.
+ Esta acción actualiza el estado de la rama en el repositorio remoto con
+ los cambios locales realizados.
+\end_layout
+
+\begin_layout Standard
+Aquí está la sintaxis general del comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git push [-u remoto rama]
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+La opción 
+\family typewriter
+-u
+\family default
+ configura la rama remota como la rama de seguimiento de la rama local.
+ Esto significa que en futuros 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git push
+\end_layout
+
+\end_inset
+
+ o 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git pull
+\end_layout
+
+\end_inset
+
+, Git sabrá a qué rama remota hacer referencia.
+\end_layout
+
+\begin_layout Itemize
+Si se utiliza sin opciones, se enviaran los cambios a la rama remota previamente
+ configurada.
+\end_layout
+
+\begin_layout Example
+Ahora que sabemos como hacerlo, enviemos nuestra versión del repositorio
+ al remoto que configuramos anteriormente:
 \end_layout
 
 \begin_layout Standard
@@ -32059,6 +32237,11 @@ status open
 \begin_layout Plain Layout
 
 git push -u origin master
+\end_layout
+
+\begin_layout Plain Layout
+
+git status
 \end_layout
 
 \end_inset
@@ -32150,51 +32333,11 @@ master
 \family typewriter
 \size footnotesize
 rama 'master' configurada para rastrear 'origin/master'.
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-git status
-\end_layout
-
-\begin_layout Plain Layout
-
-git branch -a
-\end_layout
-
-\begin_layout Plain Layout
-
-git log
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Salida
-status open
 
 \begin_layout Plain Layout
 
@@ -32215,11 +32358,41 @@ Tu rama está actualizada con 'origin/master'.
 \family typewriter
 \size footnotesize
 nada para hacer commit, el árbol de trabajo está limpio
-\begin_inset Newline newline
+\end_layout
+
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git branch -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
 
 \begin_layout Plain Layout
 
@@ -32249,11 +32422,41 @@ nueva
 \end_inset
 
 remotes/origin/master
-\begin_inset Newline newline
+\end_layout
+
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
 
 \begin_layout Plain Layout
 
@@ -32439,6 +32642,97 @@ Primer commit.
 fetch
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git fetch
+\end_layout
+
+\end_inset
+
+ en Git se utiliza para recuperar los cambios y referencias de un repositorio
+ remoto en tu repositorio local.
+\end_layout
+
+\begin_layout Standard
+Aquí está la sintaxis general del comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git fetch [remoto] [rama]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El primer argumento especifica el nombre del repositorio remoto del que
+ deseas recuperar los cambios.
+\end_layout
+
+\begin_layout Itemize
+El segundo argumento especifica la rama remota de la cual deseas recuperar
+ los cambios.
+ Si no se especifica una rama remota, Git recuperará todas las ramas remotas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git fetch
+\end_layout
+
+\end_inset
+
+ solo descarga los cambios del repositorio remoto, sin fusionarlos automáticamen
+te con tu trabajo actual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Creemos una última confirmación desde Gitlab y observemos el estado del
  repositorio:
@@ -32601,11 +32895,6 @@ status open
 git merge origin/master
 \end_layout
 
-\begin_layout Plain Layout
-
-git status
-\end_layout
-
 \end_inset
 
 
@@ -32646,14 +32935,41 @@ archivo | 1 +
 \family typewriter
 \size footnotesize
 1 file changed, 1 insertion(+)
-\family default
-\size default
+\end_layout
 
-\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git status
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
 
 \begin_layout Plain Layout
 
@@ -32688,6 +33004,105 @@ nada para hacer commit, el árbol de trabajo está limpio
 pull
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git pull
+\end_layout
+
+\end_inset
+
+ se utiliza para recuperar los cambios de un repositorio remoto y fusionarlos
+ automáticamente con la rama local actual.
+ En esencia, 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git pull
+\end_layout
+
+\end_inset
+
+ combina dos operaciones: 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git fetch
+\end_layout
+
+\end_inset
+
+, que descarga los cambios del repositorio remoto a tu repositorio local,
+ y 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git merge
+\end_layout
+
+\end_inset
+
+, que fusiona esos cambios en tu rama local actual.
+\end_layout
+
+\begin_layout Standard
+Aquí está la sintaxis general del comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git pull [remoto] [rama]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El primer argumento especifica el nombre del repositorio remoto del que
+ deseas recuperar los cambios.
+\end_layout
+
+\begin_layout Itemize
+El segundo argumento especifica la rama remota de la cual deseas recuperar
+ los cambios.
+ Si no se especifica una rama remota, Git recuperará todas las ramas remotas.
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -32695,11 +33110,168 @@ pull
 clone
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git clone
+\end_layout
+
+\end_inset
+
+ en Git se utiliza para crear una copia local de un repositorio remoto.
+ Esta copia local incluye todos los archivos, ramas, historial de confirmaciones
+ y configuraciones del repositorio remoto.
+ Es una forma común de comenzar a trabajar en un proyecto nuevo o colaborar
+ en un proyecto existente.
+\end_layout
+
+\begin_layout Standard
+Aquí está la sintaxis general del comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git clone ruta [directorio] [--depth numero]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no especificas un nombre de directorio local, Git utilizará el nombre
+ del repositorio remoto como nombre del directorio.
+\end_layout
+
+\begin_layout Standard
+La opción 
+\family typewriter
+--depth
+\family default
+ se utiliza para clonar con una profundidad limitada de historial de confirmacio
+nes.
+ Específicamente, te permite especificar cuántas confirmaciones de historial
+ de la rama principal deseas clonar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En escencia, 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git clone
+\end_layout
+
+\end_inset
+
+ es la combinación de cuatro comandos: 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git init
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git remote add
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git pull
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+git switch
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
+
+\emph off
+\strikeout on
 Fork
 \end_layout
 
 \begin_layout Subsection
+
+\emph off
+\strikeout on
 Pull request
 \end_layout
 
