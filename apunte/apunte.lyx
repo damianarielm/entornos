@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-28 de enero de 2024.
+29 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -4633,16 +4633,6 @@ literal "true"
  convertir el código fuente escrito por un programador en instrucciones
  ejecutables por una computadora.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Habría que agregar un gráfico mostrando el tiempo de ejecución de cada uno.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -4666,6 +4656,19 @@ Compilador Un compilador, por otro lado, es un programa que traduce todo
  compilado se ejecuta generalmente más rápido que el código interpretado.
  Sin embargo, el proceso de compilación puede llevar más tiempo que el proceso
  de interpretación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que agregar un gráfico mostrando el tiempo de ejecución de cada uno.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4750,22 +4753,20 @@ status collapsed
 
 \end_inset
 
-El software libre es aquel que se distribuye con una licencia que permite
- a los usuarios tener acceso al código fuente del programa y redistribuir
- versiones modificadas del mismo sin tener que pagar regalías o cargos adicional
-es.
- En general, dicha licencia establece los términos y condiciones bajo los
- cuales se puede usar, modificar y distribuir el software.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se podría agregar algún enlace que explique las licencias.
-\end_layout
+El software libre es aquel que se distribuye con una 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.m.wikipedia.org/wiki/Licencia_de_software_libre"
+literal "true"
 
 \end_inset
 
-
+ licencia que permite a los usuarios tener acceso al código fuente del programa
+ y redistribuir versiones modificadas del mismo sin tener que pagar regalías
+ o cargos adicionales.
+ En general, dicha licencia establece los términos y condiciones bajo los
+ cuales se puede usar, modificar y distribuir el software.
 \end_layout
 
 \begin_deeper
@@ -5064,8 +5065,8 @@ Una partición es una sección lógica de un disco duro u otro dispositivo
  de almacenamiento que se trata como si fuera un disco separado.
  Una partición se crea mediante la división del espacio de almacenamiento
  disponible en el dispositivo en secciones separadas.
- Cada partición tiene su propio sistema de archivos y puede contener archivos
- y datos independientes de las demás particiones.
+ Cada partición debe tener su propio sistema de archivos y puede contener
+ archivos y datos independientes de las demás particiones.
 \end_layout
 
 \begin_layout Standard
@@ -5074,20 +5075,6 @@ Las particiones se utilizan para varios fines, como separar el sistema operativo
  para diferentes propósitos, como la música, los documentos y las imágenes.
  También se pueden utilizar para instalar varios sistemas operativos en
  una sola unidad de disco duro.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Habría que comentar que las particiones DEBEN tener un sistema de archivos
- para poder ser utilizadas.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5423,10 +5410,6 @@ administrador de archivos
 \begin_layout Standard
 En esta sección aprenderemos a llevar a cabo esas mismas acciones, pero
  desde una ventana de terminal.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5438,7 +5421,7 @@ status open
 \begin_inset Graphics
 	filename pcmanfm.png
 	lyxscale 40
-	scale 34
+	scale 38
 
 \end_inset
 
@@ -5867,6 +5850,50 @@ absoluta Una ruta absoluta es una ruta que especifica la ubicación completa
  
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es fácil reconocer a una ruta absoluta, pues siempre comienza con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+La ruta absoluta donde se ubica el interprete de linea de comandos bash
+ suele ser: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/usr/bin/bash
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Description
 Ruta
 \begin_inset space ~
@@ -5878,19 +5905,36 @@ relativa Una ruta relativa es una ruta que describe la ubicación de un archivo
  el directorio actual hasta el archivo o directorio en cuestión.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Quizás haya que agregar ejemplos de ambas rutas.
-\end_layout
-
+\begin_deeper
+\begin_layout Example
+Si actualmente nos encontramos en 
+\begin_inset Quotes fld
 \end_inset
 
 
+\family typewriter
+/usr
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, la ruta relativa hacia bash es: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bin/bash
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
+\end_deeper
 \begin_layout Section
 El sistema de archivos de Linux
 \end_layout
@@ -5916,10 +5960,6 @@ Esquema de particionado
 Linux puede instalarse en una variedad de esquemas de particionado, pero
  uno de los más comunes es el esquema de particionado convencional, que
  utiliza tres particiones para el sistema:
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -5934,6 +5974,20 @@ Una partición destinada a almacenar los programas de usuario y documentos.
 \begin_layout Itemize
 Una partición de intercambio, reservada para ser utilizada cuando la memoria
  RAM se agota.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los esquemas de particionado mas antiguos no instalan el cargador de arranque
+ en una partición separada sino en el primer sector del disco.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5999,10 +6053,6 @@ En Linux, los discos duros y particiones se nombran usando un esquema de
 
 \begin_layout Standard
 El nombre asignado a un dispositivo de almacenamiento consta de tres partes:
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -6119,12 +6169,36 @@ sda1
 
 \end_layout
 
+\begin_layout Example
+Observemos una posible salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lsblk
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Flex Bash
 status open
 
 \begin_layout Plain Layout
-Agregar ejemplo de como interpretar la salida de lsblk.
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+lsblk
 \end_layout
 
 \end_inset
@@ -6132,6 +6206,156 @@ Agregar ejemplo de como interpretar la salida de lsblk.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+\end_layout
+
+\begin_layout Plain Layout
+
+sda      8:0    0    10G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda1   8:1    0   100M  0 part /boot
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda2   8:2    0   9,9G  0 part /
+\end_layout
+
+\begin_layout Plain Layout
+
+sdb      8:16   0   7,5G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb1   8:17   0   7,4G  0 part /mnt
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb2   8:20   0   2,4G  0 part
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos observar que este sistema tiene dos unidades de almacenamiento (
+\family typewriter
+sda
+\family default
+ y 
+\family typewriter
+sdb
+\family default
+), cada una de ellas con dos particiones.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sda
+\family default
+: Esta unidad de almacenamiento tiene una capacidad de 10GB y se divide
+ en dos particiones: 
+\family typewriter
+sda1
+\family default
+ y 
+\family typewriter
+sda2
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+sda1
+\family default
+: Esta es la partición de arranque y tiene una capacidad de 100MB.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sda2
+\family default
+: Esta es la partición principal y esta montada en la raíz del sistema de
+ archivos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+sdb
+\family default
+: Esta unidad de almacenamiento tiene una capacidad de 7,5GB y se divide
+ en dos particiones: 
+\family typewriter
+sdb1
+\family default
+ y 
+\family typewriter
+sdb2
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+sdb1
+\family default
+: Esta partición se encuentra montada en la carpeta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/mnt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sdb2
+\family default
+: La partición 
+\family typewriter
+sdb2
+\family default
+ no se encuentra montada en el sistema de archivos.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Jerarquía de archivos
 \end_layout
@@ -6148,6 +6372,13 @@ La jerarquía de archivos en el sistema de archivos se organiza en un árbol
 \begin_layout Standard
 A continuación, se presentan algunos de los directorios más importantes
  de la jerarquía de archivos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -6442,450 +6673,6 @@ Montar
  En otras palabras, montar un sistema de archivos implica hacer que el sistema
  operativo sea consciente de la existencia de un sistema de archivos y asignarlo
  a un directorio específico en la jerarquía de archivos del sistema.
- Cuando se monta un sistema de archivos, el sistema operativo lo asigna
- a un punto de montaje específico en la jerarquía de archivos.
- El punto de montaje es un directorio en el sistema de archivos raíz, que
- se utiliza para acceder al contenido del sistema de archivos que se va
- a montar.
- Una vez montado, el contenido del sistema de archivos se vuelve accesible
- en el punto de montaje especificado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-NAME
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-MAJ:MIN RM
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-SIZE
-\begin_inset space ~
-\end_inset
-
-RO TYPE MOUNTPOINTS
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-sda
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-8:0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-10G
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 disk
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-├─sda1
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-8:1
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-100M
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 part /boot
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-└─sda2
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-8:2
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-9,9G
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 part /
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-sdb
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-8:16
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-7,5G
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 disk
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-├─sdb1
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-8:17
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-7,4G
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 part /mnt
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-└─sdb4
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-8:20
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-2,4G
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 part
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-sr0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-11:0
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-1
-\begin_inset space ~
-\end_inset
-
-810,3M
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 rom
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6893,6 +6680,14 @@ sr0
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+El punto de montaje es un directorio en el sistema de archivos raíz, que
+ se utiliza para acceder al contenido del sistema de archivos que se va
+ a montar.
+ Una vez montado, el contenido del sistema de archivos se vuelve accesible
+ en el punto de montaje especificado.
 \end_layout
 
 \begin_layout Standard
@@ -7591,7 +7386,7 @@ status open
 
 \begin_layout Plain Layout
 Agregar información sobre !! y !n.
- Quizas esta información corresponda a la sección de historial.
+ Quizás esta información corresponda a la sección de historial.
 \end_layout
 
 \end_inset
@@ -9620,6 +9415,13 @@ ls /
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+tree
 \end_layout
 
 \begin_layout Subsection
