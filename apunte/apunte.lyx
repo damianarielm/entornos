@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-26 de enero de 2024.
+28 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -2388,6 +2388,140 @@ Sistemas Operativos
 \end_layout
 
 \begin_layout Section
+Descripción
+\end_layout
+
+\begin_layout Standard
+Un sistema operativo es un conjunto de programas y herramientas que controlan
+ y coordinan las actividades de una computadora o dispositivo electrónico,
+ y permiten a los usuarios interactuar con el hardware y el software de
+ manera sencilla y eficiente.
+ Está compuesto por un núcleo (o 
+\emph on
+kernel
+\emph default
+) que tiene control completo sobre el hardware en el que corre, y una serie
+ de programas utilitarios que se comunican con el.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename kernel.png
+	lyxscale 30
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Comunicación entre aplicaciones, núcleo y hardware
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las funcionalidades principales de un sistema operativo incluyen:
+\end_layout
+
+\begin_layout Description
+Abstracción
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+hardware El sistema operativo oculta los detalles específicos del hardware
+ de la computadora a las aplicaciones y los usuarios.
+ Esto permite permite a las aplicaciones interactuar con el hardware de
+ una manera consistente y simplificada, sin tener que preocuparse por los
+ detalles internos del hardware subyacente.
+\end_layout
+
+\begin_layout Description
+Gestión
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+hardware El sistema operativo es responsable de gestionar el hardware de
+ la computadora, como el procesador, la memoria, el disco duro, la tarjeta
+ gráfica, entre otros.
+ Controla cómo se utilizan estos recursos y asigna la cantidad adecuada
+ de memoria y procesador a cada aplicación.
+\end_layout
+
+\begin_layout Description
+Interfaz
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+usuario El sistema operativo proporciona una interfaz de usuario que permite
+ a los usuarios interactuar con el ordenador y ejecutar aplicaciones y programas.
+\end_layout
+
+\begin_layout Description
+Gestión
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+archivos El sistema operativo se encarga de gestionar los archivos y directorios
+ del ordenador, lo que permite a los usuarios crear, modificar, copiar y
+ eliminar archivos y carpetas.
+\end_layout
+
+\begin_layout Description
+Multitarea Un sistema operativo permite que varias aplicaciones se ejecuten
+ al mismo tiempo y asigna los recursos necesarios para que funcionen correctamen
+te.
+\end_layout
+
+\begin_layout Description
+Multiusuario Un sistema operativo puede ser utilizado por varios usuarios
+ al mismo tiempo y garantiza que cada usuario tenga sus propios archivos
+ y configuraciones.
+\end_layout
+
+\begin_layout Section
 Proceso de arranque
 \end_layout
 
@@ -2436,7 +2570,7 @@ status open
 \begin_inset Graphics
 	filename post.jpg
 	lyxscale 20
-	scale 11
+	scale 13
 
 \end_inset
 
@@ -2547,7 +2681,7 @@ status open
 \begin_inset Graphics
 	filename grub.png
 	lyxscale 40
-	scale 22
+	scale 24
 
 \end_inset
 
@@ -2597,7 +2731,7 @@ status open
 \begin_inset Graphics
 	filename bootmgr.png
 	lyxscale 50
-	scale 58
+	scale 65
 
 \end_inset
 
@@ -2694,130 +2828,12 @@ systemd
 \begin_inset Quotes frd
 \end_inset
 
- para reemplazar el sistema de inicio (init) heredado de los sistemas operativos
- estilo UNIX System V y Berkeley Software Distribution (BSD).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Descripción
-\end_layout
-
-\begin_layout Standard
-Un sistema operativo es un conjunto de programas y herramientas que controlan
- y coordinan las actividades de una computadora o dispositivo electrónico,
- y permiten a los usuarios interactuar con el hardware y el software de
- manera sencilla y eficiente.
- Está compuesto por un núcleo (o 
-\emph on
-kernel
-\emph default
-) que tiene control completo sobre el hardware en el que corre, y una serie
- de programas utilitarios que se comunican con el.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Quizás convenga poner la descripción antes.
- También estaría bueno hacer mas hincapié en la abstracción del hardware.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename kernel.png
-	lyxscale 30
-	scale 15
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Comunicación entre aplicaciones, núcleo y hardware
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Las funciones principales de un sistema operativo incluyen:
-\end_layout
-
-\begin_layout Itemize
-Gestionar el hardware: El sistema operativo es responsable de gestionar
- el hardware de la computadora, como el procesador, la memoria, el disco
- duro, la tarjeta gráfica, entre otros.
- Controla cómo se utilizan estos recursos y asigna la cantidad adecuada
- de memoria y procesador a cada aplicación.
-\end_layout
-
-\begin_layout Itemize
-Proporcionar una interfaz de usuario: El sistema operativo proporciona una
- interfaz de usuario que permite a los usuarios interactuar con el ordenador
- y ejecutar aplicaciones y programas.
-\end_layout
-
-\begin_layout Itemize
-Gestionar los archivos y directorios: El sistema operativo se encarga de
- gestionar los archivos y directorios del ordenador, lo que permite a los
- usuarios crear, modificar, copiar y eliminar archivos y carpetas.
-\end_layout
-
-\begin_layout Standard
-Entre las principales características de un sistema operativo se encuentran:
-\end_layout
-
-\begin_layout Itemize
-Multitarea: Un sistema operativo permite que varias aplicaciones se ejecuten
- al mismo tiempo y asigna los recursos necesarios para que funcionen correctamen
-te.
-\end_layout
-
-\begin_layout Itemize
-Multiusuario: Un sistema operativo puede ser utilizado por varios usuarios
- al mismo tiempo y garantiza que cada usuario tenga sus propios archivos
- y configuraciones.
-\end_layout
-
-\begin_layout Itemize
-Portabilidad: Los sistemas operativos pueden ser instalados en diferentes
- tipos de hardware, lo que los hace altamente portables.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se podría hacer referencia a que anteriormente no eran multi.
- También se podría agregar multisesión.
+ para reemplazar el sistema de inicio (
+\family typewriter
+init
+\family default
+) heredado de los sistemas operativos estilo UNIX System V y Berkeley Software
+ Distribution (BSD).
 \end_layout
 
 \end_inset
@@ -3016,17 +3032,6 @@ faKeyboardO
 
  Ctrl+Alt+F2, etc.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Habría que explicar porque sigue existiendo y conviviendo con un emulador
- de terminal.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3038,7 +3043,7 @@ status open
 \begin_inset Graphics
 	filename vconsole.png
 	lyxscale 50
-	scale 62
+	scale 65
 
 \end_inset
 
@@ -3079,6 +3084,21 @@ Consola virtual en Ubuntu
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque el entorno gráfico ha ganado popularidad, las consolas virtuales
+ siguen siendo utilizadas por varias razones como el uso eficiente de recursos,
+ acceso remoto, tareas de mantenimiento y recuperación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Emulador
 \begin_inset space ~
@@ -3095,6 +3115,38 @@ terminal Es un programa de usuario que permite interactuar con un sistema
 s.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Para saber que emulador de terminal se está utilizando se puede escribir
+ el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo $TERM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -3146,30 +3198,7 @@ Qterminal en Lubuntu
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-Para saber que emulador de terminal se está utilizando se puede escribir
- el comando:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-echo $TERM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3187,27 +3216,17 @@ interprete de linea de comandos
 , es un programa que permite a un usuario interactuar con el sistema operativo
  mediante la ejecución de comandos a través de una interfaz de línea de
  comandos.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Habría que mencionar cual se va a usar en la materia.
- Se podría agregar captura de otros interpretes de linea de comandos.
 \end_layout
 
-\end_inset
-
-
+\begin_deeper
+\begin_layout Standard
+Para saber que interprete de linea de comandos se está utilizando se puede
+ escribir el comando:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
-
-\begin_layout Plain Layout
-Para saber que interprete de linea de comandos se está utilizando se puede
- escribir el comando:
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset listings
@@ -3230,6 +3249,165 @@ echo $SHELL
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Alguno de los interpretes de linea de comandos mas populares en Linux son:
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Bourne_Shell"
+literal "true"
+
+\end_inset
+
+ sh
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.gnu.org/software/bash/"
+literal "true"
+
+\end_inset
+
+ 
+\family typewriter
+bash
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.zsh.org/"
+literal "true"
+
+\end_inset
+
+ 
+\family typewriter
+zsh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://fishshell.com/"
+literal "true"
+
+\end_inset
+
+ 
+\family typewriter
+fish
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En los sistemas operativos de Miscrosoft se destacan: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/COMMAND.COM"
+literal "true"
+
+\end_inset
+
+ 
+\family typewriter
+COMMAND
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/S%C3%ADmbolo_del_sistema_de_Windows"
+literal "true"
+
+\end_inset
+
+ 
+\family typewriter
+cmd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://learn.microsoft.com/en-us/powershell/"
+literal "true"
+
+\end_inset
+
+ 
+\family typewriter
+PowerShell
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Interfaz gráfica
 \end_layout
@@ -3239,17 +3417,6 @@ Una interfaz gráfica de usuario es una forma de interactuar con un programa
  o sistema operativo mediante el uso de elementos gráficos, como ventanas,
  iconos, botones y menús, en lugar de usar comandos de texto en una línea
  de comandos.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Habría que explicar que en Linux la GUI es un programa de usuario opcional.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3277,7 +3444,7 @@ Graphical User Interface
 \begin_inset Quotes frd
 \end_inset
 
-; en cambio a las interfaces de texto las llamamos 
+; en cambio a las interfaces de linea de comandos las llamamos 
 \begin_inset Quotes fld
 \end_inset
 
@@ -3321,7 +3488,7 @@ status open
 \begin_inset Graphics
 	filename gui.png
 	lyxscale 50
-	scale 25
+	scale 24
 
 \end_inset
 
@@ -3357,13 +3524,6 @@ Capas de una GUI
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3529,10 +3689,6 @@ literal "true"
 \end_inset
 
  Xorg.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -3590,7 +3746,7 @@ status open
 \begin_inset Graphics
 	filename i3.png
 	lyxscale 50
-	scale 25
+	scale 24
 
 \end_inset
 
@@ -3624,6 +3780,20 @@ Gestor de ventanas i3
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante notar que las interfaces gráficas en Linux son un programa
+ de usuario opcional.
 \end_layout
 
 \end_inset
@@ -3936,16 +4106,6 @@ hibernar
  Cuando se vuelve a encender la computadora, el sistema restaura automáticamente
  los datos y la configuración de la sesión anterior.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se podría mencionar que este proceso ocurre dentro de un archivo o una partición.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -3992,6 +4152,20 @@ shutdown /h
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La información almacenada en la memoria RAM se guarda en un archivo o en
+ una partición exclusiva dedicada a tal propósito.
 \end_layout
 
 \end_inset
@@ -15847,6 +16021,7 @@ imagen: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300,
 
 \family typewriter
 \emph off
+\strikeout on
 cut
 \end_layout
 
@@ -16693,6 +16868,7 @@ La clase
 
 \family typewriter
 \emph off
+\strikeout on
 tr
 \end_layout
 
@@ -22169,6 +22345,13 @@ PID
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+top
+\end_layout
+
+\begin_layout Subsection
 Señales
 \end_layout
 
@@ -22953,7 +23136,6 @@ Gestión
 
 \family typewriter
 \emph off
-\strikeout on
 apt
 \end_layout
 
@@ -22961,7 +23143,6 @@ apt
 
 \family typewriter
 \emph off
-\strikeout on
 free
 \end_layout
 
@@ -22969,7 +23150,6 @@ free
 
 \family typewriter
 \emph off
-\strikeout on
 loadkeys
 \end_layout
 
@@ -22985,7 +23165,6 @@ lsof
 
 \family typewriter
 \emph off
-\strikeout on
 reboot
 \end_layout
 
@@ -22993,7 +23172,6 @@ reboot
 
 \family typewriter
 \emph off
-\strikeout on
 setxkbmap
 \end_layout
 
@@ -23003,14 +23181,6 @@ setxkbmap
 \emph off
 \strikeout on
 startx
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-top
 \end_layout
 
 \begin_layout Subsection
@@ -23447,8 +23617,7 @@ PING google.com (142.251.133.78) 56(84) bytes of data.
 
 \family typewriter
 \emph off
-\strikeout on
-scp
+ssh
 \end_layout
 
 \begin_layout Subsection
@@ -23456,7 +23625,7 @@ scp
 \family typewriter
 \emph off
 \strikeout on
-ssh
+scp
 \end_layout
 
 \begin_layout Subsection
@@ -23534,7 +23703,6 @@ wget URL
 
 \family typewriter
 \emph off
-\strikeout on
 w3m
 \end_layout
 
@@ -30598,7 +30766,7 @@ index e69de29..764df4e 100644
 \family typewriter
 \emph off
 \strikeout on
-reset
+blame
 \end_layout
 
 \begin_layout Subsection
@@ -30606,7 +30774,7 @@ reset
 \family typewriter
 \emph off
 \strikeout on
-stash
+reset
 \end_layout
 
 \begin_layout Section
@@ -31857,7 +32025,7 @@ Primer commit.
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 
 \strikeout on
 Fusión de tres vías
@@ -33188,7 +33356,7 @@ nes.
 status open
 
 \begin_layout Plain Layout
-En escencia, 
+En esencia, 
 \begin_inset listings
 lstparams "language=bash"
 inline true
@@ -33273,6 +33441,13 @@ Fork
 \emph off
 \strikeout on
 Pull request
+\end_layout
+
+\begin_layout Subsection
+
+\emph off
+\strikeout on
+LFS
 \end_layout
 
 \begin_layout Chapter
