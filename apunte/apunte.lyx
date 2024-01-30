@@ -24584,6 +24584,314 @@ apt remove paquete
 free
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+free
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para mostrar información sobre el uso de la memoria del sistema,
+ incluyendo la memoria física (RAM) y la memoria de intercambio.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+free [-h]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si se especifica la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-h
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se muestran los valores en un formato más legible para humanos.
+\end_layout
+
+\begin_layout Example
+Esta es la salida típica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+free
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+free -h
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+total 
+\begin_inset space ~
+\end_inset
+
+usado 
+\begin_inset space ~
+\end_inset
+
+libre 
+\begin_inset space ~
+\end_inset
+
+compartido 
+\begin_inset space ~
+\end_inset
+
+búf/caché 
+\begin_inset space ~
+\end_inset
+
+disponible
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Mem: 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+2,9Gi 
+\begin_inset space ~
+\end_inset
+
+1,4Gi 
+\begin_inset space ~
+\end_inset
+
+1,1Gi 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+202Mi 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+764Mi 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1,5Gi
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Inter: 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0B 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0B 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
