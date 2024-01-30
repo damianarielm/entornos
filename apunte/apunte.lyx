@@ -24437,6 +24437,13 @@ faStar
  Encuentre una forma de solucionar dicho problema.
 \end_layout
 
+\begin_layout Exercise
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Gestión
 \end_layout
@@ -24446,6 +24453,128 @@ Gestión
 \family typewriter
 \emph off
 apt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (Advanced Packaging Tool) es una herramienta utilizada en sistemas basados
+ en Debian, (como Lubuntu) para gestionar paquetes de software.
+ A través de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, puedes instalar, actualizar y desinstalar programas de manera fácil y
+ eficiente.
+\end_layout
+
+\begin_layout Standard
+El programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ puede utilizarse de diversas formas:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt update
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Actualizar la lista de paquetes.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Antes de instalar o actualizar programas, es una buena práctica utilizar
+ este comando.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt install paquete
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Instalar un programa en el sistema.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt upgrade
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Actualiza todos los programas instalados a las versiones más recientes.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt remove paquete
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Desinstala un programa.
 \end_layout
 
 \begin_layout Subsection
@@ -24765,6 +24894,65 @@ history
 
 .
  Explique lo que sucede.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Instale el paquete 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+neofetch
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar su propósito.
+ Pruebe el nuevo comando.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Desinstale el paquete 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+neofecth
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y verifique que ya no se encuentra en el sistema.
 \end_layout
 
 \begin_layout Section
