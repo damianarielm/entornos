@@ -26709,12 +26709,26 @@ sha256sum
 \begin_inset Quotes frd
 \end_inset
 
- es una herramienta que se utiliza para calcular el valor de hash SHA-256
- de un archivo.
- SHA-256 es un algoritmo de función hash criptográfica que produce una cadena
- de 256 bits (32 bytes) conocida como el resumen o hash del archivo.
- Este valor de hash es único para cada archivo y se utiliza ampliamente
- para verificar la integridad de los datos y detectar cambios en los archivos.
+ es una herramienta que se utiliza para calcular la suma de verificación
+ SHA-256 de un archivo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Una suma de verificación (también conocida como checksum o hash) es una
+ cadena de caracteres generado a partir de datos (como un archivo), con
+ el propósito de verificar la integridad de esos datos.
+ La idea fundamental es que si los datos cambian, incluso por un solo bit,
+ la suma de verificación generada también cambiará significativamente.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -26745,7 +26759,7 @@ status open
 
 \begin_layout Plain Layout
 
-sha256sum archivo
+sha256sum [-c] archivo
 \end_layout
 
 \end_inset
@@ -26753,13 +26767,82 @@ sha256sum archivo
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si se utiliza la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con un archivo que contiene una o más sumas de verificación generadas previamen
+te, se verificaran las sumas allí presentes.
+\end_layout
+
+\begin_layout Example
+Observemos la suma de verificación de una cadena de texto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo hola mundo | sha256sum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+41d85e0b52944ee2917adfd73a2b7ce3d3c8368533a75e54db881fac6c9ad176
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
 
 \end_layout
 
 \begin_layout Example
-Para hacer una suma de verificación del comando 
+Para hacer una suma de verificación de la salida del comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -26815,12 +26898,185 @@ status open
 
 \end_layout
 
+\begin_layout Example
+Creemos dos archivos y sus respectivas sumas de verificación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo hola > bienvenida
+\end_layout
+
+\begin_layout Plain Layout
+
+echo chau > despedida
+\end_layout
+
+\begin_layout Plain Layout
+
+sha256sum bienvenida despedida > suma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora podemos verificar la suma de ambos archivos gracias a la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sha256sum -c suma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+bienvenida: La suma coincide
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+despedida: La suma coincide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+También vale la pena observar que sucede si modificamos un archivo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo adios > despedida
+\end_layout
+
+\begin_layout Plain Layout
+
+sha256sum -c suma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+bienvenida: La suma coincide
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+despedida: La suma no coincide
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+sha256sum: ATENCIÓN: 1 suma calculada NO coincidió
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
-\strikeout on
 tar
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+gzip
 \end_layout
 
 \begin_layout Subsection
