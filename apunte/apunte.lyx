@@ -9289,36 +9289,6 @@ cd
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Quizás se puede enseñar a usar 
-\begin_inset Quotes fld
-\end_inset
-
-pushd
-\begin_inset Quotes frd
-\end_inset
-
- y 
-\begin_inset Quotes fld
-\end_inset
-
-popd
-\begin_inset Quotes frd
-\end_inset
-
-.
- También se podría mencionar que ~ es expandida por el shell.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para ir al directorio que contiene la carpeta personal del usuario actual
  usamos el siguiente comando:
@@ -9663,27 +9633,6 @@ Si además queremos ver información adicional, agregamos la opción
 :
 \end_layout
 
-\begin_layout Example
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Explicar la salida de la opción 
-\begin_inset Quotes fld
-\end_inset
-
--l
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -9804,6 +9753,12 @@ drwxr-xr-x 4 damian wheel
 
 \end_layout
 
+\begin_layout Standard
+En este formato de salida podemos ver: los permisos del archivo, cantidad
+ de enlaces, usuario propietario, grupo propietario, tamaño, fecha de modificaci
+ón y nombre.
+\end_layout
+
 \begin_layout Example
 Para mostrar el contenido del directorio raíz podemos usar el siguiente
  comando:
@@ -9880,6 +9835,294 @@ ls /
 \family typewriter
 \emph off
 tree
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tree
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en sistemas Unix y Linux es una herramienta de línea de comandos que muestra
+ la estructura de directorios y archivos en forma de árbol.
+ Su uso básico es bastante simple, y puede proporcionar una vista jerárquica
+ clara de la organización de archivos en un directorio y sus subdirectorios.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tree [opciones] [directorio]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra solo los directorios, no los archivos.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-L nivel
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Limita la profundidad del árbol al nivel especificado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra archivos y directorios ocultos.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra la ruta completa de cada archivo.
+\end_layout
+
+\begin_layout Example
+Comprobemos la jerarquía de archivos de Linux usando el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tree
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tree -L 1 /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+/
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── bin -> usr/bin
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── boot
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── dev
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── etc
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── home
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── lib -> usr/lib
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── lib64 -> usr/lib
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── lost+found
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── mnt
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── opt
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── proc
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── root
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── run
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── sbin -> usr/bin
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── srv
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── sys
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── tmp
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+├── usr
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+└── var
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+20 directories, 0 files
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -13573,6 +13816,35 @@ touch {a..h}{1..8}
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás se puede enseñar a usar 
+\begin_inset Quotes fld
+\end_inset
+
+pushd
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+popd
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
