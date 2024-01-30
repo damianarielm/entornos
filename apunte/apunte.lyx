@@ -17738,13 +17738,6 @@ Se puede utilizar para realizar diversas operaciones de manipulación de
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica es la siguiente:
 \end_layout
 
@@ -17768,6 +17761,13 @@ tr [opciones] CADENA1 [CADENA2]
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -18115,6 +18115,13 @@ grep
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para buscar la linea donde se encuentra definido el usuario 
 \begin_inset Quotes fld
@@ -18286,7 +18293,21 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
-Utilice 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Utilice 
 \begin_inset Quotes fld
 \end_inset
 
@@ -18317,13 +18338,6 @@ cat
 
 \begin_layout Standard
 \begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -18371,7 +18385,21 @@ cat
 \end_layout
 
 \begin_layout Exercise
-Utilice el comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -18400,6 +18428,13 @@ head
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -18476,7 +18511,21 @@ file
 \end_layout
 
 \begin_layout Exercise
-Cree un archivo de python con el siguiente código:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Cree un archivo de python con el siguiente código:
 \end_layout
 
 \begin_layout Exercise
@@ -18688,15 +18737,22 @@ diff
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
 
 
+\backslash
+faStar
+\backslash
+;
 \end_layout
 
-\begin_layout Exercise
-Escriba expresiones regulares que definan los siguientes lenguajes:
+\end_inset
+
+ Escriba expresiones regulares que definan los siguientes lenguajes:
 \end_layout
 
 \begin_layout Enumerate
@@ -18707,7 +18763,7 @@ Escriba expresiones regulares que definan los siguientes lenguajes:
 \end_layout
 
 \begin_layout Enumerate
-Palabras con una cantidad par de letras 
+Palabras compuestas exclusivamente por una cantidad par de letras 
 \begin_inset Formula $x$
 \end_inset
 
@@ -18715,7 +18771,7 @@ Palabras con una cantidad par de letras
 \end_layout
 
 \begin_layout Enumerate
-Palabras con una cantidad impar de letras 
+Palabras compuestas exclusivamente por una cantidad impar de letras 
 \begin_inset Formula $x$
 \end_inset
 
@@ -18907,13 +18963,6 @@ Los operadores de secuenciación, son otras de las cuestiones de las cuales
  falló.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para crear dos archivos y verificar que se hayan creado, podemos usar el
  siguiente comando:
@@ -18944,7 +18993,7 @@ touch archivo1 archivo2; ls archivo1 archivo2
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Example
 Podemos intentar borrar un directorio y mostrar un mensaje en caso de éxito
  con el comando:
 \end_layout
@@ -18982,7 +19031,7 @@ El directorio se ha borrado.
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Example
 Análogamente, podemos mostrar el mensaje si el directorio no se creo:
 \end_layout
 
@@ -19089,14 +19138,6 @@ La redirección de salida estándar substituye por completo el contenido de
 
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Si queremos que la salida del comando 
 \begin_inset Quotes fld
@@ -19125,7 +19166,6 @@ lista.txt
 , podemos usar la redirección de salida de la siguiente manera:
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -19738,12 +19778,66 @@ comando | comando
 
 \end_layout
 
+\begin_layout Example
+Si queremos ver los primeros diez archivos del directorio actual podemos
+ usar el siguiente comando:
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Flex Bash
 status open
 
 \begin_layout Plain Layout
-Agregar ejemplos.
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls | head
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos contar cuantas veces aparece una 
+\begin_inset Quotes fld
+\end_inset
+
+palabra
+\begin_inset Quotes frd
+\end_inset
+
+ en un archivo utilizando tuberías de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat archivo | grep palabra | wc -l
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -19757,6 +19851,107 @@ Agregar ejemplos.
 \emph off
 \strikeout on
 tee
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tee
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para leer desde la entrada estándar (generalmente datos de un
+ comando anterior a través de una tubería) y escribir tanto en la salida
+ estándar como en uno o más archivos especificados.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tee [-a] archivo1 [archivo2 ...]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ permite que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tee
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ agregue contenido a los archivos en lugar de sobrescribirlos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tee
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es útil cuando necesitas mostrar o almacenar la salida de un comando en
+ un archivo y al mismo tiempo visualizarla en la pantalla.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
