@@ -23718,33 +23718,6 @@ ar con ellos y controlar su comportamiento.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Aunque el nombre 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-kill
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- sugiere que su función principal es terminar procesos, en realidad puede
- enviar una variedad de señales a los procesos, incluyendo señales para
- finalizar, detener, reanudar, informar o manejar de manera personalizada.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica del comando 
 \begin_inset Quotes fld
 \end_inset
@@ -23778,6 +23751,33 @@ kill -s SEÑAL PID
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque el nombre 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+kill
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ sugiere que su función principal es terminar procesos, en realidad puede
+ enviar una variedad de señales a los procesos, incluyendo señales para
+ finalizar, detener, reanudar, informar o manejar de manera personalizada.
 \end_layout
 
 \end_inset
@@ -23880,6 +23880,13 @@ firefox &
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -24231,11 +24238,119 @@ JID
 wait
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+wait
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para esperar a que los procesos secundarios de un proceso en
+ ejecución terminen antes de continuar con la ejecución del siguiente comando.
+ Esto es especialmente útil cuando se ejecutan procesos en segundo plano
+ y se desea sincronizar su finalización antes de proceder.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wait
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wait [pid...]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Veamos como ejecutar un proceso en segundo plano y esperar a que este termine:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sleep 10 &
+\end_layout
+
+\begin_layout Plain Layout
+
+wait && echo Fin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 Utilice 
 \begin_inset Quotes fld
 \end_inset
@@ -24275,36 +24390,15 @@ sleep 1d
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
+\begin_layout Enumerate
 Utilice otro emulador de terminal y averigüe el PID del comando anterior.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
+\begin_layout Enumerate
 Envíe la señal SIGTSTP al proceso identificado en el ejercicio previo.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
+\begin_layout Enumerate
 Verifique el estado del proceso con el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -24323,15 +24417,22 @@ jobs
  Finalmente interrumpa el proceso y verifique por última vez.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
 
 
+\backslash
+faStar
+\backslash
+;
 \end_layout
 
-\begin_layout Exercise
-Ejecute un navegador desde el shell.
+\end_inset
+
+ Ejecute un navegador desde el shell.
  Observe que al cerrar el emulador de terminal, también se cierra el navegador.
  Encuentre una forma de solucionar dicho problema.
 \end_layout
@@ -24540,7 +24641,21 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
-Utilice el comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -24607,6 +24722,30 @@ bg
 
 \family typewriter
 disown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pushd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+popd
 \family default
 
 \begin_inset Quotes frd
@@ -24921,8 +25060,8 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
-Escriba un programa que reciba una URL y genere un archivo con todas las
- palabras que se encuentran en dicha página.
+Escriba un comando genere un archivo con todas las palabras que se encuentran
+ en una URL.
  Asegúrese de que se guardan solo palabras formadas por caracteres alfabéticos.
 \end_layout
 
