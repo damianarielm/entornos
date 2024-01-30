@@ -13131,13 +13131,6 @@ umount
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Si se desea desmontar la partición que previamente se montó en el directorio
  
@@ -13552,7 +13545,14 @@ status open
 
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
 Para actualizar la fecha de modificación y accesos de todos los archivos
  vacíos puede usarse el siguiente comando:
 \end_layout
@@ -14020,7 +14020,21 @@ stat
 \end_layout
 
 \begin_layout Exercise
-Considere la siguiente salida en pantalla del comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Considere la siguiente salida en pantalla del comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -14168,7 +14182,21 @@ cd cd
 \end_layout
 
 \begin_layout Exercise
-Cree un directorio vacío con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Cree un directorio vacío con 
 \begin_inset Quotes fld
 \end_inset
 
@@ -14203,7 +14231,21 @@ rmdir
 \end_layout
 
 \begin_layout Exercise
-Escriba la siguiente secuencia de comandos:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba la siguiente secuencia de comandos:
 \end_layout
 
 \begin_layout Standard
@@ -14254,7 +14296,21 @@ Explique por qué se produce el error.
 \end_layout
 
 \begin_layout Exercise
-Escriba la siguiente secuencia de comandos:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba la siguiente secuencia de comandos:
 \end_layout
 
 \begin_layout Standard
@@ -14293,7 +14349,21 @@ Explique por qué se produce el error.
 \end_layout
 
 \begin_layout Exercise
-Escriba el siguiente comando:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba el siguiente comando:
 \end_layout
 
 \begin_layout Standard
@@ -14377,38 +14447,13 @@ Utilice el comando
 
 
 \family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- para averiguar sobre el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
 tree
 \family default
 
 \begin_inset Quotes frd
 \end_inset
 
-.
- Logre la siguiente salida del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-tree
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-:
+ para lograr la siguiente salida:
 \end_layout
 
 \begin_deeper
@@ -14520,7 +14565,22 @@ status open
 \end_layout
 
 \begin_layout Exercise
-Cree una copia idéntica a la estructura anterior en otro directorio.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Cree una copia idéntica a la estructura del ejercicio anterior en otro
+ directorio.
 \end_layout
 
 \begin_layout Standard
@@ -14531,7 +14591,21 @@ Cree una copia idéntica a la estructura anterior en otro directorio.
 \end_layout
 
 \begin_layout Exercise
-Elimine ambas estructuras de directorios.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Elimine ambas estructuras de directorios.
 \end_layout
 
 \begin_layout Standard
@@ -14637,7 +14711,21 @@ readlink
 \end_layout
 
 \begin_layout Exercise
-Inserte un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Inserte un 
 \emph on
 pendrive
 \emph default
@@ -14796,7 +14884,21 @@ Explique por qué se produce el error.
 \end_layout
 
 \begin_layout Exercise
-Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
 \end_layout
 
 \begin_layout Section
