@@ -7229,19 +7229,6 @@ Leslie Lamport
 Manejo de bash
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar mas comparaciones con Windows.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Comandos básicos
 \end_layout
@@ -7613,12 +7600,126 @@ Ctrl+R: Abre una búsqueda reversa en el historial de comandos.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Además bash permite repetir comandos anteriores fácilmente:
+\end_layout
+
+\begin_layout Itemize
+Cuando se utiliza 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+!!
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en un comando, Bash lo interpreta como una referencia al último comando
+ ejecutado.
+ Es útil cuando deseas repetir el comando anterior rápidamente.
+\end_layout
+
+\begin_layout Itemize
+El formato 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+!n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para ejecutar el enésimo comando en el historial de comandos.
+\end_layout
+
+\begin_layout Example
+Veamos como podemos reutilizar el último comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
 status open
 
 \begin_layout Plain Layout
-Agregar información sobre !! y !n.
- Quizás esta información corresponda a la sección de historial.
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo Hola Mundo!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola Mundo!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+echo Hola Mundo!
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola Mundo!
 \end_layout
 
 \end_inset
