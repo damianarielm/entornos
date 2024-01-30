@@ -26014,6 +26014,267 @@ curl
 w3m
 \end_layout
 
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+w3m
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un navegador web de texto basado en la línea de comandos en sistemas
+ Unix y Linux.
+ A diferencia de los navegadores web gráficos como Firefox o Chrome, 
+\family typewriter
+w3m
+\family default
+ se ejecuta en la terminal y muestra el contenido de las páginas web en
+ formato de texto.
+\end_layout
+
+\begin_layout Standard
+Su sintaxis es simplemente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+w3m URL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para navegar por la página se utilizan las siguientes teclas:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Flechas: Permiten desplazarte por el contenido.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Tab: Desplazamiento entre enlaces.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Espacio: Avanza una 
+\begin_inset Quotes fld
+\end_inset
+
+pantalla
+\begin_inset Quotes frd
+\end_inset
+
+ hacia abajo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Enter: Se utiliza para seguir un enlace o introducir texto.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+U: Muestra la barra de direcciones.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+B: Sirve para regresar a la página anterior.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+s: Muestra los últimos enlaces visitados.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+R: Permite recargar la página actual.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+/: Busca contenido en la página.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+H: Muestra la ayuda.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+q: Salir del programa.
+\end_layout
+
 \begin_layout Subsection
 
 \emph off
