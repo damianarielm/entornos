@@ -24982,7 +24982,7 @@ loadkeys mapa
 status open
 
 \begin_layout Plain Layout
-Los mapas de teclado suelen estar ubicados en 
+Los mapas de teclado para consola virtual suelen estar ubicados en 
 \begin_inset Quotes fld
 \end_inset
 
@@ -25039,6 +25039,66 @@ loadkeys es
 \family typewriter
 \emph off
 setxkbmap
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+setxkbmap
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para configurar la distribución del teclado en entornos gráficos.
+ Se utiliza análogamente a 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+loadkeys
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los mapas de teclado para entorno gráfico suelen estar ubicados en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+/usr/share/X11/xkb
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -25182,22 +25242,6 @@ reboot
 \emph off
 \strikeout on
 startx
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-uname
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-uptime
 \end_layout
 
 \begin_layout Subsection
@@ -25396,6 +25440,74 @@ neofecth
 \end_inset
 
  y verifique que ya no se encuentra en el sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Averigüe que es la distribución de teclado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Teclado_Dvorak"
+literal "true"
+
+\end_inset
+
+ Dvorak
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Practique esta distribución en consola virtual y entorno gráfico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Averigüe para que sirven los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+uptime
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+uname
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
