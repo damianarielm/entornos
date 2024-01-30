@@ -24577,6 +24577,44 @@ apt remove paquete
 : Desinstala un programa.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Ademas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+apt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, las distribuciones basadas en Ubuntu cuentan con otro gestor de paquetes:
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+snap
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -24644,6 +24682,13 @@ Si se especifica la opción
 \end_inset
 
  se muestran los valores en un formato más legible para humanos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -25233,13 +25278,6 @@ status open
 
 \family typewriter
 \emph off
-reboot
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 \strikeout on
 startx
 \end_layout
@@ -25518,14 +25556,6 @@ Internet
 
 \family typewriter
 \emph off
-\strikeout on
-curl
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 ping
 \end_layout
 
@@ -25710,6 +25740,128 @@ PING google.com (142.251.133.78) 56(84) bytes of data.
 ssh
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ssh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ssh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Secure Shell
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ ss comúnmente utilizado para acceder a máquinas remotas, ejecutar comandos
+ en esas máquinas y transferir archivos de manera segura.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ssh
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ssh [-p puerto] usuario@equipo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si no se especifica el puerto de la comunicación, se utilizará por defecto
+ el puerto 22.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Cuando hayas terminado de trabajar en la máquina remota, puedes cerrar la
+ conexión escribiendo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+exit
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en la terminal de la sesión SSH o simplemente cerrando el emulador terminal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -25787,6 +25939,14 @@ wget URL
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+curl
 \end_layout
 
 \begin_layout Subsection
