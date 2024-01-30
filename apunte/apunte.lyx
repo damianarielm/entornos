@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-29 de enero de 2024.
+30 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -2414,7 +2414,7 @@ status open
 \begin_inset Graphics
 	filename kernel.png
 	lyxscale 30
-	scale 20
+	scale 18
 
 \end_inset
 
@@ -2440,14 +2440,14 @@ Comunicación entre aplicaciones, núcleo y hardware
 \end_layout
 
 \begin_layout Standard
+Las funcionalidades principales de un sistema operativo incluyen:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Las funcionalidades principales de un sistema operativo incluyen:
 \end_layout
 
 \begin_layout Description
@@ -2590,6 +2590,13 @@ Etapa de Autodiagnóstico
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3121,6 +3128,7 @@ Para saber que emulador de terminal se está utilizando se puede escribir
  el comando:
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -3146,7 +3154,6 @@ echo $TERM
 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -3224,6 +3231,7 @@ Para saber que interprete de linea de comandos se está utilizando se puede
  escribir el comando:
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -3249,7 +3257,6 @@ echo $SHELL
 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -4427,6 +4434,13 @@ Hola mundo!
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Bajo Estos lenguajes están más cerca del lenguaje de la máquina y se utilizan
  para escribir programas que interactúan directamente con el hardware del
@@ -4443,7 +4457,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=make"
+lstparams "language=make,fontsize={\small}"
 inline false
 status open
 
@@ -11967,6 +11981,13 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+lsblk
 \end_layout
 
 \begin_layout Subsection
