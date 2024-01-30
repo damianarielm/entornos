@@ -6763,6 +6763,35 @@ cd ~
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante notar que el carácter 
+\begin_inset Quotes fld
+\end_inset
+
+~
+\begin_inset Quotes frd
+\end_inset
+
+ no tiene ningún significado para el sistema operativo, y es trabajo del
+ shell reemplazarlo por el directorio correspondiente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Montaje
 \end_layout
@@ -6784,13 +6813,6 @@ Montar
  En otras palabras, montar un sistema de archivos implica hacer que el sistema
  operativo sea consciente de la existencia de un sistema de archivos y asignarlo
  a un directorio específico en la jerarquía de archivos del sistema.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -7727,6 +7749,105 @@ Hola Mundo!
 
 \end_layout
 
+\begin_layout Example
+También podemos repetir el penúltimo comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 1
+\end_layout
+
+\begin_layout Plain Layout
+
+echo 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+!-2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+echo 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Autocompletado
 \end_layout
@@ -7813,10 +7934,6 @@ manual
 
  es una herramienta de línea de comandos que proporciona información detallada
  sobre otros comandos, funciones y bibliotecas.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -7855,6 +7972,13 @@ man [opciones] comando
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -8353,13 +8477,6 @@ clear
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para borrar el contenido de la pantalla se utiliza el siguiente comando:
 \end_layout
@@ -8419,19 +8536,6 @@ clear
 \family typewriter
 \emph off
 echo
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Quizás se pueda mover este comando a la parte de redirección.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -8779,7 +8883,21 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
-Utilice el comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -9517,6 +9635,13 @@ ls
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
