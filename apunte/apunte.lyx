@@ -7465,6 +7465,82 @@ Hola Mundo!
 Prompt
 \end_layout
 
+\begin_layout Standard
+El 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+prompt
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el indicador que muestra el shell para indicar que está esperando la
+ entrada del usuario.
+ Es una cadena de caracteres que puede contener información útil, como el
+ nombre del usuario, el nombre del equipo, la ruta actual del directorio
+ y otros detalles.
+\end_layout
+
+\begin_layout Example
+El prompt por defecto se ve así:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+usuario@equipo:ruta$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX,style={bw}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PS C:
+\backslash
+Ruta>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Historial
 \end_layout
