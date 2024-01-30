@@ -24892,6 +24892,33 @@ Inter:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Esta información también puede obtenerse leyendo el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+/proc/meminfo
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -24899,19 +24926,112 @@ Inter:
 loadkeys
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-\strikeout on
-lsof
+\size small
+loadkeys
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para definir la configuración del teclado en la 
+\emph on
+consola virtual
+\emph default
+ del sistema.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+loadkeys mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Los mapas de teclado suelen estar ubicados en 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-reboot
+\size small
+/usr/share/kbd/keymaps/i386
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para configurar la distribución de teclado en idioma español podemos usar
+ el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+loadkeys es
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -24919,30 +25039,6 @@ reboot
 \family typewriter
 \emph off
 setxkbmap
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-startx
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-uname
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-uptime
 \end_layout
 
 \begin_layout Subsection
@@ -25071,6 +25167,45 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+reboot
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+startx
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+uname
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+uptime
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+lsof
 \end_layout
 
 \begin_layout Subsection
