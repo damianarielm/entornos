@@ -10716,13 +10716,6 @@ touch [opciones] archivo...
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Algunas de las opciones comunes del comando 
 \begin_inset Quotes fld
 \end_inset
@@ -10994,13 +10987,6 @@ rm
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para borrar tres archivos pidiendo confirmación podemos usar el siguiente
  comando:
@@ -11223,13 +11209,6 @@ Es importante tener en cuenta que si se copia un archivo a un directorio
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Algunas de las opciones comunes del comando 
 \begin_inset Quotes fld
 \end_inset
@@ -11288,6 +11267,13 @@ cp
 \end_inset
 
 : pide confirmación antes de sobrescribir archivos existentes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -11453,13 +11439,6 @@ cp -r directorio1 directorio2
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 
 \family typewriter
@@ -11533,6 +11512,13 @@ mv [opciones] origen destino
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -12479,13 +12465,6 @@ du
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para mostrar el uso del directorio actual usamos el siguiente comando:
 \end_layout
@@ -12614,13 +12593,6 @@ status open
 
 \family typewriter
 \emph off
-lsblk
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 ln
 \end_layout
 
@@ -12699,6 +12671,147 @@ ln
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+lsblk
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lsblk
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+El nombre 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lsblk
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ proviene de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+list block devices
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ (
+\begin_inset Quotes fld
+\end_inset
+
+listar dispositivos de bloque
+\begin_inset Quotes frd
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ es utilizado para listar información sobre discos duros, particiones y
+ dispositivos de almacenamiento extraíbles.
+ 
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica de 
+\family typewriter
+lsblk
+\family default
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+lsblk [opciones]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes incluyen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra todos los dispositivos disponibles.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-l
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra solo una lista simple, sin detalles adicionales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
