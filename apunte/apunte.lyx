@@ -25928,7 +25928,7 @@ status open
 
 \begin_layout Plain Layout
 
-wget URL
+wget [opciones] URL
 \end_layout
 
 \end_inset
@@ -25939,6 +25939,64 @@ wget URL
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+A continuación, se presentan algunas de las opciones más importantes del
+ comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-O archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite redirigir el contenido descargado a un archivo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-b
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Ejecuta la descarga en segundo plano.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Descarga todos los archivos enlazados recursivamente desde el directorio
+ proporcionado.
 \end_layout
 
 \begin_layout Subsection
