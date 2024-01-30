@@ -14901,6 +14901,41 @@ faStar
  Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigüe para qué sirven los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pushd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+popd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Contenido y filtros
 \end_layout
@@ -15202,13 +15237,6 @@ nano
  que espera mas entrada desde el teclado.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -16800,13 +16828,6 @@ cut
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -16837,6 +16858,13 @@ cut opciones archivo
 
 \begin_layout Standard
 Algunas de las opciones más comunes son las siguientes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -16942,19 +16970,6 @@ lenguajes
 lenguaje
 \emph default
  es simplemente un conjunto de palabras.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Quizás valga la pena comentar el modulo exrex de python.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -17358,13 +17373,6 @@ El lenguaje definido por la expresión regular
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Description
 Anclas Las anclas son caracteres especiales que indican el inicio o el final
  de una cadena.
@@ -17616,6 +17624,54 @@ La clase
 \end_inset
 
  representa cualquier carácter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El modulo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://pypi.org/project/exrex/"
+literal "true"
+
+\end_inset
+
+
+\family typewriter
+ exrex
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ de Python puede utilizarse para mostrar el lenguaje generado por expresiones
+ regulares.
+ Puede instalarse con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pip install exrex
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
