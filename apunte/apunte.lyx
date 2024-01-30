@@ -3128,7 +3128,6 @@ Para saber que emulador de terminal se está utilizando se puede escribir
  el comando:
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -3154,6 +3153,51 @@ echo $TERM
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En un emulador de terminal las combinaciones de teclas tradicionales para
+ copiar y pegar no funcionan; debemos usar en su lugar 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Ctrl+Shift+C y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Ctrl+Shift+V.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -3199,13 +3243,6 @@ Qterminal en Lubuntu
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -7236,19 +7273,6 @@ Además, también es un lenguaje de scripting que permite a los usuarios escribi
  en momentos específicos.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar información sobre prompts.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Paragraph
 Sintaxis
 \end_layout
@@ -7364,8 +7388,7 @@ En la sintaxis de un comando, los corchetes se utilizan para indicar que
 status open
 
 \begin_layout Plain Layout
-Agregar información sobre copiar y pegar.
- También explicar el uso de 
+También explicar el uso de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -7376,6 +7399,19 @@ Agregar información sobre copiar y pegar.
 \end_inset
 
  para comandos largos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre prompts.
 \end_layout
 
 \end_inset
