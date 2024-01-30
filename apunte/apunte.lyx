@@ -7384,21 +7384,61 @@ En la sintaxis de un comando, los corchetes se utilizan para indicar que
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-También explicar el uso de 
+Además de estos lineamientos generales, podemos utilizar la barra invertida
+ (
 \begin_inset Quotes fld
 \end_inset
 
 
+\family typewriter
+
 \backslash
+
+\family default
 
 \begin_inset Quotes frd
 \end_inset
 
- para comandos largos.
+) para dividir un comando largo en varias líneas para mejorar la legibilidad
+ sin ejecutar el comando parcialmente en cada línea.
+\end_layout
+
+\begin_layout Example
+Podemos escribir en pantalla una linea muy larga en varios renglones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo Hola 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Mundo
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -7407,16 +7447,22 @@ También explicar el uso de
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Flex Salida
 status open
 
 \begin_layout Plain Layout
-Agregar información sobre prompts.
+
+\family typewriter
+Hola Mundo!
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+Prompt
 \end_layout
 
 \begin_layout Paragraph
