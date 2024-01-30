@@ -20008,7 +20008,21 @@ false
 \end_layout
 
 \begin_layout Exercise
-Piense que ocurre tras ejecutar el comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Piense que ocurre tras ejecutar el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -20032,8 +20046,23 @@ echo 2 * 3 > 10
 \end_layout
 
 \begin_layout Exercise
-Busque en Internet o consulte a alguna IA sobre la redirección de entrada
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Busque en Internet o consulte a alguna I.
+ A.
+ sobre la redirección de entrada 
 \begin_inset Quotes fld
 \end_inset
 
@@ -20136,7 +20165,21 @@ Cree un archivo con una lista de todos los archivos del sistema.
 \end_layout
 
 \begin_layout Exercise
-Escriba una secuencia de tuberías para observar la tercer linea de un archivo.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba una secuencia de tuberías para observar la tercer linea de un archivo.
 \end_layout
 
 \begin_layout Standard
@@ -20147,7 +20190,21 @@ Escriba una secuencia de tuberías para observar la tercer linea de un archivo.
 \end_layout
 
 \begin_layout Exercise
-Escriba una secuencia de tuberías para averiguar cual es el archivo con
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba una secuencia de tuberías para averiguar cual es el archivo con
  mayor cantidad de líneas.
 \end_layout
 
@@ -20454,13 +20511,6 @@ Dicha información se obtiene del archivo
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para conocer información del usuario 
 \emph on
@@ -20593,6 +20643,13 @@ root
 tty2 2023-05-03 06:01 (190.2.103.252)
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -21060,6 +21117,13 @@ Las contraseñas de los usuarios en Linux están cifradas y almacenadas en
 Algunas de las opciones más comunes son:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -21344,13 +21408,6 @@ En ocasiones estos permisos se representan mediante un número de 3 dígitos
 \end_layout
 
 \begin_layout Example
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
 Los valores numéricos correspondientes a cada permiso son:
 \end_layout
 
@@ -21608,13 +21665,6 @@ root
  puede cambiar la propiedad de un archivo o directorio.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -21924,13 +21974,6 @@ a
  que no sea el especificado.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para agregar permiso de 
 \emph on
@@ -22162,14 +22205,14 @@ useradd [opciones] usuario
 \end_layout
 
 \begin_layout Standard
+Algunas de las opciones más comunes son:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Algunas de las opciones más comunes son:
 \end_layout
 
 \begin_layout Itemize
@@ -22402,13 +22445,6 @@ usermod
  Puede utilizarse para modificar el nombre de usuario, el directorio de
  inicio, el grupo principal, los grupos secundarios, la información del
  usuario, entre otros aspectos relacionados con la configuración del usuario.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -22696,7 +22732,21 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
-Cree el usuario 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Cree el usuario 
 \begin_inset Quotes fld
 \end_inset
 
@@ -22733,7 +22783,21 @@ useradd visitante
 \end_layout
 
 \begin_layout Exercise
-El SHELL por defecto de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ El SHELL por defecto de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -22781,7 +22845,21 @@ visitante
 \end_layout
 
 \begin_layout Exercise
-Cree y establezca un directorio personal para el usuario 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Cree y establezca un directorio personal para el usuario 
 \begin_inset Quotes fld
 \end_inset
 
