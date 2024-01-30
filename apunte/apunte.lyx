@@ -4659,11 +4659,47 @@ Compilador Un compilador, por otro lado, es un programa que traduce todo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Flex Figura
 status open
 
 \begin_layout Plain Layout
-Habría que agregar un gráfico mostrando el tiempo de ejecución de cada uno.
+\align center
+\begin_inset Graphics
+	filename ejecucion.png
+	lyxscale 70
+	scale 41
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Tiempo de ejecución
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Vale la pena notar que en un lenguaje compilado, los tiempos de traducción
+ son computados por el desarrollador, mientras que en uno interpretado,
+ son computados por el usuario final.
 \end_layout
 
 \end_inset
@@ -4800,12 +4836,29 @@ Típicamente incluye un editor de código que proporciona herramientas de
  código.
  Además, un IDE suele incluir un depurador que ayuda a identificar y corregir
  errores en el código.
- También puede tener herramientas de compilación y construcción, que permiten
+\end_layout
+
+\begin_layout Standard
+También puede tener herramientas de compilación y construcción, que permiten
  compilar y empaquetar el código en un archivo ejecutable o en otro formato
  adecuado para su distribución.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -4835,6 +4888,13 @@ Visual Studio Code
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
 \end_inset
 
 
