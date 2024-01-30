@@ -23442,6 +23442,123 @@ PID
 top
 \end_layout
 
+\begin_layout Standard
+El comando top es una herramienta de monitoreo en sistemas Unix y Linux
+ que proporciona una visión dinámica y en tiempo real de los procesos en
+ ejecución en el sistema, así como información sobre la utilización de recursos
+ del sistema, como la CPU y la memoria.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ps
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+top [-d n]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si se especifica la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ puede elegirse cada cuantos segundos se actualizará la información.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+top
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es otro de los programas interactivos que vemos en esta materia.
+ Para salir de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+top
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, puedes presionar la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ q.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Señales
 \end_layout
