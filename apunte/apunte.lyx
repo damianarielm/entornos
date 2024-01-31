@@ -14187,35 +14187,6 @@ touch {a..h}{1..8}
 Ejercicios
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Quizás se puede enseñar a usar 
-\begin_inset Quotes fld
-\end_inset
-
-pushd
-\begin_inset Quotes frd
-\end_inset
-
- y 
-\begin_inset Quotes fld
-\end_inset
-
-popd
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Exercise
 Investigue con el comando 
 \begin_inset Quotes fld
@@ -15742,7 +15713,7 @@ less
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 El nombre del comando 
@@ -17059,7 +17030,7 @@ imagen: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300,
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 cut
 \end_layout
 
@@ -17211,6 +17182,9 @@ cut -d : -f 7 /etc/passwd
 \end_layout
 
 \begin_layout Subsection
+
+\emph off
+\color lightgray
 Expresiones regulares
 \end_layout
 
@@ -17934,7 +17908,7 @@ pip install exrex
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 tr
 \end_layout
 
@@ -20105,7 +20079,7 @@ cat archivo | grep palabra | wc -l
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 tee
 \end_layout
 
@@ -20547,6 +20521,10 @@ GNU
 .
 \end_layout
 
+\begin_layout Chapter
+Comandos avanzados
+\end_layout
+
 \begin_layout Section
 Usuarios, grupos y permisos
 \end_layout
@@ -20899,13 +20877,6 @@ root
 tty2 2023-05-03 06:01 (190.2.103.252)
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -21373,13 +21344,6 @@ Las contraseñas de los usuarios en Linux están cifradas y almacenadas en
 Algunas de las opciones más comunes son:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -21664,6 +21628,13 @@ En ocasiones estos permisos se representan mediante un número de 3 dígitos
 \end_layout
 
 \begin_layout Example
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
 Los valores numéricos correspondientes a cada permiso son:
 \end_layout
 
@@ -21921,6 +21892,13 @@ root
  puede cambiar la propiedad de un archivo o directorio.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -22462,13 +22440,6 @@ useradd [opciones] usuario
 
 \begin_layout Standard
 Algunas de las opciones más comunes son:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -23232,6 +23203,13 @@ Process Status
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La sintaxis básica del comando 
 \begin_inset Quotes fld
 \end_inset
@@ -23316,7 +23294,7 @@ USUARIO
 
 
 \family typewriter
-–forest
+–-forest
 \family default
 
 \begin_inset Quotes frd
@@ -23502,6 +23480,13 @@ nice [opciones] comando
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -24002,13 +23987,6 @@ firefox &
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 
 \family typewriter
@@ -24351,7 +24329,7 @@ JID
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 wait
 \end_layout
 
@@ -24360,7 +24338,11 @@ El comando
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 wait
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -24368,6 +24350,13 @@ wait
  ejecución terminen antes de continuar con la ejecución del siguiente comando.
  Esto es especialmente útil cuando se ejecutan procesos en segundo plano
  y se desea sincronizar su finalización antes de proceder.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -24554,13 +24543,6 @@ faStar
  Encuentre una forma de solucionar dicho problema.
 \end_layout
 
-\begin_layout Exercise
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Gestión
 \end_layout
@@ -24600,6 +24582,13 @@ apt
 
 , puedes instalar, actualizar y desinstalar programas de manera fácil y
  eficiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -24799,13 +24788,6 @@ Si se especifica la opción
 \end_inset
 
  se muestran los valores en un formato más legible para humanos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -25395,7 +25377,7 @@ status open
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 startx
 \end_layout
 
@@ -25403,7 +25385,7 @@ startx
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 lsof
 \end_layout
 
@@ -25983,7 +25965,7 @@ exit
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 scp
 \end_layout
 
@@ -26120,7 +26102,7 @@ A continuación, se presentan algunas de las opciones más importantes del
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 curl
 \end_layout
 
@@ -26780,7 +26762,7 @@ gzip backup.tar
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 rsync
 \end_layout
 
@@ -26788,7 +26770,7 @@ rsync
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 dd
 \end_layout
 
@@ -27728,7 +27710,7 @@ sys 0m0,002s
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 tldr
 \end_layout
 
@@ -27901,7 +27883,7 @@ watch
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 tmux
 \end_layout
 
@@ -27909,7 +27891,7 @@ tmux
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 ranger
 \end_layout
 
@@ -29654,6 +29636,8 @@ s se eliminan automáticamente.
 \begin_layout Subsection
 
 \family typewriter
+\emph off
+\color lightgray
 trap
 \end_layout
 
@@ -31078,7 +31062,7 @@ esac
 \begin_layout Subsection
 
 \emph off
-\strikeout on
+\color lightgray
 select
 \end_layout
 
@@ -34096,7 +34080,7 @@ index e69de29..764df4e 100644
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 blame
 \end_layout
 
@@ -34104,7 +34088,7 @@ blame
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 reset
 \end_layout
 
@@ -35358,7 +35342,8 @@ Primer commit.
 
 \begin_layout Subsection
 
-\strikeout on
+\emph off
+\color lightgray
 Fusión de tres vías
 \end_layout
 
@@ -35366,7 +35351,7 @@ Fusión de tres vías
 
 \family typewriter
 \emph off
-\strikeout on
+\color lightgray
 rebase
 \end_layout
 
@@ -36763,21 +36748,21 @@ git switch
 \begin_layout Subsection
 
 \emph off
-\strikeout on
+\color lightgray
 Fork
 \end_layout
 
 \begin_layout Subsection
 
 \emph off
-\strikeout on
+\color lightgray
 Pull request
 \end_layout
 
 \begin_layout Subsection
 
 \emph off
-\strikeout on
+\color lightgray
 LFS
 \end_layout
 
