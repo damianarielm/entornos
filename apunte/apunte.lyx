@@ -5572,7 +5572,7 @@ status open
 \begin_inset Graphics
 	filename particiones.png
 	lyxscale 40
-	scale 28
+	scale 26
 
 \end_inset
 
@@ -5669,16 +5669,6 @@ Los sistemas operativos utilizan archivos y directorios para organizar y
  que los directorios proporcionan una forma de organizar y acceder a los
  archivos de manera lógica y fácil de entender.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Habría que aclarar que los directorios son un tipo especial de archivo.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5687,6 +5677,7 @@ status open
 
 \begin_layout Plain Layout
 Los términos carpeta y directorio tienen el mismo significado.
+ Estos son en realidad, un tipo de archivo especial.
 \end_layout
 
 \end_inset
@@ -5774,7 +5765,7 @@ status open
 \begin_inset Graphics
 	filename pcmanfm.png
 	lyxscale 40
-	scale 40
+	scale 39
 
 \end_inset
 
@@ -6858,6 +6849,19 @@ root
  de datos.
 \end_layout
 
+\begin_layout Description
+/opt Se utiliza para almacenar 
+\begin_inset Quotes fld
+\end_inset
+
+paquetes adicionales
+\begin_inset Quotes frd
+\end_inset
+
+ o software adicional que no es parte de la distribución principal del sistema
+ operativo.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -7027,6 +7031,9 @@ Es importante notar que el carácter
 
  no tiene ningún significado para el sistema operativo, y es trabajo del
  shell reemplazarlo por el directorio correspondiente.
+ Así como esta, existen muchas otras funcionalidades que son labor del interpret
+e de linea de comandos (no del S.
+ O.) y serán puntualizadas en el apunte.
 \end_layout
 
 \end_inset
@@ -8148,19 +8155,6 @@ man
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar configuracion de man en español
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El comando 
 \family typewriter
 man
@@ -9052,19 +9046,6 @@ El comando
 history
 \family default
  no es un programa de usuario, sino una funcionalidad que provee Bash.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Aclarar que el SO no lo hace.
 \end_layout
 
 \end_inset
@@ -27925,6 +27906,14 @@ tmux
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+ranger
+\end_layout
+
+\begin_layout Subsection
 Ejercicios
 \end_layout
 
@@ -31380,7 +31369,7 @@ Linus Torvalds
 \end_layout
 
 \begin_layout Part
-Conceptos adicionales
+Herramientas auxiliares
 \end_layout
 
 \begin_layout Chapter
@@ -36826,6 +36815,36 @@ chroot
 
 \begin_layout Section
 Colab
+\end_layout
+
+\begin_layout Part
+Resolución de problemas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar configuracion de man en español
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar configuracion de VM
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
