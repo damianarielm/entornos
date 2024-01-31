@@ -25381,6 +25381,71 @@ status open
 startx
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+startx
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza en sistemas Unix y Linux para iniciar un entorno gráfico de
+ usuario.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\family typewriter
+startx
+\family default
+ es simplemente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+startx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las distribuciones de Linux pensadas para usuario de escritorio suelen iniciar
+ el entorno gráfico automáticamente, pero aun así, el comando puede ser
+ útil en tareas de recuperación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
