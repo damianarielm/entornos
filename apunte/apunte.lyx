@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-30 de enero de 2024.
+31 de enero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -1466,6 +1466,10 @@ Andrew Tanenbaum
  de herramientas y utilidades.
 \end_layout
 
+\begin_layout Section
+La era de la información
+\end_layout
+
 \begin_layout Standard
 La década de 1990 marcó la comercialización de Internet
 \begin_inset Marginal
@@ -1535,20 +1539,16 @@ literal "true"
 \emph on
 Linus Torvalds
 \emph default
- desarrolla un núcleo de sistema operativo como proyecto personal, basándose
- en el diseño de Minix.
+ desarrolla un núcleo de sistema operativo (llamado Linux) como proyecto
+ personal, basándose en el diseño de Minix.
  Hasta el momento el proyecto GNU había desarrollado una amplia gama de
  software, incluyendo un compilador, un intérprete de línea de comandos
  y diversas herramientas de programación.
  Sin embargo, faltaba un kernel, que es la parte del sistema operativo que
  administra los recursos del sistema, como la memoria y los procesos.
-\end_layout
-
-\begin_layout Standard
-En resumen, Linux surgió como un proyecto personal de Linus Torvalds, pero
- con el tiempo se convirtió en una parte fundamental del proyecto GNU y
- en uno de los sistemas operativos de código abierto más utilizados y respetados
- de la industria tecnológica.
+ Con el tiempo Linux se convirtió en una parte fundamental del proyecto
+ GNU y en uno de los sistemas operativos de código abierto más utilizados
+ y respetados de la industria tecnológica.
 \end_layout
 
 \begin_layout Standard
@@ -1631,7 +1631,7 @@ status open
 \begin_inset Graphics
 	filename windows95.jpg
 	lyxscale 50
-	scale 18
+	scale 17.5
 
 \end_inset
 
@@ -1665,7 +1665,8 @@ literal "true"
 
 \end_inset
 
- Google es un motor de búsqueda en línea desarrollado por la empresa Google.
+ Google es un motor de búsqueda en línea desarrollado por la empresa Alphabet
+ Inc.
  Funciona como una herramienta que permite a los usuarios buscar información
  en la vasta cantidad de contenido disponible en la web.
  Los usuarios ingresan palabras clave relacionadas con sus consultas en
@@ -1693,6 +1694,82 @@ iva de artículos por parte de usuarios de todo el mundo.
  Aunque la plataforma depende de la contribución voluntaria de sus usuarios,
  ha llegado a ser conocida por su vasta cantidad de información y su acceso
  abierto a la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://ubuntu.com/"
+literal "true"
+
+\end_inset
+
+ Ubuntu es una distribución de Linux basada en 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.debian.org/index.es.html"
+literal "true"
+
+\end_inset
+
+ Debian y desarrollada por Canonical Ltd.
+ Fue lanzada por primera vez en octubre de 2004 y desde entonces se ha convertid
+o en una de las distribuciones de Linux más populares y ampliamente utilizadas
+ en todo el mundo.
+ Ubuntu se enfoca en ofrecer una experiencia de usuario amigable y accesible,
+ con una amplia gama de software preinstalado y una interfaz gráfica intuitiva.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ubuntu.png
+	lyxscale 50
+	scale 19
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Ubuntu 22.10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3770,8 +3847,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ubuntu.png
-	lyxscale 50
+	filename kde.png
+	lyxscale 41
 	scale 22
 
 \end_inset
@@ -3800,7 +3877,7 @@ faLinux
 \begin_inset space ~
 \end_inset
 
-Unity en Ubuntu 22.10
+KDE Plasma
 \end_layout
 
 \end_inset
@@ -8071,6 +8148,19 @@ man
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar configuracion de man en español
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 El comando 
 \family typewriter
 man
@@ -8962,6 +9052,19 @@ El comando
 history
 \family default
  no es un programa de usuario, sino una funcionalidad que provee Bash.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Aclarar que el SO no lo hace.
 \end_layout
 
 \end_inset
@@ -20464,7 +20567,7 @@ GNU
 \end_layout
 
 \begin_layout Section
-Usuarios y grupos
+Usuarios, grupos y permisos
 \end_layout
 
 \begin_layout Subsection
@@ -26321,6 +26424,416 @@ Escriba un comando genere un archivo con todas las palabras que se encuentran
 \end_layout
 
 \begin_layout Section
+Compresión y backup
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+tar
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tar
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+El término 
+\begin_inset Quotes fld
+\end_inset
+
+tar
+\begin_inset Quotes frd
+\end_inset
+
+ proviene de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+tape archiver
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+, ya que originalmente se usaba para archivar en cintas magnética
+\end_layout
+
+\end_inset
+
+ utiliza para empaquetar y desempaquetar archivos y directorios en un solo
+ archivo.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tar [opciones] [archivos] -f archivo_tar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Crea un nuevo archivo tar.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Agrega archivos al final de un archivo 
+\family typewriter
+tar
+\family default
+ existente.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Agrega archivos nuevos a un archivo 
+\family typewriter
+tar
+\family default
+ existente.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-x
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Extrae los archivos de un archivo 
+\family typewriter
+tar
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-t
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra el contenido del archivo 
+\family typewriter
+tar
+\family default
+.
+\end_layout
+
+\begin_layout Example
+Usemos el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tar
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para empaquetar un backup de nuestra carpeta personal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tar -c ~ -f backup.tar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+gzip
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+gzip
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para un único archivo.
+ La compresión reduce el tamaño de los archivos, lo que es útil para ahorrar
+ espacio en disco y acelerar transferencias de archivos a través de la red.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+gzip [opciones] archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Esto restaurará el archivo original desde el archivo comprimido.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-k
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Esto crea un archivo comprimido pero conserva el archivo original.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+A la hora de comprimir, se agregara el sufijo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.gz
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ al nombre del archivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Comprimamos el archivo generado en el ejemplo anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+gzip backup.tar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+rsync
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+dd
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Otros comandos
 \end_layout
 
@@ -26710,22 +27223,6 @@ status open
 
 \family typewriter
 \emph off
-\strikeout on
-dd
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-rsync
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 sha256sum
 \end_layout
 
@@ -27102,20 +27599,6 @@ sha256sum: ATENCIÓN: 1 suma calculada NO coincidió
 
 \family typewriter
 \emph off
-tar
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-gzip
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 time
 \end_layout
 
@@ -27431,6 +27914,14 @@ watch
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+tmux
 \end_layout
 
 \begin_layout Subsection
