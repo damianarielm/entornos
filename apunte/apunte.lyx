@@ -1284,7 +1284,7 @@ status open
 \begin_inset Graphics
 	filename pc.jpg
 	lyxscale 20
-	scale 8
+	scale 5.8
 
 \end_inset
 
@@ -1446,7 +1446,7 @@ status collapsed
 
 \end_inset
 
- fue un sistema operativo educativo desarrollado en el año 1987 por 
+ fue un sistema operativo educativo desarrollado en 1987 por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -1457,11 +1457,10 @@ literal "true"
 
  
 \emph on
-Andrew S.
- Tanenbaum
+Andrew Tanenbaum
 \emph default
-, para enseñar principios de diseño y funcionamiento de sistemas operativos
- a estudiantes universitarios.
+, para enseñar diseño y funcionamiento de sistemas operativos a estudiantes
+ universitarios.
  Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
  Minix tenía un diseño similar al de UNIX, pero con un conjunto reducido
  de herramientas y utilidades.
@@ -1632,7 +1631,7 @@ status open
 \begin_inset Graphics
 	filename windows95.jpg
 	lyxscale 50
-	scale 27
+	scale 18
 
 \end_inset
 
@@ -1947,7 +1946,7 @@ status open
 \begin_inset Graphics
 	filename psu.jpg
 	lyxscale 20
-	scale 24
+	scale 23
 
 \end_inset
 
@@ -2522,6 +2521,111 @@ Multiusuario Un sistema operativo puede ser utilizado por varios usuarios
 \end_layout
 
 \begin_layout Section
+Núcleo
+\end_layout
+
+\begin_layout Standard
+El 
+\emph on
+kernel
+\emph default
+ (o núcleo) de un sistema operativo es la parte central y más fundamental
+ del mismo.
+ Es responsable de controlar el acceso a los recursos del hardware, gestionar
+ los procesos, la memoria y la entrada/salida, y proporcionar una interfaz
+ para que las aplicaciones interactúen con el hardware del sistema.
+\end_layout
+
+\begin_layout Standard
+Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+uname -r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[Environment]::OSVersion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El núcleo se ejecuta en modo privilegiado, lo que significa que tiene acceso
+ directo al hardware y puede ejecutar instrucciones que otros programas
+ no pueden.
+\end_layout
+
+\begin_layout Standard
+Para casi cualquier tarea las aplicaciones de usuario necesitan pedirle
+ permiso al kernel, a través de una instrucción denominada 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Llamada_al_sistema"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ llamada a sistema
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Cuando se produce una llamada a sistema el CPU deja de ejecutar el programa,
+ y comienza a ejecutar la funcionalidad del núcleo requerida, luego de la
+ cual se continua con la ejecución del programa.
+\end_layout
+
+\begin_layout Section
 Proceso de arranque
 \end_layout
 
@@ -2570,7 +2674,7 @@ status open
 \begin_inset Graphics
 	filename post.jpg
 	lyxscale 20
-	scale 13
+	scale 12
 
 \end_inset
 
@@ -2590,13 +2694,6 @@ Etapa de Autodiagnóstico
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -2688,7 +2785,7 @@ status open
 \begin_inset Graphics
 	filename grub.png
 	lyxscale 40
-	scale 24
+	scale 22
 
 \end_inset
 
@@ -2738,7 +2835,7 @@ status open
 \begin_inset Graphics
 	filename bootmgr.png
 	lyxscale 50
-	scale 65
+	scale 59
 
 \end_inset
 
@@ -2846,111 +2943,6 @@ init
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Núcleo
-\end_layout
-
-\begin_layout Standard
-El 
-\emph on
-kernel
-\emph default
- (o núcleo) de un sistema operativo es la parte central y más fundamental
- del mismo.
- Es responsable de controlar el acceso a los recursos del hardware, gestionar
- los procesos, la memoria y la entrada/salida, y proporcionar una interfaz
- para que las aplicaciones interactúen con el hardware del sistema.
-\end_layout
-
-\begin_layout Standard
-Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-uname -r
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PowerShell
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={solarized-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-[Environment]::OSVersion
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El núcleo se ejecuta en modo privilegiado, lo que significa que tiene acceso
- directo al hardware y puede ejecutar instrucciones que otros programas
- no pueden.
-\end_layout
-
-\begin_layout Standard
-Para casi cualquier tarea las aplicaciones de usuario necesitan pedirle
- permiso al kernel, a través de una instrucción denominada 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Llamada_al_sistema"
-literal "true"
-
-\end_inset
-
-
-\emph on
- llamada a sistema
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- Cuando se produce una llamada a sistema el CPU deja de ejecutar el programa,
- y comienza a ejecutar la funcionalidad del núcleo requerida, luego de la
- cual se continua con la ejecución del programa.
 \end_layout
 
 \begin_layout Section
@@ -3096,11 +3088,19 @@ Consola virtual en Ubuntu
 status open
 
 \begin_layout Plain Layout
-Aunque el entorno gráfico ha ganado popularidad, las consolas virtuales
- siguen siendo utilizadas por varias razones como el uso eficiente de recursos,
- acceso remoto, tareas de mantenimiento y recuperación.
+Aunque el entorno gráfico ha ganado popularidad frente a las interfaces
+ de texto, las consolas virtuales siguen siendo utilizadas por varias razones
+ como el uso eficiente de recursos, acceso remoto, tareas de mantenimiento
+ y recuperación.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3159,7 +3159,8 @@ status open
 
 \begin_layout Plain Layout
 En un emulador de terminal las combinaciones de teclas tradicionales para
- copiar y pegar no funcionan; debemos usar en su lugar 
+ copiar y pegar no funcionan.
+ Debemos usar en su lugar 
 \begin_inset ERT
 status open
 
@@ -3174,7 +3175,7 @@ faKeyboardO
 
 \end_inset
 
- Ctrl+Shift+C y 
+ Ctrl+Shift+C (para copiar) y 
 \begin_inset ERT
 status open
 
@@ -3189,7 +3190,7 @@ faKeyboardO
 
 \end_inset
 
- Ctrl+Shift+V.
+ Ctrl+Shift+V (para pegar).
 \end_layout
 
 \end_inset
@@ -3248,6 +3249,13 @@ Qterminal en Lubuntu
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Shell También llamado 
 \begin_inset Quotes fld
@@ -3268,7 +3276,6 @@ Para saber que interprete de linea de comandos se está utilizando se puede
  escribir el comando:
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -3299,8 +3306,8 @@ echo $SHELL
 status open
 
 \begin_layout Plain Layout
-Alguno de los interpretes de linea de comandos mas populares en Linux son:
- 
+Alguno de los interpretes de linea de comandos mas populares en los sistemas
+ Linux son: 
 \begin_inset Quotes fld
 \end_inset
 
@@ -3452,6 +3459,14 @@ PowerShell
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Procesos
 \end_layout
@@ -3459,13 +3474,6 @@ Procesos
 \begin_layout Standard
 Un proceso es una instancia de un programa en ejecución.
  Durante su ciclo de vida, atraviesa diferentes etapas las cuales incluyen:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -3539,12 +3547,6 @@ finalización
 \end_layout
 
 \begin_layout Standard
-Cabe destacar que el sistema operativo puede realizar transiciones entre
- los diferentes estados del proceso según las decisiones del planificador
- y los eventos que ocurren durante la ejecución.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -3552,7 +3554,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename etapas.png
-	scale 65
+	scale 64
 
 \end_inset
 
@@ -3575,6 +3577,12 @@ Etapas de un proceso
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que el sistema operativo puede realizar transiciones entre
+ los diferentes estados del proceso según las decisiones del planificador
+ y los eventos que ocurren durante la ejecución.
 \end_layout
 
 \begin_layout Section
@@ -3657,7 +3665,7 @@ status open
 \begin_inset Graphics
 	filename gui.png
 	lyxscale 50
-	scale 24
+	scale 22
 
 \end_inset
 
@@ -3693,13 +3701,6 @@ Capas de una GUI
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3771,7 +3772,7 @@ status open
 \begin_inset Graphics
 	filename ubuntu.png
 	lyxscale 50
-	scale 21
+	scale 22
 
 \end_inset
 
@@ -4074,7 +4075,7 @@ status open
 \begin_inset Graphics
 	filename distributions.png
 	lyxscale 30
-	scale 20
+	scale 19
 
 \end_inset
 
@@ -4995,7 +4996,40 @@ literal "true"
  cuales se puede usar, modificar y distribuir el software.
 \end_layout
 
-\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename libre.png
+	lyxscale 75
+	scale 29
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mapa conceptual del software libre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -5012,7 +5046,6 @@ El software libre suele estar disponible gratuitamente, sin embargo no es
 
 \end_layout
 
-\end_deeper
 \begin_layout Description
 IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas
  y características que se combinan en una única aplicación para hacer más
@@ -5035,20 +5068,6 @@ También puede tener herramientas de compilación y construcción, que permiten
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -5207,8 +5226,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename chr.png
-	lyxscale 35
-	scale 26
+	lyxscale 50
+	scale 22
 	BoundingBox 150bp 50bp 900bp 1000bp
 	clip
 
@@ -5239,7 +5258,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Description
 A Pista
@@ -5299,115 +5318,6 @@ Las arquitecturas de computadora modernas suelen utilizar además de una
  memoria de acceso directo, otra de acceso secuencial.
  Esto es puesto que pese a son mas lentas, son mas baratas y de mayor capacidad,
  lo que los hace ideales como medios de respaldo.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Particiones
-\end_layout
-
-\begin_layout Standard
-Una partición es una sección lógica de un disco duro u otro dispositivo
- de almacenamiento que se trata como si fuera un disco separado.
- Una partición se crea mediante la división del espacio de almacenamiento
- disponible en el dispositivo en secciones separadas.
- Cada partición debe tener su propio sistema de archivos y puede contener
- archivos y datos independientes de las demás particiones.
-\end_layout
-
-\begin_layout Standard
-Las particiones se utilizan para varios fines, como separar el sistema operativo
- y los archivos del usuario, o para crear diferentes áreas de almacenamiento
- para diferentes propósitos, como la música, los documentos y las imágenes.
- También se pueden utilizar para instalar varios sistemas operativos en
- una sola unidad de disco duro.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename particiones.png
-	lyxscale 40
-	scale 31
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Particionado de un dispositivo de almacenamiento
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para observar los discos y particiones de un sistema podemos usar el comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-lsblk
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PowerShell
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={solarized-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-Get-Partition
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5556,6 +5466,122 @@ NTFS
 \end_layout
 
 \begin_layout Section
+Particiones
+\end_layout
+
+\begin_layout Standard
+Una partición es una sección lógica de un disco duro u otro dispositivo
+ de almacenamiento que se trata como si fuera un disco separado.
+ Una partición se crea mediante la división del espacio de almacenamiento
+ disponible en el dispositivo en secciones separadas.
+ Cada partición debe tener su propio sistema de archivos y puede contener
+ archivos y datos independientes de las demás particiones.
+\end_layout
+
+\begin_layout Standard
+Las particiones se utilizan para varios fines, como separar el sistema operativo
+ y los archivos del usuario, o para crear diferentes áreas de almacenamiento
+ para diferentes propósitos, como la música, los documentos y las imágenes.
+ También se pueden utilizar para instalar varios sistemas operativos en
+ una sola unidad de disco duro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename particiones.png
+	lyxscale 40
+	scale 28
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Particionado de un dispositivo de almacenamiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para observar los discos y particiones de un sistema podemos usar el comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+lsblk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Get-Partition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Estructura de directorios
 \end_layout
 
@@ -5671,7 +5697,7 @@ status open
 \begin_inset Graphics
 	filename pcmanfm.png
 	lyxscale 40
-	scale 38
+	scale 40
 
 \end_inset
 
@@ -5757,6 +5783,13 @@ Explorador de archivos
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -27145,13 +27178,6 @@ time comando
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
