@@ -3397,7 +3397,11 @@ literal "true"
 
 \end_inset
 
- sh
+ 
+\family typewriter
+sh
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -26212,12 +26216,190 @@ A continuación, se presentan algunas de las opciones más importantes del
  proporcionado.
 \end_layout
 
+\begin_layout Example
+Podemos descargar la última versión de 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/WordPress"
+literal "true"
+
+\end_inset
+
+ Wordpress mediante el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wget https://wordpress.org/latest.zip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
 \color lightgray
 curl
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+curl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en Linux es una herramienta de línea de comandos que se utiliza para transferir
+ datos desde o hacia un servidor.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+curl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+curl [-o] URL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede utilizarse la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-o
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para descargar un archivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En la práctica, el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+curl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza con frecuencia para acceder a aplicaciones web y consultar APIs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consultemos el clima utilizando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+curl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+curl wttr.in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
