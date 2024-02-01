@@ -1,0 +1,34 @@
++ UNIDAD 0: HISTORIA Y ARQUITECTURA
+
+UNIDAD 1: INTRODUCCION
+- Runlevels
++ Terminal/Consola/Shell/Emulador de terminal
++ Interfaz grafica
++ Apagado
+
+UNIDAD 2: ENTORNO DE PROGRAMACION
+- Virtualizacion (Mas adelante)
+? Hypervisor (Mas adelante)
+
+UNIDAD 3: SISTEMA DE ARCHIVOS
+- Operaciones (syscalls)
+- Creacion de file systems
+- Permisos (Mas adelante)
+- I-nodo
+
+= UNIDAD 4: USUARIO Y GRUPOS
+= UNIDAD 5: SHELL SCRIPTING
++ UNIDAD 45: BASH
+
+- UNIDAD 6: SERVICIOS Y LOGGING
+
+UNIDAD 7: PROCESOS Y TAREAS PROGRAMADAS
+- Tareas programadas
+
+UNIDAD 8: CONTROL DE VERSIONES
+
+UNIDAD 9: COMPRESIÓN Y BACKUPS
+- Teoría
+- Backups
+
+UNIDAD 10: CONTENEDORES
