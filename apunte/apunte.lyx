@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-31 de enero de 2024.
+1 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -25447,14 +25447,6 @@ Las distribuciones de Linux pensadas para usuario de escritorio suelen iniciar
 \end_layout
 
 \begin_layout Subsection
-
-\family typewriter
-\emph off
-\color lightgray
-lsof
-\end_layout
-
-\begin_layout Subsection
 Ejercicios
 \end_layout
 
@@ -26034,6 +26026,70 @@ exit
 scp
 \end_layout
 
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+scp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una utilidad que se utiliza para copiar archivos entre equipos a través
+ del protocolo SSH.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+scp [-p puerto] origen usuario@destino:ruta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto copia el archivo 
+\family typewriter
+origen
+\family default
+ desde tu máquina local a la máquina 
+\family typewriter
+destino
+\family default
+ en la 
+\family typewriter
+ruta
+\family default
+ especificada.
+ Si no se especifica el puerto de la comunicación, se utilizará por defecto
+ el puerto 22.
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -26108,13 +26164,6 @@ wget [opciones] URL
 \begin_layout Standard
 A continuación, se presentan algunas de las opciones más importantes del
  comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
