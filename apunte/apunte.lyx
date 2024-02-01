@@ -17203,7 +17203,17 @@ lenguajes
 \emph on
 lenguaje
 \emph default
- es simplemente un conjunto de palabras.
+ es simplemente un conjunto de palabras formado por los caracteres de un
+ determinado 
+\emph on
+alfabeto
+\emph default
+.
+ A su vez, un alfabeto es simplemente un conjunto de 
+\emph on
+caracteres
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -17328,6 +17338,13 @@ El lenguaje definido por la expresión regular
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Union La unión de lenguajes permite definir un lenguaje con palabras de
  otros dos.
@@ -17865,7 +17882,30 @@ La clase
 status open
 
 \begin_layout Plain Layout
-El modulo 
+La página web 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://regexr.com/"
+literal "true"
+
+\end_inset
+
+ regexr
+\begin_inset Quotes frd
+\end_inset
+
+ puede utilizarse para experimentar, construir y comprender expresiones
+ regulares.
+ Es de mucha ayuda para comprender su comportamiento.
+\end_layout
+
+\begin_layout Plain Layout
+Además, el modulo 
 \begin_inset Quotes fld
 \end_inset
 
@@ -17995,13 +18035,6 @@ tr [opciones] CADENA1 [CADENA2]
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -18349,13 +18382,6 @@ grep
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para buscar la linea donde se encuentra definido el usuario 
 \begin_inset Quotes fld
@@ -18523,6 +18549,15 @@ status open
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+\color lightgray
+sed
+\end_layout
+
+\begin_layout Subsection
 Ejercicios
 \end_layout
 
@@ -18662,13 +18697,6 @@ head
 
 \begin_layout Standard
 \begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -18966,6 +18994,13 @@ diff
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -27005,19 +27040,19 @@ Algunas opciones comunes son:
 status open
 
 \begin_layout Plain Layout
-A la hora de comprimir, se agregara el sufijo 
+No debe confundirse esta herramienta con el formato 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
-.gz
+zip
 \family default
 
 \begin_inset Quotes frd
 \end_inset
 
- al nombre del archivo.
+, con el cual no es compatible.
 \end_layout
 
 \end_inset
@@ -27058,6 +27093,7 @@ gzip backup.tar
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
 rsync
 \end_layout
@@ -27066,6 +27102,7 @@ rsync
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
 dd
 \end_layout
@@ -28006,6 +28043,7 @@ sys 0m0,002s
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
 tldr
 \end_layout
@@ -28179,6 +28217,25 @@ watch
 
 \family typewriter
 \emph off
+\strikeout on
+\color lightgray
+xclip
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+\color lightgray
+xargs
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
 \color lightgray
 tmux
 \end_layout
@@ -28187,6 +28244,7 @@ tmux
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
 ranger
 \end_layout
@@ -28307,6 +28365,18 @@ tail -f
 
 .
  Proponga otra forma de lograrlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Haga una lista de todos los archivos del directorio de trabajo actual que
+ estén repetidos.
 \end_layout
 
 \begin_layout Chapter
@@ -31358,6 +31428,7 @@ esac
 \begin_layout Subsection
 
 \emph off
+\strikeout on
 \color lightgray
 select
 \end_layout
@@ -34376,16 +34447,29 @@ index e69de29..764df4e 100644
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
-blame
+reset
 \end_layout
 
 \begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Investigue para que sirve el comando 
+\begin_inset Quotes fld
+\end_inset
+
 
 \family typewriter
-\emph off
-\color lightgray
-reset
+git blame
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -35639,6 +35723,7 @@ Primer commit.
 \begin_layout Subsection
 
 \emph off
+\strikeout on
 \color lightgray
 Fusión de tres vías
 \end_layout
@@ -35647,6 +35732,7 @@ Fusión de tres vías
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
 rebase
 \end_layout
@@ -37044,6 +37130,7 @@ git switch
 \begin_layout Subsection
 
 \emph off
+\strikeout on
 \color lightgray
 Fork
 \end_layout
@@ -37051,6 +37138,7 @@ Fork
 \begin_layout Subsection
 
 \emph off
+\strikeout on
 \color lightgray
 Pull request
 \end_layout
@@ -37058,6 +37146,7 @@ Pull request
 \begin_layout Subsection
 
 \emph off
+\strikeout on
 \color lightgray
 LFS
 \end_layout
