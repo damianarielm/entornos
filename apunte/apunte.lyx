@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-1 de febrero de 2024.
+2 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -127,6 +127,27 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aquellos temas señalados en color 
+\color gray
+gris
+\color inherit
+, no serán evaluados 
+\emph on
+durante los exámenes
+\emph default
+.
+\end_layout
 
 \end_inset
 
@@ -1997,14 +2018,15 @@ literal "true"
 \end_inset
 
  PSU (Power Supply Unit) o fuente de alimentación se encarga de convertir
- la corriente eléctrica de la toma de corriente en la energía eléctrica
- necesaria para alimentar los componentes internos de la computadora.
+ la corriente que recibe de la toma eléctrica en los diferentes voltajes
+ necesarios para alimentar los componentes internos de la computadora.
 \end_layout
 
 \begin_layout Standard
-Esta recibe la corriente eléctrica de la toma de corriente a través del
- cable de alimentación y la convierte en diferentes voltajes que son suministrad
-os a los componentes de la computadora.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2093,8 +2115,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename cpu.jpg
-	lyxscale 20
-	scale 25
+	lyxscale 30
+	scale 22
 
 \end_inset
 
@@ -2290,8 +2312,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename jerarquia.png
-	lyxscale 60
-	scale 60
+	lyxscale 70
+	scale 49
 
 \end_inset
 
@@ -2416,8 +2438,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename gpu.jpg
-	lyxscale 20
-	scale 28
+	lyxscale 30
+	scale 35
 
 \end_inset
 
@@ -17034,7 +17056,6 @@ imagen: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300,
 
 \family typewriter
 \emph off
-\color lightgray
 cut
 \end_layout
 
@@ -17188,7 +17209,6 @@ cut -d : -f 7 /etc/passwd
 \begin_layout Subsection
 
 \emph off
-\color lightgray
 Expresiones regulares
 \end_layout
 
@@ -17952,7 +17972,6 @@ pip install exrex
 
 \family typewriter
 \emph off
-\color lightgray
 tr
 \end_layout
 
@@ -24439,8 +24458,14 @@ wait [pid...]
 
 \end_layout
 
+\begin_layout Standard
+Si no se especifica un ID de proceso, se esperará hasta que todos los procesos
+ hijos terminen.
+\end_layout
+
 \begin_layout Example
-Veamos como ejecutar un proceso en segundo plano y esperar a que este termine:
+Podemos descargar simultáneamente varios archivos y proceder una vez que
+ las descargas finalicen:
 \end_layout
 
 \begin_layout Standard
@@ -24455,12 +24480,17 @@ status open
 
 \begin_layout Plain Layout
 
-sleep 10 &
+wget -q http://ipv4.download.thinkbroadband.com/20MB.zip &
 \end_layout
 
 \begin_layout Plain Layout
 
-wait && echo Fin
+wget -q http://speedtest.ftp.otenet.gr/files/test10Mb.db &
+\end_layout
+
+\begin_layout Plain Layout
+
+wait && echo Descargas finalizadas.
 \end_layout
 
 \end_inset
@@ -25744,6 +25774,8 @@ uname
 \end_layout
 
 \begin_layout Section
+
+\color lightgray
 Internet
 \end_layout
 
@@ -25751,6 +25783,7 @@ Internet
 
 \family typewriter
 \emph off
+\color lightgray
 ping
 \end_layout
 
@@ -25932,6 +25965,7 @@ PING google.com (142.251.133.78) 56(84) bytes of data.
 
 \family typewriter
 \emph off
+\color lightgray
 ssh
 \end_layout
 
@@ -26133,6 +26167,7 @@ ruta
 
 \family typewriter
 \emph off
+\color lightgray
 wget
 \end_layout
 
@@ -26396,6 +26431,23 @@ curl
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://github.com/chubin/awesome-console-services
+\end_layout
+
+\begin_layout Plain Layout
+https://github.com/public-apis/public-apis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Consultemos el clima utilizando 
 \begin_inset Quotes fld
@@ -26437,10 +26489,70 @@ curl wttr.in
 
 \end_layout
 
+\begin_layout Example
+También podemos buscar información sobre nuestro ISP:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+curl ipinfo.io
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Otro servicio interesante nos permite codificar información en un código
+ QR:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+curl qrenco.de/palabra
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
 \emph off
+\color lightgray
 w3m
 \end_layout
 
@@ -26708,6 +26820,7 @@ q: Salir del programa.
 \begin_layout Subsection
 
 \emph off
+\color lightgray
 Ejercicios
 \end_layout
 
@@ -26998,13 +27111,6 @@ gzip [opciones] archivo
 Algunas opciones comunes son:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -27112,6 +27218,42 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
+Investigue el uso de los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+zip
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+unzip
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Puede que sea necesario instalarlos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 \begin_inset ERT
 status open
 
@@ -27127,6 +27269,55 @@ faExclamationTriangle
 \end_inset
 
 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+ 
+\end_layout
+
+\end_inset
+
+ Estudie el concepto de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Bomba_zip"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+bomba zip
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En una máquina virtual aparte, descárguela y descomprímala.
 \end_layout
 
 \begin_layout Section
@@ -28379,6 +28570,21 @@ Haga una lista de todos los archivos del directorio de trabajo actual que
  estén repetidos.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Configure 
+\family typewriter
+bash
+\family default
+ para que cada vez que se cambie de directorio, cuente un chiste.
+\end_layout
+
 \begin_layout Chapter
 Shell scripting
 \end_layout
@@ -28868,7 +29074,47 @@ Escriba un programa que cierre el emulador de terminal.
 \end_layout
 
 \begin_layout Exercise
-Escriba un programa llamado 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+ Escriba un programa llamado 
 \begin_inset Quotes fld
 \end_inset
 
@@ -29805,6 +30051,8 @@ status open
 \begin_layout Subsection
 
 \family typewriter
+\emph off
+\color lightgray
 shift
 \end_layout
 
@@ -30156,7 +30404,47 @@ Escriba un script que reciba como argumentos un archivo y una suma de verificaci
 \end_layout
 
 \begin_layout Exercise
-Escriba un programa llamado 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+ Escriba un programa llamado 
 \begin_inset Quotes fld
 \end_inset
 
@@ -37152,38 +37440,58 @@ LFS
 \end_layout
 
 \begin_layout Chapter
+
+\strikeout on
 Contenedores
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Simulación
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Emulación
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Virtualización
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Contenedores
 \end_layout
 
 \begin_layout Chapter
+
+\strikeout on
 Otros conceptos
 \end_layout
 
 \begin_layout Section
+
+\family typewriter
+\strikeout on
 venv
 \end_layout
 
 \begin_layout Section
+
+\family typewriter
+\strikeout on
 chroot
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Colab
 \end_layout
 
