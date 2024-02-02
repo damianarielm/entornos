@@ -15174,13 +15174,25 @@ pushd
 \begin_inset Quotes frd
 \end_inset
 
- y 
+, 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
 popd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+dirs
 \family default
 
 \begin_inset Quotes frd
@@ -17110,13 +17122,6 @@ cut opciones archivo
 
 \begin_layout Standard
 Algunas de las opciones más comunes son las siguientes:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -19173,6 +19178,41 @@ grep
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para consultar que para que sirve el programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+nl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Secuenciación, redirección y tuberías
 \end_layout
@@ -19747,6 +19787,14 @@ La salida de error en sistemas Linux es una salida de información que se
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para escribir los mensajes de error de 
 \begin_inset Quotes fld
@@ -19763,6 +19811,7 @@ mkdir
  en un archivo usamos el siguiente comando:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -20237,6 +20286,13 @@ tee
  un archivo y al mismo tiempo visualizarla en la pantalla.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
