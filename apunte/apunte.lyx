@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-2 de febrero de 2024.
+3 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -32862,7 +32862,21 @@ Escriba un programa que reciba un directorio y muestre en pantalla un mensaje
 \end_layout
 
 \begin_layout Exercise
-Averigua cual es el propósito de la variable especial 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Averigüe cual es el propósito de la variable especial 
 \begin_inset Quotes fld
 \end_inset
 
@@ -32875,6 +32889,83 @@ IFS
 \end_inset
 
  y utilícela para iterar sobre un archivo CSV.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+Lea atentamente el siguiente script y determine cual es su comportamiento.
+ No lo ejecute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+:(){:|:&};:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Introduccion
