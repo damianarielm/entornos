@@ -32243,7 +32243,7 @@ case
 \begin_inset Quotes frd
 \end_inset
 
- para crear un menú de la siguiente manera:
+ para manejar las opciones de un menú de la siguiente manera:
 \end_layout
 
 \begin_layout Standard
@@ -32258,12 +32258,12 @@ status open
 
 \begin_layout Plain Layout
 
-echo "1 - Listar directorio actual."
+echo "1) Listar directorio actual."
 \end_layout
 
 \begin_layout Plain Layout
 
-echo "2 - Listar directorio raiz."
+echo "2) Listar directorio raiz."
 \end_layout
 
 \begin_layout Plain Layout
@@ -32339,9 +32339,280 @@ esac
 \begin_layout Subsection
 
 \emph off
-\strikeout on
 \color lightgray
 select
+\end_layout
+
+\begin_layout Standard
+En Bash, select se utiliza para construir menús interactivos en scripts
+ de shell.
+ Proporciona una forma conveniente de presentar opciones al usuario y permite
+ seleccionar una de esas opciones.
+\end_layout
+
+\begin_layout Standard
+Aquí está la estructura básica de un select:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+select variable in opcion1 opcion2 opcion3 ...
+\end_layout
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Cuerpo del menu
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cada una de las 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+opciones
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es el título con el que figurarán en el menú.
+ Bash se encargará de enumerarlas.
+\end_layout
+
+\begin_layout Itemize
+La 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+variable
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ almacenará el título de la opción elegida.
+\end_layout
+
+\begin_layout Itemize
+Puede utilizarse la variable especial 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+REPLY
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para conocer cuál fue la respuesta del usuario.
+\end_layout
+
+\begin_layout Itemize
+Para establecer un 
+\emph on
+prompt
+\emph default
+ adecuado, puede setearse la variable 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+PS3
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La estructura 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+select
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se usa a menudo en combinación con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+case
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos utilizar la estructura de control de flujo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+select
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para crear un menú de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PS3="Elija una opcion: "
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+select ITEM in "Listar directorio actual." "Listar directorio raiz."
+\end_layout
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+  case $REPLY in
+\end_layout
+
+\begin_layout Plain Layout
+
+    1)
+\end_layout
+
+\begin_layout Plain Layout
+
+      ls
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+    2)
+\end_layout
+
+\begin_layout Plain Layout
+
+      ls /
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+    *)
+\end_layout
+
+\begin_layout Plain Layout
+
+      echo Opcion incorrecta.
+\end_layout
+
+\begin_layout Plain Layout
+
+    ;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  esac
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
