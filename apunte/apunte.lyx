@@ -28631,7 +28631,8 @@ Configure
 \family typewriter
 bash
 \family default
- para que cada vez que se cambie de directorio, cuente un chiste.
+ para que cada vez que se cambie de directorio, anuncie desde donde se produce
+ el cambio y hacia a dónde.
 \end_layout
 
 \begin_layout Chapter
@@ -30493,7 +30494,7 @@ faExclamationTriangle
 
 \end_inset
 
- Escriba un programa llamado 
+Escriba un programa llamado 
 \begin_inset Quotes fld
 \end_inset
 
@@ -30538,32 +30539,6 @@ status open
 faExclamationTriangle
 \backslash
 ;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faExclamationTriangle
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios que comprometen la seguridad del equipo.
- Tome las precauciones necesarias.
 \end_layout
 
 \end_inset
@@ -34860,6 +34835,29 @@ git blame
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Investigue para que sirve el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+git show
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Trabajando con ramas
 \end_layout
@@ -35071,6 +35069,13 @@ status open
 master
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -35351,6 +35356,13 @@ nueva
 \end_inset
 
  rama.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -35848,6 +35860,13 @@ En el proceso de fusión, Git intenta combinar automáticamente los cambios.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Incorporemos en nuestra rama actual, el contenido de nuestro archivo de
  la rama 
@@ -36192,13 +36211,6 @@ git remote
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Aquí está la sintaxis general del comando 
 \begin_inset listings
 lstparams "language=bash"
@@ -36398,6 +36410,13 @@ git push
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Aquí está la sintaxis general del comando:
 \end_layout
 
@@ -36421,13 +36440,6 @@ git push [-u remoto rama]
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -36980,13 +36992,6 @@ te con tu trabajo actual.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Creemos una última confirmación desde Gitlab y observemos el estado del
  repositorio:
@@ -37409,13 +37414,6 @@ git clone ruta [directorio] [--depth numero]
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
