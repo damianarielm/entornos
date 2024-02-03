@@ -30547,43 +30547,216 @@ Haga un script que impida el uso de la terminal.
 \end_layout
 
 \begin_layout Section
-Encomillados
+Encomillados y escapes
 \end_layout
 
 \begin_layout Standard
-En Bash, existen varios tipos de encomillado que se utilizan para definir
+En Bash, existen varios tipos de encomillados que se utilizan para definir
  cadenas de caracteres.
  Cada tipo de encomillado tiene un propósito específico y afecta cómo se
  interpreta y se expande el contenido de la cadena.
 \end_layout
 
-\begin_layout Description
-Comillas
-\begin_inset space ~
-\end_inset
+\begin_layout Subsection
+Carácter de escape
+\end_layout
 
-simples
-\begin_inset space ~
-\end_inset
-
-
+\begin_layout Standard
+Un carácter de escape es un carácter especial que se utiliza para cambiar
+ el significado normal de otro carácter.
+ Estos caracteres de escape se representan con una barra invertida 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
-''
+
+\backslash
+
 \family default
 
 \begin_inset Quotes frd
 \end_inset
 
-: Preservan el texto literal, lo que significa que todo el contenido entre
+ seguida de otro carácter.
+ 
+\end_layout
+
+\begin_layout Example
+Si tienes un nombre de archivo o directorio que contiene espacios, puedes
+ usar un carácter de escape para que el shell lo interprete correctamente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo
+\backslash
+ con
+\backslash
+ espacios
+\end_layout
+
+\begin_layout Plain Layout
+
+ls -l
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+total 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+-rw-r--r-- 1 entorno wheel 0 feb 3 15:54 'archivo con espacios'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si no se hubieran utilizado los caracteres de escape, se hubieran creado
+ tres archivos, en vez de uno.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos omitir el significado tradicional de algunos caracteres especiales
+ de bash utilizando caracteres de escape:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 
+\backslash
+$USER
+\end_layout
+
+\begin_layout Plain Layout
+
+echo 
+\backslash
+*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+$USER
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comillas simples
+\end_layout
+
+\begin_layout Standard
+Las comillas simples (
+\family typewriter
+''
+\family default
+) preservan el texto literal, lo que significa que todo el contenido entre
  las comillas simples se trata como texto sin expandir variables ni caracteres
  especiales.
 \end_layout
 
-\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las comillas simples preservan los espacios.
+ Esto quiere decir que si escribimos 
+\family typewriter
+'1 2 3'
+\family default
+, bash lo interpretara como una sola cadena y no como tres cadenas diferentes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Si escribimos la variable especial 
 \family typewriter
@@ -30592,6 +30765,7 @@ $USER
  entre comillas simples, el shell no expandirá su significado:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -30633,39 +30807,16 @@ Hola $USER.
 \end_layout
 
 \end_deeper
-\begin_layout Description
-Comillas
-\begin_inset space ~
-\end_inset
-
-dobles
-\begin_inset space ~
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-""
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-: Permiten la expansión de variables y caracteres especiales dentro de la
- cadena.
- Las variables entre comillas dobles se expanden y su valor se incluye en
- la cadena resultante.
- También se pueden utilizar secuencias de escape para incluir caracteres
- especiales.
 \end_layout
 
-\begin_deeper
 \begin_layout Example
-El comando anterior tiene un comportamiento diferente si usamos comillas
- dobles en vez de simples:
+Observemos que sucede si queremos crear un archivo con espacios en su nombre,
+ sin usar encomillados:
 \end_layout
 
 \begin_layout Standard
@@ -30680,7 +30831,190 @@ status open
 
 \begin_layout Plain Layout
 
-echo 'Hola $USER'.
+touch archivo con espacios
+\end_layout
+
+\begin_layout Plain Layout
+
+ls -l
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+total 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 entorno wheel 0 feb 3 15:26 archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 entorno wheel 0 feb 3 15:26 con
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1 entorno wheel 0 feb 3 15:26 espacios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En cambio, si agregamos comillas simples, logramos nuestro objetivo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm archivo con espacios
+\end_layout
+
+\begin_layout Plain Layout
+
+touch 'archivo con espacios'
+\end_layout
+
+\begin_layout Plain Layout
+
+ls -l
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+total 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+-rw-r--r-- 1 damian wheel 0 feb 3 15:28 'archivo con espacios'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En este ejemplo, las comillas simples 
+\emph on
+no
+\emph default
+ forman parte del nombre del archivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comillas dobles
+\end_layout
+
+\begin_layout Standard
+Las comillas dobles (
+\family typewriter
+"")
+\family default
+ permiten la expansión de variables y caracteres especiales dentro de la
+ cadena.
+ Las variables entre comillas dobles se expanden y su valor se incluye en
+ la cadena resultante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Al igual que las comillas simples, las dobles también preservan espacios.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Observemos como se expanden las variables aún estando entre comillas dobles:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 
+\begin_inset Quotes fld
+\end_inset
+
+Hola $USER
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -30709,34 +31043,182 @@ Hola alumno.
 \end_layout
 
 \end_deeper
-\begin_layout Description
-Comillas
-\begin_inset space ~
-\end_inset
-
-invertidas
-\begin_inset space ~
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
 
+\end_layout
+
+\begin_layout Example
+Podemos usar algunos caracteres especiales dentro de comillas dobles:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch 
 \begin_inset Quotes fld
 \end_inset
 
-
-\family typewriter
-``
-\family default
-
+archivo con 'comillas simples'
 \begin_inset Quotes frd
 \end_inset
 
-: Permiten la ejecución de comandos dentro de la cadena y capturan la salida
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\begin_inset Quotes qld
+\end_inset
+
+archivo con 'comillas simples'
+\begin_inset Quotes qrd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En este ejemplo, las comillas simples 
+\emph on
+forman
+\emph default
+ parte del nombre del archivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Encomillado ANSI-C
+\end_layout
+
+\begin_layout Standard
+El encomillado ANSI-C (
+\family typewriter
+$''
+\family default
+) es una forma de encomillado especial en Bash que permite la interpretación
+ de ciertos caracteres de escape en el estilo del lenguaje de programación
+ C.
+ 
+\end_layout
+
+\begin_layout Example
+Podemos usar algunos caracteres especiales dentro del encomillado ANSI-C:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo $'uno
+\backslash
+ndos
+\backslash
+ttres'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+uno
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+dos
+\begin_inset space \qquad{}
+\end_inset
+
+tres
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comillas invertidas
+\end_layout
+
+\begin_layout Standard
+Las comillas invertidas (
+\family typewriter
+``
+\family default
+) permiten la ejecución de comandos dentro de la cadena y capturan la salida
  de esos comandos.
  El comando dentro de las comillas invertidas se ejecuta y su salida estándar
  se sustituye en la cadena resultante.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -30763,20 +31245,52 @@ $(comando)
 \end_layout
 
 \begin_layout Example
-Para crear una carpeta con el nombre del mes actual podemos aprovechar el
- comando 
-\begin_inset Quotes fld
+Observemos la salida del siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+date +%B
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
 
 \family typewriter
-date
-\family default
+febrero
+\end_layout
 
-\begin_inset Quotes frd
 \end_inset
 
-:
+
+\end_layout
+
+\begin_layout Standard
+Para crear una carpeta con el nombre del mes actual podemos aprovechar las
+ comillas invertidas:
 \end_layout
 
 \begin_layout Standard
@@ -30804,29 +31318,12 @@ mkdir `date +%B`
 
 \end_layout
 
-\end_deeper
-\begin_layout Description
-Expresiones
-\begin_inset space ~
-\end_inset
+\begin_layout Subsection
+Expresiones aritméticas
+\end_layout
 
-aritméticas
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-$((EXPRESION))
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-: En Bash, se puede evaluar expresiones aritméticas utilizando la expansión
+\begin_layout Standard
+En Bash, se puede evaluar expresiones aritméticas utilizando la expansión
  de comandos 
 \begin_inset Quotes fld
 \end_inset
@@ -30840,13 +31337,8 @@ $((EXPRESION))
 \end_inset
 
 .
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
-\begin_deeper
 \begin_layout Example
 Podemos usar las expresiones aritméticas de bash en vez de utilizar el comando
  
@@ -30864,6 +31356,7 @@ bc
 :
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Bash
 status open
@@ -30905,6 +31398,61 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Considere la salida del siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+'a'$'
+\backslash
+n''b'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Cuál es el nombre del archivo? Escriba un comando para crearlo y luego
+ bórrelo.
+\end_layout
+
 \begin_layout Section
 Control de flujo
 \end_layout
@@ -37584,6 +38132,7 @@ venv
 
 \family typewriter
 \strikeout on
+\color lightgray
 chroot
 \end_layout
 
