@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-3 de febrero de 2024.
+4 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -20186,6 +20186,7 @@ cat archivo | grep palabra | wc -l
 
 \family typewriter
 \emph off
+\strikeout on
 \color lightgray
 tee
 \end_layout
@@ -25192,6 +25193,7 @@ Esta información también puede obtenerse leyendo el archivo
 
 \family typewriter
 \emph off
+\color lightgray
 loadkeys
 \end_layout
 
@@ -25301,6 +25303,15 @@ loadkeys es
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+\color lightgray
+setfont
 \end_layout
 
 \begin_layout Subsection
@@ -27255,9 +27266,166 @@ gzip backup.tar
 
 \family typewriter
 \emph off
-\strikeout on
 \color lightgray
 rsync
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rsync
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta de línea de comandos que se utiliza para sincronizar
+ y transferir archivos entre directorios de manera eficiente, localmente
+ o entre máquinas remotas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rsync [opciones] origen destino
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas de las opciones más comunes:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Copia los directorios de forma recursiva.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-v
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Proporciona una salida detallada, mostrando los archivos que se están
+ copiando.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Se utiliza para realizar una simulación o prueba de la sincronización,
+ sin realizar cambios reales en los archivos de destino.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-z
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Comprime los datos durante la transferencia para ahorrar ancho de banda.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Una de las ventajas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rsync
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ sobre 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cp
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es que solo copia aquellos archivos que no se encuentren en el destino,
+ o hayan sido modificados.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -29059,6 +29227,19 @@ $! Almacena el PID del último proceso en segundo plano que se ejecutó.
 \begin_layout Description
 $* Contiene todos los argumentos pasados al script o comando como una sola
  cadena.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre prompts y bashrc
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
