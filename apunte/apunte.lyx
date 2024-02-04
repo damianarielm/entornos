@@ -27572,11 +27572,10 @@ alias
 \emph on
 alias
 \emph default
-, es decir, atajos o nombres alternativos para los comandos que utilizas
- con frecuencia.
- Un alias es una forma de asignar una cadena de texto a un comando o conjunto
- de comandos, lo que te permite ejecutarlos rápidamente utilizando el alias
- en lugar de tener que escribir el comando completo.
+.
+ Un alias es una forma de asignar una cadena de texto a un comando, lo que
+ te permite ejecutarlos rápidamente utilizando el alias en lugar de tener
+ que escribir todo el comando.
 \end_layout
 
 \begin_layout Standard
@@ -27721,13 +27720,6 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -28625,9 +28617,164 @@ watch
 
 \family typewriter
 \emph off
-\strikeout on
 \color lightgray
 xclip
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+xclip
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una herramienta que se utiliza para manejar el contenido del portapapeles,
+ permitiendo la manipulación de texto desde la línea de comandos.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+xclip
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+xclip [opciones]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas opciones comunes son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-o
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Imprime en la salida estándar el contenido actual del portapapeles.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-se
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Permite copiar y pegar utilizando una selección específica (
+\begin_inset Quotes fld
+\end_inset
+
+p
+\begin_inset Quotes frd
+\end_inset
+
+rimary o 
+\begin_inset Quotes fld
+\end_inset
+
+c
+\begin_inset Quotes frd
+\end_inset
+
+lipboard).
+\end_layout
+
+\begin_layout Standard
+Si no se especifica ninguna opción, se leerá desde la entrada estándar hacia
+ la selección primaria.
+\end_layout
+
+\begin_layout Standard
+En X Window existen tres 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://en.wikipedia.org/wiki/X_Window_selection"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+selecciones
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que permiten el intercambio de datos entre aplicaciones.
+ Estas selecciones se conocen como Primary, Secondary, y Clipboard:
+\end_layout
+
+\begin_layout Description
+Primary La selección primaria, es la selección que generalmente se activa
+ al seleccionar texto con el botón izquierdo del ratón.
+ Puedes pegar el contenido de la selección primaria usando el botón del
+ medio del ratón.
+\end_layout
+
+\begin_layout Description
+Secondary La selección secundaria es raramente utilizada y su activación
+ suele requerir acciones específicas de usuario o aplicaciones.
+\end_layout
+
+\begin_layout Description
+Clipboard También conocida simplemente como el portapapeles, es la selección
+ más comúnmente utilizada y es la que la mayoría de las aplicaciones usan
+ para copiar y pegar.
 \end_layout
 
 \begin_layout Subsection
