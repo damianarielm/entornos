@@ -28840,9 +28840,107 @@ echo texto | xclip
 
 \family typewriter
 \emph off
-\strikeout on
 \color lightgray
 xargs
+\end_layout
+
+\begin_layout Standard
+La función principal de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+xargs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es tomar líneas de texto de la entrada estándar y utilizarlas como argumentos
+ para ejecutar comandos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Su sintaxis es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+xargs [opciones] [comando [argumentos iniciales]]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunas Opciones Frecuentes: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-n
+\family default
+ 
+\emph on
+MÁXIMO
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Especifica el número máximo de argumentos.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-d
+\family default
+ 
+\emph on
+DELIMITADOR
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Esto utiliza 
+\emph on
+DELIMITADOR
+\emph default
+ en lugar del espacio en blanco para leer los argumentos de la entrada estandar.
 \end_layout
 
 \begin_layout Subsection
@@ -29007,6 +29105,41 @@ bash
 \family default
  para que cada vez que se cambie de directorio, anuncie desde donde se produce
  el cambio y hacia a dónde.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Proponga una forma de reemplazar la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-exec
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
