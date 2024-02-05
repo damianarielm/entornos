@@ -16665,15 +16665,6 @@ Puesto que el comando solo funciona con lineas duplicadas consecutivas,
 
 \family typewriter
 \emph off
-\strikeout on
-\color lightgray
-shuf
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
 strings
 \end_layout
 
@@ -16869,13 +16860,6 @@ Word Count
 
  se utiliza para contar el número de líneas, palabras y bytes en un archivo
  de texto.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -17091,13 +17075,6 @@ imagen: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300,
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 
 \family typewriter
@@ -17123,6 +17100,13 @@ cut
  Permite seleccionar una o varias columnas de texto de un archivo de entrada
  separado por delimitadores como espacios, tabulaciones o comas.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -17676,6 +17660,13 @@ El lenguaje definido por la expresión regular
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Anclas Las anclas son caracteres especiales que indican el inicio o el final
  de una cadena.
@@ -19051,6 +19042,41 @@ diff
 \end_layout
 
 \begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar el propósito y funcionamiento del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+shuff
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 \begin_inset ERT
 status open
 
@@ -19808,13 +19834,6 @@ La salida de error en sistemas Linux es una salida de información que se
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para escribir los mensajes de error de 
 \begin_inset Quotes fld
@@ -25717,6 +25736,18 @@ popd
 \begin_inset Quotes frd
 \end_inset
 
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+dirs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
  y 
 \begin_inset Quotes fld
 \end_inset
@@ -25731,6 +25762,43 @@ history
 
 .
  Explique lo que sucede.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Instale el paquete 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tldr
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y experimente su uso.
 \end_layout
 
 \begin_layout Standard
@@ -26204,6 +26272,13 @@ scp
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -26434,6 +26509,13 @@ curl
 
  en Linux es una herramienta de línea de comandos que se utiliza para transferir
  datos desde o hacia un servidor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -26695,6 +26777,13 @@ w3m URL
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Para navegar por la página se utilizan las siguientes teclas:
 \end_layout
 
@@ -26915,6 +27004,146 @@ Ejercicios
 Escriba un comando genere un archivo con todas las palabras que se encuentran
  en una URL.
  Asegúrese de que se guardan solo palabras formadas por caracteres alfabéticos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Instale el paquete 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+jq
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para procesar formato JSON, luego consulte una API para averiguar los principal
+es actores de su película favorita:
+\end_layout
+
+\begin_layout Enumerate
+Para consultar información sobre una película:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+curl -s https://search.imdbot.workers.dev/?q=PELICULA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Envíe la salida del comando anterior al programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+jq '.description'
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Puede agregar los siguientes argumentos para filtrar los resultados:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[0]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para quedarse con el primer resultado.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+
+\begin_inset Quotes qrd
+\end_inset
+
+.#ACTORS
+\begin_inset Quotes qrd
+\end_inset
+
+
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Para quedarse solo con los actores.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante encerrar todos los argumentos de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+jq
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ entre comillas simples.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -27198,6 +27427,13 @@ gzip [opciones] archivo
 Algunas opciones comunes son:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -27305,13 +27541,6 @@ rsync
  es una herramienta de línea de comandos que se utiliza para sincronizar
  y transferir archivos entre directorios de manera eficiente, localmente
  o entre máquinas remotas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -28151,6 +28380,13 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Creemos dos archivos y sus respectivas sumas de verificación:
 \end_layout
@@ -28464,15 +28700,6 @@ sys 0m0,002s
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-\color lightgray
-tldr
 \end_layout
 
 \begin_layout Subsection
@@ -28879,13 +29106,6 @@ xargs
 
  es tomar líneas de texto de la entrada estándar y utilizarlas como argumentos
  para ejecutar comandos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
