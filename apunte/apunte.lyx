@@ -29181,6 +29181,19 @@ Un script de Bash es un archivo de texto que contiene una serie de comandos
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hablar sobre bashrc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introducción
 \end_layout
@@ -29498,6 +29511,20 @@ En Bash, las variables son símbolos que se utilizan para almacenar valores,
  ejecución del programa.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Reemplazar las variables por su contenido es labor del shell y no de los
+ programas ni del sistema operativo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Variables locales
 \end_layout
@@ -29560,7 +29587,8 @@ La falta de espacios alrededor del operador
 \end_layout
 
 \begin_layout Standard
-Estas variables pueden ser referencias anteponiendo el símbolo 
+El contenido de estas variables puede ser referenciado anteponiendo el símbolo
+ 
 \begin_inset Quotes fld
 \end_inset
 
@@ -29694,11 +29722,23 @@ USER Almacena el nombre del usuario actualmente conectado.
 \end_layout
 
 \begin_layout Description
+HOSTNAME Almacena el nombre del equipo.
+\end_layout
+
+\begin_layout Description
 SHELL Contiene la ruta al intérprete de comandos actualmente utilizado.
 \end_layout
 
 \begin_layout Description
 PWD Almacena la ruta completa del directorio de trabajo actual.
+\end_layout
+
+\begin_layout Description
+OLDPWD Almacena la ruta del directorio de trabajo anterior.
+\end_layout
+
+\begin_layout Description
+PS1 Controla el formato del prompt de la línea de comandos.
 \end_layout
 
 \begin_layout Example
@@ -29829,19 +29869,6 @@ $! Almacena el PID del último proceso en segundo plano que se ejecutó.
 \begin_layout Description
 $* Contiene todos los argumentos pasados al script o comando como una sola
  cadena.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar información sobre prompts y bashrc
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -30015,6 +30042,80 @@ Papelera
  Finalmente si todo salió bien, debe leerse un mensaje de confirmación.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Explique en que contexto los siguientes comandos producen esta salida:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+VARIABLE = valor
+\end_layout
+
+\begin_layout Plain Layout
+
+echo $VARIABLE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola Mundo!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Investigue como manipular la variable de entorno PS1 para lograr que el
+ prompt del sistema solo muestre el directorio de trabajo actual junto con
+ un indicador 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+>
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Comandos
 \end_layout
@@ -30091,7 +30192,18 @@ Las
 \emph on
 EXPRESIONES
 \emph default
- del comando test admiten varios operadores, entre los cuales se destacan:
+ del comando 
+\family typewriter
+test
+\family default
+ admiten varios operadores, entre los cuales se destacan:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -30650,7 +30762,7 @@ Algunas opciones comunes que se pueden utilizar son:
 \begin_inset Quotes frd
 \end_inset
 
-: permite mostrar un mensaje o un prompt antes de leer la entrada del usuario.
+: permite mostrar un mensaje antes de leer la entrada del usuario.
  
 \end_layout
 
@@ -30766,7 +30878,7 @@ status open
 
 \begin_layout Plain Layout
 
-seq [s] INICIO FIN
+seq [-s] INICIO FINAL
 \end_layout
 
 \end_inset
@@ -30777,18 +30889,6 @@ seq [s] INICIO FIN
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-donde 
-\emph on
-INICIO
-\emph default
- es el número de inicio de la secuencia y 
-\emph on
-FIN
-\emph default
- es el número final de la secuencia.
 \end_layout
 
 \begin_layout Standard
@@ -30804,8 +30904,15 @@ seq
 \begin_inset Quotes frd
 \end_inset
 
- generará una secuencia de números desde el valor de inicio hasta el valor
- final, incrementando de uno en uno de manera predeterminada.
+ generará una secuencia de números desde el valor de 
+\emph on
+INICIO
+\emph default
+ hasta el valor 
+\emph on
+FINAL
+\emph default
+, incrementando de uno en uno de manera predeterminada.
  Los números generados se imprimirán en la salida estándar.
 \end_layout
 
@@ -30890,7 +30997,6 @@ shift
 \end_layout
 
 \begin_layout Standard
-El comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -30902,8 +31008,7 @@ shift
 \begin_inset Quotes frd
 \end_inset
 
- se utiliza para desplazar los argumentos de línea de comandos hacia la
- izquierda.
+ se utiliza para desplazar los argumentos de un comando hacia la izquierda.
  La sintaxis básica del comando 
 \begin_inset Quotes fld
 \end_inset
@@ -30987,8 +31092,8 @@ ente.
 status open
 
 \begin_layout Plain Layout
-Es especialmente útil cuando se trabaja con scripts que toman un número
- variable de argumentos y se necesita procesarlos de manera iterativa.
+Es muy útil cuando se trabaja con scripts que toman un número variable de
+ argumentos y se necesita procesarlos de manera iterativa.
 \end_layout
 
 \end_inset
@@ -31068,9 +31173,8 @@ export VARIABLE[=valor]
 status open
 
 \begin_layout Plain Layout
-Es importante tener en cuenta que las variables de entorno exportadas son
- heredadas por los procesos secundarios, pero no son visibles en el proceso
- padre o en otros procesos superiores.
+Las variables de entorno exportadas son heredadas por los procesos secundarios,
+ pero no son visibles en el proceso padre o en otros procesos superiores.
  Además, cuando se cierra una sesión de Bash, las variables de entorno exportada
 s se eliminan automáticamente.
 \end_layout
