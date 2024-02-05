@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-4 de febrero de 2024.
+5 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -4524,7 +4524,7 @@ Conceptos de programación
 \end_layout
 
 \begin_layout Section
-¿Qué es la programación?
+Introducción
 \end_layout
 
 \begin_layout Standard
@@ -16658,6 +16658,15 @@ Puesto que el comando solo funciona con lineas duplicadas consecutivas,
 
 \family typewriter
 \emph off
+\strikeout on
+\color lightgray
+shuf
+\end_layout
+
+\begin_layout Subsection
+
+\family typewriter
+\emph off
 strings
 \end_layout
 
@@ -16853,6 +16862,17 @@ Word Count
 
  se utiliza para contar el número de líneas, palabras y bytes en un archivo
  de texto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta es su sintaxis:
 \end_layout
 
 \begin_layout Standard
@@ -17059,6 +17079,13 @@ imagen: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300,
  segment length 16, progressive, precision 8, 739x688, components 3
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -17363,13 +17390,6 @@ El lenguaje definido por la expresión regular
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Description
 Union La unión de lenguajes permite definir un lenguaje con palabras de
  otros dos.
@@ -19023,13 +19043,6 @@ diff
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Exercise
 \begin_inset ERT
 status open
@@ -19056,7 +19069,7 @@ faStar
 \end_layout
 
 \begin_layout Enumerate
-Palabras compuestas exclusivamente por una cantidad par de letras 
+Palabras compuestas solamente por una cantidad par de letras 
 \begin_inset Formula $x$
 \end_inset
 
@@ -19064,7 +19077,7 @@ Palabras compuestas exclusivamente por una cantidad par de letras
 \end_layout
 
 \begin_layout Enumerate
-Palabras compuestas exclusivamente por una cantidad impar de letras 
+Palabras compuestas solamente por una cantidad impar de letras 
 \begin_inset Formula $x$
 \end_inset
 
@@ -29147,19 +29160,6 @@ Shell scripting
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Incluir información sobre comentarios y shebang.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Un script de Bash es un archivo de texto que contiene una serie de comandos
  de Bash.
  Dichos scripts se utilizan para automatizar tareas, realizar secuencias
@@ -29181,21 +29181,51 @@ Un script de Bash es un archivo de texto que contiene una serie de comandos
  
 \end_layout
 
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Subsection
+Comentarios
+\end_layout
+
 \begin_layout Standard
-Para ejecutar 
-\begin_inset Quotes fld
-\end_inset
+Los comentarios son líneas que los intérpretes ignoran durante la ejecución
+ de un script.
+ Sirven para agregar notas, explicaciones o desactivar temporalmente ciertas
+ líneas de código.
+ 
+\end_layout
 
-
+\begin_layout Standard
+Para hacer comentarios se utiliza el símbolo 
 \family typewriter
-programa.sh
+#
 \family default
+, el cual indica el inicio de un comentario.
+ Todo lo que sigue después de 
+\family typewriter
+#
+\family default
+ en esa línea es tratado como un comentario y no se ejecutará.
+\end_layout
 
-\begin_inset Quotes frd
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La sintaxis para comentarios también puede ser utilizada en la linea de
+ comandos.
+\end_layout
+
 \end_inset
 
-, basta como pasárselo como argumento al interprete de bash, o si tiene
- permiso de ejecución podemos simplemente escribir:
+
+\end_layout
+
+\begin_layout Example
+Veamos un ejemplo de comentarios en bash:
 \end_layout
 
 \begin_layout Standard
@@ -29210,7 +29240,240 @@ status open
 
 \begin_layout Plain Layout
 
-./programa.sh
+# Esto es un comentario de una sola línea.
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Hola mundo!" # Este comentario también es válido.
+\end_layout
+
+\begin_layout Plain Layout
+
+# echo "Hola mundo!"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola mundo!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejecución
+\end_layout
+
+\begin_layout Standard
+Ejecutar un script de Bash es un proceso bastante simple: basta como pasárselo
+ como argumento al interprete de bash.
+\end_layout
+
+\begin_layout Standard
+Si el programa tiene permiso de ejecución podemos ejecutarlo simplemente
+ antemponiendo los caracteres 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+./
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ seguido de su nombre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Shebang
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una convención en los scripts que indica que interprete debe utilizarse
+ para ejecutar el script.
+ Esta convención utiliza la secuencia de caracteres 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+#!
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ seguida de la ruta al ejecutable del intérprete y debe colocarse al principio
+ del archivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos crear y ejecutar un script de bash de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo echo Hola mundo! > script.sh
+\end_layout
+
+\begin_layout Plain Layout
+
+bash script.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola mundo!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Ejecutemos el script del ejemplo anterior dándole los permisos correspondientes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod +x script.sh
+\end_layout
+
+\begin_layout Plain Layout
+
+./script.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un script de python llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+script.py
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y dele permisos de ejecución.
+ Logre ejecutarlo con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+./script.py
 \end_layout
 
 \end_inset
@@ -39047,6 +39310,58 @@ status open
 
 \begin_layout Plain Layout
 Agregar configuracion de VM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Instalar Archlinux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Protocolo XKB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ownshell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Shellcheck
 \end_layout
 
 \end_inset
