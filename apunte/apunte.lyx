@@ -134,6 +134,13 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex Observacion
 status open
 
@@ -34974,7 +34981,7 @@ status open
 
 \begin_layout Plain Layout
 
-git add archivo
+git add [opciones] archivo
 \end_layout
 
 \end_inset
@@ -36617,6 +36624,41 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
+Investigue para que sirve la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+git add
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Investigue para que sirve el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -37657,13 +37699,6 @@ En el proceso de fusión, Git intenta combinar automáticamente los cambios.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Incorporemos en nuestra rama actual, el contenido de nuestro archivo de
  la rama 
@@ -37926,19 +37961,69 @@ Primer commit.
 
 \begin_layout Subsection
 
-\emph off
-\strikeout on
-\color lightgray
-Fusión de tres vías
-\end_layout
-
-\begin_layout Subsection
-
 \family typewriter
 \emph off
 \strikeout on
 \color lightgray
 rebase
+\end_layout
+
+\begin_layout Subsection
+
+\emph off
+\strikeout on
+\color lightgray
+Resolución de conflictos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre fusión de tres vías y resolución de conflictos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\emph off
+\strikeout on
+\color lightgray
+Flujos de trabajos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Gitflow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Investigue a que hace referencia el puntero 
+\begin_inset Quotes fld
+\end_inset
+
+HEAD~n
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -38204,13 +38289,6 @@ git push
  remoto.
  Esta acción actualiza el estado de la rama en el repositorio remoto con
  los cambios locales realizados.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
