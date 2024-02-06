@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-5 de febrero de 2024.
+6 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -14257,6 +14257,17 @@ ls
 \end_layout
 
 \begin_layout Exercise
+Haga una lista de los programas del sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Averigüe para que sirve el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -15505,7 +15516,7 @@ nano
 \end_inset
 
  es un programa interactivo.
- Esto quiere decir que después de ingresar el comando, se ingresa a un programa
+ Esto quiere decir que después de escribir el comando, se ingresa a un programa
  que espera mas entrada desde el teclado.
 \end_layout
 
@@ -15792,7 +15803,17 @@ more
 
  es una utilidad en línea de comandos que se utiliza para ver el contenido
  de un archivo de texto de manera paginada.
- La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -39747,6 +39768,32 @@ status open
 
 \begin_layout Plain Layout
 Agregar configuracion de VM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+xterm en Colab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Replit
 \end_layout
 
 \end_inset
