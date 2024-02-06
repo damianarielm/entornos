@@ -27103,11 +27103,11 @@ Puede agregar los siguientes argumentos para filtrar los resultados:
 
 
 \family typewriter
-
+.
 \begin_inset Quotes qrd
 \end_inset
 
-.#ACTORS
+#ACTORS
 \begin_inset Quotes qrd
 \end_inset
 
@@ -29189,7 +29189,7 @@ DELIMITADOR
 \emph off
 \strikeout on
 \color lightgray
-tmux
+screen
 \end_layout
 
 \begin_layout Subsection
@@ -29374,6 +29374,41 @@ Proponga una forma de reemplazar la opción
 
 \family typewriter
 find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Investigue para que sirven los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+script
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+scriptreplay
 \family default
 
 \begin_inset Quotes frd
