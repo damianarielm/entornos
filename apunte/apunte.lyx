@@ -30159,6 +30159,21 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
+Investigue cual es el uso de la variable 
+\family typewriter
+CDPATH
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Imprima la variable que muestra el PID actual, y verifique que sea idéntico
  al que reporta 
 \begin_inset Quotes fld
@@ -30381,7 +30396,7 @@ Hola Mundo!
 
 \end_layout
 
-\begin_layout Example
+\begin_layout Exercise
 Investigue como manipular la variable de entorno PS1 para lograr que el
  prompt del sistema solo muestre el directorio de trabajo actual junto con
  un indicador 
