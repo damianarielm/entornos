@@ -7,18 +7,22 @@ UNIDAD 1: INTRODUCCION
 + Apagado
 
 UNIDAD 2: ENTORNO DE PROGRAMACION
-- Virtualizacion (Mas adelante)
-? Hypervisor (Mas adelante)
 
 UNIDAD 3: SISTEMA DE ARCHIVOS
 - Operaciones (syscalls)
 - Creacion de file systems
-- Permisos (Mas adelante)
 - I-nodo
 
-= UNIDAD 4: USUARIO Y GRUPOS
-= UNIDAD 5: SHELL SCRIPTING
-+ UNIDAD 45: BASH
+UNIDAD 4: USUARIO Y GRUPOS
+- Permisos especiales
+
+UNIDAD 5: SHELL SCRIPTING
++ Internet
+- Until
+- Break
+- Continue
+- Awk
+- Sed
 
 - UNIDAD 6: SERVICIOS Y LOGGING
 
@@ -32,3 +36,8 @@ UNIDAD 9: COMPRESIÓN Y BACKUPS
 - Backups
 
 UNIDAD 10: CONTENEDORES
+
++ UNIDAD 11: OTROS CONCEPTOS
++ venv
++ chroot
++ Colab
