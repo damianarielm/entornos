@@ -7724,7 +7724,7 @@ echo Hola
 
 \begin_layout Plain Layout
 
-Mundo
+mundo
 \backslash
 
 \end_layout
@@ -7751,7 +7751,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-Hola Mundo!
+Hola mundo!
 \end_layout
 
 \end_inset
@@ -7964,7 +7964,7 @@ status open
 
 \begin_layout Plain Layout
 
-echo Hola Mundo!
+echo Hola mundo
 \end_layout
 
 \end_inset
@@ -7984,7 +7984,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-Hola Mundo!
+Hola mundo
 \end_layout
 
 \end_inset
@@ -8024,13 +8024,13 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-echo Hola Mundo!
+echo Hola mundo
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-Hola Mundo!
+Hola mundo
 \end_layout
 
 \end_inset
@@ -8054,12 +8054,12 @@ status open
 
 \begin_layout Plain Layout
 
-echo 1
+echo Linea 1
 \end_layout
 
 \begin_layout Plain Layout
 
-echo 2
+echo Linea 2
 \end_layout
 
 \end_inset
@@ -8079,11 +8079,13 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-1
+Linea 1
 \end_layout
 
 \begin_layout Plain Layout
-2
+
+\family typewriter
+Linea 2
 \end_layout
 
 \end_inset
@@ -8123,13 +8125,13 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-echo 1
+echo Linea 1
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-1
+Linea 1
 \end_layout
 
 \end_inset
@@ -8958,7 +8960,7 @@ echo -e
 
 Hola
 \backslash
-nmundo!
+nmundo
 \begin_inset Quotes frd
 \end_inset
 
@@ -8987,12 +8989,33 @@ status open
 
 \begin_layout Plain Layout
 
-echo Hola mundo!
+echo Hola`nmundo
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Hola
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+mundo
 \end_layout
 
 \end_inset
@@ -9249,6 +9272,78 @@ cal
 
 .
  Pruebe cada uno de ellos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Pruebe las siguientes combinaciones de teclas de edición de linea de comandos
+ y determine para que sirven: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+A, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+E, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+K, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Alt+D.
 \end_layout
 
 \begin_layout Section
