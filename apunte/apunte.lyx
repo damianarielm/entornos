@@ -32194,6 +32194,17 @@ or
 \end_layout
 
 \begin_layout Exercise
+Proponga una forma de incluir un script dentro de otro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Escriba un script que reciba como argumentos un archivo y una suma de verificaci
 ón, y muestre en la pantalla un mensaje indicando si dicho archivo tiene
  esa suma de verificación.
@@ -32498,13 +32509,6 @@ Las comillas simples preservan los espacios.
 , bash lo interpretara como una sola cadena y no como tres cadenas diferentes.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -34464,6 +34468,13 @@ $3
 \begin_layout Standard
 Para llamar a una función simplemente se escribe el nombre de la misma y
  a continuación sus argumentos separados por un espacio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
