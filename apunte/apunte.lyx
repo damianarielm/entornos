@@ -9343,7 +9343,22 @@ faKeyboardO
 
 \end_inset
 
-Alt+D.
+Alt+D y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+W.
 \end_layout
 
 \begin_layout Section
@@ -26317,55 +26332,19 @@ which
 
 
 \family typewriter
+history
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 cd
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-, 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-jobs
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-, 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-fg
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-, 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-bg
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-, 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-disown
 \family default
 
 \begin_inset Quotes frd
@@ -26407,13 +26386,97 @@ dirs
 \begin_inset Quotes frd
 \end_inset
 
- y 
+, 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
-history
+jobs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+disown
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+alias
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+unalias
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+source
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+export
 \family default
 
 \begin_inset Quotes frd
