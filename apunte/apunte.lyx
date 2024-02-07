@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-6 de febrero de 2024.
+7 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -20496,7 +20496,6 @@ cat archivo | grep palabra | wc -l
 
 \family typewriter
 \emph off
-\strikeout on
 \color lightgray
 tee
 \end_layout
@@ -20602,8 +20601,80 @@ tee
 
 \end_layout
 
+\begin_layout Example
+Podemos agregar contenido a muchos archivos usando el siguiente comando:
+\end_layout
+
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 'print(
+\begin_inset Quotes fld
+\end_inset
+
+Fin del programa.
+\begin_inset Quotes frd
+\end_inset
+
+)' | tee -a *.py
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Si necesitamos ejecutar un programa y al mismo tiempo guardar su salida
+ a modo de registro podemos usar el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tee
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+python entrenamiento.py | tee log.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -20994,6 +21065,53 @@ GNU
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+echo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tee
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para agregar contenido al comienzo de un archivo.
 \end_layout
 
 \begin_layout Chapter
@@ -40358,6 +40476,60 @@ status open
 
 \begin_layout Plain Layout
 Shellcheck
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Brian Ward - How Linux Works
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+William Shotts - The Linux Command Line (2nd edition)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Daniel J.
+ Barret - Efficient Linux at the Command Line
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Daniel J.
+ Barrett - Linux Pocket Guide (3rd edition)
 \end_layout
 
 \end_inset
