@@ -4,26 +4,6 @@
 
 # Entorno de Programación
 
-## Descripción
-
-La materia entornos de programación es una materia del primer cuatrimestre de
-la Tecnicatura Universitaria en Inteligencia Artificial.
-
-. . .
-
-Está planificada para una duracion aproximada de 25 clases. Para la comisión 2
-los horarios son:
-
-* Martes de 17:55 a 20:55hs (Aula 24 o Laboratorio del segundo piso).
-
-* Miercoles de 19:05 a 21:05hs (https://meet.google.com/jgw-ooyr-yya).
-
-. . .
-
-Es importante matricularse en el campus virtual de la FCEIA:
-
-* https://campusv.fceia.unr.edu.ar/course/view.php?id=392
-
 ## Docentes
 
 Los docentes a cargo de la comisión 2 son:
@@ -38,7 +18,27 @@ Los docentes a cargo de la comisión 2 son:
 
 . . .
 
-* Nahuel Roldan.
+* Nahuel Roldan (roldannahuelj@gmail.com).
+
+## Descripción
+
+La materia entornos de programación es una materia del primer cuatrimestre de
+la Tecnicatura Universitaria en Inteligencia Artificial.
+
+. . .
+
+Está planificada para una duracion aproximada de 23 clases. Para la comisión 2
+los horarios son:
+
+* Martes de 17:00 a 20:00hs (Aula 24 o Laboratorio del segundo piso).
+
+* Miercoles de 17:00 a 19:00hs (https://meet.google.com/jgw-ooyr-yya).
+
+. . .
+
+Es importante matricularse en el campus virtual de la FCEIA:
+
+* https://campusv.fceia.unr.edu.ar/course/view.php?id=392
 
 ## Objetivos
 
@@ -87,11 +87,11 @@ Para aprobar la materia el alumno deberá:
 
 . . .
 
-* Aprobar un primer parcial teórico (18/4).
+* Aprobar un primer parcial teórico (9/4).
 
 . . .
 
-* Aprobar un segundo parcial teórico/práctico (6/6).
+* Aprobar un segundo parcial teórico/práctico (28/5).
 
 . . .
 
@@ -100,19 +100,18 @@ Para aprobar la materia el alumno deberá:
 . . .
 
 En caso de no aprobar alguno de los parciales, el alumno cuenta con una
-instancia adicional de recuperación (13/6).
+instancia adicional de recuperación (25/6).
 
 ## Plan de dictado
 
 * Historia de la computacion.
 * Arquitectura de la computadora.
 * Sistema Operativo.
-* Lenguaje de Programacion.
+* Conceptos de Programacion.
 * Sistemas de archivos.
-* Usuarios y grupos.
-* Bash scripting.
+* Manejo de bash.
 * Control de versiones.
-* Virtualizacion.
+* Contenedores y virtualizacion.
 
 ## Para la proxima clase
 
