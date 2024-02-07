@@ -40375,60 +40375,63 @@ chroot
 Colab
 \end_layout
 
-\begin_layout Part
-Resolución de problemas
+\begin_layout Part*
+Apéndice
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar configuracion de man en español
+\begin_layout Chapter
+Instalación de linux
 \end_layout
 
-\end_inset
-
-
+\begin_layout Section
+Virtualbox
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar configuracion de VM
+\begin_layout Section
+Colab
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-xterm en Colab
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
+\begin_layout Section
 Replit
 \end_layout
 
+\begin_layout Chapter
+Resolución de problemas
+\end_layout
+
+\begin_layout Section
+Poner man es español
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
 \end_inset
 
+Brian Ward - How Linux Works
+\end_layout
 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Daniel J.
+ Barret - Efficient Linux at the Command Line
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+William Shotts - The Linux Command Line
 \end_layout
 
 \begin_layout Standard
@@ -40476,46 +40479,6 @@ status open
 
 \begin_layout Plain Layout
 Shellcheck
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Brian Ward - How Linux Works
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-William Shotts - The Linux Command Line (2nd edition)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Daniel J.
- Barret - Efficient Linux at the Command Line
 \end_layout
 
 \end_inset
