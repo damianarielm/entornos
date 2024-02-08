@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-7 de febrero de 2024.
+8 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -9768,6 +9768,35 @@ cd ~/..
 
 \end_layout
 
+\begin_layout Example
+Podemos ir a la carpeta raíz del sistema escribiendo lo siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -10034,8 +10063,82 @@ ls
 
 \end_layout
 
+\begin_layout Example
+Agregando la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-a
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ también veremos los archivos ocultos:
+\end_layout
+
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+./ ../ dsh dsh.c entornos final hola.c hola.py hola.s .oculto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls -Force
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -10229,31 +10332,6 @@ bin boot dev etc home lib lib64 lost+found mnt opt proc root run sbin srv
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex PowerShell
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={solarized-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-ls /
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 
 \family typewriter
@@ -10427,7 +10505,11 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-├── bin -> usr/bin
+├── bin -> 
+\begin_inset space ~
+\end_inset
+
+usr/bin
 \end_layout
 
 \begin_layout Plain Layout
@@ -10457,13 +10539,21 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-├── lib -> usr/lib
+├── lib -> 
+\begin_inset space ~
+\end_inset
+
+usr/lib
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-├── lib64 -> usr/lib
+├── lib64 -> 
+\begin_inset space ~
+\end_inset
+
+usr/lib
 \end_layout
 
 \begin_layout Plain Layout
@@ -10505,7 +10595,11 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-├── sbin -> usr/bin
+├── sbin -> 
+\begin_inset space ~
+\end_inset
+
+usr/bin
 \end_layout
 
 \begin_layout Plain Layout
@@ -11365,8 +11459,8 @@ rm
 \begin_inset Quotes frd
 \end_inset
 
-: se utiliza para forzar la eliminación de un archivo si este está protegido
- contra escritura.
+: se utiliza para forzar la eliminación de un archivo si este no tiene permiso
+ de escritura.
  Además no da error si los archivos no existen.
 \end_layout
 
@@ -11693,13 +11787,6 @@ cp
 : pide confirmación antes de sobrescribir archivos existentes.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para copiar un archivo a otro directorio usamos el siguiente comando:
 \end_layout
@@ -11942,13 +12029,6 @@ mv [opciones] origen destino
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El comando 
 \begin_inset Quotes fld
 \end_inset
@@ -12042,6 +12122,72 @@ mv
 
 \end_layout
 
+\begin_layout Example
+Podemos cambiar el nombre de un archivo utilizando el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+mv
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mv nombre_original nombre_nuevo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mv nombre_original nombre_nuevo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -12054,7 +12200,11 @@ El comando
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 df
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -13234,13 +13384,6 @@ Algunas opciones comunes incluyen:
 : Muestra solo una lista simple, sin detalles adicionales
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 
 \family typewriter
@@ -13263,7 +13406,10 @@ mount
 
  se utiliza en sistemas operativos tipo Linux para montar sistemas de archivos
  en un directorio del sistema de archivos.
- Su sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+Su sintaxis básica es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -13964,13 +14110,6 @@ status open
 ./semi2/cuartos3/francia
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -14897,7 +15036,7 @@ rm: ¿borrar el fichero regular vacío 'archivo' protegido contra escritura?
 \end_layout
 
 \begin_layout Exercise
-Utilice el comando 
+Manipule el sistema de archivos para que el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -14909,7 +15048,7 @@ tree
 \begin_inset Quotes frd
 \end_inset
 
- para lograr la siguiente salida:
+ muestre la siguiente salida:
 \end_layout
 
 \begin_deeper
@@ -15318,6 +15457,53 @@ find
 \end_layout
 
 \begin_layout Exercise
+Escriba un comando para borrar archivos que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+#
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y tengan un punto 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en su nombre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Averigüe cuales son los programas de usuario instalados en su computadora,
  que solo tienen dos letras en su nombre.
 \end_layout
@@ -15335,6 +15521,13 @@ Cree un archivo con el nombre de cada fecha del año.
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -16066,13 +16259,6 @@ more
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica es la siguiente:
 \end_layout
 
@@ -16330,6 +16516,13 @@ head
  muestra las primeras 10 líneas de un archivo.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -17384,13 +17577,6 @@ cut
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -17941,13 +18127,6 @@ El lenguaje definido por la expresión regular
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Description
 Anclas Las anclas son caracteres especiales que indican el inicio o el final
  de una cadena.
