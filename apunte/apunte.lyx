@@ -18933,6 +18933,21 @@ Algunas opciones comunes son:
 : muestra sólo la parte de la línea que coincide con el patrón de búsqueda.
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-w
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: realiza una búsqueda de palabras completas.
+\end_layout
+
 \begin_deeper
 \begin_layout Standard
 \begin_inset Flex Observacion
@@ -18961,62 +18976,6 @@ grep
 \end_layout
 
 \end_deeper
-\begin_layout Example
-Para buscar la linea donde se encuentra definido el usuario 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-root
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- podemos usar el siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-grep root /etc/passwd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-root:x:0:0::/root:/bin/bash
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para buscar cuantas veces aparece la palabra 
 \begin_inset Quotes fld
@@ -19120,6 +19079,107 @@ status open
 
 \family typewriter
 /usr/share/doc/bash/README:2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para buscar la linea donde se encuentra definido el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+root
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ podemos usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+grep root /etc/passwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+root:x:0:0::/root:/bin/bash
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para encontrar las lineas de un archivo donde aparece la 
+\emph on
+palabra
+\emph default
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+if
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, podemos escribir el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+grep -nw if archivo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -19441,10 +19501,15 @@ faStar
 
 \end_inset
 
- Cree un archivo de python con el siguiente código:
+
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Enumerate
+Cree un archivo de python con el siguiente código:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset Flex Codigo
 status open
 
@@ -19460,7 +19525,7 @@ print(
 \begin_inset Quotes fld
 \end_inset
 
-Hola mundo!
+Hola mundo
 \begin_inset Quotes frd
 \end_inset
 
@@ -19477,7 +19542,8 @@ Hola mundo!
 
 \end_layout
 
-\begin_layout Exercise
+\end_deeper
+\begin_layout Enumerate
 Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -19491,12 +19557,17 @@ file
 \end_inset
 
  para averiguar que tipo de archivo es.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Exercise
+\begin_layout Enumerate
 Agregue la siguiente linea al comienzo del archivo:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Codigo
 status open
@@ -19522,7 +19593,8 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
 Vuelva a averiguar el tipo del archivo.
 \end_layout
 
