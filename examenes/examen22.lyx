@@ -1,0 +1,543 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ../apunte/lyx
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-chap
+multicol
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+T.U.I.A.
+\begin_inset Newline newline
+\end_inset
+
+U.N.R.
+\end_layout
+
+\begin_layout Center Header
+
+\series bold
+Entorno de Programación
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Comisión 2
+\end_layout
+
+\begin_layout Right Header
+Segundo Examen
+\begin_inset Newline newline
+\end_inset
+
+6/6/2023
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+Turno 2
+\end_layout
+
+\begin_layout Standard
+Nombre y apellido:
+\begin_inset space \hfill{}
+\end_inset
+
+DNI:
+\begin_inset space \hspace*{}
+\length 7em
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Escriba un comando para borrar archivos que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+#
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y tengan un punto 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en su nombre.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+rm *.*{~,#}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando para crear una copia de un archivo, reemplazando los
+ caracteres 
+\begin_inset Quotes fld
+\end_inset
+
+.
+\begin_inset Quotes frd
+\end_inset
+
+ (punto) por 
+\begin_inset Quotes fld
+\end_inset
+
+,
+\begin_inset Quotes frd
+\end_inset
+
+ (coma) y viceversa dentro de su contenido.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+tr 
+\begin_inset Quotes fld
+\end_inset
+
+,.
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
+.,
+\begin_inset Quotes frd
+\end_inset
+
+ < archivo > copia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando para encontrar lineas dentro de un archivo que contengan
+ un nombre de persona.
+ Considere como nombres válidos a un cualquier palabra que solo contenga
+ letras, y que empiece y contenga una sola mayúscula.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+grep -E 
+\begin_inset Quotes fld
+\end_inset
+
+[[:upper:]][[:lower:]]+
+\begin_inset Quotes frd
+\end_inset
+
+ archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando para que todos los usuarios puedan leer el contenido
+ de los archivos que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ dentro de la carpeta actual.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+chmod a+r *.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere el siguiente script:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[ $# -ne 1 ] && exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+[ -f $1 ] || exit 2
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+TOTAL=0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in $(cat $1); do
+\end_layout
+
+\begin_layout Plain Layout
+
+    TOTAL=$(($TOTAL + 1))
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo $TOTAL $1 && exit 0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es el propósito del programa?
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+Contar la cantidad de palabras de un archivo.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Qué programa cumple con la misma función?
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+
+\family typewriter
+wc -w
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Qué representan los diferentes códigos de salida?
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+El código 1 significa que no hay argumentos suficientes, el código 2 significa
+ que el archivo no se encuentra, el código 0 significa finalización con
+ exito.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+El siguiente programa debería realizar una resta entre dos números, pero
+ tiene errores.
+ Corríjalo.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if [[ $# != 2 || $1 < $2 ]]; then
+\end_layout
+
+\begin_layout Plain Layout
+
+    echo "No se puede realizar la resta."
+\end_layout
+
+\begin_layout Plain Layout
+
+    exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+    bc "$1 - $2"
+\end_layout
+
+\begin_layout Plain Layout
+
+    exit 0
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if [[ $# != 2 || $1 -lt $2 ]]; then
+\end_layout
+
+\begin_layout Plain Layout
+
+    echo "No se puede realizar la resta."
+\end_layout
+
+\begin_layout Plain Layout
+
+    exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+    echo "$1 - $2" | bc
+\end_layout
+
+\begin_layout Plain Layout
+
+    exit 0
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
