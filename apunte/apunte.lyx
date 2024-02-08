@@ -37919,6 +37919,29 @@ Investigue para que sirve el comando
 
 
 \family typewriter
+git revert
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Investigue para que sirve el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
 git blame
 \family default
 
@@ -38162,13 +38185,6 @@ status open
 master
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -38449,13 +38465,6 @@ nueva
 \end_inset
 
  rama.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -38948,6 +38957,13 @@ En el proceso de fusión, Git intenta combinar automáticamente los cambios.
  los conflictos antes de completar la fusión.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -40517,6 +40533,13 @@ git clone
  y configuraciones del repositorio remoto.
  Es una forma común de comenzar a trabajar en un proyecto nuevo o colaborar
  en un proyecto existente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
