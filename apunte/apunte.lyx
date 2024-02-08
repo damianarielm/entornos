@@ -15504,6 +15504,83 @@ Escriba un comando para borrar archivos que terminen en
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+Describa cual es el comportamiento del siguiente comando.
+ No lo ejecute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm * .txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Averigüe cuales son los programas de usuario instalados en su computadora,
  que solo tienen dos letras en su nombre.
 \end_layout
@@ -35736,19 +35813,6 @@ git config -l
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar información sobre .gitignore
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Comandos básicos
 \end_layout
@@ -39265,19 +39329,6 @@ Agregar información sobre fusión de tres vías y resolución de conflictos.
 \strikeout on
 \color lightgray
 Flujos de trabajos
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Gitflow
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
