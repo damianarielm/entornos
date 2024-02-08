@@ -19404,7 +19404,11 @@ tail
 \begin_inset Quotes frd
 \end_inset
 
- para monitorear su contenido.
+ para 
+\emph on
+monitorear
+\emph default
+ su contenido.
  Modifique el contenido del archivo en otra aplicación y observe como esos
  cambios se reflejan en el emulador de terminal.
 \end_layout
@@ -19869,6 +19873,33 @@ Palabras que terminen en
 
  o 
 \begin_inset Formula $.jpeg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando para encontrar lineas de un archivo, que 
+\emph on
+no terminen
+\emph default
+ en punto y coma 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+;
+\family default
+
+\begin_inset Quotes frd
 \end_inset
 
 .
