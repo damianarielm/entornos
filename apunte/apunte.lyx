@@ -19421,6 +19421,62 @@ monitorear
 \end_layout
 
 \begin_layout Exercise
+Cree el siguiente archivo y explique por que el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+uniq archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestra palabras repetidas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+hola
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+mundo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+chau
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+mundo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Descargue la siguiente 
 \begin_inset CommandInset href
 LatexCommand href
@@ -19460,6 +19516,13 @@ file
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -19561,10 +19624,6 @@ file
 \end_inset
 
  para averiguar que tipo de archivo es.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -19720,41 +19779,6 @@ diff
 
 .
  Pruebe cada uno de ellos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Utilice el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- para averiguar el propósito y funcionamiento del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-shuff
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -20108,8 +20132,7 @@ touch archivo1 archivo2; ls archivo1 archivo2
 \end_layout
 
 \begin_layout Example
-Podemos intentar borrar un directorio y mostrar un mensaje en caso de éxito
- con el comando:
+Podemos crear un directorio e ingresar en el, en caso de éxito con el comando:
 \end_layout
 
 \begin_layout Standard
@@ -20124,15 +20147,37 @@ status open
 
 \begin_layout Plain Layout
 
-rmdir directorio && echo 
-\begin_inset Quotes fld
-\end_inset
+mkdir directorio && cd directorio
+\end_layout
 
-El directorio se ha borrado.
-\begin_inset Quotes frd
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vale la pena observar que sucede en caso de fallo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir .
+ && cd /
 \end_layout
 
 \end_inset
@@ -20146,7 +20191,7 @@ El directorio se ha borrado.
 \end_layout
 
 \begin_layout Example
-Análogamente, podemos mostrar el mensaje si el directorio no se creo:
+También podemos mostrar un mensaje en caso de error:
 \end_layout
 
 \begin_layout Standard
@@ -20161,7 +20206,8 @@ status open
 
 \begin_layout Plain Layout
 
-rmdir directorio || echo 
+rmdir .
+ || echo 
 \begin_inset Quotes fld
 \end_inset
 
@@ -20399,7 +20445,7 @@ Si queremos crear un archivo con los textos
 
 
 \emph on
-Hola mundo!
+Hola mundo
 \emph default
 
 \begin_inset Quotes frd
@@ -20411,7 +20457,7 @@ Hola mundo!
 
 
 \emph on
-Chau mundo!
+Chau mundo
 \emph default
 
 \begin_inset Quotes frd
@@ -20436,7 +20482,7 @@ echo
 \begin_inset Quotes fld
 \end_inset
 
-Hola mundo!
+Hola mundo
 \begin_inset Quotes frd
 \end_inset
 
@@ -20449,7 +20495,7 @@ echo
 \begin_inset Quotes fld
 \end_inset
 
-Chau mundo!
+Chau mundo
 \begin_inset Quotes frd
 \end_inset
 
@@ -20482,7 +20528,7 @@ echo
 \begin_inset Quotes fld
 \end_inset
 
-Hola mundo!
+Hola mundo
 \begin_inset Quotes frd
 \end_inset
 
@@ -20495,7 +20541,7 @@ echo
 \begin_inset Quotes fld
 \end_inset
 
-Chau mundo!
+Chau mundo
 \begin_inset Quotes frd
 \end_inset
 
@@ -20573,7 +20619,6 @@ La salida de error en sistemas Linux es una salida de información que se
 
 \end_layout
 
-\end_deeper
 \begin_layout Example
 Para escribir los mensajes de error de 
 \begin_inset Quotes fld
@@ -20643,6 +20688,7 @@ mkdir .
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Redirección de salidas 
@@ -20839,6 +20885,36 @@ dev/null
 : un archivo que genera datos aleatorios.
 \end_layout
 
+\begin_layout Example
+Podemos hacer una lista de todos los archivos del sistema ocultando los
+ errores de permisos con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls / -R 2> /dev/null
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Tuberías
 \end_layout
@@ -20866,7 +20942,10 @@ entrada
 \emph default
  de otro, lo que permite crear una cadena de procesos que trabajan juntos
  para realizar una tarea más compleja.
- La sintaxis de una tubería es la siguiente:
+\end_layout
+
+\begin_layout Standard
+La sintaxis de una tubería es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -20949,6 +21028,54 @@ status open
 \begin_layout Plain Layout
 
 cat archivo | grep palabra | wc -l
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para hacer una lista de las palabras repetidas en un archivo podemos usar
+ el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cat archivo | tr 
+\begin_inset Quotes fld
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\backslash
+n
+\begin_inset Quotes frd
+\end_inset
+
+ | sort | uniq -d
 \end_layout
 
 \end_inset
@@ -21242,20 +21369,11 @@ faStar
 
 \end_inset
 
- Piense que ocurre tras ejecutar el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-echo 2 * 3 > 10
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- Verifíquelo.
+Escriba un comando para crear un archivo con el contenido de 
+\emph on
+todos los archivos
+\emph default
+ del directorio actual.
 \end_layout
 
 \begin_layout Standard
@@ -21276,6 +21394,82 @@ status open
 faStar
 \backslash
 ;
+\end_layout
+
+\end_inset
+
+ Piense que ocurre tras ejecutar el siguiente comando.
+ Verifíquelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 2 * 3 > 10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
 \end_layout
 
 \end_inset
@@ -21374,7 +21568,21 @@ contraseñas
 \end_layout
 
 \begin_layout Exercise
-Cree un archivo con una lista de todos los archivos del sistema.
+Cree un archivo con una lista de todos los archivos del sistema que terminen
+ en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.jpg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Evite mostrar errores en pantalla.
 \end_layout
 
 \begin_layout Standard
@@ -21424,6 +21632,32 @@ faStar
 
 \end_inset
 
+Cree un archivo con muchos números.
+ Escriba secuencias de tuberías para encontrar el máximo y el mínimo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
  Escriba una secuencia de tuberías para observar la tercer linea de un archivo.
 \end_layout
 
@@ -21449,8 +21683,45 @@ faStar
 
 \end_inset
 
- Escriba una secuencia de tuberías para averiguar cual es el archivo con
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba una secuencia de tuberías para averiguar cual es el archivo con
  mayor cantidad de líneas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba una secuencia de tuberías para contar cuantos directorios hay en
+ la carpeta actual.
 \end_layout
 
 \begin_layout Standard
