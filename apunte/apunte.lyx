@@ -22353,7 +22353,11 @@ Al ingresar el comando
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 su
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -24366,7 +24370,168 @@ faStar
 
 \end_inset
 
- Cree el usuario 
+Escriba un comando para 
+\emph on
+quitar
+\emph default
+ permiso de ejecución a todos los usuarios para cada uno de los archivos
+ del directorio actual que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.py
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba un comando para que todos los usuarios puedan leer el contenido
+ de los archivos que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ dentro de la carpeta actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando para que 
+\emph on
+ningún usuario
+\emph default
+ tenga 
+\emph on
+ningún permiso
+\emph default
+ en los archivos que terminan en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.key
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ de la carpeta actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Cree el usuario 
 \begin_inset Quotes fld
 \end_inset
 
@@ -24413,6 +24578,31 @@ status open
 faStar
 \backslash
 ;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
 \end_layout
 
 \end_inset
@@ -24618,13 +24808,6 @@ Process Status
  el sistema.
  Proporciona una visión general de los procesos activos, sus identificadores,
  uso de recursos y otra información relevante.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -24898,13 +25081,6 @@ nice [opciones] comando
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -25405,6 +25581,13 @@ firefox &
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -25771,13 +25954,6 @@ wait
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica del comando 
 \begin_inset Quotes fld
 \end_inset
@@ -26064,13 +26240,6 @@ apt
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El programa 
 \begin_inset Quotes fld
 \end_inset
@@ -26267,6 +26436,13 @@ Si se especifica la opción
 \end_inset
 
  se muestran los valores en un formato más legible para humanos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
