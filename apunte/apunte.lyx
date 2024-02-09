@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-8 de febrero de 2024.
+9 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -20015,6 +20015,41 @@ man
 
 \family typewriter
 nl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para consultar que para que sirve el programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fold
 \family default
 
 \begin_inset Quotes frd
