@@ -61,5 +61,27 @@ bashhq.pdf: bash.lyx
 bashlq.pdf: bashhq.pdf
 	gs $(GSFLAGS) $(LQFLAGS) -sOutputFile=bashlq.pdf bashhq.pdf
 
+auxiliares.lyx: apunte.lyx
+	INICIO=$$(grep -in "Una computadora es para" apunte.lyx | cut -d: -f1); \
+	INICIO=$$(($$INICIO-6)); \
+	FIN=$$(grep -in "Me gusta ofender" apunte.lyx | cut -d: -f1); \
+	FIN=$$(($$FIN-7)); \
+	sed "$$INICIO,$$FIN d" apunte.lyx > auxiliares.lyx
+	INICIO=$$(grep -in "Apéndice" auxiliares.lyx | cut -d: -f1); \
+	INICIO=$$(($$INICIO-1)); \
+	FIN=$$(grep -in "end_body" auxiliares.lyx | cut -d: -f1); \
+	FIN=$$(($$FIN-1)); \
+	sed -i "$$INICIO,$$FIN d" auxiliares.lyx
+	sed -i '/textclass lyx/a \\\\end_preamble' auxiliares.lyx
+	sed -i '/textclass lyx/a \\\\begin_preamble' auxiliares.lyx
+	sed -i '/begin_preamble/a \\\\setcounter{chapter}{8}' auxiliares.lyx
+	sed -i '/begin_preamble/a \\\\setcounter{part}{2}' auxiliares.lyx
+
+auxiliareshq.pdf: auxiliares.lyx
+	lyx $(LYXFLAGS) auxiliareshq.pdf auxiliares.lyx
+
+auxiliareslq.pdf: auxiliareshq.pdf
+	gs $(GSFLAGS) $(LQFLAGS) -sOutputFile=auxiliareslq.pdf auxiliareshq.pdf
+
 clean:
-	rm -f *.pdf bw.lyx fundamentos.lyx bash.lyx
+	rm -f *.pdf bw.lyx fundamentos.lyx bash.lyx auxiliares.lyx
