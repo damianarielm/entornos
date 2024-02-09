@@ -1,13 +1,54 @@
-#para que esté disponible entre otras fontawesome
+# Entorno de Programación
+
+## Novedades 2024
+
+* Planilla de alumnos para tomar asistencia:
+  - Incluye estadísticas básicas como asistencias por alumno y general.
+
+* Planificación estimada:
+  - Se logró duplicar la cantidad de tiempo para control de versiones y contenedores.
+  - Se planificaron 10 posibles clases perdidas, para distribuir entre paros y feriados.
+  - Se prevé el recuperatorio dentro del tiempo de cursado.
+
+* Metodología de evaluación:
+  - Se tomarán dos exámenes. Los mismos se calificarán sin nota (aprobado o insuficiente).
+  - Se pueden recuperar ambos parciales, pero el tiempo está pensado para uno solo.
+  - También debe defenderse en forma oral un TP grupal (a definir).
+
+* Nuevo material:
+  - Nuevo material en forma de apunte. Incluye nuevos temas.
+  - En el apunte se marcó en gris aquellos temas que no se evalúan EN PARCIAL.
+  - Los temas que se encuentran tachados no formarán parte del apunte este año, pero se evaluan igual.
+  - Es probable que el apunte continue evolucionando, sin embargo se podría congelar una versión antes de comenzar.
+  - Pueden generarse versiones del material tanto en baja definición, como en blanco y negro; o bien separado por partes.
+  - Se adjunta un listado de temas agregados y eliminados del material anterior.
+
+## Dependencias
+
+Para poder compilar el material es necesario instalar las siguientes dependencias:
+
+* Fontawesome para LaTeX:
+
+```bash
 apt install texlive-fonts-extra
-# pygments
+```
+
+* Pygments
+
+```bash
 apt install python3-pygments
+```
 
+## Configuracion
 
-#para tener minted
-# habilitar documento/configuracion/formatos/allow running external programs
+Es necesario habilitar programas externos para compilar. Esto puede hacerse desde:
 
+Documento/Configuracion/Formatos/Allow running external programs
 
-pip3 install pygments-base16
+o bien, editando el archivo `~/.lyx/session
 
+Luego basta ejecutar:
 
+```bash
+make
+```
