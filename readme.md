@@ -35,7 +35,7 @@ Para poder compilar el material es necesario instalar las siguientes dependencia
 apt install texlive-fonts-extra
 ```
 
-* Pygments
+* Pygments:
 
 ```bash
 apt install python3-pygments
@@ -47,7 +47,7 @@ Es necesario habilitar programas externos para compilar. Esto puede hacerse desd
 
 Documento/Configuracion/Formatos/Allow running external programs
 
-o bien, editando el archivo `~/.lyx/session
+o bien, editando el archivo `~/.lyx/session`
 
 Luego basta ejecutar:
 
