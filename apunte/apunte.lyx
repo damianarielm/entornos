@@ -24876,7 +24876,23 @@ Algunas de las opciones más comunes son:
 
 
 \family typewriter
--u USUARIO
+-f
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+: Muestra información adicional sobre los procesos, incluyendo la lista
+ completa de argumentos y opciones utilizadas al iniciar cada proceso.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-U USUARIO
 \family default
 
 \begin_inset Quotes frd
@@ -25665,6 +25681,56 @@ jobs
 
 \end_layout
 
+\begin_layout Example
+Ejecutemos un programa en segundo plano y observemos las tareas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ls -R / &> /dev/null & jobs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+[1] 6486
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+[1]+ Ejecutando ls --color=auto -R / &> /dev/null &
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -25757,6 +25823,43 @@ donde
 JID
 \emph default
  es el identificador de tarea.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Generalmente el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+bg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para reanudar un proceso en estado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+bloqueado
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -26148,9 +26251,15 @@ jobs
 \end_inset
 
 .
- Encuentre una forma de reanudar el proceso en segundo plano y vuelva a
- verificar el estado del proceso.
- Finalmente interrumpa el proceso y verifique por última vez.
+\end_layout
+
+\begin_layout Enumerate
+Encuentre una forma de reanudar el proceso en segundo plano y vuelva a verificar
+ el estado del proceso.
+\end_layout
+
+\begin_layout Enumerate
+Finalmente interrumpa el proceso y verifique por última vez.
 \end_layout
 
 \begin_layout Exercise
