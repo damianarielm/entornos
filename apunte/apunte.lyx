@@ -26547,13 +26547,6 @@ Si se especifica la opción
  se muestran los valores en un formato más legible para humanos.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Esta es la salida típica del comando 
 \begin_inset Quotes fld
@@ -26855,6 +26848,13 @@ loadkeys
 consola virtual
 \emph default
  del sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -27420,13 +27420,25 @@ source
 \begin_inset Quotes frd
 \end_inset
 
-, y 
+, 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
 export
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+type
 \family default
 
 \begin_inset Quotes frd
@@ -27575,10 +27587,8 @@ Averigüe para que sirven los comandos
 
 
 \family typewriter
-\size small
 uptime
 \family default
-\size default
 
 \begin_inset Quotes frd
 \end_inset
@@ -27589,10 +27599,8 @@ uptime
 
 
 \family typewriter
-\size small
 uname
 \family default
-\size default
 
 \begin_inset Quotes frd
 \end_inset
