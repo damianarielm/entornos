@@ -12,16 +12,18 @@
 
 * Metodología de evaluación:
   - Se tomarán dos exámenes. Los mismos se calificarán sin nota (aprobado o insuficiente).
+  - Los examenes harán menos hincapié en bash scripting y mas en uso de comandos.
   - Se pueden recuperar ambos parciales, pero el tiempo está pensado para uno solo.
   - También debe defenderse en forma oral un TP grupal (a definir).
+  - Se adjuntan [exámenes](examenes/) del 2023 como referencia.
 
 * Nuevo material:
-  - Nuevo material en forma de apunte. Incluye nuevos temas.
+  - Nuevo material en forma de (apunte)[apunte/apunte.pdf]. Incluye nuevos temas.
   - En el apunte se marcó en gris aquellos temas que no se evalúan EN PARCIAL.
   - Los temas que se encuentran tachados no formarán parte del apunte este año, pero se evaluan igual.
   - Es probable que el apunte continue evolucionando, sin embargo se podría congelar una versión antes de comenzar.
   - Pueden generarse versiones del material tanto en baja definición, como en blanco y negro; o bien separado por partes.
-  - Se adjunta un listado de temas agregados y eliminados del material anterior.
+  - Se adjunta un [listado](diff) de temas agregados y eliminados del material anterior.
 
 ## Dependencias
 
