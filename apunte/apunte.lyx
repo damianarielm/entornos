@@ -28801,7 +28801,6 @@ Puede agregar los siguientes argumentos para filtrar los resultados:
 : Para quedarse solo con los actores.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -28827,6 +28826,7 @@ jq
 
 \end_layout
 
+\end_deeper
 \begin_layout Section
 Compresión y backup
 \end_layout
@@ -29009,6 +29009,13 @@ tar
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Usemos el comando 
 \begin_inset Quotes fld
@@ -29106,13 +29113,6 @@ gzip [opciones] archivo
 
 \begin_layout Standard
 Algunas opciones comunes son:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -29225,7 +29225,7 @@ rsync
 \end_layout
 
 \begin_layout Standard
-La sintaxis básica es:
+La sintaxis básica es la siguiente:
 \end_layout
 
 \begin_layout Standard
