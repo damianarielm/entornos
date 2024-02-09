@@ -27850,8 +27850,8 @@ Secure Shell
 
 \end_inset
 
- ss comúnmente utilizado para acceder a máquinas remotas, ejecutar comandos
- en esas máquinas y transferir archivos de manera segura.
+ es comúnmente utilizado para acceder a máquinas remotas, ejecutar comandos
+ en esas máquinas y transferir archivos.
 \end_layout
 
 \begin_layout Standard
@@ -27949,13 +27949,6 @@ scp
 
  es una utilidad que se utiliza para copiar archivos entre equipos a través
  del protocolo SSH.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -28082,6 +28075,13 @@ A continuación, se presentan algunas de las opciones más importantes del
  comando:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -28130,6 +28130,10 @@ A continuación, se presentan algunas de las opciones más importantes del
 
 \begin_layout Example
 Podemos descargar la última versión de 
+\begin_inset Quotes fld
+\end_inset
+
+
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faWikipediaW"
@@ -28138,7 +28142,11 @@ literal "true"
 
 \end_inset
 
- Wordpress mediante el siguiente comando:
+ Wordpress
+\begin_inset Quotes frd
+\end_inset
+
+ mediante el siguiente comando:
 \end_layout
 
 \begin_layout Standard
@@ -28189,13 +28197,6 @@ curl
 
  en Linux es una herramienta de línea de comandos que se utiliza para transferir
  datos desde o hacia un servidor.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -28367,6 +28368,13 @@ curl ipinfo.io
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Otro servicio interesante nos permite codificar información en un código
  QR:
@@ -28451,13 +28459,6 @@ w3m URL
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
