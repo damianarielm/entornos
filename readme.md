@@ -23,7 +23,7 @@
   - Los temas que se encuentran tachados no formarán parte del apunte este año, pero se evaluan igual.
   - Es probable que el apunte continue evolucionando, sin embargo se podría congelar una versión antes de comenzar.
   - Pueden generarse versiones del material tanto en baja definición, como en blanco y negro; o bien separado por partes.
-  - Se adjunta un [listado](./diff) de temas agregados y eliminados del material anterior.
+  - Se adjunta un [listado](./diff.txt) de temas agregados y eliminados del material anterior.
 
 ## Dependencias
 
