@@ -35183,6 +35183,13 @@ fi
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Podemos validar la cantidad de argumentos con el siguiente script:
 \end_layout
@@ -35641,6 +35648,98 @@ hasta
 
 \end_layout
 
+\begin_layout Example
+El siguiente ejemplo muestra como podría validarse una contraseña.
+ La contraseña correcta es 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+hola
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SUM=b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79
+\end_layout
+
+\begin_layout Plain Layout
+
+PASS=none
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while [ $SUM != $PASS ]; do
+\end_layout
+
+\begin_layout Plain Layout
+
+    echo -n "Ingrese su contraseña: "
+\end_layout
+
+\begin_layout Plain Layout
+
+    read -s PASS
+\end_layout
+
+\begin_layout Plain Layout
+
+    PASS=$(echo $PASS | tr -d "
+\backslash
+n" | sha256sum | cut -d " " -f1)
+\end_layout
+
+\begin_layout Plain Layout
+
+    echo
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo Contraseña correcta.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 case
 \end_layout
@@ -35907,7 +36006,11 @@ En Bash, select se utiliza para construir menús interactivos en scripts
 \end_layout
 
 \begin_layout Standard
-Aquí está la estructura básica de un select:
+Aquí está la estructura básica de un 
+\family typewriter
+select
+\family default
+:
 \end_layout
 
 \begin_layout Standard
@@ -36113,12 +36216,7 @@ do
 
 \begin_layout Plain Layout
 
-      ls
-\end_layout
-
-\begin_layout Plain Layout
-
-    ;;
+      ls;;
 \end_layout
 
 \begin_layout Plain Layout
@@ -36128,12 +36226,7 @@ do
 
 \begin_layout Plain Layout
 
-      ls /
-\end_layout
-
-\begin_layout Plain Layout
-
-    ;;
+      ls /;;
 \end_layout
 
 \begin_layout Plain Layout
@@ -36143,12 +36236,7 @@ do
 
 \begin_layout Plain Layout
 
-      echo Opcion incorrecta.
-\end_layout
-
-\begin_layout Plain Layout
-
-    ;;
+      echo Opcion incorrecta.;;
 \end_layout
 
 \begin_layout Plain Layout
@@ -36269,13 +36357,6 @@ Para llamar a una función simplemente se escribe el nombre de la misma y
  a continuación sus argumentos separados por un espacio.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 El siguiente ejemplo ilustra el uso de funciones y argumentos en bash:
 \end_layout
@@ -36370,6 +36451,13 @@ Escriba un script que recibe una cantidad variable de archivos y elimine
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
