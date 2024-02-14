@@ -26,6 +26,7 @@
   - Se adjunta un [listado](./diff.txt) de temas agregados y eliminados del material anterior.
 
 * Nueva bibliografia:
+  - Paul E. Ceruzzi - Computing: A Concise History.
   - Brian Ward - How Linux Works.
   - Daniel J. Barret - Efficient Linux at the Command Line.
 

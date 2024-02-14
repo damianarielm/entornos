@@ -42335,7 +42335,18 @@ key "key-1"
 
 \end_inset
 
-Brian Ward - How Linux Works
+Paul E.
+ Ceruzzi - Computing: A Concise History.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Brian Ward - How Linux Works.
 \end_layout
 
 \begin_layout Bibliography
@@ -42346,7 +42357,7 @@ key "key-2"
 \end_inset
 
 Daniel J.
- Barret - Efficient Linux at the Command Line
+ Barret - Efficient Linux at the Command Line.
 \end_layout
 
 \begin_layout Bibliography
@@ -42356,7 +42367,7 @@ key "key-3"
 
 \end_inset
 
-William Shotts - The Linux Command Line
+William Shotts - The Linux Command Line.
 \end_layout
 
 \begin_layout Standard
