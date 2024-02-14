@@ -29326,13 +29326,6 @@ tar
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Usemos el comando 
 \begin_inset Quotes fld
@@ -30378,13 +30371,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Creemos dos archivos y sus respectivas sumas de verificación:
 \end_layout
@@ -30483,6 +30469,13 @@ bienvenida: La suma coincide
 despedida: La suma coincide
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -31201,6 +31194,79 @@ ranger
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Explique las diferencias entre un 
+\emph on
+alias
+\emph default
+ y un 
+\emph on
+enlace
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Investigue el funcionamiento del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+type
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Ejecute los siguientes comandos y analice las diferencias:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+which ls
+\end_layout
+
+\begin_layout Plain Layout
+
+type ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
