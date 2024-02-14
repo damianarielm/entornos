@@ -32227,10 +32227,85 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba el siguiente script, ejecútelo y explique su comportamiento:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Investigue cual es el uso de la variable 
-\family typewriter
+\emph on
 CDPATH
-\family default
+\emph default
 .
 \end_layout
 
