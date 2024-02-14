@@ -25,6 +25,10 @@
   - Pueden generarse versiones del material tanto en baja definición, como en blanco y negro; o bien separado por partes.
   - Se adjunta un [listado](./diff.txt) de temas agregados y eliminados del material anterior.
 
+* Nueva bibliografia:
+  - Brian Ward - How Linux Works.
+  - Daniel J. Barret - Efficient Linux at the Command Line.
+
 ## Dependencias
 
 Para poder compilar el material es necesario instalar las siguientes dependencias:
