@@ -31953,6 +31953,74 @@ status open
 
 \end_layout
 
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba el siguiente script, ejecútelo y explique su comportamiento:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Variables
 \end_layout
@@ -32055,6 +32123,13 @@ $
 \end_inset
 
  antes de su nombre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -32195,6 +32270,13 @@ OLDPWD Almacena la ruta del directorio de trabajo anterior.
 PS1 Controla el formato del prompt de la línea de comandos.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Podemos cambiar la ruta de trabajo actual al directorio raíz seteando la
  variable 
@@ -32325,83 +32407,15 @@ $* Contiene todos los argumentos pasados al script o comando como una sola
  cadena.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
-\end_layout
-
-\begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
-Escriba el siguiente script, ejecútelo y explique su comportamiento:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=Python"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-cd /
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
 \end_layout
 
 \begin_layout Exercise
@@ -34848,6 +34862,100 @@ status open
 \end_deeper
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Genere un listado de todos los directorios de la variable 
+\emph on
+PATH
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un comando que muestre el tamaño del archivo mas grande de la carpeta
+ actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Suponga que en un directorio tiene muchos archivos, cada uno de ellos encabezado
+s por una primera linea señalando el artista.
+ Cree una carpeta para cada artista, y mueva las canciones a las carpetas
+ correspondientes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -42115,7 +42223,21 @@ Resolución de problemas
 \end_layout
 
 \begin_layout Section
-Poner man es español
+Activar 
+\emph on
+IVT
+\emph default
+/
+\emph on
+AMD-V
+\end_layout
+
+\begin_layout Section
+Poner 
+\family typewriter
+man
+\family default
+ en español
 \end_layout
 
 \begin_layout Bibliography
