@@ -1687,6 +1687,25 @@ Windows 95
 \begin_layout Standard
 \begin_inset CommandInset href
 LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Deep_Blue_(computadora)"
+literal "true"
+
+\end_inset
+
+ Deep Blue fue una supercomputadora desarrollada por IBM que se hizo famosa
+ por su capacidad para jugar al ajedrez.
+ Fue especialmente conocida por su enfrentamiento contra el campeón mundial
+ de ajedrez, Garry Kasparov, en 1996 y 1997.
+ La victoria de Deep Blue marcó un hito en la historia de la inteligencia
+ artificial y la computación, ya que fue la primera vez que una máquina
+ derrotó a un campeón mundial de ajedrez en una partida oficial bajo condiciones
+ estándar de torneo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
 name "\\faLink"
 target "https://www.google.com/"
 literal "true"
