@@ -26505,6 +26505,13 @@ apt
  puede utilizarse de diversas formas:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -26619,6 +26626,52 @@ snap
 
 \end_layout
 
+\begin_layout Exercise
+Podemos instalar el shell 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fish
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con los siguientes comandos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo apt update
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt install fish
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -26686,6 +26739,13 @@ Si se especifica la opción
 \end_inset
 
  se muestran los valores en un formato más legible para humanos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -26992,13 +27052,6 @@ consola virtual
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -27088,9 +27141,111 @@ loadkeys es
 
 \family typewriter
 \emph off
-\strikeout on
 \color lightgray
 setfont
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+setfont
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para cambiar la fuente de la consola virtual.
+ Esto puede ser útil para ajustar el aspecto visual o para mejorar la legibilida
+d.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+setfont [fuente]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las tipografías de consola virtual suelen estar ubicadas en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+\size small
+/usr/share/consolefonts
+\family default
+\size default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para utilizar una de las fuentes mas grandes podemos usar este comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+setfont ter132b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
