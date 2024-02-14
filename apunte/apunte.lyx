@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-9 de febrero de 2024.
+14 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -7542,6 +7542,19 @@ Manejo de bash
 
 \begin_layout Chapter
 Comandos básicos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+login shell, interactive
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -21889,8 +21902,129 @@ tee
  para agregar contenido al comienzo de un archivo.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Considere el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+a | b | c && d || e | f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos programas ejecuta el shell si el programa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ falla?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos programas ejecuta el shell si los programas 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ tienen éxito?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos programas ejecuta el shell si 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+c
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ tiene éxito y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+d
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ falla?
+\end_layout
+
 \begin_layout Chapter
 Comandos avanzados
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+RUID VS EUID
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -25271,6 +25405,13 @@ faKeyboardO
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Señales
 \end_layout
@@ -25567,6 +25708,13 @@ Las tareas, son otro de los trabajos que lleva a cabo el interprete de linea
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para ejecutar un navegador desde la terminal, pero sin bloquearla, usamos
  el comando:
@@ -25592,13 +25740,6 @@ firefox &
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -28827,6 +28968,27 @@ jq
 \end_layout
 
 \end_deeper
+\begin_layout Section
+
+\strikeout on
+\color lightgray
+Servicios
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+\color lightgray
+Logging
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+\color lightgray
+Tareas programadas
+\end_layout
+
 \begin_layout Section
 Compresión y backup
 \end_layout
@@ -33429,6 +33591,19 @@ Haga un script que impida el uso de la terminal.
 
 \begin_layout Section
 Encomillados y escapes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Subshells
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -41509,7 +41684,23 @@ Instalación de linux
 \end_layout
 
 \begin_layout Section
-Virtualbox
+Máquina virtual
+\end_layout
+
+\begin_layout Subsection
+VirtualBox
+\end_layout
+
+\begin_layout Subsection
+Lubuntu
+\end_layout
+
+\begin_layout Subsection
+Guest Additions
+\end_layout
+
+\begin_layout Section
+Subsistema de Windows para Linux
 \end_layout
 
 \begin_layout Section
@@ -41604,6 +41795,19 @@ status open
 
 \begin_layout Plain Layout
 Shellcheck
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pdb
 \end_layout
 
 \end_inset
