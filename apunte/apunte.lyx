@@ -20075,6 +20075,19 @@ fold
 Secuenciación, redirección y tuberías
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Asociación de comandos mediante { }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Secuenciación
 \end_layout
@@ -26284,6 +26297,103 @@ wait && echo Descargas finalizadas.
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\color lightgray
+exec
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+exec
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza para ejecutar un comando en el mismo proceso actual, reemplazando
+ dicho proceso por el nuevo comando.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+exec comando [argumentos]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Puede ser utilizado para evitar la creación de un nuevo proceso cuando no
+ es necesario.
+ Al reemplazar el proceso actual, se puede ahorrar en recursos del sistema.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Podemos cambiar de shell sin crear un nuevo proceso con este comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+exec sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Ejercicios
 \end_layout
 
@@ -26503,13 +26613,6 @@ apt
 \end_inset
 
  puede utilizarse de diversas formas:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -26739,13 +26842,6 @@ Si se especifica la opción
 \end_inset
 
  se muestran los valores en un formato más legible para humanos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -27052,7 +27148,7 @@ consola virtual
 \end_layout
 
 \begin_layout Standard
-La sintaxis básica del comando es:
+La sintaxis básica del comando es la siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -28248,6 +28344,13 @@ scp
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -28371,13 +28474,6 @@ A continuación, se presentan algunas de las opciones más importantes del
  comando:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -28493,6 +28589,13 @@ curl
 
  en Linux es una herramienta de línea de comandos que se utiliza para transferir
  datos desde o hacia un servidor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -28659,13 +28762,6 @@ curl ipinfo.io
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -29393,6 +29489,13 @@ gzip
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La sintaxis básica es:
 \end_layout
 
@@ -29910,6 +30013,13 @@ Los alias definidos con este comando, solo funcionan durante la sesión actual.
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -30469,13 +30579,6 @@ bienvenida: La suma coincide
 despedida: La suma coincide
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -32640,13 +32743,6 @@ test
  admiten varios operadores, entre los cuales se destacan:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
 \begin_inset Quotes fld
 \end_inset
@@ -32902,6 +32998,13 @@ status open
 Los números son diferentes.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
