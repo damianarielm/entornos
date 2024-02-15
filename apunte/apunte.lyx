@@ -14180,6 +14180,15 @@ find -type f -empty -exec touch {}
 \end_layout
 
 \begin_layout Subsection
+
+\family typewriter
+\emph off
+\strikeout on
+\color lightgray
+locate
+\end_layout
+
+\begin_layout Subsection
 Comodines
 \end_layout
 
@@ -33829,6 +33838,35 @@ trap ACCION SEÑAL
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si la señal es 
+\begin_inset Quotes fld
+\end_inset
+
+0
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+EXIT
+\begin_inset Quotes frd
+\end_inset
+
+, la acción se realizará cuando termine el proceso actual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ejercicios
 \end_layout
@@ -33919,6 +33957,18 @@ Proponga una forma de incluir un script dentro de otro.
 Escriba un script que reciba como argumentos un archivo y una suma de verificaci
 ón, y muestre en la pantalla un mensaje indicando si dicho archivo tiene
  esa suma de verificación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando que añada una entrada en un archivo de registro, una
+ vez que se cierre el shell.
 \end_layout
 
 \begin_layout Standard
@@ -34358,6 +34408,13 @@ total 0
 -rw-r--r-- 1 entorno wheel 0 feb 3 15:26 espacios
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -35197,13 +35254,6 @@ fi
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -36470,13 +36520,6 @@ Escriba un script que recibe una cantidad variable de archivos y elimine
 
 \begin_layout Standard
 \begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -42379,16 +42422,6 @@ Daniel J.
  Barret - Efficient Linux at the Command Line.
 \end_layout
 
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "key-3"
-
-\end_inset
-
-William Shotts - The Linux Command Line.
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -42461,6 +42494,19 @@ status open
 \begin_layout Plain Layout
 Daniel J.
  Barrett - Linux Pocket Guide (3rd edition)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+William Shotts - The Linux Command Line.
 \end_layout
 
 \end_inset
