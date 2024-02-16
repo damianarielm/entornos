@@ -37451,6 +37451,57 @@ git config -l
 
 \end_layout
 
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Configure 
+\family typewriter
+git
+\family default
+ para que utilice por defecto su editor de preferencia.
+\end_layout
+
 \begin_layout Section
 Comandos básicos
 \end_layout
@@ -39198,13 +39249,6 @@ modificados: archivo
 sin cambios agregados al commit (usa "git add" y/o "git commit -a")
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
