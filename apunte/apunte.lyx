@@ -25639,7 +25639,7 @@ status open
 
 \begin_layout Plain Layout
 
-kill -s SEÑAL PID
+kill -s SEÑAL PID...
 \end_layout
 
 \end_inset
@@ -35053,6 +35053,17 @@ Suponga que en un directorio tiene muchos archivos, cada uno de ellos encabezado
 s por una primera linea señalando el artista.
  Cree una carpeta para cada artista, y mueva las canciones a las carpetas
  correspondientes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando para terminar todas las tareas en segundo plano.
 \end_layout
 
 \begin_layout Standard
