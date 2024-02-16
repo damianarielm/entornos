@@ -43531,21 +43531,12 @@ Comodines
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-1"
-
-\end_inset
-
-Paul E.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 key "key-3"
 
 \end_inset
 
-Ceruzzi - Computing: A Concise History.
+Paul E.
+ Ceruzzi - Computing: A Concise History.
 \end_layout
 
 \begin_layout Bibliography
@@ -43567,6 +43558,16 @@ key "key-2"
 
 Daniel J.
  Barret - Efficient Linux at the Command Line.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+Anna Skoulikari - Learning Git.
 \end_layout
 
 \begin_layout Standard
@@ -43654,111 +43655,6 @@ status open
 
 \begin_layout Plain Layout
 William Shotts - The Linux Command Line
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Francois Dupire - Git Essentials
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Richard E.
- Silverman - Git Pocket Guide
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mariot Tsitoara - Beginning Git and Github
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Anna Skoulikari - Learning Git
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Rick Umali - Learn GIT
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Scott Chacon - Pro Git
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Brent Laster - Professional Git
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Raju Gandhi - Head First Git
 \end_layout
 
 \end_inset
