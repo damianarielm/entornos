@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-14 de febrero de 2024.
+16 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -27684,7 +27684,7 @@ faStar
 
 \end_inset
 
- Utilice el comando 
+ Use el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -27835,6 +27835,18 @@ unalias
 
 \family typewriter
 source
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+trap
 \family default
 
 \begin_inset Quotes frd
@@ -36500,6 +36512,58 @@ Hola, Damian.
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba un script que descargue un archivo de internet.
+ Si la descarga falla, debe volver a intentar hasta lograrlo.
+ Agregue pausas entre cada intento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
