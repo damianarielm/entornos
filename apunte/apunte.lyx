@@ -42436,46 +42436,68 @@ Colab
 \end_layout
 
 \begin_layout Part*
+
+\strikeout on
 Apéndice
 \end_layout
 
 \begin_layout Chapter
+
+\strikeout on
 Instalación de linux
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Máquina virtual
 \end_layout
 
 \begin_layout Subsection
+
+\strikeout on
 VirtualBox
 \end_layout
 
 \begin_layout Subsection
+
+\strikeout on
 Lubuntu
 \end_layout
 
 \begin_layout Subsection
+
+\strikeout on
 Guest Additions
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Subsistema de Windows para Linux
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Colab
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Replit
 \end_layout
 
 \begin_layout Chapter
+
+\strikeout on
 Resolución de problemas
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Activar 
 \emph on
 IVT
@@ -42486,11 +42508,980 @@ AMD-V
 \end_layout
 
 \begin_layout Section
+
+\strikeout on
 Poner 
 \family typewriter
 man
 \family default
  en español
+\end_layout
+
+\begin_layout Chapter
+
+\strikeout on
+Programando un shell
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Menú interactivo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=C,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>    // Funciones de entrada/salida
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <unistd.h>   // Llamadas a sistema
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/wait.h> // Funcion wait
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <string.h>   // Funciones de cadenas
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+char comando[1024];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void prompt() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    puts("1 - Mostrar directorio de trabajo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    puts("2 - Listar carpeta actual.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    puts("0 - Salir.");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    printf("Ingrese una opcion: ");
+\end_layout
+
+\begin_layout Plain Layout
+
+    fgets(comando, sizeof(comando), stdin);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int ejecutar(char programa[]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    int pid = fork();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pid == 0) execl(programa, NULL);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (pid != -1) wait(&pid);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (strcmp(comando, "0
+\backslash
+n")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        prompt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!strcmp(comando, "1
+\backslash
+n")) ejecutar("/usr/bin/pwd");
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!strcmp(comando, "2
+\backslash
+n")) ejecutar("/usr/bin/ls");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Linea de comandos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=C,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>    // Funciones de entrada/salida
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <unistd.h>   // Llamadas a sistema
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/wait.h> // Funcion wait
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <string.h>   // Funciones de cadenas
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+char comando[1024];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void prompt() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    printf("$ ");
+\end_layout
+
+\begin_layout Plain Layout
+
+    fgets(comando, sizeof(comando), stdin);
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando[strcspn(comando, "
+\backslash
+n")] = '
+\backslash
+0';
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int ejecutar(char programa[]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    int pid = fork();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pid == 0) execl(programa, NULL);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (pid != -1) wait(&pid);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (strcmp(comando, "exit")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        prompt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ejecutar(comando);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Prompt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=C,fontsize={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>    // Funciones de entrada/salida
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <unistd.h>   // Llamadas a sistema
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/wait.h> // Funcion wait
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <string.h>   // Funciones de cadenas
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <pwd.h>      // Funciones de usuario
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+char comando[1024];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void prompt() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    char cwd[1024]; getcwd(cwd, sizeof(cwd));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char hostname[1024]; gethostname(hostname, sizeof(hostname));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char* username = getlogin();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    printf("%s@%s:%s$ ", username, hostname, cwd);
+\end_layout
+
+\begin_layout Plain Layout
+
+    fgets(comando, sizeof(comando), stdin);
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando[strcspn(comando, "
+\backslash
+n")] = '
+\backslash
+0';
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int ejecutar(char programa[]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    int pid = fork();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pid == 0) execl(programa, NULL);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (pid != -1) wait(&pid);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (strcmp(comando, "exit")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        prompt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ejecutar(comando);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Cambiar de directorio
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=C,fontsize={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>    // Funciones de entrada/salida
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <unistd.h>   // Llamadas a sistema
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/wait.h> // Funcion wait
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <string.h>   // Funciones de cadenas
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <pwd.h>      // Funciones de usuario
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+char comando[1024];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void prompt() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    char cwd[1024]; getcwd(cwd, sizeof(cwd));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char hostname[1024]; gethostname(hostname, sizeof(hostname));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char* username = getlogin();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    printf("%s@%s:%s$ ", username, hostname, cwd);
+\end_layout
+
+\begin_layout Plain Layout
+
+    fgets(comando, sizeof(comando), stdin);
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando[strcspn(comando, "
+\backslash
+n")] = '
+\backslash
+0';
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int ejecutar(char programa[]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    int pid = fork();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pid == 0) execl(programa, NULL);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (pid != -1) wait(&pid);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (strcmp(comando, "exit")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        prompt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!strncmp(comando, "cd ", 3))
+\end_layout
+
+\begin_layout Plain Layout
+
+            chdir(&comando[3]);
+\end_layout
+
+\begin_layout Plain Layout
+
+        else
+\end_layout
+
+\begin_layout Plain Layout
+
+            ejecutar(comando);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Variable PATH
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=C,fontsize={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>    // Funciones de entrada/salida
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <unistd.h>   // Llamadas a sistema
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/wait.h> // Funcion wait
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <string.h>   // Funciones de cadenas
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <pwd.h>      // Funciones de usuario
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <stdlib.h>   // Variables de entorno
+\end_layout
+
+\begin_layout Plain Layout
+
+char comando[1024];
+\end_layout
+
+\begin_layout Plain Layout
+
+void prompt() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    char cwd[1024]; getcwd(cwd, sizeof(cwd));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char hostname[1024]; gethostname(hostname, sizeof(hostname));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char* username = getlogin();
+\end_layout
+
+\begin_layout Plain Layout
+
+    printf("%s@%s:%s$ ", username, hostname, cwd);
+\end_layout
+
+\begin_layout Plain Layout
+
+    fgets(comando, sizeof(comando), stdin);
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando[strcspn(comando, "
+\backslash
+n")] = '
+\backslash
+0';
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void buscar(char programa[]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    char env_path[1024];
+\end_layout
+
+\begin_layout Plain Layout
+
+    strcpy(env_path, getenv("PATH"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    char* current_dir = env_path;
+\end_layout
+
+\begin_layout Plain Layout
+
+    strtok(current_dir, ":");
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (current_dir) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        char full_path[1024] = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+        sprintf(full_path, "%s/%s", current_dir, programa);
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!access(full_path, F_OK)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            strcpy(programa, full_path);
+\end_layout
+
+\begin_layout Plain Layout
+
+            return;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        current_dir = strtok(NULL, ":");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void ejecutar(char programa[]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    buscar(programa);
+\end_layout
+
+\begin_layout Plain Layout
+
+    int pid = fork();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pid == 0) execl(programa, NULL);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (pid != -1) wait(&pid);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (strcmp(comando, "0")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        prompt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (!strncmp(comando, "cd ", 3))
+\end_layout
+
+\begin_layout Plain Layout
+
+            chdir(&comando[3]);
+\end_layout
+
+\begin_layout Plain Layout
+
+        else
+\end_layout
+
+\begin_layout Plain Layout
+
+            ejecutar(comando);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Manejo de argumentos
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Alias
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Comodines
 \end_layout
 
 \begin_layout Bibliography
@@ -42501,7 +43492,16 @@ key "key-1"
 \end_inset
 
 Paul E.
- Ceruzzi - Computing: A Concise History.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Ceruzzi - Computing: A Concise History.
 \end_layout
 
 \begin_layout Bibliography
@@ -42609,7 +43609,125 @@ Daniel J.
 status open
 
 \begin_layout Plain Layout
-William Shotts - The Linux Command Line.
+William Shotts - The Linux Command Line
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Francois Dupire - Git Essentials
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Richard E.
+ Silverman - Git Pocket Guide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mariot Tsitoara - Beginning Git and Github
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Anna Skoulikari - Learning Git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Rick Umali - Learn GIT
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Scott Chacon - Pro Git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Brent Laster - Professional Git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Raju Gandhi - Head First Git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jon Loeliger - Version Control with Git
 \end_layout
 
 \end_inset
