@@ -25850,7 +25850,7 @@ status open
 
 \begin_layout Plain Layout
 
-jobs
+jobs [-p]
 \end_layout
 
 \end_inset
@@ -25861,6 +25861,22 @@ jobs
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Si se especifica la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-p
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se muestran los números de procesos en vez de numero de tareas.
 \end_layout
 
 \begin_layout Example
