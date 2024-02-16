@@ -4999,7 +4999,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Tiempo de ejecución
+Tiempo de traducción y ejecución
 \end_layout
 
 \end_inset
@@ -27918,7 +27918,7 @@ faStar
 
 \end_inset
 
- Instale el paquete 
+ Instale los paquetes 
 \begin_inset Quotes fld
 \end_inset
 
@@ -27930,7 +27930,20 @@ tldr
 \begin_inset Quotes frd
 \end_inset
 
- y experimente su uso.
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+shellcheck
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Experimente su uso.
 \end_layout
 
 \begin_layout Standard
@@ -28083,10 +28096,9 @@ ping
 \begin_inset Quotes frd
 \end_inset
 
- se utiliza para verificar la conectividad entre dos hosts a través de la
- red.
- Se utiliza comúnmente utilizada para diagnosticar problemas de red, verificar
- la disponibilidad de un host y medir la latencia de la red.
+ se utiliza para verificar la conectividad entre dos hosts, diagnosticar
+ problemas de red, verificar la disponibilidad de un host y medir la latencia
+ de la red.
 \end_layout
 
 \begin_layout Standard
