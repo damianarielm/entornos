@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-16 de febrero de 2024.
+18 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -42570,178 +42570,6 @@ Programando un shell
 \begin_layout Section
 
 \strikeout on
-Menú interactivo
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=C,fontsize={\normalsize}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#include <stdio.h>    // Funciones de entrada/salida
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <unistd.h>   // Llamadas a sistema
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <sys/wait.h> // Funcion wait
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <string.h>   // Funciones de cadenas
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-char comando[1024];
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void prompt() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    puts("1 - Mostrar directorio de trabajo.");
-\end_layout
-
-\begin_layout Plain Layout
-
-    puts("2 - Listar carpeta actual.");
-\end_layout
-
-\begin_layout Plain Layout
-
-    puts("0 - Salir.");
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    printf("Ingrese una opcion: ");
-\end_layout
-
-\begin_layout Plain Layout
-
-    fgets(comando, sizeof(comando), stdin);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-int ejecutar(char programa[]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    int pid = fork();
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (pid == 0) execl(programa, NULL);
-\end_layout
-
-\begin_layout Plain Layout
-
-    else if (pid != -1) wait(&pid);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void main() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (strcmp(comando, "0
-\backslash
-n")) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        prompt();
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (!strcmp(comando, "1
-\backslash
-n")) ejecutar("/usr/bin/pwd");
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (!strcmp(comando, "2
-\backslash
-n")) ejecutar("/usr/bin/ls");
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-
-\strikeout on
 Linea de comandos
 \end_layout
 
@@ -42751,498 +42579,52 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=C,fontsize={\normalsize}"
+lstparams "language=Python,numbers=left,fontsize={\normalsize},numbersep={8pt},xleftmargin=8pt"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-#include <stdio.h>    // Funciones de entrada/salida
+import os
 \end_layout
 
 \begin_layout Plain Layout
 
-#include <unistd.h>   // Llamadas a sistema
 \end_layout
 
 \begin_layout Plain Layout
 
-#include <sys/wait.h> // Funcion wait
+while True:
 \end_layout
 
 \begin_layout Plain Layout
 
-#include <string.h>   // Funciones de cadenas
+    comando = input()
 \end_layout
 
 \begin_layout Plain Layout
 
+    pid = os.fork()
 \end_layout
 
 \begin_layout Plain Layout
 
-char comando[1024];
+    if pid == 0:
 \end_layout
 
 \begin_layout Plain Layout
 
+        os.execv(comando, [comando])
 \end_layout
 
 \begin_layout Plain Layout
 
-void prompt() {
+    else:
 \end_layout
 
 \begin_layout Plain Layout
 
-    printf("$ ");
-\end_layout
-
-\begin_layout Plain Layout
-
-    fgets(comando, sizeof(comando), stdin);
-\end_layout
-
-\begin_layout Plain Layout
-
-    comando[strcspn(comando, "
-\backslash
-n")] = '
-\backslash
-0';
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-int ejecutar(char programa[]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    int pid = fork();
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (pid == 0) execl(programa, NULL);
-\end_layout
-
-\begin_layout Plain Layout
-
-    else if (pid != -1) wait(&pid);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void main() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (strcmp(comando, "exit")) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        prompt();
-\end_layout
-
-\begin_layout Plain Layout
-
-        ejecutar(comando);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-
-\strikeout on
-Prompt
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=C,fontsize={\small}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#include <stdio.h>    // Funciones de entrada/salida
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <unistd.h>   // Llamadas a sistema
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <sys/wait.h> // Funcion wait
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <string.h>   // Funciones de cadenas
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <pwd.h>      // Funciones de usuario
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-char comando[1024];
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void prompt() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    char cwd[1024]; getcwd(cwd, sizeof(cwd));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char hostname[1024]; gethostname(hostname, sizeof(hostname));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char* username = getlogin();
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    printf("%s@%s:%s$ ", username, hostname, cwd);
-\end_layout
-
-\begin_layout Plain Layout
-
-    fgets(comando, sizeof(comando), stdin);
-\end_layout
-
-\begin_layout Plain Layout
-
-    comando[strcspn(comando, "
-\backslash
-n")] = '
-\backslash
-0';
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-int ejecutar(char programa[]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    int pid = fork();
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (pid == 0) execl(programa, NULL);
-\end_layout
-
-\begin_layout Plain Layout
-
-    else if (pid != -1) wait(&pid);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void main() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (strcmp(comando, "exit")) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        prompt();
-\end_layout
-
-\begin_layout Plain Layout
-
-        ejecutar(comando);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-
-\strikeout on
-Cambiar de directorio
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=C,fontsize={\small}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#include <stdio.h>    // Funciones de entrada/salida
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <unistd.h>   // Llamadas a sistema
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <sys/wait.h> // Funcion wait
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <string.h>   // Funciones de cadenas
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <pwd.h>      // Funciones de usuario
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-char comando[1024];
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void prompt() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    char cwd[1024]; getcwd(cwd, sizeof(cwd));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char hostname[1024]; gethostname(hostname, sizeof(hostname));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char* username = getlogin();
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    printf("%s@%s:%s$ ", username, hostname, cwd);
-\end_layout
-
-\begin_layout Plain Layout
-
-    fgets(comando, sizeof(comando), stdin);
-\end_layout
-
-\begin_layout Plain Layout
-
-    comando[strcspn(comando, "
-\backslash
-n")] = '
-\backslash
-0';
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-int ejecutar(char programa[]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    int pid = fork();
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (pid == 0) execl(programa, NULL);
-\end_layout
-
-\begin_layout Plain Layout
-
-    else if (pid != -1) wait(&pid);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void main() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (strcmp(comando, "exit")) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        prompt();
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (!strncmp(comando, "cd ", 3))
-\end_layout
-
-\begin_layout Plain Layout
-
-            chdir(&comando[3]);
-\end_layout
-
-\begin_layout Plain Layout
-
-        else
-\end_layout
-
-\begin_layout Plain Layout
-
-            ejecutar(comando);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
+        os.waitid(os.P_PID, pid, os.WEXITED)
 \end_layout
 
 \end_inset
@@ -43267,7 +42649,2256 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=C,fontsize={\small}"
+lstparams "language=Python,numbers=left,fontsize={\normalsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(comando):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{comando}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return comando
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(comando), [comando])
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = input()
+\end_layout
+
+\begin_layout Plain Layout
+
+    ejecutar(comando)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Manejo de argumentos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\normalsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comando):
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa, [programa] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = input()
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, argumentos = interpretar(comando)
+\end_layout
+
+\begin_layout Plain Layout
+
+    ejecutar(programa, argumentos)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Cambiar de directorio
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\normalsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comando):
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa, [programa] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = input()
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, argumentos = interpretar(comando)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        ejecutar(programa, argumentos)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Prompt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\small},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def prompt():
+\end_layout
+
+\begin_layout Plain Layout
+
+    cwd = os.getcwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+    username = os.getlogin()
+\end_layout
+
+\begin_layout Plain Layout
+
+    hostname = os.uname().nodename
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"{username}@{hostname}:{cwd}$", end =" ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    return input()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comando):
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa, [programa] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = prompt()
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, argumentos = interpretar(comando)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        ejecutar(programa, argumentos)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Alias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\footnotesize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+def prompt():
+\end_layout
+
+\begin_layout Plain Layout
+
+    cwd = os.getcwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+    username = os.getlogin()
+\end_layout
+
+\begin_layout Plain Layout
+
+    hostname = os.uname().nodename
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"{username}@{hostname}:{cwd}$", end =" ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    return input()
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comando):
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if programa in alias:
+\end_layout
+
+\begin_layout Plain Layout
+
+        programa = alias[programa].split()[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+        argumentos = alias[programa].split()[1:] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa, [programa] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_alias(argumentos, alias):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        nombre, programa = argumentos[1].split("=")
+\end_layout
+
+\begin_layout Plain Layout
+
+        alias[nombre] = programa + " " + " ".join(argumentos[2:])
+\end_layout
+
+\begin_layout Plain Layout
+
+    return alias
+\end_layout
+
+\begin_layout Plain Layout
+
+alias = {}
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = prompt()
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, argumentos = interpretar(comando)
+\end_layout
+
+\begin_layout Plain Layout
+
+    if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif programa == "alias":
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando_alias(argumentos, alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        ejecutar(programa, argumentos)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Segundo plano
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\scriptsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def prompt():
+\end_layout
+
+\begin_layout Plain Layout
+
+    cwd = os.getcwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+    username = os.getlogin()
+\end_layout
+
+\begin_layout Plain Layout
+
+    hostname = os.uname().nodename
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"{username}@{hostname}:{cwd}$", end =" ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    return input()
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos, background):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif not background:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comando):
+\end_layout
+
+\begin_layout Plain Layout
+
+    background = comando[-1] == "&"
+\end_layout
+
+\begin_layout Plain Layout
+
+    if background: comando = comando[:-1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if programa in alias:
+\end_layout
+
+\begin_layout Plain Layout
+
+        programa = alias[programa].split()[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+        argumentos = alias[programa].split()[1:] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa, [programa] + argumentos, background
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_alias(argumentos, alias):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        nombre, programa = argumentos[1].split("=")
+\end_layout
+
+\begin_layout Plain Layout
+
+        alias[nombre] = programa + " " + " ".join(argumentos[2:])
+\end_layout
+
+\begin_layout Plain Layout
+
+    return alias
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+alias = {}
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comando = prompt()
+\end_layout
+
+\begin_layout Plain Layout
+
+    programa, argumentos, background = interpretar(comando)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif programa == "alias":
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando_alias(argumentos, alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        ejecutar(programa, argumentos, background)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Secuenciación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\scriptsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def prompt():
+\end_layout
+
+\begin_layout Plain Layout
+
+    cwd = os.getcwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+    username = os.getlogin()
+\end_layout
+
+\begin_layout Plain Layout
+
+    hostname = os.uname().nodename
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"{username}@{hostname}:{cwd}$", end =" ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    return input()
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos, background):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif not background:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comandos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    for comando in comandos.split(";"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        background = comando[-1] == "&"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if background: comando = comando[:-1]
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+        programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if programa in alias:
+\end_layout
+
+\begin_layout Plain Layout
+
+            programa = alias[programa].split()[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+            argumentos = alias[programa].split()[1:] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        yield programa, [programa] + argumentos, background
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_alias(argumentos, alias):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        nombre, programa = argumentos[1].split("=")
+\end_layout
+
+\begin_layout Plain Layout
+
+        alias[nombre] = programa + " " + " ".join(argumentos[2:])
+\end_layout
+
+\begin_layout Plain Layout
+
+    return alias
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+alias = {}
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    comandos = prompt()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    for programa, argumentos, background in interpretar(comandos):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+            comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif programa == "alias":
+\end_layout
+
+\begin_layout Plain Layout
+
+            comando_alias(argumentos, alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+        else:
+\end_layout
+
+\begin_layout Plain Layout
+
+            ejecutar(programa, argumentos, background)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Exit
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\scriptsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def prompt():
+\end_layout
+
+\begin_layout Plain Layout
+
+    cwd = os.getcwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+    username = os.getlogin()
+\end_layout
+
+\begin_layout Plain Layout
+
+    hostname = os.uname().nodename
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"{username}@{hostname}:{cwd}$", end =" ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    return input()
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta):
+\end_layout
+
+\begin_layout Plain Layout
+
+            return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos, background):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif not background:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comandos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    for comando in comandos.split(";"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        background = comando[-1] == "&"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if background: comando = comando[:-1]
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+        programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if programa in alias:
+\end_layout
+
+\begin_layout Plain Layout
+
+            programa = alias[programa].split()[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+            argumentos = alias[programa].split()[1:] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        yield programa, [programa] + argumentos, background
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_alias(argumentos, alias):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        nombre, programa = argumentos[1].split("=")
+\end_layout
+
+\begin_layout Plain Layout
+
+        alias[nombre] = programa + " " + " ".join(argumentos[2:])
+\end_layout
+
+\begin_layout Plain Layout
+
+    return alias
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+alias = {}
+\end_layout
+
+\begin_layout Plain Layout
+
+comandos = ""
+\end_layout
+
+\begin_layout Plain Layout
+
+while comandos != "exit":
+\end_layout
+
+\begin_layout Plain Layout
+
+    comandos = prompt()
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    for programa, argumentos, background in interpretar(comandos):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+            comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif programa == "alias":
+\end_layout
+
+\begin_layout Plain Layout
+
+            comando_alias(argumentos, alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif programa != "exit":
+\end_layout
+
+\begin_layout Plain Layout
+
+            ejecutar(programa, argumentos, background)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Historial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,numbers=left,fontsize={\scriptsize},numbersep={8pt},xleftmargin=8pt"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import os
+\end_layout
+
+\begin_layout Plain Layout
+
+def prompt():
+\end_layout
+
+\begin_layout Plain Layout
+
+    cwd = os.getcwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+    username = os.getlogin()
+\end_layout
+
+\begin_layout Plain Layout
+
+    hostname = os.uname().nodename
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(f"{username}@{hostname}:{cwd}$", end =" ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    return input()
+\end_layout
+
+\begin_layout Plain Layout
+
+def buscar(programa):
+\end_layout
+
+\begin_layout Plain Layout
+
+    path = os.getenv("PATH")
+\end_layout
+
+\begin_layout Plain Layout
+
+    for directorio in path.split(":"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        ruta = f"{directorio}/{programa}"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if os.path.isfile(ruta): return ruta
+\end_layout
+
+\begin_layout Plain Layout
+
+    return programa
+\end_layout
+
+\begin_layout Plain Layout
+
+def ejecutar(programa, argumentos, background):
+\end_layout
+
+\begin_layout Plain Layout
+
+    pid = os.fork()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if pid == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.execv(buscar(programa), argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif not background:
+\end_layout
+
+\begin_layout Plain Layout
+
+        os.waitid(os.P_PID, pid, os.WEXITED)
+\end_layout
+
+\begin_layout Plain Layout
+
+def interpretar(comandos, historial):
+\end_layout
+
+\begin_layout Plain Layout
+
+    for comando in comandos.split(";"):
+\end_layout
+
+\begin_layout Plain Layout
+
+        background = comando[-1] == "&"
+\end_layout
+
+\begin_layout Plain Layout
+
+        if background: comando = comando[:-1]
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando = comando.replace("~", os.getenv("HOME"))
+\end_layout
+
+\begin_layout Plain Layout
+
+        comando = comando.replace("!!", historial[-1])
+\end_layout
+
+\begin_layout Plain Layout
+
+        if comando[0] == "!": comando = historial[int(comando[1:])]
+\end_layout
+
+\begin_layout Plain Layout
+
+        programa, *argumentos = comando.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+        if programa in alias:
+\end_layout
+
+\begin_layout Plain Layout
+
+            programa = alias[programa].split()[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+            argumentos = alias[programa].split()[1:] + argumentos
+\end_layout
+
+\begin_layout Plain Layout
+
+        yield programa, [programa] + argumentos, background
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_cd(argumentos):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = os.getenv("HOME")
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        directorio = argumentos[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+    os.chdir(directorio)
+\end_layout
+
+\begin_layout Plain Layout
+
+def comando_alias(argumentos, alias):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if not argumentos[1:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        nombre, programa = argumentos[1].split("=")
+\end_layout
+
+\begin_layout Plain Layout
+
+        alias[nombre] = programa + " " + " ".join(argumentos[2:])
+\end_layout
+
+\begin_layout Plain Layout
+
+    return alias
+\end_layout
+
+\begin_layout Plain Layout
+
+alias = {}
+\end_layout
+
+\begin_layout Plain Layout
+
+comandos = ""
+\end_layout
+
+\begin_layout Plain Layout
+
+historial = []
+\end_layout
+
+\begin_layout Plain Layout
+
+while comandos != "exit":
+\end_layout
+
+\begin_layout Plain Layout
+
+    comandos = prompt()
+\end_layout
+
+\begin_layout Plain Layout
+
+    if comandos[0] != "!": historial.append(comandos)
+\end_layout
+
+\begin_layout Plain Layout
+
+    for programa, argumentos, background in interpretar(comandos, historial):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if programa == "cd":
+\end_layout
+
+\begin_layout Plain Layout
+
+            comando_cd(argumentos)
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif programa == "alias":
+\end_layout
+
+\begin_layout Plain Layout
+
+            comando_alias(argumentos, alias)
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif programa == "history":
+\end_layout
+
+\begin_layout Plain Layout
+
+            for n, comando in enumerate(historial):
+\end_layout
+
+\begin_layout Plain Layout
+
+                print(f"{n} {comando}")
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif programa != "exit":
+\end_layout
+
+\begin_layout Plain Layout
+
+            ejecutar(programa, argumentos, background)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Lenguaje C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=C,numbers=left,fontsize={\small},numbersep={8pt},xleftmargin=8pt"
 inline false
 status open
 
@@ -43510,24 +45141,6 @@ void main() {
 
 \end_layout
 
-\begin_layout Section
-
-\strikeout on
-Manejo de argumentos
-\end_layout
-
-\begin_layout Section
-
-\strikeout on
-Alias
-\end_layout
-
-\begin_layout Section
-
-\strikeout on
-Comodines
-\end_layout
-
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
@@ -43589,32 +45202,6 @@ status open
 
 \begin_layout Plain Layout
 Protocolo XKB
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ownshell
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Shellcheck
 \end_layout
 
 \end_inset
