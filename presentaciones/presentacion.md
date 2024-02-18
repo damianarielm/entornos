@@ -27,7 +27,7 @@ la Tecnicatura Universitaria en Inteligencia Artificial.
 
 . . .
 
-Está planificada para una duracion aproximada de 23 clases. Para la comisión 2
+Está planificada para una duracion aproximada de 20 clases. Para la comisión 2
 los horarios son:
 
 * Martes de 17:00 a 20:00hs (Aula 24 o Laboratorio del segundo piso).
@@ -112,6 +112,24 @@ instancia adicional de recuperación (25/6).
 * Manejo de bash.
 * Control de versiones.
 * Contenedores y virtualizacion.
+
+## Cronograma tentativo
+
+* Clase 1: Presentacion, historia, arquitectura.
+* Clase 2: Instalacion de Linux.
+* Clase 3: Sistema operativo.
+* Clase 4: Sistema operativo, programacion.
+* Clase 5: Programacion, sistema de archivos.
+* Clase 6: Sistema de archivos.
+* Primer examen.
+* Clase 7/16: Bash.
+* Segundo examen.
+* Clase 17: Control de versiones.
+* Clase 18: Control de versiones.
+* Clase 19: Virtualizacion y contenedores.
+* Clase 20: Virtualizacion y contenedores.
+* Recuperatorio.
+* Presentacion de TPs.
 
 ## Para la proxima clase
 
