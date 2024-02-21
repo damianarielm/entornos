@@ -34127,6 +34127,67 @@ faExclamationTriangle
 Haga un script que impida el uso de la terminal.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Piense cuál es el error que comete el siguiente programa y solucionelo.
+ No lo ejecute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo -n "Escriba el nombre de la carpeta que desea borrar: "
+\end_layout
+
+\begin_layout Plain Layout
+
+read $carpeta
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo rm -rf "$carpeta/"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Encomillados y escapes
 \end_layout
@@ -34464,13 +34525,6 @@ total 0
 -rw-r--r-- 1 entorno wheel 0 feb 3 15:26 espacios
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -35908,10 +35962,7 @@ if else
 \end_inset
 
  anidadas, pero proporciona una forma más concisa de manejar múltiples opciones.
-\end_layout
-
-\begin_layout Standard
-La sintaxis básica del 
+ La sintaxis básica del 
 \begin_inset Quotes fld
 \end_inset
 
@@ -35932,7 +35983,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=PHP"
+lstparams "language=PHP,fontsize={\small}"
 inline false
 status open
 
