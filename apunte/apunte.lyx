@@ -113,7 +113,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-18 de febrero de 2024.
+21 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -728,6 +728,10 @@ Panel de conexiones de la IBM 402.
 
 \begin_layout Standard
 Además, para leer los datos de entrada se utilizaban 
+\begin_inset Quotes fld
+\end_inset
+
+
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faYoutubePlay"
@@ -736,8 +740,16 @@ literal "true"
 
 \end_inset
 
- tarjetas perforadas.
+ tarjetas perforadas
+\begin_inset Quotes frd
+\end_inset
+
+.
  Las 
+\begin_inset Quotes fld
+\end_inset
+
+
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faWikipediaW"
@@ -746,8 +758,12 @@ literal "true"
 
 \end_inset
 
- tarjetas perforadas son medios de almacenamiento de datos utilizados históricam
-ente en la informática.
+ tarjetas perforadas
+\begin_inset Quotes frd
+\end_inset
+
+ son medios de almacenamiento de datos utilizados históricamente en la informáti
+ca.
  Estas tarjetas son cartulinas rectangulares que contienen información codificad
 a mediante perforaciones ubicadas en filas y columnas.
  Cada columna en una tarjeta perforada representa un carácter o un campo
@@ -41029,6 +41045,51 @@ HEAD~n
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Haga un repositorio con el siguiente historial:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename merge.png
+	scale 55
+	BoundingBox 0bp 0bp 590bp 206bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Lineas de subterraneo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Repositorios remotos
 \end_layout
@@ -41524,6 +41585,11 @@ status open
 git branch -a
 \end_layout
 
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
 \end_inset
 
 
@@ -41566,31 +41632,6 @@ nueva
 \end_inset
 
 remotes/origin/master
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-git log
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -42266,13 +42307,6 @@ git clone
  y configuraciones del repositorio remoto.
  Es una forma común de comenzar a trabajar en un proyecto nuevo o colaborar
  en un proyecto existente.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -44874,261 +44908,6 @@ while comandos != "exit":
 \begin_layout Plain Layout
 
             ejecutar(programa, argumentos, background)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-
-\strikeout on
-Lenguaje C
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=C,numbers=left,fontsize={\small},numbersep={8pt},xleftmargin=8pt"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#include <stdio.h>    // Funciones de entrada/salida
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <unistd.h>   // Llamadas a sistema
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <sys/wait.h> // Funcion wait
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <string.h>   // Funciones de cadenas
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <pwd.h>      // Funciones de usuario
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <stdlib.h>   // Variables de entorno
-\end_layout
-
-\begin_layout Plain Layout
-
-char comando[1024];
-\end_layout
-
-\begin_layout Plain Layout
-
-void prompt() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    char cwd[1024]; getcwd(cwd, sizeof(cwd));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char hostname[1024]; gethostname(hostname, sizeof(hostname));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char* username = getlogin();
-\end_layout
-
-\begin_layout Plain Layout
-
-    printf("%s@%s:%s$ ", username, hostname, cwd);
-\end_layout
-
-\begin_layout Plain Layout
-
-    fgets(comando, sizeof(comando), stdin);
-\end_layout
-
-\begin_layout Plain Layout
-
-    comando[strcspn(comando, "
-\backslash
-n")] = '
-\backslash
-0';
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-void buscar(char programa[]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    char env_path[1024];
-\end_layout
-
-\begin_layout Plain Layout
-
-    strcpy(env_path, getenv("PATH"));
-\end_layout
-
-\begin_layout Plain Layout
-
-    char* current_dir = env_path;
-\end_layout
-
-\begin_layout Plain Layout
-
-    strtok(current_dir, ":");
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (current_dir) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        char full_path[1024] = "";
-\end_layout
-
-\begin_layout Plain Layout
-
-        sprintf(full_path, "%s/%s", current_dir, programa);
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (!access(full_path, F_OK)) {
-\end_layout
-
-\begin_layout Plain Layout
-
-            strcpy(programa, full_path);
-\end_layout
-
-\begin_layout Plain Layout
-
-            return;
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-        current_dir = strtok(NULL, ":");
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-void ejecutar(char programa[]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    buscar(programa);
-\end_layout
-
-\begin_layout Plain Layout
-
-    int pid = fork();
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (pid == 0) execl(programa, NULL);
-\end_layout
-
-\begin_layout Plain Layout
-
-    else if (pid != -1) wait(&pid);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-void main() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (strcmp(comando, "0")) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        prompt();
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (!strncmp(comando, "cd ", 3))
-\end_layout
-
-\begin_layout Plain Layout
-
-            chdir(&comando[3]);
-\end_layout
-
-\begin_layout Plain Layout
-
-        else
-\end_layout
-
-\begin_layout Plain Layout
-
-            ejecutar(comando);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
 \end_inset
