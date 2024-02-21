@@ -207,7 +207,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename pascal.jpg
+	filename imagenes/pascal.jpg
 	display false
 	scale 8
 
@@ -274,7 +274,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename pascalina.png
+	filename imagenes/pascalina.png
 	lyxscale 17
 	scale 20
 
@@ -325,7 +325,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename babbage.jpg
+	filename imagenes/babbage.jpg
 	display false
 	scale 14
 
@@ -370,7 +370,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename diferencial.jpg
+	filename imagenes/diferencial.jpg
 	lyxscale 15
 	scale 9
 
@@ -449,7 +449,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename teletipo.png
+	filename imagenes/teletipo.png
 	lyxscale 20
 	scale 12
 
@@ -502,7 +502,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename zuse.jpg
+	filename imagenes/zuse.jpg
 	display false
 	scale 15
 
@@ -541,7 +541,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename z3.png
+	filename imagenes/z3.png
 	lyxscale 15
 	scale 17
 
@@ -584,7 +584,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename aiken.jpg
+	filename imagenes/aiken.jpg
 	display false
 	scale 45
 
@@ -633,7 +633,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename mark1.png
+	filename imagenes/mark1.png
 	lyxscale 35
 	scale 37
 
@@ -699,7 +699,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plugboard.jpg
+	filename imagenes/plugboard.jpg
 	lyxscale 33
 	scale 31
 
@@ -777,7 +777,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename punchcard.jpg
+	filename imagenes/punchcard.jpg
 	lyxscale 33
 	scale 14
 
@@ -864,7 +864,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename eniac.png
+	filename imagenes/eniac.png
 	lyxscale 25
 	scale 22
 
@@ -923,7 +923,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename backus.jpg
+	filename imagenes/backus.jpg
 	display false
 	scale 18
 
@@ -983,7 +983,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename pdp1.jpg
+	filename imagenes/pdp1.jpg
 	lyxscale 15
 	scale 20
 
@@ -1035,7 +1035,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename engelbart.jpg
+	filename imagenes/engelbart.jpg
 	display false
 	scale 65
 
@@ -1074,7 +1074,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename nls.png
+	filename imagenes/nls.png
 	lyxscale 40
 	scale 52
 
@@ -1130,7 +1130,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename thompsonritchie.jpg
+	filename imagenes/thompsonritchie.jpg
 	display false
 	scale 40
 
@@ -1211,7 +1211,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename alto.png
+	filename imagenes/alto.png
 	lyxscale 10
 	scale 14
 
@@ -1267,7 +1267,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename altair8800.png
+	filename imagenes/altair8800.png
 	lyxscale 20
 	scale 20
 
@@ -1326,7 +1326,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename pc.jpg
+	filename imagenes/pc.jpg
 	lyxscale 20
 	scale 5.8
 
@@ -1385,7 +1385,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename stallman.jpg
+	filename imagenes/stallman.jpg
 	display false
 	scale 25
 
@@ -1479,7 +1479,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename tanenbaum.jpg
+	filename imagenes/tanenbaum.jpg
 	display false
 	scale 13
 
@@ -1521,7 +1521,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename berners.jpg
+	filename imagenes/berners.jpg
 	display false
 	scale 9
 
@@ -1559,7 +1559,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename linus.jpg
+	filename imagenes/linus.jpg
 	display false
 	scale 16
 
@@ -1623,7 +1623,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename guido.jpg
+	filename imagenes/guido.jpg
 	display false
 	scale 1.5
 
@@ -1673,7 +1673,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename windows95.jpg
+	filename imagenes/windows95.jpg
 	lyxscale 50
 	scale 17.5
 
@@ -1792,7 +1792,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ubuntu.png
+	filename imagenes/ubuntu.png
 	lyxscale 50
 	scale 19
 
@@ -1944,7 +1944,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename gabinete.png
+	filename imagenes/gabinete.png
 	lyxscale 20
 	scale 18
 	BoundingBox 100bp 100bp 900bp 900bp
@@ -2017,7 +2017,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename motherboard.png
+	filename imagenes/motherboard.png
 	lyxscale 20
 	scale 25
 	BoundingBox 0bp 0bp 1280bp 679bp
@@ -2085,7 +2085,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename psu.jpg
+	filename imagenes/psu.jpg
 	lyxscale 20
 	scale 23
 
@@ -2156,7 +2156,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename cpu.jpg
+	filename imagenes/cpu.jpg
 	lyxscale 30
 	scale 22
 
@@ -2249,7 +2249,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ram.jpg
+	filename imagenes/ram.jpg
 	lyxscale 20
 	scale 11
 	BoundingBox 0bp 350bp 2000bp 1650bp
@@ -2307,7 +2307,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename disk.jpg
+	filename imagenes/disk.jpg
 	lyxscale 20
 	scale 11
 	BoundingBox 0bp 100bp 1500bp 1400bp
@@ -2353,7 +2353,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename jerarquia.png
+	filename imagenes/jerarquia.png
 	lyxscale 70
 	scale 49
 
@@ -2423,7 +2423,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ssd.jpg
+	filename imagenes/ssd.jpg
 	lyxscale 20
 	scale 7
 
@@ -2479,7 +2479,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename gpu.jpg
+	filename imagenes/gpu.jpg
 	lyxscale 30
 	scale 35
 
@@ -2552,7 +2552,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename kernel.png
+	filename imagenes/kernel.png
 	lyxscale 30
 	scale 18
 
@@ -2813,7 +2813,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename post.jpg
+	filename imagenes/post.jpg
 	lyxscale 20
 	scale 12
 
@@ -2924,7 +2924,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grub.png
+	filename imagenes/grub.png
 	lyxscale 40
 	scale 22
 
@@ -2974,7 +2974,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename bootmgr.png
+	filename imagenes/bootmgr.png
 	lyxscale 50
 	scale 59
 
@@ -3181,7 +3181,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename vconsole.png
+	filename imagenes/vconsole.png
 	lyxscale 50
 	scale 65
 
@@ -3347,7 +3347,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename qterminal.png
+	filename imagenes/qterminal.png
 	lyxscale 50
 	scale 31
 
@@ -3698,7 +3698,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename etapas.png
+	filename imagenes/etapas.png
 	scale 64
 
 \end_inset
@@ -3808,7 +3808,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename gui.png
+	filename imagenes/gui.png
 	lyxscale 50
 	scale 22
 
@@ -3915,7 +3915,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename kde.png
+	filename imagenes/kde.png
 	lyxscale 41
 	scale 22
 
@@ -4073,7 +4073,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename i3.png
+	filename imagenes/i3.png
 	lyxscale 50
 	scale 24
 
@@ -4218,7 +4218,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename distributions.png
+	filename imagenes/distributions.png
 	lyxscale 30
 	scale 19
 
@@ -4593,7 +4593,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename flujo.png
+	filename imagenes/flujo.png
 	lyxscale 30
 	scale 13
 
@@ -5001,7 +5001,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ejecucion.png
+	filename imagenes/ejecucion.png
 	lyxscale 70
 	scale 41
 
@@ -5078,7 +5078,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename opensource.png
+	filename imagenes/opensource.png
 	display false
 	scale 3.5
 
@@ -5114,7 +5114,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename fsf.png
+	filename imagenes/fsf.png
 	display false
 	scale 5.5
 
@@ -5148,7 +5148,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename libre.png
+	filename imagenes/libre.png
 	lyxscale 75
 	scale 29
 
@@ -5220,7 +5220,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename visualstudio.png
+	filename imagenes/visualstudio.png
 	lyxscale 30
 	scale 25
 
@@ -5370,7 +5370,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename chr.png
+	filename imagenes/chr.png
 	lyxscale 50
 	scale 22
 	BoundingBox 150bp 50bp 900bp 1000bp
@@ -5638,7 +5638,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename particiones.png
+	filename imagenes/particiones.png
 	lyxscale 40
 	scale 26
 
@@ -5831,7 +5831,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename pcmanfm.png
+	filename imagenes/pcmanfm.png
 	lyxscale 40
 	scale 39
 
@@ -5881,7 +5881,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename explorador.png
+	filename imagenes/explorador.png
 	lyxscale 30
 	scale 30
 
@@ -6416,7 +6416,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename gparted.png
+	filename imagenes/gparted.png
 	lyxscale 30
 	scale 23
 
@@ -6937,7 +6937,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename fhs.png
+	filename imagenes/fhs.png
 	lyxscale 25
 	scale 11
 
@@ -37104,7 +37104,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename git.png
+	filename imagenes/git.png
 	lyxscale 30
 	scale 30
 	BoundingBox 0bp 0bp 2875bp 1333bp
@@ -37211,7 +37211,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename tracked.png
+	filename imagenes/tracked.png
 	scale 50
 	BoundingBox 100bp 0bp 700bp 453bp
 
@@ -41063,8 +41063,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename merge.png
-	scale 55
+	filename imagenes/merge.png
+	scale 50
 	BoundingBox 0bp 0bp 590bp 206bp
 
 \end_inset
