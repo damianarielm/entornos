@@ -85,6 +85,15 @@ customHeadersFooters
 \begin_body
 
 \begin_layout Cover
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Estandarizar tipografías.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -113,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-21 de febrero de 2024.
+25 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -27896,13 +27905,25 @@ export
 \begin_inset Quotes frd
 \end_inset
 
- y 
+, 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
 type
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+exit
 \family default
 
 \begin_inset Quotes frd
@@ -28165,6 +28186,13 @@ DESTINO
 \emph default
  puede ser una dirección IP o un nombre de host al cual deseas enviar los
  paquetes de solicitud de eco.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -37712,6 +37740,61 @@ mkdir repositorio
 cd repositorio
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/wd.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Directorio de trabajo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
 \begin_layout Plain Layout
 
 git init
@@ -37736,6 +37819,43 @@ status open
 \family typewriter
 \size footnotesize
 Inicializado repositorio Git vacío en /home/entorno/repositorio/.git/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/init.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git init
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -37875,6 +37995,13 @@ no hay nada para confirmar (crea/copia archivos y usa "git add" para hacerles
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Si agregamos un archivo al directorio de trabajo (pero no al área de preparación
 ) observaríamos una salida como esta:
@@ -38005,6 +38132,43 @@ archivo
 \size footnotesize
 no hay nada agregado al commit pero hay archivos sin seguimiento presentes
  (usa "git add" para hacerles seguimiento)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/touch.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+touch
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38163,7 +38327,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash,style={github-dark}"
+lstparams "language=bash,fontsize={\small},style={github-dark}"
 inline false
 status open
 
@@ -38268,6 +38432,43 @@ Cambios a ser confirmados:
 
 \color green
 nuevos archivos: archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/add1.png
+	lyxscale 30
+	scale 28
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git add
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38468,6 +38669,43 @@ En la rama master
 \family typewriter
 \size footnotesize
 nada para hacer commit, el árbol de trabajo está limpio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/commit1.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git commit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38993,6 +39231,43 @@ sin cambios agregados al commit (usa "git add" y/o "git commit -a")
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/rm.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+rm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Si recuperamos el archivo borrado a partir de la versión confirmada en el
  repositorio observaremos lo siguiente:
@@ -39004,7 +39279,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash,style={github-dark}"
+lstparams "language=bash,fontsize={\small},style={github-dark}"
 inline false
 status open
 
@@ -39051,8 +39326,105 @@ nada para hacer commit, el árbol de trabajo está limpio
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/commit1.png
+	lyxscale 30
+	scale 26
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git restore
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Agreguemos contenido al área de preparación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo contenido > archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/contenido.png
+	lyxscale 30
+	scale 26
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Agregando contenido al directorio de trabajo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -39067,22 +39439,12 @@ status open
 
 \begin_layout Plain Layout
 
-echo contenido > archivo
-\end_layout
-
-\begin_layout Plain Layout
-
 git add archivo
 \end_layout
 
 \begin_layout Plain Layout
 
 git status
-\end_layout
-
-\begin_layout Plain Layout
-
-cat archivo
 \end_layout
 
 \end_inset
@@ -39165,17 +39527,43 @@ Cambios a ser confirmados:
 
 \color green
 modificados: archivo
-\begin_inset Newline newline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/add2.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
-contenido
+git add
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -39314,6 +39702,47 @@ modificados: archivo
 \family typewriter
 \size footnotesize
 sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/contenido.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git restore –-staged
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -39487,7 +39916,73 @@ index e69de29..764df4e 100644
 \end_layout
 
 \begin_layout Example
-Agreguemos la nueva versión al área de preparación, y modifiquemos su contenido.
+Agreguemos la nueva versión al área de preparación: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git add archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/add2.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git add
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora modifiquemos el contenido de nuestro archivo.
  La salida ahora sera algo similar a esto:
 \end_layout
 
@@ -39497,23 +39992,13 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash,style={github-dark}"
+lstparams "language=bash,fontsize={\small},style={github-dark}"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-git add archivo
-\end_layout
-
-\begin_layout Plain Layout
-
-echo mas contenido >> archivo
-\end_layout
-
-\begin_layout Plain Layout
-
-git diff
+echo mas contenido >> archivo && git diff
 \end_layout
 
 \end_inset
@@ -39583,6 +40068,41 @@ contenido
 \size footnotesize
 \color green
 +mas contenido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/mascontenido.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Agregando mas contenido al archivo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -39956,6 +40476,13 @@ Debemos notar que cuando creamos una nueva rama el puntero de referencia
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 Para ver las ramas locales usamos el comando sin opciones:
 \end_layout
@@ -39992,7 +40519,6 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 * 
 \color green
 master
@@ -40052,7 +40578,6 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 * 
 \color green
 master
@@ -40061,7 +40586,6 @@ master
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 \begin_inset space ~
 \end_inset
 
@@ -40335,14 +40859,14 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 [nueva 22df02d] Segundo commit.
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 1 file changed, 1 insertion(+)
 \begin_inset Newline newline
 \end_inset
@@ -40353,7 +40877,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 \color yellow
 commit 22df02db5a9558bd7748c5d403cdf0ac836d8897 (
 \color cyan
@@ -40373,21 +40897,21 @@ nueva
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 Author: Damian Ariel Marotte <damarotte@gmail.com>
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 Date: Mon Jan 22 19:01:52 2024 -0300
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -40413,7 +40937,7 @@ Segundo commit.
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 \color yellow
 commit 980bc28d5e306ae1fad33b9731126b4964813fc4 (
 \color green
@@ -40425,21 +40949,21 @@ master
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 Author: Damian Ariel Marotte <damarotte@gmail.com>
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 Date: Mon Jan 22 18:37:09 2024 -0300
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -40465,14 +40989,14 @@ Primer commit.
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 contenido
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 mas contenido
 \end_layout
 
@@ -40492,6 +41016,50 @@ mas contenido
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/commit2.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git commit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -40623,6 +41191,84 @@ Tercer commit.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+[nueva bab8a34] Tercer commit.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+1 file changed, 1 insertion(+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/commit3.png
+	lyxscale 30
+	scale 29
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git commit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
 \begin_layout Plain Layout
 
 git switch master
@@ -40645,26 +41291,44 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
-[nueva bab8a34] Tercer commit.
+Cambiado a rama 'master'
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\family typewriter
-\size footnotesize
-1 file changed, 1 insertion(+)
-\begin_inset Newline newline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/switch.png
+	lyxscale 30
+	scale 29
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
-Cambiado a rama 'master'
+git switch
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -40708,11 +41372,7 @@ git merge
 \end_inset
 
  en Git se utiliza para combinar los cambios de otra rama en la rama actual.
- 
-\end_layout
-
-\begin_layout Standard
-Su sintaxis es simplemente:
+ Su sintaxis es simplemente:
 \end_layout
 
 \begin_layout Standard
@@ -40721,7 +41381,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=PHP"
+lstparams "language=PHP,fontsize={\small}"
 inline false
 status open
 
@@ -40764,19 +41424,11 @@ status open
 
 \begin_layout Plain Layout
 En el proceso de fusión, Git intenta combinar automáticamente los cambios.
- Sin embargo, pueden surgir conflictos que requerirán intervención manual
- para resolver.
+ Sin embargo, pueden surgir conflictos que requerirán intervención manual.
  En esos casos, Git marca los archivos conflictivos y te pedirá que resuelvas
- los conflictos antes de completar la fusión.
+ los conflictos antes de hacer la fusión.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -40801,18 +41453,13 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
-lstparams "language=bash,style={github-dark}"
+lstparams "language=bash,fontsize={\small},style={github-dark}"
 inline false
 status open
 
 \begin_layout Plain Layout
 
 git merge nueva
-\end_layout
-
-\begin_layout Plain Layout
-
-git log
 \end_layout
 
 \end_inset
@@ -40863,11 +41510,78 @@ archivo | 2
 \end_inset
 
 1 file changed, 2 insertions(+)
-\begin_inset Newline newline
+\end_layout
+
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/merge1.png
+	lyxscale 30
+	scale 24
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git merge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git log
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
 
 \begin_layout Plain Layout
 
@@ -41104,6 +41818,45 @@ HEAD~n
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
 Haga un repositorio con el siguiente historial:
 \end_layout
 
@@ -41115,7 +41868,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/merge.png
-	scale 50
+	scale 36
 	BoundingBox 0bp 0bp 590bp 206bp
 
 \end_inset
@@ -41305,7 +42058,7 @@ status open
 
 \begin_layout Plain Layout
 
-git remote add origin https://gitlab.com/damianarielm/entorno
+git remote add origin https://gitlab.com/damianarielm/borrar
 \end_layout
 
 \begin_layout Plain Layout
@@ -41377,6 +42130,41 @@ nueva
 \begin_layout Standard
 Por el momento, nuestra versión remota del repositorio permanece completamente
  vacía.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/gitlab.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Repositorio remoto en gitlab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -41871,6 +42659,43 @@ Primer commit.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/push.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git push
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -41999,21 +42824,21 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 En la rama master
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 Tu rama está actualizada con 'origin/master'.
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 nada para hacer commit, el árbol de trabajo está limpio
 \end_layout
 
@@ -42025,7 +42850,45 @@ nada para hacer commit, el árbol de trabajo está limpio
 \begin_layout Standard
 Git nos indica que nuestra rama local está sincronizada con la última versión
  conocida del repositorio remoto.
- Para actualizar esta información debemos traer la nueva versión desde Gitlab:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/commit4.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Creando una confirmación desde Gitlab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para actualizar esta información debemos traer la nueva versión desde Gitlab:
 \end_layout
 
 \begin_layout Standard
@@ -42065,14 +42928,14 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 En la rama master
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 Tu rama está detrás de 'origin/master' por 1 commit, y puede ser avanzada
  rápido.
 \end_layout
@@ -42080,7 +42943,7 @@ Tu rama está detrás de 'origin/master' por 1 commit, y puede ser avanzada
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -42094,7 +42957,7 @@ Tu rama está detrás de 'origin/master' por 1 commit, y puede ser avanzada
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
+\size small
 nada para hacer commit, el árbol de trabajo está limpio
 \end_layout
 
@@ -42105,8 +42968,55 @@ nada para hacer commit, el árbol de trabajo está limpio
 
 \begin_layout Standard
 Ahora si podemos observar que nuestra rama local carece de la confirmación
- que tiene nuestra rama remota.
- Si lo deseamos, podemos integrar estos cambios mediante una fusión:
+ que tiene nuestra versión remota de la rama.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/fetch.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git fetch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si lo deseamos, podemos integrar estos cambios mediante una fusión:
 \end_layout
 
 \begin_layout Standard
@@ -42141,29 +43051,62 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 Actualizando bab8a34..01090d3
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 Fast-forward
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 archivo | 1 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-\size footnotesize
 1 file changed, 1 insertion(+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/git/merge2.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 2875bp 1333bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+git merge
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
