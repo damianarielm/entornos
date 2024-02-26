@@ -43802,12 +43802,47 @@ AMD-V
 
 \begin_layout Section
 
-\strikeout on
+\color lightgray
 Poner 
 \family typewriter
 man
 \family default
  en español
+\end_layout
+
+\begin_layout Standard
+Por defecto, la documentación de Linux se encuentra en idioma ingles.
+ Para ponerla en idioma español debe utilizarse el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo apt update
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt install manpages-es
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
