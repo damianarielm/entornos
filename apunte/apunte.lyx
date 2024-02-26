@@ -43539,8 +43539,154 @@ Lubuntu
 
 \begin_layout Subsection
 
-\strikeout on
+\emph off
+\color lightgray
 Guest Additions
+\end_layout
+
+\begin_layout Standard
+Las 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Guest Additions
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Guest Addittions
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ significa en ingles 
+\begin_inset Quotes fld
+\end_inset
+
+Agregados del huesped
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ son un conjunto de controladores y utilidades adicionales que se instalan
+ dentro de una máquina virtual (VM) que se ejecuta en VirtualBox.
+ Están diseñadas para mejorar la experiencia del usuario y la funcionalidad
+ de la VM en general.
+\end_layout
+
+\begin_layout Standard
+Algunas de las características y mejoras que proporcionan las Guest Additions
+ incluyen:
+\end_layout
+
+\begin_layout Description
+Integración
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+ratón
+\begin_inset space ~
+\end_inset
+
+y
+\begin_inset space ~
+\end_inset
+
+el
+\begin_inset space ~
+\end_inset
+
+teclado Las Guest Additions permiten una integración más fluida del ratón
+ y el teclado entre el sistema operativo anfitrión y el invitado.
+ 
+\end_layout
+
+\begin_layout Description
+Soporte
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+pantalla
+\begin_inset space ~
+\end_inset
+
+completa Permite habilitar el modo de pantalla completa para la VM para
+ aprovechar al máximo el espacio de la pantalla y trabajar de manera más
+ cómoda dentro de la máquina virtual.
+\end_layout
+
+\begin_layout Description
+integración
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+portapapeles Activa la funcionalidad del portapapeles entre el sistema operativo
+ anfitrión y el invitado, lo que facilita el intercambio de texto y otros
+ datos entre ambos sistemas.
+\end_layout
+
+\begin_layout Standard
+Para instalarlas, basta con ejecutar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo apt update
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt install virtualbox-guest-utils virtualbox-guest-x11
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
