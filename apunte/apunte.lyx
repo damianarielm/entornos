@@ -122,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-25 de febrero de 2024.
+26 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -43545,8 +43545,83 @@ Guest Additions
 
 \begin_layout Section
 
-\strikeout on
+\color lightgray
 Subsistema de Windows para Linux
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Subsistema_de_Windows_para_Linux"
+literal "true"
+
+\end_inset
+
+ Windows Subsystem for Linux
+\begin_inset Quotes frd
+\end_inset
+
+ (WSL) es una característica de Windows que permite ejecutar un entorno
+ de Linux directamente en Windows sin necesidad de una máquina virtual o
+ un arranque dual.
+ 
+\end_layout
+
+\begin_layout Standard
+WSL utiliza una capa de compatibilidad para traducir las llamadas del sistema
+ de Linux a llamadas del sistema de Windows, lo que permite que las aplicaciones
+ de Linux se ejecuten de manera nativa en el sistema operativo Windows.
+ 
+\end_layout
+
+\begin_layout Standard
+Para instalar WSL basta con correr el siguiente comando en PowerShell:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wsl --install -d ubuntu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego se debe ejecutar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wsl
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para poder utilizarlo.
 \end_layout
 
 \begin_layout Section
@@ -43587,6 +43662,85 @@ Poner
 man
 \family default
  en español
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+Actualizar Kernel para WSL
+\end_layout
+
+\begin_layout Standard
+Si Windows no tiene actualizado el kernel de Linux para WSL, es probable
+ que aparezca un error a la hora de instalar WSL:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Installing, this may take a few minutes...
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+WslRegisterDistribution failed with error: 0x800701bc
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Error: 0x800701bc WSL 2 requiere una actualizaci¾n de su componente de kernel.
+ Para obtener informaci¾n, visita https://aka.ms/wsl2kernel
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Press any key to continue...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para solucionarlo, basta con actualizar el nucleo y volver a instalar:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={solarized-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wsl --update
+\end_layout
+
+\begin_layout Plain Layout
+
+wsl --install -d ubuntu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
