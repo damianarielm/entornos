@@ -37064,7 +37064,6 @@ Git tiene tres áreas de trabajo fundamentales, que representan diferentes
 \end_layout
 
 \begin_layout Itemize
-Directorio de trabajo
 \begin_inset Marginal
 status open
 
@@ -37086,14 +37085,14 @@ Working tree
 
 \end_inset
 
-: Es el directorio actual donde estás trabajando en tus archivos.
+Directorio de trabajo: Es el directorio actual donde estás trabajando en
+ tus archivos.
  Contiene la versión actual y modificada de tus archivos.
  Los cambios realizados en el directorio de trabajo no se registran en Git
  hasta que se añaden al área de preparación.
 \end_layout
 
 \begin_layout Itemize
-Área de preparación
 \begin_inset Marginal
 status open
 
@@ -37127,7 +37126,8 @@ Index
 
 \end_inset
 
-: Es un área intermedia entre el directorio de trabajo y el repositorio.
+Área de preparación: Es un área intermedia entre el directorio de trabajo
+ y el repositorio.
  Se utiliza para recopilar y preparar los cambios que se incluirán en la
  próxima confirmación.
  Los archivos en el área de preparación están listos para ser confirmados,
@@ -37135,7 +37135,6 @@ Index
 \end_layout
 
 \begin_layout Itemize
-Repositorio
 \begin_inset Marginal
 status open
 
@@ -37169,7 +37168,8 @@ commit
 
 \end_inset
 
-: Es la base de datos donde Git almacena el historial completo de cambios.
+Repositorio: Es la base de datos donde Git almacena el historial completo
+ de cambios.
  Contiene todos los estados confirmados, cada uno con su conjunto de cambios
  y referencias a confirmaciones anteriores.
  Los cambios confirmados en el área de preparación se guardan permanentemente
@@ -37185,8 +37185,8 @@ status open
 \begin_inset Graphics
 	filename imagenes/git.png
 	lyxscale 30
-	scale 30
-	BoundingBox 0bp 0bp 2875bp 1333bp
+	scale 15
+	BoundingBox 0bp 0bp 5990bp 2777bp
 
 \end_inset
 
@@ -37218,7 +37218,6 @@ En Git, un archivo puede encontrarse en uno de los cuatro estados principales,
 \end_layout
 
 \begin_layout Enumerate
-No rastreado
 \begin_inset Marginal
 status open
 
@@ -37240,13 +37239,12 @@ Untracked
 
 \end_inset
 
-: Un archivo no rastreado es aquel que Git no está siguiendo.
+No rastreado: Un archivo no rastreado es aquel que Git no está siguiendo.
  Puede ser un nuevo archivo que aún no ha sido añadido al repositorio o
  un archivo que ha sido ignorado explícitamente.
 \end_layout
 
 \begin_layout Enumerate
-En el área de preparación
 \begin_inset Marginal
 status open
 
@@ -37268,8 +37266,8 @@ Staged
 
 \end_inset
 
-: Un archivo en el área de preparación está listo para ser incluido en la
- próxima confirmación.
+En el área de preparación: Un archivo en el área de preparación está listo
+ para ser incluido en la próxima confirmación.
 \end_layout
 
 \begin_layout Enumerate
@@ -43534,6 +43532,7 @@ VirtualBox
 \begin_layout Subsection
 
 \emph off
+\color lightgray
 Lubuntu
 \end_layout
 
