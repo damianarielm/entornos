@@ -43508,33 +43508,516 @@ Colab
 \end_layout
 
 \begin_layout Part*
-
-\strikeout on
 Apéndice
 \end_layout
 
 \begin_layout Chapter
 
-\strikeout on
+\color lightgray
 Instalación de linux
 \end_layout
 
 \begin_layout Section
 
-\strikeout on
+\color lightgray
 Máquina virtual
 \end_layout
 
 \begin_layout Subsection
 
+\emph off
 \strikeout on
+\color lightgray
 VirtualBox
 \end_layout
 
 \begin_layout Subsection
 
-\strikeout on
+\emph off
 Lubuntu
+\end_layout
+
+\begin_layout Subsubsection
+Inicio del LiveCD
+\end_layout
+
+\begin_layout Standard
+Una vez que tengamos configurada nuestra máquina virtual, podemos ejecutar
+ la misma.
+ Luego de algunos minutos veremos una pantalla como esta:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/inicio.png
+	lyxscale 30
+	scale 30
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Inicio del LiveCD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Llegados a este punto, ya podemos dar comienzo a la instalación haciendo
+ doble click en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Install Lubuntu
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Comienzo de la instalación
+\end_layout
+
+\begin_layout Standard
+A continuación elegimos el idioma de preferencia y presionamos el botón
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Siguiente
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/instalacion.png
+	lyxscale 30
+	scale 26
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Comienzo de la instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Configuración regional
+\end_layout
+
+\begin_layout Standard
+Ha llegado la hora de configurar la región en la que opera el dispositivo.
+ El sistema operativo mostrará fechas, horarios y unidades de acuerdo a
+ lo seleccionado en esta sección.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/ubicacion.png
+	lyxscale 30
+	scale 26
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Configuración regional
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Distribución del teclado
+\end_layout
+
+\begin_layout Standard
+En esta sección podemos elegir la distribución del teclado.
+ En el cuadro de texto de la zona inferior, podemos probar que las teclas
+ se muestren bien.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/teclado.png
+	lyxscale 30
+	scale 27
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Distribución del teclado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Particionado del disco
+\end_layout
+
+\begin_layout Standard
+Para nuestra primera instalación, elegiremos la opción de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+borrar el disco
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ como esquema de particionado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/particiones.png
+	lyxscale 30
+	scale 27
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Particionado del disco
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Creación del usuario principal
+\end_layout
+
+\begin_layout Standard
+Ahora debemos elegir nuestro nombre, nombre de usuario, nombre del equipo
+ y contraseña.
+ También podemos marcar la casilla de verificación si deseamos iniciar sesión
+ en la máquina virtual sin introducir la contraseña.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/usuarios.png
+	lyxscale 30
+	scale 26
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Creación del usuario principal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resumen de los datos
+\end_layout
+
+\begin_layout Standard
+Reunida toda la información de los pasos anteriores, podemos verificarla
+ una vez mas antes de hacer click en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Instalar
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/resumen.png
+	lyxscale 30
+	scale 26
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Resumen de los datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Final de la instalación
+\end_layout
+
+\begin_layout Standard
+Despues de varios minutos la instalación habrá finalizado, momento en el
+ cual presionaremos el botón 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Hecho
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/terminar.png
+	lyxscale 30
+	scale 27
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Final de la instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Reinicio de la máquina virtual
+\end_layout
+
+\begin_layout Standard
+Finalmente, presionamos la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Enter y luego reiniciamos la 
+\emph on
+máquina virtual
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/reiniciar.png
+	lyxscale 30
+	scale 27
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reinicio de la máquina virtual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -43783,14 +44266,13 @@ Replit
 \end_layout
 
 \begin_layout Chapter
-
-\strikeout on
 Resolución de problemas
 \end_layout
 
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Activar 
 \emph on
 IVT
@@ -43847,7 +44329,7 @@ sudo apt install manpages-es
 
 \begin_layout Section
 
-\strikeout on
+\color lightgray
 Actualizar Kernel para WSL
 \end_layout
 
