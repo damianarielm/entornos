@@ -122,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-26 de febrero de 2024.
+29 de febrero de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -34842,7 +34842,9 @@ echo $'uno
 \backslash
 ndos
 \backslash
-ttres'
+ttres
+\backslash
+ncuatro'
 \end_layout
 
 \end_inset
@@ -34875,6 +34877,19 @@ dos
 tres
 \end_layout
 
+\begin_layout Plain Layout
+
+\family typewriter
+cuatro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -35159,10 +35174,11 @@ Escriba un comando que muestre el tamaño del archivo mas grande de la carpeta
 \end_layout
 
 \begin_layout Exercise
-Suponga que en un directorio tiene muchos archivos, cada uno de ellos encabezado
-s por una primera linea señalando el artista.
+Suponga que en un directorio tiene muchos archivos, cada uno de ellos tiene
+ el título de una canción y está encabezado por una primera linea señalando
+ el artista.
  Cree una carpeta para cada artista, y mueva las canciones a las carpetas
- correspondientes.
+ correspondientes en un solo comando.
 \end_layout
 
 \begin_layout Standard
@@ -44255,22 +44271,25 @@ wsl
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Colab
 \end_layout
 
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Replit
 \end_layout
 
 \begin_layout Chapter
+
+\color lightgray
 Resolución de problemas
 \end_layout
 
 \begin_layout Section
 
-\strikeout on
 \color lightgray
 Activar 
 \emph on
@@ -44279,6 +44298,140 @@ IVT
 /
 \emph on
 AMD-V
+\end_layout
+
+\begin_layout Standard
+IVT (Intel Virtualization Technology) y AMD-V (AMD Virtualization) son tecnologí
+as de virtualización desarrolladas por Intel y AMD, respectivamente.
+ Ambas tecnologías están diseñadas para mejorar el rendimiento y la eficiencia
+ de la virtualización en sus respectivas arquitecturas de procesadores.
+\end_layout
+
+\begin_layout Standard
+Para activar estas características es necesario ingresar a la configuración
+ de la placa madre.
+ Esto se logra presionando una tecla específica durante la etapa POST del
+ arranque de la PC.
+ Dependiendo del modelo esta tecla puede ser: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ F2, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ F10 o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ DEL (entre otras).
+\end_layout
+
+\begin_layout Standard
+Una vez allí simplemente es cuestión de navegar entre los menús hasta ubicar
+ la opción adecuada y habilitarla.
+ Finalmente se deben guardar los cambios y reiniciar el equipo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/uefi.png
+	lyxscale 50
+	scale 32
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Interfaz UEFI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/bios.png
+	lyxscale 70
+	scale 43
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Interfaz BIOS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -44344,18 +44497,21 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 Installing, this may take a few minutes...
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 WslRegisterDistribution failed with error: 0x800701bc
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 Error: 0x800701bc WSL 2 requiere una actualizaci¾n de su componente de kernel.
  Para obtener informaci¾n, visita https://aka.ms/wsl2kernel
 \end_layout
@@ -44363,6 +44519,7 @@ Error: 0x800701bc WSL 2 requiere una actualizaci¾n de su componente de kernel.
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 Press any key to continue...
 \end_layout
 
@@ -44408,12 +44565,14 @@ wsl --install -d ubuntu
 \begin_layout Chapter
 
 \strikeout on
+\color lightgray
 Programando un shell
 \end_layout
 
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Linea de comandos
 \end_layout
 
@@ -44484,6 +44643,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Variable PATH
 \end_layout
 
@@ -44607,6 +44767,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Manejo de argumentos
 \end_layout
 
@@ -44754,6 +44915,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Cambiar de directorio
 \end_layout
 
@@ -44959,6 +45121,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Prompt
 \end_layout
 
@@ -45198,6 +45361,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Alias
 \end_layout
 
@@ -45474,6 +45638,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Segundo plano
 \end_layout
 
@@ -45780,6 +45945,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Secuenciación
 \end_layout
 
@@ -46091,6 +46257,7 @@ while True:
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Exit
 \end_layout
 
@@ -46407,6 +46574,7 @@ while comandos != "exit":
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Historial
 \end_layout
 
