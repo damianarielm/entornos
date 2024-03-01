@@ -30,7 +30,7 @@ la Tecnicatura Universitaria en Inteligencia Artificial.
 Está planificada para una duracion aproximada de 20 clases. Para la comisión 2
 los horarios son:
 
-* Martes de 17:00 a 20:00hs (Aula 24 o Laboratorio del segundo piso).
+* Martes de 17:05 a 20:05hs (Salon de Actos o Laboratorio del segundo piso).
 
 * Miercoles de 17:00 a 19:00hs (https://meet.google.com/jgw-ooyr-yya).
 
@@ -134,7 +134,7 @@ instancia adicional de recuperación (25/6).
 ## Para la proxima clase
 
 Aprenderemos a instalar una distribución de Linux en una máquina virtual.
-Para ello necesitaremos descarcar:
+Para ello necesitaremos descargar:
 
 . . .
 
