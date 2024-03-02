@@ -122,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-29 de febrero de 2024.
+2 de marzo de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -43557,8 +43557,25 @@ Inicio del LiveCD
 \end_layout
 
 \begin_layout Standard
-Una vez que tengamos configurada nuestra máquina virtual, podemos ejecutar
- la misma.
+Una vez que tengamos configurada nuestra máquina virtual con el correspondiente
+ CD de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://lubuntu.me/downloads/"
+literal "true"
+
+\end_inset
+
+ Lubuntu
+\begin_inset Quotes frd
+\end_inset
+
+ insertado, podemos ejecutar la misma.
  Luego de algunos minutos veremos una pantalla como esta:
 \end_layout
 
@@ -44270,11 +44287,107 @@ wsl
 
 \begin_layout Section
 
-\strikeout on
 \color lightgray
 Colab
 \end_layout
 
+\begin_layout Standard
+Es posible utilizar un entorno de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://colab.research.google.com/"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Google Colab
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para utilizar Bash.
+ Para esto debemos seguir estos tres pasos:
+\end_layout
+
+\begin_layout Enumerate
+Instalar el módulo de Python 
+\family typewriter
+colab-xterm
+\family default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+!pip install colab-xterm 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cargar la extensión en Colab:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+%load_ext colabxterm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ejecutar 
+\family typewriter
+xterm
+\family default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+%xterm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 
 \strikeout on
