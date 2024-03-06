@@ -122,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-2 de marzo de 2024.
+6 de marzo de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -43540,9 +43540,295 @@ Máquina virtual
 \begin_layout Subsection
 
 \emph off
-\strikeout on
 \color lightgray
 VirtualBox
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.virtualbox.org/"
+literal "true"
+
+\end_inset
+
+ VirtualBox
+\begin_inset Quotes frd
+\end_inset
+
+ es un software de virtualización de código abierto desarrollado por Oracle.
+ Permite instalar y ejecutar sistemas operativos diferentes, como versiones
+ de Windows, Linux, macOS y otros, dentro de una ventana de software en
+ tu sistema operativo principal.
+\end_layout
+
+\begin_layout Standard
+Antes de instalar Linux en la máquina virtual debemos descargar una distribución
+ desde internet.
+ En la materia utilizaremos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://lubuntu.me/"
+literal "true"
+
+\end_inset
+
+ Lubuntu
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Creación de una máquina virtual
+\end_layout
+
+\begin_layout Standard
+Para crear una nueva máquina virtual elegimos la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Nueva
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en la pantalla principal.
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/virtualbox/principal.png
+	lyxscale 50
+	scale 36
+	BoundingBox 0bp 0bp 962bp 572bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Pantalla principal de VirtualBox
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Configuración del SO
+\end_layout
+
+\begin_layout Standard
+A continuación elegimos la ubicación dentro del sistema de archivos, así
+ como también la distribución que vamos a instalar y la imagen de disco
+ que descargamos.
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/virtualbox/so.png
+	lyxscale 50
+	scale 40
+	BoundingBox 0bp 0bp 781bp 401bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Pantalla principal de VirtualBox
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Elección del hardware
+\end_layout
+
+\begin_layout Standard
+En la siguiente ventana es posible elegir cuanta memoria y procesadores
+ utilizará la máquina virtual.
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/virtualbox/hardware.png
+	lyxscale 50
+	scale 40
+	BoundingBox 0bp 0bp 781bp 401bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Configuración del hardware
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Vale la pena notar que estos recursos no estarán disponibles para la máquina
+ anfitriona.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Creación de un disco virtual
+\end_layout
+
+\begin_layout Standard
+Ahora debemos elegir la capacidad del disco de la máquina virtual.
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/virtualbox/disco.png
+	lyxscale 50
+	scale 50
+	BoundingBox 0bp 0bp 781bp 401bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Creación de un disco virtual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Último paso
+\end_layout
+
+\begin_layout Standard
+Finalmente podemos hacer click en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Terminar
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y ya estaremos listos para usar nuestra máquina virtual.
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/virtualbox/fin.png
+	lyxscale 50
+	scale 50
+	BoundingBox 0bp 0bp 781bp 401bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Resumen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -43588,7 +43874,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/inicio.png
 	lyxscale 30
-	scale 30
+	scale 21
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -43661,7 +43947,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/instalacion.png
 	lyxscale 30
-	scale 26
+	scale 21
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -43751,7 +44037,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/teclado.png
 	lyxscale 30
-	scale 27
+	scale 26
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -43806,7 +44092,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/particiones.png
 	lyxscale 30
-	scale 27
+	scale 25
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -43852,7 +44138,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/usuarios.png
 	lyxscale 30
-	scale 26
+	scale 25
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -44026,7 +44312,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/reiniciar.png
 	lyxscale 30
-	scale 27
+	scale 29
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -44171,7 +44457,7 @@ portapapeles Activa la funcionalidad del portapapeles entre el sistema operativo
 \end_layout
 
 \begin_layout Standard
-Para instalarlas, basta con ejecutar el siguiente comando:
+Para instalarlas, basta con ejecutar los siguientes comandos:
 \end_layout
 
 \begin_layout Standard
@@ -44191,7 +44477,7 @@ sudo apt update
 
 \begin_layout Plain Layout
 
-sudo apt install virtualbox-guest-utils virtualbox-guest-x11
+sudo apt install virtualbox-guest-x11
 \end_layout
 
 \end_inset
@@ -44357,6 +44643,13 @@ status open
 %load_ext colabxterm
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
