@@ -32,13 +32,15 @@ los horarios son:
 
 * Martes de 17:05 a 20:05hs (Salon de Actos o Laboratorio del segundo piso).
 
-* Miercoles de 17:00 a 19:00hs (https://meet.google.com/jgw-ooyr-yya).
+* Miercoles de 17:00 a 19:00hs (https://meet.google.com/hsj-dtvp-gwc).
 
 . . .
 
 Es importante matricularse en el campus virtual de la FCEIA:
 
 * https://campusv.fceia.unr.edu.ar/course/view.php?id=392
+
+La contraseña es: `Entorno-C2`
 
 ## Objetivos
 
