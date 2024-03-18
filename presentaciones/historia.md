@@ -471,8 +471,8 @@ utilidades.
 ###### Linux ######
 
 ------------- -------------------------
-Desarrollador Andrew Tanenbaum
-Origen        Estados Unidos
+Desarrollador Linus Torvalds
+Origen        Finlandia
 Año           1987
 ------------- -------------------------
 
