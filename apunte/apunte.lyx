@@ -92,6 +92,10 @@ status open
 Estandarizar tipografías.
 \end_layout
 
+\begin_layout Plain Layout
+Sistema de númeración binario y unidades en bytes.
+\end_layout
+
 \end_inset
 
 
@@ -43687,6 +43691,7 @@ Elección del hardware
 \begin_layout Standard
 En la siguiente ventana es posible elegir cuanta memoria y procesadores
  utilizará la máquina virtual.
+ Se recomienda un mínimo de 2GB.
 \begin_inset Flex Figura
 status open
 
@@ -43741,6 +43746,7 @@ Creación de un disco virtual
 
 \begin_layout Standard
 Ahora debemos elegir la capacidad del disco de la máquina virtual.
+ Recomendamos 15GB como mínimo.
 \begin_inset Flex Figura
 status open
 
@@ -44488,6 +44494,19 @@ sudo apt install virtualbox-guest-x11
 
 \begin_layout Section
 
+\strikeout on
+\color lightgray
+Instalación en pendrive
+\end_layout
+
+\begin_layout Section
+
+\color lightgray
+Otras alternativas
+\end_layout
+
+\begin_layout Subsection
+
 \color lightgray
 Subsistema de Windows para Linux
 \end_layout
@@ -44567,7 +44586,7 @@ wsl
  para poder utilizarlo.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 
 \color lightgray
 Colab
@@ -44623,6 +44642,13 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Cargar la extensión en Colab:
@@ -44639,13 +44665,6 @@ status open
 %load_ext colabxterm
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -44677,11 +44696,18 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Section
+\begin_layout Subsection
 
 \strikeout on
 \color lightgray
 Replit
+\end_layout
+
+\begin_layout Subsection
+
+\strikeout on
+\color lightgray
+CoCalc
 \end_layout
 
 \begin_layout Chapter
