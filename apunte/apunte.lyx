@@ -117,12 +117,8 @@ Tecnicatura Universitaria en Inteligencia Artificial
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Date
-6 de marzo de 2024.
+18 de marzo de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -44838,6 +44834,52 @@ Interfaz BIOS
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+
+\color lightgray
+Librerías de C++
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Visual C++ Redistributable Package
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un conjunto de archivos y bibliotecas necesarios para que los programas
+ desarrollados con Microsoft Visual C++ funcionen correctamente en una computado
+ra.
+ Cuando instalas un programa en Windows que fue creado con Visual C++, es
+ posible que necesites instalar también estos 
+\begin_inset Quotes fld
+\end_inset
+
+paquetes redistribuibles
+\begin_inset Quotes frd
+\end_inset
+
+ si aún no están en tu sistema.
+\end_layout
+
+\begin_layout Standard
+Puedes descargar la última versión de esta librería desde este 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink \\; enlace"
+target "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+literal "true"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
