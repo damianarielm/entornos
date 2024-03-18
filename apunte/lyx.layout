@@ -48,7 +48,7 @@ AddToPreamble
     % Hyperlinks
     \usepackage{hyperref}
     \hypersetup{colorlinks=true,breaklinks=true,linktocpage=true,
-                urlcolor=Maroon,linkcolor=RoyalBlue,citecolor=Maroon}
+                urlcolor=RoyalBlue,linkcolor=RoyalBlue,citecolor=Maroon}
 
     % Capital letters
     \usepackage{lettrine}
