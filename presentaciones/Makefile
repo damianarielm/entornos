@@ -17,7 +17,7 @@ arquitectura.pdf:
 	pandoc arquitectura.md -s -o arquitectura.pdf -t beamer -V aspectratio=169 -V theme=Warsaw -V fontsize=8pt -f markdown+implicit_figures
 
 clean:
-	rm -f presentacion.pdf historia.htm arquitectura.pdf apunteintrogit.md introgit.md
+	rm -f presentacion.pdf historia.htm arquitectura.pdf apunteintrogit.md introgit.md sistemasoperativos.pdf
 
 sistemasoperativos.pdf:
 	pandoc sistemasoperativos.md -s -o sistemasoperativos.pdf -t beamer -V aspectratio=169 -V theme=Warsaw -V fontsize=8pt -f markdown+implicit_figures
