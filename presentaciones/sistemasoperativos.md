@@ -274,3 +274,88 @@ Finalización
 ###### Procesos ######
 
 ![Grandes hitos en la vida de un proceso](../apunte/imagenes/etapas.png){width=55%}
+
+
+
+###### Interfaz gráfica ######
+
+Una interfaz gráfica de usuario es una forma de interactuar con un programa o
+sistema operativo mediante el uso de elementos gráficos, como ventanas,
+iconos, botones y menús, en lugar de usar comandos de texto en una línea de
+comandos.
+
+[//]: # (COMPACT)
+. . .
+
+A las interfaces de usuario gráficas las llamamos **GUI** por sus siglas en
+inglés **Graphical User Interface**; en cambio a las interfaces de
+linea de comandos las llamamos **CLI** por las siglas **Command Line Interface**.
+
+[//]: # (COMPACT)
+. . .
+
+El entorno de escritorio, el sistema de ventanas, el servidor de pantalla y
+el gestor de ventanas son componentes importantes de un sistema operativo
+gráfico que trabajan juntos para proporcionar una interfaz de usuario intuitiva
+y fácil de usar.
+
+
+
+###### Interfaz gráfica ######
+
+![GUI](../apunte/imagenes/gui.png){width=55%}
+
+
+
+###### Entorno de escritorio ######
+
+Entorno de escritorio
+: Es un conjunto de aplicaciones, herramientas y utilidades que proporcionan
+ una interfaz de usuario gráfica para un sistema
+ operativo. El entorno de escritorio incluye menús, barras de herramientas,
+ iconos, fondos de pantalla, gestores de archivos y otras herramientas
+ que hacen que el uso del sistema operativo sea más fácil e intuitivo para
+ el usuario. Algunos ejemplos de entornos de escritorio son GNOME,
+ KDE, XFCE y LXDE.
+
+![KDE](../apunte/imagenes/kde.png){width=45%}
+
+
+
+###### Sistema de ventanas ######
+
+Sistema de ventanas
+: Es un sistema que permite la creación y manipulación
+ de ventanas de aplicaciones en la pantalla. El sistema de ventanas se
+ encarga de administrar la posición, tamaño, apariencia y eventos de las
+ ventanas en la pantalla. También se encarga de la gestión de los recursos
+ gráficos, como el uso de la memoria, la gestión de la entrada y salida de
+ datos, y el manejo de la interacción entre aplicaciones. Algunos ejemplos
+ de sistemas de ventanas son X11 y Wayland.
+
+
+
+###### Servidor de pantalla ######
+
+Servidor de pantalla
+: Es un programa que se ejecuta en el sistema operativo
+ y se encarga de controlar la pantalla, el teclado y el ratón del sistema. El
+ servidor de pantalla recibe la entrada de teclado y ratón y la envía a las
+ aplicaciones en ejecución en el sistema. También se encarga de mostrar
+ la salida gráfica de las aplicaciones en la pantalla. El servidor de pantalla
+ más utilizado en Linux es Xorg.
+
+
+
+###### Gestor de ventanas ######
+
+Gestor de ventanas
+: Es un programa que se ejecuta en el entorno de escritorio y que se encarga de
+ administrar la apariencia y el comportamiento de
+ las ventanas de las aplicaciones. El gestor de ventanas proporciona una
+ variedad de características, como la decoración de ventanas, la administración
+ de escritorios virtuales, la configuración de atajos de teclado, y
+ la gestión de la colocación de ventanas en la pantalla. Algunos ejemplos
+ de gestores de ventanas son Compiz, Openbox y i3.
+
+![i3](../apunte/imagenes/i3.png){width=55%}
