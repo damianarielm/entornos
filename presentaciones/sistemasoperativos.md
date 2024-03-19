@@ -89,3 +89,71 @@ Para casi cualquier tarea las aplicaciones de usuario necesitan pedirle
  Cuando se produce una llamada a sistema el CPU deja de ejecutar el programa,
  y comienza a ejecutar la funcionalidad del núcleo requerida, luego de la
  cual se continua con la ejecución del programa.
+
+
+
+###### Proceso de arranque ######
+
+Durante el **arranque de una PC**, ocurren varias cosas importantes que permiten
+que el sistema operativo se inicie correctamente y la computadora esté
+lista para su uso.
+
+Al presionarse el botón de arranque se activa la fuente de alimentación
+de la computadora, la cual suministra la energía necesaria para que la placa
+madre comience a funcionar. A partir de aquí, comienza un proceso que
+consiste en varias etapas:
+
+
+
+###### POST (Power On Self Test) ######
+
+POST (Power On Self Test)
+: La placa madre realiza un autodiagnóstico para
+ verificar que todos los componentes de hardware de la computadora
+ estén funcionando correctamente. Si detecta algún problema, emitirá un
+ mensaje de error y detendrá el proceso de arranque.
+
+![POST](../apunte/imagenes/post.jpg){width=45%}
+
+
+
+###### Boot Loader ######
+
+Boot Loader
+: A continuación la placa madre debe cargar un programa llamado
+ **cargador de arranque**. El cargador de arranque es un programa cuyo
+ objetivo principal es cargar el núcleo del sistema operativo. El cargador
+ de arranque mas utilizado en Linux es **GRUB**; y **bootmgr** es el
+ proporcionado por los sistemas modernos de Windows.
+
+:::::::::::::: {.columns}
+::: {.column width="40%"}
+![GRUB](../apunte/imagenes/grub.png){width=100%}
+:::
+::: {.column width="60%"}
+![BOOTMGR](../apunte/imagenes/bootmgr.png){width=60%}
+:::
+::::::::::::::
+
+
+
+###### Núcleo ######
+
+Núcleo
+: A continuación, el núcleo del sistema operativo toma el control de
+ la computadora. Durante sus tareas iniciales se encargará de identificar
+ el hardware disponible, cargar los controladores necesarios y montar el
+ sistema de archivos del sistema. Finalmente dará comienzo al primer
+ programa de usuario, a partir del cual se ejecutaran todos los demás
+ programas.
+
+
+
+###### Init ######
+
+Init
+: En los sistemas Linux, el programa inicial del sistema operativo se llama
+ **init**. Init se encargará de cargar los scripts de arranque del sistema, así
+ como también ejecutar los servicios esenciales para el funcionamiento
+ del mismo, y proveer al usuario de un entorno gráfico o de linea de
+ comandos.
