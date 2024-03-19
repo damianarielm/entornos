@@ -217,3 +217,60 @@ $ echo $SHELL
 Alguno de los interpretes de linea de comandos mas populares en los sistemas
 Linux son: **sh**, **bash**, **zsh** y **fish**. En los sistemas operativos de
 Microsoft se destacan: **COMMAND**, **cmd** y **PowerShell**.
+
+
+
+###### Procesos ######
+
+Un proceso es una instancia de un programa en ejecución. Durante su ciclo
+de vida, atraviesa diferentes etapas las cuales incluyen:
+
+Creación
+: En esta etapa, el sistema operativo crea un nuevo proceso cuando se inicia un
+ programa o se solicita mediante una llamada al sistema.
+ Durante la creación, se asignan recursos como espacio de memoria, identificadores
+ de proceso y otros atributos necesarios para la ejecución.
+
+[//]: # (COMPACT)
+. . .
+
+Listo
+: Después de ser creado, el proceso pasa al estado de **listo** y está a
+ la espera de ser seleccionado por el planificador del sistema operativo
+ para su ejecución. En este estado, el proceso está cargado en la memoria
+ y listo para ejecutarse, pero aún no se le ha asignado tiempo de CPU.
+
+[//]: # (COMPACT)
+. . .
+
+Ejecución
+: Cuando un proceso es seleccionado por el planificador del sis tema, se mueve
+ al estado de **ejecución**. En esta etapa, el procesador
+ ejecuta las instrucciones del programa y realiza las tareas definidas por
+ el proceso. El proceso continúa en este estado hasta que se hasta que se
+ bloquea esperando alguna operación de entrada/salida.
+
+[//]: # (COMPACT)
+. . .
+
+Bloqueado
+: Un proceso puede entrar en el estado **bloqueado** si necesita
+ esperar por alguna operación de entrada/salida, como leer datos de un
+ archivo o esperar una respuesta de red. Cuando esto ocurre, el proceso
+ se suspende temporalmente y se libera el uso del procesador.
+
+[//]: # (COMPACT)
+. . .
+
+Finalización
+: Cuando un proceso ha terminado de ejecutar todas sus instrucciones o ha sido
+ terminado de manera forzada por el sistema operativo,
+ entra en el estado de **finalización**. En esta etapa, se liberan los recursos
+ asignados al proceso y se realiza la limpieza necesaria.
+ Las funcionalidades principales de un sistema operativo incluyen:
+
+
+
+###### Procesos ######
+
+![Grandes hitos en la vida de un proceso](../apunte/imagenes/etapas.png){width=55%}
