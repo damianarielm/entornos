@@ -18,3 +18,10 @@ arquitectura.pdf:
 
 clean:
 	rm -f presentacion.pdf historia.htm arquitectura.pdf apunteintrogit.md introgit.md
+
+sistemasoperativos.pdf:
+	pandoc sistemasoperativos.md -s -o sistemasoperativos.pdf -t beamer -V aspectratio=169 -V theme=Warsaw -V fontsize=8pt -f markdown+implicit_figures
+
+sistemasoperativos-compact:
+	sed -e '/COMPACT/,+2d' sistemasoperativos.md > sistemasoperativos_compact.md
+	pandoc sistemasoperativos_compact.md -s -o sistemasoperativos_compact.pdf -t beamer -V aspectratio=169 -V theme=Warsaw -V fontsize=8pt -f markdown+implicit_figures
