@@ -157,3 +157,63 @@ Init
  como también ejecutar los servicios esenciales para el funcionamiento
  del mismo, y proveer al usuario de un entorno gráfico o de linea de
  comandos.
+
+
+
+###### Terminal ######
+
+A menudo se utilizan términos como **terminal**, consola virtual,
+emulador de terminal o intérprete de línea de comandos de forma indistinta, lo
+que puede llevar a cierta confusión. A continuación, se explican las diferencias
+entre estos términos:
+
+
+
+###### Terminal ######
+
+Terminal
+: Se refiere a el o los dispositivos físicos que se utilizan para interactuar
+ con un ordenador mediante la entrada y salida de texto. En la
+ actualidad está compuesta principalmente por el teclado y el monitor.
+ Consola virtual Es una aplicación implementada dentro del núcleo que
+ provee acceso al sistema simulando una terminal de teletipo. En los sis temas
+ tipo Unix se puede acceder a ellas presionando **Ctrl+Alt+F1**,
+ **Ctrl+Alt+F2**, etc.
+
+![VCONSOLE](../apunte/imagenes/vconsole.png){width=45%}
+
+
+
+###### Emulador de terminal ######
+
+Emulador de terminal
+: Es un programa de usuario que permite interactuar
+ con un sistema operativo a través de una ventana en un entorno gráfico.
+ Los emuladores de terminal son comúnmente utilizados para acceder a
+ sistemas remotos o para ejecutar aplicaciones de línea de comandos en
+ sistemas operativos.
+ Para saber que emulador de terminal se está utilizando se puede escribir
+ el comando:
+```bash
+$ echo $TERM
+```
+
+![QTERMINAL](../apunte/imagenes/qterminal.png){width=45%}
+
+
+
+###### Shell ######
+
+Shell
+: También llamado **interprete de linea de comandos**, es un programa
+ que permite a un usuario interactuar con el sistema operativo mediante
+ la ejecución de comandos a través de una interfaz de línea de comandos.
+ Para saber que interprete de linea de comandos se está utilizando se
+ puede escribir el comando:
+```bash
+$ echo $SHELL
+```
+
+Alguno de los interpretes de linea de comandos mas populares en los sistemas
+Linux son: **sh**, **bash**, **zsh** y **fish**. En los sistemas operativos de
+Microsoft se destacan: **COMMAND**, **cmd** y **PowerShell**.
