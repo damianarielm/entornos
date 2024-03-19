@@ -473,7 +473,7 @@ utilidades.
 ------------- -------------------------
 Desarrollador Linus Torvalds
 Origen        Finlandia
-Año           1987
+Año           1991
 ------------- -------------------------
 
 ::: bottom
