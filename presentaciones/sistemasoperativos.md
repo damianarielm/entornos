@@ -6,9 +6,9 @@ Un sistema operativo es un conjunto de programas y herramientas que controlan
 y coordinan las actividades de una computadora o dispositivo electrónico,
 y permiten a los usuarios interactuar con el hardware y el software de
 manera sencilla y eficiente.
-Está compuesto por un núcleo (o **kernel** que tiene control completo sobre el hardware en el que corre, y una serie de programas utilitarios que se comunican con el.
+Está compuesto por un núcleo (o **kernel**) que tiene control completo sobre el hardware en el que corre, y una serie de programas utilitarios que se comunican con él.
 
-![SO](../apunte/imagenes/kernel.png){width=45%}
+![Comunicación entre aplicaciones, núcleo y hardware](../apunte/imagenes/kernel.png){width=45%}
 
 ###### Funcionalidades del Sistema Operativo ######
 
@@ -54,8 +54,7 @@ Gestión de archivos
 
 Multitarea
 : Un sistema operativo permite que varias aplicaciones se ejecuten
- al mismo tiempo y asigna los recursos necesarios para que funcionen correctamen
-te.
+ al mismo tiempo y asigna los recursos necesarios para que funcionen correctamente.
 
 [//]: # (COMPACT)
 . . .
@@ -75,9 +74,13 @@ Multiusuario
  los procesos, la memoria y la entrada/salida, y proporcionar una interfaz
  para que las aplicaciones interactúen con el hardware del sistema.
 
+:::::::::::::: {.columns}
+::: {.column width="60%"}
 ```bash
 $ uname -r
 ```
+:::
+::::::::::::::
 
 [//]: # (COMPACT)
 . . .
@@ -123,7 +126,7 @@ Boot Loader
 : A continuación la placa madre debe cargar un programa llamado
  **cargador de arranque**. El cargador de arranque es un programa cuyo
  objetivo principal es cargar el núcleo del sistema operativo. El cargador
- de arranque mas utilizado en Linux es **GRUB**; y **bootmgr** es el
+ de arranque más utilizado en Linux es **GRUB**; y **bootmgr** es el
  proporcionado por los sistemas modernos de Windows.
 
 :::::::::::::: {.columns}
@@ -159,17 +162,12 @@ Init
  comandos.
 
 
-
 ###### Terminal ######
 
 A menudo se utilizan términos como **terminal**, consola virtual,
 emulador de terminal o intérprete de línea de comandos de forma indistinta, lo
 que puede llevar a cierta confusión. A continuación, se explican las diferencias
 entre estos términos:
-
-
-
-###### Terminal ######
 
 Terminal
 : Se refiere a el o los dispositivos físicos que se utilizan para interactuar
@@ -194,9 +192,14 @@ Emulador de terminal
  sistemas operativos.
  Para saber que emulador de terminal se está utilizando se puede escribir
  el comando:
+
+:::::::::::::: {.columns}
+::: {.column width="60%"}
 ```bash
 $ echo $TERM
 ```
+:::
+::::::::::::::
 
 ![QTERMINAL](../apunte/imagenes/qterminal.png){width=45%}
 
@@ -205,16 +208,21 @@ $ echo $TERM
 ###### Shell ######
 
 Shell
-: También llamado **interprete de linea de comandos**, es un programa
+: También llamado **intérprete de lénea de comandos**, es un programa
  que permite a un usuario interactuar con el sistema operativo mediante
  la ejecución de comandos a través de una interfaz de línea de comandos.
- Para saber que interprete de linea de comandos se está utilizando se
+ Para saber que intérprete de línea de comandos se está utilizando se
  puede escribir el comando:
+
+:::::::::::::: {.columns}
+::: {.column width="60%"}
 ```bash
 $ echo $SHELL
 ```
+:::
+::::::::::::::
 
-Alguno de los interpretes de linea de comandos mas populares en los sistemas
+Alguno de los intérpretes de línea de comandos más populares en los sistemas
 Linux son: **sh**, **bash**, **zsh** y **fish**. En los sistemas operativos de
 Microsoft se destacan: **COMMAND**, **cmd** y **PowerShell**.
 
@@ -359,3 +367,119 @@ Gestor de ventanas
  de gestores de ventanas son Compiz, Openbox y i3.
 
 ![i3](../apunte/imagenes/i3.png){width=55%}
+
+###### Distribuciones ######
+
+Las distribuciones de Linux son sistemas operativos basados en el kernel
+ de Linux, que están compuestos por una combinación de software libre y
+ de código abierto, como aplicaciones, controladores, herramientas de gestión
+ de paquetes, etc.
+
+[//]: # (COMPACT)
+. . .
+
+Existen muchas distribuciones de Linux diferentes, como [Debian](https://www.debian.org/index.es.html), [Ubuntu](https://ubuntu.com/), [RedHat](https://www.redhat.com/es), [Arch](https://archlinux.org/), entre otras.
+
+[//]: # (COMPACT)
+. . .
+
+Cada distribución tiene sus propias características, objetivos y filosofía,
+ y están diseñadas para satisfacer las necesidades de diferentes usuarios
+ y aplicaciones.
+
+[//]: # (COMPACT)
+. . .
+
+Las distribuciones de Linux existen porque el software de código abier-
+to permite a los usuarios y desarrolladores acceder, modificar y distribuir el
+código fuente del software. Esto ha permitido que muchas personas y comu-
+nidades puedan desarrollar y distribuir sus propias versiones personalizadas
+de Linux. Además, al ser un sistema operativo altamente personalizable y
+adaptable, cada distribución puede estar diseñada para satisfacer las necesi-
+dades específicas de diferentes usuarios, como por ejemplo para usuarios de
+servidores, programadores, usuarios de escritorio, entre otros.
+
+[![](https://emoji.fileformat.info/png/1f517.png){ width=8px } [Distribuciones a lo largo del tiempo]{.underline}](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+
+###### Proceso de apagado ######
+
+Antes de finalizar la ejecución del sistema operativo, se inicia un proceso
+ que cierra todos los programas y servicios que se están ejecutando en la
+ computadora.
+ Luego, se guardan todos los datos pendientes y se asegura que todos los
+ dispositivos de almacenamiento, como los discos duros o las unidades flash
+ USB, estén en un estado seguro antes de apagar la alimentación.
+ Finalmente, se envía una señal al hardware para que se apague por completo
+ y se desconecte la alimentación en caso de ser necesario.
+
+ Hay varias opciones disponibles para "apagar" una computadora, cada una con diferentes efectos.
+
+###### Acciones: Proceso de apagado ######
+
+ Apagado
+ : Cuando se selecciona la opción de `apagar` , la computadora cierra todos los programas y procesos en ejecución y se
+ apaga completamente.
+ La próxima vez que se encienda la computadora, se iniciará el proceso de
+ arranque completo.
+
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+```bash
+$ shutdown
+```
+:::
+::::::::::::::
+
+[//]: # (COMPACT)
+. . .
+
+Reinicio
+: Al seleccionar la opción `reiniciar`, la computadora cierra todos los programas y
+ procesos en ejecución, se apaga brevemente y luego se reinicia automáticamente.
+ Esta opción es útil para solucionar problemas de hardware o software y
+ para actualizar el sistema operativo.
+
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+ ```bash
+$ reboot
+```
+:::
+::::::::::::::
+
+[//]: # (COMPACT)
+. . .
+
+Hibernación
+: La opción de `hibernar` guarda todos los datos y
+ configuraciones del sistema en el disco duro y luego apaga la computadora.
+ Cuando se vuelve a encender la computadora, el sistema restaura automáticamente
+ los datos y la configuración de la sesión anterior.
+
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+```bash
+$ systemctl hibernate
+```
+:::
+::::::::::::::
+
+[//]: # (COMPACT)
+. . .
+
+Suspensión
+: La opción `suspender`
+ pone la computadora en un estado de bajo consumo de energía, dejando alimentada
+ solamente la memoria RAM.
+ De esta manera los programas y procesos en ejecución se conservan y la
+ computadora puede volver a su estado anterior cuando se reanude la actividad.
+ Esta opción es útil para ahorrar energía y reanudar rápidamente el trabajo
+ en curso.
+
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+```bash
+$ systemctl suspend
+```
+:::
+::::::::::::::
