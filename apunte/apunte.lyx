@@ -2536,6 +2536,19 @@ Además de su uso en gráficos, en el campo de la inteligencia artificial
 Sistemas Operativos
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Creo que vale la pena cambiar el orden de algunas secciones.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Descripción
 \end_layout
@@ -3741,6 +3754,20 @@ Cabe destacar que el sistema operativo puede realizar transiciones entre
 
 \begin_layout Section
 Interfaz gráfica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Eliminar toda esta complejidad.
+ Substituir por GUI vs CLI vs TUI.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -30003,6 +30030,19 @@ bomba zip
 Otros comandos
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+pv
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -44708,6 +44748,13 @@ Replit
 \strikeout on
 \color lightgray
 CoCalc
+\end_layout
+
+\begin_layout Subsection
+
+\strikeout on
+\color lightgray
+Termux
 \end_layout
 
 \begin_layout Chapter
