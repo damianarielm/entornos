@@ -122,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-18 de marzo de 2024.
+27 de marzo de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -359,10 +359,9 @@ literal "true"
 Charles Babbage
 \emph default
  en 1837, considerado como el primer prototipo de una computadora moderna.
- Babbage, matemático, filósofo e inventor inglés, diseñó una máquina capaz
- de realizar cálculos automáticamente mediante el uso de engranajes y ruedas
- dentadas, similar a la Pascalina de Blaise Pascal pero con un alcance mucho
- mayor.
+ Babbage diseñó una máquina capaz de realizar cálculos automáticamente mediante
+ el uso de engranajes y ruedas dentadas, similar a la Pascalina de Blaise
+ Pascal pero con un alcance mucho mayor.
  La máquina analítica tenía la capacidad de almacenar programas y realizar
  operaciones matemáticas complejas, y se considera el primer ejemplo de
  un sistema de procesamiento de datos automático.
@@ -460,7 +459,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/teletipo.png
 	lyxscale 20
-	scale 12
+	scale 15
 
 \end_inset
 
@@ -487,12 +486,6 @@ Teletipo Siemens t37h
 
 \begin_layout Section
 Avances de la guerra
-\end_layout
-
-\begin_layout Standard
-El comienzo de la Segunda Guerra Mundial en 1939 motivó un gran avance en
- la computación debido a la necesidad de procesar grandes cantidades de
- datos y realizar cálculos complejos para apoyar los esfuerzos de la guerra.
 \end_layout
 
 \begin_layout Standard
@@ -535,12 +528,27 @@ literal "true"
 \emph on
 Konrad Zuse
 \emph default
-, un ingeniero y matemático alemán.
- Era una máquina electromecánica basada en relés, que utilizaba un sistema
- binario para representar los datos y los cálculos.
+.
+ Era una máquina electromecánica basada en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Rel%C3%A9"
+literal "true"
+
+\end_inset
+
+ relés
+\begin_inset Quotes frd
+\end_inset
+
+, que utilizaba un sistema binario para representar los datos y los cálculos.
  El Z3 contaba con una memoria programable, lo que permitía al usuario programar
  la máquina para llevar a cabo diferentes tareas.
- Fue destruido en 1943 durante un bombardeo en Berlín.
 \end_layout
 
 \begin_layout Standard
@@ -551,8 +559,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/z3.png
-	lyxscale 15
-	scale 17
+	lyxscale 25
+	scale 19
 
 \end_inset
 
@@ -578,24 +586,15 @@ Réplica del Zuse Z3 exhibida en Múnich
 \end_layout
 
 \begin_layout Standard
-La 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faYoutubePlay"
-target "https://www.youtube.com/watch?v=bN7AdQmd8So"
-literal "true"
-
-\end_inset
-
- Harvard Mark I
+La
 \begin_inset Marginal
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagenes/aiken.jpg
 	display false
-	scale 45
+	scale 38
 
 \end_inset
 
@@ -604,9 +603,18 @@ status collapsed
 
 \end_inset
 
- es una computadora electromecánica construida en 1944 por IBM y patrocinada
- por el gobierno de los Estados Unidos.
- Fue diseñada por el matemático 
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faYoutubePlay"
+target "https://www.youtube.com/watch?v=bN7AdQmd8So"
+literal "true"
+
+\end_inset
+
+ Harvard Mark I es una computadora electromecánica construida en 1944 por
+ IBM y patrocinada por el gobierno de los Estados Unidos.
+ Fue diseñada 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -621,18 +629,6 @@ Howard Aiken
 \emph default
  y se encuentra en el Museo de la historia de la computación en la Universidad
  de Harvard.
- La Harvard Mark I fue una máquina de gran tamaño, medía 8 metros de largo,
- 2 metros de alto y 2 metros de ancho, y utilizaba 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Rel%C3%A9"
-literal "true"
-
-\end_inset
-
- relés electromecánicos para llevar a cabo cálculos.
- 
 \end_layout
 
 \begin_layout Standard
@@ -643,8 +639,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/mark1.png
-	lyxscale 35
-	scale 37
+	lyxscale 33
+	scale 28
 
 \end_inset
 
@@ -710,7 +706,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/plugboard.jpg
 	lyxscale 33
-	scale 31
+	scale 21
 
 \end_inset
 
@@ -775,8 +771,6 @@ literal "true"
 ca.
  Estas tarjetas son cartulinas rectangulares que contienen información codificad
 a mediante perforaciones ubicadas en filas y columnas.
- Cada columna en una tarjeta perforada representa un carácter o un campo
- de datos, y los agujeros perforados indican valores específicos.
 \end_layout
 
 \begin_layout Standard
@@ -788,7 +782,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/punchcard.jpg
 	lyxscale 33
-	scale 14
+	scale 11
 
 \end_inset
 
@@ -814,13 +808,6 @@ Tarjeta perforada de 20 filas y 80 columnas.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La 
 \begin_inset CommandInset href
 LatexCommand href
@@ -833,14 +820,58 @@ literal "true"
  ENIAC (Electronic Numerical Integrator And Computer) fue una computadora
  electrónica programable construida por el gobierno de los Estados Unidos
  en 1946.
- Era una máquina enorme, medía 30 metros de largo, 2 metros de alto y 3
- metros de ancho, y pesaba 27 toneladas.
- Utilizaba tecnología de válvulas electrónicas y era capaz de realizar cálculos
- numéricos complejos a alta velocidad.
- Fue utilizada para calcular los resultados de las explosiones nucleares
- y para resolver problemas científicos y técnicos en la industria.
- Fue inicialmente diseñada para calcular tablas de tiro de artillería destinadas
- al Laboratorio de Investigación Balística del Ejército de los Estados Unidos.
+ Utilizaba tecnología de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/V%C3%A1lvula_termoi%C3%B3nica"
+literal "true"
+
+\end_inset
+
+ válvulas electrónicas
+\begin_inset Quotes frd
+\end_inset
+
+ y era capaz de realizar cálculos numéricos complejos a alta velocidad.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/eniac.png
+	lyxscale 25
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Electronic Numerical Integrator And Computer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -866,55 +897,8 @@ literal "true"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/eniac.png
-	lyxscale 25
-	scale 22
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Electronic Numerical Integrator And Computer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 La informática moderna
-\end_layout
-
-\begin_layout Standard
-En la década de 1950, las computadoras eran enormes máquinas electromecánicas
- y electrónicas que ocupaban grandes espacios y requerían un equipo especializad
-o para operarlas.
- Estas máquinas eran principalmente utilizadas para tareas de cálculo y
- procesamiento de datos, como la contabilidad y la investigación científica,
- y eran utilizadas principalmente por grandes empresas, organizaciones gubername
-ntales y universidades.
- A pesar de su tamaño y complejidad, estas computadoras marcaron el comienzo
- de la era informática moderna y sentaron las bases para el desarrollo de
- las computadoras personales y de escritorio de las décadas siguientes.
 \end_layout
 
 \begin_layout Standard
@@ -976,8 +960,6 @@ literal "true"
 
  PDP-1 (Programmed Data Processor-1) es un ordenador construido por la compañía
  Digital Equipment Corporation (DEC) en 1959.
- Fue el primer ordenador de la serie PDP y uno de los primeros de tipo minicompu
-tadora.
  El PDP-1 fue un ordenador de tiempo compartido, lo que significa que varios
  usuarios podían acceder al sistema al mismo tiempo y compartir los recursos
  del ordenador.
@@ -994,7 +976,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pdp1.jpg
 	lyxscale 15
-	scale 20
+	scale 22
 
 \end_inset
 
@@ -1046,7 +1028,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagenes/engelbart.jpg
 	display false
-	scale 65
+	scale 57
 
 \end_inset
 
@@ -1125,12 +1107,9 @@ literal "true"
  El objetivo de MULTICS era crear un sistema operativo de tiempo compartido
  que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer
  servicios avanzados, como el procesamiento de archivos, el manejo de bases
- de datos y el procesamiento de informes.
+ de datos, manejo de permisos y el procesamiento de informes.
  A pesar de sus avances, MULTICS tuvo problemas financieros y técnicos que
  retrasaron su desarrollo y limitaron su adopción.
- Aun así, muchas de las características y conceptos de MULTICS se convirtieron
- en estándar en la industria de los sistemas operativos modernos, como el
- manejo de permisos, el sistema de archivos y la seguridad.
 \end_layout
 
 \begin_layout Standard
@@ -1141,7 +1120,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagenes/thompsonritchie.jpg
 	display false
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -1176,8 +1155,7 @@ literal "true"
 \emph on
 Dennis Ritchie
 \emph default
- iniciaron en 1970 la creación de un nuevo sistema operativo para la computadora
- DEC PDP-7.
+ iniciaron en 1970 la creación de un nuevo sistema operativo.
  El proyecto fue bautizado originalmente como UNICS e inicialmente no tuvo
  apoyo económico por parte de los laboratorios Bell.
  Al año siguiente, Dennis Ritchie desarrolla el lenguaje de programación
@@ -1198,7 +1176,7 @@ s por otros programadores.
 \end_layout
 
 \begin_layout Standard
-En 1973 en el Xerox PARC (Palo Alto Research Center), se desarrolló el 
+En 1973 se desarrolló el 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faYoutubePlay"
@@ -1316,8 +1294,8 @@ as en el sistema de archivos y en la red.
 La IBM PC fue una de las computadoras más importantes en la historia de
  la informática, ya que sentó las bases para el estándar de computadora
  personal que se utiliza en la actualidad.
- Fue introducida por IBM en 1981 y se convirtió rápidamente en el estándar
- de la industria para las computadoras personales.
+ Fue introducida en 1981 y se convirtió rápidamente en el estándar de la
+ industria para las computadoras personales.
  Una de las características más importantes de la IBM PC fue su arquitectura
  abierta.
  A diferencia de otras computadoras personales de la época, la IBM PC tenía
@@ -1634,7 +1612,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagenes/guido.jpg
 	display false
-	scale 1.5
+	scale 1.9
 
 \end_inset
 
@@ -1741,9 +1719,6 @@ literal "true"
  Inc.
  Funciona como una herramienta que permite a los usuarios buscar información
  en la vasta cantidad de contenido disponible en la web.
- Los usuarios ingresan palabras clave relacionadas con sus consultas en
- el cuadro de búsqueda, y Google devuelve una lista de resultados relevantes,
- clasificados según su algoritmo de búsqueda.
  Fue fundada en 1998 por Larry Page y Sergey Brin, estudiantes de posgrado
  en la Universidad de Stanford.
 \end_layout
@@ -1761,8 +1736,6 @@ literal "true"
  a los usuarios crear, editar y actualizar contenido.
  Fue lanzada en 2001 y se basa en el principio, que permite la edición colaborat
 iva de artículos por parte de usuarios de todo el mundo.
- Los artículos cubren una amplia variedad de temas y están escritos en varios
- idiomas.
  Aunque la plataforma depende de la contribución voluntaria de sus usuarios,
  ha llegado a ser conocida por su vasta cantidad de información y su acceso
  abierto a la misma.
@@ -1803,7 +1776,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/ubuntu.png
 	lyxscale 50
-	scale 19
+	scale 22
 
 \end_inset
 
@@ -1855,8 +1828,6 @@ literal "true"
 
  YouTube es una plataforma de compartición de videos en línea.
  Fundada en 2005, permite a los usuarios cargar, ver y compartir videos.
- Los contenidos abarcan una amplia variedad de temas, desde entretenimiento
- y música hasta tutoriales, documentales y más.
  Los usuarios pueden interactuar con los videos mediante comentarios, likes
  y suscripciones a canales.
  La plataforma se ha convertido en una fuente importante de contenido visual
