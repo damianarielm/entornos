@@ -93,7 +93,7 @@ Estandarizar tipografías.
 \end_layout
 
 \begin_layout Plain Layout
-Sistema de númeración binario y unidades en bytes.
+Sistema de numeración binario y unidades en bytes.
 \end_layout
 
 \end_inset
@@ -122,7 +122,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-27 de marzo de 2024.
+1 de abril de 2024.
 \end_layout
 
 \begin_layout Standard
@@ -588,7 +588,7 @@ Réplica del Zuse Z3 exhibida en Múnich
 \begin_layout Standard
 La
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4792,7 +4792,7 @@ status open
 
 \begin_layout Plain Layout
 
-.global _start         # gcc -nostdlib -no-pie hola.s
+.global _start              # gcc -nostdlib hola.s
 \end_layout
 
 \begin_layout Plain Layout
@@ -4818,27 +4818,27 @@ _start:
 
 \begin_layout Plain Layout
 
-    mov $1, %rax       # La llamada a sistema 1 es write
+    mov $1, %rax            # La llamada a sistema 1 es write
 \end_layout
 
 \begin_layout Plain Layout
 
-    mov $1, %rdi       # El descriptor 1 es la salida estándar
+    mov $1, %rdi            # El descriptor 1 es la salida estándar
 \end_layout
 
 \begin_layout Plain Layout
 
-    mov $mensaje, %rsi # Direccion de memoria del mensaje
+    lea mensaje(%rip), %rsi # Direccion de memoria del mensaje
 \end_layout
 
 \begin_layout Plain Layout
 
-    mov $12, %rdx      # Cantidad de bytes
+    mov $12, %rdx           # Cantidad de bytes
 \end_layout
 
 \begin_layout Plain Layout
 
-    syscall            # write(1, mensaje, 12)
+    syscall                 # write(1, mensaje, 12)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4847,17 +4847,17 @@ _start:
 
 \begin_layout Plain Layout
 
-    mov $60, %rax      # La llamada a sistema 60 es exit
+    mov $60, %rax           # La llamada a sistema 60 es exit
 \end_layout
 
 \begin_layout Plain Layout
 
-    mov $0, %rdi       # Queremos devolver el numero 0
+    mov $0, %rdi            # Queremos devolver el numero 0
 \end_layout
 
 \begin_layout Plain Layout
 
-    syscall            # exit(0)
+    syscall                 # exit(0)
 \end_layout
 
 \end_inset
@@ -27483,6 +27483,19 @@ Los mapas de teclado para entorno gráfico suelen estar ubicados en
 \family typewriter
 \emph off
 which
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás valga la pena cambiar which por type
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
