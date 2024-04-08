@@ -1,5 +1,22 @@
 # Entorno de Programación
 
+## Novedades 2025
+
+* Nuevos temas:
+  - Sistemas de numeración.
+  - Unidades informáticas.
+  - Instalación de Linux en pendrive.
+  - Instalación de termux.
+  - Python venv.
+
+* Modificaciones al material:
+  - Se simplificó la parte de historia.
+  - Se simplificó la parte de interfaz gráfica.
+
+* Modificaciones al dictado:
+  - Se agregó un programa actualizado.
+  - Se incremento el tiempo de cursado en una hora semanal.
+
 ## Novedades 2024
 
 * Planilla de alumnos para tomar asistencia:
