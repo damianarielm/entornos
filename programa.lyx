@@ -110,7 +110,7 @@ Identificación y características de la Actividad Curricular
 \end_layout
 
 \begin_layout Description
-Carrera Tecnicatura Universitaria en Inteligencia Artificial
+Carrera: Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Standard
@@ -126,11 +126,11 @@ de
 \begin_inset space ~
 \end_inset
 
-Estudios 2021
+Estudios: 2021
 \end_layout
 
 \begin_layout Description
-Bloque Ciencias y Tecnologías Básicas
+Bloque: Ciencias y Tecnologías Básicas
 \end_layout
 
 \begin_layout Description
@@ -142,11 +142,11 @@ de
 \begin_inset space ~
 \end_inset
 
-cursado Cuatrimestral
+cursado: Cuatrimestral
 \end_layout
 
 \begin_layout Description
-Cuatrimestre 1º
+Cuatrimestre: 1º
 \end_layout
 
 \begin_layout Description
@@ -154,11 +154,11 @@ Carga
 \begin_inset space ~
 \end_inset
 
-horaria 96 hs / 6 hs semanales
+horaria: 80 hs / 5 hs semanales
 \end_layout
 
 \begin_layout Description
-Escuela -
+Escuela: -
 \end_layout
 
 \begin_layout Description
@@ -166,15 +166,15 @@ Docente
 \begin_inset space ~
 \end_inset
 
-responsable
+responsable:
 \end_layout
 
 \begin_layout Description
-Carácter Obligatoria
+Carácter: Obligatoria
 \end_layout
 
 \begin_layout Description
-Area
+Área:
 \end_layout
 
 \begin_layout Description
@@ -182,11 +182,11 @@ Formato
 \begin_inset space ~
 \end_inset
 
-curricular
+curricular:
 \end_layout
 
 \begin_layout Description
-Departamento
+Departamento:
 \end_layout
 
 \end_inset
@@ -231,7 +231,7 @@ Asignaturas Relacionadas
 \end_layout
 
 \begin_layout Description
-Previas -
+Previas: -
 \end_layout
 
 \begin_layout Description
@@ -239,11 +239,11 @@ Simultáneas
 \begin_inset space ~
 \end_inset
 
-Rercomendadas IA 1.4 Programacion I
+Recomendadas: IA 1.4 Programación I
 \end_layout
 
 \begin_layout Description
-Posteriores Bases de Datos I
+Posteriores: Bases de Datos I
 \end_layout
 
 \begin_layout Standard
@@ -266,11 +266,11 @@ Narrar los sucesos que dieron origen a las computadoras y comprender las
 
 \begin_layout Itemize
 Brindar los conceptos fundamentales sobre lo que compone un sistema operativo
- y como utilizarlo adecuadamente.
+ y cómo utilizarlo adecuadamente.
 \end_layout
 
 \begin_layout Itemize
-Explicar como aprovechar las herramientas de GNU/Linux para el desarrollo
+Explicar cómo aprovechar las herramientas de GNU/Linux para el desarrollo
  de las actividades de esta y otras asignaturas.
 \end_layout
 
@@ -285,8 +285,8 @@ Introducir los fundamentos de control de versiones y emplear herramientas
 \end_layout
 
 \begin_layout Itemize
-Presentar las posibilidades que brinda la virtualización y contenedorización
- de software y mostrar como aprovecharlas.
+Presentar las posibilidades que brinda la virtualización y los contenedores
+ de software y mostrar cómo aprovecharlas.
 \end_layout
 
 \begin_layout Standard
@@ -407,7 +407,15 @@ Unidad
 \end_layout
 
 \begin_layout Description
-4.6 Gestión del sistema.
+4.6 Gestión de usuarios.
+\end_layout
+
+\begin_layout Description
+4.7 Administración del sistema.
+\end_layout
+
+\begin_layout Description
+4.8 Instalación y gestión de paquetes.
 \end_layout
 
 \end_deeper
@@ -553,7 +561,7 @@ Actividades de Formación Práctica
 \begin_layout Standard
 Se llevarán a cabo una serie de prácticas y trabajos prácticos divididos
  por área temática.
- Se persigue como finalidad la cobertura de la totalidad de los temas prácticos
+ Se persigue cómo finalidad la cobertura de la totalidad de los temas prácticos
  que faciliten el avance y entendimiento.
 \end_layout
 
@@ -576,13 +584,13 @@ La evaluación de la materia se lleva a cabo mediante el siguiente esquema:
 
 \begin_layout Itemize
 Parcial evaluativo luego de transcurrido 25% del dictado del contenido.
- Este parcial tiene como objetivo evaluar los temas iniciales e incentivar
+ Este parcial tiene cómo objetivo evaluar los temas iniciales e incentivar
  el estudio temprano de la materia.
 \end_layout
 
 \begin_layout Itemize
 Parcial evaluativo luego de transcurrido 70% del dictado del contenido.
- Este parcial tiene como objetivo evaluar los temas principales de la materia
+ Este parcial tiene cómo objetivo evaluar los temas principales de la materia
  y preparar el terreno para el futuro trabajo práctico.
 \end_layout
 
@@ -657,7 +665,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-6
+4
 \end_layout
 
 \end_inset
@@ -686,7 +694,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-6
+4
 \end_layout
 
 \end_inset
@@ -715,7 +723,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-6
+4
 \end_layout
 
 \end_inset
@@ -744,7 +752,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-24
+20
 \end_layout
 
 \end_inset
@@ -773,7 +781,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-14
+12
 \end_layout
 
 \end_inset
@@ -802,7 +810,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+18
 \end_layout
 
 \end_inset
@@ -831,7 +839,7 @@ Dedicación fuera de clases
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+18
 \end_layout
 
 \end_inset
@@ -1570,7 +1578,7 @@ Teórica
 \begin_inset Text
 
 \begin_layout Plain Layout
-Visualización y contenedores
+Virtualización y contenedores
 \end_layout
 
 \end_inset
