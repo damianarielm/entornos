@@ -463,6 +463,16 @@ InsetLayout Flex:PowerShell
       LatexParam    "[title=\faWindows \; PowerShell, colback=Blue, colbacktitle=Blue, coltext=White, drop shadow, enhanced]"
 End
 
+InsetLayout Flex:Peligro
+      LyxType       Custom
+      LabelString   "PowerShell"
+      LatexType     Environment
+      LatexName     tcolorbox
+      BgColor       Red
+      Decoration    Classic
+      LatexParam    "[title=\faExclamationTriangle \; Precacución, colback=Red, colbacktitle=Red, coltext=White, drop shadow, enhanced]"
+End
+
 InsetLayout Flex:Codigo
       LyxType       Custom
       LabelString   "Código"
