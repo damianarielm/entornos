@@ -14690,7 +14690,7 @@ ls
 \end_layout
 
 \begin_layout Exercise
-Haga una lista de los programas del sistema.
+Escriba un comando para hacer una lista de los programas del sistema.
 \end_layout
 
 \begin_layout Standard
@@ -14822,7 +14822,7 @@ drwxr-xr-x 2 4096 may 1 23:46 archivo
 \end_layout
 
 \begin_layout Exercise
-¿por qué da error el comando 
+¿Por qué da error el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -19029,7 +19029,7 @@ Algunas opciones comunes son:
 \end_inset
 
 : habilita el uso de expresiones regulares extendidas.
- Las expresiones regulares extendidas permites caracteres especiales como
+ Las expresiones regulares extendidas permiten caracteres especiales como
  
 \begin_inset Quotes fld
 \end_inset
@@ -20085,7 +20085,7 @@ Palabras que terminen en
 \end_layout
 
 \begin_layout Exercise
-Escriba un comando para encontrar lineas de un archivo, que 
+Escriba un comando para encontrar líneas de un archivo, que 
 \emph on
 no terminen
 \emph default
@@ -20453,6 +20453,23 @@ El directorio no se ha borrado.
 
 \begin_layout Subsection
 Redirección
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Explicar entradas y salidas
+\end_layout
+
+\begin_layout Plain Layout
+Agregar ejemplo en python
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -21501,6 +21518,19 @@ python entrenamiento.py | tee log.txt
 
 \begin_layout Subsection
 Ejercicios
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar ejercicio para averiguar contraseña de script de python
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -32560,6 +32590,19 @@ PWD=/
 
 \begin_layout Subsection
 Variables especiales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar $RANDOM
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
