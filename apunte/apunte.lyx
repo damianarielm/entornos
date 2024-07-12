@@ -207,6 +207,10 @@ Fundamentos
 status open
 
 \begin_layout Plain Layout
+Uso correcto del teclado
+\end_layout
+
+\begin_layout Plain Layout
 Sistema de numeración binario y unidades en bytes.
 \end_layout
 
@@ -24882,7 +24886,7 @@ visiante
 \begin_inset Quotes frd
 \end_inset
 
- mediante el comanto 
+ mediante el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -26689,7 +26693,8 @@ sleep 1d
 \end_layout
 
 \begin_layout Enumerate
-Utilice otro emulador de terminal y averigüe el PID del comando anterior.
+Utilice otra instancia del emulador de terminal y averigüe el PID del comando
+ anterior.
 \end_layout
 
 \begin_layout Enumerate
@@ -31789,6 +31794,16 @@ bash
 \family default
  para que cada vez que se cambie de directorio, anuncie desde donde se produce
  el cambio y hacia a dónde.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Muy dificil.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -32975,6 +32990,19 @@ test
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar operador -f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 El comando 
 \begin_inset Quotes fld
 \end_inset
@@ -33695,6 +33723,19 @@ echo Hola $primero $segundo.
 
 \family typewriter
 seq
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+seq == sequence
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -35647,6 +35688,19 @@ fi
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pasar corchetes dobles al comando test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Además de utilizar un comando como condición, también es posible utilizar
  la sintaxis especial 
 \begin_inset Quotes fld
@@ -37150,6 +37204,19 @@ Herramientas auxiliares
 
 \begin_layout Chapter
 Control de versiones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+agregar https://learngitbranching.js.org/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
