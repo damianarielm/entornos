@@ -1,0 +1,393 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ../../apunte/lyx
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-chap
+multicol
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+T.U.I.A.
+\begin_inset Newline newline
+\end_inset
+
+U.N.R.
+\end_layout
+
+\begin_layout Center Header
+
+\series bold
+Entorno de Programación
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Comisión 2
+\end_layout
+
+\begin_layout Right Header
+Recuperatorio
+\begin_inset Newline newline
+\end_inset
+
+25/6/2024
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+Teoría Primer Examen
+\end_layout
+
+\begin_layout Standard
+Nombre y apellido:
+\begin_inset space \hfill{}
+\end_inset
+
+DNI:
+\begin_inset space \hspace*{}
+\length 7em
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Describa que es una terminal de teletipo y cual fue su relación con las
+ computadoras.
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es el programa encargado de cargar el núcleo del sistema operativo?
+\end_layout
+
+\begin_layout Enumerate
+Explique que es una llamada a sistema.
+\end_layout
+
+\begin_layout Enumerate
+Dibuje las diferentes etapas de un proceso.
+\end_layout
+
+\begin_layout Enumerate
+¿Que sucede con el estado de la computadora si se produce un corte de luz
+ luego de una hibernación?
+\end_layout
+
+\begin_layout Enumerate
+Indique Verdadero o Falso.
+ Justifique su respuesta.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+bash
+\family default
+ es un lenguaje de bajo nivel.
+\end_layout
+
+\begin_layout Enumerate
+Sistema operativo y 
+\emph on
+kernel
+\emph default
+ son sinónimos.
+\end_layout
+
+\begin_layout Enumerate
+La memoria RAM es un medio de almacenamiento persistente.
+\end_layout
+
+\begin_layout Enumerate
+Esta afirmación es falsa.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+Práctica Primer Examen
+\end_layout
+
+\begin_layout Standard
+Nombre y apellido:
+\begin_inset space \hfill{}
+\end_inset
+
+DNI:
+\begin_inset space \hspace*{}
+\length 7em
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si el programa lsblk muestra lo siguiente en la pantalla:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+\end_layout
+
+\begin_layout Plain Layout
+
+sda      8:0    0 238.5G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
+sda1     8:1    0   512M  0 part /boot/efi
+\end_layout
+
+\begin_layout Plain Layout
+
+sda2     8:2    0   238G  0 part /
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+¿Cuantas particiones hay en el sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuantas unidades de almacenamiento hay?
+\end_layout
+
+\begin_layout Enumerate
+¿Con que comando se montaron las particiones?
+\end_layout
+
+\begin_layout Enumerate
+¿En que partición se encuentra el gestor de arranque?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere la salida del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ls -l /bin
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+lrwxrwxrwx 1 root root 7 ene 19 14:10 /bin -> usr/bin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Describa con que comando se creo 
+\family typewriter
+/bin
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere la salida del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+ para el usuario 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+alumno
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/home/alumno/carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál será la salida del mismo comando, tras ejecutar 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+cd ../../~/..
+\end_layout
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Escriba 
+\emph on
+un
+\emph default
+ comando para cambiar a la carpeta raiz mediante una ruta absoluta.
+\end_layout
+
+\begin_layout Enumerate
+Escriba 
+\emph on
+un
+\emph default
+ comando para cambiar a la carpeta raiz mediante una ruta relativa.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Cuál es el programa que muestra el contenido del directorio de trabajo
+ actual?
+\end_layout
+
+\end_body
+\end_document

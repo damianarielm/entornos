@@ -1,0 +1,310 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass lyx
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-chap
+multicol
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+T.U.I.A.
+\begin_inset Newline newline
+\end_inset
+
+U.N.R.
+\end_layout
+
+\begin_layout Center Header
+
+\series bold
+Entorno de Programación
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Comisión 2
+\end_layout
+
+\begin_layout Right Header
+Segundo Examen
+\begin_inset Newline newline
+\end_inset
+
+4/6/2024
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+Turno 2
+\end_layout
+
+\begin_layout Standard
+Nombre y apellido:
+\begin_inset space \hfill{}
+\end_inset
+
+DNI:
+\begin_inset space \hspace*{}
+\length 7em
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Escriba un comando para crear un archivo llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.gitkeep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en todas las carpetas y subcarpetas vacías, del directorio actual.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+find -type d -empty -exec touch {}/.gitkeep 
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+El contenido de un archivo son números separados por espacios.
+ Escriba un comando para obtener su suma.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+tr 
+\begin_inset Quotes fld
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
++
+\begin_inset Quotes frd
+\end_inset
+
+ < archivo | bc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando para crear una copia de un archivo, omitiendo las lineas
+ que comienzan con cardinal.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+grep -v 
+\begin_inset Quotes fld
+\end_inset
+
+^#
+\begin_inset Quotes frd
+\end_inset
+
+ archivo > copia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando para mostrar todos los 
+\emph on
+procesos
+\emph default
+ que 
+\emph on
+no
+\emph default
+ son del 
+\emph on
+usuario actual
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ps -ef | grep -v $USER
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando para que cada vez que se quiera borrar un archivo en
+ la 
+\emph on
+sesión actual
+\emph default
+, se solicite confirmación.
+\end_layout
+
+\begin_deeper
+\begin_layout Solution*
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+alias rm=
+\begin_inset Quotes frd
+\end_inset
+
+rm -i
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

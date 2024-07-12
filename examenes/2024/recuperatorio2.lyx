@@ -1,0 +1,411 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ../../apunte/lyx
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-chap
+multicol
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+T.U.I.A.
+\begin_inset Newline newline
+\end_inset
+
+U.N.R.
+\end_layout
+
+\begin_layout Center Header
+
+\series bold
+Entorno de Programación
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Comisión 2
+\end_layout
+
+\begin_layout Right Header
+Recuperatorio
+\begin_inset Newline newline
+\end_inset
+
+25/6/2024
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+Segundo Examen
+\end_layout
+
+\begin_layout Standard
+Nombre y apellido:
+\begin_inset space \hfill{}
+\end_inset
+
+DNI:
+\begin_inset space \hspace*{}
+\length 7em
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Cree una carpeta vacía con su nombre y apellido, ingrese a ella y describa
+ cuáles son los comandos que habría que ejecutar para que la primera columna
+ de la salida del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ls -log
+\end_layout
+
+\end_inset
+
+ sea como la que se ven a continuación:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+total 4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+drwxrwxr-x 2 4096 jun 24 12:17 archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw------ 
+\begin_inset space ~
+\end_inset
+
+1 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 jun 24 12:17 carpeta
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+---x--x--x 1 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 jun 24 12:23 ejecutable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Preste especial atención a la información de la primera columna: no siempre
+ los nombres son lo que parece.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Qué comando se puede usar para crear 999 carpetas?
+\end_layout
+
+\begin_layout Enumerate
+Fulano quiere crear un archivo con su nombre de usuario dentro de la carpeta
+ actual.
+ Está intentando hacer lo siguiente: 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+echo USER | touch
+\end_layout
+
+\end_inset
+
+.
+ Explique por qué ese comando no funciona como lo espera Fulano, y escriba
+ qué comando sí haría lo esperado.
+ 
+\end_layout
+
+\begin_layout Enumerate
+El siguiente listado es 
+\emph on
+un ejemplo
+\emph default
+ de un listado con nombres y teléfonos, escriba un comando para guardar
+ en archivo llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rosario
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ solamente los nombres (primera columna) de quienes tengan característica
+ de rosario (comienzan en 341) en su número de teléfono (segunda columna).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+Nombre;Teléfono
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Damian;3415789232
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Andrea;3416123321
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Nahuel;112233412119
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escriba un comando que muestre los mails (
+\emph on
+algo@algo.algo
+\emph default
+) que haya en un archivo llamado archivo.
+ En caso de no encontrar ninguno, el comando deberá mostrar un mensaje que
+ diga 
+\begin_inset Quotes fld
+\end_inset
+
+No se encontraron mails
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cambiarFecha
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ tenemos nombres de archivos a los que queremos cambiarle la fecha de edición
+ a la actual, escriba un comando para tal fin.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Escriba un comando para cambiar la fecha de los archivos de la carpeta actual
+ que tengan la palabra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+hoy
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en su contenido.
+ Considere la opción 
+\family typewriter
+-l
+\family default
+ del comando 
+\family typewriter
+grep
+\family default
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mengano está tratando de resolver un ejercicio donde se cambie la fecha
+ de edición a todos los archivos vacíos en la carpeta actual y sus subcarpetas.
+ Su primer intento fue hacer lo siguiente: 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+touch >> find .
+ -type f -empty
+\end_layout
+
+\end_inset
+
+.
+ Explique por qué ese comando no funciona como Mengano espera, y escriba
+ qué comando sí haría lo esperado.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Explique qué hace el siguiente comando, y explique también qué hace cada
+ parte del mismo: 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+cd $(dirname $(which ls))
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
