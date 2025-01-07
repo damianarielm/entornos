@@ -108,8 +108,11 @@ instancia adicional de recuperación (25/6).
 
 * Historia de la computacion.
 * Arquitectura de la computadora.
-* Sistema Operativo.
+* Sistemas de numeracion.
+* Codificacion de caracteres.
+* Unidades de informacion.
 * Conceptos de Programacion.
+* Sistema Operativo.
 * Sistemas de archivos.
 * Manejo de bash.
 * Control de versiones.
@@ -119,12 +122,11 @@ instancia adicional de recuperación (25/6).
 
 * Clase 1: Presentacion, historia, arquitectura.
 * Clase 2: Instalacion de Linux.
-* Clase 3: Sistema operativo.
-* Clase 4: Sistema operativo, programacion.
-* Clase 5: Programacion, sistema de archivos.
-* Clase 6: Sistema de archivos.
+* Clase 3: Sistemas de numeracion, codificacion, unidades de informacion y programacion.
+* Clase 4: Sistema operativo.
+* Clase 5: Sistema de archivos.
 * Primer examen.
-* Clase 7/16: Bash.
+* Clase 6/16: Bash.
 * Segundo examen.
 * Clase 17: Control de versiones.
 * Clase 18: Control de versiones.
