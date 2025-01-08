@@ -37,6 +37,8 @@ customHeadersFooters
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize 10
 \spacing single
 \use_hyperref false
@@ -127,7 +129,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-7 de enero de 2025.
+8 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -291,7 +293,7 @@ literal "true"
 
 .
  Esta máquina,
- capaz de realizar operaciones aritméticas básicas mediante el uso de engranajes y ruedas dentadas,
+ capaz de realizar sumas mediante el uso de engranajes y ruedas dentadas,
  fue un importante avance en el campo de la mecánica y la automatización,
  y sentó las bases para el desarrollo de las máquinas calculadoras modernas.
  La 
@@ -316,7 +318,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pascalina.png
 	lyxscale 17
-	scale 20
+	scale 15
 
 \end_inset
 
@@ -391,8 +393,6 @@ Charles Babbage
 \emph default
  en 1837,
  considerado como el primer prototipo de una computadora moderna.
- Babbage diseñó una máquina capaz de realizar cálculos automáticamente mediante el uso de engranajes y ruedas dentadas,
- similar a la Pascalina de Blaise Pascal pero con un alcance mucho mayor.
  La máquina analítica tenía la capacidad de almacenar programas y realizar operaciones matemáticas complejas,
  y se considera el primer ejemplo de un sistema de procesamiento de datos automático.
  Aunque Babbage nunca logró construir la máquina completa debido a problemas financieros y técnicos,
@@ -408,7 +408,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/diferencial.jpg
 	lyxscale 15
-	scale 9
+	scale 6
 
 \end_inset
 
@@ -443,7 +443,7 @@ literal "true"
 
 \end_inset
 
- teletipo fue una invención que permitió la transmisión automática de texto a través de una red telegráfica.
+ teletipo fue una invención que utilizaba un sistema de impresión automática para la transmisión de texto a través de una red telegráfica.
  Fue inventado a finales del sigo XIX,
  y su desarrollo permitió una comunicación más rápida y eficiente que el telégrafo de 
 \begin_inset CommandInset href
@@ -459,21 +459,6 @@ literal "true"
 Samuel Morse
 \emph default
 .
- El teletipo utilizaba un sistema de impresión automática para recibir y transmitir texto,
- lo que permitió una comunicación más precisa y legible.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Las terminales de teletipo (TTY) también se utilizaron como terminales de computadoras en las primeras décadas de la historia de las computadoras.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -485,7 +470,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/teletipo.png
 	lyxscale 20
-	scale 15
+	scale 13
 
 \end_inset
 
@@ -503,6 +488,19 @@ Teletipo Siemens t37h
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Las terminales de teletipo (TTY) también se utilizaron como terminales de computadoras en las primeras décadas de la historia de las computadoras.
 \end_layout
 
 \end_inset
@@ -587,7 +585,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/z3.png
 	lyxscale 25
-	scale 19
+	scale 18
 
 \end_inset
 
@@ -665,7 +663,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/mark1.png
 	lyxscale 33
-	scale 28
+	scale 25
 
 \end_inset
 
@@ -728,7 +726,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/plugboard.jpg
 	lyxscale 33
-	scale 21
+	scale 24
 
 \end_inset
 
@@ -803,7 +801,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/punchcard.jpg
 	lyxscale 33
-	scale 11
+	scale 12
 
 \end_inset
 
@@ -868,7 +866,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/eniac.png
 	lyxscale 25
-	scale 16
+	scale 20
 
 \end_inset
 
@@ -988,8 +986,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/pdp1.jpg
-	lyxscale 15
-	scale 22
+	lyxscale 13
+	scale 15
 
 \end_inset
 
@@ -1015,10 +1013,16 @@ Programmed Data Processor-1
 \end_layout
 
 \begin_layout Standard
-BASIC (Beginners All-Purpose Symbolic Instruction Code) es un lenguaje de programación creado en el verano de 1964,
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/BASIC"
+literal "true"
+
+\end_inset
+
+ BASIC (Beginners All-Purpose Symbolic Instruction Code) es un lenguaje de programación creado en el verano de 1964,
  con el objetivo de desarrollar un lenguaje de programación fácil de aprender y usar para estudiantes no especialistas y principiantes en la programación.
- El lenguaje se basó en el lenguaje FORTRAN,
- pero con un enfoque en la simplicidad y la facilidad de uso.
 \end_layout
 
 \begin_layout Standard
@@ -1061,9 +1065,10 @@ literal "true"
 \emph on
 Douglas Engelbart
 \emph default
- y su equipo.
- Fue una de las primeras demostraciones de una interfaz gráfica de usuario (GUI),
- con un puntero del ratón sistema de hipertexto y ventanas.
+.
+ Fue una de las primeras demostraciones de una interfaz gráfica de usuario,
+ con un puntero del ratón,
+ sistema de hipertexto y ventanas.
  También introdujo varias características que se consideran fundamentales en la computación moderna,
  como el procesamiento de textos,
  el correo electrónico,
@@ -1078,8 +1083,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/nls.png
-	lyxscale 40
-	scale 52
+	lyxscale 70
+	scale 38
 
 \end_inset
 
@@ -1113,7 +1118,7 @@ literal "true"
 
 \end_inset
 
- MULTICS (Multiplexed Information and Computing Service) fue un sistema operativo desarrollado en 1969 por un equipo liderado por el MIT y Bell Labs.
+ MULTICS fue un sistema operativo desarrollado en 1969 por un equipo liderado por el MIT y Bell Labs.
  El objetivo de MULTICS era crear un sistema operativo de tiempo compartido que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer servicios avanzados,
  como el procesamiento de archivos,
  el manejo de bases de datos,
@@ -1180,9 +1185,6 @@ Los sistemas operativos existentes hasta el momento eran propietarios y solo fun
  Ken Thompson y Dennis Ritchie decidieron reescribir el código de UNICS pero esta vez en lenguaje C,
  dando así origen a UNIX.
  Este cambio significaba que UNIX podría ser fácilmente modificado para funcionar en otras computadoras y así otras variaciones podían ser desarrolladas por otros programadores.
- Ahora,
- el código era más conciso y compacto,
- lo que se tradujo en un aumento en la velocidad de desarrollo de UNIX.
 \end_layout
 
 \begin_layout Standard
@@ -1213,7 +1215,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/alto.png
 	lyxscale 10
-	scale 14
+	scale 7
 
 \end_inset
 
@@ -1254,7 +1256,7 @@ literal "true"
 
  Altair 8800 fue una de las primeras computadoras personales en ser comercializadas,
  lanzada en 1974.
- Fue un gran éxito de ventas y sentó las bases para el desarrollo de las computadoras personales que conocemos hoy en día.
+ Fue un éxito de ventas y sentó las bases para el desarrollo de las computadoras personales que conocemos hoy en día.
  La Altair 8800 se vendía en kit y los usuarios debían armarla ellos mismos.
  
 \end_layout
@@ -1267,8 +1269,10 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/altair8800.png
-	lyxscale 20
-	scale 20
+	lyxscale 30
+	scale 13
+	BoundingBox 0bp 200bp 2000bp 1150bp
+	clip
 
 \end_inset
 
@@ -1298,7 +1302,6 @@ En los primeros años del sistema Unix los Laboratorios Bell autorizaron a las u
  a utilizar el código fuente y adaptarlo a sus necesidades.
  A partir de dicha iniciativa,
  en 1977 nace en la universidad de Berkley el sistema operativo BSD (Berkeley Software Distribution).
- Sus principales contribuciones fueron la implementación de mejoras significativas en el sistema de archivos y en la red.
 \end_layout
 
 \begin_layout Standard
@@ -1320,7 +1323,9 @@ status open
 \begin_inset Graphics
 	filename imagenes/pc.jpg
 	lyxscale 20
-	scale 5.8
+	scale 4
+	BoundingBox 0bp 100bp 3840bp 2300bp
+	clip
 
 \end_inset
 
@@ -1457,8 +1462,7 @@ literal "true"
 
  X Windows es un sistema de ventanas para sistemas tipo UNIX.
  Fue desarrollado en el Massachusetts Institute of Technology (MIT) en 1984.
- El objetivo principal de X Windows era proporcionar un sistema de ventanas que pudiera ser utilizado en una variedad de sistemas,
- permitiendo una interfaz gráfica de usuario (GUI).
+ El objetivo principal de X Windows era proporcionar una interfaz gráfica que pudiera ser utilizado en una variedad de sistemas.
 \end_layout
 
 \begin_layout Standard
@@ -1668,7 +1672,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/windows95.jpg
 	lyxscale 50
-	scale 17.5
+	scale 21
 
 \end_inset
 
@@ -1707,7 +1711,7 @@ literal "true"
  Garry Kasparov,
  en 1996 y 1997.
  La victoria de Deep Blue marcó un hito en la historia de la inteligencia artificial y la computación,
- ya que fue la primera vez que una máquina derrotó a un campeón mundial de ajedrez en una partida oficial bajo condiciones estándar de torneo.
+ ya que fue la primera vez que una máquina derrotó a un campeón mundial de ajedrez.
 \end_layout
 
 \begin_layout Standard
@@ -1849,6 +1853,10 @@ literal "true"
  Android se utiliza en tabletas,
  televisores inteligentes,
  relojes inteligentes y otros dispositivos electrónicos.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -32621,17 +32629,7 @@ Las expresiones pueden negarse con el operador
 \begin_inset Quotes frd
 \end_inset
 
- y agruparse mediante paréntesis.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CORREGIR
-\end_layout
-
-\end_inset
-
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -34517,6 +34515,16 @@ cuatro
 
 \begin_layout Subsection
 Comillas invertidas
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mover junto con tuberías
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -36578,7 +36586,7 @@ status open
 
 \begin_layout Plain Layout
 
-:(){:|:&};:
+:(){ :|:&};:
 \end_layout
 
 \end_inset
@@ -36860,7 +36868,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/git.png
-	lyxscale 30
+	lyxscale 15
 	scale 15
 	BoundingBox 0bp 0bp 5990bp 2777bp
 
