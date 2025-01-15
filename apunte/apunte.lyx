@@ -129,7 +129,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-8 de enero de 2025
+15 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -1886,6 +1886,605 @@ Lo distintivo de GPT-3 es su capacidad para generar texto coherente y contextuad
 \end_layout
 
 \begin_layout Chapter
+Arquitectura de la computadora
+\end_layout
+
+\begin_layout Section
+Gabinete 
+\end_layout
+
+\begin_layout Standard
+El 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Caja_de_computadora"
+literal "true"
+
+\end_inset
+
+ gabinete de la PC es una carcasa que cubre y protege los componentes de una computadora.
+ Sus principales funciones son:
+\end_layout
+
+\begin_layout Description
+Protección Protege los componentes de la computadora de daños físicos,
+ polvo y otros factores ambientales que pueden dañarlos.
+\end_layout
+
+\begin_layout Description
+Organización Los gabinetes de PC están diseñados para mantener todos los componentes en su lugar y organizados de manera eficiente.
+ Esto hace que sea más fácil para el usuario trabajar en la computadora y realizar mejoras o reparaciones.
+\end_layout
+
+\begin_layout Description
+Refrigeración Ayudan a mantener los componentes frescos mediante la circulación de aire a través de la carcasa.
+ Muchos gabinetes tienen ventiladores y otros sistemas de enfriamiento integrados para evitar el sobrecalentamiento de la computadora.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/gabinete.png
+	lyxscale 20
+	scale 18
+	BoundingBox 100bp 100bp 900bp 900bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Gabinete Phobos Tg Xtech
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Placa madre
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Placa_base"
+literal "true"
+
+\end_inset
+
+ placa madre es la pieza central de una computadora,
+ encargada de conectar y comunicar todos los componentes esenciales del sistema.
+ A través de sus conectores,
+ la placa madre une la CPU,
+ la memoria RAM,
+ las unidades de almacenamiento,
+ la tarjeta gráfica y otros dispositivos.
+\end_layout
+
+\begin_layout Standard
+Además,
+ distribuye la energía eléctrica necesaria a todos los componentes a través de los conectores de alimentación,
+ y controla los puertos de entrada/salida que permiten la comunicación de la computadora con dispositivos externos,
+ como los puertos USB,
+ de audio y de red.
+\end_layout
+
+\begin_layout Standard
+También incluye un chip de memoria ROM donde se almacena la BIOS,
+ un programa que se encarga de configurar la computadora al encenderla y realizar pruebas iniciales del hardware.
+\end_layout
+
+\begin_layout Standard
+La mayoría de las placas madre tienen un chip de audio integrado que proporciona capacidades de audio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/motherboard.png
+	lyxscale 20
+	scale 23
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Placa madre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Fuente de alimentación
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Placa_base"
+literal "true"
+
+\end_inset
+
+ PSU (Power Supply Unit) o fuente de alimentación se encarga de convertir la corriente que recibe de la toma eléctrica en los diferentes voltajes necesarios para alimentar los componentes internos de la computadora.
+\end_layout
+
+\begin_layout Standard
+Además protege los componentes de la computadora de sobretensiones,
+ cortocircuitos y otros problemas eléctricos que pueden ocurrir.
+ En caso de que se detecte una sobrecarga o falla,
+ la PSU puede cortar el suministro de energía para proteger los componentes de la computadora.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/psu.jpg
+	lyxscale 20
+	scale 23
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fuente de Alimentación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Microprocesador
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento"
+literal "true"
+
+\end_inset
+
+ CPU (Unidad Central de Procesamiento) es el componente principal de una computadora que realiza la mayoría de las operaciones de procesamiento de datos.
+ Es un chip integrado que se coloca en el zócalo de la placa madre y está compuesto por varios núcleos (o cores) que trabajan en conjunto para ejecutar instrucciones y procesar datos.
+\end_layout
+
+\begin_layout Standard
+Es la responsable de procesar y ejecutar los programas de software,
+ manejar la entrada y salida de datos,
+ y controlar los componentes del sistema,
+ como la memoria RAM,
+ el disco duro y las tarjetas de expansión.
+ La velocidad y la capacidad de la CPU son factores clave que determinan el rendimiento general de una computadora.
+\end_layout
+
+\begin_layout Standard
+Algunos procesadores modernos tienen gráficos integrados en su diseño.
+ Estos gráficos integrados se denominan iGPU (unidad de procesamiento de gráficos integrados) y están diseñados para proporcionar capacidades gráficas básicas para aplicaciones informáticas y de juegos de baja exigencia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/cpu.jpg
+	lyxscale 30
+	scale 14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Intel Core i9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Memoria RAM
+\end_layout
+
+\begin_layout Standard
+La memoria 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio"
+literal "true"
+
+\end_inset
+
+ RAM (Random Access Memory o Memoria de Acceso Aleatorio) es un tipo de memoria que se utiliza para almacenar temporalmente los datos y programas que están en uso.
+ Es un componente clave en el rendimiento general de una computadora,
+ ya que proporciona un acceso rápido a los datos y programas que el procesador necesita para operar.
+\end_layout
+
+\begin_layout Standard
+Cuando un programa se ejecuta en la computadora,
+ los datos y las instrucciones necesarios se cargan en la RAM desde el disco duro.
+ La RAM permite que el procesador acceda rápidamente a estos datos y programas,
+ lo que acelera el tiempo de ejecución y la velocidad de la computadora en general.
+\end_layout
+
+\begin_layout Standard
+Es una memoria 
+\emph on
+volátil
+\emph default
+,
+ lo que significa que pierde todos los datos almacenados en ella cuando se apaga la computadora.
+ Por lo tanto,
+ es importante guardar los archivos y datos importantes en el disco duro o en otro dispositivo de almacenamiento persistente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/ram.jpg
+	lyxscale 20
+	scale 8
+	BoundingBox 0bp 350bp 2000bp 1650bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Memoria RAM Corsair Vengance DDR4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque el microprocesador también tiene una memoria volátil llamada 
+\emph on
+registros
+\emph default
+,
+ estos son mucho mas caros y en consecuencia pequeños.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Memoria secundaria
+\end_layout
+
+\begin_layout Standard
+Un 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faYoutubePlay"
+target "https://www.youtube.com/watch?v=3owqvmMf6No"
+literal "true"
+
+\end_inset
+
+ disco duro es un dispositivo de almacenamiento de datos magnético que se utiliza para almacenar permanentemente archivos y programas.
+ A diferencia de la memoria RAM,
+ que es una memoria volátil y pierde todos los datos almacenados en ella cuando la computadora se apaga,
+ el disco duro los mantiene incluso después del apagado de la computadora.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/disk.jpg
+	lyxscale 20
+	scale 9
+	BoundingBox 0bp 100bp 1500bp 1400bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disco rígido Seagate Barracuda 1TB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una de las principales diferencias entre el disco duro y la memoria RAM es la velocidad.
+ Los discos duros son mucho más lentos en términos de velocidad de acceso,
+ ya que el brazo de lectura/escritura necesita moverse físicamente para acceder a los datos en los platos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/jerarquia.png
+	lyxscale 70
+	scale 49
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_memoria"
+literal "true"
+
+\end_inset
+
+ Jerarquía de la memoria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
+literal "true"
+
+\end_inset
+
+ SSD (Solid State Drive) es un dispositivo de almacenamiento de datos que utiliza memoria flash para almacenar permanentemente archivos y programas en la computadora.
+\end_layout
+
+\begin_layout Standard
+A diferencia de un disco duro tradicional,
+ que utiliza platos magnéticos giratorios y cabezas de lectura/escritura para acceder a los datos,
+ una SSD no tiene partes móviles.
+ Como resultado,
+ las SSD proporcionan un mejor rendimiento en términos de velocidad de lectura/escritura y tiempo de acceso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/ssd.jpg
+	lyxscale 20
+	scale 5
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+SSD Kingston
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Placa de video
+\end_layout
+
+\begin_layout Standard
+Una 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica"
+literal "true"
+
+\end_inset
+
+ placa de video,
+ también conocida como tarjeta gráfica o GPU,
+ es un componente de hardware que tiene como objetivo procesar y generar imágenes en la pantalla.
+ Su función es liberar a la CPU de la tarea del procesamiento gráfico,
+ lo que permite que se concentre en otras tareas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/gpu.jpg
+	lyxscale 30
+	scale 18
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Tarjeta Gráfica NVIDIA RTX 2080 Ti
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Además de su uso en gráficos,
+ en el campo de la I.
+ A.
+ son comúnmente utilizadas para entrenar y ejecutar redes neuronales.
+ Esto se debe a que las placas de video tienen una arquitectura altamente paralela que les permite procesar grandes cantidades de datos de manera eficiente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\strikeout on
+\color lightgray
+Teclado
+\end_layout
+
+\begin_layout Chapter
 Representación de la información
 \end_layout
 
@@ -1896,7 +2495,7 @@ Unidades de información
 \begin_layout Standard
 Las unidades de información son medidas utilizadas en informática para cuantificar la cantidad de datos o información que se pueden almacenar o procesar.
  Estas unidades se basan en el sistema binario,
- ya que las computadores trabajan con 0s y 1s.
+ ya que las computadoras trabajan con 0s y 1s.
 \end_layout
 
 \begin_layout Standard
@@ -2293,7 +2892,7 @@ Equivalencia
 \begin_inset Text
 
 \begin_layout Plain Layout
-Kilobyte
+Kibibyte
 \end_layout
 
 \end_inset
@@ -2337,7 +2936,7 @@ KiB
 \begin_inset Text
 
 \begin_layout Plain Layout
-Megabyte
+Mebibyte
 \end_layout
 
 \end_inset
@@ -2385,7 +2984,7 @@ MiB
 \begin_inset Text
 
 \begin_layout Plain Layout
-Gigabyte
+Gibibyte
 \end_layout
 
 \end_inset
@@ -2433,7 +3032,7 @@ GiB
 \begin_inset Text
 
 \begin_layout Plain Layout
-Terabyte
+Tebibyte
 \end_layout
 
 \end_inset
@@ -2477,7 +3076,7 @@ TiB
 \begin_inset Text
 
 \begin_layout Plain Layout
-Petabyte
+Pebibyte
 \end_layout
 
 \end_inset
@@ -2546,6 +3145,10 @@ Múltiplos de bytes en binario
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
 El sistema decimal se utiliza más frecuentemente en el almacenamiento comercial,
  ya que las empresas suelen usarlo para expresar capacidades más 
 \begin_inset Quotes fld
@@ -2558,473 +3161,645 @@ redondas
  y comprensibles.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Un disco duro anunciado como 500 GB (en sistema decimal) tendrá aproximadamente 465.66 GiB (en sistema binario).
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Example
+Un disco duro anunciado como 500 GB (en sistema decimal) tendrá aproximadamente 465.66 GiB (en sistema binario).
 \end_layout
 
 \begin_layout Section
 Sistemas de numeración
 \end_layout
 
+\begin_layout Standard
+Los sistemas de numeración son conjuntos de reglas y símbolos utilizados para representar cantidades o números.
+ Cada sistema se basa en un conjunto específico de símbolos diferentes que se usan y se agrupan para formar números mayores.
+ Cada sistema tiene sus propias aplicaciones y es útil en diferentes contextos,
+ como la matemática,
+ la computación y la ingeniería.
+\end_layout
+
+\begin_layout Subsection*
+Sistemas no posicionales
+\end_layout
+
+\begin_layout Standard
+Los sistemas de numeración no posicionales son aquellos en los que el valor de cada símbolo o dígito no depende de su posición dentro del número.
+ En estos sistemas,
+ cada símbolo tiene un valor fijo y constante,
+ y los números se representan mediante la repetición o combinación de símbolos según ciertas reglas.
+\end_layout
+
+\begin_layout Example
+El sistema de numeración unario es un sistema no posicional en el que los números se representan mediante la repetición de un único símbolo o marca.
+ Cada símbolo representa una unidad,
+ y el valor total del número es igual al número de símbolos presentes.
+ Por ejemplo el número 3 se representaría como 
+\begin_inset Formula $|||$
+\end_inset
+
+ y el 7 como 
+\begin_inset Formula $|||||||$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+El sistema de numeración romano es un sistema no posicional utilizado en la antigua Roma para representar números.
+ Se basa en un conjunto de símbolos con valores fijos que se combinan siguiendo reglas específicas para formar números.
+ Por ejemplo el número 19 se representa como 
+\begin_inset Formula $XIX$
+\end_inset
+
+ y el 3999 como 
+\begin_inset Formula $MMMCMXCIX$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Sistemas no posicionales
+\end_layout
+
+\begin_layout Standard
+Los sistemas de numeración posicionales son aquellos en los que el valor de un dígito depende tanto de su valor intrínseco como de la posición que ocupa dentro del número.
+ En estos sistemas,
+ se utiliza una base que determina cuántos símbolos se usan.
+\end_layout
+
+\begin_layout Standard
+Fijada una base 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $b$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ un número se expresa como una combinación de dígitos (
+\begin_inset Formula $d_{i}$
+\end_inset
+
+) multiplicados por potencias de la base.
+ La posición más a la derecha tiene el peso 
+\begin_inset Formula $b^{0}$
+\end_inset
+
+,
+ la siguiente 
+\begin_inset Formula $b^{1}$
+\end_inset
+
+,
+ luego 
+\begin_inset Formula $b^{2}$
+\end_inset
+
+ y así sucesivamente.
+\end_layout
+
+\begin_layout Standard
+La fórmula general para un número entero 
+\begin_inset Formula $N$
+\end_inset
+
+ de 
+\begin_inset Formula $n$
+\end_inset
+
+ dígitos es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=d_{n-1}\cdot b^{n-1}+d_{n-2}\cdot b^{n-2}+\cdots+d_{1}\cdot b^{1}+d_{0}\cdot b^{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para números con parte decimal,
+ los pesos de las posiciones a la derecha del punto decimal son potencias negativas de la base,
+ es decir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=d_{n-1}\cdot b^{n-1}+d_{n-2}\cdot b^{n-2}+\cdots+d_{1}\cdot b^{1}+d_{0}\cdot b^{0}+d_{-1}\cdot b^{-1}+d_{-2}\cdot b^{-2}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Cuando expresemos un número en una base que no sea 10,
+ lo escribiremos entre paréntesis indicando la base como subindice.
+ Así,
+ el número 
+\begin_inset Formula $\left(101\right)_{2}$
+\end_inset
+
+ no representa al número 101 en base 10,
+ sino en base 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+El sistema decimal tiene base 10 (usa los dígitos 0 a 9).
+ El número 
+\begin_inset Formula $345,67$
+\end_inset
+
+ se descompone como:
+ 
+\begin_inset Formula $3\cdot10^{2}+4\cdot10^{1}+5\cdot10^{0}+6\cdot10^{-1}+7\cdot10^{-2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+El sistema binario tiene como base 2 (usa los dígitos 0 y 1).
+ El número 
+\begin_inset Formula $\left(1011,01\right)_{2}$
+\end_inset
+
+ se descompone como:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\left(1011,01\right)_{2}=1\cdot2^{3}+0\cdot2^{2}+1\cdot2^{1}+1\cdot2^{0}+0\cdot2^{-1}+1\cdot2^{-2}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+=8+0+2+1+0+0,25=11,25
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Codificación de caracteres
 \end_layout
 
-\begin_layout Chapter
-Arquitectura de la computadora
-\end_layout
-
-\begin_layout Section
-Gabinete 
+\begin_layout Standard
+Las codificaciones de caracteres son sistemas que asignan un valor numérico (código) a cada carácter en un conjunto de caracteres,
+ permitiendo que los textos sean representados,
+ almacenados y transmitidos en forma digital.
 \end_layout
 
 \begin_layout Standard
-El 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Caja_de_computadora"
-literal "true"
-
-\end_inset
-
- gabinete de la PC es una carcasa que cubre y protege los componentes de una computadora.
- Sus principales funciones son:
+Hay algunos símbolos en un sistema de codificación de caracteres que no tienen una representación visual directa en pantalla o en papel,
+ pero que desempeñan funciones específicas dentro de un texto o sistema.
+ Estos caracteres se usan para controlar el formato,
+ la estructura o el flujo de los datos,
+ en lugar de ser representados como texto legible.
 \end_layout
 
-\begin_layout Description
-Protección El gabinete protege los componentes de la computadora de daños físicos,
- polvo y otros factores ambientales que pueden dañarlos.
-\end_layout
-
-\begin_layout Description
-Organización Los gabinetes de PC están diseñados para mantener todos los componentes en su lugar y organizados de manera eficiente.
- Esto hace que sea más fácil para el usuario trabajar en la computadora y realizar mejoras o reparaciones.
-\end_layout
-
-\begin_layout Description
-Refrigeración:
- Los gabinetes de PC también ayudan a mantener los componentes frescos mediante la circulación de aire a través de la carcasa.
- Muchos gabinetes tienen ventiladores y otros sistemas de enfriamiento integrados para evitar el sobrecalentamiento de la computadora.
+\begin_layout Subsection*
+ASCII
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Figura
+El código ASCII (American Standard Code for Information Interchange):
+ fue una de las primeras codificaciones y se usa para representar caracteres básicos del inglés.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+alignment center
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename imagenes/gabinete.png
-	lyxscale 20
-	scale 18
-	BoundingBox 100bp 100bp 900bp 900bp
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
+\begin_inset Flex Recuadro
 status open
 
 \begin_layout Plain Layout
-Gabinete Phobos Tg Xtech
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Placa madre
-\end_layout
-
-\begin_layout Standard
-La 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Placa_base"
-literal "true"
-
-\end_inset
-
- placa madre es la pieza central de una computadora,
- encargada de conectar y comunicar todos los componentes esenciales del sistema.
- A través de sus conectores,
- la placa madre une la CPU,
- la memoria RAM,
- las unidades de almacenamiento,
- la tarjeta gráfica y otros dispositivos.
-\end_layout
-
-\begin_layout Standard
-Además,
- la placa madre distribuye la energía eléctrica necesaria a todos los componentes a través de los conectores de alimentación,
- y controla los puertos de entrada/salida que permiten la comunicación de la computadora con dispositivos externos,
- como los puertos USB,
- de audio y de red.
-\end_layout
-
-\begin_layout Standard
-La placa madre también incluye un chip de memoria ROM donde se almacena la BIOS,
- un programa que se encarga de configurar la computadora al encenderla y realizar pruebas iniciales del hardware.
-\end_layout
-
-\begin_layout Standard
-La mayoría de las placas madre tienen un chip de audio integrado que proporciona capacidades de audio.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/motherboard.png
-	lyxscale 20
-	scale 25
-	BoundingBox 0bp 0bp 1280bp 679bp
+Decimal
+\end_layout
 
 \end_inset
-
-
-\end_layout
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Placa madre
+0
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Fuente de alimentación
-\end_layout
-
-\begin_layout Standard
-La 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Placa_base"
-literal "true"
-
-\end_inset
-
- PSU (Power Supply Unit) o fuente de alimentación se encarga de convertir la corriente que recibe de la toma eléctrica en los diferentes voltajes necesarios para alimentar los componentes internos de la computadora.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La PSU también protege los componentes de la computadora de sobretensiones,
- cortocircuitos y otros problemas eléctricos que pueden ocurrir.
- En caso de que se detecte una sobrecarga o falla,
- la PSU puede cortar el suministro de energía para proteger los componentes de la computadora.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/psu.jpg
-	lyxscale 20
-	scale 23
+Caracter Nulo
+\end_layout
 
 \end_inset
-
-
-\end_layout
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Fuente de Alimentación
+Comienzo de Cabecera
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Microprocesador
-\end_layout
-
-\begin_layout Standard
-La 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento"
-literal "true"
-
-\end_inset
-
- CPU (Unidad Central de Procesamiento) es el componente principal de una computadora que realiza la mayoría de las operaciones de procesamiento de datos.
- Es un chip integrado que se coloca en el zócalo de la placa madre y está compuesto por varios núcleos (o cores) que trabajan en conjunto para ejecutar instrucciones y procesar datos.
-\end_layout
-
-\begin_layout Standard
-La CPU es responsable de procesar y ejecutar los programas de software,
- manejar la entrada y salida de datos,
- y controlar los componentes del sistema,
- como la memoria RAM,
- el disco duro y las tarjetas de expansión.
- La velocidad y la capacidad de la CPU son factores clave que determinan el rendimiento general de una computadora.
-\end_layout
-
-\begin_layout Standard
-Algunos procesadores modernos tienen gráficos integrados en su diseño.
- Estos gráficos integrados se denominan iGPU (unidad de procesamiento de gráficos integrados) y están diseñados para proporcionar capacidades gráficas básicas para aplicaciones informáticas y de juegos de baja exigencia.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/cpu.jpg
-	lyxscale 30
-	scale 22
+2
+\end_layout
 
 \end_inset
-
-
-\end_layout
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
+Comienzo del texto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Intel Core i9
+3
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Memoria RAM
-\end_layout
-
-\begin_layout Standard
-La memoria 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio"
-literal "true"
-
-\end_inset
-
- RAM (Random Access Memory o Memoria de Acceso Aleatorio) es un tipo de memoria que se utiliza en las computadoras para almacenar temporalmente los datos y programas que están en uso.
- La RAM es un componente clave en el rendimiento general de una computadora,
- ya que proporciona un acceso rápido y aleatorio a los datos y programas que el procesador necesita para operar.
-\end_layout
-
-\begin_layout Standard
-Cuando una aplicación o un programa se ejecuta en la computadora,
- los datos y las instrucciones necesarios se cargan en la memoria RAM desde el disco duro.
- La RAM permite que el procesador acceda rápidamente a estos datos y programas,
- lo que acelera el tiempo de ejecución y la velocidad de la computadora en general.
-\end_layout
-
-\begin_layout Standard
-Además,
- la memoria RAM es una memoria 
-\emph on
-volátil
-\emph default
-,
- lo que significa que pierde todos los datos almacenados en ella cuando se apaga la computadora.
- Por lo tanto,
- es importante guardar los archivos y datos importantes en el disco duro o en otro dispositivo de almacenamiento persistente.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Aunque el microprocesador también tiene una memoria volátil llamada 
-\emph on
-registros
-\emph default
-,
- estos son mucho mas caros y en consecuencia pequeños.
+Fin del texto
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/ram.jpg
-	lyxscale 20
-	scale 11
-	BoundingBox 0bp 350bp 2000bp 1650bp
-	clip
+4
+\end_layout
 
 \end_inset
-
-
-\end_layout
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
+Fin de la transmisión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Memoria RAM Corsair Vengance DDR4
+5
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Memoria secundaria
-\end_layout
-
-\begin_layout Standard
-Un 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faYoutubePlay"
-target "https://www.youtube.com/watch?v=3owqvmMf6No"
-literal "true"
-
-\end_inset
-
- disco duro es un dispositivo de almacenamiento de datos magnético que se utiliza en las computadoras para almacenar permanentemente archivos y programas.
- A diferencia de la memoria RAM,
- que es una memoria volátil y pierde todos los datos almacenados en ella cuando la computadora se apaga,
- el disco duro mantiene los datos almacenados incluso después del apagado de la computadora.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/disk.jpg
-	lyxscale 20
-	scale 11
-	BoundingBox 0bp 100bp 1500bp 1400bp
-	clip
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Acuse de recibo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timbre
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tabulación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nueva Linea (Line Feed)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retorno de carro
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Disco rígido Seagate Barracuda 1TB
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Una de las principales diferencias entre el disco duro y la memoria RAM es la velocidad.
- La memoria RAM proporciona un acceso rápido y aleatorio a los datos y programas,
- lo que permite al procesador acceder a ellos rápidamente.
- En comparación,
- los discos duros son mucho más lentos en términos de velocidad de acceso,
- ya que el brazo de lectura/escritura necesita moverse físicamente para acceder a los datos en los platos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/jerarquia.png
-	lyxscale 70
-	scale 49
 
 \end_inset
 
@@ -3032,153 +3807,15 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_memoria"
-literal "true"
-
-\end_inset
-
- Jerarquía de la memoria
+Caracteres ASCII no imprimibles
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Una 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-literal "true"
-
-\end_inset
-
- SSD (Solid State Drive) es un dispositivo de almacenamiento de datos que utiliza memoria flash para almacenar permanentemente archivos y programas en la computadora.
- A diferencia de un disco duro tradicional,
- que utiliza platos magnéticos giratorios y cabezas de lectura/escritura para acceder a los datos,
- una SSD no tiene partes móviles y utiliza chips de memoria flash para almacenar y acceder a los datos.
-\end_layout
-
-\begin_layout Standard
-La tecnología SSD es más rápida que la de un disco duro porque no hay partes mecánicas que necesiten moverse para acceder a los datos.
- En lugar de eso,
- los datos se almacenan en chips de memoria flash,
- que son mucho más rápidos para acceder y leer que los discos duros.
- Como resultado,
- las SSD proporcionan un mejor rendimiento en términos de velocidad de lectura/escritura y tiempo de acceso.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/ssd.jpg
-	lyxscale 20
-	scale 7
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-SSD Kingston
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Placa de video
-\end_layout
-
-\begin_layout Standard
-Una 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica"
-literal "true"
-
-\end_inset
-
- placa de video,
- también conocida como tarjeta gráfica o GPU,
- es un componente de hardware de la computadora que tiene como objetivo procesar y generar imágenes en la pantalla.
- Su función es liberar a la CPU (unidad central de procesamiento) de la computadora de la tarea de procesamiento gráfico,
- lo que permite que la CPU se concentre en otras tareas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/gpu.jpg
-	lyxscale 30
-	scale 35
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Tarjeta Gráfica NVIDIA RTX 2080 Ti
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Además de su uso en gráficos,
- en el campo de la inteligencia artificial son comúnmente utilizadas para entrenar y ejecutar redes neuronales profundas.
- Esto se debe a que las placas de video tienen una arquitectura altamente paralela que les permite procesar grandes cantidades de datos de manera eficiente.
 \end_layout
 
 \end_inset
