@@ -4702,35 +4702,6 @@ kernel
 \end_layout
 
 \begin_layout Standard
-Podemos consultar cual es el núcleo que se esta ejecutando con el comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-uname -r
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El núcleo se ejecuta en modo privilegiado,
  lo que significa que tiene acceso directo al hardware y puede ejecutar instrucciones que otros programas no pueden.
 \end_layout
@@ -5304,31 +5275,6 @@ Para saber que emulador de terminal se está utilizando se puede escribir el com
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-echo $TERM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex Observacion
 status open
 
@@ -5446,31 +5392,6 @@ interprete de linea de comandos
 \begin_deeper
 \begin_layout Standard
 Para saber que interprete de linea de comandos se está utilizando se puede escribir el comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-echo $SHELL
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6362,33 +6283,6 @@ apagar
  se iniciará el proceso de arranque completo.
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-shutdown
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Description
 Reinicio Al seleccionar la opción 
 \begin_inset Quotes fld
@@ -6404,33 +6298,6 @@ reiniciar
  Esta opción es útil para solucionar problemas de hardware o software y para actualizar el sistema operativo.
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-reboot
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Description
 Hibernación La opción de 
 \begin_inset Quotes fld
@@ -6447,31 +6314,6 @@ hibernar
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-systemctl hibernate
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -6502,31 +6344,6 @@ suspender
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-systemctl suspend
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -27464,6 +27281,35 @@ faStar
 Gestión
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+uname
+\end_layout
+
+\begin_layout Plain Layout
+shutdown
+\end_layout
+
+\begin_layout Plain Layout
+reboot
+\end_layout
+
+\begin_layout Plain Layout
+systemctl hibernate
+\end_layout
+
+\begin_layout Plain Layout
+systemctl suspend
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -33217,6 +33063,23 @@ Las variables de entorno son variables especiales que están disponibles para to
 
 \begin_layout Standard
 Algunas variables de entorno comunes en Bash incluyen:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TERM
+\end_layout
+
+\begin_layout Plain Layout
+SHELL
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
