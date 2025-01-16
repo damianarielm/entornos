@@ -3851,10 +3851,10 @@ La programación es el proceso de diseñar,
 
 \begin_layout Standard
 Este proceso implica varios pasos,
- que incluyen la definición del problema que se está tratando de resolver,
- la identificación de los requisitos y especificaciones necesarios para crear la solución,
+ que incluyen la definición del problema a resolver,
+ la identificación de los requisitos y especificaciones necesarias para crear la solución,
  la escritura del código en un lenguaje de programación,
- la realización de pruebas para asegurarse de que el software funciona correctamente y la documentación del código para que otros desarrolladores puedan entender y trabajar en él.
+ la realización de pruebas para asegurars el correcto funcionamiento del software y la documentación del código para que otros desarrolladores puedan entenderlo y trabajar en él.
 \end_layout
 
 \begin_layout Standard
@@ -3905,8 +3905,8 @@ Un lenguaje de programación es un conjunto de reglas,
 
 \begin_layout Standard
 Los lenguajes de programación se utilizan para describir las acciones que una computadora debe realizar,
- como realizar cálculos matemáticos,
- interactuar con dispositivos periféricos,
+ como efectuar cálculos matemáticos,
+ interactuar con periféricos,
  almacenar y recuperar datos,
  y responder a las entradas del usuario.
  Pueden variar en complejidad y enfoque,
@@ -3916,8 +3916,8 @@ Los lenguajes de programación se utilizan para describir las acciones que una c
 
 \begin_layout Standard
 En esencia,
- un lenguaje de programación es una herramienta para crear software y sistemas informáticos,
- permitiendo a los programadores transformar sus ideas en código ejecutable.
+ un lenguaje de programación es una herramienta para crear software,
+ permitiendo transformar ideas en código ejecutable.
 \end_layout
 
 \begin_layout Standard
@@ -3987,7 +3987,8 @@ Los lenguajes de programación se pueden clasificar en tres niveles:
 \end_layout
 
 \begin_layout Description
-Alto Estos lenguajes son más cercanos al lenguaje natural humano y se utilizan para escribir programas complejos de manera más fácil y rápida.
+Alto Estos lenguajes son más cercanos al lenguaje natural humano y se utilizan para escribir programas complejos de manera más fácil y rápida,
+ abstrayéndose de muchos detalles.
  Ejemplos de lenguajes de programación de alto nivel incluyen Python,
  Java,
  C++,
@@ -4031,19 +4032,18 @@ Hola mundo!
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+\begin_layout Description
+Bajo Estos lenguajes con cercanos al lenguaje de la máquina y se utilizan para escribir programas que interactúan directamente con el hardware de la computadora.
+ 
 \end_layout
 
-\begin_layout Description
-Bajo Estos lenguajes están más cerca del lenguaje de la máquina y se utilizan para escribir programas que interactúan directamente con el hardware del ordenador.
- Ejemplos de lenguajes de programación de bajo nivel incluyen el lenguaje ensamblador y el lenguaje C.
+\begin_deeper
+\begin_layout Standard
+Ejemplos de lenguajes de programación de bajo nivel incluyen el lenguaje ensamblador y el lenguaje C.
  Estos lenguajes requieren que el programador tenga un conocimiento más detallado del hardware y de la forma en que se maneja la memoria.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Flex Codigo
 status open
@@ -4146,7 +4146,7 @@ _start:
 \begin_layout Description
 binario El lenguaje binario es el lenguaje de máquina utilizado por las computadoras para ejecutar programas.
  Este lenguaje está compuesto de ceros y unos,
- que representan instrucciones que el procesador del ordenador puede entender y ejecutar directamente.
+ que representan instrucciones que el procesador puede entender y ejecutar directamente.
  Es muy difícil y tedioso para los programadores escribir directamente en lenguaje binario,
  por lo que se utilizan los lenguajes de programación de nivel alto y bajo para crear programas que luego se traducen a lenguaje binario.
 \end_layout
@@ -4277,7 +4277,8 @@ Interprete Un intérprete es un programa que lee el código fuente de un program
 \begin_layout Description
 Compilador Un compilador,
  por otro lado,
- es un programa que traduce todo el código fuente a lenguaje de máquina en un solo paso antes de su ejecución.
+ es un programa que traduce todo el código fuente a lenguaje de máquina en un solo paso,
+ generando un archivo ejecutable que puede ser utilizado por la computadora sin necesidad de leer el código original nuevamente.
  El compilador lee todo el código fuente del programa y lo traduce en un archivo ejecutable que puede ser utilizado por la computadora sin necesidad de leer el código fuente original nuevamente.
  Debido a que el código fuente se traduce y compila solo una vez,
  el código compilado se ejecuta generalmente más rápido que el código interpretado.
@@ -4324,9 +4325,9 @@ Tiempo de traducción y ejecución
 status open
 
 \begin_layout Plain Layout
-Vale la pena notar que en un lenguaje compilado,
- los tiempos de traducción son computados por el desarrollador,
- mientras que en uno interpretado,
+En los lenguajes compilados,
+ los tiempos de traducción son computados por el desarrollador.
+ En cambio en los lenguajes interpretados,
  son computados por el usuario final.
 \end_layout
 
@@ -4344,7 +4345,7 @@ Código
 \begin_inset space ~
 \end_inset
 
-fuente El código fuente de un programa es el conjunto de instrucciones o comandos escritos por un programador en un lenguaje de programación determinado;
+fuente El código fuente de un programa es el conjunto de instrucciones escritas por un programador en un lenguaje de programación determinado;
  es el 
 \begin_inset Quotes fld
 \end_inset
@@ -4388,7 +4389,7 @@ código abierto
 
  se refiere a un tipo de software en el cual el código fuente está disponible públicamente y puede ser modificado por cualquier persona.
  En el modelo de código abierto,
- los desarrolladores de software pueden trabajar juntos para mejorar y expandir el software existente.
+ los desarrolladores de software pueden trabajar para mejorar y expandir el software existente.
 \end_layout
 
 \begin_layout Description
@@ -4468,7 +4469,7 @@ status open
 
 \begin_layout Plain Layout
 El software libre suele estar disponible gratuitamente,
- sin embargo no es obligatorio que sea así,
+ pero no es obligatorio que sea así;
  por lo tanto no hay que asociar software «libre» a «gratuito» ya que,
  conservando su carácter de libre,
  puede ser distribuido comercialmente.
@@ -4486,7 +4487,7 @@ IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas y
 \begin_deeper
 \begin_layout Standard
 Típicamente incluye un editor de código que proporciona herramientas de resaltado de sintaxis y autocompletado,
- lo que facilita la escritura de código.
+ para facilitar la escritura de código.
  Además,
  un IDE suele incluir un depurador que ayuda a identificar y corregir errores en el código.
 \end_layout
