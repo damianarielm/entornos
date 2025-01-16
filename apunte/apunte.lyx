@@ -5087,6 +5087,276 @@ init
 \end_layout
 
 \begin_layout Section
+Interfaz de usuario
+\end_layout
+
+\begin_layout Standard
+En términos generales,
+ la interfaz de usuario (UI) es el punto de interacción y comunicación entre un ser humano y un programa.
+ Una buena interfaz de usuario facilita la interacción de forma intuitiva,
+ eficiente y satisfactoria,
+ permitiendo al usuario realizar sus tareas y alcanzar sus objetivos de manera efectiva.
+\end_layout
+
+\begin_layout Standard
+Existen principalmente tres tipos de interfaz:
+\end_layout
+
+\begin_layout Description
+GUI Una interfaz gráfica de usuario (
+\begin_inset Quotes fld
+\end_inset
+
+GUI
+\begin_inset Quotes frd
+\end_inset
+
+ por sus siglas en inglés 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Graphical User Interface
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+),
+ es una forma de interactuar con un programa o sistema operativo mediante el uso de elementos gráficos,
+ como ventanas,
+ iconos,
+ botones y menús.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Están diseñadas para ser fáciles de aprender y usar,
+ incluso para usuarios sin experiencia en informática.
+ Esto permite a los usuarios realizar acciones de forma intuitiva,
+ haciendo clic,
+ arrastrando y soltando objetos en la pantalla.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante notar que las interfaces gráficas en Linux son un programa de usuario opcional.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/kde.png
+	lyxscale 35
+	scale 21
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+KDE Plasma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/fluent.png
+	lyxscale 50
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faWindows 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Fluent Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+CLI Una 
+\begin_inset Quotes fld
+\end_inset
+
+CLI
+\begin_inset Quotes frd
+\end_inset
+
+ (Command-Line Interface - Interfaz de Línea de Comandos) es una interfaz basada en texto,
+ donde el usuario interactúa con el sistema operativo escribiendo comandos específicos en una línea de comandos.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Requieren un mayor conocimiento técnico y la memorización de comandos,
+ pero consumen menos recursos del sistema en comparación con las GUIs.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En esta materia estudiaremos principalmente una CLI.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+TUI TUI (Text-based User Interface - Interfaz de Usuario Basada en Texto):
+ Es una interfaz híbrida que combina elementos de las CLIs y las GUIs.
+ Se ejecuta en un entorno de texto,
+ pero utiliza caracteres y colores para crear una apariencia más visual y estructurada,
+ con elementos como menús,
+ cuadros de diálogo y ventanas de texto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/htop.jpg
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faLinux 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\family typewriter
+htop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Terminal
 \end_layout
 
@@ -5349,7 +5619,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/qterminal.png
 	lyxscale 50
-	scale 25
+	scale 30
 
 \end_inset
 
@@ -5385,13 +5655,6 @@ Qterminal en Lubuntu
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -5599,6 +5862,10 @@ Creación En esta etapa,
 \begin_layout Description
 Listo En este estado,
  el proceso está cargado en memoria a la espera de ser seleccionado por el planificador del sistema operativo para su ejecución.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -5685,417 +5952,6 @@ Cabe destacar que el sistema operativo puede realizar transiciones entre los dif
 \end_layout
 
 \begin_layout Section
-Interfaz gráfica
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Eliminar toda esta complejidad.
- Substituir por GUI vs CLI vs TUI.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Una interfaz gráfica de usuario es una forma de interactuar con un programa o sistema operativo mediante el uso de elementos gráficos,
- como ventanas,
- iconos,
- botones y menús,
- en lugar de usar comandos de texto en una línea de comandos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-A las interfaces de usuario gráficas las llamamos 
-\begin_inset Quotes fld
-\end_inset
-
-GUI
-\begin_inset Quotes frd
-\end_inset
-
- por sus siglas en inglés 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-Graphical User Interface
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
-;
- en cambio a las interfaces de linea de comandos las llamamos 
-\begin_inset Quotes fld
-\end_inset
-
-CLI
-\begin_inset Quotes frd
-\end_inset
-
- por las siglas 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-Command Line Interface
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El entorno de escritorio,
- el sistema de ventanas,
- el servidor de pantalla y el gestor de ventanas son componentes importantes de un sistema operativo gráfico que trabajan juntos para proporcionar una interfaz de usuario intuitiva y fácil de usar.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/gui.png
-	lyxscale 50
-	scale 22
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faLinux 
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-Capas de una GUI
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A continuación,
- se describen las funciones de cada uno de ellos:
-\end_layout
-
-\begin_layout Description
-Entorno
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-escritorio Es un conjunto de aplicaciones,
- herramientas y utilidades que proporcionan una interfaz de usuario gráfica para un sistema operativo.
- El entorno de escritorio incluye menús,
- barras de herramientas,
- iconos,
- fondos de pantalla,
- gestores de archivos y otras herramientas que hacen que el uso del sistema operativo sea más fácil e intuitivo para el usuario.
- Algunos ejemplos de entornos de escritorio son 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://www.gnome.org/"
-literal "true"
-
-\end_inset
-
- GNOME,
- 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://kde.org/es/"
-literal "true"
-
-\end_inset
-
- KDE,
- 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://www.xfce.org/"
-literal "true"
-
-\end_inset
-
- XFCE y 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "http://www.lxde.org/"
-literal "true"
-
-\end_inset
-
- LXDE.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/kde.png
-	lyxscale 41
-	scale 22
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faLinux 
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-KDE Plasma
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-Sistema
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-ventanas Es un sistema que permite la creación y manipulación de ventanas de aplicaciones en la pantalla.
- El sistema de ventanas se encarga de administrar la posición,
- tamaño,
- apariencia y eventos de las ventanas en la pantalla.
- También se encarga de la gestión de los recursos gráficos,
- como el uso de la memoria,
- la gestión de la entrada y salida de datos,
- y el manejo de la interacción entre aplicaciones.
- Algunos ejemplos de sistemas de ventanas son X11 y 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://wayland.freedesktop.org/"
-literal "true"
-
-\end_inset
-
- Wayland.
-\end_layout
-
-\begin_layout Description
-Servidor
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-pantalla Es un programa que se ejecuta en el sistema operativo y se encarga de controlar la pantalla,
- el teclado y el ratón del sistema.
- El servidor de pantalla recibe la entrada de teclado y ratón y la envía a las aplicaciones en ejecución en el sistema.
- También se encarga de mostrar la salida gráfica de las aplicaciones en la pantalla.
- El servidor de pantalla más utilizado en Linux es 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://www.x.org/wiki/"
-literal "true"
-
-\end_inset
-
- Xorg.
-\end_layout
-
-\begin_layout Description
-Gestor
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-ventanas Es un programa que se ejecuta en el entorno de escritorio y que se encarga de administrar la apariencia y el comportamiento de las ventanas de las aplicaciones.
- El gestor de ventanas proporciona una variedad de características,
- como la decoración de ventanas,
- la administración de escritorios virtuales,
- la configuración de atajos de teclado,
- y la gestión de la colocación de ventanas en la pantalla.
- Algunos ejemplos de gestores de ventanas son 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "http://www.compiz.org/"
-literal "true"
-
-\end_inset
-
- Compiz,
- 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "http://openbox.org/wiki/Main_Page"
-literal "true"
-
-\end_inset
-
- Openbox y 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://i3wm.org/"
-literal "true"
-
-\end_inset
-
- i3.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/i3.png
-	lyxscale 50
-	scale 24
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faLinux 
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-Gestor de ventanas i3
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Es importante notar que las interfaces gráficas en Linux son un programa de usuario opcional.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
 Distribuciones
 \end_layout
 
@@ -6106,6 +5962,10 @@ Las distribuciones de Linux son sistemas operativos basados en el kernel de Linu
  controladores,
  herramientas de gestión de paquetes,
  etc.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
