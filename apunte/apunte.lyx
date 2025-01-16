@@ -100,7 +100,19 @@ customHeadersFooters
 status open
 
 \begin_layout Plain Layout
-Estandarizar tipografías.
+Estandarizar tipografías:
+\end_layout
+
+\begin_layout Itemize
+Comandos.
+\end_layout
+
+\begin_layout Itemize
+Sustantivos propios.
+\end_layout
+
+\begin_layout Itemize
+Expresiones en ingles.
 \end_layout
 
 \end_inset
@@ -213,18 +225,6 @@ Fundamentos
 \begin_layout Standard
 \begin_inset Note Note
 status open
-
-\begin_layout Plain Layout
-Uso correcto del teclado
-\end_layout
-
-\begin_layout Plain Layout
-Sistema de numeración binario y unidades en bytes.
-\end_layout
-
-\begin_layout Plain Layout
-Codificación de caracteres.
-\end_layout
 
 \begin_layout Plain Layout
 Eliminar todos los comandos.
@@ -1918,7 +1918,7 @@ Protección Protege los componentes de la computadora de daños físicos,
 
 \begin_layout Description
 Organización Los gabinetes de PC están diseñados para mantener todos los componentes en su lugar y organizados de manera eficiente.
- Esto hace que sea más fácil para el usuario trabajar en la computadora y realizar mejoras o reparaciones.
+ Esto facilita el trabajo del usuario y las tareas de mejora o reparación.
 \end_layout
 
 \begin_layout Description
@@ -2068,7 +2068,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/psu.jpg
 	lyxscale 20
-	scale 23
+	scale 13
 
 \end_inset
 
@@ -2107,12 +2107,12 @@ literal "true"
 
 \end_inset
 
- CPU (Unidad Central de Procesamiento) es el componente principal de una computadora que realiza la mayoría de las operaciones de procesamiento de datos.
- Es un chip integrado que se coloca en el zócalo de la placa madre y está compuesto por varios núcleos (o cores) que trabajan en conjunto para ejecutar instrucciones y procesar datos.
+ CPU (Unidad Central de Procesamiento) es el componente principal de una computadora.
+ Es un chip integrado que se coloca en el zócalo de la placa madre y está compuesto por varios núcleos (o cores) que trabajan en conjunto.
 \end_layout
 
 \begin_layout Standard
-Es la responsable de procesar y ejecutar los programas de software,
+Es responsable de procesar y ejecutar los programas,
  manejar la entrada y salida de datos,
  y controlar los componentes del sistema,
  como la memoria RAM,
@@ -2174,12 +2174,12 @@ literal "true"
 \end_inset
 
  RAM (Random Access Memory o Memoria de Acceso Aleatorio) es un tipo de memoria que se utiliza para almacenar temporalmente los datos y programas que están en uso.
- Es un componente clave en el rendimiento general de una computadora,
+ Es un componente clave en el rendimiento de una computadora,
  ya que proporciona un acceso rápido a los datos y programas que el procesador necesita para operar.
 \end_layout
 
 \begin_layout Standard
-Cuando un programa se ejecuta en la computadora,
+Cuando un programa se ejecuta,
  los datos y las instrucciones necesarios se cargan en la RAM desde el disco duro.
  La RAM permite que el procesador acceda rápidamente a estos datos y programas,
  lo que acelera el tiempo de ejecución y la velocidad de la computadora en general.
@@ -2205,7 +2205,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/ram.jpg
 	lyxscale 20
-	scale 8
+	scale 15
 	BoundingBox 0bp 350bp 2000bp 1650bp
 	clip
 
@@ -2242,7 +2242,9 @@ Aunque el microprocesador también tiene una memoria volátil llamada
 registros
 \emph default
 ,
- estos son mucho mas caros y en consecuencia pequeños.
+ estos son mucho mas caros y,
+ en consecuencia,
+ pequeños.
 \end_layout
 
 \end_inset
@@ -2266,7 +2268,7 @@ literal "true"
 
  disco duro es un dispositivo de almacenamiento de datos magnético que se utiliza para almacenar permanentemente archivos y programas.
  A diferencia de la memoria RAM,
- que es una memoria volátil y pierde todos los datos almacenados en ella cuando la computadora se apaga,
+ que es una memoria volátil,
  el disco duro los mantiene incluso después del apagado de la computadora.
 \end_layout
 
@@ -2279,7 +2281,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/disk.jpg
 	lyxscale 20
-	scale 9
+	scale 15
 	BoundingBox 0bp 100bp 1500bp 1400bp
 	clip
 
@@ -2309,7 +2311,7 @@ Disco rígido Seagate Barracuda 1TB
 \begin_layout Standard
 Una de las principales diferencias entre el disco duro y la memoria RAM es la velocidad.
  Los discos duros son mucho más lentos en términos de velocidad de acceso,
- ya que el brazo de lectura/escritura necesita moverse físicamente para acceder a los datos en los platos.
+ pues el brazo de lectura/escritura necesita moverse físicamente para acceder a los datos en los platos.
 \end_layout
 
 \begin_layout Standard
@@ -2321,7 +2323,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/jerarquia.png
 	lyxscale 70
-	scale 49
+	scale 50
 
 \end_inset
 
@@ -2372,7 +2374,7 @@ A diferencia de un disco duro tradicional,
  que utiliza platos magnéticos giratorios y cabezas de lectura/escritura para acceder a los datos,
  una SSD no tiene partes móviles.
  Como resultado,
- las SSD proporcionan un mejor rendimiento en términos de velocidad de lectura/escritura y tiempo de acceso.
+ las SSD tienen un mejor rendimiento en términos de velocidad de lectura/escritura y tiempo de acceso.
 \end_layout
 
 \begin_layout Standard
@@ -2427,7 +2429,7 @@ literal "true"
  también conocida como tarjeta gráfica o GPU,
  es un componente de hardware que tiene como objetivo procesar y generar imágenes en la pantalla.
  Su función es liberar a la CPU de la tarea del procesamiento gráfico,
- lo que permite que se concentre en otras tareas.
+ permitiéndole concentrarse en otras tareas.
 \end_layout
 
 \begin_layout Standard
@@ -2472,8 +2474,7 @@ status open
 Además de su uso en gráficos,
  en el campo de la I.
  A.
- son comúnmente utilizadas para entrenar y ejecutar redes neuronales.
- Esto se debe a que las placas de video tienen una arquitectura altamente paralela que les permite procesar grandes cantidades de datos de manera eficiente.
+ se utilizan para entrenar y ejecutar redes neuronales debido a su arquitectura altamente paralela que les permite procesar grandes cantidades de datos de manera eficiente.
 \end_layout
 
 \end_inset
@@ -3234,7 +3235,7 @@ El sistema de numeración romano es un sistema no posicional utilizado en la ant
 \end_layout
 
 \begin_layout Subsection*
-Sistemas no posicionales
+Sistemas posicionales
 \end_layout
 
 \begin_layout Standard
