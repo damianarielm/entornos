@@ -393,10 +393,13 @@ Charles Babbage
 \emph default
  en 1837,
  considerado como el primer prototipo de una computadora moderna.
- La máquina analítica tenía la capacidad de almacenar programas y realizar operaciones matemáticas complejas,
- y se considera el primer ejemplo de un sistema de procesamiento de datos automático.
- Aunque Babbage nunca logró construir la máquina completa debido a problemas financieros y técnicos,
- su proyecto sentó las bases para el desarrollo de las computadoras modernas y tuvo un gran impacto en el campo de la informática y la automatización.
+ La máquina analítica tenía la capacidad de almacenar programas y realizar operaciones matemáticas complejas.
+ Es considerada el primer prototipo de sistema de procesamiento de datos automático.
+\end_layout
+
+\begin_layout Standard
+Aunque Babbage nunca logró construir la máquina completa debido a problemas financieros y técnicos,
+ su proyecto sentó las bases para el desarrollo de las computadoras modernas.
 \end_layout
 
 \begin_layout Standard
@@ -408,7 +411,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/diferencial.jpg
 	lyxscale 15
-	scale 6
+	scale 7
 
 \end_inset
 
@@ -426,6 +429,19 @@ Máquina diferencial
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre el telegrafo
 \end_layout
 
 \end_inset
@@ -500,7 +516,7 @@ Teletipo Siemens t37h
 status open
 
 \begin_layout Plain Layout
-Las terminales de teletipo (TTY) también se utilizaron como terminales de computadoras en las primeras décadas de la historia de las computadoras.
+Las terminales de teletipo (TTY) se usaron también como terminales de computadoras en las primeras décadas de su historia.
 \end_layout
 
 \end_inset
@@ -513,7 +529,7 @@ Avances de la guerra
 \end_layout
 
 \begin_layout Standard
-El ordenador 
+La computadora 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faYoutubePlay"
@@ -539,7 +555,8 @@ status collapsed
 
 \end_inset
 
-es una máquina de computación construida en 1941 por 
+,
+ construida en 1941 por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -552,8 +569,8 @@ literal "true"
 \emph on
 Konrad Zuse
 \emph default
-.
- Era una máquina electromecánica basada en 
+,
+ era una máquina electromecánica basada en 
 \begin_inset Quotes fld
 \end_inset
 
@@ -637,8 +654,9 @@ literal "true"
 
 \end_inset
 
- Harvard Mark I es una computadora electromecánica construida en 1944 por IBM y patrocinada por el gobierno de los Estados Unidos.
- Fue diseñada 
+ Harvard Mark I,
+ una computadora electromecánica construida en 1944 por IBM y patrocinada por el gobierno de los Estados Unidos,
+ fue diseñada por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -726,7 +744,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/plugboard.jpg
 	lyxscale 33
-	scale 24
+	scale 25
 
 \end_inset
 
@@ -770,25 +788,8 @@ literal "true"
 \begin_inset Quotes frd
 \end_inset
 
-.
- Las 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Tarjeta_perforada"
-literal "true"
-
-\end_inset
-
- tarjetas perforadas
-\begin_inset Quotes frd
-\end_inset
-
- son medios de almacenamiento de datos utilizados históricamente en la informática.
+,
+ un medio de almacenamiento de datos utilizado históricamente en la informática.
  Estas tarjetas son cartulinas rectangulares que contienen información codificada mediante perforaciones ubicadas en filas y columnas.
 \end_layout
 
@@ -801,7 +802,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/punchcard.jpg
 	lyxscale 33
-	scale 12
+	scale 13
 
 \end_inset
 
@@ -897,7 +898,7 @@ status open
 
 \begin_layout Plain Layout
 Aunque la tecnología de válvulas era superior a la de relés,
- no fue hasta la invención del 
+ el verdadero salto en el poder de cómputo se logró con la invención del 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faWikipediaW"
@@ -906,7 +907,7 @@ literal "true"
 
 \end_inset
 
- transistor en 1947 que las computadoras ganaron su verdadero poder de computo.
+ transistor en 1947.
 \end_layout
 
 \end_inset
@@ -944,7 +945,7 @@ status collapsed
 
 \end_inset
 
- (Formula Translation) es uno de los primeros lenguajes de programación de computadora.
+ (Formula Translation) fue uno de los primeros lenguajes de programación.
  Fue desarrollado en 1957 por un equipo de ingenieros de IBM liderado por 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1672,7 +1673,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/windows95.jpg
 	lyxscale 50
-	scale 21
+	scale 27
 
 \end_inset
 
@@ -1839,6 +1840,13 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faLink"
@@ -1853,10 +1861,6 @@ literal "true"
  Android se utiliza en tabletas,
  televisores inteligentes,
  relojes inteligentes y otros dispositivos electrónicos.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -8714,6 +8718,10 @@ status open
 \begin_layout Plain Layout
 login shell,
  interactive
+\end_layout
+
+\begin_layout Plain Layout
+opciones de depuracion
 \end_layout
 
 \begin_layout Plain Layout
