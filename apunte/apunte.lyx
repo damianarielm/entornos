@@ -115,6 +115,10 @@ Sustantivos propios.
 Expresiones en ingles.
 \end_layout
 
+\begin_layout Itemize
+Palabras encomilladas.
+\end_layout
+
 \end_inset
 
 
@@ -141,7 +145,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-15 de enero de 2025
+16 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -3829,16 +3833,718 @@ Caracteres ASCII no imprimibles
 \end_layout
 
 \begin_layout Chapter
+Conceptos de programación
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+La programación es el proceso de diseñar,
+ escribir,
+ probar y mantener el código informático.
+ En términos más simples,
+ la programación es la forma en que los desarrolladores crean software,
+ aplicaciones y sistemas.
+\end_layout
+
+\begin_layout Standard
+Este proceso implica varios pasos,
+ que incluyen la definición del problema que se está tratando de resolver,
+ la identificación de los requisitos y especificaciones necesarios para crear la solución,
+ la escritura del código en un lenguaje de programación,
+ la realización de pruebas para asegurarse de que el software funciona correctamente y la documentación del código para que otros desarrolladores puedan entender y trabajar en él.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/flujo.png
+	lyxscale 30
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Diagrama del flujo de un programa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lenguaje de programación
+\end_layout
+
+\begin_layout Standard
+Un lenguaje de programación es un conjunto de reglas,
+ símbolos y palabras clave que se utilizan para comunicar instrucciones a una computadora.
+ Estos lenguajes permiten a los programadores crear software,
+ aplicaciones y sistemas,
+ al proporcionar un medio para escribir código en un formato que la máquina pueda entender y ejecutar.
+\end_layout
+
+\begin_layout Standard
+Los lenguajes de programación se utilizan para describir las acciones que una computadora debe realizar,
+ como realizar cálculos matemáticos,
+ interactuar con dispositivos periféricos,
+ almacenar y recuperar datos,
+ y responder a las entradas del usuario.
+ Pueden variar en complejidad y enfoque,
+ y algunos se centran en tareas específicas,
+ mientras que otros son más generales y versátiles.
+\end_layout
+
+\begin_layout Standard
+En esencia,
+ un lenguaje de programación es una herramienta para crear software y sistemas informáticos,
+ permitiendo a los programadores transformar sus ideas en código ejecutable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+En esta materia aprenderemos el lenguaje de programación de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Bash"
+literal "true"
+
+\end_inset
+
+
+\family typewriter
+ bash
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ A lo largo de la carrera también aprenderán el lenguaje 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Python"
+literal "true"
+
+\end_inset
+
+
+\family typewriter
+ python
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Niveles de lenguajes
+\end_layout
+
+\begin_layout Standard
+Los lenguajes de programación se pueden clasificar en tres niveles:
+ alto,
+ bajo y binario.
+\end_layout
+
+\begin_layout Description
+Alto Estos lenguajes son más cercanos al lenguaje natural humano y se utilizan para escribir programas complejos de manera más fácil y rápida.
+ Ejemplos de lenguajes de programación de alto nivel incluyen Python,
+ Java,
+ C++,
+ Ruby,
+ PHP,
+ entre otros.
+ Estos lenguajes tienen una sintaxis más amigable para el programador y se encargan de muchos de los detalles de bajo nivel,
+ como la administración de memoria y el manejo de errores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hola mundo!
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Bajo Estos lenguajes están más cerca del lenguaje de la máquina y se utilizan para escribir programas que interactúan directamente con el hardware del ordenador.
+ Ejemplos de lenguajes de programación de bajo nivel incluyen el lenguaje ensamblador y el lenguaje C.
+ Estos lenguajes requieren que el programador tenga un conocimiento más detallado del hardware y de la forma en que se maneja la memoria.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=make,fontsize={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+.global _start              # gcc -nostdlib hola.s
+\end_layout
+
+\begin_layout Plain Layout
+
+.text
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+mensaje:
+ .ascii  "Hola mundo!
+\backslash
+n"
+\end_layout
+
+\begin_layout Plain Layout
+
+_start:
+\end_layout
+
+\begin_layout Plain Layout
+
+    mov $1,
+ %rax            # La llamada a sistema 1 es write
+\end_layout
+
+\begin_layout Plain Layout
+
+    mov $1,
+ %rdi            # El descriptor 1 es la salida estándar
+\end_layout
+
+\begin_layout Plain Layout
+
+    lea mensaje(%rip),
+ %rsi # Direccion de memoria del mensaje
+\end_layout
+
+\begin_layout Plain Layout
+
+    mov $12,
+ %rdx           # Cantidad de bytes
+\end_layout
+
+\begin_layout Plain Layout
+
+    syscall                 # write(1,
+ mensaje,
+ 12)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    mov $60,
+ %rax           # La llamada a sistema 60 es exit
+\end_layout
+
+\begin_layout Plain Layout
+
+    mov $0,
+ %rdi            # Queremos devolver el numero 0
+\end_layout
+
+\begin_layout Plain Layout
+
+    syscall                 # exit(0)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+binario El lenguaje binario es el lenguaje de máquina utilizado por las computadoras para ejecutar programas.
+ Este lenguaje está compuesto de ceros y unos,
+ que representan instrucciones que el procesador del ordenador puede entender y ejecutar directamente.
+ Es muy difícil y tedioso para los programadores escribir directamente en lenguaje binario,
+ por lo que se utilizan los lenguajes de programación de nivel alto y bajo para crear programas que luego se traducen a lenguaje binario.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=S,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+  401000:
+    48 6f 6c 6c          # H o l a
+\end_layout
+
+\begin_layout Plain Layout
+
+  401004:
+    20 6d 75 6e 64 6f    #   m u n d o
+\end_layout
+
+\begin_layout Plain Layout
+
+  40100a:
+    21 0a                # !
+ 
+\backslash
+n
+\end_layout
+
+\begin_layout Plain Layout
+
+  40100c:
+    48 c7 c0 01 00 00 00 # mov $1,
+ %rax
+\end_layout
+
+\begin_layout Plain Layout
+
+  401013:
+    48 c7 c7 01 00 00 00 # mov $1,
+ %rdi
+\end_layout
+
+\begin_layout Plain Layout
+
+  40101a:
+    48 c7 c6 00 10 40 00 # mov $mensaje,
+ %rsi
+\end_layout
+
+\begin_layout Plain Layout
+
+  401021:
+    48 c7 c2 0c 00 00 00 # mov $12,
+ %rdx
+\end_layout
+
+\begin_layout Plain Layout
+
+  401028:
+    0f 05                # syscall
+\end_layout
+
+\begin_layout Plain Layout
+
+  40102a:
+    48 c7 c0 3c 00 00 00 # mov $60,
+ %rax
+\end_layout
+
+\begin_layout Plain Layout
+
+  401031:
+    48 c7 c7 00 00 00 00 # mov $0,
+ %rdi
+\end_layout
+
+\begin_layout Plain Layout
+
+  401038:
+    0f 05                # syscall
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Compiladores e intérpretes
+\end_layout
+
+\begin_layout Standard
+Un 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faYoutubePlay"
+target "https://youtu.be/fQpmyan9dOs?t=180"
+literal "true"
+
+\end_inset
+
+ intérprete y un compilador son dos tipos de programas que se utilizan para convertir el código fuente escrito por un programador en instrucciones ejecutables por una computadora.
+ 
+\end_layout
+
+\begin_layout Description
+Interprete Un intérprete es un programa que lee el código fuente de un programa y lo traduce en instrucciones ejecutables en tiempo real.
+ El intérprete lee una línea de código fuente,
+ la traduce a lenguaje de máquina y la ejecuta antes de pasar a la siguiente línea.
+ Debido a que el intérprete realiza la traducción y la ejecución de cada línea a medida que se lee el código,
+ puede ser más lento que un compilador.
+ Sin embargo,
+ el intérprete tiene la ventaja de que el programador puede ejecutar el código directamente sin necesidad de compilarlo previamente.
+\end_layout
+
+\begin_layout Description
+Compilador Un compilador,
+ por otro lado,
+ es un programa que traduce todo el código fuente a lenguaje de máquina en un solo paso antes de su ejecución.
+ El compilador lee todo el código fuente del programa y lo traduce en un archivo ejecutable que puede ser utilizado por la computadora sin necesidad de leer el código fuente original nuevamente.
+ Debido a que el código fuente se traduce y compila solo una vez,
+ el código compilado se ejecuta generalmente más rápido que el código interpretado.
+ Sin embargo,
+ el proceso de compilación puede llevar más tiempo que el proceso de interpretación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/ejecucion.png
+	lyxscale 70
+	scale 41
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Tiempo de traducción y ejecución
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Vale la pena notar que en un lenguaje compilado,
+ los tiempos de traducción son computados por el desarrollador,
+ mientras que en uno interpretado,
+ son computados por el usuario final.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Otros conceptos
+\end_layout
+
+\begin_layout Description
+Código
+\begin_inset space ~
+\end_inset
+
+fuente El código fuente de un programa es el conjunto de instrucciones o comandos escritos por un programador en un lenguaje de programación determinado;
+ es el 
+\begin_inset Quotes fld
+\end_inset
+
+texto
+\begin_inset Quotes frd
+\end_inset
+
+ legible por humanos que se escribe en un archivo de código fuente y que debe ser traducido o compilado en lenguaje de máquina para que la computadora pueda entenderlo y ejecutar el programa.
+\end_layout
+
+\begin_layout Description
+Código
+\begin_inset space ~
+\end_inset
+
+abierto 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenes/opensource.png
+	display false
+	scale 3.5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+El término 
+\begin_inset Quotes fld
+\end_inset
+
+código abierto
+\begin_inset Quotes frd
+\end_inset
+
+ se refiere a un tipo de software en el cual el código fuente está disponible públicamente y puede ser modificado por cualquier persona.
+ En el modelo de código abierto,
+ los desarrolladores de software pueden trabajar juntos para mejorar y expandir el software existente.
+\end_layout
+
+\begin_layout Description
+Software
+\begin_inset space ~
+\end_inset
+
+libre 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenes/fsf.png
+	display false
+	scale 5.5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+El software libre es aquel que se distribuye con una 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.m.wikipedia.org/wiki/Licencia_de_software_libre"
+literal "true"
+
+\end_inset
+
+ licencia que permite a los usuarios tener acceso al código fuente del programa y redistribuir versiones modificadas del mismo sin tener que pagar regalías o cargos adicionales.
+ En general,
+ dicha licencia establece los términos y condiciones bajo los cuales se puede usar,
+ modificar y distribuir el software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/libre.png
+	lyxscale 75
+	scale 29
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mapa conceptual del software libre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+El software libre suele estar disponible gratuitamente,
+ sin embargo no es obligatorio que sea así,
+ por lo tanto no hay que asociar software «libre» a «gratuito» ya que,
+ conservando su carácter de libre,
+ puede ser distribuido comercialmente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas y características que se combinan en una única aplicación para hacer más fácil y eficiente el proceso de desarrollo de software.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Típicamente incluye un editor de código que proporciona herramientas de resaltado de sintaxis y autocompletado,
+ lo que facilita la escritura de código.
+ Además,
+ un IDE suele incluir un depurador que ayuda a identificar y corregir errores en el código.
+\end_layout
+
+\begin_layout Standard
+También puede tener herramientas de compilación y construcción,
+ que permiten compilar y empaquetar el código en un archivo ejecutable o en otro formato adecuado para su distribución.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/visualstudio.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Visual Studio Code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
 Sistemas Operativos
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
 status open
-
-\begin_layout Plain Layout
-Creo que vale la pena cambiar el orden de algunas secciones.
-\end_layout
 
 \begin_layout Plain Layout
 Se podría hablar de programas interactivos y servicios.
@@ -5835,712 +6541,6 @@ Si se llega a producir un corte en el suministro eléctrico,
 \end_layout
 
 \end_deeper
-\begin_layout Chapter
-Conceptos de programación
-\end_layout
-
-\begin_layout Section
-Introducción
-\end_layout
-
-\begin_layout Standard
-La programación es el proceso de diseñar,
- escribir,
- probar y mantener el código informático.
- En términos más simples,
- la programación es la forma en que los desarrolladores crean software,
- aplicaciones y sistemas.
-\end_layout
-
-\begin_layout Standard
-El proceso de programación implica varios pasos,
- que incluyen la definición del problema que se está tratando de resolver,
- la identificación de los requisitos y especificaciones necesarios para crear la solución,
- la escritura del código en un lenguaje de programación,
- la realización de pruebas para asegurarse de que el software funciona correctamente y la documentación del código para que otros desarrolladores puedan entender y trabajar en él.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/flujo.png
-	lyxscale 30
-	scale 13
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Diagrama del flujo de un programa
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Lenguaje de programación
-\end_layout
-
-\begin_layout Standard
-Un lenguaje de programación es un conjunto de reglas,
- símbolos y palabras clave que se utilizan para comunicar instrucciones a una computadora.
- Estos lenguajes permiten a los programadores crear software,
- aplicaciones y sistemas,
- al proporcionar un medio para escribir código en un formato que la máquina pueda entender y ejecutar.
-\end_layout
-
-\begin_layout Standard
-Los lenguajes de programación se utilizan para describir las acciones que una computadora debe realizar,
- como realizar cálculos matemáticos,
- interactuar con dispositivos periféricos,
- almacenar y recuperar datos,
- y responder a las entradas del usuario.
- Los lenguajes de programación pueden variar en complejidad y enfoque,
- y algunos se centran en tareas específicas,
- mientras que otros son más generales y versátiles.
-\end_layout
-
-\begin_layout Standard
-En esencia,
- un lenguaje de programación es una herramienta para crear software y sistemas informáticos,
- permitiendo a los programadores transformar sus ideas en código ejecutable.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-En esta materia aprenderemos el lenguaje de programación de 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Bash"
-literal "true"
-
-\end_inset
-
-
-\family typewriter
- bash
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- A lo largo de la carrera también aprenderán el lenguaje 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Python"
-literal "true"
-
-\end_inset
-
-
-\family typewriter
- python
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Niveles de lenguajes
-\end_layout
-
-\begin_layout Standard
-Los lenguajes de programación se pueden clasificar en tres niveles:
- alto,
- bajo y binario.
-\end_layout
-
-\begin_layout Description
-Alto Estos lenguajes son más cercanos al lenguaje natural humano y se utilizan para escribir programas complejos de manera más fácil y rápida.
- Ejemplos de lenguajes de programación de alto nivel incluyen Python,
- Java,
- C++,
- Ruby,
- PHP,
- entre otros.
- Estos lenguajes tienen una sintaxis más amigable para el programador y se encargan de muchos de los detalles de bajo nivel,
- como la administración de memoria y el manejo de errores.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=Python"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-print(
-\begin_inset Quotes fld
-\end_inset
-
-Hola mundo!
-\begin_inset Quotes frd
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-Bajo Estos lenguajes están más cerca del lenguaje de la máquina y se utilizan para escribir programas que interactúan directamente con el hardware del ordenador.
- Ejemplos de lenguajes de programación de bajo nivel incluyen el lenguaje ensamblador y el lenguaje C.
- Estos lenguajes requieren que el programador tenga un conocimiento más detallado del hardware y de la forma en que se maneja la memoria.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=make,fontsize={\small}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-.global _start              # gcc -nostdlib hola.s
-\end_layout
-
-\begin_layout Plain Layout
-
-.text
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-mensaje:
- .ascii  "Hola mundo!
-\backslash
-n"
-\end_layout
-
-\begin_layout Plain Layout
-
-_start:
-\end_layout
-
-\begin_layout Plain Layout
-
-    mov $1,
- %rax            # La llamada a sistema 1 es write
-\end_layout
-
-\begin_layout Plain Layout
-
-    mov $1,
- %rdi            # El descriptor 1 es la salida estándar
-\end_layout
-
-\begin_layout Plain Layout
-
-    lea mensaje(%rip),
- %rsi # Direccion de memoria del mensaje
-\end_layout
-
-\begin_layout Plain Layout
-
-    mov $12,
- %rdx           # Cantidad de bytes
-\end_layout
-
-\begin_layout Plain Layout
-
-    syscall                 # write(1,
- mensaje,
- 12)
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    mov $60,
- %rax           # La llamada a sistema 60 es exit
-\end_layout
-
-\begin_layout Plain Layout
-
-    mov $0,
- %rdi            # Queremos devolver el numero 0
-\end_layout
-
-\begin_layout Plain Layout
-
-    syscall                 # exit(0)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-binario El lenguaje binario es el lenguaje de máquina utilizado por los ordenadores para ejecutar programas.
- Este lenguaje está compuesto de ceros y unos,
- que representan instrucciones que el procesador del ordenador puede entender y ejecutar directamente.
- Es muy difícil y tedioso para los programadores escribir directamente en lenguaje binario,
- por lo que se utilizan los lenguajes de programación de nivel alto y bajo para crear programas que luego se traducen a lenguaje binario.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Codigo
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=S,fontsize={\normalsize}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-  401000:
-    48 6f 6c 6c          # H o l a
-\end_layout
-
-\begin_layout Plain Layout
-
-  401004:
-    20 6d 75 6e 64 6f    #   m u n d o
-\end_layout
-
-\begin_layout Plain Layout
-
-  40100a:
-    21 0a                # !
- 
-\backslash
-n
-\end_layout
-
-\begin_layout Plain Layout
-
-  40100c:
-    48 c7 c0 01 00 00 00 # mov $1,
- %rax
-\end_layout
-
-\begin_layout Plain Layout
-
-  401013:
-    48 c7 c7 01 00 00 00 # mov $1,
- %rdi
-\end_layout
-
-\begin_layout Plain Layout
-
-  40101a:
-    48 c7 c6 00 10 40 00 # mov $mensaje,
- %rsi
-\end_layout
-
-\begin_layout Plain Layout
-
-  401021:
-    48 c7 c2 0c 00 00 00 # mov $12,
- %rdx
-\end_layout
-
-\begin_layout Plain Layout
-
-  401028:
-    0f 05                # syscall
-\end_layout
-
-\begin_layout Plain Layout
-
-  40102a:
-    48 c7 c0 3c 00 00 00 # mov $60,
- %rax
-\end_layout
-
-\begin_layout Plain Layout
-
-  401031:
-    48 c7 c7 00 00 00 00 # mov $0,
- %rdi
-\end_layout
-
-\begin_layout Plain Layout
-
-  401038:
-    0f 05                # syscall
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Compiladores e intérpretes
-\end_layout
-
-\begin_layout Standard
-Un 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faYoutubePlay"
-target "https://youtu.be/fQpmyan9dOs?t=180"
-literal "true"
-
-\end_inset
-
- intérprete y un compilador son dos tipos de programas que se utilizan para convertir el código fuente escrito por un programador en instrucciones ejecutables por una computadora.
- 
-\end_layout
-
-\begin_layout Description
-Interprete Un intérprete es un programa que lee el código fuente de un programa y lo traduce en instrucciones ejecutables en tiempo real.
- El intérprete lee una línea de código fuente,
- la traduce a lenguaje de máquina y la ejecuta antes de pasar a la siguiente línea.
- Debido a que el intérprete realiza la traducción y la ejecución de cada línea a medida que se lee el código,
- puede ser más lento que un compilador.
- Sin embargo,
- el intérprete tiene la ventaja de que el programador puede ejecutar el código directamente sin necesidad de compilarlo previamente.
-\end_layout
-
-\begin_layout Description
-Compilador Un compilador,
- por otro lado,
- es un programa que traduce todo el código fuente a lenguaje de máquina en un solo paso antes de su ejecución.
- El compilador lee todo el código fuente del programa y lo traduce en un archivo ejecutable que puede ser utilizado por la computadora sin necesidad de leer el código fuente original nuevamente.
- Debido a que el código fuente se traduce y compila solo una vez,
- el código compilado se ejecuta generalmente más rápido que el código interpretado.
- Sin embargo,
- el proceso de compilación puede llevar más tiempo que el proceso de interpretación.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/ejecucion.png
-	lyxscale 70
-	scale 41
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Tiempo de traducción y ejecución
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Vale la pena notar que en un lenguaje compilado,
- los tiempos de traducción son computados por el desarrollador,
- mientras que en uno interpretado,
- son computados por el usuario final.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Otros conceptos
-\end_layout
-
-\begin_layout Description
-Código
-\begin_inset space ~
-\end_inset
-
-fuente El código fuente de un programa es el conjunto de instrucciones o comandos escritos por un programador en un lenguaje de programación determinado;
- es el 
-\begin_inset Quotes fld
-\end_inset
-
-texto
-\begin_inset Quotes frd
-\end_inset
-
- legible por humanos que se escribe en un archivo de código fuente y que debe ser traducido o compilado en lenguaje de máquina para que la computadora pueda entenderlo y ejecutar el programa.
-\end_layout
-
-\begin_layout Description
-Código
-\begin_inset space ~
-\end_inset
-
-abierto 
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagenes/opensource.png
-	display false
-	scale 3.5
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-El término 
-\begin_inset Quotes fld
-\end_inset
-
-código abierto
-\begin_inset Quotes frd
-\end_inset
-
- se refiere a un tipo de software en el cual el código fuente está disponible públicamente y puede ser modificado por cualquier persona.
- En el modelo de código abierto,
- los desarrolladores de software pueden trabajar juntos para mejorar y expandir el software existente.
-\end_layout
-
-\begin_layout Description
-Software
-\begin_inset space ~
-\end_inset
-
-libre 
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagenes/fsf.png
-	display false
-	scale 5.5
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-El software libre es aquel que se distribuye con una 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.m.wikipedia.org/wiki/Licencia_de_software_libre"
-literal "true"
-
-\end_inset
-
- licencia que permite a los usuarios tener acceso al código fuente del programa y redistribuir versiones modificadas del mismo sin tener que pagar regalías o cargos adicionales.
- En general,
- dicha licencia establece los términos y condiciones bajo los cuales se puede usar,
- modificar y distribuir el software.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/libre.png
-	lyxscale 75
-	scale 29
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Mapa conceptual del software libre
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-El software libre suele estar disponible gratuitamente,
- sin embargo no es obligatorio que sea así,
- por lo tanto no hay que asociar software «libre» a «gratuito» ya que,
- conservando su carácter de libre,
- puede ser distribuido comercialmente.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas y características que se combinan en una única aplicación para hacer más fácil y eficiente el proceso de desarrollo de software.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Típicamente incluye un editor de código que proporciona herramientas de resaltado de sintaxis y autocompletado,
- lo que facilita la escritura de código.
- Además,
- un IDE suele incluir un depurador que ayuda a identificar y corregir errores en el código.
-\end_layout
-
-\begin_layout Standard
-También puede tener herramientas de compilación y construcción,
- que permiten compilar y empaquetar el código en un archivo ejecutable o en otro formato adecuado para su distribución.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/visualstudio.png
-	lyxscale 30
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Visual Studio Code
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Sistema de archivos
 \end_layout
