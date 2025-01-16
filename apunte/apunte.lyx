@@ -234,6 +234,10 @@ status open
 Eliminar todos los comandos.
 \end_layout
 
+\begin_layout Plain Layout
+Agregar preguntas teoricas.
+\end_layout
+
 \end_inset
 
 
@@ -3836,6 +3840,35 @@ Caracteres ASCII no imprimibles
 Conceptos de programación
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizás haya que definir 
+\begin_inset Quotes fld
+\end_inset
+
+Hardware
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+Software
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introducción
 \end_layout
@@ -4340,6 +4373,19 @@ En los lenguajes compilados,
 Otros conceptos
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría hablar de programas interactivos y servicios.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Código
 \begin_inset space ~
@@ -4543,19 +4589,6 @@ Visual Studio Code
 Sistemas Operativos
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se podría hablar de programas interactivos y servicios.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Descripción
 \end_layout
@@ -4567,7 +4600,7 @@ Un sistema operativo es un conjunto de programas y herramientas que controlan y 
 \emph on
 kernel
 \emph default
-) que tiene control completo sobre el hardware en el que corre,
+) que tiene control total sobre el hardware en el que corre,
  y una serie de programas utilitarios que se comunican con el.
  
 \end_layout
@@ -4581,7 +4614,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/kernel.png
 	lyxscale 30
-	scale 18
+	scale 24
 
 \end_inset
 
@@ -4611,13 +4644,6 @@ Comunicación entre aplicaciones,
 Las funcionalidades principales de un sistema operativo incluyen:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Description
 Abstracción
 \begin_inset space ~
@@ -4628,7 +4654,7 @@ de
 \end_inset
 
 hardware El sistema operativo oculta los detalles específicos del hardware de la computadora a las aplicaciones y los usuarios.
- Esto permite permite a las aplicaciones interactuar con el hardware de una manera consistente y simplificada,
+ Esto permite permite a las aplicaciones interactuar con el hardware de manera consistente y simplificada,
  sin tener que preocuparse por los detalles internos del hardware subyacente.
 \end_layout
 
@@ -4641,7 +4667,7 @@ del
 \begin_inset space ~
 \end_inset
 
-hardware El sistema operativo es responsable de gestionar el hardware de la computadora,
+hardware El sistema operativo es responsable de gestionar el hardware,
  como el procesador,
  la memoria,
  el disco duro,
@@ -4659,7 +4685,7 @@ de
 \begin_inset space ~
 \end_inset
 
-usuario El sistema operativo proporciona una interfaz de usuario que permite a los usuarios interactuar con el ordenador y ejecutar aplicaciones y programas.
+usuario El sistema operativo proporciona una interfaz de usuario que permite a los usuarios interactuar con la computadora y ejecutar aplicaciones.
 \end_layout
 
 \begin_layout Description
@@ -4671,14 +4697,15 @@ de
 \begin_inset space ~
 \end_inset
 
-archivos El sistema operativo se encarga de gestionar los archivos y directorios del ordenador,
- lo que permite a los usuarios crear,
- modificar,
- copiar y eliminar archivos y carpetas.
+archivos El sistema operativo se encarga de gestionar los archivos y carpetas,
+ permitiendo a los usuarios crearlos,
+ modificarlos,
+ copiarlos y eliminarlos.
 \end_layout
 
 \begin_layout Description
-Multitarea Un sistema operativo permite que varias aplicaciones se ejecuten al mismo tiempo y asigna los recursos necesarios para que funcionen correctamente.
+Multitarea Un sistema operativo permite que varias aplicaciones se ejecuten al mismo tiempo y asigna los recursos necesarios para que funcionen correctamente,
+ dando la ilusión de paralelismo.
 \end_layout
 
 \begin_layout Description
@@ -4697,8 +4724,8 @@ kernel
  (o núcleo) de un sistema operativo es la parte central y más fundamental del mismo.
  Es responsable de controlar el acceso a los recursos del hardware,
  gestionar los procesos,
- la memoria y la entrada/salida,
- y proporcionar una interfaz para que las aplicaciones interactúen con el hardware del sistema.
+ la memoria y la entrada/salida.
+ Además proporciona una interfaz para que las aplicaciones interactúen con el hardware del sistema.
 \end_layout
 
 \begin_layout Standard
@@ -4708,7 +4735,7 @@ El núcleo se ejecuta en modo privilegiado,
 
 \begin_layout Standard
 Para casi cualquier tarea las aplicaciones de usuario necesitan pedirle permiso al kernel,
- a través de una instrucción denominada 
+ mediante una instrucción denominada 
 \begin_inset Quotes fld
 \end_inset
 
@@ -4730,9 +4757,9 @@ literal "true"
 \end_inset
 
 .
- Cuando se produce una llamada a sistema el CPU deja de ejecutar el programa,
- y comienza a ejecutar la funcionalidad del núcleo requerida,
- luego de la cual se continua con la ejecución del programa.
+ Cuando ocurre una llamada a sistema,
+ el CPU detiene la ejecución del programa y comienza a ejecutar la funcionalidad del núcleo requerida,
+ luego de la cual se reanuda el flujo original del programa.
 \end_layout
 
 \begin_layout Section
@@ -4741,7 +4768,7 @@ Proceso de arranque
 
 \begin_layout Standard
 Durante el arranque de una PC,
- ocurren varias cosas importantes que permiten que el sistema operativo se inicie correctamente y la computadora esté lista para su uso.
+ ocurren varios pasos importantes que permiten que el sistema operativo se inicie correctamente y la computadora esté lista para su uso.
 \end_layout
 
 \begin_layout Standard
@@ -4782,7 +4809,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/post.jpg
 	lyxscale 20
-	scale 12
+	scale 13
 
 \end_inset
 
@@ -4824,9 +4851,9 @@ cargador de arranque
 \begin_inset Quotes frd
 \end_inset
 
-.
- El cargador de arranque es un programa cuyo objetivo principal es cargar el núcleo del sistema operativo.
- El cargador de arranque mas utilizado en Linux es 
+,
+ el cual tiene como objetivo principal cargar el núcleo del sistema operativo.
+ En los sistemas Linux el mas utilizado es 
 \begin_inset Quotes fld
 \end_inset
 
@@ -4882,6 +4909,10 @@ bootmgr
 \end_inset
 
  es el proporcionado por los sistemas modernos de Windows.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4893,7 +4924,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/grub.png
 	lyxscale 40
-	scale 22
+	scale 24
 
 \end_inset
 
@@ -4943,7 +4974,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/bootmgr.png
 	lyxscale 50
-	scale 59
+	scale 65
 
 \end_inset
 
@@ -4979,6 +5010,10 @@ bootmgr
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -5184,6 +5219,22 @@ faKeyboardO
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Aunque el entorno gráfico ha ganado popularidad frente a las interfaces de texto,
+ las consolas virtuales siguen siendo utilizadas por varias razones como el uso eficiente de recursos,
+ acceso remoto,
+ tareas de mantenimiento y recuperación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -5191,8 +5242,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/vconsole.png
-	lyxscale 50
-	scale 65
+	scale 44
 
 \end_inset
 
@@ -5233,29 +5283,6 @@ Consola virtual en Ubuntu
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Aunque el entorno gráfico ha ganado popularidad frente a las interfaces de texto,
- las consolas virtuales siguen siendo utilizadas por varias razones como el uso eficiente de recursos,
- acceso remoto,
- tareas de mantenimiento y recuperación.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Description
 Emulador
 \begin_inset space ~
@@ -5269,17 +5296,12 @@ terminal Es un programa de usuario que permite interactuar con un sistema operat
  Los emuladores de terminal son comúnmente utilizados para acceder a sistemas remotos o para ejecutar aplicaciones de línea de comandos en sistemas operativos.
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-Para saber que emulador de terminal se está utilizando se puede escribir el comando:
-\end_layout
-
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
 
 \begin_layout Plain Layout
-En un emulador de terminal las combinaciones de teclas tradicionales para copiar y pegar no funcionan.
+En un emulador de terminal las combinaciones de teclas habituales para copiar y pegar no funcionan.
  Debemos usar en su lugar 
 \begin_inset ERT
 status open
@@ -5318,7 +5340,6 @@ faKeyboardO
 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex Figura
 status open
@@ -5328,7 +5349,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/qterminal.png
 	lyxscale 50
-	scale 31
+	scale 25
 
 \end_inset
 
@@ -5390,10 +5411,6 @@ interprete de linea de comandos
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-Para saber que interprete de linea de comandos se está utilizando se puede escribir el comando:
-\end_layout
-
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -5561,13 +5578,6 @@ PowerShell
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Procesos
 \end_layout
@@ -5587,19 +5597,8 @@ Creación En esta etapa,
 \end_layout
 
 \begin_layout Description
-Listo Después de ser creado,
- el proceso pasa al estado de 
-\begin_inset Quotes fld
-\end_inset
-
-listo
-\begin_inset Quotes frd
-\end_inset
-
- y está a la espera de ser seleccionado por el planificador del sistema operativo para su ejecución.
- En este estado,
- el proceso está cargado en la memoria y listo para ejecutarse,
- pero aún no se le ha asignado tiempo de CPU.
+Listo En este estado,
+ el proceso está cargado en memoria a la espera de ser seleccionado por el planificador del sistema operativo para su ejecución.
 \end_layout
 
 \begin_layout Description
@@ -5615,7 +5614,7 @@ ejecución
 .
  En esta etapa,
  el procesador ejecuta las instrucciones del programa y realiza las tareas definidas por el proceso.
- El proceso continúa en este estado hasta que se hasta que se bloquea esperando alguna operación de entrada/salida.
+ El proceso continúa en este estado hasta que le toque ejecutar a otro programa o se bloquee esperando alguna operación de entrada/salida.
 \end_layout
 
 \begin_layout Description
@@ -5634,7 +5633,8 @@ bloqueado
 \end_layout
 
 \begin_layout Description
-Finalización Cuando un proceso ha terminado de ejecutar todas sus instrucciones o ha sido terminado de manera forzada por el sistema operativo,
+Finalización Cuando un proceso ha terminado de ejecutar todas sus instrucciones,
+ o ha sido terminado de manera forzada por el sistema operativo,
  entra en el estado de 
 \begin_inset Quotes fld
 \end_inset
@@ -5643,9 +5643,8 @@ finalización
 \begin_inset Quotes frd
 \end_inset
 
-.
- En esta etapa,
- se liberan los recursos asignados al proceso y se realiza la limpieza necesaria.
+,
+ liberando los recursos asignados realizando la limpieza necesaria.
 \end_layout
 
 \begin_layout Standard
@@ -5987,13 +5986,6 @@ literal "true"
  Xorg.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Description
 Gestor
 \begin_inset space ~
@@ -6245,11 +6237,9 @@ Proceso de apagado
 
 \begin_layout Standard
 Antes de finalizar la ejecución del sistema operativo,
- se inicia un proceso que cierra todos los programas y servicios que se están ejecutando en la computadora.
+ se inicia un proceso que cierra todos los programas y servicios que se están ejecutando.
  Luego,
- se guardan todos los datos pendientes y se asegura que todos los dispositivos de almacenamiento,
- como los discos duros o las unidades flash USB,
- estén en un estado seguro antes de apagar la alimentación.
+ se guardan todos los datos pendientes y se asegura que todos los dispositivos de almacenamiento estén en un estado seguro antes de apagar la alimentación.
  Finalmente,
  se envía una señal al hardware para que se apague por completo y se desconecte la alimentación en caso de ser necesario.
  
