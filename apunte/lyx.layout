@@ -440,7 +440,7 @@ InsetLayout Flex:Observacion
       LatexName     tcolorbox
       BgColor       Lime
       Decoration    Classic
-      LatexParam    "[title=\faExclamation \; Observación, colback=YellowGreen, colbacktitle=Green, drop shadow, enhanced, after skip=20pt]"
+      LatexParam    "[title=\faExclamation \; Observación, coltitle=White, colback=YellowGreen, colbacktitle=Green, drop shadow, enhanced, after skip=20pt]"
 End
 
 InsetLayout Flex:Bash
@@ -471,6 +471,16 @@ InsetLayout Flex:Peligro
       BgColor       Red
       Decoration    Classic
       LatexParam    "[title=\faExclamationTriangle \; Precacución, colback=Red, colbacktitle=Red, coltext=White, drop shadow, enhanced]"
+End
+
+InsetLayout Flex:Pensar
+      LyxType       Custom
+      LabelString   "Pensar"
+      LatexType     Environment
+      LatexName     tcolorbox
+      BgColor       Yellow
+      Decoration    Classic
+      LatexParam    "[title=\faQuestion \; Para Pensar, coltitle=Black, colback=Yellow, colbacktitle=Goldenrod, coltext=Black, drop shadow, enhanced]"
 End
 
 InsetLayout Flex:Codigo
