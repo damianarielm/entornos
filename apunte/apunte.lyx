@@ -145,7 +145,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-16 de enero de 2025
+17 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -2492,9 +2492,213 @@ Además de su uso en gráficos,
 
 \begin_layout Section
 
-\strikeout on
 \color lightgray
 Teclado
+\end_layout
+
+\begin_layout Standard
+El teclado es un dispositivo de entrada que permite a los usuarios introducir texto,
+ números y comandos en una computadora.
+ Es como una máquina de escribir moderna,
+ pero con muchas más funciones.
+\end_layout
+
+\begin_layout Paragraph
+Teclas
+\begin_inset space ~
+\end_inset
+
+especiales
+\end_layout
+
+\begin_layout Standard
+Las teclas especiales,
+ a diferencia de las alfanuméricas,
+ no introducen caracteres,
+ sino que realizan funciones específicas o modifican el comportamiento de otras teclas.
+ Alguna de ellas son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Inicio:
+ Generalmente,
+ lleva el cursor al principio de la línea actual.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Fin:
+ Sirve para llevar el cursor al final de la línea actual.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Re Pág:
+ Desplaza la pantalla hacia arriba de a una página.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Av Pág:
+ Análogo a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Re Pág.
+\end_layout
+
+\begin_layout Paragraph
+Distribuciones
+\end_layout
+
+\begin_layout Standard
+Una distribución de teclado se refiere a la disposición de las teclas en un teclado,
+ determinando qué carácter o función se asigna a cada tecla física.
+\end_layout
+
+\begin_layout Standard
+Pueede pensarse como un mapa que define la relación entre las teclas que se pulsan y lo que aparece en la pantalla.
+ Diferentes distribuciones se han diseñado para adaptarse a distintos idiomas,
+ necesidades de escritura y preferencias de los usuarios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/us.png
+	lyxscale 40
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Distribución de teclado estadounidense
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/la.png
+	lyxscale 30
+	scale 12
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Distribución de teclado latinoamericana
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
