@@ -113,18 +113,19 @@ Comandos y archivos
 
 \begin_layout Itemize
 
-\shape smallcaps
+\emph on
 Sustantivos propios
-\shape default
+\emph default
 .
 \end_layout
 
 \begin_layout Itemize
 
-\bar under
-Expresiones en ingles
-\bar default
-.
+\family sans
+Acrónimos
+\family default
+:
+ nota al margen.
 \end_layout
 
 \begin_layout Itemize
@@ -176,7 +177,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-21 de enero de 2025
+22 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -262,11 +263,8 @@ Fundamentos
 status open
 
 \begin_layout Plain Layout
-Eliminar todos los comandos.
-\end_layout
-
-\begin_layout Plain Layout
-Agregar preguntas teoricas.
+Agregar preguntas teoricas,
+ ejemplos y ejercicios.
 \end_layout
 
 \end_inset
@@ -326,7 +324,11 @@ literal "true"
 
 \end_inset
 
- Pascalina
+ 
+\emph on
+Pascalina
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -344,7 +346,11 @@ literal "true"
 
 \end_inset
 
- Pascalina fue utilizada por matemáticos y científicos de la época,
+ 
+\emph on
+Pascalina
+\emph default
+ fue utilizada por matemáticos y científicos de la época,
  y su diseño influyó en el desarrollo de posteriores calculadoras mecánicas.
 \end_layout
 
@@ -357,7 +363,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pascalina.png
 	lyxscale 17
-	scale 15
+	scale 20
 
 \end_inset
 
@@ -396,7 +402,11 @@ literal "true"
 
 \end_inset
 
- máquina analítica
+ 
+\emph on
+Máquina Analítica
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -432,7 +442,20 @@ Charles Babbage
 \emph default
  en 1837,
  considerado como el primer prototipo de una computadora moderna.
- La máquina analítica tenía la capacidad de almacenar programas y realizar operaciones matemáticas complejas.
+ La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Máquina Analítica
+\emph default
+ tenía la capacidad de almacenar programas y realizar operaciones matemáticas complejas.
  Es considerada el primer prototipo de sistema de procesamiento de datos automático.
 \end_layout
 
@@ -450,7 +473,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/diferencial.jpg
 	lyxscale 15
-	scale 7
+	scale 6
 
 \end_inset
 
@@ -462,7 +485,17 @@ status open
 status open
 
 \begin_layout Plain Layout
-Máquina diferencial
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/M%C3%A1quina_diferencial"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Máquina Diferencial
 \end_layout
 
 \end_inset
@@ -476,11 +509,78 @@ Máquina diferencial
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+El
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenes/morse.jpg
+	display false
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Tel%C3%A9grafo"
+literal "true"
+
+\end_inset
+
+ telégrafo fue el primer sistema de comunicación eléctrica que permitió transmitir mensajes a larga distancia de manera rápida.
+ Funcionaba mediante la codificación de letras y números en señales eléctricas,
+ que luego eran enviadas a través de cables y decodificadas en el otro extremo.
+ Fue inventado por 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Samuel_Morse"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Samuel Morse
+\emph default
+ y patentado en 1837.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
 status open
 
 \begin_layout Plain Layout
-Agregar información sobre el telegrafo
+\align center
+\begin_inset Graphics
+	filename imagenes/telegrafo.jpg
+	lyxscale 25
+	scale 17
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Telégrafo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -500,20 +600,7 @@ literal "true"
 
  teletipo fue una invención que utilizaba un sistema de impresión automática para la transmisión de texto a través de una red telegráfica.
  Fue inventado a finales del sigo XIX,
- y su desarrollo permitió una comunicación más rápida y eficiente que el telégrafo de 
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faUser"
-target "https://es.wikipedia.org/wiki/Samuel_Morse"
-literal "true"
-
-\end_inset
-
- 
-\emph on
-Samuel Morse
-\emph default
-.
+ y su desarrollo permitió una comunicación más rápida y eficiente que el telégrafo.
 \end_layout
 
 \begin_layout Standard
@@ -525,7 +612,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/teletipo.png
 	lyxscale 20
-	scale 13
+	scale 10
 
 \end_inset
 
@@ -537,7 +624,15 @@ status open
 status open
 
 \begin_layout Plain Layout
-Teletipo Siemens t37h
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Teletipo"
+literal "true"
+
+\end_inset
+
+ Teletipo Siemens t37h
 \end_layout
 
 \end_inset
@@ -555,7 +650,40 @@ Teletipo Siemens t37h
 status open
 
 \begin_layout Plain Layout
-Las terminales de teletipo (TTY) se usaron también como terminales de computadoras en las primeras décadas de su historia.
+Las terminales de teletipo (
+\family sans
+TTY
+\family default
+)
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+TTY
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un acrónimo de 
+\begin_inset Quotes fld
+\end_inset
+
+TeleType
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+se usaron también como terminales de computadoras en las primeras décadas de su historia.
 \end_layout
 
 \end_inset
@@ -569,6 +697,10 @@ Avances de la guerra
 
 \begin_layout Standard
 La computadora 
+\begin_inset Quotes fld
+\end_inset
+
+
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faYoutubePlay"
@@ -577,7 +709,15 @@ literal "true"
 
 \end_inset
 
- Z3
+ 
+\emph on
+Z3
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
 \begin_inset Marginal
 status collapsed
 
@@ -585,7 +725,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagenes/zuse.jpg
 	display false
-	scale 15
+	scale 13
 
 \end_inset
 
@@ -628,7 +768,20 @@ literal "true"
 
 ,
  que utilizaba un sistema binario para representar los datos y los cálculos.
- El Z3 contaba con una memoria programable,
+ La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Z3"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ Z3
+\emph default
+ contaba con una memoria programable,
  lo que permitía al usuario programar la máquina para llevar a cabo diferentes tareas.
 \end_layout
 
@@ -641,7 +794,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/z3.png
 	lyxscale 25
-	scale 18
+	scale 12
 
 \end_inset
 
@@ -667,7 +820,6 @@ Réplica del Zuse Z3 exhibida en Múnich
 \end_layout
 
 \begin_layout Standard
-La
 \begin_inset Marginal
 status collapsed
 
@@ -675,7 +827,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagenes/aiken.jpg
 	display false
-	scale 38
+	scale 35
 
 \end_inset
 
@@ -684,7 +836,11 @@ status collapsed
 
 \end_inset
 
- 
+La 
+\begin_inset Quotes fld
+\end_inset
+
+
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faYoutubePlay"
@@ -693,8 +849,20 @@ literal "true"
 
 \end_inset
 
- Harvard Mark I,
- una computadora electromecánica construida en 1944 por IBM y patrocinada por el gobierno de los Estados Unidos,
+ 
+\emph on
+Harvard Mark I
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ una computadora electromecánica construida en 1944 por 
+\family sans
+IBM
+\family default
+ y patrocinada por el gobierno de los Estados Unidos,
  fue diseñada por 
 \begin_inset CommandInset href
 LatexCommand href
@@ -720,7 +888,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/mark1.png
 	lyxscale 33
-	scale 25
+	scale 27
 
 \end_inset
 
@@ -732,6 +900,16 @@ status open
 status open
 
 \begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Harvard_Mark_I"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
 Harvard Mark I
 \end_layout
 
@@ -746,7 +924,11 @@ Harvard Mark I
 \end_layout
 
 \begin_layout Standard
-Para programar la Mark I se utilizaban 
+Para programar la 
+\emph on
+Mark I
+\emph default
+ se utilizaban 
 \begin_inset Quotes fld
 \end_inset
 
@@ -783,7 +965,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/plugboard.jpg
 	lyxscale 33
-	scale 25
+	scale 20
 
 \end_inset
 
@@ -841,7 +1023,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/punchcard.jpg
 	lyxscale 33
-	scale 13
+	scale 12
 
 \end_inset
 
@@ -853,7 +1035,15 @@ status open
 status open
 
 \begin_layout Plain Layout
-Tarjeta perforada de 20 filas y 80 columnas.
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Tarjeta_perforada"
+literal "true"
+
+\end_inset
+
+ Tarjeta perforada de 20 filas y 80 columnas.
 \end_layout
 
 \end_inset
@@ -876,7 +1066,44 @@ literal "true"
 
 \end_inset
 
- ENIAC (Electronic Numerical Integrator And Computer) fue una computadora electrónica programable construida por el gobierno de los Estados Unidos en 1946.
+ 
+\family sans
+ENIAC
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+ENIAC
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Electronic Numerical Integrator And Computer
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ fue una computadora electrónica programable construida por el gobierno de los Estados Unidos en 1946.
  Utilizaba tecnología de 
 \begin_inset Quotes fld
 \end_inset
@@ -906,7 +1133,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/eniac.png
 	lyxscale 25
-	scale 20
+	scale 18
 
 \end_inset
 
@@ -918,6 +1145,16 @@ status open
 status open
 
 \begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/ENIAC"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
 Electronic Numerical Integrator And Computer
 \end_layout
 
@@ -959,15 +1196,6 @@ La informática moderna
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://fortran-lang.org/"
-literal "true"
-
-\end_inset
-
- FORTRAN
 \begin_inset Marginal
 status collapsed
 
@@ -975,7 +1203,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagenes/backus.jpg
 	display false
-	scale 18
+	scale 13
 
 \end_inset
 
@@ -984,8 +1212,28 @@ status collapsed
 
 \end_inset
 
- (Formula Translation) fue uno de los primeros lenguajes de programación.
- Fue desarrollado en 1957 por un equipo de ingenieros de IBM liderado por 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://fortran-lang.org/"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ FORTRAN
+\family default
+ fue uno de los primeros lenguajes de programación.
+ Fue desarrollado en 1957 por un equipo de ingenieros de 
+\family sans
+IBM
+\family default
+ liderado por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -999,7 +1247,56 @@ literal "true"
 John Backus
 \emph default
 .
- El objetivo de FORTRAN era proporcionar un lenguaje de programación que permitiese a los científicos y matemáticos escribir programas de manera eficiente y fácilmente para ser utilizado en las computadoras de ese entonces.
+\end_layout
+
+\begin_layout Standard
+El objetivo de 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Fortran"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ FORTRAN
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+FORTRAN
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un acrónimo de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Formula Translation
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ era proporcionar un lenguaje de programación que permitiese a los científicos y matemáticos escribir programas de manera eficiente y fácilmente para ser utilizado en las computadoras de ese entonces.
 \end_layout
 
 \begin_layout Standard
@@ -1011,8 +1308,58 @@ literal "true"
 
 \end_inset
 
- PDP-1 (Programmed Data Processor-1) es un ordenador construido por la compañía Digital Equipment Corporation (DEC) en 1959.
- El PDP-1 fue un ordenador de tiempo compartido,
+ 
+\family sans
+PDP-1
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+PDP-1
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Programmed Data Processor-1
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ fue un ordenador construido por la compañía Digital Equipment Corporation en 1959.
+ El 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/PDP-1"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ PDP-1
+\family default
+ fue un ordenador de tiempo compartido,
  lo que significa que varios usuarios podían acceder al sistema al mismo tiempo y compartir los recursos del ordenador.
  Esto fue un gran avance en comparación con los ordenadores anteriores,
  que solían ser utilizados por un solo usuario a la vez.
@@ -1027,7 +1374,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pdp1.jpg
 	lyxscale 13
-	scale 15
+	scale 18
 
 \end_inset
 
@@ -1039,6 +1386,8 @@ status open
 status open
 
 \begin_layout Plain Layout
+
+\emph on
 Programmed Data Processor-1
 \end_layout
 
@@ -1061,7 +1410,11 @@ literal "true"
 
 \end_inset
 
- BASIC (Beginners All-Purpose Symbolic Instruction Code) es un lenguaje de programación creado en el verano de 1964,
+ 
+\family sans
+BASIC
+\family default
+ es un lenguaje de programación creado en el verano de 1964,
  con el objetivo de desarrollar un lenguaje de programación fácil de aprender y usar para estudiantes no especialistas y principiantes en la programación.
 \end_layout
 
@@ -1075,24 +1428,44 @@ literal "true"
 
 \end_inset
 
- NLS
+ 
+\family sans
+NLS
+\family default
+
 \begin_inset Marginal
 status collapsed
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagenes/engelbart.jpg
-	display false
-	scale 57
-
+\begin_inset Quotes fld
 \end_inset
 
 
+\family sans
+NLS
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es un acrónimo de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+oN-Line System
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
- (oN-Line System) fue un sistema desarrollado en 1968 por 
+ fue un sistema desarrollado en 1968 por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -1109,7 +1482,27 @@ Douglas Engelbart
  Fue una de las primeras demostraciones de una interfaz gráfica de usuario,
  con un puntero del ratón,
  sistema de hipertexto y ventanas.
- También introdujo varias características que se consideran fundamentales en la computación moderna,
+\end_layout
+
+\begin_layout Standard
+También
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenes/engelbart.jpg
+	display false
+	scale 56
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ introdujo varias características que se consideran fundamentales en la computación moderna,
  como el procesamiento de textos,
  el correo electrónico,
  la videoconferencia y la colaboración en tiempo real.
@@ -1124,7 +1517,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/nls.png
 	lyxscale 70
-	scale 38
+	scale 51
 
 \end_inset
 
@@ -1136,7 +1529,9 @@ status open
 status open
 
 \begin_layout Plain Layout
-NLS (oN-Line System)
+
+\family sans
+NLS
 \end_layout
 
 \end_inset
@@ -1158,13 +1553,25 @@ literal "true"
 
 \end_inset
 
- MULTICS fue un sistema operativo desarrollado en 1969 por un equipo liderado por el MIT y Bell Labs.
- El objetivo de MULTICS era crear un sistema operativo de tiempo compartido que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer servicios avanzados,
+ 
+\family sans
+MULTICS
+\family default
+ fue un sistema operativo desarrollado en 1969 por un equipo liderado por el MIT y Bell Labs.
+ El objetivo de 
+\family sans
+MULTICS
+\family default
+ era crear un sistema operativo de tiempo compartido que pudiera ser utilizado por varios usuarios simultáneamente y ofrecer servicios avanzados,
  como el procesamiento de archivos,
  el manejo de bases de datos,
  manejo de permisos y el procesamiento de informes.
  A pesar de sus avances,
- MULTICS tuvo problemas financieros y técnicos que retrasaron su desarrollo y limitaron su adopción.
+ 
+\family sans
+MULTICS
+\family default
+ tuvo problemas financieros y técnicos que retrasaron su desarrollo y limitaron su adopción.
 \end_layout
 
 \begin_layout Standard
@@ -1184,7 +1591,11 @@ status collapsed
 
 \end_inset
 
-Tras haber participado en el desarrollo de MULTICS,
+Tras haber participado en el desarrollo de 
+\family sans
+MULTICS
+\family default
+,
  
 \begin_inset CommandInset href
 LatexCommand href
@@ -1212,9 +1623,30 @@ literal "true"
 Dennis Ritchie
 \emph default
  iniciaron en 1970 la creación de un nuevo sistema operativo.
- El proyecto fue bautizado originalmente como UNICS e inicialmente no tuvo apoyo económico por parte de los laboratorios Bell.
+ El proyecto fue bautizado originalmente como 
+\family sans
+UNICS
+\family default
+ e inicialmente no tuvo apoyo económico por parte de los laboratorios Bell.
  Al año siguiente,
- Dennis Ritchie desarrolla el lenguaje de programación C,
+ 
+\emph on
+Dennis Ritchie 
+\emph default
+desarrolla el lenguaje de programación 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+C
+\emph default
+,
  un sistema diseñado para ser eficiente en términos de tiempo de ejecución y uso de recursos,
  y fácil de portar a diferentes plataformas de hardware.
 \end_layout
@@ -1222,9 +1654,45 @@ Dennis Ritchie
 \begin_layout Standard
 Los sistemas operativos existentes hasta el momento eran propietarios y solo funcionaban en una plataforma específica,
  es por esto que en 1972,
- Ken Thompson y Dennis Ritchie decidieron reescribir el código de UNICS pero esta vez en lenguaje C,
- dando así origen a UNIX.
- Este cambio significaba que UNIX podría ser fácilmente modificado para funcionar en otras computadoras y así otras variaciones podían ser desarrolladas por otros programadores.
+ 
+\emph on
+Ken Thompson
+\emph default
+ y 
+\emph on
+Dennis Ritchie
+\emph default
+ decidieron reescribir el código de 
+\family sans
+UNICS
+\family default
+ pero esta vez en lenguaje 
+\emph on
+C
+\emph default
+,
+ dando así origen a 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Unix"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ 
+\family default
+\emph on
+Unix
+\emph default
+.
+ Este cambio significaba que 
+\emph on
+Unix
+\emph default
+ podría ser fácilmente modificado para funcionar en otras computadoras y así otras variaciones podían ser desarrolladas por otros programadores.
 \end_layout
 
 \begin_layout Standard
@@ -1237,15 +1705,32 @@ literal "true"
 
 \end_inset
 
- Xerox Alto:
+ 
+\emph on
+Xerox Alto
+\emph default
+:
  un ordenador de tipo personal,
  con una interfaz gráfica de usuario,
  soporte para ventanas y un mouse.
  Además,
- Alto también tenía un sistema de gestión de archivos,
+ tenía un sistema de gestión de archivos,
  un procesador de texto,
  una herramienta de dibujo y soporte para redes de computadoras.
- Aunque el Xerox Alto nunca fue comercializado,
+ Aunque el 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Xerox_Alto"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ Xerox Alto
+\emph default
+ nunca fue comercializado,
  muchas de sus características y conceptos se convirtieron en estándar en la industria de los ordenadores personales.
 \begin_inset Flex Figura
 status open
@@ -1254,8 +1739,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/alto.png
-	lyxscale 10
-	scale 7
+	lyxscale 15
+	scale 8
 
 \end_inset
 
@@ -1267,6 +1752,8 @@ status open
 status open
 
 \begin_layout Plain Layout
+
+\emph on
 Xerox Alto
 \end_layout
 
@@ -1294,10 +1781,27 @@ literal "true"
 
 \end_inset
 
- Altair 8800 fue una de las primeras computadoras personales en ser comercializadas,
+ 
+\emph on
+Altair 8800
+\emph default
+ fue una de las primeras computadoras personales en ser comercializadas,
  lanzada en 1974.
  Fue un éxito de ventas y sentó las bases para el desarrollo de las computadoras personales que conocemos hoy en día.
- La Altair 8800 se vendía en kit y los usuarios debían armarla ellos mismos.
+ La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Altair_8800"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Altair 8800
+\emph default
+ se vendía en kit y los usuarios debían armarla ellos mismos.
  
 \end_layout
 
@@ -1324,6 +1828,8 @@ status open
 status open
 
 \begin_layout Plain Layout
+
+\emph on
 Altair 8800
 \end_layout
 
@@ -1338,19 +1844,123 @@ Altair 8800
 \end_layout
 
 \begin_layout Standard
-En los primeros años del sistema Unix los Laboratorios Bell autorizaron a las universidades,
+En
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+BSD
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Berkeley Software Distribution
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ los primeros años del sistema 
+\emph on
+Unix
+\emph default
+ los Laboratorios Bell autorizaron a las universidades,
  a utilizar el código fuente y adaptarlo a sus necesidades.
  A partir de dicha iniciativa,
- en 1977 nace en la universidad de Berkley el sistema operativo BSD (Berkeley Software Distribution).
+ en 1977 nace en la universidad de Berkley el sistema operativo 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Berkeley_Software_Distribution"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ BSD
+\family default
+.
 \end_layout
 
 \begin_layout Standard
-La IBM PC fue una de las computadoras más importantes en la historia de la informática,
+La 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/IBM_PC"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ IBM PC
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+PC
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Personal Computer
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ fue una de las computadoras más importantes en la historia de la informática,
  ya que sentó las bases para el estándar de computadora personal que se utiliza en la actualidad.
  Fue introducida en 1981 y se convirtió rápidamente en el estándar de la industria para las computadoras personales.
- Una de las características más importantes de la IBM PC fue su arquitectura abierta.
+ Una de las características más importantes de la 
+\family sans
+IBM PC
+\family default
+ fue su arquitectura abierta.
  A diferencia de otras computadoras personales de la época,
- la IBM PC tenía un diseño abierto que permitía a los usuarios y terceros desarrollar sus propios productos y programas para ella.
+ la 
+\family sans
+IBM PC
+\family default
+ tenía un diseño abierto que permitía a los usuarios y terceros desarrollar sus propios productos y programas para ella.
  Esto ayudó a impulsar un gran ecosistema de desarrolladores y fabricantes de periféricos que crearon una gran variedad de software y hardware para la computadora.
 \end_layout
 
@@ -1363,7 +1973,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pc.jpg
 	lyxscale 20
-	scale 4
+	scale 8
 	BoundingBox 0bp 100bp 3840bp 2300bp
 	clip
 
@@ -1377,6 +1987,8 @@ status open
 status open
 
 \begin_layout Plain Layout
+
+\family sans
 IBM PC
 \end_layout
 
@@ -1399,19 +2011,47 @@ literal "true"
 
 \end_inset
 
- System V es una versión del sistema operativo UNIX desarrollado por Bell Labs en 1983.
- Fue una de las primeras versiones de UNIX en ser comercializada y distribuida ampliamente,
- y tuvo un gran impacto en el desarrollo de los sistemas operativos tipo UNIX.
- Aunque UNIX se convirtió en un estándar en la industria de la computación,
+ 
+\emph on
+System V
+\emph default
+ es una versión del sistema operativo 
+\emph on
+Unix
+\emph default
+ desarrollado por Bell Labs en 1983.
+ Fue una de las primeras versiones de 
+\emph on
+Unix
+\emph default
+ en ser comercializada y distribuida ampliamente,
+ y tuvo un gran impacto en el desarrollo de los sistemas operativos tipo 
+\emph on
+Unix
+\emph default
+.
+ Aunque 
+\emph on
+Unix
+\emph default
+ se convirtió en un estándar en la industria de la computación,
  no se consideraba 
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 libre
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
- debido a las restricciones en su uso y distribución impuestas por AT&T.
+ debido a las restricciones en su uso y distribución impuestas por 
+\family sans
+AT&T
+\family default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1440,7 +2080,11 @@ literal "true"
 
 \end_inset
 
- GNU por 
+ 
+\family sans
+GNU
+\family default
+ por 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faUser"
@@ -1455,7 +2099,24 @@ Richard Stallman
 \emph default
 ,
  un programador y defensor de la libertad de software.
- El objetivo principal del movimiento GNU es desarrollar un sistema operativo completo y gratuito basado en el estándar UNIX,
+ El objetivo principal del movimiento 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Proyecto_GNU"
+literal "true"
+
+\end_inset
+
+
+\family sans
+ GNU
+\family default
+ es desarrollar un sistema operativo completo y gratuito basado en el estándar 
+\emph on
+Unix
+\emph default
+,
  de manera que cualquier persona pueda usar,
  estudiar,
  compartir y modificar el software sin restricciones.
@@ -1466,7 +2127,11 @@ Richard Stallman
 status open
 
 \begin_layout Plain Layout
-El movimiento de software privativo había sido fundado con anterioridad en 1976 por Bill Gates a través de la denominada 
+El movimiento de software privativo había sido fundado con anterioridad en 1976 por 
+\emph on
+Bill Gates
+\emph default
+ a través de la denominada 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1500,13 +2165,37 @@ literal "true"
 
 \end_inset
 
- X Windows es un sistema de ventanas para sistemas tipo UNIX.
- Fue desarrollado en el Massachusetts Institute of Technology (MIT) en 1984.
- El objetivo principal de X Windows era proporcionar una interfaz gráfica que pudiera ser utilizado en una variedad de sistemas.
+ 
+\emph on
+X Windows
+\emph default
+ es un sistema de ventanas para sistemas tipo 
+\emph on
+Unix
+\emph default
+.
+ Fue desarrollado en el Massachusetts Institute of Technology en 1984.
+ El objetivo principal de 
+\emph on
+X Windows
+\emph default
+ era proporcionar una interfaz gráfica que pudiera ser utilizado en una variedad de sistemas.
 \end_layout
 
 \begin_layout Standard
-Minix
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/MINIX"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ Minix
+\emph default
+
 \begin_inset Marginal
 status collapsed
 
@@ -1538,8 +2227,20 @@ Andrew Tanenbaum
 \emph default
 ,
  para enseñar diseño y funcionamiento de sistemas operativos a estudiantes universitarios.
- Originalmente diseñado para ser utilizado en computadoras IBM PC y compatibles,
- Minix tenía un diseño similar al de UNIX,
+ Originalmente diseñado para ser utilizado en computadoras 
+\family sans
+IBM PC
+\family default
+ y compatibles,
+ 
+\emph on
+Minix
+\emph default
+ tenía un diseño similar al de 
+\emph on
+Unix
+\emph default
+,
  pero con un conjunto reducido de herramientas y utilidades.
 \end_layout
 
@@ -1548,7 +2249,11 @@ La era de la información
 \end_layout
 
 \begin_layout Standard
-La década de 1990 marcó la comercialización de Internet
+La década de 1990 marcó la comercialización de 
+\emph on
+Internet
+\emph default
+
 \begin_inset Marginal
 status collapsed
 
@@ -1618,16 +2323,44 @@ literal "true"
 \emph on
 Linus Torvalds
 \emph default
- desarrolla un núcleo de sistema operativo (llamado Linux) como proyecto personal,
- basándose en el diseño de Minix.
- Hasta el momento el proyecto GNU había desarrollado una amplia gama de software,
+ desarrolla un núcleo de sistema operativo (llamado 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/N%C3%BAcleo_Linux"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Linux
+\emph default
+) como proyecto personal,
+ basándose en el diseño de 
+\emph on
+Minix
+\emph default
+.
+ Hasta el momento el proyecto 
+\family sans
+GNU
+\family default
+ había desarrollado una amplia gama de software,
  incluyendo un compilador,
  un intérprete de línea de comandos y diversas herramientas de programación.
- Sin embargo,
+\end_layout
+
+\begin_layout Standard
+Sin embargo,
  faltaba un kernel,
  que es la parte del sistema operativo que administra los recursos del sistema,
  como la memoria y los procesos.
- Con el tiempo Linux se convirtió en una parte fundamental del proyecto GNU y en uno de los sistemas operativos de código abierto más utilizados y respetados de la industria tecnológica.
+ Con el tiempo Linux se convirtió en una parte fundamental del proyecto 
+\family sans
+GNU
+\family default
+ y en uno de los sistemas operativos de código abierto más utilizados y respetados de la industria tecnológica.
 \end_layout
 
 \begin_layout Standard
@@ -1675,6 +2408,10 @@ status collapsed
  Fue lanzado en febrero de 1991 y a lo largo de los años,
  ha ganado popularidad debido a su sintaxis clara y concisa,
  su versatilidad y su amplia gama de aplicaciones.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1686,7 +2423,11 @@ literal "true"
 
 \end_inset
 
- Windows 95,
+ 
+\emph on
+Windows 95
+\emph default
+,
  desarrollado por Microsoft y lanzado en agosto de 1995,
  fue un sistema operativo que marcó un hito significativo en la evolución de los sistemas operativos de Microsoft.
  Introdujo una interfaz gráfica de usuario más intuitiva,
@@ -1694,7 +2435,11 @@ literal "true"
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 Inicio
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -1712,7 +2457,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/windows95.jpg
 	lyxscale 50
-	scale 27
+	scale 24
 
 \end_inset
 
@@ -1724,6 +2469,16 @@ status open
 status open
 
 \begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Windows_95"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
 Windows 95
 \end_layout
 
@@ -1746,11 +2501,27 @@ literal "true"
 
 \end_inset
 
- Deep Blue fue una supercomputadora desarrollada por IBM que se hizo famosa por su capacidad para jugar al ajedrez.
+ 
+\emph on
+Deep Blue
+\emph default
+ fue una supercomputadora desarrollada por 
+\family sans
+IBM
+\family default
+ que se hizo famosa por su capacidad para jugar al ajedrez.
  Fue especialmente conocida por su enfrentamiento contra el campeón mundial de ajedrez,
- Garry Kasparov,
+ 
+\emph on
+Garry Kasparov
+\emph default
+,
  en 1996 y 1997.
- La victoria de Deep Blue marcó un hito en la historia de la inteligencia artificial y la computación,
+ La victoria de 
+\emph on
+Deep Blue
+\emph default
+ marcó un hito en la historia de la inteligencia artificial y la computación,
  ya que fue la primera vez que una máquina derrotó a un campeón mundial de ajedrez.
 \end_layout
 
@@ -1763,9 +2534,21 @@ literal "true"
 
 \end_inset
 
- Google es un motor de búsqueda en línea desarrollado por la empresa Alphabet Inc.
+ 
+\emph on
+Google
+\emph default
+ es un motor de búsqueda en línea desarrollado por la empresa Alphabet Inc.
  Funciona como una herramienta que permite a los usuarios buscar información en la vasta cantidad de contenido disponible en la web.
- Fue fundada en 1998 por Larry Page y Sergey Brin,
+ Fue fundada en 1998 por 
+\emph on
+Larry Page
+\emph default
+ y 
+\emph on
+Sergey Brin
+\emph default
+,
  estudiantes de posgrado en la Universidad de Stanford.
 \end_layout
 
@@ -1778,7 +2561,11 @@ literal "true"
 
 \end_inset
 
- Wikipedia es una enciclopedia en línea gratuita y colaborativa que permite a los usuarios crear,
+ 
+\emph on
+Wikipedia
+\emph default
+ es una enciclopedia en línea gratuita y colaborativa que permite a los usuarios crear,
  editar y actualizar contenido.
  Fue lanzada en 2001 y se basa en el principio,
  que permite la edición colaborativa de artículos por parte de usuarios de todo el mundo.
@@ -1795,7 +2582,15 @@ literal "true"
 
 \end_inset
 
- Ubuntu es una distribución de Linux basada en 
+ 
+\emph on
+Ubuntu
+\emph default
+ es una distribución de 
+\emph on
+Linux
+\emph default
+ basada en 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\faLink"
@@ -1804,9 +2599,30 @@ literal "true"
 
 \end_inset
 
- Debian y desarrollada por Canonical Ltd.
- Fue lanzada por primera vez en octubre de 2004 y desde entonces se ha convertido en una de las distribuciones de Linux más populares y ampliamente utilizadas en todo el mundo.
- Ubuntu se enfoca en ofrecer una experiencia de usuario amigable y accesible,
+ 
+\emph on
+Debian
+\emph default
+ y desarrollada por Canonical Ltd.
+ Fue lanzada por primera vez en octubre de 2004 y desde entonces se ha convertido en una de las distribuciones de 
+\emph on
+Linux
+\emph default
+ más populares y ampliamente utilizadas en todo el mundo.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Ubuntu"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ Ubuntu
+\emph default
+ se enfoca en ofrecer una experiencia de usuario amigable y accesible,
  con una amplia gama de software preinstalado y una interfaz gráfica intuitiva.
 \end_layout
 
@@ -1819,7 +2635,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/ubuntu.png
 	lyxscale 50
-	scale 22
+	scale 20
 
 \end_inset
 
@@ -1869,20 +2685,17 @@ literal "true"
 
 \end_inset
 
- YouTube es una plataforma de compartición de videos en línea.
+ 
+\emph on
+YouTube
+\emph default
+ es una plataforma de compartición de videos en línea.
  Fundada en 2005,
  permite a los usuarios cargar,
  ver y compartir videos.
  Los usuarios pueden interactuar con los videos mediante comentarios,
  likes y suscripciones a canales.
  La plataforma se ha convertido en una fuente importante de contenido visual en línea y ha dado lugar a la creación de comunidades de creadores de contenido.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1894,10 +2707,31 @@ literal "true"
 
 \end_inset
 
- Android es un sistema operativo móvil que fue inicialmente creado en 2003 y adquirido por Google en 2005.
- Android se ha convertido en el sistema operativo dominante para dispositivos móviles.
+ 
+\emph on
+Android
+\emph default
+ es un sistema operativo móvil que fue inicialmente creado en 2003 y adquirido por Google en 2005.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Android"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ Android
+\emph default
+ se ha convertido en el sistema operativo dominante para dispositivos móviles.
  Además de los teléfonos inteligentes,
- Android se utiliza en tabletas,
+ 
+\emph on
+Android
+\emph default
+ se utiliza en tabletas,
  televisores inteligentes,
  relojes inteligentes y otros dispositivos electrónicos.
 \end_layout
@@ -1911,16 +2745,63 @@ literal "true"
 
 \end_inset
 
- GPT-3,
- o Generative Pre-trained Transformer 3,
+ 
+\family sans
+GPT-3
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+GPT-3
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Generative Pre-trained Transformer 3
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
  es un modelo de lenguaje desarrollado por OpenAI a mitad de 2020.
- Es la tercera iteración de la serie GPT y representa uno de los modelos de lenguaje más grandes y avanzados hasta la fecha.
+ Es la tercera iteración de la serie 
+\family sans
+GPT
+\family default
+ y representa uno de los modelos de lenguaje más grandes y avanzados hasta la fecha.
 \end_layout
 
 \begin_layout Standard
-Lo distintivo de GPT-3 es su capacidad para generar texto coherente y contextuado en respuesta a instrucciones dadas en lenguaje natural.
+Lo distintivo de 
+\family sans
+GPT-3
+\family default
+ es su capacidad para generar texto coherente y contextuado en respuesta a instrucciones dadas en lenguaje natural.
  Con 175 mil millones de parámetros,
- GPT-3 es notable por su enorme escala,
+ 
+\family sans
+GPT-3
+\family default
+ es notable por su enorme escala,
  lo que le permite abordar tareas diversas,
  como traducción de idiomas,
  redacción de textos,
@@ -2088,14 +2969,55 @@ literal "true"
 
 \end_inset
 
- PSU (Power Supply Unit) o fuente de alimentación se encarga de convertir la corriente que recibe de la toma eléctrica en los diferentes voltajes necesarios para alimentar los componentes internos de la computadora.
+ 
+\family sans
+PSU
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+PSU
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Power Supply Unit
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ o fuente de alimentación se encarga de convertir la corriente que recibe de la toma eléctrica en los diferentes voltajes necesarios para alimentar los componentes internos de la computadora.
 \end_layout
 
 \begin_layout Standard
 Además protege los componentes de la computadora de sobretensiones,
  cortocircuitos y otros problemas eléctricos que pueden ocurrir.
  En caso de que se detecte una sobrecarga o falla,
- la PSU puede cortar el suministro de energía para proteger los componentes de la computadora.
+ la 
+\family sans
+PSU
+\family default
+ puede cortar el suministro de energía para proteger los componentes de la computadora.
 \end_layout
 
 \begin_layout Standard
@@ -2146,7 +3068,44 @@ literal "true"
 
 \end_inset
 
- CPU (Unidad Central de Procesamiento) es el componente principal de una computadora.
+ 
+\family sans
+CPU
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+CPU
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Unidad Central de Procesamiento
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+es el componente principal de una computadora.
  Es un chip integrado que se coloca en el zócalo de la placa madre y está compuesto por varios núcleos (o cores) que trabajan en conjunto.
 \end_layout
 
@@ -2154,14 +3113,55 @@ literal "true"
 Es responsable de procesar y ejecutar los programas,
  manejar la entrada y salida de datos,
  y controlar los componentes del sistema,
- como la memoria RAM,
+ como la memoria 
+\family sans
+RAM
+\family default
+,
  el disco duro y las tarjetas de expansión.
- La velocidad y la capacidad de la CPU son factores clave que determinan el rendimiento general de una computadora.
+ La velocidad y la capacidad de la 
+\family sans
+CPU
+\family default
+ son factores clave que determinan el rendimiento general de una computadora.
 \end_layout
 
 \begin_layout Standard
 Algunos procesadores modernos tienen gráficos integrados en su diseño.
- Estos gráficos integrados se denominan iGPU (unidad de procesamiento de gráficos integrados) y están diseñados para proporcionar capacidades gráficas básicas para aplicaciones informáticas y de juegos de baja exigencia.
+ Estos gráficos integrados se denominan 
+\family sans
+iGPU
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+iGPU
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+Unidad de Procesamiento de Gráficos Integrados
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ y están diseñados para proporcionar capacidades gráficas básicas para aplicaciones informáticas y de juegos de baja exigencia.
 \end_layout
 
 \begin_layout Standard
@@ -2212,15 +3212,60 @@ literal "true"
 
 \end_inset
 
- RAM (Random Access Memory o Memoria de Acceso Aleatorio) es un tipo de memoria que se utiliza para almacenar temporalmente los datos y programas que están en uso.
+ 
+\family sans
+RAM
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+RAM
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Memoria de Acceso Aleatorio
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ es un tipo de memoria que se utiliza para almacenar temporalmente los datos y programas que están en uso.
  Es un componente clave en el rendimiento de una computadora,
  ya que proporciona un acceso rápido a los datos y programas que el procesador necesita para operar.
 \end_layout
 
 \begin_layout Standard
 Cuando un programa se ejecuta,
- los datos y las instrucciones necesarios se cargan en la RAM desde el disco duro.
- La RAM permite que el procesador acceda rápidamente a estos datos y programas,
+ los datos y las instrucciones necesarios se cargan en la 
+\family sans
+RAM
+\family default
+ desde el disco duro.
+ La 
+\family sans
+RAM
+\family default
+ permite que el procesador acceda rápidamente a estos datos y programas,
  lo que acelera el tiempo de ejecución y la velocidad de la computadora en general.
 \end_layout
 
@@ -2306,7 +3351,11 @@ literal "true"
 \end_inset
 
  disco duro es un dispositivo de almacenamiento de datos magnético que se utiliza para almacenar permanentemente archivos y programas.
- A diferencia de la memoria RAM,
+ A diferencia de la memoria 
+\family sans
+RAM
+\family default
+,
  que es una memoria volátil,
  el disco duro los mantiene incluso después del apagado de la computadora.
 \end_layout
@@ -2348,7 +3397,11 @@ Disco rígido Seagate Barracuda 1TB
 \end_layout
 
 \begin_layout Standard
-Una de las principales diferencias entre el disco duro y la memoria RAM es la velocidad.
+Una de las principales diferencias entre el disco duro y la memoria 
+\family sans
+RAM
+\family default
+ es la velocidad.
  Los discos duros son mucho más lentos en términos de velocidad de acceso,
  pues el brazo de lectura/escritura necesita moverse físicamente para acceder a los datos en los platos.
 \end_layout
@@ -2405,15 +3458,60 @@ literal "true"
 
 \end_inset
 
- SSD (Solid State Drive) es un dispositivo de almacenamiento de datos que utiliza memoria flash para almacenar permanentemente archivos y programas en la computadora.
+ 
+\family sans
+SSD
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+SSD
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Solid State Drive
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ es un dispositivo de almacenamiento de datos que utiliza memoria flash para almacenar permanentemente archivos y programas en la computadora.
 \end_layout
 
 \begin_layout Standard
 A diferencia de un disco duro tradicional,
  que utiliza platos magnéticos giratorios y cabezas de lectura/escritura para acceder a los datos,
- una SSD no tiene partes móviles.
+ una 
+\family sans
+SSD
+\family default
+ no tiene partes móviles.
  Como resultado,
- las SSD tienen un mejor rendimiento en términos de velocidad de lectura/escritura y tiempo de acceso.
+ las 
+\family sans
+SSD
+\family default
+ tienen un mejor rendimiento en términos de velocidad de lectura/escritura y tiempo de acceso.
 \end_layout
 
 \begin_layout Standard
@@ -2465,9 +3563,50 @@ literal "true"
 \end_inset
 
  placa de video,
- también conocida como tarjeta gráfica o GPU,
+ también conocida como tarjeta gráfica o 
+\family sans
+GPU
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+GPU
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Graphics Processing Unit
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+,
  es un componente de hardware que tiene como objetivo procesar y generar imágenes en la pantalla.
- Su función es liberar a la CPU de la tarea del procesamiento gráfico,
+ Su función es liberar a la 
+\family sans
+CPU
+\family default
+ de la tarea del procesamiento gráfico,
  permitiéndole concentrarse en otras tareas.
 \end_layout
 
@@ -3659,7 +4798,43 @@ ASCII
 \end_layout
 
 \begin_layout Standard
-El código ASCII (American Standard Code for Information Interchange):
+El código 
+\family sans
+ASCII
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+ASCII
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+American Standard Code for Information Interchange
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  fue una de las primeras codificaciones y se usa para representar caracteres básicos del inglés.
 \end_layout
 
@@ -4058,7 +5233,11 @@ Retorno de carro
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Caracteres ASCII no imprimibles
+Caracteres 
+\family sans
+ASCII
+\family default
+ no imprimibles
 \end_layout
 
 \end_inset
@@ -4257,11 +5436,31 @@ Los lenguajes de programación se pueden clasificar en tres niveles:
 \begin_layout Description
 Alto Estos lenguajes son más cercanos al lenguaje natural humano y se utilizan para escribir programas complejos de manera más fácil y rápida,
  abstrayéndose de muchos detalles.
- Ejemplos de lenguajes de programación de alto nivel incluyen Python,
- Java,
- C++,
- Ruby,
- PHP,
+ Ejemplos de lenguajes de programación de alto nivel incluyen 
+\emph on
+Python
+\emph default
+,
+ 
+\emph on
+Java
+\emph default
+,
+ 
+\emph on
+C++
+\emph default
+,
+ 
+\emph on
+Ruby
+\emph default
+,
+ 
+\emph on
+PHP
+\emph default
+,
  entre otros.
  Estos lenguajes tienen una sintaxis más amigable para el programador y se encargan de muchos de los detalles de bajo nivel,
  como la administración de memoria y el manejo de errores.
@@ -4307,7 +5506,11 @@ Bajo Estos lenguajes con cercanos al lenguaje de la máquina y se utilizan para 
 
 \begin_deeper
 \begin_layout Standard
-Ejemplos de lenguajes de programación de bajo nivel incluyen el lenguaje ensamblador y el lenguaje C.
+Ejemplos de lenguajes de programación de bajo nivel incluyen el lenguaje ensamblador y el lenguaje 
+\emph on
+C
+\emph default
+.
  Estos lenguajes requieren que el programador tenga un conocimiento más detallado del hardware y de la forma en que se maneja la memoria.
 \end_layout
 
@@ -4631,7 +5834,11 @@ fuente El código fuente de un programa es el conjunto de instrucciones escritas
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 texto
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -4664,7 +5871,11 @@ El término
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 código abierto
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -4751,7 +5962,15 @@ status open
 \begin_layout Plain Layout
 El software libre suele estar disponible gratuitamente,
  pero no es obligatorio que sea así;
- por lo tanto no hay que asociar software «libre» a «gratuito» ya que,
+ por lo tanto no hay que asociar software «
+\emph on
+libre
+\emph default
+» a «
+\emph on
+gratuito
+\emph default
+» ya que,
  conservando su carácter de libre,
  puede ser distribuido comercialmente.
 \end_layout
@@ -4762,7 +5981,44 @@ El software libre suele estar disponible gratuitamente,
 \end_layout
 
 \begin_layout Description
-IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas y características que se combinan en una única aplicación para hacer más fácil y eficiente el proceso de desarrollo de software.
+IDE Un 
+\family sans
+IDE
+\family default
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+IDE
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Integrated Development Environment
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ es un conjunto de herramientas y características que se combinan en una única aplicación para hacer más fácil y eficiente el proceso de desarrollo de software.
 \end_layout
 
 \begin_deeper
@@ -4770,7 +6026,11 @@ IDE Un IDE (Integrated Development Environment) es un conjunto de herramientas y
 Típicamente incluye un editor de código que proporciona herramientas de resaltado de sintaxis y autocompletado,
  para facilitar la escritura de código.
  Además,
- un IDE suele incluir un depurador que ayuda a identificar y corregir errores en el código.
+ un 
+\family sans
+IDE
+\family default
+ suele incluir un depurador que ayuda a identificar y corregir errores en el código.
 \end_layout
 
 \begin_layout Standard
@@ -4800,6 +6060,8 @@ status open
 status open
 
 \begin_layout Plain Layout
+
+\emph on
 Visual Studio Code
 \end_layout
 
@@ -4993,7 +6255,11 @@ literal "true"
 
 .
  Cuando ocurre una llamada a sistema,
- el CPU detiene la ejecución del programa y comienza a ejecutar la funcionalidad del núcleo requerida,
+ el 
+\family sans
+CPU
+\family default
+ detiene la ejecución del programa y comienza a ejecutar la funcionalidad del núcleo requerida,
  luego de la cual se reanuda el flujo original del programa.
 \end_layout
 
@@ -5002,7 +6268,11 @@ Proceso de arranque
 \end_layout
 
 \begin_layout Standard
-Durante el arranque de una PC,
+Durante el arranque de una 
+\family sans
+PC
+\family default
+,
  ocurren varios pasos importantes que permiten que el sistema operativo se inicie correctamente y la computadora esté lista para su uso.
 \end_layout
 
@@ -5137,13 +6407,20 @@ faWindows
 
 \end_inset
 
-bootmgr
+
+\family typewriter
 \emph default
+bootmgr
+\family default
 
 \begin_inset Quotes frd
 \end_inset
 
- es el proporcionado por los sistemas modernos de Windows.
+ es el proporcionado por los sistemas modernos de 
+\emph on
+Windows
+\emph default
+.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -5187,6 +6464,8 @@ faLinux
 \begin_inset space ~
 \end_inset
 
+
+\emph on
 GRUB
 \end_layout
 
@@ -5237,6 +6516,8 @@ faWindows
 \begin_inset space ~
 \end_inset
 
+
+\family typewriter
 bootmgr
 \end_layout
 
@@ -5264,15 +6545,19 @@ Núcleo A continuación,
 \end_layout
 
 \begin_layout Description
-Init En los sistemas Linux,
+Init En los sistemas 
+\emph on
+Linux
+\emph default
+,
  el programa inicial del sistema operativo se llama 
 \begin_inset Quotes fld
 \end_inset
 
 
-\emph on
+\family typewriter
 init
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -5313,7 +6598,11 @@ systemd
 \family typewriter
 init
 \family default
-) heredado de los sistemas operativos estilo UNIX System V y Berkeley Software Distribution (BSD).
+) heredado de los sistemas operativos estilo UNIX System V y Berkeley Software Distribution (
+\family sans
+BSD
+\family default
+).
 \end_layout
 
 \end_inset
@@ -5327,7 +6616,11 @@ Interfaz de usuario
 
 \begin_layout Standard
 En términos generales,
- la interfaz de usuario (UI) es el punto de interacción y comunicación entre un ser humano y un programa.
+ la interfaz de usuario (
+\family sans
+UI
+\family default
+) es el punto de interacción y comunicación entre un ser humano y un programa.
  Una buena interfaz de usuario facilita la interacción de forma intuitiva,
  eficiente y satisfactoria,
  permitiendo al usuario realizar sus tareas y alcanzar sus objetivos de manera efectiva.
@@ -5338,15 +6631,35 @@ Existen principalmente tres tipos de interfaz:
 \end_layout
 
 \begin_layout Description
-GUI Una interfaz gráfica de usuario (
+GUI Una interfaz gráfica de usuario 
 \begin_inset Quotes fld
 \end_inset
 
+
+\family sans
 GUI
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
- por sus siglas en inglés 
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+GUI
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -5358,7 +6671,12 @@ Graphical User Interface
 \begin_inset Quotes frd
 \end_inset
 
-),
+
+\end_layout
+
+\end_inset
+
+,
  es una forma de interactuar con un programa o sistema operativo mediante el uso de elementos gráficos,
  como ventanas,
  iconos,
@@ -5380,13 +6698,13 @@ Están diseñadas para ser fáciles de aprender y usar,
 status open
 
 \begin_layout Plain Layout
-Es importante notar que las interfaces gráficas en Linux son un programa de usuario opcional.
+Es importante notar que las interfaces gráficas en 
+\emph on
+Linux
+\emph default
+ son un programa de usuario opcional.
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -5401,7 +6719,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/kde.png
 	lyxscale 35
-	scale 21
+	scale 22
 
 \end_inset
 
@@ -5429,6 +6747,8 @@ faLinux
 \begin_inset space ~
 \end_inset
 
+
+\emph on
 KDE Plasma
 \end_layout
 
@@ -5451,7 +6771,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/fluent.png
 	lyxscale 50
-	scale 37
+	scale 38
 
 \end_inset
 
@@ -5479,6 +6799,8 @@ faWindows
 \begin_inset space ~
 \end_inset
 
+
+\emph on
 Fluent Design
 \end_layout
 
@@ -5490,10 +6812,6 @@ Fluent Design
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -5501,11 +6819,48 @@ CLI Una
 \begin_inset Quotes fld
 \end_inset
 
+
+\family sans
 CLI
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
- (Command-Line Interface - Interfaz de Línea de Comandos) es una interfaz basada en texto,
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+CLI
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Interfaz de Línea de Comandos
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ es una interfaz basada en texto,
  donde el usuario interactúa con el sistema operativo escribiendo comandos específicos en una línea de comandos.
  
 \end_layout
@@ -5513,7 +6868,11 @@ CLI
 \begin_deeper
 \begin_layout Standard
 Requieren un mayor conocimiento técnico y la memorización de comandos,
- pero consumen menos recursos del sistema en comparación con las GUIs.
+ pero consumen menos recursos del sistema en comparación con las 
+\family sans
+GUIs
+\family default
+.
 \end_layout
 
 \end_deeper
@@ -5522,7 +6881,11 @@ Requieren un mayor conocimiento técnico y la memorización de comandos,
 status open
 
 \begin_layout Plain Layout
-En esta materia estudiaremos principalmente una CLI.
+En esta materia estudiaremos principalmente una 
+\family sans
+CLI
+\family default
+.
 \end_layout
 
 \end_inset
@@ -5531,8 +6894,52 @@ En esta materia estudiaremos principalmente una CLI.
 \end_layout
 
 \begin_layout Description
-TUI TUI (Text-based User Interface - Interfaz de Usuario Basada en Texto):
- Es una interfaz híbrida que combina elementos de las CLIs y las GUIs.
+TUI 
+\family sans
+Una TUI
+\family default
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family sans
+TUI
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Text-based User Interface
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ es una interfaz híbrida que combina elementos de las 
+\family sans
+CLIs
+\family default
+ y las 
+\family sans
+GUIs
+\family default
+.
  Se ejecuta en un entorno de texto,
  pero utiliza caracteres y colores para crear una apariencia más visual y estructurada,
  con elementos como menús,
@@ -5600,7 +7007,11 @@ A menudo se utilizan términos como
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 terminal
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -5609,7 +7020,11 @@ terminal
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 consola virtual
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -5618,7 +7033,11 @@ consola virtual
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 emulador de terminal
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -5626,7 +7045,11 @@ emulador de terminal
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 intérprete de línea de comandos
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -5647,10 +7070,14 @@ Consola
 \end_inset
 
 virtual Es una aplicación implementada dentro del núcleo que provee acceso al sistema simulando una terminal de teletipo.
- En los sistemas tipo Unix 
+ En los sistemas tipo 
 \emph on
-con entorno gráfico
+Unix
 \emph default
+ 
+\series bold
+con entorno gráfico
+\series default
  se puede acceder a ellas presionando 
 \begin_inset ERT
 status open
@@ -5685,9 +7112,9 @@ faKeyboardO
  Ctrl+Alt+F2,
  etc.
  En los sistemas 
-\emph on
+\series bold
 sin entorno gráfico
-\emph default
+\series default
  la combinación de teclas es 
 \begin_inset ERT
 status open
@@ -5775,7 +7202,9 @@ faLinux
 \begin_inset space ~
 \end_inset
 
-Consola virtual en Ubuntu
+Consola virtual en 
+\emph on
+Ubuntu
 \end_layout
 
 \end_inset
@@ -5882,7 +7311,13 @@ faLinux
 \begin_inset space ~
 \end_inset
 
-Qterminal en Lubuntu
+
+\family typewriter
+Qterminal
+\family default
+ en 
+\emph on
+Lubuntu
 \end_layout
 
 \end_inset
@@ -5900,7 +7335,11 @@ Shell También llamado
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 interprete de linea de comandos
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6109,7 +7548,11 @@ Ejecución Cuando un proceso es seleccionado por el planificador del sistema,
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 ejecución
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6124,7 +7567,11 @@ Bloqueado Un proceso puede entrar en el estado
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 bloqueado
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6141,7 +7588,11 @@ Finalización Cuando un proceso ha terminado de ejecutar todas sus instrucciones
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 finalización
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6191,7 +7642,11 @@ Distribuciones
 \end_layout
 
 \begin_layout Standard
-Las distribuciones de Linux son sistemas operativos basados en el kernel de Linux,
+Las distribuciones de Linux son sistemas operativos basados en el kernel de 
+\emph on
+Linux
+\emph default
+,
  que están compuestos por una combinación de software libre y de código abierto,
  como aplicaciones,
  controladores,
@@ -6204,7 +7659,11 @@ Las distribuciones de Linux son sistemas operativos basados en el kernel de Linu
 \end_layout
 
 \begin_layout Standard
-Existen muchas distribuciones de Linux diferentes,
+Existen muchas distribuciones de 
+\emph on
+Linux
+\emph default
+ diferentes,
  como 
 \begin_inset CommandInset href
 LatexCommand href
@@ -6214,7 +7673,11 @@ literal "true"
 
 \end_inset
 
- Debian,
+ 
+\emph on
+Debian
+\emph default
+,
  
 \begin_inset CommandInset href
 LatexCommand href
@@ -6224,7 +7687,11 @@ literal "true"
 
 \end_inset
 
- Ubuntu,
+ 
+\emph on
+Ubuntu
+\emph default
+,
  
 \begin_inset CommandInset href
 LatexCommand href
@@ -6234,7 +7701,11 @@ literal "true"
 
 \end_inset
 
- Red Hat,
+ 
+\emph on
+Red Hat
+\emph default
+,
  
 \begin_inset CommandInset href
 LatexCommand href
@@ -6244,7 +7715,11 @@ literal "true"
 
 \end_inset
 
- Arch Linux,
+ 
+\emph on
+Arch Linux
+\emph default
+,
  entre otras.
  Cada distribución tiene sus propias características,
  objetivos y filosofía,
@@ -6256,8 +7731,24 @@ literal "true"
 status open
 
 \begin_layout Plain Layout
-El concepto de distribución de Linux se hereda de los sistemas operativos estilo UNIX donde las universidades comenzaron a desarrollar sus propias versiones,
- como System V y BSD.
+El concepto de distribución de 
+\emph on
+Linux
+\emph default
+ se hereda de los sistemas operativos estilo 
+\emph on
+Unix
+\emph default
+ donde las universidades comenzaron a desarrollar sus propias versiones,
+ como 
+\emph on
+System V
+\emph default
+ y 
+\family sans
+BSD
+\family default
+.
 \end_layout
 
 \end_inset
@@ -6266,9 +7757,17 @@ El concepto de distribución de Linux se hereda de los sistemas operativos estil
 \end_layout
 
 \begin_layout Standard
-Las distribuciones de Linux existen porque el software de código abierto permite a los usuarios y desarrolladores acceder,
+Las distribuciones de 
+\emph on
+Linux
+\emph default
+ existen porque el software de código abierto permite a los usuarios y desarrolladores acceder,
  modificar y distribuir el código fuente del software.
- Esto ha permitido que muchas personas y comunidades puedan desarrollar y distribuir sus propias versiones personalizadas de Linux.
+ Esto ha permitido que muchas personas y comunidades puedan desarrollar y distribuir sus propias versiones personalizadas de 
+\emph on
+Linux
+\emph default
+.
  Además,
  al ser un sistema operativo altamente personalizable y adaptable,
  cada distribución puede estar diseñada para satisfacer las necesidades específicas de diferentes usuarios,
@@ -6313,7 +7812,9 @@ faLinux
 
 \end_inset
 
-Linea de tiempo de distribuciones de Linux
+Linea de tiempo de distribuciones de 
+\emph on
+Linux
 \end_layout
 
 \end_inset
@@ -6345,7 +7846,11 @@ Hay varias opciones disponibles para
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 apagar
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6358,7 +7863,11 @@ Apagado Cuando se selecciona la opción de
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 apagar
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6373,7 +7882,11 @@ Reinicio Al seleccionar la opción
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 reiniciar
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6388,7 +7901,11 @@ Hibernación La opción de
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 hibernar
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6404,7 +7921,11 @@ hibernar
 status open
 
 \begin_layout Plain Layout
-La información almacenada en la memoria RAM se guarda en un archivo o en una partición exclusiva dedicada a tal propósito.
+La información almacenada en la memoria 
+\family sans
+RAM
+\family default
+ se guarda en un archivo o en una partición exclusiva dedicada a tal propósito.
 \end_layout
 
 \end_inset
@@ -6418,12 +7939,20 @@ Suspensión La opción
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 suspender
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
  pone la computadora en un estado de bajo consumo de energía,
- dejando alimentada solamente la memoria RAM.
+ dejando alimentada solamente la memoria 
+\family sans
+RAM
+\family default
+.
  De esta manera los programas y procesos en ejecución se conservan y la computadora puede volver a su estado anterior cuando se reanude la actividad.
  Esta opción es útil para ahorrar energía y reanudar rápidamente el trabajo en curso.
 \end_layout
@@ -6435,7 +7964,11 @@ status open
 
 \begin_layout Plain Layout
 Si se llega a producir un corte en el suministro eléctrico,
- el estado de la computadora se pierde pues la RAM será incapaz de retener su información.
+ el estado de la computadora se pierde pues la 
+\family sans
+RAM
+\family default
+ será incapaz de retener su información.
 \end_layout
 
 \end_inset
@@ -6462,7 +7995,11 @@ literal "true"
 
 \end_inset
 
- memoria principal
+ 
+\emph on
+memoria principal
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6470,7 +8007,11 @@ literal "true"
  esta es de acceso volátil,
  lo que significa que se borra cuando se apaga la computadora.
  Por lo tanto,
- la memoria RAM solo puede almacenar temporalmente los programas y datos que están en uso en ese momento.
+ la memoria 
+\family sans
+RAM
+\family default
+ solo puede almacenar temporalmente los programas y datos que están en uso en ese momento.
 \end_layout
 
 \begin_layout Standard
@@ -6487,7 +8028,11 @@ literal "true"
 
 \end_inset
 
- memorias secundarias
+ 
+\emph on
+memorias secundarias
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6501,13 +8046,21 @@ Acceso aleatorio y secuencial
 
 \begin_layout Standard
 Un dispositivo de acceso aleatorio,
- como una unidad de estado sólido o USB,
+ como una unidad de estado sólido o 
+\family sans
+USB
+\family default
+,
  permite el acceso directo a cualquier ubicación en el medio de almacenamiento.
  Esto significa que se puede acceder a cualquier archivo o dato almacenado en el dispositivo sin tener que pasar por los datos que están almacenados 
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 antes
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6515,7 +8068,11 @@ antes
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 después
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6539,7 +8096,11 @@ Puesto que los dispositivos de acceso aleatorio son muy rápidos,
 \begin_layout Standard
 Por otro lado,
  un dispositivo de acceso secuencial,
- como un disco rígido o DVD,
+ como un disco rígido o 
+\family sans
+DVD
+\family default
+,
  requiere que los datos se lean en secuencia,
  desde el principio del medio de almacenamiento hasta el final.
  Esto significa que para acceder a un archivo o dato específico,
@@ -6746,7 +8307,11 @@ journaling
 status open
 
 \begin_layout Plain Layout
-En los sistemas Linux,
+En los sistemas 
+\emph on
+Linux
+\emph default
+,
  el sistema de archivos mas utilizados es 
 \begin_inset Quotes fld
 \end_inset
@@ -6769,7 +8334,11 @@ ext4
 \end_inset
 
 ,
- mientras que en los sistemas Windows se utiliza 
+ mientras que en los sistemas 
+\emph on
+Windows
+\emph default
+ se utiliza 
 \begin_inset Quotes fld
 \end_inset
 
@@ -6783,9 +8352,9 @@ literal "true"
 \end_inset
 
  
-\emph on
+\family sans
 NTFS
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -6826,7 +8395,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/particiones.png
 	lyxscale 40
-	scale 26
+	scale 23
 
 \end_inset
 
@@ -6846,13 +8415,6 @@ Particionado de un dispositivo de almacenamiento
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -6897,7 +8459,11 @@ La jerarquía de directorios en un sistema de archivos se llama árbol de direct
 status open
 
 \begin_layout Plain Layout
-En los sistemas Linux existe un solo directorio raíz llamado 
+En los sistemas 
+\emph on
+Linux
+\emph default
+ existe un solo directorio raíz llamado 
 \begin_inset Quotes fld
 \end_inset
 
@@ -6910,12 +8476,20 @@ En los sistemas Linux existe un solo directorio raíz llamado
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 montan
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
  el resto de los dispositivos.
- En los sistemas Windows cada partición tiene su propio directorio raíz llamado 
+ En los sistemas 
+\emph on
+Windows
+\emph default
+ cada partición tiene su propio directorio raíz llamado 
 \begin_inset Quotes fld
 \end_inset
 
@@ -6939,7 +8513,11 @@ Para navegar a través de los directorios del sistema en un entorno gráfico,
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 administrador de archivos
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -6957,7 +8535,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pcmanfm.png
 	lyxscale 40
-	scale 31
+	scale 38
 
 \end_inset
 
@@ -6985,6 +8563,8 @@ faLinux
 \begin_inset space ~
 \end_inset
 
+
+\family typewriter
 PCManFM
 \end_layout
 
@@ -7007,7 +8587,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/explorador.png
 	lyxscale 30
-	scale 24
+	scale 29
 
 \end_inset
 
@@ -7049,6 +8629,9 @@ Explorador de archivos
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
 Existen dos tipos de rutas que se utilizan para referirse a la ubicación de un archivo o directorio en un sistema de archivos:
  rutas absolutas y rutas relativas.
 \end_layout
@@ -7157,25 +8740,16 @@ bin/bash
 El sistema de archivos de Linux
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hay que aclarar que Linux distingue entre mayúsculas y minúsculas y que los archivos que comienzan con punto son ocultos.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Esquema de particionado
 \end_layout
 
 \begin_layout Standard
-Linux puede instalarse en una variedad de esquemas de particionado,
+
+\emph on
+Linux
+\emph default
+ puede instalarse en una variedad de esquemas de particionado,
  pero uno de los más comunes es el esquema de particionado convencional,
  que utiliza tres particiones para el sistema:
 \end_layout
@@ -7190,7 +8764,11 @@ Una partición destinada a almacenar los programas de usuario y documentos.
 
 \begin_layout Itemize
 Una partición de intercambio,
- reservada para ser utilizada cuando la memoria RAM se agota.
+ reservada para ser utilizada cuando la memoria 
+\family sans
+RAM
+\family default
+ se agota.
 \end_layout
 
 \begin_layout Standard
@@ -7243,6 +8821,8 @@ faLinux
 \begin_inset space ~
 \end_inset
 
+
+\family typewriter
 GParted
 \end_layout
 
@@ -7261,7 +8841,11 @@ Nomenclatura de dispositivos
 \end_layout
 
 \begin_layout Standard
-En Linux,
+En 
+\emph on
+Linux
+\emph default
+,
  los discos duros y particiones se nombran usando un esquema de nomenclatura estandarizado.
  Cada dispositivo se identifica por un nombre que se genera automáticamente y que puede estar compuesto de diferentes elementos.
 \end_layout
@@ -7274,14 +8858,18 @@ El nombre asignado a un dispositivo de almacenamiento consta de tres partes:
 Una sigla identificadora del tipo de dispositivo.
  En general,
  los discos rígidos,
- unidades de estado sólido y dispositivos USB empiezan con las letras 
+ unidades de estado sólido y dispositivos 
+\family sans
+USB
+\family default
+ empiezan con las letras 
 \begin_inset Quotes fld
 \end_inset
 
 
-\emph on
+\family typewriter
 sd
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -7296,9 +8884,9 @@ Una letra secuencial que identifica el dispositivo en relación con otros dispos
 \end_inset
 
 
-\emph on
+\family typewriter
 sda
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -7309,9 +8897,9 @@ sda
 \end_inset
 
 
-\emph on
+\family typewriter
 sdb
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -7326,9 +8914,9 @@ Un número adicional que indica la partición específica del dispositivo.
 \end_inset
 
 
-\emph on
+\family typewriter
 sda1
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -7339,9 +8927,9 @@ sda1
 \end_inset
 
 
-\emph on
+\family typewriter
 sda2
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -7410,7 +8998,15 @@ A continuación,
 
 \begin_layout Description
 /bin Este directorio contiene los programas del sistema,
- como comandos básicos de GNU/Linux.
+ como comandos básicos de 
+\family sans
+GNU
+\family default
+/
+\emph on
+Linux
+\emph default
+.
 \end_layout
 
 \begin_layout Description
@@ -7419,7 +9015,11 @@ A continuación,
 \end_layout
 
 \begin_layout Description
-/dev En Linux,
+/dev En 
+\emph on
+Linux
+\emph default
+,
  los dispositivos del hardware se representan como archivos especiales.
  En esta carpeta se encuentran esos archivos.
 \end_layout
@@ -7438,7 +9038,11 @@ A continuación,
 
 \begin_layout Description
 /mnt Este directorio se utiliza para montar sistemas de archivos externos,
- como unidades flash USB,
+ como unidades flash 
+\family sans
+USB
+\family default
+,
  discos duros externos,
  etc.
  En algunas distribuciones esto también se hace en el directorio 
@@ -7471,6 +9075,10 @@ A continuación,
 
  es un directorio virtual que contiene información sobre el sistema y los procesos en ejecución.
  Es generado en tiempo real por el kernel del sistema operativo.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -7521,7 +9129,11 @@ root
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 paquetes adicionales
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -7565,7 +9177,11 @@ faLinux
 \begin_inset space ~
 \end_inset
 
-Jerarquía de directorios estándar en Linux.
+Jerarquía de directorios estándar en 
+\emph on
+Linux
+\emph default
+.
 \end_layout
 
 \end_inset
@@ -7573,6 +9189,62 @@ Jerarquía de directorios estándar en Linux.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+A diferencia de 
+\emph on
+Windows
+\emph default
+,
+ 
+\emph on
+Linux
+\emph default
+ es sensible a mayúsculas y minúsculas.
+ Esto quiere decir que 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+Archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ son considerados dos archivos diferentes.
+\end_layout
+
+\begin_layout Plain Layout
+Además todos aquellos archivos y carpetas que en su nombre comiencen con un punto,
+ son considerados archivos ocultos.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -7583,7 +9255,11 @@ Carpetas especiales
 \end_layout
 
 \begin_layout Standard
-Existen tres carpetas especiales en los sistemas Linux:
+Existen tres carpetas especiales en los sistemas 
+\emph on
+Linux
+\emph default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -7592,31 +9268,6 @@ El punto (
 .
 \family default
 ) es una carpeta especial que representa el directorio actual en el que se encuentra el usuario.
- Por ejemplo,
- si el usuario se encuentra en el directorio 
-\family typewriter
-/home/user
-\family default
-,
- entonces el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ls .
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- mostrará el contenido del directorio actual,
- es decir,
- 
-\family typewriter
-/home/user
-\family default
-.
 \end_layout
 
 \begin_layout Itemize
@@ -7625,31 +9276,6 @@ Los dos puntos (
 ..
 \family default
 ) representan el directorio padre del directorio actual.
- Por ejemplo,
- si el usuario se encuentra en el directorio 
-\family typewriter
-/home/user
-\family default
-,
- el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ls ..
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- mostrará el contenido del directorio padre,
- es decir,
- 
-\family typewriter
-/home
-\family default
-.
 \end_layout
 
 \begin_layout Itemize
@@ -7658,37 +9284,6 @@ El símbolo de tilde (
 ~
 \family default
 ) representa el directorio principal del usuario.
- Por ejemplo,
- si el usuario es 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-user
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-,
- entonces el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-cd ~
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- lo llevará al directorio 
-\family typewriter
-/home/user
-\family default
-.
 \end_layout
 
 \begin_layout Standard
@@ -7744,43 +9339,16 @@ El punto de montaje es un directorio en el sistema de archivos raíz,
  el contenido del sistema de archivos se vuelve accesible en el punto de montaje especificado.
 \end_layout
 
-\begin_layout Standard
-El comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-mount
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- se utiliza para montar un sistema de archivos en Linux.
- El comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-mount
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- requiere varios parámetros,
- incluyendo la ubicación del dispositivo de almacenamiento y el punto de montaje.
- 
-\end_layout
-
 \begin_layout Subsection
 Enlaces
 \end_layout
 
 \begin_layout Standard
-En Linux,
+En 
+\emph on
+Linux
+\emph default
+,
  existen dos tipos de enlaces para archivos:
  enlaces suaves (también conocidos como enlaces simbólicos o 
 \begin_inset Quotes fld
@@ -7823,7 +9391,11 @@ Un enlace suave es un archivo especial que apunta a otro archivo en el sistema d
 status open
 
 \begin_layout Plain Layout
-Los enlaces suaves de Linux son equivalentes a los 
+Los enlaces suaves de 
+\emph on
+Linux
+\emph default
+ son equivalentes a los 
 \begin_inset Quotes fld
 \end_inset
 
@@ -7835,7 +9407,11 @@ accesos directos
 \begin_inset Quotes frd
 \end_inset
 
- en los sistemas Windows.
+ en los sistemas 
+\emph on
+Windows
+\emph default
+.
 \end_layout
 
 \end_inset
@@ -7910,13 +9486,29 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-Bash es un interprete de linea de comandos y un lenguaje de programación de scripting utilizado principalmente en sistemas operativos tipo Unix.
- Es el intérprete de comandos por defecto en la mayoría de las distribuciones de Linux.
+
+\emph on
+Bash
+\emph default
+ es un interprete de linea de comandos y un lenguaje de programación de scripting utilizado principalmente en sistemas operativos tipo 
+\emph on
+Unix
+\emph default
+.
+ Es el intérprete de comandos por defecto en la mayoría de las distribuciones de 
+\emph on
+Linux
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
 Permite a los usuarios interactuar con el sistema operativo mediante la entrada de comandos en un emulador de terminal.
- Con Bash,
+ Con 
+\emph on
+Bash
+\emph default
+,
  los usuarios pueden ejecutar programas,
  gestionar archivos y directorios,
  automatizar tareas y realizar una amplia variedad de operaciones de administración del sistema.
@@ -7925,7 +9517,11 @@ Permite a los usuarios interactuar con el sistema operativo mediante la entrada 
 \begin_layout Standard
 Además,
  también es un lenguaje de scripting que permite a los usuarios escribir programas para automatizar tareas repetitivas o complejas.
- Estos scripts pueden incluir una serie de comandos de Bash y se pueden ejecutar en una terminal o programarse para que se ejecuten automáticamente en momentos específicos.
+ Estos scripts pueden incluir una serie de comandos de 
+\emph on
+Bash
+\emph default
+ y se pueden ejecutar en una terminal o programarse para que se ejecuten automáticamente en momentos específicos.
 \end_layout
 
 \begin_layout Paragraph
@@ -7935,7 +9531,7 @@ Sintaxis
 \begin_layout Standard
 La sintaxis
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Es importante seguir la sintaxis correcta de un comando,
@@ -8174,7 +9770,11 @@ Historial
 \end_layout
 
 \begin_layout Standard
-Cada vez que se escribe y ejecuta un comando en Bash,
+Cada vez que se escribe y ejecuta un comando en 
+\emph on
+Bash
+\emph default
+,
  se agrega al historial de comandos.
  Esto permite acceder a los comandos previamente ejecutados para volver a ejecutarlos o modificarlos en lugar de volver a escribirlos desde cero.
  Para poder acceder fácilmente al historial,
@@ -8243,7 +9843,11 @@ Ctrl+R:
 \end_layout
 
 \begin_layout Standard
-Además bash permite repetir comandos anteriores fácilmente:
+Además 
+\emph on
+Bash
+\emph default
+ permite repetir comandos anteriores fácilmente:
 \end_layout
 
 \begin_layout Itemize
@@ -8260,7 +9864,11 @@ Cuando se utiliza
 \end_inset
 
  en un comando,
- Bash lo interpreta como una referencia al último comando ejecutado.
+ 
+\emph on
+Bash
+\emph default
+ lo interpreta como una referencia al último comando ejecutado.
  Es útil cuando deseas repetir el comando anterior rápidamente.
 \end_layout
 
@@ -8365,6 +9973,10 @@ echo Hola mundo
 Hola mundo
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -8524,26 +10136,13 @@ man
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar información sobre info pages
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El comando 
 \family typewriter
 man
 \family default
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -8561,7 +10160,11 @@ man
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 manual
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -8616,14 +10219,11 @@ man [opciones] comando
 \end_layout
 
 \begin_layout Standard
+Las opciones más comunes incluyen:
 \begin_inset Newpage pagebreak
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Las opciones más comunes incluyen:
 \end_layout
 
 \begin_layout Itemize
@@ -8846,7 +10446,11 @@ Podemos consultar cuales comandos sirven para
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 listar directorios
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -8942,6 +10546,10 @@ ls (1p)
 vdir (1) - list directory contents
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -9082,7 +10690,11 @@ La opción
 \begin_inset Quotes frd
 \end_inset
 
- puede agregarse para evitar que se borre el historial desplazamiento del emulador de terminal.
+ puede agregarse para evitar que se borre el historial desplazamiento del 
+\series bold
+emulador de terminal
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -9399,7 +11011,11 @@ El comando
 history
 \family default
  no es un programa de usuario,
- sino una funcionalidad que provee Bash.
+ sino una funcionalidad que provee 
+\emph on
+Bash
+\emph default
+.
 \end_layout
 
 \end_inset
@@ -9637,26 +11253,162 @@ faKeyboardO
 Ctrl+W.
 \end_layout
 
-\begin_layout Section
-Sistema de archivos
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigüe para que sirven los comandos 
+\family typewriter
+
+\begin_inset Quotes fld
+\end_inset
+
+info
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+help
+\begin_inset Quotes frd
+\end_inset
+
+,
+
+\family default
+ y cuáles son sus diferencias con 
+\family typewriter
+
+\begin_inset Quotes fld
+\end_inset
+
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Consulte la ayuda del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+clear
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y con la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+–-help
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Explique la salida en pantalla de los siguientes comandos:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
 status open
 
 \begin_layout Plain Layout
-Si se sacan los comandos de la parte de fundamentos,
- habría que darles mayor profundidad aca.
-\end_layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
 
 \begin_layout Plain Layout
-lsblk
+
+echo ~
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo 
+\backslash
+~
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sistema de archivos
 \end_layout
 
 \begin_layout Subsection
@@ -9681,7 +11433,7 @@ pwd
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -9711,7 +11463,11 @@ Print Working Directory
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 mostrar directorio de trabajo
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -9981,6 +11737,10 @@ cd
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -10187,9 +11947,9 @@ ls
 \end_inset
 
 
-\emph on
+\family sans
 KB
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -10199,9 +11959,9 @@ KB
 \end_inset
 
 
-\emph on
+\family sans
 MB
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -10224,20 +11984,6 @@ MB
 :
  muestra todos los archivos y directorios,
  incluyendo los que comienzan con un punto.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-En el sistema de archivos de Linux,
- los archivos que comienzan con un punto se consideran archivos ocultos.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -10276,7 +12022,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-dsh dsh.c entornos final hola.c hola.py hola.s
+dsh dsh.c entorno final hola.c hola.py hola.s
 \end_layout
 
 \end_inset
@@ -10332,7 +12078,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-./ ../ dsh dsh.c entornos final hola.c hola.py hola.s .oculto
+./ ../ dsh dsh.c entorno final hola.c hola.py hola.s .oculto
 \end_layout
 
 \end_inset
@@ -10389,13 +12135,13 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
--rwxr-xr-x 1 damian wheel 15832 abr 12 19:33 dsh
+-rwxr-xr-x 1 entorno wheel 15832 abr 12 19:33 dsh
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
--rw-r--r-- 1 damian wheel
+-rw-r--r-- 1 entorno wheel
 \begin_inset space ~
 \end_inset
 
@@ -10405,17 +12151,17 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-drwxr-xr-x 6 damian wheel 
+drwxr-xr-x 6 entorno wheel 
 \begin_inset space ~
 \end_inset
 
-4096 abr 17 13:54 entornos
+4096 abr 17 13:54 entorno
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
-drwxr-xr-x 4 damian wheel 
+drwxr-xr-x 4 entorno wheel 
 \begin_inset space ~
 \end_inset
 
@@ -10425,7 +12171,7 @@ drwxr-xr-x 4 damian wheel
 \begin_layout Plain Layout
 
 \family typewriter
--rw-r--r-- 1 damian wheel 
+-rw-r--r-- 1 entorno wheel 
 \begin_inset space ~
 \end_inset
 
@@ -10443,7 +12189,7 @@ drwxr-xr-x 4 damian wheel
 \begin_layout Plain Layout
 
 \family typewriter
--rw-r--r-- 1 damian wheel 
+-rw-r--r-- 1 entorno wheel 
 \begin_inset space ~
 \end_inset
 
@@ -10461,7 +12207,7 @@ drwxr-xr-x 4 damian wheel
 \begin_layout Plain Layout
 
 \family typewriter
--rw-r--r-- 1 damian wheel 
+-rw-r--r-- 1 entorno wheel 
 \begin_inset space ~
 \end_inset
 
@@ -10551,7 +12297,15 @@ tree
 \begin_inset Quotes frd
 \end_inset
 
- en sistemas Unix y Linux es una herramienta de línea de comandos que muestra la estructura de directorios y archivos en forma de árbol.
+ en sistemas 
+\emph on
+Unix
+\emph default
+ y 
+\emph on
+Linux
+\emph default
+ es una herramienta de línea de comandos que muestra la estructura de directorios y archivos en forma de árbol.
  Su uso básico es bastante simple,
  y puede proporcionar una vista jerárquica clara de la organización de archivos en un directorio y sus subdirectorios.
 \end_layout
@@ -10655,7 +12409,60 @@ Algunas opciones comunes incluyen:
 \end_layout
 
 \begin_layout Example
-Comprobemos la jerarquía de archivos de Linux usando el comando 
+Si ejecutamos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tree
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en una carpeta vacía obtendremos esta salida:
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+0 directories,
+ 0 files
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Comprobemos la jerarquía de archivos de 
+\emph on
+Linux
+\emph default
+ usando el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -10939,7 +12746,7 @@ status open
 
 \begin_layout Plain Layout
 
-mkdir [opciones] directorio...
+mkdir [opciones] directorio ...
 \end_layout
 
 \end_inset
@@ -10957,19 +12764,27 @@ Donde
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 opciones
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
- son las opciones que se pueden utilizar para personalizar la creación del directorio y 
+ son las opciones que se pueden utilizar para personalizar la creación de la carpeta y 
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 directorio
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
- es el nombre del directorio que se desea crear.
+ es el nombre de la carpeta que se desea crear.
 \end_layout
 
 \begin_layout Standard
@@ -10993,6 +12808,10 @@ Algunas de las opciones comunes incluyen:
  incluso si no existen.
  Si ya existe un directorio con el mismo nombre que uno de los directorios de la ruta,
  se ignora sin dar errores.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -11181,7 +13000,7 @@ rmdir
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -11209,9 +13028,9 @@ remover directorio
 \end_inset
 
  es utilizado para eliminar directorios 
-\emph on
+\series bold
 vacíos
-\emph default
+\series default
  en el sistema de archivos.
  La sintaxis básica del comando 
 \begin_inset Quotes fld
@@ -11482,6 +13301,35 @@ touch
 
 \end_layout
 
+\begin_layout Example
+Podemos crear tres archivos vacíos con el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo1 archivo2 archivo3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -11504,7 +13352,7 @@ rm
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -11512,7 +13360,7 @@ status open
 
 
 \family typewriter
-rmdir
+rm
 \family default
 
 \begin_inset Quotes frd
@@ -11559,7 +13407,7 @@ status open
 
 \begin_layout Plain Layout
 
-rm [opciones] archivo...
+rm [opciones] archivo ...
 \end_layout
 
 \end_inset
@@ -11567,6 +13415,10 @@ rm [opciones] archivo...
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -11627,9 +13479,9 @@ rm
 
 
 \family typewriter
--
+-i
 \family default
-i
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -11777,7 +13629,7 @@ cp
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -12035,7 +13887,7 @@ mv
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -12231,6 +14083,36 @@ mv nombre_original nombre_nuevo
 
 \end_layout
 
+\begin_layout Example
+Para traer a la carpeta actual un archivo de otra ubicación,
+ podemos usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mv ubicacion/archivo .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -12253,7 +14135,7 @@ df
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -12953,7 +14835,7 @@ du
 
  
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -13238,7 +15120,44 @@ ln
 \begin_inset Quotes frd
 \end_inset
 
- se utiliza en sistemas Linux para crear enlaces simbólicos o enlaces duros a archivos y directorios.
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ln
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ es una abreviatura de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+link
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ se utiliza en sistemas 
+\emph on
+Linux
+\emph default
+ para crear enlaces simbólicos o enlaces duros a archivos y directorios.
  Su sintaxis básica es la siguiente:
 \end_layout
 
@@ -13514,6 +15433,10 @@ lsblk
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -13551,6 +15474,11 @@ sdb      8:16   0   7,5G  0 disk
 \begin_layout Plain Layout
 
 +-sdb2   8:20   0   100M  0 part
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -14394,6 +16322,10 @@ status open
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -14437,16 +16369,16 @@ locate
 \end_layout
 
 \begin_layout Subsection
-Comodines
+Expansiones
 \end_layout
 
 \begin_layout Standard
-Los comodines,
- también conocidos como wildcards en inglés,
+Las expansiones,
+ también conocidas como comodines,
  son caracteres especiales que se utilizan para representar patrones de búsqueda en 
-\emph on
+\series bold
 nombres de archivos y directorios
-\emph default
+\series default
 .
 \end_layout
 
@@ -14762,6 +16694,97 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
+Conjeture cual será la salida por pantalla de los siguientes comandos y verifíquelo:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ~
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ..
+\end_layout
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ~
+\end_layout
+
+\begin_layout Plain Layout
+
+cd -
+\end_layout
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Investigue con el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -14800,6 +16823,19 @@ ls
 
 \begin_layout Exercise
 Escriba un comando para hacer una lista de los programas del sistema.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Recuerde en que carpeta del sistema se ubican los programas.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -14849,7 +16885,7 @@ faStar
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -15036,7 +17072,7 @@ faStar
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -15087,6 +17123,10 @@ rmdir
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset Separator plain
 \end_inset
 
@@ -15305,7 +17345,46 @@ rm:
 \end_layout
 
 \begin_layout Exercise
-Manipule el sistema de archivos para que el comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+ Manipule el sistema de archivos para que el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -15446,7 +17525,7 @@ faStar
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -15863,18 +17942,16 @@ Averigüe cuales son los programas de usuario instalados en su computadora,
 \end_layout
 
 \begin_layout Exercise
-Cree un archivo con el nombre de cada fecha del año.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
+Asumiendo que todos los meses tienen 31 días,
+ cree un archivo vacío por cada fecha del año.
+\begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Separator plain
 \end_inset
 
 
