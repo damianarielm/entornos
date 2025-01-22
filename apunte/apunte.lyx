@@ -104,19 +104,50 @@ Estandarizar tipografías:
 \end_layout
 
 \begin_layout Itemize
-Comandos.
+
+\family typewriter
+Comandos y archivos
+\family default
+.
 \end_layout
 
 \begin_layout Itemize
-Sustantivos propios.
+
+\shape smallcaps
+Sustantivos propios
+\shape default
+.
 \end_layout
 
 \begin_layout Itemize
-Expresiones en ingles.
+
+\bar under
+Expresiones en ingles
+\bar default
+.
 \end_layout
 
 \begin_layout Itemize
-Palabras encomilladas.
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Palabras encomilladas
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Resaltado
+\series default
+.
 \end_layout
 
 \end_inset
@@ -145,7 +176,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-17 de enero de 2025
+21 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -6827,35 +6858,6 @@ Particionado de un dispositivo de almacenamiento
 
 \end_layout
 
-\begin_layout Standard
-Para observar los discos y particiones de un sistema podemos usar el comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-lsblk
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Estructura de directorios
 \end_layout
@@ -6947,11 +6949,6 @@ administrador de archivos
 \end_layout
 
 \begin_layout Standard
-En esta sección aprenderemos a llevar a cabo esas mismas acciones,
- pero desde una ventana de terminal.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -6960,7 +6957,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/pcmanfm.png
 	lyxscale 40
-	scale 39
+	scale 31
 
 \end_inset
 
@@ -7010,7 +7007,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/explorador.png
 	lyxscale 30
-	scale 30
+	scale 24
 
 \end_inset
 
@@ -7039,201 +7036,6 @@ faWindows
 \end_inset
 
 Explorador de archivos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En la barra de dirección del administrador de archivos,
- podemos observar en que posición de la estructura de directorios nos encontramos en este momento.
- Esa misma información podemos obtenerla en una terminal con el siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-pwd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-El programa 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-pwd
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- recibe su nombre de las siglas en ingles 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-Print Working Directory
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
- (mostrar directorio de trabajo).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El administrador de archivos nos muestra también en su ventana el contenido del directorio de trabajo actual.
- Para lograr lo mismo desde la consola escribimos:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-ls
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para cambiar la carpeta en la que estamos desde el entorno gráfico simplemente hacemos doble click en la carpeta que pretendemos.
- Para cambiar de carpeta desde una terminal disponemos del siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-cd carpeta
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En el entorno gráfico para acceder al directorio padre del directorio actual hacemos click en la flecha hacia arriba.
- El comando para lograr lo mismo es:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-cd ..
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Si queremos observar el árbol de directorios desde la posición actual,
- podemos escribir lo siguiente en la consola:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-tree
 \end_layout
 
 \end_inset
@@ -7586,199 +7388,6 @@ sda1
 
 \end_layout
 
-\begin_layout Example
-Observemos una posible salida del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-lsblk
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-lsblk
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-\end_layout
-
-\begin_layout Plain Layout
-
-sda      8:0    0    10G  0 disk
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sda1   8:1    0   100M  0 part /boot
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sda2   8:2    0   9,9G  0 part /
-\end_layout
-
-\begin_layout Plain Layout
-
-sdb      8:16   0   7,5G  0 disk
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sdb1   8:17   0   7,4G  0 part /mnt
-\end_layout
-
-\begin_layout Plain Layout
-
-+-sdb2   8:20   0   100M  0 part
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Podemos observar que este sistema tiene dos unidades de almacenamiento (
-\family typewriter
-sda
-\family default
- y 
-\family typewriter
-sdb
-\family default
-),
- cada una de ellas con dos particiones.
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-sda
-\family default
-:
- Esta unidad de almacenamiento tiene una capacidad de 10GB y se divide en dos particiones:
- 
-\family typewriter
-sda1
-\family default
- y 
-\family typewriter
-sda2
-\family default
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\family typewriter
-sda1
-\family default
-:
- Esta es la partición de arranque y tiene una capacidad de 100MB.
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-sda2
-\family default
-:
- Esta es la partición principal y esta montada en la raíz del sistema de archivos.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\family typewriter
-sdb
-\family default
-:
- Esta unidad de almacenamiento tiene una capacidad de 7,5GB y se divide en dos particiones:
- 
-\family typewriter
-sdb1
-\family default
- y 
-\family typewriter
-sdb2
-\family default
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\family typewriter
-sdb1
-\family default
-:
- Esta partición se encuentra montada en la carpeta 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-/mnt
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-sdb2
-\family default
-:
- La partición 
-\family typewriter
-sdb2
-\family default
- no se encuentra montada en el sistema de archivos.
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Subsection
 Jerarquía de archivos
 \end_layout
@@ -7791,13 +7400,6 @@ La jerarquía de archivos en el sistema de archivos se organiza en un árbol con
 \begin_layout Standard
 A continuación,
  se presentan algunos de los directorios más importantes de la jerarquía de archivos:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -8114,13 +7716,6 @@ Es importante notar que el carácter
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Montaje
 \end_layout
@@ -8177,128 +7772,7 @@ mount
 
  requiere varios parámetros,
  incluyendo la ubicación del dispositivo de almacenamiento y el punto de montaje.
- Por ejemplo,
- para montar un dispositivo de almacenamiento USB en el punto de montaje 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-/mnt
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-,
- el siguiente comando puede ser utilizado:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-sudo mount /dev/sdb1 /mnt
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-El uso del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-sudo
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- en el principio del comando indica que se necesita permisos de administrador para montar el dispositivo de almacenamiento.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para desmontar un sistema de archivos,
- se utiliza el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-umount
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- El comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-umount
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- se utiliza para desmontar un sistema de archivos que se encuentra actualmente en uso y liberar el punto de montaje.
- Por ejemplo,
- para desmontar el dispositivo de almacenamiento USB montado anteriormente podemos usar el siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-sudo umount /mnt
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -8370,186 +7844,11 @@ accesos directos
 \end_layout
 
 \begin_layout Standard
-Para crear un enlace suave en Linux,
- se utiliza el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ln
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- El comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ln
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- crea un enlace entre dos archivos y la opción 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
--s
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- indica que se creará un enlace suave.
- Por ejemplo,
- para crear un enlace suave llamado 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-enlace
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- que apunte al archivo 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-archivo
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-,
- se puede usar el siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-ln -s archivo enlace
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Un enlace duro es una entrada de directorio adicional que apunta al mismo archivo en el sistema de archivos.
  A diferencia de los enlaces suaves,
  los enlaces duros no son archivos independientes y no pueden apuntar a archivos en diferentes sistemas de archivos o particiones.
  Si se elimina el archivo original,
  el enlace duro sigue siendo válido y no se elimina hasta que todos los enlaces se eliminan.
-\end_layout
-
-\begin_layout Standard
-Para crear un enlace duro en Linux,
- se utiliza el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ln
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- sin la opción 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
--s
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- Por ejemplo,
- para crear un enlace duro llamado 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-enlace
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- que apunte al archivo 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-archivo
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-,
- se puede usar el siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-ln archivo enlace
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Introduccion
@@ -10349,6 +9648,10 @@ status open
 \begin_layout Plain Layout
 Si se sacan los comandos de la parte de fundamentos,
  habría que darles mayor profundidad aca.
+\end_layout
+
+\begin_layout Plain Layout
+lsblk
 \end_layout
 
 \end_inset
@@ -14002,6 +13305,60 @@ ln
 
 \end_layout
 
+\begin_layout Example
+Para crear un enlace suave llamado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+enlace
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que apunte al archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ se puede usar el siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ln -s archivo enlace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \family typewriter
@@ -14139,6 +13496,174 @@ Algunas opciones comunes incluyen:
  sin detalles adicionales
 \end_layout
 
+\begin_layout Example
+Observemos una posible salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lsblk
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+\end_layout
+
+\begin_layout Plain Layout
+
+sda      8:0    0    10G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda1   8:1    0   100M  0 part /boot
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda2   8:2    0   9,9G  0 part /
+\end_layout
+
+\begin_layout Plain Layout
+
+sdb      8:16   0   7,5G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb1   8:17   0   7,4G  0 part /mnt
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb2   8:20   0   100M  0 part
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos observar que este sistema tiene dos unidades de almacenamiento (
+\family typewriter
+sda
+\family default
+ y 
+\family typewriter
+sdb
+\family default
+),
+ cada una de ellas con dos particiones.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sda
+\family default
+:
+ Esta unidad de almacenamiento tiene una capacidad de 10GB y se divide en dos particiones:
+ 
+\family typewriter
+sda1
+\family default
+ y 
+\family typewriter
+sda2
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+sda1
+\family default
+:
+ Esta es la partición de arranque y tiene una capacidad de 100MB.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sda2
+\family default
+:
+ Esta es la partición principal y esta montada en la raíz del sistema de archivos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+sdb
+\family default
+:
+ Esta unidad de almacenamiento tiene una capacidad de 7,5GB y se divide en dos particiones:
+ 
+\family typewriter
+sdb1
+\family default
+ y 
+\family typewriter
+sdb2
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+sdb1
+\family default
+:
+ Esta partición se encuentra montada en la carpeta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/mnt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+sdb2
+\family default
+:
+ La partición 
+\family typewriter
+sdb2
+\family default
+ no se encuentra montada en el sistema de archivos.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 
 \family typewriter
@@ -14227,7 +13752,7 @@ mount
 \begin_layout Plain Layout
 También es importante destacar que para montar un sistema de archivos,
  normalmente se necesitan privilegios de superusuario,
- por lo que se debe utilizar el comando 
+ por lo que se debe anteponer el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -14424,7 +13949,7 @@ status open
 \begin_layout Plain Layout
 Es importante destacar que para desmontar un sistema de archivos,
  normalmente se necesitan privilegios de superusuario,
- por lo que se debe utilizar el comando 
+ por lo que se debe anteponer el comando 
 \begin_inset Quotes fld
 \end_inset
 
