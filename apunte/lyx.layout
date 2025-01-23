@@ -465,7 +465,7 @@ End
 
 InsetLayout Flex:Peligro
       LyxType       Custom
-      LabelString   "PowerShell"
+      LabelString   "Precaucion"
       LatexType     Environment
       LatexName     tcolorbox
       BgColor       Red
