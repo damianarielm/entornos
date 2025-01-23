@@ -177,7 +177,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-22 de enero de 2025
+23 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -3873,6 +3873,19 @@ Distribución de teclado latinoamericana
 
 \begin_layout Chapter
 Representación de la información
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar mas ejemplos y ejercicios
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -7977,6 +7990,64 @@ RAM
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+¿Por qué no existen diferentes distribuciones de 
+\emph on
+Windows
+\emph default
+?
+\end_layout
+
 \begin_layout Chapter
 Sistema de archivos
 \end_layout
@@ -9427,6 +9498,154 @@ Un enlace duro es una entrada de directorio adicional que apunta al mismo archiv
  el enlace duro sigue siendo válido y no se elimina hasta que todos los enlaces se eliminan.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+No es posible hacer un enlace duro hacia un directorio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+Identifique cuáles de las siguientes rutas son absolutas y cuáles relativas:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+/
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+/home
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+..
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+home/entornos
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+¿Qué ruta representa 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+../../~/..
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+?
+\end_layout
+
 \begin_layout Introduccion
 \begin_inset Quotes fld
 \end_inset
@@ -9470,10 +9689,6 @@ login shell,
 
 \begin_layout Plain Layout
 opciones de depuracion
-\end_layout
-
-\begin_layout Plain Layout
-agregar explainshell
 \end_layout
 
 \end_inset
@@ -11091,16 +11306,14 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -11111,7 +11324,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -11123,7 +11336,7 @@ faStar
 
 \end_inset
 
- Utilice el comando 
+Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -11161,6 +11374,53 @@ cal
 
 .
  Pruebe cada uno de ellos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Consulte la ayuda del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+clear
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y con la opción 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+–-help
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -11262,80 +11522,45 @@ Ctrl+W.
 
 \begin_layout Exercise
 Averigüe para que sirven los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
 \family typewriter
-
-\begin_inset Quotes fld
-\end_inset
-
 info
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
+
+\family typewriter
  y 
+\family default
+
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 help
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
+
+\family typewriter
 ,
 
 \family default
  y cuáles son sus diferencias con 
-\family typewriter
-
-\begin_inset Quotes fld
-\end_inset
-
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Consulte la ayuda del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-clear
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- con el comando 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
 man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- y con la opción 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-–-help
 \family default
 
 \begin_inset Quotes frd
@@ -11409,6 +11634,19 @@ echo
 
 \begin_layout Section
 Sistema de archivos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quizas convenga mover lsblk y ln mas adelante.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -11841,7 +12079,11 @@ ls
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 listar
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -15331,7 +15573,11 @@ list block devices
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 listar dispositivos de bloque
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -16360,15 +16606,6 @@ find -type f -empty -exec touch {}
 \end_layout
 
 \begin_layout Subsection
-
-\family typewriter
-\emph off
-\strikeout on
-\color lightgray
-locate
-\end_layout
-
-\begin_layout Subsection
 Expansiones
 \end_layout
 
@@ -16546,6 +16783,10 @@ ls /bin/*64*
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -16694,181 +16935,6 @@ Ejercicios
 \end_layout
 
 \begin_layout Exercise
-Conjeture cual será la salida por pantalla de los siguientes comandos y verifíquelo:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-cd /
-\end_layout
-
-\begin_layout Plain Layout
-
-cd ~
-\end_layout
-
-\begin_layout Plain Layout
-
-cd ..
-\end_layout
-
-\begin_layout Plain Layout
-
-pwd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-cd /
-\end_layout
-
-\begin_layout Plain Layout
-
-cd ~
-\end_layout
-
-\begin_layout Plain Layout
-
-cd -
-\end_layout
-
-\begin_layout Plain Layout
-
-pwd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Investigue con el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-,
- que otras opciones tiene el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ls
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- Pruebe algunas de ellas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Escriba un comando para hacer una lista de los programas del sistema.
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-Recuerde en que carpeta del sistema se ubican los programas.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Averigüe para que sirve el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-stat
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
 \begin_inset ERT
 status open
 
@@ -16876,9 +16942,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -16896,7 +16960,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -16908,194 +16972,7 @@ faStar
 
 \end_inset
 
- Considere la siguiente salida en pantalla del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ls -log
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-total 4
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
-drwxr-xr-x 2 4096 may 1 23:46 archivo
-\end_layout
-
-\begin_layout Plain Layout
-
-\family typewriter
--rw-r--r-- 1
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-0 may 1 23:46 carpeta
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-¿Por qué da error el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-cd carpeta
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Considere la siguiente salida en pantalla del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-ls -Fa
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-./ ../ .../ ..../ ...../ ......
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-¿Cuántas carpetas hay en el directorio de trabajo actual?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Normalmente el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-cd cd
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- da error.
- ¿En cuál caso esto no es así?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
- Cree un directorio vacío con 
+Cree un directorio vacío con 
 \begin_inset Quotes fld
 \end_inset
 
@@ -17107,7 +16984,33 @@ mkdir
 \begin_inset Quotes frd
 \end_inset
 
- y luego bórrelo con 
+,
+ verifique que se haya creado con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ ingrese y salga de el con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y finalmente bórrelo con 
 \begin_inset Quotes fld
 \end_inset
 
@@ -17123,10 +17026,6 @@ rmdir
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \begin_inset Separator plain
 \end_inset
 
@@ -17141,14 +17040,39 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
 
 \end_inset
 
- Escriba la siguiente secuencia de comandos:
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba la siguiente secuencia de comandos:
 \end_layout
 
 \begin_layout Standard
@@ -17206,14 +17130,39 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
 
 \end_inset
 
- Escriba la siguiente secuencia de comandos:
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba la siguiente secuencia de comandos:
 \end_layout
 
 \begin_layout Standard
@@ -17259,14 +17208,39 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
 
 \end_inset
 
- Escriba el siguiente comando:
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba el siguiente comando:
 \end_layout
 
 \begin_layout Standard
@@ -17300,51 +17274,6 @@ Explique por qué se produce el error.
 \end_layout
 
 \begin_layout Exercise
-Considere la siguiente salida en pantalla del comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-rm
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-rm:
- ¿borrar el fichero regular vacío 'archivo' protegido contra escritura?
- (s/n) s
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-¿Cuál fue el comando completo?
- ¿Cómo podría haberse omitido la comprobación de eliminación?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
 \begin_inset ERT
 status open
 
@@ -17352,7 +17281,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -17372,7 +17301,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -17384,7 +17313,7 @@ faStar
 
 \end_inset
 
- Manipule el sistema de archivos para que el comando 
+Manipule el sistema de archivos para que el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -17516,9 +17445,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -17536,7 +17463,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -17566,14 +17493,602 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
 
 \end_inset
 
- Elimine ambas estructuras de directorios.
+Elimine ambas estructuras de directorios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Considere la siguiente salida en pantalla del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls -Fa
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+./ ../ .../ ..../ ...../ ......
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cuántas carpetas hay en el directorio de trabajo actual?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para aprender sobre el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+stat
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Considere la siguiente salida en pantalla del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls -log
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+total 4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+drwxr-xr-x 2 4096 may 1 23:46 archivo
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+-rw-r--r-- 1
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+0 may 1 23:46 carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Por qué da error el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd carpeta
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Normalmente el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ da error.
+ ¿En cuál caso esto no es así?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Considere la siguiente salida en pantalla del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+rm
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+rm:
+ ¿borrar el fichero regular vacío 'archivo' protegido contra escritura?
+ (s/n) s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cuál fue el comando completo?
+ ¿Cómo podría haberse omitido la comprobación de eliminación?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+Escriba un comando para borrar archivos que terminen en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+~
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+#
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y tengan un punto 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en su nombre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un comando para listar todos los archivos y carpetas del directorio actual,
+ que tengan una letra mayúscula en su nombre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Conjeture cual será la salida por pantalla de los siguientes comandos y verifíquelo:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ~
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ..
+\end_layout
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ~
+\end_layout
+
+\begin_layout Plain Layout
+
+cd -
+\end_layout
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigüe para qué sirven los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pushd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+popd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+dirs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Investigue con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ que otras opciones tiene el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Pruebe algunas de ellas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando para hacer una lista de los programas del sistema.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Recuerde en que carpeta del sistema se ubican los programas.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -17645,309 +18160,8 @@ cp
 \end_layout
 
 \begin_layout Exercise
-Utilice el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- para aprender sobre el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-readlink
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
- Inserte un 
-\emph on
-pendrive
-\emph default
- en la computadora y utilice el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-lsblk
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- para ver el nombre del dispositivo.
- Intente montarlo y desmontarlo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Utilice el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- y averigüe como buscar con 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-find
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-,
- los archivos modificados durante la última semana.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Utilice 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-find
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- para crear una copia de todos los directorios vacíos del directorio de trabajo actual.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Escriba un comando para borrar archivos que terminen en 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-~
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- o 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-#
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- y tengan un punto 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-.
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- en su nombre.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faExclamationTriangle
-\backslash
-;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faExclamationTriangle
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios que comprometen la seguridad del equipo.
- Tome las precauciones necesarias.
-\end_layout
-
-\end_inset
-
-Describa cual es el comportamiento del siguiente comando.
- No lo ejecute.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Peligro
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-rm * .txt
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Averigüe cuales son los programas de usuario instalados en su computadora,
- que solo tienen dos letras en su nombre.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
 Asumiendo que todos los meses tienen 31 días,
  cree un archivo vacío por cada fecha del año.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -18001,9 +18215,501 @@ rmdir carpeta
 
 \end_layout
 
+\begin_layout Exercise
+En una carpeta vacía,
+ ejecute el siguiente comando y explique su resultado:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch [1-9]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Explique por qué se produce el error.
- Proponga una forma de solucionarlo.
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+En una carpeta vacía,
+ ejecute los siguientes comandos y explique su resultado:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo1 archivo9
+\end_layout
+
+\begin_layout Plain Layout
+
+rm archivo{1..9}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proponga una solución para evitar los errores.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+¿Qué comando se puede usar para crear 999 carpetas?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+Describa cual es el comportamiento del siguiente comando.
+ No lo ejecute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Peligro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+rm * .txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree enlaces simbólicos a la carpeta padre y la carpeta actual,
+ llamados respectivamente 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+padre
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+actual
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Verifique su comportamiento con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree una carpeta vacía y un enlace suave hacia ella.
+ Intente acceder a ella a través del enlace.
+ Luego elimine la carpeta original y vuelve intentar acceder a ella a través del enlace.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para aprender sobre el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+readlink
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+ Inserte un 
+\emph on
+pendrive
+\emph default
+ en la computadora y utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+lsblk
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para ver el nombre del dispositivo.
+ Intente montarlo y desmontarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba un comando para encontrar todos los archivos terminados en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ dentro de la carpeta actual y sus subcarpetas;
+ y moverlos a la carpeta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+docs
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+ Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y averigüe como buscar con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ los archivos modificados durante la última semana.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para crear una copia de todos los directorios vacíos del directorio de trabajo actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -18023,7 +18729,7 @@ faStar
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -18041,12 +18747,76 @@ faStar
 
 \end_inset
 
- son ejercicios recomendados.
+ son de mayor dificultad.
 \end_layout
 
 \end_inset
 
- Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
+Escriba los siguientes comandos y explique por qué el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ no encuentra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+archivo2.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo1.txt
+\end_layout
+
+\begin_layout Plain Layout
+
+mkdir carpeta{1,2}
+\end_layout
+
+\begin_layout Plain Layout
+
+touch carpeta1/archivo1.txt carpeta2/archivo2.txt
+\end_layout
+
+\begin_layout Plain Layout
+
+find -name *.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -18057,38 +18827,190 @@ faStar
 \end_layout
 
 \begin_layout Exercise
-Averigüe para qué sirven los comandos 
-\begin_inset Quotes fld
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
 \end_inset
 
 
-\family typewriter
-pushd
-\family default
+\begin_inset Marginal
+status collapsed
 
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+En una carpeta vacía,
+ ejecute los siguientes comandos y explique el resultado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Peligro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch archivo{.txt,.doc}
+\end_layout
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\begin_layout Plain Layout
+
+find -delete -name 
+\begin_inset Quotes fld
+\end_inset
+
+*.txt
 \begin_inset Quotes frd
 \end_inset
 
-,
- 
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explique por qué se produce el error.
+ Proponga una forma de solucionarlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba los siguientes comandos en una carpeta vacía e intente describir lo que sucede.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch rm
+\end_layout
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\begin_layout Plain Layout
+
+* *
+\end_layout
+
+\begin_layout Plain Layout
+
+ls
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigüe para que sirve el comando 
 \begin_inset Quotes fld
 \end_inset
 
 
 \family typewriter
-popd
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- y 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-dirs
+locate
 \family default
 
 \begin_inset Quotes frd
@@ -18111,6 +19033,10 @@ Definir stdin y stdout.
 
 \begin_layout Plain Layout
 Hay que aclarar que la mayoría de los comandos también trabajan sobre stdin.
+\end_layout
+
+\begin_layout Plain Layout
+agregar explainshell
 \end_layout
 
 \end_inset
@@ -21612,9 +22538,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -21632,7 +22556,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -21728,9 +22652,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -21748,7 +22670,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -21941,9 +22863,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -21961,7 +22881,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -22206,9 +23126,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -22226,7 +23144,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -23733,9 +24651,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -23753,7 +24669,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -23787,9 +24703,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -23838,9 +24752,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -23858,7 +24770,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -23995,9 +24907,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -24015,7 +24925,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -24046,9 +24956,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -24071,9 +24979,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -24091,7 +24997,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -26835,9 +27741,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -26855,7 +27759,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -26901,9 +27805,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -26921,7 +27823,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -26994,9 +27896,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -27014,7 +27914,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -27071,9 +27971,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -27091,7 +27989,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -27158,9 +28056,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -27178,7 +28074,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -28779,9 +29675,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -28799,7 +29693,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -28895,9 +29789,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -28915,7 +29807,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -30043,9 +30935,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -30063,7 +30953,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -30312,9 +31202,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -34403,9 +35291,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -34423,7 +35309,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -34484,9 +35370,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -34504,7 +35388,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -37585,9 +38469,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -37605,7 +38487,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -37639,14 +38521,12 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
 
-Escriba un comando que muestre el tamaño del archivo mas grande de la carpeta actual.
+ Escriba un comando que muestre el tamaño del archivo mas grande de la carpeta actual.
 \end_layout
 
 \begin_layout Standard
@@ -39193,9 +40073,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -39213,7 +40091,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -39313,9 +40191,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -39333,7 +40209,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -40102,9 +40978,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -40122,7 +40996,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
@@ -44377,9 +45251,7 @@ status open
 
 
 \backslash
-faStar
-\backslash
-;
+faCheck
 \end_layout
 
 \end_inset
@@ -44397,7 +45269,7 @@ status open
 
 
 \backslash
-faStar
+faCheck
 \backslash
 ;
 \end_layout
