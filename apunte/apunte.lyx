@@ -177,7 +177,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-23 de enero de 2025
+28 de enero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -2809,6 +2809,27 @@ GPT-3
  sin una tarea específica de entrenamiento.
 \end_layout
 
+\begin_layout Section
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Averigüe quién fue 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faUser"
+target "https://es.wikipedia.org/wiki/Alan_Turing"
+literal "true"
+
+\end_inset
+
+
+\emph on
+ Alan Turing
+\emph default
+ y cuál fue su principal contribución a las ciencias de la computación.
+\end_layout
+
 \begin_layout Chapter
 Arquitectura de la computadora
 \end_layout
@@ -3499,6 +3520,44 @@ Solid State Drive
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/ssd.jpg
+	lyxscale 20
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+SSD
+\family default
+ Kingston
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A diferencia de un disco duro tradicional,
  que utiliza platos magnéticos giratorios y cabezas de lectura/escritura para acceder a los datos,
  una 
@@ -3521,9 +3580,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagenes/ssd.jpg
+	filename imagenes/nvme.jpg
 	lyxscale 20
-	scale 5
+	scale 20
+	BoundingBox 0bp 550bp 2048bp 1250bp
+	clip
 
 \end_inset
 
@@ -3535,7 +3596,11 @@ status open
 status open
 
 \begin_layout Plain Layout
-SSD Kingston
+
+\family sans
+NVMe
+\family default
+ Samsung
 \end_layout
 
 \end_inset
@@ -3619,7 +3684,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/gpu.jpg
 	lyxscale 30
-	scale 18
+	scale 34
 
 \end_inset
 
@@ -3687,6 +3752,10 @@ Las teclas especiales,
  no introducen caracteres,
  sino que realizan funciones específicas o modifican el comportamiento de otras teclas.
  Alguna de ellas son:
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -3805,7 +3874,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/us.png
 	lyxscale 40
-	scale 16
+	scale 14
 
 \end_inset
 
@@ -3831,13 +3900,6 @@ Distribución de teclado estadounidense
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -3846,7 +3908,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/la.png
 	lyxscale 30
-	scale 12
+	scale 10
 
 \end_inset
 
@@ -3871,6 +3933,85 @@ Distribución de teclado latinoamericana
 
 \end_layout
 
+\begin_layout Section
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Investigue y explique que es la 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Ley_de_Moore"
+literal "true"
+
+\end_inset
+
+ Ley de Moore
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigüe que son las distribuciones de teclado 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Teclado_Dvorak"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Dvorak
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Teclado_Colemak"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Colemak
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Chapter
 Representación de la información
 \end_layout
@@ -3881,6 +4022,10 @@ status open
 
 \begin_layout Plain Layout
 Agregar mas ejemplos y ejercicios
+\end_layout
+
+\begin_layout Plain Layout
+Mbps
 \end_layout
 
 \end_inset
@@ -4793,6 +4938,23 @@ Codificación de caracteres
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar información sobre Unicode y UTF-8.
+\end_layout
+
+\begin_layout Plain Layout
+Cifrado del cesar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Las codificaciones de caracteres son sistemas que asignan un valor numérico (código) a cada carácter en un conjunto de caracteres,
  permitiendo que los textos sean representados,
  almacenados y transmitidos en forma digital.
@@ -5261,6 +5423,53 @@ ASCII
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Convierta a decimal los siguientes números:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(FF\right)_{16}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(7F\right)_{16}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Convierta a binario los siguientes números:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(777\right)_{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(644\right)_{8}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
@@ -6000,7 +6209,7 @@ IDE
 \family default
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -6088,11 +6297,33 @@ Visual Studio Code
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace vfill
+\begin_layout Section
+Ejercicios
+\end_layout
+
+\begin_layout Exercise
+Investiga y explica las 
+\begin_inset Quotes fld
 \end_inset
 
 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.m.wikipedia.org/wiki/Licencia_de_software_libre"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+cuatro libertades
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ del software libre definidas por la Free Software Foundation.
 \end_layout
 
 \begin_layout Chapter
@@ -11431,6 +11662,97 @@ man
 \end_layout
 
 \begin_layout Exercise
+Investigue el uso de las siguientes secuencias de escape con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+echo
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+n
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+t
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+b
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+r
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Pruebe las siguientes combinaciones de teclas de edición de linea de comandos y determine para que sirven:
  
 \begin_inset ERT
@@ -11521,62 +11843,6 @@ Ctrl+W.
 \end_layout
 
 \begin_layout Exercise
-Averigüe para que sirven los comandos 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-info
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-
-\family typewriter
- y 
-\family default
-
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-help
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-
-\family typewriter
-,
-
-\family default
- y cuáles son sus diferencias con 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
 Explique la salida en pantalla de los siguientes comandos:
 \end_layout
 
@@ -11627,6 +11893,109 @@ echo
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faExclamationTriangle
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios que comprometen la seguridad del equipo.
+ Tome las precauciones necesarias.
+\end_layout
+
+\end_inset
+
+ Averigüe para que sirven los comandos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+info
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\family typewriter
+ y 
+\family default
+
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+help
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\family typewriter
+,
+
+\family default
+ y cuáles son sus diferencias con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
 
@@ -11972,10 +12341,6 @@ cd
  es un comando interno del shell.
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -17041,8 +17406,6 @@ status open
 
 \backslash
 faCheck
-\backslash
-;
 \end_layout
 
 \end_inset
@@ -17068,6 +17431,60 @@ faCheck
 \end_inset
 
  son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+cd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para dirigirse a la carpeta 
+\emph on
+raiz
+\emph default
+.
+ Luego navegue hacia 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+/usr/local/bin
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ mediante ruta absoluta y relativa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
 \end_layout
 
 \end_inset
@@ -17313,6 +17730,127 @@ faCheck
 
 \end_inset
 
+Escriba los siguientes comandos,
+ y explique su funcionamiento:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir carpeta1 carpeta2
+\end_layout
+
+\begin_layout Plain Layout
+
+mkdir 
+\begin_inset Quotes fld
+\end_inset
+
+carpeta1 carpeta2
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Cree dos archivos vacíos y una carpeta;
+ luego copie los tres archivos dentro de la carpeta.
+ Verifique con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ que todo haya salido bien.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Manipule el sistema de archivos para que el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -17475,7 +18013,8 @@ faCheck
 
 \end_inset
 
- Cree una copia idéntica a la estructura del ejercicio anterior en otro directorio.
+ Cree una copia idéntica a la estructura del ejercicio anterior en otro directorio,
+ con un solo comando.
 \end_layout
 
 \begin_layout Standard
@@ -17496,29 +18035,6 @@ status open
 faCheck
 \backslash
 ;
-\end_layout
-
-\end_inset
-
-Elimine ambas estructuras de directorios.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
 \end_layout
 
 \end_inset
@@ -17548,7 +18064,32 @@ faCheck
 
 \end_inset
 
-Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
+Elimine ambas estructuras de directorios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Escriba un comando para mostrar los archivos ocultos de la carpeta actual.
 \end_layout
 
 \begin_layout Standard
@@ -17777,6 +18318,41 @@ rm:
 \begin_layout Exercise
 ¿Cuál fue el comando completo?
  ¿Cómo podría haberse omitido la comprobación de eliminación?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+man
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar sobre el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+shred
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -18215,6 +18791,10 @@ rmdir carpeta
 
 \end_layout
 
+\begin_layout Standard
+Reflexione sobre el error.
+\end_layout
+
 \begin_layout Exercise
 En una carpeta vacía,
  ejecute el siguiente comando y explique su resultado:
@@ -18289,10 +18869,6 @@ rm archivo{1..9}
 
 \begin_layout Standard
 Proponga una solución para evitar los errores.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Exercise
@@ -18391,6 +18967,101 @@ rm * .txt
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Explique la diferencia entre las diferentes salidas del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pwd
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /bin
+\end_layout
+
+\begin_layout Plain Layout
+
+pwd
+\end_layout
+
+\begin_layout Plain Layout
+
+pwd -P
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Cree enlaces simbólicos a la carpeta padre y la carpeta actual,
  llamados respectivamente 
 \begin_inset Quotes fld
@@ -18440,9 +19111,145 @@ pwd
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
 Cree una carpeta vacía y un enlace suave hacia ella.
  Intente acceder a ella a través del enlace.
  Luego elimine la carpeta original y vuelve intentar acceder a ella a través del enlace.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Piense por que se produce el error luego de introducir estos comandos:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir -p ~/carpeta/destino
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ~/carpeta
+\end_layout
+
+\begin_layout Plain Layout
+
+ln -s destino enlace
+\end_layout
+
+\begin_layout Plain Layout
+
+mv enlace ..
+\end_layout
+
+\begin_layout Plain Layout
+
+cd ../enlace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+¿Cómo se podría haber creado el enlace para que no de error?
 \end_layout
 
 \begin_layout Standard
@@ -18615,31 +19422,6 @@ faCheck
 
 \end_inset
 
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
  Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -18666,6 +19448,56 @@ find
 
 ,
  los archivos modificados durante la última semana.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+Escriba un comando para borrar archivos y directorios vacíos en la carpeta actual y sus subcarpetas.
 \end_layout
 
 \begin_layout Standard
@@ -18953,6 +19785,106 @@ faStar
 
 \end_inset
 
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Averigüe que ventaja tiene usar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
++
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ frente a 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+;
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ cuando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+find
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ se utiliza junto con 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+-exec
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Escriba los siguientes comandos en una carpeta vacía e intente describir lo que sucede.
 \end_layout
 
@@ -19017,6 +19949,286 @@ locate
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Cree los siguientes archivos:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+touch imagen1.jpg imagen2.png foto1.jpg fotoA.png
+\end_layout
+
+\begin_layout Plain Layout
+
+touch dato{1,2,3,A,B,-}.txt imagen{1,2}.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice las expansiones de bash junto con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para listar solamente:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+imagen1.jpg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ e 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+imagen2.png
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+foto1.jpg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+fotoA.png
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Archivos terminados en 1,
+ 2 o 3 y sufijo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Archivos terminados en mayúsculas y sufijo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Archivos terminados en número o letra y sufijo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.txt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Archivos con sufijo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.jpg
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+.png
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+Escriba un comando para 
+\emph on
+listar
+\emph default
+ todos los archivos y carpetas del directorio actual,
+ que tengan una letra mayúscula en su nombre.
 \end_layout
 
 \begin_layout Section
@@ -19136,7 +20348,7 @@ faKeyboardO
 
 \end_inset
 
-Ctrl + O,
+Ctrl+O,
  que guarda el archivo en su ubicación actual.
 \end_layout
 
@@ -19377,13 +20589,17 @@ cat
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
 \end_inset
 
+
+\family typewriter
 cat
+\family default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -19622,7 +20838,7 @@ more
 \begin_inset Quotes frd
 \end_inset
 
- que fue el programa que se utilizaba anteriormente para este propósito
+ que fue el programa que se utilizaba anteriormente para este propósito.
 \end_layout
 
 \end_inset
@@ -19894,13 +21110,6 @@ head
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Example
 Para ver las primeras cuatro líneas del archivo 
 \begin_inset Quotes fld
@@ -20037,6 +21246,10 @@ tail [opciones] archivo...
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -21059,6 +22272,10 @@ DELIMITADOR
 CAMPOS
 \emph default
  específicos separados por el delimitador.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
@@ -21113,7 +22330,7 @@ alfabeto
 \emph default
 .
  A su vez,
- un alfabeto es simplemente un conjunto de 
+ un alfabeto es nada más que un conjunto de 
 \emph on
 caracteres
 \emph default
@@ -21592,6 +22809,10 @@ La clase
 \end_inset
 
  representa cualquier carácter numérico.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -21931,6 +23152,10 @@ tr [opciones] CADENA1 [CADENA2]
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -22311,9 +23536,9 @@ Para buscar cuantas veces aparece la palabra
 \end_inset
 
 
-\emph on
+\family sans
 GNU
-\emph default
+\family default
 
 \begin_inset Quotes frd
 \end_inset
@@ -22545,7 +23770,7 @@ faCheck
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -22605,9 +23830,9 @@ cat
 
 \begin_layout Exercise
 En una 
-\emph on
+\series bold
 consola virtual
-\emph default
+\series default
 ,
  utilice 
 \begin_inset Quotes fld
@@ -22659,7 +23884,7 @@ faCheck
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -22843,13 +24068,6 @@ file
 
 \begin_layout Standard
 \begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -31302,25 +32520,15 @@ neofecth
 \end_layout
 
 \begin_layout Example
-Averigüe que es la distribución de teclado 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Teclado_Dvorak"
-literal "true"
-
-\end_inset
-
- Dvorak
-\begin_inset Quotes frd
-\end_inset
-
-.
- Practique esta distribución en consola virtual y entorno gráfico.
+Practique las distribuciones de teclado 
+\emph on
+Dvorak
+\emph default
+ y 
+\emph on
+Colemak
+\emph default
+ en consola virtual y entorno gráfico.
 \end_layout
 
 \begin_layout Standard
