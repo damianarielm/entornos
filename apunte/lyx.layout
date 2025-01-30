@@ -36,6 +36,10 @@ AddToPreamble
     \newtcolorbox[blend into = figures]{myfigure}[1]
     {float=h!, title={#1}, drop shadow, enhanced}
 
+    % Tables
+    \newtcolorbox[blend into = tables]{mytable}[1]
+    {float=h!, title={#1}, drop shadow, enhanced}
+
     % Headers
     \usepackage{fancyhdr}
     \pagestyle{fancy}
@@ -508,6 +512,22 @@ InsetLayout Flex:Figura
       LabelString   "Figure"
       LatexType     Environment
       LatexName     myfigure
+      BgColor       LightGray
+      Decoration    Classic
+      Argument 1
+        LabelString  "Caption"
+        Mandatory    1
+        LeftDelim    "{"
+        RightDelim   "}"
+        Decoration   Minimalistic
+      EndArgument
+End
+
+InsetLayout Flex:Cuadro
+      LyxType       Custom
+      LabelString   "Table"
+      LatexType     Environment
+      LatexName     mytable
       BgColor       LightGray
       Decoration    Classic
       Argument 1
