@@ -5516,7 +5516,16 @@ Codificación de caracteres
 \end_layout
 
 \begin_layout Standard
-Las codificaciones de caracteres son sistemas que asignan un valor numérico (código) a cada carácter en un conjunto de caracteres,
+Las 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Codificaci%C3%B3n_de_caracteres"
+literal "true"
+
+\end_inset
+
+ codificaciones de caracteres son sistemas que asignan un valor numérico (código) a cada carácter en un conjunto de caracteres,
  permitiendo que los textos sean representados,
  almacenados y transmitidos en forma digital.
 \end_layout
@@ -8242,6 +8251,103 @@ ASCII
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Imagine un sistema que almacena los nombres de archivos usando la códificación 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/P%C3%A1gina_de_c%C3%B3digos_850"
+literal "true"
+
+\end_inset
+
+ 
+\family sans
+CP850
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ y un software que asume que el nombre está en Latin-1.
+\end_layout
+
+\begin_layout Enumerate
+¿Cómo se llama un archivo codificado como 
+\begin_inset Quotes fld
+\end_inset
+
+65 73 70 61 a4 6f 6c
+\begin_inset Quotes frd
+\end_inset
+
+ dentro del sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Cómo interpreta el sowftare que se llama el archivo?
+\end_layout
+
+\begin_layout Enumerate
+Suponga ahora que el software comprime el archivo y codifica el nombre en 
+\family sans
+UTF-8
+\family default
+.
+ ¿Cómo se codificará?
 \end_layout
 
 \begin_layout Chapter
