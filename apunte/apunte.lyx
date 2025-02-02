@@ -186,7 +186,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-31 de enero de 2025
+2 de febrero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -52033,7 +52033,7 @@ Inicio del LiveCD
 
 \begin_layout Standard
 Llegados a este punto,
- ya podemos dar comienzo a la instalación haciendo doble click en 
+ elegimos el idioma y ya podemos dar comienzo a la instalación haciendo click en 
 \begin_inset Quotes fld
 \end_inset
 
@@ -52181,6 +52181,51 @@ status open
 
 \begin_layout Plain Layout
 Distribución del teclado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Personalización de la instalación
+\end_layout
+
+\begin_layout Standard
+Ahora podemos elegir si queremos una instalación mínima o una mas completa.
+ Sugerimos elegir la opción que incluye el navegador,
+ aunque también puede instalarse posteriormente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/lubuntu/modo.png
+	lyxscale 30
+	scale 25
+	BoundingBox 0bp 0bp 1278bp 799bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Personalización
 \end_layout
 
 \end_inset
@@ -52381,7 +52426,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/terminar.png
 	lyxscale 30
-	scale 27
+	scale 26
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -52444,7 +52489,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/lubuntu/reiniciar.png
 	lyxscale 30
-	scale 29
+	scale 28
 	BoundingBox 0bp 0bp 1278bp 799bp
 
 \end_inset
@@ -52492,7 +52537,7 @@ Guest Additions
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -52657,13 +52702,36 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-WSL utiliza una capa de compatibilidad para traducir las llamadas del sistema de Linux a llamadas del sistema de Windows,
- lo que permite que las aplicaciones de Linux se ejecuten de manera nativa en el sistema operativo Windows.
- 
+
+\family sans
+WSL
+\family default
+ utiliza una capa de compatibilidad para traducir las llamadas del sistema de Linux a llamadas del sistema de 
+\emph on
+Windows
+\emph default
+,
+ lo que permite que las aplicaciones de 
+\emph on
+Linux
+\emph default
+ se ejecuten de manera nativa en el sistema operativo 
+\emph on
+Windows
+\emph default
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Para instalar WSL basta con correr el siguiente comando en PowerShell:
+Para instalar 
+\family sans
+WSL
+\family default
+ basta con correr el siguiente comando en PowerShell:
 \end_layout
 
 \begin_layout Standard
@@ -52758,13 +52826,6 @@ status open
 !pip install colab-xterm 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
