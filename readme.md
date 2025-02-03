@@ -1,13 +1,18 @@
 # Entorno de Programación
 
+## Novedades 2026
+
+* Nuevos temas:
+  - Instalación de termux.
+  - Python venv.
+
 ## Novedades 2025
 
 * Nuevos temas:
+  - Unidades de información.
   - Sistemas de numeración.
-  - Unidades informáticas.
+  - Codificación de caracteres.
   - Instalación de Linux en pendrive.
-  - Instalación de termux.
-  - Python venv.
 
 * Modificaciones al material:
   - Se simplificó la parte de historia.

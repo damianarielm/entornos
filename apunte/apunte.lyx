@@ -52663,9 +52663,292 @@ sudo apt install virtualbox-guest-x11
 
 \begin_layout Section
 
-\strikeout on
 \color lightgray
 Instalación en pendrive
+\end_layout
+
+\begin_layout Standard
+Para poder instalar 
+\emph on
+Linux
+\emph default
+ en un pendrive,
+ necesitaremos alguna herramienta auxiliar como puede ser 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://rufus.ie/es/"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+Rufus
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Debemos también tener disponible un pendrive de al menos 16GB,
+ preferentemente 
+\family sans
+USB 3.0
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Peligro
+status open
+
+\begin_layout Plain Layout
+Todos los datos que se encuentren en el pendrive,
+ se perderan tras la instalación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Configuración
+\end_layout
+
+\begin_layout Standard
+Una vez ejecutado 
+\emph on
+Rufus
+\emph default
+,
+ debemos configurar la instalación.
+ En el primer cuadro desplegable,
+ seleccionamos el pendrive donde vamos a instalarlo y en el segundo,
+ la imagen de disco de la distribución que vayamos a instalar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/rufus/rufus.png
+	lyxscale 75
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Configuración de Rufus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si deseamos que nuestro sistema sea persistente,
+ es decir,
+ que conserve los cambios tras un reinicio,
+ debemos mover el deslizador correspondiente hacia la derecha.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Si decidimos usar persistencia el sistema sera considerablemente mas lento.
+ Recomendamos una instalación sin persistencia.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Confirmación
+\end_layout
+
+\begin_layout Standard
+Una vez que estemos listos,
+ presionamos 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+EMPEZAR
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y luego 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Ok
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Peligro
+status open
+
+\begin_layout Plain Layout
+Todos los datos que se encuentren en el pendrive,
+ se perderan tras la instalación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/rufus/iso.png
+	lyxscale 75
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Confirmación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Arranque
+\end_layout
+
+\begin_layout Standard
+Finalmente,
+ debemos reiniciar y elegir el menú de booteo.
+ Esto se logra presionando una tecla específica durante la etapa 
+\family sans
+POST
+\family default
+ del arranque de la 
+\family sans
+PC
+\family default
+.
+ Dependiendo del modelo esta tecla puede ser:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Esc,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ F9,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ F11 o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ F12 (entre otras).
 \end_layout
 
 \begin_layout Section
@@ -52720,10 +53003,6 @@ Linux
 Windows
 \emph default
 .
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -52918,14 +53197,38 @@ AMD-V
 \end_layout
 
 \begin_layout Standard
-IVT (Intel Virtualization Technology) y AMD-V (AMD Virtualization) son tecnologías de virtualización desarrolladas por Intel y AMD,
+IVT (Intel Virtualization Technology) y 
+\family sans
+AMD-V
+\family default
+ (
+\family sans
+AMD
+\family default
+ Virtualization) son tecnologías de virtualización desarrolladas por 
+\emph on
+Intel
+\emph default
+ y 
+\family sans
+AMD
+\family default
+,
  respectivamente.
  Ambas tecnologías están diseñadas para mejorar el rendimiento y la eficiencia de la virtualización en sus respectivas arquitecturas de procesadores.
 \end_layout
 
 \begin_layout Standard
 Para activar estas características es necesario ingresar a la configuración de la placa madre.
- Esto se logra presionando una tecla específica durante la etapa POST del arranque de la PC.
+ Esto se logra presionando una tecla específica durante la etapa 
+\family sans
+POST
+\family default
+ del arranque de la 
+\family sans
+PC
+\family default
+.
  Dependiendo del modelo esta tecla puede ser:
  
 \begin_inset ERT
@@ -53002,7 +53305,9 @@ status open
 status open
 
 \begin_layout Plain Layout
-Interfaz UEFI
+Interfaz 
+\family sans
+UEFI
 \end_layout
 
 \end_inset
@@ -53036,7 +53341,9 @@ status open
 status open
 
 \begin_layout Plain Layout
-Interfaz BIOS
+Interfaz 
+\family sans
+BIOS
 \end_layout
 
 \end_inset
@@ -53068,7 +53375,11 @@ Visual C++ Redistributable Package
 \end_inset
 
  es un conjunto de archivos y bibliotecas necesarios para que los programas desarrollados con Microsoft Visual C++ funcionen correctamente en una computadora.
- Cuando instalas un programa en Windows que fue creado con Visual C++,
+ Cuando instalas un programa en 
+\emph on
+Windows
+\emph default
+ que fue creado con Visual C++,
  es posible que necesites instalar también estos 
 \begin_inset Quotes fld
 \end_inset
@@ -53105,7 +53416,11 @@ man
 
 \begin_layout Standard
 Por defecto,
- la documentación de Linux se encuentra en idioma ingles.
+ la documentación de 
+\emph on
+Linux
+\emph default
+ se encuentra en idioma ingles.
  Para ponerla en idioma español debe utilizarse el siguiente comando:
 \end_layout
 
@@ -53146,8 +53461,20 @@ Actualizar Kernel para WSL
 \end_layout
 
 \begin_layout Standard
-Si Windows no tiene actualizado el kernel de Linux para WSL,
- es probable que aparezca un error a la hora de instalar WSL:
+Si Windows no tiene actualizado el kernel de 
+\emph on
+Linux
+\emph default
+ para 
+\family sans
+WSL
+\family default
+,
+ es probable que aparezca un error a la hora de instalar 
+\family sans
+WSL
+\family default
+:
 \end_layout
 
 \begin_layout Standard
