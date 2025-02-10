@@ -186,7 +186,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-2 de febrero de 2025
+10 de febrero de 2025
 \end_layout
 
 \begin_layout Standard
@@ -897,7 +897,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/mark1.png
 	lyxscale 33
-	scale 27
+	scale 30
 
 \end_inset
 
@@ -933,75 +933,7 @@ Harvard Mark I
 \end_layout
 
 \begin_layout Standard
-Para programar la 
-\emph on
-Mark I
-\emph default
- se utilizaban 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faWikipediaW"
-target "https://es.wikipedia.org/wiki/Tablero_de_conexiones"
-literal "true"
-
-\end_inset
-
- 
-\emph on
-plugboards
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
- o paneles de conexiones.
- Estos eran paneles con enchufes y cables que permitían a los operadores configurar la función de la máquina de manera física,
- estableciendo conexiones entre diferentes componentes.
- Los operadores debían conectar cables en los enchufes correspondientes para definir la ruta de los datos y las operaciones que la máquina debía realizar.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Figura
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/plugboard.jpg
-	lyxscale 33
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Panel de conexiones de la IBM 402.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Además,
- para leer los datos de entrada se utilizaban 
+Para leer los datos se utilizaban 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1142,7 +1074,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/eniac.png
 	lyxscale 25
-	scale 18
+	scale 17
 
 \end_inset
 
@@ -1165,6 +1097,77 @@ literal "true"
  
 \emph on
 Electronic Numerical Integrator And Computer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para programar la 
+\family sans
+ENIAC
+\family default
+ se utilizaban 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faWikipediaW"
+target "https://es.wikipedia.org/wiki/Tablero_de_conexiones"
+literal "true"
+
+\end_inset
+
+ 
+\emph on
+plugboards
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ o paneles de conexiones.
+ Estos eran paneles con enchufes y cables que permitían a los operadores configurar la función de la máquina de manera física,
+ estableciendo conexiones entre diferentes componentes.
+ Los operadores debían conectar cables en los enchufes correspondientes para definir la ruta de los datos y las operaciones que la máquina debía realizar.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/plugboard.jpg
+	lyxscale 50
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Panel de conexiones de la 
+\family sans
+IBM 402
+\family default
+.
 \end_layout
 
 \end_inset
