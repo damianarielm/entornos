@@ -1,6 +1,6 @@
 % Entorno de Programación
-% Tecnicatura Universitaria en Inteligencia Artificial
-% U.N.R.
+% Comisión 2
+% 2025
 
 # Entorno de Programación
 
@@ -10,7 +10,7 @@ Los docentes a cargo de la comisión 2 son:
 
 . . .
 
-* Damian Ariel Marotte (damarotte@gmail.com).
+* Damian Ariel ([damarotte@gmail.com](mailto:damarotte@gmail.com)).
 
 . . .
 
@@ -18,7 +18,7 @@ Los docentes a cargo de la comisión 2 son:
 
 . . .
 
-* Nahuel Roldan (roldannahuelj@gmail.com).
+* Ana Clara Murinigo (anamurinigo@gmail.com).
 
 ## Descripción
 
@@ -30,9 +30,9 @@ la Tecnicatura Universitaria en Inteligencia Artificial.
 Está planificada para una duracion aproximada de 20 clases. Para la comisión 2
 los horarios son:
 
-* Martes de 17:05 a 20:05hs (Salon de Actos o Laboratorio del segundo piso).
+* Martes de 17:05 a 20:05hs (Salón de Actos o Laboratorio del segundo piso).
 
-* Miercoles de 17:00 a 19:00hs (https://meet.google.com/hsj-dtvp-gwc).
+* Miércoles de 17:00 a 19:00hs (https://meet.google.com/wnb-pthw-imm).
 
 . . .
 
@@ -61,11 +61,11 @@ programación.
 
 . . .
 
-* Presentar los fundamentos del control de versiones y virtualizacion.
+* Presentar los fundamentos del control de versiones y virtualización.
 
 . . .
 
-Para lograr dichos objetivos se aprenderan las siguientes tecnologias:
+Para lograr dichos objetivos se aprenderan las siguientes tecnologías:
 
 . . .
 
@@ -89,11 +89,11 @@ Para aprobar la materia el alumno deberá:
 
 . . .
 
-* Aprobar un primer parcial teórico (9/4).
+* Aprobar un primer parcial teórico/práctico (1/4).
 
 . . .
 
-* Aprobar un segundo parcial teórico/práctico (28/5).
+* Aprobar un segundo parcial práctico (27/5).
 
 . . .
 
@@ -102,7 +102,7 @@ Para aprobar la materia el alumno deberá:
 . . .
 
 En caso de no aprobar alguno de los parciales, el alumno cuenta con una
-instancia adicional de recuperación (25/6).
+instancia adicional de recuperación (17/6).
 
 ## Plan de dictado
 
@@ -142,5 +142,5 @@ Para ello necesitaremos descargar:
 
 . . .
 
-* https://lubuntu.me/downloads/
-* https://www.virtualbox.org/wiki/Downloads
+* Lubuntu ([https://lubuntu.me/downloads/](https://lubuntu.me/downloads/)).
+* VirtualBox ([https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)).
