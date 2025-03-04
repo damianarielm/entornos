@@ -507,6 +507,16 @@ InsetLayout Flex:Salida
           LatexParam    "[title=\faTelevision \; Salida en pantalla, colback=White, colbacktitle=White, coltitle=Black, drop shadow, enhanced]"
 End
 
+InsetLayout Flex:Archivo
+      LyxType       Custom
+      LabelString   "Archivo"
+      LatexType     Environment
+      LatexName     tcolorbox
+      BgColor       White
+      Decoration    Classic
+          LatexParam    "[title=\faFileO \; Archivo, colback=White, colbacktitle=White, coltitle=Black, drop shadow, enhanced]"
+End
+
 InsetLayout Flex:Figura
       LyxType       Custom
       LabelString   "Figure"
