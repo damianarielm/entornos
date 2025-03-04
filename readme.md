@@ -17,10 +17,10 @@
 * Modificaciones al material:
   - Se simplificó la parte de historia.
   - Se simplificó la parte de interfaz gráfica.
+  - Nuevos ejemplos y ejercicios.
 
 * Modificaciones al dictado:
   - Se agregó un programa actualizado.
-  - Se incremento el tiempo de cursado en una hora semanal.
 
 ## Novedades 2024
 
