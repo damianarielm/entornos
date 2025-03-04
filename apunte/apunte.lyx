@@ -186,7 +186,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-4 de marzo de 2025
+5 de marzo de 2025
 \end_layout
 
 \begin_layout Standard
@@ -4715,7 +4715,7 @@ MiB
 \begin_inset Formula $1.024$
 \end_inset
 
- kB)
+ KiB)
 \end_layout
 
 \end_inset
@@ -4763,7 +4763,7 @@ GiB
 \begin_inset Formula $1.024$
 \end_inset
 
- MB)
+ MiB)
 \end_layout
 
 \end_inset
@@ -4807,7 +4807,7 @@ TiB
 \begin_inset Formula $1.024$
 \end_inset
 
- GB
+ GiB
 \end_layout
 
 \end_inset
@@ -4851,7 +4851,7 @@ PiB
 \begin_inset Formula $1.024$
 \end_inset
 
- TB
+ TiB
 \end_layout
 
 \end_inset
@@ -4930,7 +4930,7 @@ x=\frac{500\cdot10^{9}B}{2^{30}B}\approx465,66
 
 \begin_layout Example
 Así,
- un disco duro anunciado como 500 GB (en sistema decimal) tendrá aproximadamente 465.66 GiB (en sistema binario).
+ un disco duro anunciado como 500 GB (en sistema decimal) tendrá aproximadamente 465,66 GiB (en sistema binario).
 \end_layout
 
 \begin_layout Section
@@ -5176,8 +5176,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="5" columns="3">
 <features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -5195,6 +5196,15 @@ Octal
 
 \begin_layout Plain Layout
 Binario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decimal
 \end_layout
 
 \end_inset
@@ -5218,6 +5228,18 @@ Binario
 
 \begin_layout Plain Layout
 \begin_inset Formula $\left(000\right)_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
 \end_inset
 
 
@@ -5251,6 +5273,18 @@ Binario
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
@@ -5270,6 +5304,18 @@ Binario
 
 \begin_layout Plain Layout
 \begin_inset Formula $\left(010\right)_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
 \end_inset
 
 
@@ -5303,6 +5349,18 @@ Binario
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 </lyxtabular>
 
@@ -5315,8 +5373,9 @@ Binario
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="5" columns="3">
 <features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -5334,6 +5393,15 @@ Octal
 
 \begin_layout Plain Layout
 Binario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decimal
 \end_layout
 
 \end_inset
@@ -5357,6 +5425,18 @@ Binario
 
 \begin_layout Plain Layout
 \begin_inset Formula $\left(100\right)_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4$
 \end_inset
 
 
@@ -5390,6 +5470,18 @@ Binario
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
@@ -5416,6 +5508,18 @@ Binario
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
@@ -5435,6 +5539,18 @@ Binario
 
 \begin_layout Plain Layout
 \begin_inset Formula $\left(111\right)_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7$
 \end_inset
 
 
@@ -5471,16 +5587,21 @@ Conversión octal/binario
 \begin_layout Example
 Así pues,
  
-\begin_inset Formula $\left(526\right)_{8}=\left(101010110\right)_{2}$
+\begin_inset Formula $\left({\color{red}5}{\color{green}2}{\color{blue}6}\right)_{8}=\left({\color{red}101}{\color{green}010}{\color{blue}110}\right)_{2}$
 \end_inset
 
  y 
-\begin_inset Formula $\left(174\right)_{8}=\left(001111100\right)_{2}$
+\begin_inset Formula $\left({\color{red}1}{\color{green}7}{\color{blue}4}\right)_{8}=\left({\color{red}001}{\color{green}111}{\color{blue}100}\right)_{2}$
 \end_inset
 
 .
  Análogamente 
-\begin_inset Formula $\left(111000100\right)_{2}=\left(704\right)_{8}$
+\begin_inset Formula $\left({\color{red}111}{\color{green}000}{\color{blue}100}\right)_{2}=\left({\color{red}7}{\color{green}0}{\color{blue}4}\right)_{8}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left({\color{red}11}{\color{green}011}{\color{blue}000}\right)_{2}=\left({\color{red}3}{\color{green}3}{\color{blue}0}\right)_{8}$
 \end_inset
 
 ,
@@ -5508,6 +5629,36 @@ El sistema hexadecimal tiene como base 16 (usa los números del 0 al 9 y las let
 \begin{align*}
 \left(1A\right)_{16} & =1\cdot16^{1}+A\cdot16^{0}=1\cdot16^{1}+A\cdot16^{0}=16+10=26
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Puede convertir entre varios sistemas utilizando el siguiente 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://www.rapidtables.com/convert/number/index.html"
+literal "true"
+
+\end_inset
+
+ enlace
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -10190,6 +10341,12 @@ Terminal Se refiere a el o los dispositivos físicos que se utilizan para intera
 \end_layout
 
 \begin_layout Description
+\begin_inset CommandInset label
+LatexCommand label
+name "Consolavirtual"
+
+\end_inset
+
 Consola
 \begin_inset space ~
 \end_inset
@@ -10343,6 +10500,12 @@ Ubuntu
 \end_layout
 
 \begin_layout Description
+\begin_inset CommandInset label
+LatexCommand label
+name "Emuladordeterminal"
+
+\end_inset
+
 Emulador
 \begin_inset space ~
 \end_inset
@@ -12161,6 +12324,19 @@ sda1
 
 \begin_layout Subsection
 Jerarquía de archivos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podrían mencionar los archivos especiales de la carpeta /dev.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -14190,6 +14366,17 @@ La opción
 \end_inset
 
  puede agregarse para evitar que se borre el historial desplazamiento del 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "Emuladordeterminal"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ 
 \series bold
 emulador de terminal
 \series default
@@ -21836,7 +22023,11 @@ faPencilSquareO
 
 \end_inset
 
-Escriba un comando para listar todos los archivos y carpetas del directorio actual,
+Escriba un comando para 
+\emph on
+listar
+\emph default
+ todos los archivos y carpetas del directorio actual,
  que tengan una letra mayúscula en su nombre.
 \end_layout
 
@@ -22602,6 +22793,103 @@ status open
 
 
 \backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+Considere la salida del comando 
+\begin_inset listings
+lstparams "language=bash"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ls -l /bin
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+lrwxrwxrwx 1 root root 7 ene 19 14:10 /bin -> usr/bin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Describa con que comando se creo 
+\family typewriter
+/bin
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 faStar
 \backslash
 ;
@@ -22761,8 +23049,142 @@ lsblk
 
  para ver el nombre del dispositivo.
  Intente montarlo y desmontarlo.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ han sido ejercicios de examen.
+\end_layout
+
+\end_inset
+
+Si el programa 
+\family typewriter
+lsblk
+\family default
+ muestra lo siguiente en la pantalla:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+\end_layout
+
+\begin_layout Plain Layout
+
+sda      8:0    0    10G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda1   8:1    0   100M  0 part /boot
+\end_layout
+
+\begin_layout Plain Layout
+
++-sda2   8:2    0   9,9G  0 part /
+\end_layout
+
+\begin_layout Plain Layout
+
+sdb      8:16   0   7,5G  0 disk
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb1   8:17   0   7,4G  0 part /mnt
+\end_layout
+
+\begin_layout Plain Layout
+
++-sdb2   8:20   0   2,4G  0 part
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántas particiones hay en el sistema?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántas unidades de almacenamiento hay?
+\end_layout
+
+\begin_layout Enumerate
+¿Con qué comando se montó 
+\family typewriter
+sdb1
+\family default
+?
+\end_layout
+
+\begin_layout Enumerate
+¿En qué partición se encuentra el gestor de arranque?
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -22785,7 +23207,32 @@ faCheck
 
 \end_inset
 
- Escriba un comando para encontrar todos los archivos terminados en 
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba un comando para encontrar todos los archivos terminados en 
 \begin_inset Quotes fld
 \end_inset
 
@@ -22885,12 +23332,17 @@ faPencilSquareO
 
 \end_inset
 
+Escriba un comando para borrar archivos y directorios vacíos en la carpeta actual y sus subcarpetas.
+\end_layout
 
-\begin_inset Marginal
-status collapsed
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
 
-\begin_layout Plain Layout
-Los ejercicios marcados con 
+
+\end_layout
+
+\begin_layout Exercise
 \begin_inset ERT
 status open
 
@@ -22905,12 +23357,20 @@ faPencilSquareO
 
 \end_inset
 
- han sido ejercicios de examen.
-\end_layout
-
+Escriba un comando para crear un archivo llamado 
+\begin_inset Quotes fld
 \end_inset
 
-Escriba un comando para borrar archivos y directorios vacíos en la carpeta actual y sus subcarpetas.
+
+\family typewriter
+.gitkeep
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en todas las carpetas y subcarpetas vacías,
+ del directorio actual.
 \end_layout
 
 \begin_layout Standard
@@ -22948,10 +23408,6 @@ find
 \end_inset
 
  para crear una copia de todos los directorios vacíos del directorio de trabajo actual.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -23063,6 +23519,10 @@ find -name *.txt
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -23198,6 +23658,31 @@ status open
 faStar
 \backslash
 ;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
 \end_layout
 
 \end_inset
@@ -23568,63 +24053,30 @@ Archivos con sufijo
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faPencilSquareO
-\backslash
-;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faPencilSquareO
-\backslash
-;
-\end_layout
-
-\end_inset
-
- han sido ejercicios de examen.
-\end_layout
-
-\end_inset
-
-Escriba un comando para 
-\emph on
-listar
-\emph default
- todos los archivos y carpetas del directorio actual,
- que tengan una letra mayúscula en su nombre.
-\end_layout
-
 \begin_layout Section
 Contenido y filtros
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Se podría mencionar que un guion (
+\begin_inset Quotes fld
+\end_inset
+
+-
+\begin_inset Quotes frd
+\end_inset
+
+) como argumento,
+ representa la entrada estandar.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -24538,10 +24990,124 @@ nano
 \end_inset
 
 
-\begin_inset Newpage pagebreak
+\end_layout
+
+\begin_layout Standard
+Podemos navegar a través del documento con las siguientes teclas:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
 \end_inset
 
+Flechas:
+ Para moverte por el archivo.
+\end_layout
 
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Barra espaciadora:
+ Para avanzar una página.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+g:
+ Para ir al inicio del archivo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+G:
+ Para ir al final del archivo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+/:
+ Para buscar en el archivo.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+q:
+ Para salir.
 \end_layout
 
 \begin_layout Example
@@ -24864,6 +25430,10 @@ tail [opciones] archivo...
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -25098,10 +25668,6 @@ Algunas opciones comunes incluyen:
 :
  en vez de ordenar,
  mezcla el contenido.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -25364,6 +25930,10 @@ strings
 
  es una herramienta que se utiliza para imprimir las cadenas de texto legibles que se encuentran en los archivos binarios.
  Esto es útil para buscar información dentro de archivos binarios que no son legibles para un usuario común.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -25545,7 +26115,7 @@ wc
 
  
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -25612,10 +26182,6 @@ wc [opciones] archivo...
 \begin_layout Standard
 A continuación,
  se describen las opciones más comunes:
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -25834,7 +26400,6 @@ cut
  es una herramienta de procesamiento de texto que se utiliza para cortar secciones de líneas de texto.
  Permite seleccionar una o varias columnas de texto de un archivo de entrada separado por delimitadores como espacios,
  tabulaciones o comas.
- 
 \end_layout
 
 \begin_layout Standard
@@ -25876,16 +26441,16 @@ Algunas de las opciones más comunes son las siguientes:
 
 
 \family typewriter
--c CANTIDAD
+-c RANGO
 \family default
 
 \begin_inset Quotes frd
 \end_inset
 
 :
- Corta una 
+ Corta un 
 \emph on
-CANTIDAD
+RANGO
 \emph default
  de caracteres.
 \end_layout
@@ -26147,6 +26712,10 @@ El lenguaje definido por la expresión regular
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -26391,7 +26960,7 @@ El lenguaje definido por la expresión regular
 \end_deeper
 \end_deeper
 \begin_layout Description
-Anclas Las anclas son caracteres especiales que indican el inicio o el final de una cadena.
+Anclas Las anclas son caracteres especiales que indican el inicio o el final de una linea.
 \end_layout
 
 \begin_deeper
@@ -26408,7 +26977,7 @@ El ancla
 \begin_inset Quotes frd
 \end_inset
 
- se utiliza para indicar el inicio de una cadena.
+ se utiliza para indicar el inicio de una linea.
 \end_layout
 
 \begin_layout Itemize
@@ -26424,7 +26993,7 @@ $
 \begin_inset Quotes frd
 \end_inset
 
- indica el final de una cadena.
+ indica el final de una linea.
 \end_layout
 
 \begin_layout Standard
@@ -26643,12 +27212,83 @@ La clase
  representa cualquier carácter.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+La página web 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://regexr.com/"
+literal "true"
+
+\end_inset
+
+ regexr
+\begin_inset Quotes frd
+\end_inset
+
+ puede utilizarse para experimentar,
+ construir y comprender expresiones regulares.
+ Es de mucha ayuda para comprender su comportamiento.
+\end_layout
+
+\begin_layout Plain Layout
+Además,
+ el modulo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://pypi.org/project/exrex/"
+literal "true"
+
+\end_inset
+
+
+\family typewriter
+ exrex
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ de Python puede utilizarse para mostrar el lenguaje generado por expresiones regulares.
+ Puede instalarse con el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pip install exrex
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 A continuación se muestra como se pueden usar las expresiones regulares para encontrar palabras en un texto:
 \end_layout
 
 \begin_layout Example
-\begin_inset Flex Codigo
+\begin_inset Flex Archivo
 status open
 
 \begin_layout Plain Layout
@@ -27683,77 +28323,6 @@ Resumen de expresiones regulares
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-La página web 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://regexr.com/"
-literal "true"
-
-\end_inset
-
- regexr
-\begin_inset Quotes frd
-\end_inset
-
- puede utilizarse para experimentar,
- construir y comprender expresiones regulares.
- Es de mucha ayuda para comprender su comportamiento.
-\end_layout
-
-\begin_layout Plain Layout
-Además,
- el modulo 
-\begin_inset Quotes fld
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-name "\\faLink"
-target "https://pypi.org/project/exrex/"
-literal "true"
-
-\end_inset
-
-
-\family typewriter
- exrex
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- de Python puede utilizarse para mostrar el lenguaje generado por expresiones regulares.
- Puede instalarse con el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-pip install exrex
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 
 \family typewriter
@@ -27814,6 +28383,10 @@ Se puede utilizar para realizar diversas operaciones de manipulación de texto,
  cambiar mayúsculas y minúsculas,
  y eliminar espacios en blanco.
  También pueden usarse clases de caracteres.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -28477,7 +29050,7 @@ faCheck
 
 \end_inset
 
- Utilice 
+Utilice 
 \begin_inset Quotes fld
 \end_inset
 
@@ -28513,9 +29086,68 @@ cat
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Cree otro archivo diferente y observe el contenido de ambos utilizando un solo comando.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Averigue para que sirve el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tac
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 En una 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "Consolavirtual"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series bold
-consola virtual
+ consola virtual
 \series default
 ,
  utilice 
@@ -28554,6 +29186,30 @@ cat
 \end_layout
 
 \begin_layout Exercise
+Investigue como hacer que el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+head
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ muestre los primeros caracteres de un archivo.
+ Puede asumir una codificación de un byte por caracter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -28580,6 +29236,19 @@ head
 
  todas las líneas de un archivo,
  salvo las últimas 3.
+ Análogamente averigue como usar 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+tail
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para mostrar todas las lineas salvo las primeras 3.
 \end_layout
 
 \begin_layout Standard
@@ -28673,6 +29342,154 @@ faCheck
 
 \end_inset
 
+Explique la siguiente salida del comando 
+\family typewriter
+sort
+\family default
+ y proponga una forma de solucionarla:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sort numeros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+10
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+2
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+3
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+4
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+5
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+6
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+7
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
 Cree el siguiente archivo y explique por que el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -28689,7 +29506,7 @@ uniq archivo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Salida
+\begin_inset Flex Archivo
 status open
 
 \begin_layout Plain Layout
@@ -28778,7 +29595,101 @@ file
 \end_inset
 
 .
-\begin_inset Newpage pagebreak
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Utilice 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para averiguar cuantos bytes ocupa un archivo.
+ Comparelo con la salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+ls
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ con la opción apropiada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Cree un archivo con el siguiente contenido.
+ Luego explique la salida del comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+wc
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wc -c operacion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+4 ÷ 2 = 2
+\end_layout
+
 \end_inset
 
 
@@ -28800,31 +29711,6 @@ status open
 
 \backslash
 faCheck
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
 \end_layout
 
 \end_inset
@@ -28922,6 +29808,23 @@ status open
 Vuelva a averiguar el tipo del archivo.
 \end_layout
 
+\begin_layout Exercise
+Prueba el comando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+file
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en directorios,
+ enlaces y dispositivos.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -28944,11 +29847,36 @@ faCheck
 
 \end_inset
 
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
 Cree un archivo con el siguiente contenido:
 \end_layout
 
 \begin_layout Exercise
-\begin_inset Flex Codigo
+\begin_inset Flex Archivo
 status open
 
 \begin_layout Plain Layout
@@ -28976,7 +29904,7 @@ Año,Marca,Modelo,Descripción,Precio
 
 \begin_layout Plain Layout
 
-1999,Chevyr,Venture,"Extended Edition,
+1999,Chevy,Venture,"Extended Edition,
  Very Large",5000.00
 \end_layout
 
@@ -29011,6 +29939,175 @@ cut
 \end_inset
 
  para obtener todas las marcas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Escriba un comando para extraer todos los 
+\emph on
+dominios
+\emph default
+ de un archivo cuyas lineas son correos electónicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Explique la siguiente salida por pantalla:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Archivo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Nombre Apellido
+\end_layout
+
+\begin_layout Plain Layout
+
+Damian Ariel
+\end_layout
+
+\begin_layout Plain Layout
+
+Andrea Leon
+\end_layout
+
+\begin_layout Plain Layout
+
+Ana    Murinigo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cut -d 
+\begin_inset Quotes fld
+\end_inset
+
+ 
+\begin_inset Quotes fld
+\end_inset
+
+ -f 2 archivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Apellido
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Ariel
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Leon
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -29084,6 +30181,10 @@ faCheck
 \end_inset
 
 Escriba expresiones regulares que definan los siguientes lenguajes:
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -29173,7 +30274,9 @@ status open
 
 
 \backslash
-faCheck
+faPencilSquareO
+\backslash
+;
 \end_layout
 
 \end_inset
@@ -29191,19 +30294,19 @@ status open
 
 
 \backslash
-faCheck
+faPencilSquareO
 \backslash
 ;
 \end_layout
 
 \end_inset
 
- son ejercicios recomendados.
+ han sido ejercicios de examen.
 \end_layout
 
 \end_inset
 
- Escriba un comando para encontrar líneas de un archivo,
+Escriba un comando para encontrar líneas de un archivo,
  que 
 \emph on
 no terminen
@@ -29221,6 +30324,124 @@ no terminen
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un comando para encontrar lineas dentro de un archivo que contengan una patente de auto.
+ Considere como patentes válidas a un cualquier palabra que empiece por dos letras mayúsculas,
+ siga por tres dígito (sin empezar con cero) y termine con dos letras mayúsculas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un comando para encontrar lineas dentro de un archivo que contengan un DNI.
+ Considere como DNI válido a un número de 8 dígitos,
+ que no comienza con ceros e incluye un guión (
+\begin_inset Quotes fld
+\end_inset
+
+-
+\begin_inset Quotes frd
+\end_inset
+
+) como separador de miles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un comando para encontrar lineas dentro de un archivo que contengan un nombre de persona.
+ Considere como nombres válidos a un cualquier palabra que solo contenga letras,
+ y que empiece y contenga una sola mayúscula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faPencilSquareO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Escriba un comando que muestre los mails (
+\emph on
+algo@algo.algo
+\emph default
+) que haya en un archivo.
 \end_layout
 
 \begin_layout Standard
@@ -29264,6 +30485,74 @@ faStar
 \end_inset
 
  son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Escriba un comando para encontrar los precios del siguiente archivo:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Flex Archivo
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Fideos:
+ $10
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Chocolate:
+ Sin stock.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Papas fritas:
+ $25,50
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+OFERTA$ E$PECIALE$
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+Este 31 de febrero:
+ 2x1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
 \end_layout
 
 \end_inset
@@ -29339,7 +30628,7 @@ man
 \begin_inset Quotes frd
 \end_inset
 
- para consultar que para que sirve el programa 
+ para consultar cuál es el propósito de los programas 
 \begin_inset Quotes fld
 \end_inset
 
@@ -29351,30 +30640,7 @@ nl
 \begin_inset Quotes frd
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-Utilice el comando 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-man
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- para consultar que para que sirve el programa 
+ y 
 \begin_inset Quotes fld
 \end_inset
 
@@ -29485,6 +30751,88 @@ Los operadores de secuenciación,
 \end_layout
 
 \begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+Si queremos ejecutar dos comandos seguidos,
+ lo hacemos de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+echo hola;
+ echo mundo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Para crear dos archivos y verificar que se hayan creado,
  podemos usar el siguiente comando:
 \end_layout
@@ -29501,8 +30849,9 @@ status open
 
 \begin_layout Plain Layout
 
-touch archivo1 archivo2;
- ls archivo1 archivo2
+touch archivo1;
+ touch archivo2;
+ ls
 \end_layout
 
 \end_inset
@@ -29510,16 +30859,26 @@ touch archivo1 archivo2;
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
 \begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Podemos crear un directorio e ingresar en el,
  en caso de éxito con el comando:
 \end_layout
@@ -29580,6 +30939,20 @@ mkdir .
 \end_layout
 
 \begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 También podemos mostrar un mensaje en caso de error:
 \end_layout
 
