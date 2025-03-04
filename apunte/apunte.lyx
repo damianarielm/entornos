@@ -186,7 +186,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-10 de febrero de 2025
+4 de marzo de 2025
 \end_layout
 
 \begin_layout Standard
@@ -9263,7 +9263,7 @@ Comunicación entre aplicaciones,
 \end_layout
 
 \begin_layout Standard
-Las funcionalidades principales de un sistema operativo incluyen:
+Las funcionalidades principales de un sistema operativo moderno incluyen:
 \end_layout
 
 \begin_layout Description
@@ -19612,7 +19612,11 @@ sdb
 sda
 \family default
 :
- Esta unidad de almacenamiento tiene una capacidad de 10GB y se divide en dos particiones:
+ Esta unidad de almacenamiento tiene una capacidad de 10
+\family sans
+GB
+\family default
+ y se divide en dos particiones:
  
 \family typewriter
 sda1
@@ -19631,7 +19635,11 @@ sda2
 sda1
 \family default
 :
- Esta es la partición de arranque y tiene una capacidad de 100MB.
+ Esta es la partición de arranque y tiene una capacidad de 100
+\family sans
+MB
+\family default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -19650,7 +19658,11 @@ sda2
 sdb
 \family default
 :
- Esta unidad de almacenamiento tiene una capacidad de 7,5GB y se divide en dos particiones:
+ Esta unidad de almacenamiento tiene una capacidad de 7,5
+\family sans
+GB
+\family default
+ y se divide en dos particiones:
  
 \family typewriter
 sdb1
@@ -21927,6 +21939,43 @@ pwd
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
 Averigüe para qué sirven los comandos 
 \begin_inset Quotes fld
 \end_inset
@@ -24166,6 +24215,43 @@ Puede agregarse la opción
 \end_layout
 
 \begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
 Para conocer información sobre el CPU podemos observar el contenido del archivo especial 
 \begin_inset Quotes fld
 \end_inset
@@ -24459,6 +24545,43 @@ nano
 \end_layout
 
 \begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
 Para ver un registro de los últimos sucesos del sistema podemos paginar el archivo 
 \begin_inset Quotes fld
 \end_inset
@@ -25293,6 +25416,43 @@ MÍNIMO
 \end_layout
 
 \begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
 Para buscar las cadenas de 70 caracteres o mas dentro del archivo 
 \begin_inset Quotes fld
 \end_inset
@@ -25991,7 +26151,7 @@ El lenguaje definido por la expresión regular
 
 \end_deeper
 \begin_layout Description
-Paréntesis Es posible agrupar expresiones regulares mediante la utilización de paréntesis.
+Asociación Es posible agrupar expresiones regulares mediante la utilización de paréntesis.
 \end_layout
 
 \begin_deeper
@@ -26281,8 +26441,8 @@ La utilidad de las anclas quedará en evidencia cuando las utilicemos para busca
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-Ademas,
+\begin_layout Description
+Clases Ademas,
  contamos con algunos lenguajes ya definidos,
  como por ejemplo:
 \end_layout
@@ -26481,6 +26641,1046 @@ La clase
 \end_inset
 
  representa cualquier carácter.
+\end_layout
+
+\begin_layout Example
+A continuación se muestra como se pueden usar las expresiones regulares para encontrar palabras en un texto:
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Codigo
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+texto
+\end_layout
+
+\begin_layout Plain Layout
+
+examen
+\end_layout
+
+\begin_layout Plain Layout
+
+setiembre
+\end_layout
+
+\begin_layout Plain Layout
+
+aprendiz
+\end_layout
+
+\begin_layout Plain Layout
+
+que
+\end_layout
+
+\begin_layout Plain Layout
+
+panqueque
+\end_layout
+
+\begin_layout Plain Layout
+
+leer
+\end_layout
+
+\begin_layout Plain Layout
+
+saxo
+\end_layout
+
+\begin_layout Plain Layout
+
+hable
+\end_layout
+
+\begin_layout Plain Layout
+
+panes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Cuadro
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Caracteres
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejemplo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Literales
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Todos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+x
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+te
+\series bold
+\color red
+x
+\series default
+\color inherit
+to
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+e
+\series bold
+\color red
+x
+\series default
+\color inherit
+amen
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sa
+\series bold
+\color red
+x
+\series default
+\color inherit
+o
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Concatenación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Todos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+xt
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+te
+\series bold
+\color red
+xt
+\series default
+\color inherit
+o
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unión*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+i|z
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+set
+\series bold
+\color red
+i
+\series default
+\color inherit
+embre
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+aprend
+\series bold
+\color red
+iz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asociación*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+()
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+x(t|a)
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+te
+\series bold
+\color red
+xt
+\series default
+\color inherit
+o
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+e
+\series bold
+\color red
+xa
+\series default
+\color inherit
+men
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repetición*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+sep?tiembre
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\color red
+setiembre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repetición*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+e{2}
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+l
+\series bold
+\color red
+ee
+\series default
+\color inherit
+r
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repetición*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+(que)+
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\color red
+que
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+pan
+\series bold
+\color red
+queque
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repetición*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+pan(que)*
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\color red
+panqueque
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\color red
+pan
+\series default
+\color inherit
+es
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ancla
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+^
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+^q
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\color red
+q
+\series default
+\color inherit
+ue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ancla
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+n$
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+exame
+\series bold
+\color red
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+b.e
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+setiem
+\series bold
+\color red
+bre
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+ha
+\series bold
+\color red
+ble
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[w-z]
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+te
+\series bold
+\color red
+x
+\series default
+\color inherit
+to
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+e
+\series bold
+\color red
+x
+\series default
+\color inherit
+amen
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+aprendi
+\series bold
+\color red
+z
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+sa
+\series bold
+\color red
+x
+\series default
+\color inherit
+o
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Resumen de expresiones regulares
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -26729,7 +27929,7 @@ grep
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -27354,44 +28554,7 @@ cat
 \end_layout
 
 \begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
- Utilice el comando 
+Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -27427,6 +28590,45 @@ head
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
 Cree un archivo vacío y,
  en un emulador de terminal,
  utilice 
@@ -27457,6 +28659,20 @@ monitorear
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Cree el siguiente archivo y explique por que el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -27513,6 +28729,20 @@ mundo
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Descargue la siguiente 
 \begin_inset CommandInset href
 LatexCommand href
@@ -27548,6 +28778,10 @@ file
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -27572,7 +28806,7 @@ faCheck
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -27686,10 +28920,6 @@ status open
 \end_deeper
 \begin_layout Enumerate
 Vuelva a averiguar el tipo del archivo.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -27700,6 +28930,20 @@ Vuelva a averiguar el tipo del archivo.
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
 Cree un archivo con el siguiente contenido:
 \end_layout
 
@@ -27833,36 +29077,13 @@ status open
 
 \backslash
 faCheck
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
 \backslash
 ;
 \end_layout
 
 \end_inset
 
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
- Escriba expresiones regulares que definan los siguientes lenguajes:
+Escriba expresiones regulares que definan los siguientes lenguajes:
 \end_layout
 
 \begin_layout Enumerate
@@ -27945,7 +29166,44 @@ Palabras que terminen en
 \end_layout
 
 \begin_layout Exercise
-Escriba un comando para encontrar líneas de un archivo,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+ Escriba un comando para encontrar líneas de un archivo,
  que 
 \emph on
 no terminen
@@ -27973,6 +29231,43 @@ no terminen
 \end_layout
 
 \begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
 Utilice el comando 
 \begin_inset Quotes fld
 \end_inset
@@ -28215,6 +29510,10 @@ touch archivo1 archivo2;
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
