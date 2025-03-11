@@ -30336,6 +30336,85 @@ status open
 
 
 \backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son ejercicios recomendados.
+\end_layout
+
+\end_inset
+
+Escriba un comando para buscar lineas dentro de un archivo que contengan:
+\end_layout
+
+\begin_layout Enumerate
+La palabra 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+error
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Dos o mas espacios seguidos.
+\end_layout
+
+\begin_layout Enumerate
+Un número de uno o más dígitos.
+\end_layout
+
+\begin_layout Enumerate
+Lineas que comiencen con 
+\begin_inset Quotes fld
+\end_inset
+
+#
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 faPencilSquareO
 \backslash
 ;
@@ -30613,6 +30692,70 @@ status open
 
 \backslash
 faStar
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Explique la siguiente expresión regular:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+[1-9]|([1-2][0-9])|(3(0|1))
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
 \backslash
 ;
 \end_layout
@@ -30718,20 +30861,30 @@ fold
 \end_layout
 
 \begin_layout Section
-Secuenciación,
- redirección y tuberías
+Combinación de comandos
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Bash,
+ no está limitado a ejecutar comandos de forma aislada;
+ una de las grandes fortalezas de Bash (y de los sistemas Unix/Linux en general) es la capacidad de combinar comandos para realizar tareas complejas de manera eficiente y elegante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
 status open
 
 \begin_layout Plain Layout
-Asociación de comandos mediante { }
-\end_layout
+La página 
+\begin_inset CommandInset href
+LatexCommand href
+name "\\faLink"
+target "https://explainshell.com/"
+literal "true"
 
-\begin_layout Plain Layout
-Agregar explainshell
+\end_inset
+
+ explainshell puede servirnos de mucha utilidad para comprender como funcionan las diferentes formas de combinar comandos.
 \end_layout
 
 \end_inset
@@ -30758,6 +30911,10 @@ Los operadores de secuenciación,
  son otras de las cuestiones de las cuales se encarga el shell.
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -31053,16 +31210,190 @@ El directorio no se ha borrado.
 \end_layout
 
 \begin_layout Subsection
+Agrupación
+\end_layout
+
+\begin_layout Standard
+La agrupación de comandos te permite tratar una lista de comandos como un solo bloque.
+ Es una forma poderosa de ejecutar una serie de comandos como una sola unidad.
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Recuadro
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+{ comando;
+ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+Es importante respetar los espacios alrededor de las llaves y finalizar el comando en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+;
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Veamos que sucede si ejecutamos el siguiente comando en una carpeta vacía:
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+mkdir carptea || echo Error && echo No se pudo crear la carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+No se pudo crear la carpeta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Esto ocurre porque los operadores asocian a izquierda.
+ Podemos solucionar el problema agrupando con llaves:
+\end_layout
+
+\begin_layout Example
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,fontsize={\small},style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+mkdir carptea || 
+{ 
+\lang spanish
+echo Error && echo No se pudo crear la carpeta
+;
+ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Redirección
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
 status open
-
-\begin_layout Plain Layout
-Explicar entradas y salidas
-\end_layout
 
 \begin_layout Plain Layout
 Agregar ejemplo en python
@@ -31075,10 +31406,7 @@ Agregar ejemplo en python
 
 \begin_layout Standard
 Las redirecciones en Bash son una forma de cambiar la entrada y/o salida de un comando a diferentes archivos o dispositivos.
-\end_layout
-
-\begin_layout Standard
-Hay varios tipos de redirecciones en Bash:
+ Hay varios tipos de redirecciones en Bash:
 \end_layout
 
 \begin_layout Itemize
@@ -31139,7 +31467,44 @@ La redirección de salida estándar substituye por completo el contenido de un a
 \end_layout
 
 \begin_layout Example
-Si queremos que la salida del comando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Si queremos que la salida del comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -31255,7 +31620,21 @@ comando >> archivo
 \end_layout
 
 \begin_layout Example
-Si queremos crear un archivo con los textos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Si queremos crear un archivo con los textos 
 \begin_inset Quotes fld
 \end_inset
 
@@ -31667,6 +32046,117 @@ ls / -R 2> /dev/null
 \end_layout
 
 \begin_layout Subsection
+Substitución de comandos
+\end_layout
+
+\begin_layout Standard
+Las comillas invertidas (
+\family typewriter
+``
+\family default
+) permiten la ejecución de comandos dentro de la cadena y capturan la salida de esos comandos.
+ El comando dentro de las comillas invertidas se ejecuta y su salida estándar se sustituye en la cadena resultante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+También puede utilizarse la sintaxis 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+$(comando)
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+ en reemplazo de las comillas invertidas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Observemos la salida del siguiente comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+date +%B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Salida
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+febrero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para crear una carpeta con el nombre del mes actual podemos aprovechar las comillas invertidas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Bash
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=bash,style={github-dark}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mkdir `date +%B`
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Tuberías
 \end_layout
 
@@ -31723,10 +32213,51 @@ comando | comando
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Example
-Si queremos ver los primeros diez archivos del directorio actual podemos usar el siguiente comando:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Se sugiere probar en la terminal los ejemplos marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Si queremos ver los primeros diez archivos del directorio actual podemos usar el siguiente comando:
 \end_layout
 
 \begin_layout Standard
@@ -31755,7 +32286,21 @@ ls | head
 \end_layout
 
 \begin_layout Example
-Podemos contar cuantas veces aparece una 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faCheck
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ Podemos contar cuantas veces aparece una 
 \begin_inset Quotes fld
 \end_inset
 
@@ -31939,6 +32484,10 @@ tee
  es útil cuando necesitas mostrar o almacenar la salida de un comando en un archivo y al mismo tiempo visualizarla en la pantalla.
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -32148,6 +32697,8 @@ status open
 
 \backslash
 faCheck
+\backslash
+;
 \end_layout
 
 \end_inset
@@ -32189,44 +32740,7 @@ echo 2 * 3 > 10
 \end_layout
 
 \begin_layout Exercise
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
-\end_layout
-
-\end_inset
-
- Busque en Internet o consulte a alguna I.
+Busque en Internet o consulte a alguna I.
  A.
  sobre la redirección de entrada 
 \begin_inset Quotes fld
@@ -32358,7 +32872,7 @@ faCheck
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -32424,31 +32938,6 @@ status open
 
 \backslash
 faCheck
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faCheck
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son ejercicios recomendados.
 \end_layout
 
 \end_inset
@@ -45692,127 +46181,6 @@ cuatro
 \end_layout
 
 \begin_layout Subsection
-Comillas invertidas
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mover junto con tuberías
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Las comillas invertidas (
-\family typewriter
-``
-\family default
-) permiten la ejecución de comandos dentro de la cadena y capturan la salida de esos comandos.
- El comando dentro de las comillas invertidas se ejecuta y su salida estándar se sustituye en la cadena resultante.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
-También puede utilizarse la sintaxis 
-\begin_inset Quotes fld
-\end_inset
-
-
-\family typewriter
-$(comando)
-\family default
-
-\begin_inset Quotes frd
-\end_inset
-
- en reemplazo de las comillas invertidas.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-Observemos la salida del siguiente comando:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-date +%B
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Salida
-status open
-
-\begin_layout Plain Layout
-
-\family typewriter
-febrero
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para crear una carpeta con el nombre del mes actual podemos aprovechar las comillas invertidas:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Bash
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=bash,style={github-dark}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-mkdir `date +%B`
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 Expresiones aritméticas
 \end_layout
 
@@ -45910,7 +46278,7 @@ faCheck
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Los ejercicios marcados con 
@@ -54365,6 +54733,7 @@ Contenedores
 \begin_layout Chapter
 
 \strikeout on
+\color lightgray
 Otros conceptos
 \end_layout
 
@@ -54372,6 +54741,7 @@ Otros conceptos
 
 \family typewriter
 \strikeout on
+\color lightgray
 venv
 \end_layout
 
@@ -54386,6 +54756,7 @@ chroot
 \begin_layout Section
 
 \strikeout on
+\color lightgray
 Colab
 \end_layout
 
