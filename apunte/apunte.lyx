@@ -186,7 +186,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-5 de marzo de 2025
+12 de marzo de 2025
 \end_layout
 
 \begin_layout Standard
@@ -3094,8 +3094,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/psu.jpg
-	lyxscale 20
-	scale 13
+	lyxscale 25
+	scale 11
 
 \end_inset
 
@@ -3264,6 +3264,82 @@ Intel Core i9
 
 \end_layout
 
+\begin_layout Standard
+Existen principalmente dos formas de diseñar los circuitos de un microprocesador:
+\end_layout
+
+\begin_layout Description
+
+\family sans
+x86
+\family default
+ Es la arquitectura mas antigua y 
+\begin_inset Quotes fld
+\end_inset
+
+tradicional
+\begin_inset Quotes frd
+\end_inset
+
+,
+ usada principalmente por Intel y 
+\family sans
+AMD
+\family default
+ en computadoras de escritorio y servidores.
+ Es potente y rápida,
+ pero no eficiente en terminos energéticos.
+\end_layout
+
+\begin_layout Description
+
+\family sans
+ARM
+\family default
+ Es una arquitectura mas moderna,
+ diseñada principalmente para ser mas económica y eficiente en términos energéticos.
+ 
+\family sans
+ARM
+\family default
+ no fabrica procesadores,
+ simplemente diseña la arquitectura y la licencia a otras empresas.
+ Se utiliza principalmente en celulares y dispositivos inteligentes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+x86
+\family default
+ y 
+\family sans
+ARM
+\family default
+ no son directamente compatibles debido a sus diferentes conjuntos de instrucciones.
+ Esto significa que los programas se diseñan para una arquitectura específica.
+ Por ejemplo,
+ Windows tradicionalmente se ejecuta en 
+\family sans
+x86
+\family default
+,
+ mientras que Android se ejecuta en 
+\family sans
+ARM
+\family default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Memoria RAM
 \end_layout
@@ -3355,7 +3431,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/ram.jpg
 	lyxscale 20
-	scale 15
+	scale 11
 	BoundingBox 0bp 350bp 2000bp 1650bp
 	clip
 
@@ -3369,7 +3445,13 @@ status open
 status open
 
 \begin_layout Plain Layout
-Memoria RAM Corsair Vengance DDR4
+Memoria 
+\family sans
+RAM
+\family default
+ Corsair Vengance 
+\family sans
+DDR4
 \end_layout
 
 \end_inset
@@ -3434,8 +3516,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/disk.jpg
-	lyxscale 20
-	scale 15
+	lyxscale 30
+	scale 8
 	BoundingBox 0bp 100bp 1500bp 1400bp
 	clip
 
@@ -3481,7 +3563,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/jerarquia.png
 	lyxscale 70
-	scale 50
+	scale 35
 
 \end_inset
 
@@ -5068,26 +5150,6 @@ La fórmula general para un número entero
 \begin{equation}
 N=d_{n-1}\cdot b^{n-1}+d_{n-2}\cdot b^{n-2}+\cdots+d_{1}\cdot b^{1}+d_{0}\cdot b^{0}
 \end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-Para números con parte decimal,
- los pesos de las posiciones a la derecha del punto decimal son potencias negativas de la base,
- es decir:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-N=d_{n-1}\cdot b^{n-1}+d_{n-2}\cdot b^{n-2}+\cdots+d_{1}\cdot b^{1}+d_{0}\cdot b^{0}+d_{-1}\cdot b^{-1}+d_{-2}\cdot b^{-2}+\cdots
-\]
 
 \end_inset
 
