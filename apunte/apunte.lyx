@@ -186,7 +186,7 @@ Tecnicatura Universitaria en Inteligencia Artificial
 \end_layout
 
 \begin_layout Date
-12 de marzo de 2025
+15 de marzo de 2025
 \end_layout
 
 \begin_layout Standard
@@ -3095,7 +3095,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/psu.jpg
 	lyxscale 25
-	scale 11
+	scale 13
 
 \end_inset
 
@@ -3125,6 +3125,19 @@ Microprocesador
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+¿Agregar diferencia entre thread y núcleo?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La 
 \begin_inset CommandInset href
 LatexCommand href
@@ -3140,7 +3153,7 @@ CPU
 \family default
 
 \begin_inset Marginal
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Quotes fld
@@ -3218,7 +3231,11 @@ iGPU
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 Unidad de Procesamiento de Gráficos Integrados
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -3239,7 +3256,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/cpu.jpg
 	lyxscale 30
-	scale 14
+	scale 15
 
 \end_inset
 
@@ -3321,7 +3338,10 @@ x86
 ARM
 \family default
  no son directamente compatibles debido a sus diferentes conjuntos de instrucciones.
- Esto significa que los programas se diseñan para una arquitectura específica.
+\end_layout
+
+\begin_layout Plain Layout
+Esto significa que los programas se diseñan para una arquitectura específica.
  Por ejemplo,
  Windows tradicionalmente se ejecuta en 
 \family sans
@@ -3412,17 +3432,6 @@ RAM
 \end_layout
 
 \begin_layout Standard
-Es una memoria 
-\emph on
-volátil
-\emph default
-,
- lo que significa que pierde todos los datos almacenados en ella cuando se apaga la computadora.
- Por lo tanto,
- es importante guardar los archivos y datos importantes en el disco duro o en otro dispositivo de almacenamiento persistente.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex Figura
 status open
 
@@ -3462,6 +3471,17 @@ DDR4
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Es una memoria 
+\emph on
+volátil
+\emph default
+,
+ lo que significa que pierde todos los datos almacenados en ella cuando se apaga la computadora.
+ Por lo tanto,
+ es importante guardar los archivos y datos importantes en el disco duro o en otro dispositivo de almacenamiento persistente.
 \end_layout
 
 \begin_layout Standard
@@ -3517,7 +3537,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/disk.jpg
 	lyxscale 30
-	scale 8
+	scale 17
 	BoundingBox 0bp 100bp 1500bp 1400bp
 	clip
 
@@ -3563,7 +3583,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/jerarquia.png
 	lyxscale 70
-	scale 35
+	scale 45
 
 \end_inset
 
@@ -3655,7 +3675,7 @@ status open
 \begin_inset Graphics
 	filename imagenes/ssd.jpg
 	lyxscale 20
-	scale 13
+	scale 10
 
 \end_inset
 
@@ -3879,10 +3899,6 @@ Las teclas especiales,
  no introducen caracteres,
  sino que realizan funciones específicas o modifican el comportamiento de otras teclas.
  Alguna de ellas son:
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -8951,7 +8967,7 @@ status open
 \begin_layout Plain Layout
 
   401000:
-    48 6f 6c 6c          # H o l a
+    48 6f 6c 61          # H o l a
 \end_layout
 
 \begin_layout Plain Layout
@@ -12812,8 +12828,12 @@ hard links
 ).
 \end_layout
 
-\begin_layout Standard
-Un enlace suave es un archivo especial que apunta a otro archivo en el sistema de archivos.
+\begin_layout Description
+Enlace
+\begin_inset space ~
+\end_inset
+
+suave Es un archivo especial que apunta a otro archivo en el sistema de archivos.
  El enlace suave no contiene los datos del archivo al que apunta,
  sino simplemente la ruta del archivo.
  Si se elimina el archivo original,
@@ -12821,7 +12841,8 @@ Un enlace suave es un archivo especial que apunta a otro archivo en el sistema d
  Los enlaces suaves se utilizan comúnmente para hacer referencia a archivos en diferentes ubicaciones y para crear accesos directos en el sistema de archivos.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Description
 \begin_inset Flex Observacion
 status open
 
@@ -12854,14 +12875,20 @@ Windows
 
 \end_layout
 
-\begin_layout Standard
-Un enlace duro es una entrada de directorio adicional que apunta al mismo archivo en el sistema de archivos.
+\end_deeper
+\begin_layout Description
+Enlace
+\begin_inset space ~
+\end_inset
+
+duro Un enlace duro es una entrada de directorio adicional que apunta al mismo archivo en el sistema de archivos.
  A diferencia de los enlaces suaves,
  los enlaces duros no son archivos independientes y no pueden apuntar a archivos en diferentes sistemas de archivos o particiones.
  Si se elimina el archivo original,
  el enlace duro sigue siendo válido y no se elimina hasta que todos los enlaces se eliminan.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Flex Observacion
 status open
@@ -12875,6 +12902,7 @@ No es posible hacer un enlace duro hacia un directorio.
 
 \end_layout
 
+\end_deeper
 \begin_layout Section
 Ejercicios
 \end_layout
@@ -14737,7 +14765,14 @@ El comando
 history
 \family default
  muestra una lista de los comandos que se han ejecutado anteriormente.
- La sintaxis básica del comando 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La sintaxis básica del comando 
 \begin_inset Quotes fld
 \end_inset
 
@@ -20024,10 +20059,6 @@ mount [-r] dispositivo directorio
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Observacion
-status open
-
-\begin_layout Plain Layout
 Por defecto 
 \begin_inset Quotes fld
 \end_inset
@@ -20056,8 +20087,12 @@ mount
  (sólo lectura).
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Observacion
+status open
+
 \begin_layout Plain Layout
-También es importante destacar que para montar un sistema de archivos,
+Es importante destacar que para montar un sistema de archivos,
  normalmente se necesitan privilegios de superusuario,
  por lo que se debe anteponer el comando 
 \begin_inset Quotes fld
@@ -20621,84 +20656,98 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./francia
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi1/croacia
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi1/cuartos1/holanda
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi1/cuartos1/argentina
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi1/argentina
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi1/cuartos2/croacia
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi1/cuartos2/brasil
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./argentina
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi2/cuartos4/marruecos
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi2/cuartos4/portugal
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi2/marruecos
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi2/francia
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi2/cuartos3/inglaterra
 \end_layout
 
 \begin_layout Plain Layout
 
 \family typewriter
+\size small
 ./semi2/cuartos3/francia
 \end_layout
 
@@ -23457,7 +23506,32 @@ faStar
 
 \end_inset
 
- Utilice 
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Los ejercicios marcados con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faStar
+\backslash
+;
+\end_layout
+
+\end_inset
+
+ son de mayor dificultad.
+\end_layout
+
+\end_inset
+
+Utilice 
 \begin_inset Quotes fld
 \end_inset
 
@@ -23490,31 +23564,6 @@ status open
 faStar
 \backslash
 ;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Los ejercicios marcados con 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-faStar
-\backslash
-;
-\end_layout
-
-\end_inset
-
- son de mayor dificultad.
 \end_layout
 
 \end_inset
@@ -31325,6 +31374,7 @@ inline false
 status open
 
 \begin_layout Plain Layout
+
 mkdir carptea || echo Error && echo No se pudo crear la carpeta
 \end_layout
 
@@ -31369,11 +31419,8 @@ inline false
 status open
 
 \begin_layout Plain Layout
-mkdir carptea || 
-{ 
-\lang spanish
-echo Error && echo No se pudo crear la carpeta
-;
+
+mkdir carptea || { echo Error && echo No se pudo crear la carpeta;
  }
 \end_layout
 
@@ -32866,6 +32913,8 @@ status open
 
 \backslash
 faCheck
+\backslash
+;
 \end_layout
 
 \end_inset
@@ -32915,6 +32964,8 @@ status open
 
 \backslash
 faCheck
+\backslash
+;
 \end_layout
 
 \end_inset
@@ -32938,11 +32989,13 @@ status open
 
 \backslash
 faCheck
+\backslash
+;
 \end_layout
 
 \end_inset
 
-Escriba una secuencia de tuberías para averiguar cual es el archivo con mayor cantidad de líneas.
+ Escriba una secuencia de tuberías para averiguar cual es el archivo con mayor cantidad de líneas.
 \end_layout
 
 \begin_layout Standard
@@ -39630,13 +39683,6 @@ scp
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica del comando es:
 \end_layout
 
@@ -39879,13 +39925,6 @@ curl
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La sintaxis básica de 
 \begin_inset Quotes fld
 \end_inset
@@ -40111,6 +40150,10 @@ w3m
 w3m
 \family default
  se ejecuta en la terminal y muestra el contenido de las páginas web en formato de texto.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -40444,6 +40487,10 @@ jq '.description'
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -40789,13 +40836,6 @@ gzip
  se utiliza para un único archivo.
  La compresión reduce el tamaño de los archivos,
  lo que es útil para ahorrar espacio en disco y acelerar transferencias de archivos a través de la red.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -41336,13 +41376,6 @@ Los alias definidos con este comando,
 .
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -56492,7 +56525,11 @@ Windows
 \begin_inset Quotes fld
 \end_inset
 
+
+\emph on
 paquetes redistribuibles
+\emph default
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -56510,6 +56547,180 @@ literal "true"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+
+\color lightgray
+Modulo de Kernel
+\end_layout
+
+\begin_layout Standard
+Es posible que al intentar correr una máquina virtual,
+ aparezca el siguiente error:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Figura
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/virtualbox/kernel.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Error de VirtualBox
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una posible solución consiste en seguir los siguientes pasos:
+\end_layout
+
+\begin_layout Enumerate
+Navegue hacia la ruta 
+\begin_inset Quotes fld
+\end_inset
+
+
+\family typewriter
+C:
+\backslash
+Program Files
+\backslash
+Oracle
+\backslash
+VirtualBox
+\backslash
+drivers
+\backslash
+vboxsup
+\family default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Haga click con el boton derecho en el archivo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+VBoxDrv.inf
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ y seleccione 
+\begin_inset Quotes fld
+\end_inset
+
+Instalar
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Si 
+\begin_inset Quotes fld
+\end_inset
+
+Instalar
+\begin_inset Quotes frd
+\end_inset
+
+ no aparece,
+ elija primero 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Mostrar más opciones
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Abra una consola presionando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+faKeyboardO
+\backslash
+;
+\end_layout
+
+\end_inset
+
+Ctrl+X y eligiendo 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Terminal Windows (Administrador)
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ para luego ejecutar los siguientes comandos:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex PowerShell
+status open
+
+\begin_layout Plain Layout
+sc query vboxdrv
+\end_layout
+
+\begin_layout Plain Layout
+sc start vboxdrv
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Finalmente reinicie el equipo.
 \end_layout
 
 \begin_layout Section
@@ -56610,8 +56821,8 @@ WslRegisterDistribution failed with error:
 \family typewriter
 \size small
 Error:
- 0x800701bc WSL 2 requiere una actualizaci¾n de su componente de kernel.
- Para obtener informaci¾n,
+ 0x800701bc WSL 2 requiere una actualización de su componente de kernel.
+ Para obtener información,
  visita https://aka.ms/wsl2kernel
 \end_layout
 
@@ -56622,6 +56833,10 @@ Error:
 Press any key to continue...
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -56728,9 +56943,7 @@ while True:
 
 \begin_layout Plain Layout
 
-        os.waitid(os.P_PID,
- pid,
- os.WEXITED)
+        os.wait()
 \end_layout
 
 \end_inset
